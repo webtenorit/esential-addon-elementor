@@ -23,7 +23,7 @@ class Progress_Bar extends Widget_Base
 
     public function get_title()
     {
-        return esc_html__('Progress Bar', 'px-elements');
+        return esc_html__('Progress Bar', 'pixerex-elements');
     }
 
     public function get_icon()
@@ -70,7 +70,7 @@ class Progress_Bar extends Widget_Base
         $this->start_controls_section(
             'progress_bar_section_layout',
             [
-                'label' => __('Layout', 'px-elements'),
+                'label' => __('Layout', 'pixerex-elements'),
             ]
         );
 
@@ -79,13 +79,13 @@ class Progress_Bar extends Widget_Base
             'add_eael_progressbar_layout',
             [
                 'layouts' => [
-                    'line' => __('Line', 'px-elements'),
-                    'line_rainbow' => __('Line Rainbow (Pro)', 'px-elements'),
-                    'circle' => __('Circle', 'px-elements'),
-                    'circle_fill' => __('Circle Fill (Pro)', 'px-elements'),
-                    'half_circle' => __('Half Circle', 'px-elements'),
-                    'half_circle_fill' => __('Half Circle Fill (Pro)', 'px-elements'),
-                    'box' => __('Box (Pro)', 'px-elements'),
+                    'line' => __('Line', 'pixerex-elements'),
+                    'line_rainbow' => __('Line Rainbow (Pro)', 'pixerex-elements'),
+                    'circle' => __('Circle', 'pixerex-elements'),
+                    'circle_fill' => __('Circle Fill (Pro)', 'pixerex-elements'),
+                    'half_circle' => __('Half Circle', 'pixerex-elements'),
+                    'half_circle_fill' => __('Half Circle Fill (Pro)', 'pixerex-elements'),
+                    'box' => __('Box (Pro)', 'pixerex-elements'),
                 ],
                 'conditions' => [
                     'line_rainbow', 'circle_fill', 'half_circle_fill', 'box',
@@ -96,7 +96,7 @@ class Progress_Bar extends Widget_Base
         $this->add_control(
             'progress_bar_layout',
             [
-                'label' => __('Layout', 'px-elements'),
+                'label' => __('Layout', 'pixerex-elements'),
                 'type' => Controls_Manager::SELECT,
                 'options' => $options['layouts'],
                 'default' => 'line',
@@ -106,7 +106,7 @@ class Progress_Bar extends Widget_Base
         $this->add_control(
             'eael_pricing_table_style_pro_alert',
             [
-                'label' => esc_html__('Only Available in Pro Version!', 'px-elements'),
+                'label' => esc_html__('Only Available in Pro Version!', 'pixerex-elements'),
                 'type' => Controls_Manager::HEADING,
                 'condition' => [
                     'progress_bar_layout' => $options['conditions'],
@@ -117,9 +117,9 @@ class Progress_Bar extends Widget_Base
         $this->add_control(
             'progress_bar_title',
             [
-                'label' => __('Title', 'px-elements'),
+                'label' => __('Title', 'pixerex-elements'),
                 'type' => Controls_Manager::TEXT,
-                'default' => __('Progress Bar', 'px-elements'),
+                'default' => __('Progress Bar', 'pixerex-elements'),
                 'separator' => 'before',
             ]
         );
@@ -127,18 +127,18 @@ class Progress_Bar extends Widget_Base
         $this->add_control(
             'progress_bar_title_html_tag',
             [
-                'label' => __('Title HTML Tag', 'px-elements'),
+                'label' => __('Title HTML Tag', 'pixerex-elements'),
                 'type' => Controls_Manager::SELECT,
                 'options' => [
-                    'h1' => __('H1', 'px-elements'),
-                    'h2' => __('H2', 'px-elements'),
-                    'h3' => __('H3', 'px-elements'),
-                    'h4' => __('H4', 'px-elements'),
-                    'h5' => __('H5', 'px-elements'),
-                    'h6' => __('H6', 'px-elements'),
-                    'div' => __('div', 'px-elements'),
-                    'span' => __('span', 'px-elements'),
-                    'p' => __('p', 'px-elements'),
+                    'h1' => __('H1', 'pixerex-elements'),
+                    'h2' => __('H2', 'pixerex-elements'),
+                    'h3' => __('H3', 'pixerex-elements'),
+                    'h4' => __('H4', 'pixerex-elements'),
+                    'h5' => __('H5', 'pixerex-elements'),
+                    'h6' => __('H6', 'pixerex-elements'),
+                    'div' => __('div', 'pixerex-elements'),
+                    'span' => __('span', 'pixerex-elements'),
+                    'p' => __('p', 'pixerex-elements'),
                 ],
                 'default' => 'div',
                 'separator' => 'after',
@@ -148,11 +148,11 @@ class Progress_Bar extends Widget_Base
         $this->add_control(
             'progress_bar_value_type',
             [
-                'label' => esc_html__('Counter Value Type', 'px-elements'),
+                'label' => esc_html__('Counter Value Type', 'pixerex-elements'),
                 'type' => Controls_Manager::SELECT,
                 'options' => [
-                    'static' => __('Static', 'px-elements'),
-                    'dynamic' => __('Dynamic', 'px-elements'),
+                    'static' => __('Static', 'pixerex-elements'),
+                    'dynamic' => __('Dynamic', 'pixerex-elements'),
                 ],
                 'default' => 'static',
             ]
@@ -161,7 +161,7 @@ class Progress_Bar extends Widget_Base
         $this->add_control(
             'progress_bar_value',
             [
-                'label' => __('Counter Value', 'px-elements'),
+                'label' => __('Counter Value', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => ['%'],
                 'range' => [
@@ -184,7 +184,7 @@ class Progress_Bar extends Widget_Base
         $this->add_control(
             'progress_bar_value_dynamic',
             [
-                'label' => __('Counter Value', 'px-elements'),
+                'label' => __('Counter Value', 'pixerex-elements'),
                 'type' => Controls_Manager::NUMBER,
                 'min' => 0,
                 'max' => 100,
@@ -201,7 +201,7 @@ class Progress_Bar extends Widget_Base
         $this->add_control(
             'progress_bar_show_count',
             [
-                'label' => esc_html__('Display Count', 'px-elements'),
+                'label' => esc_html__('Display Count', 'pixerex-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'return_value' => 'yes',
                 'default' => 'yes',
@@ -211,7 +211,7 @@ class Progress_Bar extends Widget_Base
         $this->add_control(
             'progress_bar_animation_duration',
             [
-                'label' => __('Animation Duration', 'px-elements'),
+                'label' => __('Animation Duration', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => ['px'],
                 'range' => [
@@ -232,9 +232,9 @@ class Progress_Bar extends Widget_Base
         $this->add_control(
             'progress_bar_prefix_label',
             [
-                'label' => __('Prefix Label', 'px-elements'),
+                'label' => __('Prefix Label', 'pixerex-elements'),
                 'type' => Controls_Manager::TEXT,
-                'default' => __('Prefix', 'px-elements'),
+                'default' => __('Prefix', 'pixerex-elements'),
                 'condition' => [
                     'progress_bar_layout' => 'half_circle',
                 ],
@@ -245,9 +245,9 @@ class Progress_Bar extends Widget_Base
         $this->add_control(
             'progress_bar_postfix_label',
             [
-                'label' => __('Postfix Label', 'px-elements'),
+                'label' => __('Postfix Label', 'pixerex-elements'),
                 'type' => Controls_Manager::TEXT,
-                'default' => __('Postfix', 'px-elements'),
+                'default' => __('Postfix', 'pixerex-elements'),
                 'condition' => [
                     'progress_bar_layout' => 'half_circle',
                 ],
@@ -261,14 +261,14 @@ class Progress_Bar extends Widget_Base
             $this->start_controls_section(
                 'eael_section_pro',
                 [
-                    'label' => __('Go Premium for More Features', 'px-elements'),
+                    'label' => __('Go Premium for More Features', 'pixerex-elements'),
                 ]
             );
 
             $this->add_control(
                 'eael_control_get_pro',
                 [
-                    'label' => __('Unlock more possibilities', 'px-elements'),
+                    'label' => __('Unlock more possibilities', 'pixerex-elements'),
                     'type' => Controls_Manager::CHOOSE,
                     'options' => [
                         '1' => [
@@ -296,7 +296,7 @@ class Progress_Bar extends Widget_Base
         $this->start_controls_section(
             'progress_bar_section_style_general_line',
             [
-                'label' => __('General', 'px-elements'),
+                'label' => __('General', 'pixerex-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'progress_bar_layout' => $style_condition,
@@ -307,19 +307,19 @@ class Progress_Bar extends Widget_Base
         $this->add_control(
             'progress_bar_line_alignment',
             [
-                'label' => __('Alignment', 'px-elements'),
+                'label' => __('Alignment', 'pixerex-elements'),
                 'type' => \Elementor\Controls_Manager::CHOOSE,
                 'options' => [
                     'left' => [
-                        'title' => __('Left', 'px-elements'),
+                        'title' => __('Left', 'pixerex-elements'),
                         'icon' => 'fa fa-align-left',
                     ],
                     'center' => [
-                        'title' => __('Center', 'px-elements'),
+                        'title' => __('Center', 'pixerex-elements'),
                         'icon' => 'fa fa-align-center',
                     ],
                     'right' => [
-                        'title' => __('Right', 'px-elements'),
+                        'title' => __('Right', 'pixerex-elements'),
                         'icon' => 'fa fa-align-right',
                     ],
                 ],
@@ -335,7 +335,7 @@ class Progress_Bar extends Widget_Base
         $this->start_controls_section(
             'progress_bar_section_style_bg',
             [
-                'label' => __('Background', 'px-elements'),
+                'label' => __('Background', 'pixerex-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'progress_bar_layout' => $style_condition, // ['line', 'line_rainbow'] ( Pro Only )
@@ -346,7 +346,7 @@ class Progress_Bar extends Widget_Base
         $this->add_control(
             'progress_bar_line_width',
             [
-                'label' => __('Width', 'px-elements'),
+                'label' => __('Width', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => ['px', '%'],
                 'range' => [
@@ -374,7 +374,7 @@ class Progress_Bar extends Widget_Base
         $this->add_control(
             'progress_bar_line_height',
             [
-                'label' => __('Height', 'px-elements'),
+                'label' => __('Height', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => ['px'],
                 'range' => [
@@ -397,7 +397,7 @@ class Progress_Bar extends Widget_Base
         $this->add_control(
             'progress_bar_line_bg_color',
             [
-                'label' => __('Color', 'px-elements'),
+                'label' => __('Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#eee',
                 'selectors' => [
@@ -415,7 +415,7 @@ class Progress_Bar extends Widget_Base
         $this->start_controls_section(
             'progress_bar_section_style_fill',
             [
-                'label' => __('Fill', 'px-elements'),
+                'label' => __('Fill', 'pixerex-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'progress_bar_layout' => $style_condition, // will here ['line', 'line_rainbow'] ( Pro Only )
@@ -426,7 +426,7 @@ class Progress_Bar extends Widget_Base
         $this->add_control(
             'progress_bar_line_fill_height',
             [
-                'label' => __('Height', 'px-elements'),
+                'label' => __('Height', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => ['px'],
                 'range' => [
@@ -457,7 +457,7 @@ class Progress_Bar extends Widget_Base
             Group_Control_Background::get_type(),
             [
                 'name' => 'progress_bar_line_fill_color',
-                'label' => __('Color', 'px-elements'),
+                'label' => __('Color', 'pixerex-elements'),
                 'types' => ['classic', 'gradient'],
                 'exclude' => [
                     'image',
@@ -471,7 +471,7 @@ class Progress_Bar extends Widget_Base
         $this->add_control(
             'progress_bar_line_fill_stripe',
             [
-                'label' => __('Show Stripe', 'px-elements'),
+                'label' => __('Show Stripe', 'pixerex-elements'),
                 'type' => \Elementor\Controls_Manager::SWITCHER,
                 'return_value' => 'yes',
                 'condition' => $line_fill_color_condition,
@@ -485,12 +485,12 @@ class Progress_Bar extends Widget_Base
         $this->add_control(
             'progress_bar_line_fill_stripe_animate',
             [
-                'label' => __('Stripe Animation', 'px-elements'),
+                'label' => __('Stripe Animation', 'pixerex-elements'),
                 'type' => Controls_Manager::SELECT,
                 'options' => [
-                    'normal' => __('Left To Right', 'px-elements'),
-                    'reverse' => __('Right To Left', 'px-elements'),
-                    'none' => __('Disabled', 'px-elements'),
+                    'normal' => __('Left To Right', 'pixerex-elements'),
+                    'reverse' => __('Right To Left', 'pixerex-elements'),
+                    'none' => __('Disabled', 'pixerex-elements'),
                 ],
                 'default' => 'none',
                 'condition' => $fill_stripe_animate_condition,
@@ -507,7 +507,7 @@ class Progress_Bar extends Widget_Base
         $this->start_controls_section(
             'progress_bar_section_style_general_circle',
             [
-                'label' => __('General', 'px-elements'),
+                'label' => __('General', 'pixerex-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'progress_bar_layout' => $circle_general_condition,
@@ -518,19 +518,19 @@ class Progress_Bar extends Widget_Base
         $this->add_control(
             'progress_bar_circle_alignment',
             [
-                'label' => __('Alignment', 'px-elements'),
+                'label' => __('Alignment', 'pixerex-elements'),
                 'type' => \Elementor\Controls_Manager::CHOOSE,
                 'options' => [
                     'left' => [
-                        'title' => __('Left', 'px-elements'),
+                        'title' => __('Left', 'pixerex-elements'),
                         'icon' => 'fa fa-align-left',
                     ],
                     'center' => [
-                        'title' => __('Center', 'px-elements'),
+                        'title' => __('Center', 'pixerex-elements'),
                         'icon' => 'fa fa-align-center',
                     ],
                     'right' => [
-                        'title' => __('Right', 'px-elements'),
+                        'title' => __('Right', 'pixerex-elements'),
                         'icon' => 'fa fa-align-right',
                     ],
                 ],
@@ -541,7 +541,7 @@ class Progress_Bar extends Widget_Base
         $this->add_control(
             'progress_bar_circle_size',
             [
-                'label' => __('Size', 'px-elements'),
+                'label' => __('Size', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => ['px'],
                 'range' => [
@@ -568,7 +568,7 @@ class Progress_Bar extends Widget_Base
         $this->add_control(
             'progress_bar_circle_bg_color',
             [
-                'label' => __('Background Color', 'px-elements'),
+                'label' => __('Background Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#fff',
                 'selectors' => [
@@ -581,7 +581,7 @@ class Progress_Bar extends Widget_Base
         $this->add_control(
             'progress_bar_circle_stroke_width',
             [
-                'label' => __('Stroke Width', 'px-elements'),
+                'label' => __('Stroke Width', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => ['px'],
                 'range' => [
@@ -606,7 +606,7 @@ class Progress_Bar extends Widget_Base
         $this->add_control(
             'progress_bar_circle_stroke_color',
             [
-                'label' => __('Stroke Color', 'px-elements'),
+                'label' => __('Stroke Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#eee',
                 'selectors' => [
@@ -630,7 +630,7 @@ class Progress_Bar extends Widget_Base
         $this->add_control(
             'progress_bar_circle_fill_color',
             [
-                'label' => __('Fill Color', 'px-elements'),
+                'label' => __('Fill Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#000',
                 'selectors' => $circle_fill_color_condition,
@@ -642,7 +642,7 @@ class Progress_Bar extends Widget_Base
             Group_Control_Box_Shadow::get_type(),
             [
                 'name' => 'progress_bar_circle_box_shadow',
-                'label' => __('Box Shadow', 'px-elements'),
+                'label' => __('Box Shadow', 'pixerex-elements'),
                 'selector' => '{{WRAPPER}} .eael-progressbar-circle-shadow',
                 'condition' => [
                     'progress_bar_layout' => 'circle',
@@ -662,7 +662,7 @@ class Progress_Bar extends Widget_Base
         $this->start_controls_section(
             'progress_bar_section_style_typography',
             [
-                'label' => __('Typography', 'px-elements'),
+                'label' => __('Typography', 'pixerex-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -671,7 +671,7 @@ class Progress_Bar extends Widget_Base
             Group_Control_Typography::get_type(),
             [
                 'name' => 'progress_bar_title_typography',
-                'label' => __('Title', 'px-elements'),
+                'label' => __('Title', 'pixerex-elements'),
                 'scheme' => Scheme_Typography::TYPOGRAPHY_1,
                 'selector' => '{{WRAPPER}} .eael-progressbar-title',
             ]
@@ -680,7 +680,7 @@ class Progress_Bar extends Widget_Base
         $this->add_control(
             'progress_bar_title_color',
             [
-                'label' => __('Title Color', 'px-elements'),
+                'label' => __('Title Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -694,7 +694,7 @@ class Progress_Bar extends Widget_Base
             Group_Control_Typography::get_type(),
             [
                 'name' => 'progress_bar_count_typography',
-                'label' => __('Counter', 'px-elements'),
+                'label' => __('Counter', 'pixerex-elements'),
                 'scheme' => Scheme_Typography::TYPOGRAPHY_1,
                 'selector' => '{{WRAPPER}} .eael-progressbar-count-wrap',
             ]
@@ -703,7 +703,7 @@ class Progress_Bar extends Widget_Base
         $this->add_control(
             'progress_bar_count_color',
             [
-                'label' => __('Counter Color', 'px-elements'),
+                'label' => __('Counter Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -717,7 +717,7 @@ class Progress_Bar extends Widget_Base
             Group_Control_Typography::get_type(),
             [
                 'name' => 'progress_bar_after_typography',
-                'label' => __('Prefix/Postfix', 'px-elements'),
+                'label' => __('Prefix/Postfix', 'pixerex-elements'),
                 'scheme' => Scheme_Typography::TYPOGRAPHY_1,
                 'selector' => '{{WRAPPER}} .eael-progressbar-half-circle-after span',
                 'condition' => [
@@ -729,7 +729,7 @@ class Progress_Bar extends Widget_Base
         $this->add_control(
             'progress_bar_after_color',
             [
-                'label' => __('Prefix/Postfix Color', 'px-elements'),
+                'label' => __('Prefix/Postfix Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -787,7 +787,7 @@ class Progress_Bar extends Widget_Base
                 ' . ($settings['progress_bar_title'] ? sprintf('<%1$s class="%2$s">', $settings['progress_bar_title_html_tag'], 'eael-progressbar-title') . $settings['progress_bar_title'] . sprintf('</%1$s>', $settings['progress_bar_title_html_tag']) : '') . '
 
                 <div ' . $this->get_render_attribute_string('eael-progressbar-line') . '>
-                    ' . ($settings['progress_bar_show_count'] === 'yes' ? '<span class="eael-progressbar-count-wrap"><span class="eael-progressbar-count">0</span><span class="postfix">' . __('%', 'px-elements') . '</span></span>' : '') . '
+                    ' . ($settings['progress_bar_show_count'] === 'yes' ? '<span class="eael-progressbar-count-wrap"><span class="eael-progressbar-count">0</span><span class="postfix">' . __('%', 'pixerex-elements') . '</span></span>' : '') . '
                     <span ' . $this->get_render_attribute_string('eael-progressbar-line-fill') . '></span>
                 </div>
             </div>';
@@ -818,7 +818,7 @@ class Progress_Bar extends Widget_Base
                     <div class="eael-progressbar-circle-inner"></div>
                     <div class="eael-progressbar-circle-inner-content">
                         ' . ($settings['progress_bar_title'] ? sprintf('<%1$s class="%2$s">', $settings['progress_bar_title_html_tag'], 'eael-progressbar-title') . $settings['progress_bar_title'] . sprintf('</%1$s>', $settings['progress_bar_title_html_tag']) : '') . '
-                        ' . ($settings['progress_bar_show_count'] === 'yes' ? '<span class="eael-progressbar-count-wrap"><span class="eael-progressbar-count">0</span><span class="postfix">' . __('%', 'px-elements') . '</span></span>' : '') . '
+                        ' . ($settings['progress_bar_show_count'] === 'yes' ? '<span class="eael-progressbar-count-wrap"><span class="eael-progressbar-count">0</span><span class="postfix">' . __('%', 'pixerex-elements') . '</span></span>' : '') . '
                     </div>
                 </div>
 
@@ -864,7 +864,7 @@ class Progress_Bar extends Widget_Base
                     </div>
                     <div class="eael-progressbar-circle-inner-content">
                         ' . ($settings['progress_bar_title'] ? sprintf('<%1$s class="%2$s">', $settings['progress_bar_title_html_tag'], 'eael-progressbar-title') . $settings['progress_bar_title'] . sprintf('</%1$s>', $settings['progress_bar_title_html_tag']) : '') . '
-                        ' . ($settings['progress_bar_show_count'] === 'yes' ? '<span class="eael-progressbar-count-wrap"><span class="eael-progressbar-count">0</span><span class="postfix">' . __('%', 'px-elements') . '</span></span>' : '') . '
+                        ' . ($settings['progress_bar_show_count'] === 'yes' ? '<span class="eael-progressbar-count-wrap"><span class="eael-progressbar-count">0</span><span class="postfix">' . __('%', 'pixerex-elements') . '</span></span>' : '') . '
                     </div>
                 </div>
                 <div class="eael-progressbar-half-circle-after">

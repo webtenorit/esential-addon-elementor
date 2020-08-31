@@ -46,7 +46,7 @@ class Team_Member extends WPML_Elementor_Module_With_Items {
 	protected function get_title( $field ) {
 		switch($field) {
 			case 'link':
-				return __( 'Team Member: Profile Link', 'px-elements');
+				return __( 'Team Member: Profile Link', 'pixerex-elements');
 
 			default:
 				return '';

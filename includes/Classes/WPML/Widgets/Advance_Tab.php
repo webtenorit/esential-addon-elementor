@@ -46,10 +46,10 @@ class Advance_Tab extends WPML_Elementor_Module_With_Items {
 	protected function get_title( $field ) {
 		switch($field) {
 			case 'eael_adv_tabs_tab_title':
-				return __( 'Advance Tab: Title', 'px-elements');
+				return __( 'Advance Tab: Title', 'pixerex-elements');
 
 			case 'eael_adv_tabs_tab_content':
-				return __( 'Advance Tab: Content', 'px-elements');
+				return __( 'Advance Tab: Content', 'pixerex-elements');
 
 			default:
 				return '';

@@ -26,17 +26,17 @@ trait Eael_WPML {
             'fields' => [
                 [
                     'field'       => 'creative_button_text',
-                    'type'        => __('Creative Button: Text', 'px-elements'),
+                    'type'        => __('Creative Button: Text', 'pixerex-elements'),
                     'editor_type' => 'LINE',
                 ],
                 [
                     'field'       => 'creative_button_secondary_text',
-                    'type'        => __('Creative Button: Secondary Text', 'px-elements'),
+                    'type'        => __('Creative Button: Secondary Text', 'pixerex-elements'),
                     'editor_type' => 'LINE',
                 ],
                 'creative_button_link_url' => [
                     'field' => 'url',
-                    'type'   => __('Creative Button: Link', 'px-elements'),
+                    'type'   => __('Creative Button: Link', 'pixerex-elements'),
                     'editor_type' => 'LINK'
                 ]
             ],
@@ -48,17 +48,17 @@ trait Eael_WPML {
             'fields' => [
                 [
                     'field'       => 'eael_cta_title',
-                    'type'        => __('Call to Action: Title', 'px-elements'),
+                    'type'        => __('Call to Action: Title', 'pixerex-elements'),
                     'editor_type' => 'LINE',
                 ],
                 [
                     'field'       => 'eael_cta_content',
-                    'type'        => __('Call to Action: Content', 'px-elements'),
+                    'type'        => __('Call to Action: Content', 'pixerex-elements'),
                     'editor_type' => 'VISUAL',
                 ],
                 [
                     'field' => 'eael_cta_btn_text',
-                    'type'        => __('Call to Action: Button Text', 'px-elements'),
+                    'type'        => __('Call to Action: Button Text', 'pixerex-elements'),
                     'editor_type' => 'LINE',
                 ]
             ],
@@ -75,17 +75,17 @@ trait Eael_WPML {
             'fields' => [
                 [
                     'field'       => 'eael_dch_first_title',
-                    'type'        => __('Dual Color Heading: Title ( First Part )', 'px-elements'),
+                    'type'        => __('Dual Color Heading: Title ( First Part )', 'pixerex-elements'),
                     'editor_type' => 'LINE',
                 ],
                 [
                     'field'       => 'eael_dch_last_title',
-                    'type'        => __('Dual Color Heading: Title ( Last Part )', 'px-elements'),
+                    'type'        => __('Dual Color Heading: Title ( Last Part )', 'pixerex-elements'),
                     'editor_type' => 'LINE',
                 ],
                 [
                     'field'       => 'eael_dch_subtext',
-                    'type'        => __('Dual Color Heading: Sub Text', 'px-elements'),
+                    'type'        => __('Dual Color Heading: Sub Text', 'pixerex-elements'),
                     'editor_type' => 'VISUAL',
                 ]
             ],
@@ -96,22 +96,22 @@ trait Eael_WPML {
         //     'fields' => [
         //         [
         //             'field'       => 'eael_fg_all_label_text',
-        //             'type'        => __('Gallery All Label', 'px-elements'),
+        //             'type'        => __('Gallery All Label', 'pixerex-elements'),
         //             'editor_type' => 'LINE',
         //         ],
         //         [
         //             'field'       => 'eael_fg_control',
-        //             'type'        => __('List Item', 'px-elements'),
+        //             'type'        => __('List Item', 'pixerex-elements'),
         //             'editor_type' => 'LINE',
         //         ],
         //         [
         //             'field'       => 'eael_fg_gallery_item_name',
-        //             'type'        => __('Item Name', 'px-elements'),
+        //             'type'        => __('Item Name', 'pixerex-elements'),
         //             'editor_type' => 'LINE',
         //         ],
         //         [
         //             'field'       => 'eael_fg_gallery_item_content',
-        //             'type'        => __('Item Content', 'px-elements'),
+        //             'type'        => __('Item Content', 'pixerex-elements'),
         //             'editor_type' => 'AREA',
         //         ]
         //     ],
@@ -128,22 +128,22 @@ trait Eael_WPML {
         //     'fields' => [
         //         [
         //             'field'       => 'eael_flipbox_front_title',
-        //             'type'        => __('Flip Box: Front Title', 'px-elements'),
+        //             'type'        => __('Flip Box: Front Title', 'pixerex-elements'),
         //             'editor_type' => 'LINE',
         //         ],
         //         [
         //             'field'       => 'eael_flipbox_front_text',
-        //             'type'        => __('Flip Box: Front Text', 'px-elements'),
+        //             'type'        => __('Flip Box: Front Text', 'pixerex-elements'),
         //             'editor_type' => 'AREA',
         //         ],
         //         [
         //             'field'       => 'eael_flipbox_back_title',
-        //             'type'        => __('Flip Box: Back Title', 'px-elements'),
+        //             'type'        => __('Flip Box: Back Title', 'pixerex-elements'),
         //             'editor_type' => 'LINE',
         //         ],
         //         [
         //             'field'       => 'eael_flipbox_back_text',
-        //             'type'        => __('Flip Box: Back Text', 'px-elements'),
+        //             'type'        => __('Flip Box: Back Text', 'pixerex-elements'),
         //             'editor_type' => 'AREA',
         //         ]
         //     ],
@@ -154,12 +154,12 @@ trait Eael_WPML {
             'fields' => [
                 [
                     'field'       => 'eael_infobox_title',
-                    'type'        => __('Infobox: Title', 'px-elements'),
+                    'type'        => __('Infobox: Title', 'pixerex-elements'),
                     'editor_type' => 'LINE',
                 ],
                 [
                     'field'       => 'eael_infobox_text',
-                    'type'        => __('Infobox Content', 'px-elements'),
+                    'type'        => __('Infobox Content', 'pixerex-elements'),
                     'editor_type' => 'VISUAL',
                 ]
             ],
@@ -170,12 +170,12 @@ trait Eael_WPML {
             'fields' => [
                 [
                     'field'       => 'show_load_more_text',
-                    'type'        => __('Post Grid: Load More Button', 'px-elements'),
+                    'type'        => __('Post Grid: Load More Button', 'pixerex-elements'),
                     'editor_type' => 'LINE',
                 ],
                 [
                     'field'       => 'read_more_button_text',
-                    'type'        => __('Post Grid: Read More Button', 'px-elements'),
+                    'type'        => __('Post Grid: Read More Button', 'pixerex-elements'),
                     'editor_type' => 'LINE',
                 ]
             ],
@@ -186,7 +186,7 @@ trait Eael_WPML {
             'fields' => [
                 [
                     'field'       => 'show_load_more_text',
-                    'type'        => __('Post Timeline: Load More Button', 'px-elements'),
+                    'type'        => __('Post Timeline: Load More Button', 'pixerex-elements'),
                     'editor_type' => 'LINE',
                 ]
             ],
@@ -198,42 +198,42 @@ trait Eael_WPML {
             'fields' => [
                 [
                     'field'       => 'eael_pricing_table_title',
-                    'type'        => __('Pricing Table: Title', 'px-elements'),
+                    'type'        => __('Pricing Table: Title', 'pixerex-elements'),
                     'editor_type' => 'LINE',
                 ],
                 [
                     'field'       => 'eael_pricing_table_sub_title',
-                    'type'        => __('Pricing Table: Sub Title', 'px-elements'),
+                    'type'        => __('Pricing Table: Sub Title', 'pixerex-elements'),
                     'editor_type' => 'LINE',
                 ],
                 [
                     'field'       => 'eael_pricing_table_price',
-                    'type'        => __('Pricing Table: Price', 'px-elements'),
+                    'type'        => __('Pricing Table: Price', 'pixerex-elements'),
                     'editor_type' => 'LINE',
                 ],
                 [
                     'field'       => 'eael_pricing_table_price_cur',
-                    'type'        => __('Pricing Table: Currency Placement', 'px-elements'),
+                    'type'        => __('Pricing Table: Currency Placement', 'pixerex-elements'),
                     'editor_type' => 'LINE',
                 ],
                 [
                     'field'       => 'eael_pricing_table_price_period',
-                    'type'        => __('Pricing Table: Price Period (per)', 'px-elements'),
+                    'type'        => __('Pricing Table: Price Period (per)', 'pixerex-elements'),
                     'editor_type' => 'LINE',
                 ],
                 [
                     'field'       => 'eael_pricing_table_btn',
-                    'type'        => __('Pricing Table: Button Text', 'px-elements'),
+                    'type'        => __('Pricing Table: Button Text', 'pixerex-elements'),
                     'editor_type' => 'LINE',
                 ],
                 [
                     'field'       => 'eael_pricing_table_btn',
-                    'type'        => __('Pricing Table: Button Text', 'px-elements'),
+                    'type'        => __('Pricing Table: Button Text', 'pixerex-elements'),
                     'editor_type' => 'LINE',
                 ],
                 [
                     'field'       => 'eael_pricing_table_featured_tag_text',
-                    'type'        => __('Pricing Table: Featured Tag Text', 'px-elements'),
+                    'type'        => __('Pricing Table: Featured Tag Text', 'pixerex-elements'),
                     'editor_type' => 'LINE',
                 ]
             ],
@@ -244,7 +244,7 @@ trait Eael_WPML {
             'fields' => [
                 [
                     'field'       => 'progress_bar_title',
-                    'type'        => __('Progressbar: Title', 'px-elements'),
+                    'type'        => __('Progressbar: Title', 'pixerex-elements'),
                     'editor_type' => 'LINE',
                 ]
             ],
@@ -255,17 +255,17 @@ trait Eael_WPML {
             'fields' => [
                 [
                     'field'       => 'eael_team_member_name',
-                    'type'        => __('Team Member: Name', 'px-elements'),
+                    'type'        => __('Team Member: Name', 'pixerex-elements'),
                     'editor_type' => 'LINE',
                 ],
                 [
                     'field'       => 'eael_team_member_job_title',
-                    'type'        => __('Team Member: Job Position', 'px-elements'),
+                    'type'        => __('Team Member: Job Position', 'pixerex-elements'),
                     'editor_type' => 'LINE',
                 ],
                 [
                     'field'       => 'eael_team_member_description',
-                    'type'        => __('Team Member: Description', 'px-elements'),
+                    'type'        => __('Team Member: Description', 'pixerex-elements'),
                     'editor_type' => 'AREA',
                 ]
             ],
@@ -277,17 +277,17 @@ trait Eael_WPML {
             'fields' => [
                 [
                     'field'       => 'eael_testimonial_name',
-                    'type'        => __('Testimonial: User Name', 'px-elements'),
+                    'type'        => __('Testimonial: User Name', 'pixerex-elements'),
                     'editor_type' => 'LINE',
                 ],
                 [
                     'field'       => 'eael_testimonial_company_title',
-                    'type'        => __('Testimonial: Company Name', 'px-elements'),
+                    'type'        => __('Testimonial: Company Name', 'pixerex-elements'),
                     'editor_type' => 'LINE',
                 ],
                 [
                     'field'       => 'eael_testimonial_description',
-                    'type'        => __('Testimonial: Testimonial Description', 'px-elements'),
+                    'type'        => __('Testimonial: Testimonial Description', 'pixerex-elements'),
                     'editor_type' => 'VISUAL',
                 ]
             ],
@@ -299,12 +299,12 @@ trait Eael_WPML {
             'fields' => [
                 [
                     'field'       => 'eael_tooltip_content',
-                    'type'        => __('Tooltip: Content', 'px-elements'),
+                    'type'        => __('Tooltip: Content', 'pixerex-elements'),
                     'editor_type' => 'LINE',
                 ],
                 [
                     'field'       => 'eael_tooltip_hover_content',
-                    'type'        => __('Tooltip: Content', 'px-elements'),
+                    'type'        => __('Tooltip: Content', 'pixerex-elements'),
                     'editor_type' => 'VISUAL',
                 ]
             ],
@@ -317,12 +317,12 @@ trait Eael_WPML {
             'fields' => [
                 [
                     'field'       => 'eael_feature_list_title',
-                    'type'        => __('Feature List: Title', 'px-elements'),
+                    'type'        => __('Feature List: Title', 'pixerex-elements'),
                     'editor_type' => 'LINE',
                 ],
                 [
                     'field'       => 'eael_feature_list_content',
-                    'type'        => __('Feature List: Content', 'px-elements'),
+                    'type'        => __('Feature List: Content', 'pixerex-elements'),
                     'editor_type' => 'AREA',
                 ]
             ],
@@ -333,12 +333,12 @@ trait Eael_WPML {
             'fields' => [
                 [
                     'field'       => 'form_title_custom',
-                    'type'        => __('Caldera Form: Title', 'px-elements'),
+                    'type'        => __('Caldera Form: Title', 'pixerex-elements'),
                     'editor_type' => 'LINE',
                 ],
                 [
                     'field'       => 'form_description_custom',
-                    'type'        => __('Caldera Form: Description', 'px-elements'),
+                    'type'        => __('Caldera Form: Description', 'pixerex-elements'),
                     'editor_type' => 'AREA',
                 ]
             ],
@@ -349,12 +349,12 @@ trait Eael_WPML {
             'fields' => [
                 [
                     'field'       => 'form_title_text',
-                    'type'        => __('Contact Form-7: Title', 'px-elements'),
+                    'type'        => __('Contact Form-7: Title', 'pixerex-elements'),
                     'editor_type' => 'LINE',
                 ],
                 [
                     'field'       => 'form_description_text',
-                    'type'        => __('Contact Form-7: Description', 'px-elements'),
+                    'type'        => __('Contact Form-7: Description', 'pixerex-elements'),
                     'editor_type' => 'AREA',
                 ]
             ],
@@ -365,12 +365,12 @@ trait Eael_WPML {
             'fields' => [
                 [
                     'field'       => 'form_title_custom',
-                    'type'        => __('Gravity Form: Title', 'px-elements'),
+                    'type'        => __('Gravity Form: Title', 'pixerex-elements'),
                     'editor_type' => 'LINE',
                 ],
                 [
                     'field'       => 'form_description_custom',
-                    'type'        => __('Gravity Form: Description', 'px-elements'),
+                    'type'        => __('Gravity Form: Description', 'pixerex-elements'),
                     'editor_type' => 'AREA',
                 ]
             ],
@@ -381,12 +381,12 @@ trait Eael_WPML {
             'fields' => [
                 [
                     'field'       => 'form_title_custom',
-                    'type'        => __('WPForms: Title', 'px-elements'),
+                    'type'        => __('WPForms: Title', 'pixerex-elements'),
                     'editor_type' => 'LINE',
                 ],
                 [
                     'field'       => 'form_description_custom',
-                    'type'        => __('WPForms: Description', 'px-elements'),
+                    'type'        => __('WPForms: Description', 'pixerex-elements'),
                     'editor_type' => 'AREA',
                 ]
             ],
@@ -397,12 +397,12 @@ trait Eael_WPML {
             'fields' => [
                 [
                     'field'       => 'form_title_custom',
-                    'type'        => __('NinjaForm: Title', 'px-elements'),
+                    'type'        => __('NinjaForm: Title', 'pixerex-elements'),
                     'editor_type' => 'LINE',
                 ],
                 [
                     'field'       => 'form_description_custom',
-                    'type'        => __('NinjaForm: Description', 'px-elements'),
+                    'type'        => __('NinjaForm: Description', 'pixerex-elements'),
                     'editor_type' => 'AREA',
                 ]
             ],
@@ -418,7 +418,7 @@ trait Eael_WPML {
             'fields' => [
                 [
                     'field'       => 'ea_adv_data_table_search_placeholder',
-                    'type'        => __('Adv Data Table: Search Placeholder', 'px-elements'),
+                    'type'        => __('Adv Data Table: Search Placeholder', 'pixerex-elements'),
                     'editor_type' => 'LINE'
                 ]
             ],

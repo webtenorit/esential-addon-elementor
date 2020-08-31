@@ -28,7 +28,7 @@ class Reading_Progress
         $element->start_controls_section(
             'eael_ext_reading_progress_section',
             [
-                'label' => __('<i class="eaicon-logo"></i> Reading Progress Bar', 'px-elements'),
+                'label' => __('<i class="eaicon-logo"></i> Reading Progress Bar', 'pixerex-elements'),
                 'tab' => Controls_Manager::TAB_SETTINGS,
             ]
         );
@@ -36,11 +36,11 @@ class Reading_Progress
         $element->add_control(
             'eael_ext_reading_progress',
             [
-                'label' => __('Enable Reading Progress Bar', 'px-elements'),
+                'label' => __('Enable Reading Progress Bar', 'pixerex-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'default' => 'no',
-                'label_on' => __('Yes', 'px-elements'),
-                'label_off' => __('No', 'px-elements'),
+                'label_on' => __('Yes', 'pixerex-elements'),
+                'label_off' => __('No', 'pixerex-elements'),
                 'return_value' => 'yes',
             ]
         );
@@ -48,7 +48,7 @@ class Reading_Progress
         $element->add_control(
             'eael_ext_reading_progress_has_global',
             [
-                'label' => __('Enabled Globally?', 'px-elements'),
+                'label' => __('Enabled Globally?', 'pixerex-elements'),
                 'type' => \Elementor\Controls_Manager::HIDDEN,
                 'default' => isset($global_settings['reading_progress']['enabled']) ? true : false,
             ]
@@ -59,7 +59,7 @@ class Reading_Progress
                 'eael_global_warning_text',
                 [
                     'type' => Controls_Manager::RAW_HTML,
-                    'raw' => __('You can modify the Global Reading Progress Bar by <strong><a href="' . get_bloginfo('url') . '/wp-admin/post.php?post=' . $global_settings['reading_progress']['post_id'] . '&action=elementor">Clicking Here</a></strong>', 'px-elements'),
+                    'raw' => __('You can modify the Global Reading Progress Bar by <strong><a href="' . get_bloginfo('url') . '/wp-admin/post.php?post=' . $global_settings['reading_progress']['post_id'] . '&action=elementor">Clicking Here</a></strong>', 'pixerex-elements'),
                     'content_classes' => 'eael-warning',
                     'separator' => 'before',
                     'condition' => [
@@ -71,12 +71,12 @@ class Reading_Progress
             $element->add_control(
                 'eael_ext_reading_progress_global',
                 [
-                    'label' => __('Enable Reading Progress Bar Globally', 'px-elements'),
-                    'description' => __('Enabling this option will effect on entire site.', 'px-elements'),
+                    'label' => __('Enable Reading Progress Bar Globally', 'pixerex-elements'),
+                    'description' => __('Enabling this option will effect on entire site.', 'pixerex-elements'),
                     'type' => Controls_Manager::SWITCHER,
                     'default' => 'no',
-                    'label_on' => __('Yes', 'px-elements'),
-                    'label_off' => __('No', 'px-elements'),
+                    'label_on' => __('Yes', 'pixerex-elements'),
+                    'label_off' => __('No', 'pixerex-elements'),
                     'return_value' => 'yes',
                     'separator' => 'before',
                     'condition' => [
@@ -88,13 +88,13 @@ class Reading_Progress
             $element->add_control(
                 'eael_ext_reading_progress_global_display_condition',
                 [
-                    'label' => __('Display On', 'px-elements'),
+                    'label' => __('Display On', 'pixerex-elements'),
                     'type' => \Elementor\Controls_Manager::SELECT,
                     'default' => 'all',
                     'options' => [
-                        'posts' => __('All Posts', 'px-elements'),
-                        'pages' => __('All Pages', 'px-elements'),
-                        'all' => __('All Posts & Pages', 'px-elements'),
+                        'posts' => __('All Posts', 'pixerex-elements'),
+                        'pages' => __('All Pages', 'pixerex-elements'),
+                        'all' => __('All Posts & Pages', 'pixerex-elements'),
                     ],
                     'condition' => [
                         'eael_ext_reading_progress' => 'yes',
@@ -108,13 +108,13 @@ class Reading_Progress
         $element->add_control(
             'eael_ext_reading_progress_position',
             [
-                'label' => esc_html__('Position', 'px-elements'),
+                'label' => esc_html__('Position', 'pixerex-elements'),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'top',
                 'label_block' => false,
                 'options' => [
-                    'top' => esc_html__('Top', 'px-elements'),
-                    'bottom' => esc_html__('Bottom', 'px-elements'),
+                    'top' => esc_html__('Top', 'pixerex-elements'),
+                    'bottom' => esc_html__('Bottom', 'pixerex-elements'),
                 ],
                 'separator' => 'before',
                 'condition' => [
@@ -126,7 +126,7 @@ class Reading_Progress
         $element->add_control(
             'eael_ext_reading_progress_height',
             [
-                'label' => __('Height', 'px-elements'),
+                'label' => __('Height', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => ['px'],
                 'range' => [
@@ -154,7 +154,7 @@ class Reading_Progress
         $element->add_control(
             'eael_ext_reading_progress_bg_color',
             [
-                'label' => __('Background Color', 'px-elements'),
+                'label' => __('Background Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -170,7 +170,7 @@ class Reading_Progress
         $element->add_control(
             'eael_ext_reading_progress_fill_color',
             [
-                'label' => __('Fill Color', 'px-elements'),
+                'label' => __('Fill Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#1fd18e',
                 'selectors' => [
@@ -186,7 +186,7 @@ class Reading_Progress
         $element->add_control(
             'eael_ext_reading_progress_animation_speed',
             [
-                'label' => __('Animation Speed', 'px-elements'),
+                'label' => __('Animation Speed', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => ['px'],
                 'range' => [

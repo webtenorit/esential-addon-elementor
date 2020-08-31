@@ -23,7 +23,7 @@ class Pricing_Table extends Widget_Base {
     }
 
     public function get_title() {
-        return esc_html__( 'Pricing Table', 'px-elements' );
+        return esc_html__( 'Pricing Table', 'pixerex-elements' );
     }
 
     public function get_icon() {
@@ -62,7 +62,7 @@ class Pricing_Table extends Widget_Base {
         $this->start_controls_section(
             'eael_section_pricing_table_settings',
             [
-                'label' => esc_html__( 'Settings', 'px-elements' ),
+                'label' => esc_html__( 'Settings', 'pixerex-elements' ),
             ]
         );
 
@@ -70,11 +70,11 @@ class Pricing_Table extends Widget_Base {
             'eael_pricing_table_styles',
             [
                 'styles'     => [
-                    'style-1' => esc_html__( 'Default', 'px-elements' ),
-                    'style-2' => esc_html__( 'Pricing Style 2', 'px-elements' ),
-                    'style-3' => esc_html__( 'Pricing Style 3 (Pro)', 'px-elements' ),
-                    'style-4' => esc_html__( 'Pricing Style 4 (Pro)', 'px-elements' ),
-                    'style-5' => esc_html__( 'Pricing Style 5 (Pro)', 'px-elements' ),
+                    'style-1' => esc_html__( 'Default', 'pixerex-elements' ),
+                    'style-2' => esc_html__( 'Pricing Style 2', 'pixerex-elements' ),
+                    'style-3' => esc_html__( 'Pricing Style 3 (Pro)', 'pixerex-elements' ),
+                    'style-4' => esc_html__( 'Pricing Style 4 (Pro)', 'pixerex-elements' ),
+                    'style-5' => esc_html__( 'Pricing Style 5 (Pro)', 'pixerex-elements' ),
                 ],
                 'conditions' => ['style-3', 'style-4', 'style-5'],
             ]
@@ -83,7 +83,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_style',
             [
-                'label'       => esc_html__( 'Pricing Style', 'px-elements' ),
+                'label'       => esc_html__( 'Pricing Style', 'pixerex-elements' ),
                 'type'        => Controls_Manager::SELECT,
                 'default'     => 'style-1',
                 'label_block' => false,
@@ -94,7 +94,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_style_pro_alert',
             [
-                'label'     => esc_html__( 'Only available in pro version!', 'px-elements' ),
+                'label'     => esc_html__( 'Only available in pro version!', 'pixerex-elements' ),
                 'type'      => Controls_Manager::HEADING,
                 'condition' => [
                     'eael_pricing_table_style' => $pricing_style['conditions'],
@@ -110,7 +110,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_icon_enabled',
             [
-                'label'        => esc_html__( 'List Icon', 'px-elements' ),
+                'label'        => esc_html__( 'List Icon', 'pixerex-elements' ),
                 'type'         => Controls_Manager::SWITCHER,
                 'return_value' => 'show',
                 'default'      => 'show',
@@ -120,10 +120,10 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_title',
             [
-                'label'       => esc_html__( 'Title', 'px-elements' ),
+                'label'       => esc_html__( 'Title', 'pixerex-elements' ),
                 'type'        => Controls_Manager::TEXT,
                 'label_block' => false,
-                'default'     => esc_html__( 'Startup', 'px-elements' ),
+                'default'     => esc_html__( 'Startup', 'pixerex-elements' ),
             ]
         );
 
@@ -134,10 +134,10 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_sub_title',
             [
-                'label'       => esc_html__( 'Sub Title', 'px-elements' ),
+                'label'       => esc_html__( 'Sub Title', 'pixerex-elements' ),
                 'type'        => Controls_Manager::TEXT,
                 'label_block' => false,
-                'default'     => esc_html__( 'A tagline here.', 'px-elements' ),
+                'default'     => esc_html__( 'A tagline here.', 'pixerex-elements' ),
                 'condition'   => [
                     'eael_pricing_table_style' => $subtitles_fields,
                 ],
@@ -150,7 +150,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_style_2_icon_new',
             [
-                'label'            => esc_html__( 'Icon', 'px-elements' ),
+                'label'            => esc_html__( 'Icon', 'pixerex-elements' ),
                 'type'             => Controls_Manager::ICONS,
                 'fa4compatibility' => 'eael_pricing_table_style_2_icon',
                 'default'          => [
@@ -173,37 +173,37 @@ class Pricing_Table extends Widget_Base {
         $this->start_controls_section(
             'eael_section_pricing_table_price',
             [
-                'label' => esc_html__( 'Price', 'px-elements' ),
+                'label' => esc_html__( 'Price', 'pixerex-elements' ),
             ]
         );
 
         $this->add_control(
             'eael_pricing_table_price',
             [
-                'label'       => esc_html__( 'Price', 'px-elements' ),
+                'label'       => esc_html__( 'Price', 'pixerex-elements' ),
                 'type'        => Controls_Manager::TEXT,
                 'label_block' => false,
-                'default'     => esc_html__( '99', 'px-elements' ),
+                'default'     => esc_html__( '99', 'pixerex-elements' ),
             ]
         );
         $this->add_control(
             'eael_pricing_table_onsale',
             [
-                'label'        => __( 'On Sale?', 'px-elements' ),
+                'label'        => __( 'On Sale?', 'pixerex-elements' ),
                 'type'         => Controls_Manager::SWITCHER,
                 'default'      => 'no',
-                'label_on'     => __( 'Yes', 'px-elements' ),
-                'label_off'    => __( 'No', 'px-elements' ),
+                'label_on'     => __( 'Yes', 'pixerex-elements' ),
+                'label_off'    => __( 'No', 'pixerex-elements' ),
                 'return_value' => 'yes',
             ]
         );
         $this->add_control(
             'eael_pricing_table_onsale_price',
             [
-                'label'       => esc_html__( 'Sale Price', 'px-elements' ),
+                'label'       => esc_html__( 'Sale Price', 'pixerex-elements' ),
                 'type'        => Controls_Manager::TEXT,
                 'label_block' => false,
-                'default'     => esc_html__( '89', 'px-elements' ),
+                'default'     => esc_html__( '89', 'pixerex-elements' ),
                 'condition'   => [
                     'eael_pricing_table_onsale' => 'yes',
                 ],
@@ -212,23 +212,23 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_price_cur',
             [
-                'label'       => esc_html__( 'Price Currency', 'px-elements' ),
+                'label'       => esc_html__( 'Price Currency', 'pixerex-elements' ),
                 'type'        => Controls_Manager::TEXT,
                 'label_block' => false,
-                'default'     => esc_html__( '$', 'px-elements' ),
+                'default'     => esc_html__( '$', 'pixerex-elements' ),
             ]
         );
 
         $this->add_control(
             'eael_pricing_table_price_cur_placement',
             [
-                'label'       => esc_html__( 'Currency Placement', 'px-elements' ),
+                'label'       => esc_html__( 'Currency Placement', 'pixerex-elements' ),
                 'type'        => Controls_Manager::SELECT,
                 'default'     => 'left',
                 'label_block' => false,
                 'options'     => [
-                    'left'  => esc_html__( 'Left', 'px-elements' ),
-                    'right' => esc_html__( 'Right', 'px-elements' ),
+                    'left'  => esc_html__( 'Left', 'pixerex-elements' ),
+                    'right' => esc_html__( 'Right', 'pixerex-elements' ),
                 ],
             ]
         );
@@ -238,20 +238,20 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_price_period',
             [
-                'label'       => esc_html__( 'Price Period (per)', 'px-elements' ),
+                'label'       => esc_html__( 'Price Period (per)', 'pixerex-elements' ),
                 'type'        => Controls_Manager::TEXT,
                 'label_block' => false,
-                'default'     => esc_html__( 'month', 'px-elements' ),
+                'default'     => esc_html__( 'month', 'pixerex-elements' ),
             ]
         );
 
         $this->add_control(
             'eael_pricing_table_period_separator',
             [
-                'label'       => esc_html__( 'Period Separator', 'px-elements' ),
+                'label'       => esc_html__( 'Period Separator', 'pixerex-elements' ),
                 'type'        => Controls_Manager::TEXT,
                 'label_block' => false,
-                'default'     => esc_html__( '/', 'px-elements' ),
+                'default'     => esc_html__( '/', 'pixerex-elements' ),
             ]
         );
 
@@ -263,7 +263,7 @@ class Pricing_Table extends Widget_Base {
         $this->start_controls_section(
             'eael_section_pricing_table_feature',
             [
-                'label' => esc_html__( 'Feature', 'px-elements' ),
+                'label' => esc_html__( 'Feature', 'pixerex-elements' ),
             ]
         );
 
@@ -282,14 +282,14 @@ class Pricing_Table extends Widget_Base {
                 'fields'      => [
                     [
                         'name'        => 'eael_pricing_table_item',
-                        'label'       => esc_html__( 'List Item', 'px-elements' ),
+                        'label'       => esc_html__( 'List Item', 'pixerex-elements' ),
                         'type'        => Controls_Manager::TEXT,
                         'label_block' => true,
-                        'default'     => esc_html__( 'Pricing table list item', 'px-elements' ),
+                        'default'     => esc_html__( 'Pricing table list item', 'pixerex-elements' ),
                     ],
                     [
                         'name'             => 'eael_pricing_table_list_icon_new',
-                        'label'            => esc_html__( 'List Icon', 'px-elements' ),
+                        'label'            => esc_html__( 'List Icon', 'pixerex-elements' ),
                         'type'             => Controls_Manager::ICONS,
                         'fa4compatibility' => 'eael_pricing_table_list_icon',
                         'default'          => [
@@ -299,52 +299,52 @@ class Pricing_Table extends Widget_Base {
                     ],
                     [
                         'name'         => 'eael_pricing_table_icon_mood',
-                        'label'        => esc_html__( 'Item Active?', 'px-elements' ),
+                        'label'        => esc_html__( 'Item Active?', 'pixerex-elements' ),
                         'type'         => Controls_Manager::SWITCHER,
                         'return_value' => 'yes',
                         'default'      => 'yes',
                     ],
                     [
                         'name'    => 'eael_pricing_table_list_icon_color',
-                        'label'   => esc_html__( 'Icon Color', 'px-elements' ),
+                        'label'   => esc_html__( 'Icon Color', 'pixerex-elements' ),
                         'type'    => Controls_Manager::COLOR,
                         'default' => '#00C853',
                     ],
                     [
                         'name'         => 'eael_pricing_item_tooltip',
-                        'label'        => esc_html__( 'Enable Tooltip?', 'px-elements' ),
+                        'label'        => esc_html__( 'Enable Tooltip?', 'pixerex-elements' ),
                         'type'         => Controls_Manager::SWITCHER,
                         'return_value' => 'yes',
                         'default'      => false,
                     ],
                     [
                         'name'      => 'eael_pricing_item_tooltip_content',
-                        'label'     => esc_html__( 'Tooltip Content', 'px-elements' ),
+                        'label'     => esc_html__( 'Tooltip Content', 'pixerex-elements' ),
                         'type'      => Controls_Manager::TEXTAREA,
-                        'default'   => __( "I'm a awesome tooltip!!", 'px-elements' ),
+                        'default'   => __( "I'm a awesome tooltip!!", 'pixerex-elements' ),
                         'condition' => [
                             'eael_pricing_item_tooltip' => 'yes',
                         ],
                     ],
                     [
                         'name'      => 'eael_pricing_item_tooltip_side',
-                        'label'     => esc_html__( 'Tooltip Side', 'px-elements' ),
+                        'label'     => esc_html__( 'Tooltip Side', 'pixerex-elements' ),
                         'type'      => Controls_Manager::CHOOSE,
                         'options'   => [
                             'left'   => [
-                                'title' => __( 'Left', 'px-elements' ),
+                                'title' => __( 'Left', 'pixerex-elements' ),
                                 'icon'  => 'eicon-h-align-left',
                             ],
                             'top'    => [
-                                'title' => __( 'Top', 'px-elements' ),
+                                'title' => __( 'Top', 'pixerex-elements' ),
                                 'icon'  => 'eicon-v-align-top',
                             ],
                             'right'  => [
-                                'title' => __( 'Right', 'px-elements' ),
+                                'title' => __( 'Right', 'pixerex-elements' ),
                                 'icon'  => 'eicon-h-align-right',
                             ],
                             'bottom' => [
-                                'title' => __( 'Bottom', 'px-elements' ),
+                                'title' => __( 'Bottom', 'pixerex-elements' ),
                                 'icon'  => 'eicon-v-align-bottom',
                             ],
                         ],
@@ -355,11 +355,11 @@ class Pricing_Table extends Widget_Base {
                     ],
                     [
                         'name'      => 'eael_pricing_item_tooltip_trigger',
-                        'label'     => esc_html__( 'Tooltip Trigger', 'px-elements' ),
+                        'label'     => esc_html__( 'Tooltip Trigger', 'pixerex-elements' ),
                         'type'      => Controls_Manager::SELECT2,
                         'options'   => [
-                            'hover' => __( 'Hover', 'px-elements' ),
-                            'click' => __( 'Click', 'px-elements' ),
+                            'hover' => __( 'Hover', 'pixerex-elements' ),
+                            'click' => __( 'Click', 'pixerex-elements' ),
                         ],
                         'default'   => 'hover',
                         'condition' => [
@@ -368,14 +368,14 @@ class Pricing_Table extends Widget_Base {
                     ],
                     [
                         'name'      => 'eael_pricing_item_tooltip_animation',
-                        'label'     => esc_html__( 'Tooltip Animation', 'px-elements' ),
+                        'label'     => esc_html__( 'Tooltip Animation', 'pixerex-elements' ),
                         'type'      => Controls_Manager::SELECT2,
                         'options'   => [
-                            'fade'  => __( 'Fade', 'px-elements' ),
-                            'grow'  => __( 'Grow', 'px-elements' ),
-                            'swing' => __( 'Swing', 'px-elements' ),
-                            'slide' => __( 'Slide', 'px-elements' ),
-                            'fall'  => __( 'Fall', 'px-elements' ),
+                            'fade'  => __( 'Fade', 'pixerex-elements' ),
+                            'grow'  => __( 'Grow', 'pixerex-elements' ),
+                            'swing' => __( 'Swing', 'pixerex-elements' ),
+                            'slide' => __( 'Slide', 'pixerex-elements' ),
+                            'fall'  => __( 'Fall', 'pixerex-elements' ),
                         ],
                         'default'   => 'fade',
                         'condition' => [
@@ -384,7 +384,7 @@ class Pricing_Table extends Widget_Base {
                     ],
                     [
                         'name'      => 'pricing_item_tooltip_animation_duration',
-                        'label'     => esc_html__( 'Animation Duration', 'px-elements' ),
+                        'label'     => esc_html__( 'Animation Duration', 'pixerex-elements' ),
                         'type'      => Controls_Manager::TEXT,
                         'default'   => 300,
                         'condition' => [
@@ -393,7 +393,7 @@ class Pricing_Table extends Widget_Base {
                     ],
                     [
                         'name'         => 'eael_pricing_table_toolip_arrow',
-                        'label'        => esc_html__( 'Tooltip Arrow', 'px-elements' ),
+                        'label'        => esc_html__( 'Tooltip Arrow', 'pixerex-elements' ),
                         'type'         => Controls_Manager::SWITCHER,
                         'return_value' => 'yes',
                         'default'      => 'yes',
@@ -403,15 +403,15 @@ class Pricing_Table extends Widget_Base {
                     ],
                     [
                         'name'      => 'eael_pricing_item_tooltip_theme',
-                        'label'     => esc_html__( 'Tooltip Theme', 'px-elements' ),
+                        'label'     => esc_html__( 'Tooltip Theme', 'pixerex-elements' ),
                         'type'      => Controls_Manager::SELECT2,
                         'options'   => [
-                            'default'    => __( 'Default', 'px-elements' ),
-                            'noir'       => __( 'Noir', 'px-elements' ),
-                            'light'      => __( 'Light', 'px-elements' ),
-                            'punk'       => __( 'Punk', 'px-elements' ),
-                            'shadow'     => __( 'Shadow', 'px-elements' ),
-                            'borderless' => __( 'Borderless', 'px-elements' ),
+                            'default'    => __( 'Default', 'pixerex-elements' ),
+                            'noir'       => __( 'Noir', 'pixerex-elements' ),
+                            'light'      => __( 'Light', 'pixerex-elements' ),
+                            'punk'       => __( 'Punk', 'pixerex-elements' ),
+                            'shadow'     => __( 'Shadow', 'pixerex-elements' ),
+                            'borderless' => __( 'Borderless', 'pixerex-elements' ),
                         ],
                         'default'   => 'noir',
                         'condition' => [
@@ -431,17 +431,17 @@ class Pricing_Table extends Widget_Base {
         $this->start_controls_section(
             'eael_section_pricing_table_footerr',
             [
-                'label' => esc_html__( 'Button', 'px-elements' ),
+                'label' => esc_html__( 'Button', 'pixerex-elements' ),
             ]
         );
 
         $this->add_control(
             'eael_pricing_table_button_show',
             [
-                'label'        => __( 'Display Button', 'px-elements' ),
+                'label'        => __( 'Display Button', 'pixerex-elements' ),
                 'type'         => Controls_Manager::SWITCHER,
-                'label_on'     => __( 'Show', 'px-elements' ),
-                'label_off'    => __( 'Hide', 'px-elements' ),
+                'label_on'     => __( 'Show', 'pixerex-elements' ),
+                'label_off'    => __( 'Hide', 'pixerex-elements' ),
                 'return_value' => 'yes',
                 'default'      => 'yes',
                 'selectors'    => [
@@ -453,7 +453,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_button_icon_new',
             [
-                'label'            => esc_html__( 'Button Icon', 'px-elements' ),
+                'label'            => esc_html__( 'Button Icon', 'pixerex-elements' ),
                 'type'             => Controls_Manager::ICONS,
                 'fa4compatibility' => 'eael_pricing_table_button_icon',
                 'condition'        => [
@@ -465,12 +465,12 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_button_icon_alignment',
             [
-                'label'     => esc_html__( 'Icon Position', 'px-elements' ),
+                'label'     => esc_html__( 'Icon Position', 'pixerex-elements' ),
                 'type'      => Controls_Manager::SELECT,
                 'default'   => 'left',
                 'options'   => [
-                    'left'  => esc_html__( 'Before', 'px-elements' ),
-                    'right' => esc_html__( 'After', 'px-elements' ),
+                    'left'  => esc_html__( 'Before', 'pixerex-elements' ),
+                    'right' => esc_html__( 'After', 'pixerex-elements' ),
                 ],
                 'condition' => [
                     'eael_pricing_table_button_icon_new!' => '',
@@ -482,7 +482,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_button_icon_indent',
             [
-                'label'     => esc_html__( 'Icon Spacing', 'px-elements' ),
+                'label'     => esc_html__( 'Icon Spacing', 'pixerex-elements' ),
                 'type'      => Controls_Manager::SLIDER,
                 'range'     => [
                     'px' => [
@@ -503,10 +503,10 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_btn',
             [
-                'label'       => esc_html__( 'Button Text', 'px-elements' ),
+                'label'       => esc_html__( 'Button Text', 'pixerex-elements' ),
                 'type'        => Controls_Manager::TEXT,
                 'label_block' => true,
-                'default'     => esc_html__( 'Choose Plan', 'px-elements' ),
+                'default'     => esc_html__( 'Choose Plan', 'pixerex-elements' ),
                 'condition'   => [
                     'eael_pricing_table_button_show' => 'yes',
                 ],
@@ -516,7 +516,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_btn_link',
             [
-                'label'         => esc_html__( 'Button Link', 'px-elements' ),
+                'label'         => esc_html__( 'Button Link', 'pixerex-elements' ),
                 'type'          => Controls_Manager::URL,
                 'label_block'   => true,
                 'default'       => [
@@ -538,14 +538,14 @@ class Pricing_Table extends Widget_Base {
         $this->start_controls_section(
             'eael_section_pricing_table_featured',
             [
-                'label' => esc_html__( 'Ribbon', 'px-elements' ),
+                'label' => esc_html__( 'Ribbon', 'pixerex-elements' ),
             ]
         );
 
         $this->add_control(
             'eael_pricing_table_featured',
             [
-                'label'        => esc_html__( 'Featured?', 'px-elements' ),
+                'label'        => esc_html__( 'Featured?', 'pixerex-elements' ),
                 'type'         => Controls_Manager::SWITCHER,
                 'return_value' => 'yes',
                 'default'      => 'no',
@@ -555,14 +555,14 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_featured_styles',
             [
-                'label'     => esc_html__( 'Ribbon Style', 'px-elements' ),
+                'label'     => esc_html__( 'Ribbon Style', 'pixerex-elements' ),
                 'type'      => Controls_Manager::SELECT,
                 'default'   => 'ribbon-1',
                 'options'   => [
-                    'ribbon-1' => esc_html__( 'Style 1', 'px-elements' ),
-                    'ribbon-2' => esc_html__( 'Style 2', 'px-elements' ),
-                    'ribbon-3' => esc_html__( 'Style 3', 'px-elements' ),
-                    'ribbon-4' => esc_html__( 'Style 4', 'px-elements' ),
+                    'ribbon-1' => esc_html__( 'Style 1', 'pixerex-elements' ),
+                    'ribbon-2' => esc_html__( 'Style 2', 'pixerex-elements' ),
+                    'ribbon-3' => esc_html__( 'Style 3', 'pixerex-elements' ),
+                    'ribbon-4' => esc_html__( 'Style 4', 'pixerex-elements' ),
                 ],
                 'condition' => [
                     'eael_pricing_table_featured' => 'yes',
@@ -576,10 +576,10 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_featured_tag_text',
             [
-                'label'       => esc_html__( 'Featured Tag Text', 'px-elements' ),
+                'label'       => esc_html__( 'Featured Tag Text', 'pixerex-elements' ),
                 'type'        => Controls_Manager::TEXT,
                 'label_block' => false,
-                'default'     => esc_html__( 'Featured', 'px-elements' ),
+                'default'     => esc_html__( 'Featured', 'pixerex-elements' ),
                 'selectors'   => [
                     '{{WRAPPER}} .eael-pricing.style-1 .eael-pricing-item.featured:before' => 'content: "{{VALUE}}";',
                     '{{WRAPPER}} .eael-pricing.style-2 .eael-pricing-item.featured:before' => 'content: "{{VALUE}}";',
@@ -596,15 +596,15 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_ribbon_alignment',
             [
-                'label'     => __( 'Ribbon Alignment', 'px-elements' ),
+                'label'     => __( 'Ribbon Alignment', 'pixerex-elements' ),
                 'type'      => \Elementor\Controls_Manager::CHOOSE,
                 'options'   => [
                     'left'  => [
-                        'title' => __( 'Left', 'px-elements' ),
+                        'title' => __( 'Left', 'pixerex-elements' ),
                         'icon'  => 'fa fa-align-left',
                     ],
                     'right' => [
-                        'title' => __( 'Right', 'px-elements' ),
+                        'title' => __( 'Right', 'pixerex-elements' ),
                         'icon'  => 'fa fa-align-right',
                     ],
                 ],
@@ -622,14 +622,14 @@ class Pricing_Table extends Widget_Base {
             $this->start_controls_section(
                 'eael_section_pro',
                 [
-                    'label' => __( 'Go Premium for More Features', 'px-elements' ),
+                    'label' => __( 'Go Premium for More Features', 'pixerex-elements' ),
                 ]
             );
 
             $this->add_control(
                 'eael_control_get_pro',
                 [
-                    'label'       => __( 'Unlock more possibilities', 'px-elements' ),
+                    'label'       => __( 'Unlock more possibilities', 'pixerex-elements' ),
                     'type'        => Controls_Manager::CHOOSE,
                     'options'     => [
                         '1' => [
@@ -653,7 +653,7 @@ class Pricing_Table extends Widget_Base {
         $this->start_controls_section(
             'eael_section_pricing_table_style_settings',
             [
-                'label' => esc_html__( 'Pricing Table Style', 'px-elements' ),
+                'label' => esc_html__( 'Pricing Table Style', 'pixerex-elements' ),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -661,7 +661,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_bg_color',
             [
-                'label'     => esc_html__( 'Background Color', 'px-elements' ),
+                'label'     => esc_html__( 'Background Color', 'pixerex-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -673,7 +673,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_responsive_control(
             'eael_pricing_table_container_padding',
             [
-                'label'      => esc_html__( 'Padding', 'px-elements' ),
+                'label'      => esc_html__( 'Padding', 'pixerex-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors'  => [
@@ -685,7 +685,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_responsive_control(
             'eael_pricing_table_container_margin',
             [
-                'label'      => esc_html__( 'Margin', 'px-elements' ),
+                'label'      => esc_html__( 'Margin', 'pixerex-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors'  => [
@@ -698,7 +698,7 @@ class Pricing_Table extends Widget_Base {
             Group_Control_Border::get_type(),
             [
                 'name'     => 'eael_pricing_table_border',
-                'label'    => esc_html__( 'Border Type', 'px-elements' ),
+                'label'    => esc_html__( 'Border Type', 'pixerex-elements' ),
                 'selector' => '{{WRAPPER}} .eael-pricing .eael-pricing-item',
             ]
         );
@@ -706,7 +706,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_border_radius',
             [
-                'label'     => esc_html__( 'Border Radius', 'px-elements' ),
+                'label'     => esc_html__( 'Border Radius', 'pixerex-elements' ),
                 'type'      => Controls_Manager::SLIDER,
                 'default'   => [
                     'size' => 4,
@@ -735,20 +735,20 @@ class Pricing_Table extends Widget_Base {
         $this->add_responsive_control(
             'eael_pricing_table_content_alignment',
             [
-                'label'        => esc_html__( 'Content Alignment', 'px-elements' ),
+                'label'        => esc_html__( 'Content Alignment', 'pixerex-elements' ),
                 'type'         => Controls_Manager::CHOOSE,
                 'label_block'  => true,
                 'options'      => [
                     'left'   => [
-                        'title' => esc_html__( 'Left', 'px-elements' ),
+                        'title' => esc_html__( 'Left', 'pixerex-elements' ),
                         'icon'  => 'fa fa-align-left',
                     ],
                     'center' => [
-                        'title' => esc_html__( 'Center', 'px-elements' ),
+                        'title' => esc_html__( 'Center', 'pixerex-elements' ),
                         'icon'  => 'fa fa-align-center',
                     ],
                     'right'  => [
-                        'title' => esc_html__( 'Right', 'px-elements' ),
+                        'title' => esc_html__( 'Right', 'pixerex-elements' ),
                         'icon'  => 'fa fa-align-right',
                     ],
                 ],
@@ -760,20 +760,20 @@ class Pricing_Table extends Widget_Base {
         $this->add_responsive_control(
             'eael_pricing_table_content_button_alignment',
             [
-                'label'        => esc_html__( 'Button Alignment', 'px-elements' ),
+                'label'        => esc_html__( 'Button Alignment', 'pixerex-elements' ),
                 'type'         => Controls_Manager::CHOOSE,
                 'label_block'  => true,
                 'options'      => [
                     'left'   => [
-                        'title' => esc_html__( 'Left', 'px-elements' ),
+                        'title' => esc_html__( 'Left', 'pixerex-elements' ),
                         'icon'  => 'fa fa-align-left',
                     ],
                     'center' => [
-                        'title' => esc_html__( 'Center', 'px-elements' ),
+                        'title' => esc_html__( 'Center', 'pixerex-elements' ),
                         'icon'  => 'fa fa-align-center',
                     ],
                     'right'  => [
-                        'title' => esc_html__( 'Right', 'px-elements' ),
+                        'title' => esc_html__( 'Right', 'pixerex-elements' ),
                         'icon'  => 'fa fa-align-right',
                     ],
                 ],
@@ -792,7 +792,7 @@ class Pricing_Table extends Widget_Base {
         $this->start_controls_section(
             'eael_section_pricing_table_header_style_settings',
             [
-                'label' => esc_html__( 'Header', 'px-elements' ),
+                'label' => esc_html__( 'Header', 'pixerex-elements' ),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -800,7 +800,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_title_heading',
             [
-                'label' => esc_html__( 'Title Style', 'px-elements' ),
+                'label' => esc_html__( 'Title Style', 'pixerex-elements' ),
                 'type'  => Controls_Manager::HEADING,
             ]
         );
@@ -808,7 +808,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_title_color',
             [
-                'label'     => esc_html__( 'Color', 'px-elements' ),
+                'label'     => esc_html__( 'Color', 'pixerex-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -821,7 +821,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_style_2_title_bg_color',
             [
-                'label'     => esc_html__( 'Background Color', 'px-elements' ),
+                'label'     => esc_html__( 'Background Color', 'pixerex-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#C8E6C9',
                 'selectors' => [
@@ -837,7 +837,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_style_1_title_line_color',
             [
-                'label'     => esc_html__( 'Line Color', 'px-elements' ),
+                'label'     => esc_html__( 'Line Color', 'pixerex-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#dbdbdb',
                 'selectors' => [
@@ -860,7 +860,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_subtitle_heading',
             [
-                'label'     => esc_html__( 'Subtitle Style', 'px-elements' ),
+                'label'     => esc_html__( 'Subtitle Style', 'pixerex-elements' ),
                 'type'      => Controls_Manager::HEADING,
                 'separator' => 'before',
                 'condition' => [
@@ -872,7 +872,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_subtitle_color',
             [
-                'label'     => esc_html__( 'Color', 'px-elements' ),
+                'label'     => esc_html__( 'Color', 'pixerex-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -946,7 +946,7 @@ class Pricing_Table extends Widget_Base {
         $this->start_controls_section(
             'eael_section_pricing_table_title_style_settings',
             [
-                'label' => esc_html__( 'Pricing', 'px-elements' ),
+                'label' => esc_html__( 'Pricing', 'pixerex-elements' ),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -954,7 +954,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_price_tag_onsale_heading',
             [
-                'label'     => esc_html__( 'Original Price', 'px-elements' ),
+                'label'     => esc_html__( 'Original Price', 'pixerex-elements' ),
                 'type'      => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -963,7 +963,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_pricing_onsale_color',
             [
-                'label'     => esc_html__( 'Color', 'px-elements' ),
+                'label'     => esc_html__( 'Color', 'pixerex-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#999',
                 'selectors' => [
@@ -983,7 +983,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_original_price_currency_heading',
             [
-                'label'     => esc_html__( 'Original Price Currency', 'px-elements' ),
+                'label'     => esc_html__( 'Original Price Currency', 'pixerex-elements' ),
                 'type'      => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -992,7 +992,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_original_price_currency_color',
             [
-                'label'     => esc_html__( 'Color', 'px-elements' ),
+                'label'     => esc_html__( 'Color', 'pixerex-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .eael-pricing-item .eael-pricing-tag .price-tag .original-price .price-currency' => 'color: {{VALUE}};',
@@ -1011,7 +1011,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_responsive_control(
             'eael_pricing_table_original_price_currency_margin',
             [
-                'label'      => esc_html__( 'Margin', 'px-elements' ),
+                'label'      => esc_html__( 'Margin', 'pixerex-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors'  => [
@@ -1024,7 +1024,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_price_tag_heading',
             [
-                'label'     => esc_html__( 'Sale Price', 'px-elements' ),
+                'label'     => esc_html__( 'Sale Price', 'pixerex-elements' ),
                 'type'      => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -1033,7 +1033,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_pricing_color',
             [
-                'label'     => esc_html__( 'Color', 'px-elements' ),
+                'label'     => esc_html__( 'Color', 'pixerex-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#00C853',
                 'selectors' => [
@@ -1053,7 +1053,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_price_currency_heading',
             [
-                'label'     => esc_html__( 'Sale Price Currency', 'px-elements' ),
+                'label'     => esc_html__( 'Sale Price Currency', 'pixerex-elements' ),
                 'type'      => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -1062,7 +1062,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_pricing_curr_color',
             [
-                'label'     => esc_html__( 'Color', 'px-elements' ),
+                'label'     => esc_html__( 'Color', 'pixerex-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .eael-pricing-item .eael-pricing-tag .price-tag .sale-price .price-currency' => 'color: {{VALUE}};',
@@ -1081,7 +1081,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_responsive_control(
             'eael_pricing_table_price_cur_margin',
             [
-                'label'      => esc_html__( 'Margin', 'px-elements' ),
+                'label'      => esc_html__( 'Margin', 'pixerex-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors'  => [
@@ -1093,7 +1093,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_pricing_period_heading',
             [
-                'label'     => esc_html__( 'Pricing Period', 'px-elements' ),
+                'label'     => esc_html__( 'Pricing Period', 'pixerex-elements' ),
                 'type'      => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -1102,7 +1102,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_pricing_period_color',
             [
-                'label'     => esc_html__( 'Color', 'px-elements' ),
+                'label'     => esc_html__( 'Color', 'pixerex-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -1129,7 +1129,7 @@ class Pricing_Table extends Widget_Base {
         $this->start_controls_section(
             'eael_section_pricing_table_style_featured_list_settings',
             [
-                'label' => esc_html__( 'Feature List', 'px-elements' ),
+                'label' => esc_html__( 'Feature List', 'pixerex-elements' ),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -1137,7 +1137,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_list_item_color',
             [
-                'label'     => esc_html__( 'Color', 'px-elements' ),
+                'label'     => esc_html__( 'Color', 'pixerex-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -1149,7 +1149,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_list_disable_item_color',
             [
-                'label'     => esc_html__( 'Disable item color', 'px-elements' ),
+                'label'     => esc_html__( 'Disable item color', 'pixerex-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -1161,7 +1161,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_list_item_icon_size',
             [
-                'label'     => esc_html__( 'Icon Size', 'px-elements' ),
+                'label'     => esc_html__( 'Icon Size', 'pixerex-elements' ),
                 'type'      => Controls_Manager::SLIDER,
                 'default'   => [
                     'size' => 20,
@@ -1197,7 +1197,7 @@ class Pricing_Table extends Widget_Base {
         $this->start_controls_section(
             'eael_section_pricing_table_style_3_featured_tag_settings',
             [
-                'label' => esc_html__( 'Ribbon', 'px-elements' ),
+                'label' => esc_html__( 'Ribbon', 'pixerex-elements' ),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -1205,7 +1205,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_style_1_featured_bar_color',
             [
-                'label'     => esc_html__( 'Line Color', 'px-elements' ),
+                'label'     => esc_html__( 'Line Color', 'pixerex-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#00C853',
                 'selectors' => [
@@ -1224,7 +1224,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_style_1_featured_bar_height',
             [
-                'label'     => esc_html__( 'Line Height', 'px-elements' ),
+                'label'     => esc_html__( 'Line Height', 'pixerex-elements' ),
                 'type'      => Controls_Manager::SLIDER,
                 'default'   => [
                     'size' => 3,
@@ -1250,7 +1250,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_featured_tag_font_size',
             [
-                'label'     => esc_html__( 'Font Size', 'px-elements' ),
+                'label'     => esc_html__( 'Font Size', 'pixerex-elements' ),
                 'type'      => Controls_Manager::SLIDER,
                 'default'   => [
                     'size' => 10,
@@ -1283,7 +1283,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_featured_tag_text_color',
             [
-                'label'     => esc_html__( 'Color', 'px-elements' ),
+                'label'     => esc_html__( 'Color', 'pixerex-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -1309,7 +1309,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_featured_tag_bg_color',
             [
-                'label'     => esc_html__( 'Background Color', 'px-elements' ),
+                'label'     => esc_html__( 'Background Color', 'pixerex-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -1341,7 +1341,7 @@ class Pricing_Table extends Widget_Base {
             \Elementor\Group_Control_Box_Shadow::get_type(),
             [
                 'name'      => 'eael_pricing_table_featured_tag_bg_shadow',
-                'label'     => __( 'Shadow', 'px-elements' ),
+                'label'     => __( 'Shadow', 'pixerex-elements' ),
                 'selector'  => '{{WRAPPER}} .eael-pricing .eael-pricing-item.ribbon-4:before',
                 'condition' => [
                     'eael_pricing_table_featured'        => 'yes',
@@ -1360,7 +1360,7 @@ class Pricing_Table extends Widget_Base {
         $this->start_controls_section(
             'eael_section_pricing_table_tooltip_style',
             [
-                'label' => esc_html__( 'Tooltip', 'px-elements' ),
+                'label' => esc_html__( 'Tooltip', 'pixerex-elements' ),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -1368,7 +1368,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_tooltip_bg_color',
             [
-                'label'     => esc_html__( 'Background Color', 'px-elements' ),
+                'label'     => esc_html__( 'Background Color', 'pixerex-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -1380,7 +1380,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_tooltip_arrow_bg',
             [
-                'label'     => esc_html__( 'Arrow Background', 'px-elements' ),
+                'label'     => esc_html__( 'Arrow Background', 'pixerex-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#3d3d3d',
                 'selectors' => [
@@ -1398,7 +1398,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_tooltip_color',
             [
-                'label'     => esc_html__( 'Color', 'px-elements' ),
+                'label'     => esc_html__( 'Color', 'pixerex-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -1410,10 +1410,10 @@ class Pricing_Table extends Widget_Base {
         $this->add_responsive_control(
             'eael_pricing_table_tooltip_padding',
             [
-                'label'       => esc_html__( 'Padding', 'px-elements' ),
+                'label'       => esc_html__( 'Padding', 'pixerex-elements' ),
                 'type'        => Controls_Manager::DIMENSIONS,
                 'size_units'  => 'px',
-                'description' => __( 'Refresh your browser after saving the padding value for see changes.', 'px-elements' ),
+                'description' => __( 'Refresh your browser after saving the padding value for see changes.', 'pixerex-elements' ),
                 'selectors'   => [
                     'div.tooltipster-base.tooltipster-sidetip .tooltipster-content' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
@@ -1424,7 +1424,7 @@ class Pricing_Table extends Widget_Base {
             Group_Control_Border::get_type(),
             [
                 'name'     => 'eael_pricing_table_tooltip_border',
-                'label'    => esc_html__( 'Border Type', 'px-elements' ),
+                'label'    => esc_html__( 'Border Type', 'pixerex-elements' ),
                 'selector' => '.tooltipster-base.tooltipster-sidetip .tooltipster-box',
             ]
         );
@@ -1432,7 +1432,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_tooltip_border_radius',
             [
-                'label'      => esc_html__( 'Border Radius', 'px-elements' ),
+                'label'      => esc_html__( 'Border Radius', 'pixerex-elements' ),
                 'type'       => Controls_Manager::SLIDER,
                 'size_units' => ['px', '%'],
                 'range'      => [
@@ -1454,7 +1454,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_tooltip_arrow_heading',
             [
-                'label'     => __( 'Tooltip Arrow', 'px-elements' ),
+                'label'     => __( 'Tooltip Arrow', 'pixerex-elements' ),
                 'separator' => 'before',
                 'type'      => Controls_Manager::HEADING,
             ]
@@ -1463,7 +1463,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_tooltip_arrow_size',
             [
-                'label'     => esc_html__( 'Arrow Size', 'px-elements' ),
+                'label'     => esc_html__( 'Arrow Size', 'pixerex-elements' ),
                 'type'      => Controls_Manager::SLIDER,
                 'range'     => [
                     'px' => [
@@ -1508,7 +1508,7 @@ class Pricing_Table extends Widget_Base {
         $this->start_controls_section(
             'eael_section_pricing_table_icon_settings',
             [
-                'label'     => esc_html__( 'Icon Settings', 'px-elements' ),
+                'label'     => esc_html__( 'Icon Settings', 'pixerex-elements' ),
                 'tab'       => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'eael_pricing_table_style' => apply_filters( 'eael_pricing_table_icon_supported_style', ['style-2'] ),
@@ -1519,11 +1519,11 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_icon_bg_show',
             [
-                'label'        => __( 'Show Background', 'px-elements' ),
+                'label'        => __( 'Show Background', 'pixerex-elements' ),
                 'type'         => Controls_Manager::SWITCHER,
                 'default'      => 'yes',
-                'label_on'     => __( 'Show', 'px-elements' ),
-                'label_off'    => __( 'Hide', 'px-elements' ),
+                'label_on'     => __( 'Show', 'pixerex-elements' ),
+                'label_off'    => __( 'Hide', 'pixerex-elements' ),
                 'return_value' => 'yes',
             ]
         );
@@ -1534,7 +1534,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_icon_bg_color',
             [
-                'label'     => esc_html__( 'Background Color', 'px-elements' ),
+                'label'     => esc_html__( 'Background Color', 'pixerex-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -1552,7 +1552,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_icon_bg_hover_color',
             [
-                'label'     => esc_html__( 'Background Hover Color', 'px-elements' ),
+                'label'     => esc_html__( 'Background Hover Color', 'pixerex-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -1568,7 +1568,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_responsive_control(
             'eael_pricing_table_icon_settings',
             [
-                'label'     => esc_html__( 'Icon Size', 'px-elements' ),
+                'label'     => esc_html__( 'Icon Size', 'pixerex-elements' ),
                 'type'      => Controls_Manager::SLIDER,
                 'default'   => [
                     'size' => 30,
@@ -1588,7 +1588,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_responsive_control(
             'eael_pricing_table_icon_area_width',
             [
-                'label'      => esc_html__( 'Icon Area Width', 'px-elements' ),
+                'label'      => esc_html__( 'Icon Area Width', 'pixerex-elements' ),
                 'type'       => Controls_Manager::SLIDER,
                 'size_units' => ['px', '%'],
                 'default'    => [
@@ -1613,7 +1613,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_responsive_control(
             'eael_pricing_table_icon_area_height',
             [
-                'label'     => esc_html__( 'Icon Area Height', 'px-elements' ),
+                'label'     => esc_html__( 'Icon Area Height', 'pixerex-elements' ),
                 'type'      => Controls_Manager::SLIDER,
                 'default'   => [
                     'size' => 80,
@@ -1632,7 +1632,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_icon_color',
             [
-                'label'     => esc_html__( 'Icon Color', 'px-elements' ),
+                'label'     => esc_html__( 'Icon Color', 'pixerex-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -1644,7 +1644,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_icon_hover_color',
             [
-                'label'     => esc_html__( 'Icon Hover Color', 'px-elements' ),
+                'label'     => esc_html__( 'Icon Hover Color', 'pixerex-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -1658,7 +1658,7 @@ class Pricing_Table extends Widget_Base {
             Group_Control_Border::get_type(),
             [
                 'name'     => 'eael_pricing_table_icon_border',
-                'label'    => esc_html__( 'Border', 'px-elements' ),
+                'label'    => esc_html__( 'Border', 'pixerex-elements' ),
                 'selector' => '{{WRAPPER}} .eael-pricing.style-2 .eael-pricing-item .eael-pricing-icon .icon, {{WRAPPER}} .eael-pricing.style-5 .eael-pricing-item .eael-pricing-icon .icon',
             ]
         );
@@ -1666,7 +1666,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_icon_border_hover_color',
             [
-                'label'     => esc_html__( 'Hover Color', 'px-elements' ),
+                'label'     => esc_html__( 'Hover Color', 'pixerex-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -1681,7 +1681,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_icon_border_radius',
             [
-                'label'     => esc_html__( 'Border Radius', 'px-elements' ),
+                'label'     => esc_html__( 'Border Radius', 'pixerex-elements' ),
                 'type'      => Controls_Manager::SLIDER,
                 'default'   => [
                     'size' => 50,
@@ -1707,7 +1707,7 @@ class Pricing_Table extends Widget_Base {
         $this->start_controls_section(
             'eael_section_pricing_table_btn_style_settings',
             [
-                'label' => esc_html__( 'Button', 'px-elements' ),
+                'label' => esc_html__( 'Button', 'pixerex-elements' ),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -1715,7 +1715,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_responsive_control(
             'eael_pricing_table_btn_padding',
             [
-                'label'      => esc_html__( 'Padding', 'px-elements' ),
+                'label'      => esc_html__( 'Padding', 'pixerex-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors'  => [
@@ -1727,7 +1727,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_responsive_control(
             'eael_pricing_table_btn_margin',
             [
-                'label'      => esc_html__( 'Margin', 'px-elements' ),
+                'label'      => esc_html__( 'Margin', 'pixerex-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors'  => [
@@ -1739,7 +1739,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_btn_icon_size',
             [
-                'label'     => esc_html__( 'Icon Size', 'px-elements' ),
+                'label'     => esc_html__( 'Icon Size', 'pixerex-elements' ),
                 'type'      => Controls_Manager::SLIDER,
                 'default'   => [
                     'size' => 20,
@@ -1768,10 +1768,10 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_is_button_gradient_background',
             [
-                'label'        => __( 'Button Gradient Background', 'px-elements' ),
+                'label'        => __( 'Button Gradient Background', 'pixerex-elements' ),
                 'type'         => Controls_Manager::SWITCHER,
-                'label_on'     => __( 'Yes', 'px-elements' ),
-                'label_off'    => __( 'No', 'px-elements' ),
+                'label_on'     => __( 'Yes', 'pixerex-elements' ),
+                'label_off'    => __( 'No', 'pixerex-elements' ),
                 'return_value' => 'yes',
             ]
         );
@@ -1779,12 +1779,12 @@ class Pricing_Table extends Widget_Base {
         $this->start_controls_tabs( 'eael_cta_button_tabs' );
 
         // Normal State Tab
-        $this->start_controls_tab( 'eael_pricing_table_btn_normal', ['label' => esc_html__( 'Normal', 'px-elements' )] );
+        $this->start_controls_tab( 'eael_pricing_table_btn_normal', ['label' => esc_html__( 'Normal', 'pixerex-elements' )] );
 
         $this->add_control(
             'eael_pricing_table_btn_normal_text_color',
             [
-                'label'     => esc_html__( 'Text Color', 'px-elements' ),
+                'label'     => esc_html__( 'Text Color', 'pixerex-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#fff',
                 'selectors' => [
@@ -1796,7 +1796,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_btn_normal_bg_color',
             [
-                'label'     => esc_html__( 'Background Color', 'px-elements' ),
+                'label'     => esc_html__( 'Background Color', 'pixerex-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#00C853',
                 'selectors' => [
@@ -1811,7 +1811,7 @@ class Pricing_Table extends Widget_Base {
             \Elementor\Group_Control_Background::get_type(),
             [
                 'name'      => 'eael_pricing_table_btn_normal_bg_gradient',
-                'label'     => __( 'Background', 'px-elements' ),
+                'label'     => __( 'Background', 'pixerex-elements' ),
                 'types'     => ['gradient'],
                 'selector'  => '{{WRAPPER}} .eael-pricing .eael-pricing-button',
                 'condition' => [
@@ -1824,7 +1824,7 @@ class Pricing_Table extends Widget_Base {
             Group_Control_Border::get_type(),
             [
                 'name'     => 'eael_pricing_table_btn_border',
-                'label'    => esc_html__( 'Border', 'px-elements' ),
+                'label'    => esc_html__( 'Border', 'pixerex-elements' ),
                 'selector' => '{{WRAPPER}} .eael-pricing .eael-pricing-button',
             ]
         );
@@ -1832,7 +1832,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_btn_border_radius',
             [
-                'label'     => esc_html__( 'Border Radius', 'px-elements' ),
+                'label'     => esc_html__( 'Border Radius', 'pixerex-elements' ),
                 'type'      => Controls_Manager::SLIDER,
                 'range'     => [
                     'px' => [
@@ -1848,12 +1848,12 @@ class Pricing_Table extends Widget_Base {
         $this->end_controls_tab();
 
         // Hover State Tab
-        $this->start_controls_tab( 'eael_pricing_table_btn_hover', ['label' => esc_html__( 'Hover', 'px-elements' )] );
+        $this->start_controls_tab( 'eael_pricing_table_btn_hover', ['label' => esc_html__( 'Hover', 'pixerex-elements' )] );
 
         $this->add_control(
             'eael_pricing_table_btn_hover_text_color',
             [
-                'label'     => esc_html__( 'Text Color', 'px-elements' ),
+                'label'     => esc_html__( 'Text Color', 'pixerex-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#f9f9f9',
                 'selectors' => [
@@ -1865,7 +1865,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_btn_hover_bg_color',
             [
-                'label'     => esc_html__( 'Background Color', 'px-elements' ),
+                'label'     => esc_html__( 'Background Color', 'pixerex-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#03b048',
                 'selectors' => [
@@ -1880,7 +1880,7 @@ class Pricing_Table extends Widget_Base {
             \Elementor\Group_Control_Background::get_type(),
             [
                 'name'      => 'eael_pricing_table_btn_hover_bg_gradient',
-                'label'     => __( 'Background', 'px-elements' ),
+                'label'     => __( 'Background', 'pixerex-elements' ),
                 'types'     => ['gradient'],
                 'selector'  => '{{WRAPPER}} .eael-pricing .eael-pricing-button:hover',
                 'condition' => [
@@ -1892,7 +1892,7 @@ class Pricing_Table extends Widget_Base {
         $this->add_control(
             'eael_pricing_table_btn_hover_border_color',
             [
-                'label'     => esc_html__( 'Border Color', 'px-elements' ),
+                'label'     => esc_html__( 'Border Color', 'pixerex-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [

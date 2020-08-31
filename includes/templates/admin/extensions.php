@@ -2,57 +2,57 @@
 
 $extensions = [
     'eael-pro-extensions'   => [
-        'title'      => __( 'Premium Extensions', 'px-elements'),
+        'title'      => __( 'Premium Extensions', 'pixerex-elements'),
         'extensions' => [
             [
                 'key'    => 'section-parallax',
-                'title'  => __( 'Parallax', 'px-elements'),
+                'title'  => __( 'Parallax', 'pixerex-elements'),
                 'demo_link' => 'https://essential-addons.com/elementor/parallax-scrolling/',
                 'doc_link' => 'https://essential-addons.com/elementor/docs/ea-parallax/',
                 'is_pro' => true
             ],
             [
                 'key'    => 'section-particles',
-                'title'  => __( 'Particles', 'px-elements'),
+                'title'  => __( 'Particles', 'pixerex-elements'),
                 'demo_link' => 'https://essential-addons.com/elementor/particle-effect/',
                 'doc_link' => 'https://essential-addons.com/elementor/docs/particles/',
                 'is_pro' => true
             ],
             [
                 'key'    => 'eael-tooltip-section',
-                'title'  => __( 'Advanced Tooltip', 'px-elements'),
+                'title'  => __( 'Advanced Tooltip', 'pixerex-elements'),
                 'demo_link' => 'https://essential-addons.com/elementor/advanced-tooltip/',
                 'doc_link' => 'https://essential-addons.com/elementor/docs/ea-advanced-tooltip/',
                 'is_pro' => true
             ],
             [
                 'key'    => 'eael-content-protection',
-                'title'  => __( 'Content Protection', 'px-elements'),
+                'title'  => __( 'Content Protection', 'pixerex-elements'),
                 'demo_link' => 'https://essential-addons.com/elementor/content-protection/',
                 'doc_link' => 'https://essential-addons.com/elementor/docs/ea-content-protection/',
                 'is_pro' => true
             ],
             [
                 'key'    => 'eael-reading-progress',
-                'title'  => __( 'Reading Progress Bar', 'px-elements'),
+                'title'  => __( 'Reading Progress Bar', 'pixerex-elements'),
                 'demo_link' => 'https://essential-addons.com/elementor/reading-progress/',
                 'doc_link' => 'https://essential-addons.com/elementor/docs/ea-reading-progress-bar/',
             ],
             [
                 'key'    => 'eael-table-of-content',
-                'title'  => __( 'Table of Contents', 'px-elements' ),
+                'title'  => __( 'Table of Contents', 'pixerex-elements' ),
                 'demo_link' => 'https://essential-addons.com/elementor/table-of-content/',
                 'doc_link' => 'https://essential-addons.com/elementor/docs/table-of-content',
             ],
             [
                 'key'    => 'eael-post-duplicator',
-                'title'  => __( 'Duplicator', 'px-elements'),
+                'title'  => __( 'Duplicator', 'pixerex-elements'),
                 'demo_link' => 'https://essential-addons.com/elementor/duplicator/',
                 'doc_link' => 'https://essential-addons.com/elementor/docs/duplicator/',
             ],
             [
                 'key'    => 'eael-custom-js',
-                'title'  => __( 'Custom JS', 'px-elements'),
+                'title'  => __( 'Custom JS', 'pixerex-elements'),
                 'demo_link' => 'https://essential-addons.com/elementor/custom-js/',
                 'doc_link' => 'https://essential-addons.com/elementor/docs/custom-js/',
             ]
@@ -79,10 +79,10 @@ $extensions = [
                     <div class="eael-checkbox">
                         <div class="eael-elements-info">
                             <p class="eael-el-title">
-                                <?php _e( $item['title'], 'px-elements') ?>
-                                <?php echo isset( $item['is_pro'] ) && !$this->pro_enabled ? '<sup class="pro-label">'.__('Pro', 'px-elements').'</sup>' : ''; ?>
+                                <?php _e( $item['title'], 'pixerex-elements') ?>
+                                <?php echo isset( $item['is_pro'] ) && !$this->pro_enabled ? '<sup class="pro-label">'.__('Pro', 'pixerex-elements').'</sup>' : ''; ?>
                                 <?php if ($item['key'] === 'eael-post-duplicator') {
-                                    echo '<span style="font-size: 12px; font-style:italic;"><a href="#" class="eael-admin-settings-popup" data-title="Select Post Types" data-option="select" data-options=' . json_encode(get_post_types(['public' => true, 'show_in_nav_menus' => true])) . ' data-target="#post-duplicator-post-type">'.__('Settings', 'px-elements').'</a></span>
+                                    echo '<span style="font-size: 12px; font-style:italic;"><a href="#" class="eael-admin-settings-popup" data-title="Select Post Types" data-option="select" data-options=' . json_encode(get_post_types(['public' => true, 'show_in_nav_menus' => true])) . ' data-target="#post-duplicator-post-type">'.__('Settings', 'pixerex-elements').'</a></span>
                                     <input type="hidden" name="post-duplicator-post-type" id="post-duplicator-post-type" class="post-duplicator-post-type" value="'.get_option('eael_save_post_duplicator_post_type').'">';
                                 } ?>
                             </p>
@@ -103,7 +103,7 @@ $extensions = [
             <?php endforeach; ?>
 
             <div class="eael-save-btn-wrap">
-                <button type="submit" class="button eael-btn js-eael-settings-save"><?php _e('Save settings', 'px-elements'); ?></button>
+                <button type="submit" class="button eael-btn js-eael-settings-save"><?php _e('Save settings', 'pixerex-elements'); ?></button>
             </div>
         </div>
     </div>

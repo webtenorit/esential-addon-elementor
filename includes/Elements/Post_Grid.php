@@ -22,7 +22,7 @@ class Post_Grid extends Widget_Base {
     }
 
     public function get_title() {
-        return __( 'Post Grid', 'px-elements' );
+        return __( 'Post Grid', 'pixerex-elements' );
     }
 
     public function get_icon() {
@@ -78,14 +78,14 @@ class Post_Grid extends Widget_Base {
         $this->start_controls_section(
             'section_post_grid_links',
             [
-                'label' => __( 'Links', 'px-elements' ),
+                'label' => __( 'Links', 'pixerex-elements' ),
             ]
         );
 
         $this->add_control(
             'image_link',
             [
-                'label'     => __( 'Image', 'px-elements' ),
+                'label'     => __( 'Image', 'pixerex-elements' ),
                 'type'      => Controls_Manager::HEADING,
                 'condition' => [
                     'eael_show_image' => 'yes',
@@ -96,10 +96,10 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'image_link_nofollow',
             [
-                'label'        => __( 'No Follow', 'px-elements' ),
+                'label'        => __( 'No Follow', 'pixerex-elements' ),
                 'type'         => Controls_Manager::SWITCHER,
-                'label_on'     => __( 'Yes', 'px-elements' ),
-                'label_off'    => __( 'No', 'px-elements' ),
+                'label_on'     => __( 'Yes', 'pixerex-elements' ),
+                'label_off'    => __( 'No', 'pixerex-elements' ),
                 'return_value' => 'true',
                 'condition'    => [
                     'eael_show_image' => 'yes',
@@ -110,10 +110,10 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'image_link_target_blank',
             [
-                'label'        => __( 'Target Blank', 'px-elements' ),
+                'label'        => __( 'Target Blank', 'pixerex-elements' ),
                 'type'         => Controls_Manager::SWITCHER,
-                'label_on'     => __( 'Yes', 'px-elements' ),
-                'label_off'    => __( 'No', 'px-elements' ),
+                'label_on'     => __( 'Yes', 'pixerex-elements' ),
+                'label_off'    => __( 'No', 'pixerex-elements' ),
                 'return_value' => 'true',
                 'condition'    => [
                     'eael_show_image' => 'yes',
@@ -124,7 +124,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'title_link',
             [
-                'label'     => __( 'Title', 'px-elements' ),
+                'label'     => __( 'Title', 'pixerex-elements' ),
                 'type'      => Controls_Manager::HEADING,
                 'condition' => [
                     'eael_show_title' => 'yes',
@@ -136,10 +136,10 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'title_link_nofollow',
             [
-                'label'        => __( 'No Follow', 'px-elements' ),
+                'label'        => __( 'No Follow', 'pixerex-elements' ),
                 'type'         => Controls_Manager::SWITCHER,
-                'label_on'     => __( 'Yes', 'px-elements' ),
-                'label_off'    => __( 'No', 'px-elements' ),
+                'label_on'     => __( 'Yes', 'pixerex-elements' ),
+                'label_off'    => __( 'No', 'pixerex-elements' ),
                 'return_value' => 'true',
                 'condition'    => [
                     'eael_show_title' => 'yes',
@@ -150,10 +150,10 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'title_link_target_blank',
             [
-                'label'        => __( 'Target Blank', 'px-elements' ),
+                'label'        => __( 'Target Blank', 'pixerex-elements' ),
                 'type'         => Controls_Manager::SWITCHER,
-                'label_on'     => __( 'Yes', 'px-elements' ),
-                'label_off'    => __( 'No', 'px-elements' ),
+                'label_on'     => __( 'Yes', 'pixerex-elements' ),
+                'label_off'    => __( 'No', 'pixerex-elements' ),
                 'return_value' => 'true',
                 'condition'    => [
                     'eael_show_title' => 'yes',
@@ -164,7 +164,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'read_more_link',
             [
-                'label'     => __( 'Read More', 'px-elements' ),
+                'label'     => __( 'Read More', 'pixerex-elements' ),
                 'type'      => Controls_Manager::HEADING,
                 'condition' => [
                     'eael_show_read_more_button' => 'yes',
@@ -176,10 +176,10 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'read_more_link_nofollow',
             [
-                'label'        => __( 'No Follow', 'px-elements' ),
+                'label'        => __( 'No Follow', 'pixerex-elements' ),
                 'type'         => Controls_Manager::SWITCHER,
-                'label_on'     => __( 'Yes', 'px-elements' ),
-                'label_off'    => __( 'No', 'px-elements' ),
+                'label_on'     => __( 'Yes', 'pixerex-elements' ),
+                'label_off'    => __( 'No', 'pixerex-elements' ),
                 'return_value' => 'true',
                 'condition'    => [
                     'eael_show_read_more_button' => 'yes',
@@ -190,10 +190,10 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'read_more_link_target_blank',
             [
-                'label'        => __( 'Target Blank', 'px-elements' ),
+                'label'        => __( 'Target Blank', 'pixerex-elements' ),
                 'type'         => Controls_Manager::SWITCHER,
-                'label_on'     => __( 'Yes', 'px-elements' ),
-                'label_off'    => __( 'No', 'px-elements' ),
+                'label_on'     => __( 'Yes', 'pixerex-elements' ),
+                'label_off'    => __( 'No', 'pixerex-elements' ),
                 'return_value' => 'true',
                 'condition'    => [
                     'eael_show_read_more_button' => 'yes',
@@ -209,19 +209,19 @@ class Post_Grid extends Widget_Base {
         $this->start_controls_section(
             'eael_section_post_grid_style',
             [
-                'label' => __( 'Post Grid Style', 'px-elements' ),
+                'label' => __( 'Post Grid Style', 'pixerex-elements' ),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
         $this->add_control(
             'eael_post_grid_preset_style',
             [
-                'label'   => __( 'Select Style', 'px-elements' ),
+                'label'   => __( 'Select Style', 'pixerex-elements' ),
                 'type'    => \Elementor\Controls_Manager::SELECT,
                 'options' => [
-                    ''      => __( 'Default', 'px-elements' ),
-                    'two'   => __( 'Style Two', 'px-elements' ),
-                    'three' => __( 'Style Three', 'px-elements' ),
+                    ''      => __( 'Default', 'pixerex-elements' ),
+                    'two'   => __( 'Style Two', 'pixerex-elements' ),
+                    'three' => __( 'Style Three', 'pixerex-elements' ),
                 ],
             ]
         );
@@ -230,7 +230,7 @@ class Post_Grid extends Widget_Base {
             'eael_post_grid_style_three_alert',
             [
                 'type'            => \Elementor\Controls_Manager::RAW_HTML,
-                'raw'             => __( 'Make sure to enable <strong>Show Date</strong> option from <strong>Layout Settings</strong>', 'px-elements' ),
+                'raw'             => __( 'Make sure to enable <strong>Show Date</strong> option from <strong>Layout Settings</strong>', 'pixerex-elements' ),
                 'content_classes' => 'eael-warning',
                 'condition'       => [
                     'eael_post_grid_preset_style' => ['two', 'three'],
@@ -242,7 +242,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'eael_post_grid_bg_color',
             [
-                'label'     => __( 'Post Background Color', 'px-elements' ),
+                'label'     => __( 'Post Background Color', 'pixerex-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#fff',
                 'selectors' => [
@@ -255,7 +255,7 @@ class Post_Grid extends Widget_Base {
         $this->add_responsive_control(
             'eael_post_grid_spacing',
             [
-                'label'      => esc_html__( 'Spacing Between Items', 'px-elements' ),
+                'label'      => esc_html__( 'Spacing Between Items', 'pixerex-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%', 'em'],
                 'selectors'  => [
@@ -268,7 +268,7 @@ class Post_Grid extends Widget_Base {
             Group_Control_Border::get_type(),
             [
                 'name'     => 'eael_post_grid_border',
-                'label'    => esc_html__( 'Border', 'px-elements' ),
+                'label'    => esc_html__( 'Border', 'pixerex-elements' ),
                 'selector' => '{{WRAPPER}} .eael-grid-post-holder',
             ]
         );
@@ -276,7 +276,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'eael_post_grid_border_radius',
             [
-                'label'     => esc_html__( 'Border Radius', 'px-elements' ),
+                'label'     => esc_html__( 'Border Radius', 'pixerex-elements' ),
                 'type'      => Controls_Manager::DIMENSIONS,
                 'selectors' => [
                     '{{WRAPPER}} .eael-grid-post-holder' => 'border-radius: {{TOP}}px {{RIGHT}}px {{BOTTOM}}px {{LEFT}}px;',
@@ -301,7 +301,7 @@ class Post_Grid extends Widget_Base {
         $this->start_controls_section(
             'eael_section_post_grid_thumbnail_style',
             [
-                'label' => __( 'Thumbnail Style', 'px-elements' ),
+                'label' => __( 'Thumbnail Style', 'pixerex-elements' ),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -309,7 +309,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'eael_post_grid_thumbnail_radius',
             [
-                'label'     => esc_html__( 'Radius', 'px-elements' ),
+                'label'     => esc_html__( 'Radius', 'pixerex-elements' ),
                 'type'      => Controls_Manager::DIMENSIONS,
                 'selectors' => [
                     '{{WRAPPER}} .eael-post-grid .eael-grid-post .eael-entry-media img, {{WRAPPER}} .eael-grid-post .eael-entry-overlay' => 'border-radius: {{TOP}}px {{RIGHT}}px {{BOTTOM}}px {{LEFT}}px;',
@@ -325,7 +325,7 @@ class Post_Grid extends Widget_Base {
         $this->start_controls_section(
             'section_meta_date_style',
             [
-                'label'     => __( 'Meta Date Style', 'px-elements' ),
+                'label'     => __( 'Meta Date Style', 'pixerex-elements' ),
                 'tab'       => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'eael_show_meta'              => 'yes',
@@ -337,7 +337,7 @@ class Post_Grid extends Widget_Base {
             \Elementor\Group_Control_Background::get_type(),
             [
                 'name'     => 'eael_post_grid_meta_date_background',
-                'label'    => __( 'Background', 'px-elements' ),
+                'label'    => __( 'Background', 'pixerex-elements' ),
                 'types'    => ['classic', 'gradient'],
                 'selector' => '{{WRAPPER}} .eael-meta-posted-on',
             ]
@@ -345,7 +345,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'eael_post_grid_meta_date_color',
             [
-                'label'     => __( 'Color', 'px-elements' ),
+                'label'     => __( 'Color', 'pixerex-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -357,7 +357,7 @@ class Post_Grid extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name'     => 'eael_post_grid_meta_date_typography',
-                'label'    => __( 'Typography', 'px-elements' ),
+                'label'    => __( 'Typography', 'pixerex-elements' ),
                 'scheme'   => Scheme_Typography::TYPOGRAPHY_3,
                 'selector' => '{{WRAPPER}} .eael-meta-posted-on',
             ]
@@ -366,7 +366,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'eael_post_grid_meta_date_margin',
             [
-                'label'      => __( 'Margin', 'px-elements' ),
+                'label'      => __( 'Margin', 'pixerex-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%', 'em'],
                 'selectors'  => [
@@ -378,7 +378,7 @@ class Post_Grid extends Widget_Base {
             \Elementor\Group_Control_Box_Shadow::get_type(),
             [
                 'name'      => 'eael_post_grid_meta_date_shadow',
-                'label'     => __( 'Shadow', 'px-elements' ),
+                'label'     => __( 'Shadow', 'pixerex-elements' ),
                 'selector'  => '{{WRAPPER}} .eael-meta-posted-on',
                 'condition' => [
                     'eael_post_grid_preset_style' => ['three'],
@@ -392,7 +392,7 @@ class Post_Grid extends Widget_Base {
          */
         $this->eael_controls_custom_positioning(
             'eael_meta_date_position_',
-            __( 'Meta Date Position', 'px-elements' ),
+            __( 'Meta Date Position', 'pixerex-elements' ),
             '.eael-meta-posted-on',
             [
                 'eael_show_meta'              => 'yes',
@@ -406,7 +406,7 @@ class Post_Grid extends Widget_Base {
         $this->start_controls_section(
             'section_meta_style_style',
             [
-                'label'     => __( 'Meta Style', 'px-elements' ),
+                'label'     => __( 'Meta Style', 'pixerex-elements' ),
                 'tab'       => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'eael_post_grid_preset_style!' => 'three',
@@ -417,7 +417,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'eael_post_grid_meta_color',
             [
-                'label'     => __( 'Color', 'px-elements' ),
+                'label'     => __( 'Color', 'pixerex-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -429,19 +429,19 @@ class Post_Grid extends Widget_Base {
         $this->add_responsive_control(
             'eael_post_grid_meta_alignment',
             [
-                'label'     => __( 'Alignment', 'px-elements' ),
+                'label'     => __( 'Alignment', 'pixerex-elements' ),
                 'type'      => Controls_Manager::CHOOSE,
                 'options'   => [
                     'flex-start' => [
-                        'title' => __( 'Left', 'px-elements' ),
+                        'title' => __( 'Left', 'pixerex-elements' ),
                         'icon'  => 'fa fa-align-left',
                     ],
                     'center'     => [
-                        'title' => __( 'Center', 'px-elements' ),
+                        'title' => __( 'Center', 'pixerex-elements' ),
                         'icon'  => 'fa fa-align-center',
                     ],
                     'flex-end'   => [
-                        'title' => __( 'Right', 'px-elements' ),
+                        'title' => __( 'Right', 'pixerex-elements' ),
                         'icon'  => 'fa fa-align-right',
                     ],
                 ],
@@ -456,7 +456,7 @@ class Post_Grid extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name'      => 'eael_post_grid_meta_typography',
-                'label'     => __( 'Typography', 'px-elements' ),
+                'label'     => __( 'Typography', 'pixerex-elements' ),
                 'scheme'    => Scheme_Typography::TYPOGRAPHY_3,
                 'selector'  => '{{WRAPPER}} .eael-entry-meta > span',
                 'condition' => [
@@ -468,7 +468,7 @@ class Post_Grid extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name'      => 'eael_post_grid_meta_header_typography',
-                'label'     => __( 'Typography', 'px-elements' ),
+                'label'     => __( 'Typography', 'pixerex-elements' ),
                 'scheme'    => Scheme_Typography::TYPOGRAPHY_3,
                 'selector'  => '{{WRAPPER}} .eael-entry-meta > span',
                 'condition' => [
@@ -480,7 +480,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'eael_post_grid_meta_margin',
             [
-                'label'      => __( 'Margin', 'px-elements' ),
+                'label'      => __( 'Margin', 'pixerex-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%', 'em'],
                 'selectors'  => [
@@ -495,7 +495,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'eael_post_grid_meta_footer_margin',
             [
-                'label'      => __( 'Margin', 'px-elements' ),
+                'label'      => __( 'Margin', 'pixerex-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%', 'em'],
                 'selectors'  => [
@@ -513,7 +513,7 @@ class Post_Grid extends Widget_Base {
          */
         $this->eael_controls_custom_positioning(
             'eael_meta_footer_',
-            __( 'Meta Position', 'px-elements' ),
+            __( 'Meta Position', 'pixerex-elements' ),
             '.eael-grid-post .eael-entry-footer',
             [
                 'eael_show_meta'               => 'yes',
@@ -524,7 +524,7 @@ class Post_Grid extends Widget_Base {
 
         $this->eael_controls_custom_positioning(
             'eael_meta_header_',
-            __( 'Meta Position', 'px-elements' ),
+            __( 'Meta Position', 'pixerex-elements' ),
             '.eael-grid-post .eael-entry-meta',
             [
                 'eael_show_meta'               => 'yes',
@@ -539,7 +539,7 @@ class Post_Grid extends Widget_Base {
         $this->start_controls_section(
             'eael_section_typography',
             [
-                'label' => __( 'Color, Typography & Spacing', 'px-elements' ),
+                'label' => __( 'Color, Typography & Spacing', 'pixerex-elements' ),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -547,7 +547,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'eael_post_grid_title_style',
             [
-                'label'     => __( 'Title Style', 'px-elements' ),
+                'label'     => __( 'Title Style', 'pixerex-elements' ),
                 'type'      => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -556,7 +556,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'eael_post_grid_title_color',
             [
-                'label'     => __( 'Title Color', 'px-elements' ),
+                'label'     => __( 'Title Color', 'pixerex-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#303133',
                 'selectors' => [
@@ -569,7 +569,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'eael_post_grid_title_hover_color',
             [
-                'label'     => __( 'Title Hover Color', 'px-elements' ),
+                'label'     => __( 'Title Hover Color', 'pixerex-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#23527c',
                 'selectors' => [
@@ -582,19 +582,19 @@ class Post_Grid extends Widget_Base {
         $this->add_responsive_control(
             'eael_post_grid_title_alignment',
             [
-                'label'     => __( 'Title Alignment', 'px-elements' ),
+                'label'     => __( 'Title Alignment', 'pixerex-elements' ),
                 'type'      => Controls_Manager::CHOOSE,
                 'options'   => [
                     'left'   => [
-                        'title' => __( 'Left', 'px-elements' ),
+                        'title' => __( 'Left', 'pixerex-elements' ),
                         'icon'  => 'fa fa-align-left',
                     ],
                     'center' => [
-                        'title' => __( 'Center', 'px-elements' ),
+                        'title' => __( 'Center', 'pixerex-elements' ),
                         'icon'  => 'fa fa-align-center',
                     ],
                     'right'  => [
-                        'title' => __( 'Right', 'px-elements' ),
+                        'title' => __( 'Right', 'pixerex-elements' ),
                         'icon'  => 'fa fa-align-right',
                     ],
                 ],
@@ -608,7 +608,7 @@ class Post_Grid extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name'     => 'eael_post_grid_title_typography',
-                'label'    => __( 'Typography', 'px-elements' ),
+                'label'    => __( 'Typography', 'pixerex-elements' ),
                 'scheme'   => Scheme_Typography::TYPOGRAPHY_1,
                 'selector' => '{{WRAPPER}} .eael-entry-title',
             ]
@@ -617,7 +617,7 @@ class Post_Grid extends Widget_Base {
         $this->add_responsive_control(
             'eael_post_grid_title_margin',
             [
-                'label'      => __( 'Margin', 'px-elements' ),
+                'label'      => __( 'Margin', 'pixerex-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%', 'em'],
                 'selectors'  => [
@@ -629,7 +629,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'eael_post_grid_excerpt_style',
             [
-                'label'     => __( 'Excerpt Style', 'px-elements' ),
+                'label'     => __( 'Excerpt Style', 'pixerex-elements' ),
                 'type'      => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -638,7 +638,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'eael_post_grid_excerpt_color',
             [
-                'label'     => __( 'Excerpt Color', 'px-elements' ),
+                'label'     => __( 'Excerpt Color', 'pixerex-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -650,23 +650,23 @@ class Post_Grid extends Widget_Base {
         $this->add_responsive_control(
             'eael_post_grid_excerpt_alignment',
             [
-                'label'     => __( 'Excerpt Alignment', 'px-elements' ),
+                'label'     => __( 'Excerpt Alignment', 'pixerex-elements' ),
                 'type'      => Controls_Manager::CHOOSE,
                 'options'   => [
                     'left'    => [
-                        'title' => __( 'Left', 'px-elements' ),
+                        'title' => __( 'Left', 'pixerex-elements' ),
                         'icon'  => 'fa fa-align-left',
                     ],
                     'center'  => [
-                        'title' => __( 'Center', 'px-elements' ),
+                        'title' => __( 'Center', 'pixerex-elements' ),
                         'icon'  => 'fa fa-align-center',
                     ],
                     'right'   => [
-                        'title' => __( 'Right', 'px-elements' ),
+                        'title' => __( 'Right', 'pixerex-elements' ),
                         'icon'  => 'fa fa-align-right',
                     ],
                     'justify' => [
-                        'title' => __( 'Justified', 'px-elements' ),
+                        'title' => __( 'Justified', 'pixerex-elements' ),
                         'icon'  => 'fa fa-align-justify',
                     ],
                 ],
@@ -680,7 +680,7 @@ class Post_Grid extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name'     => 'eael_post_grid_excerpt_typography',
-                'label'    => __( 'Excerpt Typography', 'px-elements' ),
+                'label'    => __( 'Excerpt Typography', 'pixerex-elements' ),
                 'scheme'   => Scheme_Typography::TYPOGRAPHY_3,
                 'selector' => '{{WRAPPER}} .eael-grid-post-excerpt p',
             ]
@@ -689,7 +689,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'content_height',
             [
-                'label'      => esc_html__( 'Content Height', 'px-elements' ),
+                'label'      => esc_html__( 'Content Height', 'pixerex-elements' ),
                 'type'       => Controls_Manager::SLIDER,
                 'size_units' => ['px', '%', 'em'],
                 'range'      => [
@@ -705,7 +705,7 @@ class Post_Grid extends Widget_Base {
         $this->add_responsive_control(
             'eael_post_grid_excerpt_margin',
             [
-                'label'      => __( 'Margin', 'px-elements' ),
+                'label'      => __( 'Margin', 'pixerex-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%', 'em'],
                 'selectors'  => [
@@ -722,7 +722,7 @@ class Post_Grid extends Widget_Base {
         $this->start_controls_section(
             'section_meta_terms_style',
             [
-                'label'     => __( 'Terms Style', 'px-elements' ),
+                'label'     => __( 'Terms Style', 'pixerex-elements' ),
                 'tab'       => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'eael_post_grid_preset_style' => 'two',
@@ -733,7 +733,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'eael_post_grid_terms_color',
             [
-                'label'     => __( 'Terms Color', 'px-elements' ),
+                'label'     => __( 'Terms Color', 'pixerex-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -745,19 +745,19 @@ class Post_Grid extends Widget_Base {
         $this->add_responsive_control(
             'eael_post_grid_terms_alignment',
             [
-                'label'     => __( 'Alignment', 'px-elements' ),
+                'label'     => __( 'Alignment', 'pixerex-elements' ),
                 'type'      => Controls_Manager::CHOOSE,
                 'options'   => [
                     'flex-start' => [
-                        'title' => __( 'Left', 'px-elements' ),
+                        'title' => __( 'Left', 'pixerex-elements' ),
                         'icon'  => 'fa fa-align-left',
                     ],
                     'center'     => [
-                        'title' => __( 'Center', 'px-elements' ),
+                        'title' => __( 'Center', 'pixerex-elements' ),
                         'icon'  => 'fa fa-align-center',
                     ],
                     'flex-end'   => [
-                        'title' => __( 'Right', 'px-elements' ),
+                        'title' => __( 'Right', 'pixerex-elements' ),
                         'icon'  => 'fa fa-align-right',
                     ],
                 ],
@@ -772,7 +772,7 @@ class Post_Grid extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name'     => 'eael_post_grid_terms_typography',
-                'label'    => __( 'Meta Typography', 'px-elements' ),
+                'label'    => __( 'Meta Typography', 'pixerex-elements' ),
                 'scheme'   => Scheme_Typography::TYPOGRAPHY_3,
                 'selector' => '{{WRAPPER}} .post-meta-categories li, {{WRAPPER}} .post-meta-categories li a',
             ]
@@ -781,7 +781,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'eael_post_carousel_terms_margin',
             [
-                'label'      => __( 'Margin', 'px-elements' ),
+                'label'      => __( 'Margin', 'pixerex-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%', 'em'],
                 'selectors'  => [
@@ -795,7 +795,7 @@ class Post_Grid extends Widget_Base {
         $this->start_controls_section(
             'section_terms_style',
             [
-                'label'     => __( 'Terms', 'px-elements' ),
+                'label'     => __( 'Terms', 'pixerex-elements' ),
                 'tab'       => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'eael_show_post_terms'        => 'yes',
@@ -807,7 +807,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'terms_color',
             [
-                'label'     => __( 'Color', 'px-elements' ),
+                'label'     => __( 'Color', 'pixerex-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -820,7 +820,7 @@ class Post_Grid extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name'     => 'terms_typography',
-                'label'    => __( 'Typography', 'px-elements' ),
+                'label'    => __( 'Typography', 'pixerex-elements' ),
                 'selector' => '{{WRAPPER}} .post-carousel-categories li a',
             ]
         );
@@ -828,19 +828,19 @@ class Post_Grid extends Widget_Base {
         $this->add_responsive_control(
             'terms_color_alignment',
             [
-                'label'     => __( 'Alignment', 'px-elements' ),
+                'label'     => __( 'Alignment', 'pixerex-elements' ),
                 'type'      => Controls_Manager::CHOOSE,
                 'options'   => [
                     'left'   => [
-                        'title' => __( 'Left', 'px-elements' ),
+                        'title' => __( 'Left', 'pixerex-elements' ),
                         'icon'  => 'fa fa-align-left',
                     ],
                     'center' => [
-                        'title' => __( 'Center', 'px-elements' ),
+                        'title' => __( 'Center', 'pixerex-elements' ),
                         'icon'  => 'fa fa-align-center',
                     ],
                     'right'  => [
-                        'title' => __( 'Right', 'px-elements' ),
+                        'title' => __( 'Right', 'pixerex-elements' ),
                         'icon'  => 'fa fa-align-right',
                     ],
                 ],
@@ -853,7 +853,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'terms_spacing',
             [
-                'label'      => __( 'Spacing', 'px-elements' ),
+                'label'      => __( 'Spacing', 'pixerex-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%'],
                 'selectors'  => [
@@ -868,7 +868,7 @@ class Post_Grid extends Widget_Base {
         $this->start_controls_section(
             'eael_section_hover_card_styles',
             [
-                'label' => __( 'Hover Card Style', 'px-elements' ),
+                'label' => __( 'Hover Card Style', 'pixerex-elements' ),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -876,14 +876,14 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'eael_post_grid_hover_animation',
             [
-                'label'   => esc_html__( 'Animation', 'px-elements' ),
+                'label'   => esc_html__( 'Animation', 'pixerex-elements' ),
                 'type'    => Controls_Manager::SELECT,
                 'default' => 'fade-in',
                 'options' => [
-                    'none'     => esc_html__( 'None', 'px-elements' ),
-                    'fade-in'  => esc_html__( 'FadeIn', 'px-elements' ),
-                    'zoom-in'  => esc_html__( 'ZoomIn', 'px-elements' ),
-                    'slide-up' => esc_html__( 'SlideUp', 'px-elements' ),
+                    'none'     => esc_html__( 'None', 'pixerex-elements' ),
+                    'fade-in'  => esc_html__( 'FadeIn', 'pixerex-elements' ),
+                    'zoom-in'  => esc_html__( 'ZoomIn', 'pixerex-elements' ),
+                    'slide-up' => esc_html__( 'SlideUp', 'pixerex-elements' ),
                 ],
             ]
         );
@@ -891,7 +891,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'eael_post_grid_bg_hover_icon_new',
             [
-                'label'            => __( 'Post Hover Icon', 'px-elements' ),
+                'label'            => __( 'Post Hover Icon', 'pixerex-elements' ),
                 'type'             => Controls_Manager::ICONS,
                 'fa4compatibility' => 'eael_post_grid_bg_hover_icon',
                 'default'          => [
@@ -907,7 +907,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'eael_post_grid_hover_bg_color',
             [
-                'label'     => __( 'Background Color', 'px-elements' ),
+                'label'     => __( 'Background Color', 'pixerex-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => 'rgba(0,0,0, .75)',
                 'selectors' => [
@@ -920,7 +920,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'eael_post_grid_hover_bg_radius',
             [
-                'label'     => esc_html__( 'Cards Radius', 'px-elements' ),
+                'label'     => esc_html__( 'Cards Radius', 'pixerex-elements' ),
                 'type'      => Controls_Manager::DIMENSIONS,
                 'selectors' => [
                     '{{WRAPPER}} .eael-post-grid .eael-grid-post .eael-entry-media .eael-entry-overlay' => 'border-radius: {{TOP}}px {{RIGHT}}px {{BOTTOM}}px {{LEFT}}px;',
@@ -931,7 +931,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'eael_post_grid_hover_icon_color',
             [
-                'label'     => __( 'Icon Color', 'px-elements' ),
+                'label'     => __( 'Icon Color', 'pixerex-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#ffffff',
                 'selectors' => [
@@ -943,7 +943,7 @@ class Post_Grid extends Widget_Base {
         $this->add_responsive_control(
             'eael_post_grid_hover_icon_fontsize',
             [
-                'label'      => __( 'Icon font size', 'px-elements' ),
+                'label'      => __( 'Icon font size', 'pixerex-elements' ),
                 'type'       => Controls_Manager::SLIDER,
                 'default'    => [
                     'unit' => 'px',
@@ -1055,7 +1055,7 @@ class Post_Grid extends Widget_Base {
                 echo '<div class="eael-load-more-button-wrap">
 					<button class="eael-load-more-button" id="eael-load-more-btn-' . $this->get_id() . '" data-widget="' . $this->get_id() . '" data-class="' . get_class( $this ) . '" data-args="' . http_build_query( $args ) . '" data-settings="' . http_build_query( $settings_arry ) . '" data-layout="'.$settings['layout_mode'].'" data-page="1">
 						<div class="eael-btn-loader button__loader"></div>
-						<span>' . esc_html__( $settings['show_load_more_text'], 'px-elements' ) . '</span>
+						<span>' . esc_html__( $settings['show_load_more_text'], 'pixerex-elements' ) . '</span>
 					</button>
 				</div>';
             }

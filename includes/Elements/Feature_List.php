@@ -22,7 +22,7 @@ class Feature_List extends Widget_Base {
     }
 
     public function get_title() {
-        return esc_html__( 'Feature List', 'px-elements' );
+        return esc_html__( 'Feature List', 'pixerex-elements' );
     }
 
     public function get_icon() {
@@ -59,7 +59,7 @@ class Feature_List extends Widget_Base {
         $this->start_controls_section(
             'eael_section_feature_list_content_settings',
             [
-                'label' => esc_html__( 'Content Settings', 'px-elements' ),
+                'label' => esc_html__( 'Content Settings', 'pixerex-elements' ),
             ]
         );
 
@@ -68,15 +68,15 @@ class Feature_List extends Widget_Base {
         $repeater->add_control(
             'eael_feature_list_icon_type',
             [
-                'label'       => esc_html__( 'Icon Type', 'px-elements' ),
+                'label'       => esc_html__( 'Icon Type', 'pixerex-elements' ),
                 'type'        => Controls_Manager::CHOOSE,
                 'options'     => [
                     'icon'  => [
-                        'title' => esc_html__( 'Icon', 'px-elements' ),
+                        'title' => esc_html__( 'Icon', 'pixerex-elements' ),
                         'icon'  => 'fa fa-star',
                     ],
                     'image' => [
-                        'title' => esc_html__( 'Image', 'px-elements' ),
+                        'title' => esc_html__( 'Image', 'pixerex-elements' ),
                         'icon'  => 'fa fa-picture-o',
                     ],
                 ],
@@ -88,7 +88,7 @@ class Feature_List extends Widget_Base {
         $repeater->add_control(
             'eael_feature_list_icon_new',
             [
-                'label'            => esc_html__( 'Icon', 'px-elements' ),
+                'label'            => esc_html__( 'Icon', 'pixerex-elements' ),
                 'type'             => Controls_Manager::ICONS,
                 'fa4compatibility' => 'eael_feature_list_icon',
                 'condition'        => [
@@ -101,10 +101,10 @@ class Feature_List extends Widget_Base {
         $repeater->add_control(
             'eael_feature_list_icon_is_individual_style',
             [
-                'label'            => esc_html__( 'Icon Style', 'px-elements' ),
+                'label'            => esc_html__( 'Icon Style', 'pixerex-elements' ),
                 'type'             => Controls_Manager::SWITCHER,
-                'label_on'         => __( 'ON', 'px-elements' ),
-                'label_off'        => __( 'OFF', 'px-elements' ),
+                'label_on'         => __( 'ON', 'pixerex-elements' ),
+                'label_off'        => __( 'OFF', 'pixerex-elements' ),
                 'return_value'     => 'on',
                 'default'          => '',
                 'fa4compatibility' => 'eael_feature_list_icon',
@@ -116,7 +116,7 @@ class Feature_List extends Widget_Base {
         $repeater->add_control(
             'eael_feature_list_icon_individual_color',
             [
-                'label'            => esc_html__( 'Icon Color', 'px-elements' ),
+                'label'            => esc_html__( 'Icon Color', 'pixerex-elements' ),
                 'type'             => Controls_Manager::COLOR,
                 'scheme'           => [
                     'type'  => Scheme_Color::get_type(),
@@ -131,7 +131,7 @@ class Feature_List extends Widget_Base {
         $repeater->add_control(
             'eael_feature_list_icon_individual_bg_color',
             [
-                'label'            => esc_html__( 'Icon Background', 'px-elements' ),
+                'label'            => esc_html__( 'Icon Background', 'pixerex-elements' ),
                 'type'             => Controls_Manager::COLOR,
                 'scheme'           => [
                     'type'  => Scheme_Color::get_type(),
@@ -146,7 +146,7 @@ class Feature_List extends Widget_Base {
         $repeater->add_control(
             'eael_feature_list_icon_individual_box_bg_color',
             [
-                'label'            => esc_html__( 'Icon Box Background', 'px-elements' ),
+                'label'            => esc_html__( 'Icon Box Background', 'pixerex-elements' ),
                 'type'             => Controls_Manager::COLOR,
                 'scheme'           => [
                     'type'  => Scheme_Color::get_type(),
@@ -163,7 +163,7 @@ class Feature_List extends Widget_Base {
         $repeater->add_control(
             'eael_feature_list_img',
             [
-                'label'     => esc_html__( 'Image', 'px-elements' ),
+                'label'     => esc_html__( 'Image', 'pixerex-elements' ),
                 'type'      => Controls_Manager::MEDIA,
                 'default'   => [
                     'url' => Utils::get_placeholder_image_src(),
@@ -177,9 +177,9 @@ class Feature_List extends Widget_Base {
         $repeater->add_control(
             'eael_feature_list_title',
             [
-                'label'   => esc_html__( 'Title', 'px-elements' ),
+                'label'   => esc_html__( 'Title', 'pixerex-elements' ),
                 'type'    => Controls_Manager::TEXT,
-                'default' => esc_html__( 'Title', 'px-elements' ),
+                'default' => esc_html__( 'Title', 'pixerex-elements' ),
                 'dynamic' => ['active' => true],
             ]
         );
@@ -187,9 +187,9 @@ class Feature_List extends Widget_Base {
         $repeater->add_control(
             'eael_feature_list_content',
             [
-                'label'   => esc_html__( 'Content', 'px-elements' ),
+                'label'   => esc_html__( 'Content', 'pixerex-elements' ),
                 'type'    => Controls_Manager::TEXTAREA,
-                'default' => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, neque qui velit. Magni dolorum quidem ipsam eligendi, totam, facilis laudantium cum accusamus ullam voluptatibus commodi numquam, error, est. Ea, consequatur.', 'px-elements' ),
+                'default' => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, neque qui velit. Magni dolorum quidem ipsam eligendi, totam, facilis laudantium cum accusamus ullam voluptatibus commodi numquam, error, est. Ea, consequatur.', 'pixerex-elements' ),
                 'dynamic' => ['active' => true],
             ]
         );
@@ -197,10 +197,10 @@ class Feature_List extends Widget_Base {
         $repeater->add_control(
             'eael_feature_list_link',
             [
-                'label'       => esc_html__( 'Link', 'px-elements' ),
+                'label'       => esc_html__( 'Link', 'pixerex-elements' ),
                 'type'        => Controls_Manager::URL,
                 'dynamic'     => ['active' => true],
-                'placeholder' => esc_html__( 'https://your-link.com', 'px-elements' ),
+                'placeholder' => esc_html__( 'https://your-link.com', 'pixerex-elements' ),
                 'separator'   => 'before',
             ]
         );
@@ -208,7 +208,7 @@ class Feature_List extends Widget_Base {
         $this->add_control(
             'eael_feature_list',
             [
-                'label'       => esc_html__( 'Feature Item', 'px-elements' ),
+                'label'       => esc_html__( 'Feature Item', 'pixerex-elements' ),
                 'type'        => Controls_Manager::REPEATER,
                 'seperator'   => 'before',
                 'default'     => [
@@ -217,24 +217,24 @@ class Feature_List extends Widget_Base {
                             'value'   => 'fas fa-check',
                             'library' => 'fa-solid',
                         ],
-                        'eael_feature_list_title'    => esc_html__( 'Feature Item 1', 'px-elements' ),
-                        'eael_feature_list_content'  => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipisi cing elit, sed do eiusmod tempor incididunt ut abore et dolore magna', 'px-elements' ),
+                        'eael_feature_list_title'    => esc_html__( 'Feature Item 1', 'pixerex-elements' ),
+                        'eael_feature_list_content'  => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipisi cing elit, sed do eiusmod tempor incididunt ut abore et dolore magna', 'pixerex-elements' ),
                     ],
                     [
                         'eael_feature_list_icon_new' => [
                             'value'   => 'fas fa-times',
                             'library' => 'fa-solid',
                         ],
-                        'eael_feature_list_title'    => esc_html__( 'Feature Item 2', 'px-elements' ),
-                        'eael_feature_list_content'  => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipisi cing elit, sed do eiusmod tempor incididunt ut abore et dolore magna', 'px-elements' ),
+                        'eael_feature_list_title'    => esc_html__( 'Feature Item 2', 'pixerex-elements' ),
+                        'eael_feature_list_content'  => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipisi cing elit, sed do eiusmod tempor incididunt ut abore et dolore magna', 'pixerex-elements' ),
                     ],
                     [
                         'eael_feature_list_icon_new' => [
                             'value'   => 'fas fa-anchor',
                             'library' => 'fa-solid',
                         ],
-                        'eael_feature_list_title'    => esc_html__( 'Feature Item 3', 'px-elements' ),
-                        'eael_feature_list_content'  => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipisi cing elit, sed do eiusmod tempor incididunt ut abore et dolore magna', 'px-elements' ),
+                        'eael_feature_list_title'    => esc_html__( 'Feature Item 3', 'pixerex-elements' ),
+                        'eael_feature_list_content'  => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipisi cing elit, sed do eiusmod tempor incididunt ut abore et dolore magna', 'pixerex-elements' ),
                     ],
                 ],
                 'fields'      => $repeater->get_controls(),
@@ -245,7 +245,7 @@ class Feature_List extends Widget_Base {
         $this->add_control(
             'eael_feature_list_title_size',
             [
-                'label'     => esc_html__( 'Title HTML Tag', 'px-elements' ),
+                'label'     => esc_html__( 'Title HTML Tag', 'pixerex-elements' ),
                 'type'      => Controls_Manager::SELECT,
                 'options'   => [
                     'h1'   => 'H1',
@@ -266,14 +266,14 @@ class Feature_List extends Widget_Base {
         $this->add_control(
             'eael_feature_list_icon_shape',
             [
-                'label'       => esc_html__( 'Icon Shape', 'px-elements' ),
+                'label'       => esc_html__( 'Icon Shape', 'pixerex-elements' ),
                 'type'        => Controls_Manager::SELECT,
                 'default'     => 'circle',
                 'label_block' => false,
                 'options'     => [
-                    'circle'  => esc_html__( 'Circle', 'px-elements' ),
-                    'square'  => esc_html__( 'Square', 'px-elements' ),
-                    'rhombus' => esc_html__( 'Rhombus', 'px-elements' ),
+                    'circle'  => esc_html__( 'Circle', 'pixerex-elements' ),
+                    'square'  => esc_html__( 'Square', 'pixerex-elements' ),
+                    'rhombus' => esc_html__( 'Rhombus', 'pixerex-elements' ),
                 ],
             ]
         );
@@ -281,13 +281,13 @@ class Feature_List extends Widget_Base {
         $this->add_control(
             'eael_feature_list_icon_shape_view',
             [
-                'label'       => esc_html__( 'Shape View', 'px-elements' ),
+                'label'       => esc_html__( 'Shape View', 'pixerex-elements' ),
                 'type'        => Controls_Manager::SELECT,
                 'default'     => 'stacked',
                 'label_block' => false,
                 'options'     => [
-                    'framed'  => esc_html__( 'Framed', 'px-elements' ),
-                    'stacked' => esc_html__( 'Stacked', 'px-elements' ),
+                    'framed'  => esc_html__( 'Framed', 'pixerex-elements' ),
+                    'stacked' => esc_html__( 'Stacked', 'pixerex-elements' ),
                 ],
             ]
         );
@@ -295,19 +295,19 @@ class Feature_List extends Widget_Base {
         $this->add_responsive_control(
             'eael_feature_list_icon_position',
             [
-                'label'           => esc_html__( 'Icon Position', 'px-elements' ),
+                'label'           => esc_html__( 'Icon Position', 'pixerex-elements' ),
                 'type'            => Controls_Manager::CHOOSE,
                 'options'         => [
                     'left'  => [
-                        'title' => esc_html__( 'Left', 'px-elements' ),
+                        'title' => esc_html__( 'Left', 'pixerex-elements' ),
                         'icon'  => 'fa fa-align-left',
                     ],
                     'top'   => [
-                        'title' => esc_html__( 'Top', 'px-elements' ),
+                        'title' => esc_html__( 'Top', 'pixerex-elements' ),
                         'icon'  => 'fa fa-align-center',
                     ],
                     'right' => [
-                        'title' => esc_html__( 'Right', 'px-elements' ),
+                        'title' => esc_html__( 'Right', 'pixerex-elements' ),
                         'icon'  => 'fa fa-align-right',
                     ],
                 ],
@@ -323,7 +323,7 @@ class Feature_List extends Widget_Base {
         $this->add_responsive_control(
             'eael_feature_list_icon_right_indicator_position',
             [
-                'label'      => __( 'Arrow Indicator Position', 'px-elements' ),
+                'label'      => __( 'Arrow Indicator Position', 'pixerex-elements' ),
                 'type'       => Controls_Manager::SLIDER,
                 'size_units' => ['px', '%'],
                 'range'      => [
@@ -353,11 +353,11 @@ class Feature_List extends Widget_Base {
         $this->add_control(
             'eael_feature_list_connector',
             [
-                'label'        => esc_html__( 'Show Connector', 'px-elements' ),
+                'label'        => esc_html__( 'Show Connector', 'pixerex-elements' ),
                 'type'         => Controls_Manager::SWITCHER,
                 'default'      => 'no',
-                'label_on'     => esc_html__( 'Show', 'px-elements' ),
-                'label_off'    => esc_html__( 'No', 'px-elements' ),
+                'label_on'     => esc_html__( 'Show', 'pixerex-elements' ),
+                'label_off'    => esc_html__( 'No', 'pixerex-elements' ),
                 'return_value' => 'yes',
             ]
         );
@@ -373,7 +373,7 @@ class Feature_List extends Widget_Base {
         $this->start_controls_section(
             'eael_section_feature_list_style',
             [
-                'label' => esc_html__( 'List', 'px-elements' ),
+                'label' => esc_html__( 'List', 'pixerex-elements' ),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -381,7 +381,7 @@ class Feature_List extends Widget_Base {
         $this->add_responsive_control(
             'eael_feature_list_space_between',
             [
-                'label'     => esc_html__( 'Space Between', 'px-elements' ),
+                'label'     => esc_html__( 'Space Between', 'pixerex-elements' ),
                 'type'      => Controls_Manager::SLIDER,
                 'default'   => [
                     'size' => 15,
@@ -403,13 +403,13 @@ class Feature_List extends Widget_Base {
         $this->add_control(
             'eael_feature_list_connector_type',
             [
-                'label'       => esc_html__( 'Connector Type', 'px-elements' ),
+                'label'       => esc_html__( 'Connector Type', 'pixerex-elements' ),
                 'type'        => Controls_Manager::SELECT,
                 'default'     => 'connector-type-classic',
                 'label_block' => false,
                 'options'     => [
-                    'connector-type-classic' => esc_html__( 'Classic', 'px-elements' ),
-                    'connector-type-modern'  => esc_html__( 'Modern', 'px-elements' ),
+                    'connector-type-classic' => esc_html__( 'Classic', 'pixerex-elements' ),
+                    'connector-type-modern'  => esc_html__( 'Modern', 'pixerex-elements' ),
                 ],
                 'condition'   => [
                     'eael_feature_list_connector'      => 'yes',
@@ -422,14 +422,14 @@ class Feature_List extends Widget_Base {
         $this->add_control(
             'eael_feature_list_connector_styles',
             [
-                'label'       => esc_html__( 'Connector Styles', 'px-elements' ),
+                'label'       => esc_html__( 'Connector Styles', 'pixerex-elements' ),
                 'type'        => Controls_Manager::SELECT,
                 'default'     => 'solid',
                 'label_block' => false,
                 'options'     => [
-                    'solid'  => esc_html__( 'Solid', 'px-elements' ),
-                    'dashed' => esc_html__( 'Dashed', 'px-elements' ),
-                    'dotted' => esc_html__( 'Dotted', 'px-elements' ),
+                    'solid'  => esc_html__( 'Solid', 'pixerex-elements' ),
+                    'dashed' => esc_html__( 'Dashed', 'pixerex-elements' ),
+                    'dotted' => esc_html__( 'Dotted', 'pixerex-elements' ),
                 ],
                 'condition'   => [
                     'eael_feature_list_connector' => 'yes',
@@ -444,7 +444,7 @@ class Feature_List extends Widget_Base {
         $this->add_control(
             'eael_feature_list_connector_color',
             [
-                'label'     => esc_html__( 'Connector Color', 'px-elements' ),
+                'label'     => esc_html__( 'Connector Color', 'pixerex-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'scheme'    => [
                     'type'  => Scheme_Color::get_type(),
@@ -464,7 +464,7 @@ class Feature_List extends Widget_Base {
         $this->add_control(
             'eael_feature_list_connector_width',
             [
-                'label'     => esc_html__( 'Connector Width', 'px-elements' ),
+                'label'     => esc_html__( 'Connector Width', 'pixerex-elements' ),
                 'type'      => Controls_Manager::SLIDER,
                 'default'   => [
                     'unit' => 'px',
@@ -498,7 +498,7 @@ class Feature_List extends Widget_Base {
         $this->start_controls_section(
             'eael_section_feature_list_style_icon',
             [
-                'label' => esc_html__( 'Icon', 'px-elements' ),
+                'label' => esc_html__( 'Icon', 'pixerex-elements' ),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -521,7 +521,7 @@ class Feature_List extends Widget_Base {
         $this->add_control(
             'eael_feature_list_secondary_color',
             [
-                'label'     => esc_html__( 'Secondary Color', 'px-elements' ),
+                'label'     => esc_html__( 'Secondary Color', 'pixerex-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#ffffff',
                 'selectors' => [
@@ -537,7 +537,7 @@ class Feature_List extends Widget_Base {
         $this->add_control(
             'eael_feature_list_icon_color',
             [
-                'label'     => esc_html__( 'Color', 'px-elements' ),
+                'label'     => esc_html__( 'Color', 'pixerex-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -550,7 +550,7 @@ class Feature_List extends Widget_Base {
         $this->add_responsive_control(
             'eael_feature_list_icon_circle_size',
             [
-                'label'     => esc_html__( 'Size', 'px-elements' ),
+                'label'     => esc_html__( 'Size', 'pixerex-elements' ),
                 'type'      => Controls_Manager::SLIDER,
                 'default'   => [
                     'size' => 70,
@@ -570,7 +570,7 @@ class Feature_List extends Widget_Base {
         $this->add_responsive_control(
             'eael_feature_list_icon_size',
             [
-                'label'     => esc_html__( 'Icon Size', 'px-elements' ),
+                'label'     => esc_html__( 'Icon Size', 'pixerex-elements' ),
                 'type'      => Controls_Manager::SLIDER,
                 'default'   => [
                     'size' => 21,
@@ -592,7 +592,7 @@ class Feature_List extends Widget_Base {
         $this->add_responsive_control(
             'eael_feature_list_icon_padding',
             [
-                'label'      => esc_html__( 'Padding', 'px-elements' ),
+                'label'      => esc_html__( 'Padding', 'pixerex-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%', 'em'],
                 'default'    => [
@@ -611,7 +611,7 @@ class Feature_List extends Widget_Base {
         $this->add_control(
             'eael_feature_list_icon_border_width',
             [
-                'label'     => esc_html__( 'Border Width', 'px-elements' ),
+                'label'     => esc_html__( 'Border Width', 'pixerex-elements' ),
                 'type'      => Controls_Manager::SLIDER,
                 'default'   => [
                     'size' => 1,
@@ -635,7 +635,7 @@ class Feature_List extends Widget_Base {
         $this->add_control(
             'eael_feature_list_icon_border_radius',
             [
-                'label'      => esc_html__( 'Border Radius', 'px-elements' ),
+                'label'      => esc_html__( 'Border Radius', 'pixerex-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%'],
                 'selectors'  => [
@@ -651,7 +651,7 @@ class Feature_List extends Widget_Base {
         $this->add_responsive_control(
             'eael_feature_list_icon_space',
             [
-                'label'           => esc_html__( 'Spacing', 'px-elements' ),
+                'label'           => esc_html__( 'Spacing', 'pixerex-elements' ),
                 'type'            => Controls_Manager::SLIDER,
                 'range'           => [
                     'px' => [
@@ -690,7 +690,7 @@ class Feature_List extends Widget_Base {
         $this->start_controls_section(
             'eael_section_feature_list_style_content',
             [
-                'label' => esc_html__( 'Content', 'px-elements' ),
+                'label' => esc_html__( 'Content', 'pixerex-elements' ),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -730,7 +730,7 @@ class Feature_List extends Widget_Base {
         $this->add_control(
             'eael_feature_list_heading_title',
             [
-                'label' => esc_html__( 'Title', 'px-elements' ),
+                'label' => esc_html__( 'Title', 'pixerex-elements' ),
                 'type'  => Controls_Manager::HEADING,
             ]
         );
@@ -738,7 +738,7 @@ class Feature_List extends Widget_Base {
         $this->add_responsive_control(
             'eael_feature_list_title_bottom_space',
             [
-                'label'     => esc_html__( 'Title Bottom Space', 'px-elements' ),
+                'label'     => esc_html__( 'Title Bottom Space', 'pixerex-elements' ),
                 'type'      => Controls_Manager::SLIDER,
                 'default'   => [
                     'size' => 10,
@@ -758,7 +758,7 @@ class Feature_List extends Widget_Base {
         $this->add_control(
             'eael_feature_list_title_color',
             [
-                'label'     => esc_html__( 'Color', 'px-elements' ),
+                'label'     => esc_html__( 'Color', 'pixerex-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#414247',
                 'selectors' => [
@@ -783,7 +783,7 @@ class Feature_List extends Widget_Base {
         $this->add_control(
             'eael_feature_list_description',
             [
-                'label'     => esc_html__( 'Description', 'px-elements' ),
+                'label'     => esc_html__( 'Description', 'pixerex-elements' ),
                 'type'      => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -792,7 +792,7 @@ class Feature_List extends Widget_Base {
         $this->add_control(
             'eael_feature_list_description_color',
             [
-                'label'     => esc_html__( 'Color', 'px-elements' ),
+                'label'     => esc_html__( 'Color', 'pixerex-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [

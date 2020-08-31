@@ -38,7 +38,7 @@ class Contact_Form_7 extends Widget_Base
      */
     public function get_title()
     {
-        return __('Contact Form 7', 'px-elements');
+        return __('Contact Form 7', 'pixerex-elements');
     }
 
     /**
@@ -105,7 +105,7 @@ class Contact_Form_7 extends Widget_Base
             $this->start_controls_section(
                 'eael_global_warning',
                 [
-                    'label' => __('Warning!', 'px-elements'),
+                    'label' => __('Warning!', 'pixerex-elements'),
                 ]
             );
 
@@ -113,7 +113,7 @@ class Contact_Form_7 extends Widget_Base
                 'eael_global_warning_text',
                 [
                     'type' => Controls_Manager::RAW_HTML,
-                    'raw' => __('<strong>Contact Form 7</strong> is not installed/activated on your site. Please install and activate <strong>Contact Form 7</strong> first.', 'px-elements'),
+                    'raw' => __('<strong>Contact Form 7</strong> is not installed/activated on your site. Please install and activate <strong>Contact Form 7</strong> first.', 'pixerex-elements'),
                     'content_classes' => 'eael-warning',
                 ]
             );
@@ -127,14 +127,14 @@ class Contact_Form_7 extends Widget_Base
             $this->start_controls_section(
                 'section_info_box',
                 [
-                    'label' => __('Contact Form', 'px-elements'),
+                    'label' => __('Contact Form', 'pixerex-elements'),
                 ]
             );
 
             $this->add_control(
                 'contact_form_list',
                 [
-                    'label' => esc_html__('Select Form', 'px-elements'),
+                    'label' => esc_html__('Select Form', 'pixerex-elements'),
                     'type' => Controls_Manager::SELECT,
                     'label_block' => true,
                     'options' => $this->eael_select_contact_form(),
@@ -145,10 +145,10 @@ class Contact_Form_7 extends Widget_Base
             $this->add_control(
                 'form_title',
                 [
-                    'label' => __('Form Title', 'px-elements'),
+                    'label' => __('Form Title', 'pixerex-elements'),
                     'type' => Controls_Manager::SWITCHER,
-                    'label_on' => __('On', 'px-elements'),
-                    'label_off' => __('Off', 'px-elements'),
+                    'label_on' => __('On', 'pixerex-elements'),
+                    'label_off' => __('Off', 'pixerex-elements'),
                     'return_value' => 'yes',
                 ]
             );
@@ -156,7 +156,7 @@ class Contact_Form_7 extends Widget_Base
             $this->add_control(
                 'form_title_text',
                 [
-                    'label' => esc_html__('Title', 'px-elements'),
+                    'label' => esc_html__('Title', 'pixerex-elements'),
                     'type' => Controls_Manager::TEXT,
                     'label_block' => true,
                     'default' => '',
@@ -169,10 +169,10 @@ class Contact_Form_7 extends Widget_Base
             $this->add_control(
                 'form_description',
                 [
-                    'label' => __('Form Description', 'px-elements'),
+                    'label' => __('Form Description', 'pixerex-elements'),
                     'type' => Controls_Manager::SWITCHER,
-                    'label_on' => __('On', 'px-elements'),
-                    'label_off' => __('Off', 'px-elements'),
+                    'label_on' => __('On', 'pixerex-elements'),
+                    'label_off' => __('Off', 'pixerex-elements'),
                     'return_value' => 'yes',
                 ]
             );
@@ -180,7 +180,7 @@ class Contact_Form_7 extends Widget_Base
             $this->add_control(
                 'form_description_text',
                 [
-                    'label' => esc_html__('Description', 'px-elements'),
+                    'label' => esc_html__('Description', 'pixerex-elements'),
                     'type' => Controls_Manager::TEXTAREA,
                     'default' => '',
                     'condition' => [
@@ -192,11 +192,11 @@ class Contact_Form_7 extends Widget_Base
             $this->add_control(
                 'labels_switch',
                 [
-                    'label' => __('Labels', 'px-elements'),
+                    'label' => __('Labels', 'pixerex-elements'),
                     'type' => Controls_Manager::SWITCHER,
                     'default' => 'yes',
-                    'label_on' => __('Show', 'px-elements'),
-                    'label_off' => __('Hide', 'px-elements'),
+                    'label_on' => __('Show', 'pixerex-elements'),
+                    'label_off' => __('Hide', 'pixerex-elements'),
                     'return_value' => 'yes',
                 ]
             );
@@ -210,19 +210,19 @@ class Contact_Form_7 extends Widget_Base
             $this->start_controls_section(
                 'section_errors',
                 [
-                    'label' => __('Errors', 'px-elements'),
+                    'label' => __('Errors', 'pixerex-elements'),
                 ]
             );
 
             $this->add_control(
                 'error_messages',
                 [
-                    'label' => __('Error Messages', 'px-elements'),
+                    'label' => __('Error Messages', 'pixerex-elements'),
                     'type' => Controls_Manager::SELECT,
                     'default' => 'show',
                     'options' => [
-                        'show' => __('Show', 'px-elements'),
-                        'hide' => __('Hide', 'px-elements'),
+                        'show' => __('Show', 'pixerex-elements'),
+                        'hide' => __('Hide', 'pixerex-elements'),
                     ],
                     'selectors_dictionary' => [
                         'show' => 'block',
@@ -237,12 +237,12 @@ class Contact_Form_7 extends Widget_Base
             $this->add_control(
                 'validation_errors',
                 [
-                    'label' => __('Validation Errors', 'px-elements'),
+                    'label' => __('Validation Errors', 'pixerex-elements'),
                     'type' => Controls_Manager::SELECT,
                     'default' => 'show',
                     'options' => [
-                        'show' => __('Show', 'px-elements'),
-                        'hide' => __('Hide', 'px-elements'),
+                        'show' => __('Show', 'pixerex-elements'),
+                        'hide' => __('Hide', 'pixerex-elements'),
                     ],
                     'selectors_dictionary' => [
                         'show' => 'block',
@@ -260,14 +260,14 @@ class Contact_Form_7 extends Widget_Base
                 $this->start_controls_section(
                     'eael_section_pro',
                     [
-                        'label' => __('Go Premium for More Features', 'px-elements'),
+                        'label' => __('Go Premium for More Features', 'pixerex-elements'),
                     ]
                 );
 
                 $this->add_control(
                     'eael_control_get_pro',
                     [
-                        'label' => __('Unlock more possibilities', 'px-elements'),
+                        'label' => __('Unlock more possibilities', 'pixerex-elements'),
                         'type' => Controls_Manager::CHOOSE,
                         'options' => [
                             '1' => [
@@ -295,7 +295,7 @@ class Contact_Form_7 extends Widget_Base
         $this->start_controls_section(
             'section_container_style',
             [
-                'label' => __('Form Container', 'px-elements'),
+                'label' => __('Form Container', 'pixerex-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -304,7 +304,7 @@ class Contact_Form_7 extends Widget_Base
             Group_Control_Background::get_type(),
             [
                 'name' => 'eael_contact_form_background',
-                'label' => __('Background', 'px-elements'),
+                'label' => __('Background', 'pixerex-elements'),
                 'types' => ['classic', 'gradient'],
                 'selector' => '{{WRAPPER}} .eael-contact-form',
             ]
@@ -313,24 +313,24 @@ class Contact_Form_7 extends Widget_Base
         $this->add_responsive_control(
             'eael_contact_form_alignment',
             [
-                'label' => esc_html__('Form Alignment', 'px-elements'),
+                'label' => esc_html__('Form Alignment', 'pixerex-elements'),
                 'type' => Controls_Manager::CHOOSE,
                 'label_block' => true,
                 'options' => [
                     'default' => [
-                        'title' => __('Default', 'px-elements'),
+                        'title' => __('Default', 'pixerex-elements'),
                         'icon' => 'fa fa-ban',
                     ],
                     'left' => [
-                        'title' => esc_html__('Left', 'px-elements'),
+                        'title' => esc_html__('Left', 'pixerex-elements'),
                         'icon' => 'eicon-h-align-left',
                     ],
                     'center' => [
-                        'title' => esc_html__('Center', 'px-elements'),
+                        'title' => esc_html__('Center', 'pixerex-elements'),
                         'icon' => 'eicon-h-align-center',
                     ],
                     'right' => [
-                        'title' => esc_html__('Right', 'px-elements'),
+                        'title' => esc_html__('Right', 'pixerex-elements'),
                         'icon' => 'eicon-h-align-right',
                     ],
                 ],
@@ -341,7 +341,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_responsive_control(
             'eael_contact_form_max_width',
             [
-                'label' => esc_html__('Form Max Width', 'px-elements'),
+                'label' => esc_html__('Form Max Width', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => ['px', 'em', '%'],
                 'range' => [
@@ -363,7 +363,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_responsive_control(
             'eael_contact_form_margin',
             [
-                'label' => esc_html__('Form Margin', 'px-elements'),
+                'label' => esc_html__('Form Margin', 'pixerex-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -375,7 +375,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_responsive_control(
             'eael_contact_form_padding',
             [
-                'label' => esc_html__('Form Padding', 'px-elements'),
+                'label' => esc_html__('Form Padding', 'pixerex-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -387,7 +387,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_control(
             'eael_contact_form_border_radius',
             [
-                'label' => esc_html__('Border Radius', 'px-elements'),
+                'label' => esc_html__('Border Radius', 'pixerex-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'separator' => 'before',
                 'size_units' => ['px'],
@@ -422,7 +422,7 @@ class Contact_Form_7 extends Widget_Base
         $this->start_controls_section(
             'section_fields_title_description',
             [
-                'label' => __('Title & Description', 'px-elements'),
+                'label' => __('Title & Description', 'pixerex-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -430,19 +430,19 @@ class Contact_Form_7 extends Widget_Base
         $this->add_responsive_control(
             'heading_alignment',
             [
-                'label' => __('Alignment', 'px-elements'),
+                'label' => __('Alignment', 'pixerex-elements'),
                 'type' => Controls_Manager::CHOOSE,
                 'options' => [
                     'left' => [
-                        'title' => __('Left', 'px-elements'),
+                        'title' => __('Left', 'pixerex-elements'),
                         'icon' => 'fa fa-align-left',
                     ],
                     'center' => [
-                        'title' => __('Center', 'px-elements'),
+                        'title' => __('Center', 'pixerex-elements'),
                         'icon' => 'fa fa-align-center',
                     ],
                     'right' => [
-                        'title' => __('Right', 'px-elements'),
+                        'title' => __('Right', 'pixerex-elements'),
                         'icon' => 'fa fa-align-right',
                     ],
                 ],
@@ -456,7 +456,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_control(
             'title_heading',
             [
-                'label' => __('Title', 'px-elements'),
+                'label' => __('Title', 'pixerex-elements'),
                 'type' => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -465,7 +465,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_control(
             'title_text_color',
             [
-                'label' => __('Text Color', 'px-elements'),
+                'label' => __('Text Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -478,7 +478,7 @@ class Contact_Form_7 extends Widget_Base
             Group_Control_Typography::get_type(),
             [
                 'name' => 'title_typography',
-                'label' => __('Typography', 'px-elements'),
+                'label' => __('Typography', 'pixerex-elements'),
                 'scheme' => Scheme_Typography::TYPOGRAPHY_4,
                 'selector' => '{{WRAPPER}} .eael-contact-form-7 .eael-contact-form-7-title',
             ]
@@ -487,7 +487,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_control(
             'description_heading',
             [
-                'label' => __('Description', 'px-elements'),
+                'label' => __('Description', 'pixerex-elements'),
                 'type' => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -496,7 +496,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_control(
             'description_text_color',
             [
-                'label' => __('Text Color', 'px-elements'),
+                'label' => __('Text Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -509,7 +509,7 @@ class Contact_Form_7 extends Widget_Base
             Group_Control_Typography::get_type(),
             [
                 'name' => 'description_typography',
-                'label' => __('Typography', 'px-elements'),
+                'label' => __('Typography', 'pixerex-elements'),
                 'scheme' => Scheme_Typography::TYPOGRAPHY_4,
                 'selector' => '{{WRAPPER}} .eael-contact-form-7 .eael-contact-form-7-description',
             ]
@@ -524,7 +524,7 @@ class Contact_Form_7 extends Widget_Base
         $this->start_controls_section(
             'section_fields_style',
             [
-                'label' => __('Input & Textarea', 'px-elements'),
+                'label' => __('Input & Textarea', 'pixerex-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -534,14 +534,14 @@ class Contact_Form_7 extends Widget_Base
         $this->start_controls_tab(
             'tab_fields_normal',
             [
-                'label' => __('Normal', 'px-elements'),
+                'label' => __('Normal', 'pixerex-elements'),
             ]
         );
 
         $this->add_control(
             'field_bg',
             [
-                'label' => __('Background Color', 'px-elements'),
+                'label' => __('Background Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -553,7 +553,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_control(
             'field_text_color',
             [
-                'label' => __('Text Color', 'px-elements'),
+                'label' => __('Text Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -566,7 +566,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_responsive_control(
             'input_spacing',
             [
-                'label' => __('Spacing', 'px-elements'),
+                'label' => __('Spacing', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'default' => [
                     'size' => '0',
@@ -589,7 +589,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_responsive_control(
             'field_padding',
             [
-                'label' => __('Padding', 'px-elements'),
+                'label' => __('Padding', 'pixerex-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -601,7 +601,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_responsive_control(
             'text_indent',
             [
-                'label' => __('Text Indent', 'px-elements'),
+                'label' => __('Text Indent', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'range' => [
                     'px' => [
@@ -625,7 +625,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_responsive_control(
             'input_width',
             [
-                'label' => __('Input Width', 'px-elements'),
+                'label' => __('Input Width', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'range' => [
                     'px' => [
@@ -644,7 +644,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_responsive_control(
             'textarea_width',
             [
-                'label' => __('Textarea Width', 'px-elements'),
+                'label' => __('Textarea Width', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'range' => [
                     'px' => [
@@ -664,7 +664,7 @@ class Contact_Form_7 extends Widget_Base
             Group_Control_Border::get_type(),
             [
                 'name' => 'field_border',
-                'label' => __('Border', 'px-elements'),
+                'label' => __('Border', 'pixerex-elements'),
                 'placeholder' => '1px',
                 'default' => '1px',
                 'selector' => '{{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-text,{{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-date, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-textarea, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-select',
@@ -675,7 +675,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_control(
             'field_radius',
             [
-                'label' => __('Border Radius', 'px-elements'),
+                'label' => __('Border Radius', 'pixerex-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -688,7 +688,7 @@ class Contact_Form_7 extends Widget_Base
             Group_Control_Typography::get_type(),
             [
                 'name' => 'field_typography',
-                'label' => __('Typography', 'px-elements'),
+                'label' => __('Typography', 'pixerex-elements'),
                 'scheme' => Scheme_Typography::TYPOGRAPHY_4,
                 'selector' => '{{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-text, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-textarea, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control.wpcf7-select',
                 'separator' => 'before',
@@ -709,14 +709,14 @@ class Contact_Form_7 extends Widget_Base
         $this->start_controls_tab(
             'tab_fields_focus',
             [
-                'label' => __('Focus', 'px-elements'),
+                'label' => __('Focus', 'pixerex-elements'),
             ]
         );
 
         $this->add_control(
             'field_bg_focus',
             [
-                'label' => __('Background Color', 'px-elements'),
+                'label' => __('Background Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -729,7 +729,7 @@ class Contact_Form_7 extends Widget_Base
             Group_Control_Border::get_type(),
             [
                 'name' => 'input_border_focus',
-                'label' => __('Border', 'px-elements'),
+                'label' => __('Border', 'pixerex-elements'),
                 'placeholder' => '1px',
                 'default' => '1px',
                 'selector' => '{{WRAPPER}} .eael-contact-form-7 .wpcf7-form input:focus, {{WRAPPER}} .eael-contact-form-7 .wpcf7-form textarea:focus',
@@ -758,7 +758,7 @@ class Contact_Form_7 extends Widget_Base
         $this->start_controls_section(
             'section_label_style',
             [
-                'label' => __('Labels', 'px-elements'),
+                'label' => __('Labels', 'pixerex-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'labels_switch' => 'yes',
@@ -769,7 +769,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_control(
             'text_color_label',
             [
-                'label' => __('Text Color', 'px-elements'),
+                'label' => __('Text Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .eael-contact-form-7 .wpcf7-form label' => 'color: {{VALUE}}',
@@ -784,7 +784,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_responsive_control(
             'label_spacing',
             [
-                'label' => __('Spacing', 'px-elements'),
+                'label' => __('Spacing', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'range' => [
                     'px' => [
@@ -807,7 +807,7 @@ class Contact_Form_7 extends Widget_Base
             Group_Control_Typography::get_type(),
             [
                 'name' => 'typography_label',
-                'label' => __('Typography', 'px-elements'),
+                'label' => __('Typography', 'pixerex-elements'),
                 'scheme' => Scheme_Typography::TYPOGRAPHY_4,
                 'selector' => '{{WRAPPER}} .eael-contact-form-7 .wpcf7-form label',
                 'condition' => [
@@ -824,7 +824,7 @@ class Contact_Form_7 extends Widget_Base
         $this->start_controls_section(
             'section_placeholder_style',
             [
-                'label' => __('Placeholder', 'px-elements'),
+                'label' => __('Placeholder', 'pixerex-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -832,11 +832,11 @@ class Contact_Form_7 extends Widget_Base
         $this->add_control(
             'placeholder_switch',
             [
-                'label' => __('Show Placeholder', 'px-elements'),
+                'label' => __('Show Placeholder', 'pixerex-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'default' => 'yes',
-                'label_on' => __('Yes', 'px-elements'),
-                'label_off' => __('No', 'px-elements'),
+                'label_on' => __('Yes', 'pixerex-elements'),
+                'label_off' => __('No', 'pixerex-elements'),
                 'return_value' => 'yes',
             ]
         );
@@ -844,7 +844,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_control(
             'text_color_placeholder',
             [
-                'label' => __('Text Color', 'px-elements'),
+                'label' => __('Text Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control::-webkit-input-placeholder' => 'color: {{VALUE}}',
@@ -859,7 +859,7 @@ class Contact_Form_7 extends Widget_Base
             Group_Control_Typography::get_type(),
             [
                 'name' => 'typography_placeholder',
-                'label' => __('Typography', 'px-elements'),
+                'label' => __('Typography', 'pixerex-elements'),
                 'scheme' => Scheme_Typography::TYPOGRAPHY_4,
                 'selector' => '{{WRAPPER}} .eael-contact-form-7 .wpcf7-form-control::-webkit-input-placeholder',
                 'condition' => [
@@ -877,7 +877,7 @@ class Contact_Form_7 extends Widget_Base
         $this->start_controls_section(
             'section_radio_checkbox_style',
             [
-                'label' => __('Radio & Checkbox', 'px-elements'),
+                'label' => __('Radio & Checkbox', 'pixerex-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -885,10 +885,10 @@ class Contact_Form_7 extends Widget_Base
         $this->add_control(
             'custom_radio_checkbox',
             [
-                'label' => __('Custom Styles', 'px-elements'),
+                'label' => __('Custom Styles', 'pixerex-elements'),
                 'type' => Controls_Manager::SWITCHER,
-                'label_on' => __('Yes', 'px-elements'),
-                'label_off' => __('No', 'px-elements'),
+                'label_on' => __('Yes', 'pixerex-elements'),
+                'label_off' => __('No', 'pixerex-elements'),
                 'return_value' => 'yes',
             ]
         );
@@ -896,7 +896,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_responsive_control(
             'radio_checkbox_size',
             [
-                'label' => __('Size', 'px-elements'),
+                'label' => __('Size', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'default' => [
                     'size' => '15',
@@ -924,7 +924,7 @@ class Contact_Form_7 extends Widget_Base
         $this->start_controls_tab(
             'radio_checkbox_normal',
             [
-                'label' => __('Normal', 'px-elements'),
+                'label' => __('Normal', 'pixerex-elements'),
                 'condition' => [
                     'custom_radio_checkbox' => 'yes',
                 ],
@@ -934,7 +934,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_control(
             'radio_checkbox_color',
             [
-                'label' => __('Color', 'px-elements'),
+                'label' => __('Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -949,7 +949,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_responsive_control(
             'radio_checkbox_border_width',
             [
-                'label' => __('Border Width', 'px-elements'),
+                'label' => __('Border Width', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'range' => [
                     'px' => [
@@ -971,7 +971,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_control(
             'radio_checkbox_border_color',
             [
-                'label' => __('Border Color', 'px-elements'),
+                'label' => __('Border Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -986,7 +986,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_control(
             'checkbox_heading',
             [
-                'label' => __('Checkbox', 'px-elements'),
+                'label' => __('Checkbox', 'pixerex-elements'),
                 'type' => Controls_Manager::HEADING,
                 'condition' => [
                     'custom_radio_checkbox' => 'yes',
@@ -997,7 +997,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_control(
             'checkbox_border_radius',
             [
-                'label' => __('Border Radius', 'px-elements'),
+                'label' => __('Border Radius', 'pixerex-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -1012,7 +1012,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_control(
             'radio_heading',
             [
-                'label' => __('Radio Buttons', 'px-elements'),
+                'label' => __('Radio Buttons', 'pixerex-elements'),
                 'type' => Controls_Manager::HEADING,
                 'condition' => [
                     'custom_radio_checkbox' => 'yes',
@@ -1023,7 +1023,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_control(
             'radio_border_radius',
             [
-                'label' => __('Border Radius', 'px-elements'),
+                'label' => __('Border Radius', 'pixerex-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -1040,7 +1040,7 @@ class Contact_Form_7 extends Widget_Base
         $this->start_controls_tab(
             'radio_checkbox_checked',
             [
-                'label' => __('Checked', 'px-elements'),
+                'label' => __('Checked', 'pixerex-elements'),
                 'condition' => [
                     'custom_radio_checkbox' => 'yes',
                 ],
@@ -1050,7 +1050,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_control(
             'radio_checkbox_color_checked',
             [
-                'label' => __('Color', 'px-elements'),
+                'label' => __('Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -1074,7 +1074,7 @@ class Contact_Form_7 extends Widget_Base
         $this->start_controls_section(
             'section_submit_button_style',
             [
-                'label' => __('Submit Button', 'px-elements'),
+                'label' => __('Submit Button', 'pixerex-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -1082,20 +1082,20 @@ class Contact_Form_7 extends Widget_Base
         $this->add_responsive_control(
             'button_align',
             [
-                'label' => __('Alignment', 'px-elements'),
+                'label' => __('Alignment', 'pixerex-elements'),
                 'type' => Controls_Manager::CHOOSE,
                 'default' => 'left',
                 'options' => [
                     'left' => [
-                        'title' => __('Left', 'px-elements'),
+                        'title' => __('Left', 'pixerex-elements'),
                         'icon' => 'eicon-h-align-left',
                     ],
                     'center' => [
-                        'title' => __('Center', 'px-elements'),
+                        'title' => __('Center', 'pixerex-elements'),
                         'icon' => 'eicon-h-align-center',
                     ],
                     'right' => [
-                        'title' => __('Right', 'px-elements'),
+                        'title' => __('Right', 'pixerex-elements'),
                         'icon' => 'eicon-h-align-right',
                     ],
                 ],
@@ -1112,12 +1112,12 @@ class Contact_Form_7 extends Widget_Base
         $this->add_control(
             'button_width_type',
             [
-                'label' => __('Width', 'px-elements'),
+                'label' => __('Width', 'pixerex-elements'),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'custom',
                 'options' => [
-                    'full-width' => __('Full Width', 'px-elements'),
-                    'custom' => __('Custom', 'px-elements'),
+                    'full-width' => __('Full Width', 'pixerex-elements'),
+                    'custom' => __('Custom', 'pixerex-elements'),
                 ],
                 'prefix_class' => 'eael-contact-form-7-button-',
             ]
@@ -1126,7 +1126,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_responsive_control(
             'button_width',
             [
-                'label' => __('Width', 'px-elements'),
+                'label' => __('Width', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'range' => [
                     'px' => [
@@ -1150,14 +1150,14 @@ class Contact_Form_7 extends Widget_Base
         $this->start_controls_tab(
             'tab_button_normal',
             [
-                'label' => __('Normal', 'px-elements'),
+                'label' => __('Normal', 'pixerex-elements'),
             ]
         );
 
         $this->add_control(
             'button_bg_color_normal',
             [
-                'label' => __('Background Color', 'px-elements'),
+                'label' => __('Background Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -1169,7 +1169,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_control(
             'button_text_color_normal',
             [
-                'label' => __('Text Color', 'px-elements'),
+                'label' => __('Text Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -1182,7 +1182,7 @@ class Contact_Form_7 extends Widget_Base
             Group_Control_Border::get_type(),
             [
                 'name' => 'button_border_normal',
-                'label' => __('Border', 'px-elements'),
+                'label' => __('Border', 'pixerex-elements'),
                 'default' => '1px',
                 'selector' => '{{WRAPPER}} .eael-contact-form-7 .wpcf7-form input[type="submit"]',
             ]
@@ -1191,7 +1191,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_control(
             'button_border_radius',
             [
-                'label' => __('Border Radius', 'px-elements'),
+                'label' => __('Border Radius', 'pixerex-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -1203,7 +1203,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_responsive_control(
             'button_padding',
             [
-                'label' => __('Padding', 'px-elements'),
+                'label' => __('Padding', 'pixerex-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -1215,7 +1215,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_responsive_control(
             'button_margin',
             [
-                'label' => __('Margin Top', 'px-elements'),
+                'label' => __('Margin Top', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'range' => [
                     'px' => [
@@ -1235,7 +1235,7 @@ class Contact_Form_7 extends Widget_Base
             Group_Control_Typography::get_type(),
             [
                 'name' => 'button_typography',
-                'label' => __('Typography', 'px-elements'),
+                'label' => __('Typography', 'pixerex-elements'),
                 'scheme' => Scheme_Typography::TYPOGRAPHY_4,
                 'selector' => '{{WRAPPER}} .eael-contact-form-7 .wpcf7-form input[type="submit"]',
                 'separator' => 'before',
@@ -1256,14 +1256,14 @@ class Contact_Form_7 extends Widget_Base
         $this->start_controls_tab(
             'tab_button_hover',
             [
-                'label' => __('Hover', 'px-elements'),
+                'label' => __('Hover', 'pixerex-elements'),
             ]
         );
 
         $this->add_control(
             'button_bg_color_hover',
             [
-                'label' => __('Background Color', 'px-elements'),
+                'label' => __('Background Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -1275,7 +1275,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_control(
             'button_text_color_hover',
             [
-                'label' => __('Text Color', 'px-elements'),
+                'label' => __('Text Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -1287,7 +1287,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_control(
             'button_border_color_hover',
             [
-                'label' => __('Border Color', 'px-elements'),
+                'label' => __('Border Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -1308,7 +1308,7 @@ class Contact_Form_7 extends Widget_Base
         $this->start_controls_section(
             'section_error_style',
             [
-                'label' => __('Errors', 'px-elements'),
+                'label' => __('Errors', 'pixerex-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -1316,7 +1316,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_control(
             'error_messages_heading',
             [
-                'label' => __('Error Messages', 'px-elements'),
+                'label' => __('Error Messages', 'pixerex-elements'),
                 'type' => Controls_Manager::HEADING,
                 'condition' => [
                     'error_messages' => 'show',
@@ -1329,7 +1329,7 @@ class Contact_Form_7 extends Widget_Base
         $this->start_controls_tab(
             'tab_error_messages_alert',
             [
-                'label' => __('Alert', 'px-elements'),
+                'label' => __('Alert', 'pixerex-elements'),
                 'condition' => [
                     'error_messages' => 'show',
                 ],
@@ -1339,7 +1339,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_control(
             'error_alert_text_color',
             [
-                'label' => __('Text Color', 'px-elements'),
+                'label' => __('Text Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -1354,7 +1354,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_responsive_control(
             'error_alert_spacing',
             [
-                'label' => __('Spacing', 'px-elements'),
+                'label' => __('Spacing', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'range' => [
                     'px' => [
@@ -1378,7 +1378,7 @@ class Contact_Form_7 extends Widget_Base
         $this->start_controls_tab(
             'tab_error_messages_fields',
             [
-                'label' => __('Fields', 'px-elements'),
+                'label' => __('Fields', 'pixerex-elements'),
                 'condition' => [
                     'error_messages' => 'show',
                 ],
@@ -1388,7 +1388,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_control(
             'error_field_bg_color',
             [
-                'label' => __('Background Color', 'px-elements'),
+                'label' => __('Background Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -1403,7 +1403,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_control(
             'error_field_color',
             [
-                'label' => __('Text Color', 'px-elements'),
+                'label' => __('Text Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -1419,7 +1419,7 @@ class Contact_Form_7 extends Widget_Base
             Group_Control_Border::get_type(),
             [
                 'name' => 'error_field_border',
-                'label' => __('Border', 'px-elements'),
+                'label' => __('Border', 'pixerex-elements'),
                 'placeholder' => '1px',
                 'default' => '1px',
                 'selector' => '{{WRAPPER}} .eael-contact-form-7 .wpcf7-not-valid',
@@ -1437,7 +1437,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_control(
             'validation_errors_heading',
             [
-                'label' => __('Validation Errors', 'px-elements'),
+                'label' => __('Validation Errors', 'pixerex-elements'),
                 'type' => Controls_Manager::HEADING,
                 'separator' => 'before',
                 'condition' => [
@@ -1449,7 +1449,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_control(
             'validation_errors_bg_color',
             [
-                'label' => __('Background Color', 'px-elements'),
+                'label' => __('Background Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -1464,7 +1464,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_control(
             'validation_errors_color',
             [
-                'label' => __('Text Color', 'px-elements'),
+                'label' => __('Text Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -1480,7 +1480,7 @@ class Contact_Form_7 extends Widget_Base
             Group_Control_Typography::get_type(),
             [
                 'name' => 'validation_errors_typography',
-                'label' => __('Typography', 'px-elements'),
+                'label' => __('Typography', 'pixerex-elements'),
                 'scheme' => Scheme_Typography::TYPOGRAPHY_4,
                 'selector' => '{{WRAPPER}} .eael-contact-form-7 .wpcf7-validation-errors',
                 'separator' => 'before',
@@ -1494,7 +1494,7 @@ class Contact_Form_7 extends Widget_Base
             Group_Control_Border::get_type(),
             [
                 'name' => 'validation_errors_border',
-                'label' => __('Border', 'px-elements'),
+                'label' => __('Border', 'pixerex-elements'),
                 'placeholder' => '1px',
                 'default' => '1px',
                 'selector' => '{{WRAPPER}} .eael-contact-form-7 .wpcf7-validation-errors',
@@ -1508,7 +1508,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_responsive_control(
             'validation_errors_margin',
             [
-                'label' => __('Margin', 'px-elements'),
+                'label' => __('Margin', 'pixerex-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -1528,7 +1528,7 @@ class Contact_Form_7 extends Widget_Base
         $this->start_controls_section(
             'section_after_submit_feedback_style',
             [
-                'label' => __('After Submit Feedback', 'px-elements'),
+                'label' => __('After Submit Feedback', 'pixerex-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -1537,7 +1537,7 @@ class Contact_Form_7 extends Widget_Base
             Group_Control_Typography::get_type(),
             [
                 'name' => 'contact_form_after_submit_feedback_typography',
-                'label' => __('Typography', 'px-elements'),
+                'label' => __('Typography', 'pixerex-elements'),
                 'selector' => '{{WRAPPER}} .eael-contact-form-7 .wpcf7-mail-sent-ng, {{WRAPPER}} .eael-contact-form-7 .wpcf7-mail-sent-ok',
                 'separator' => 'before',
             ]
@@ -1546,7 +1546,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_control(
             'contact_form_after_submit_feedback_color',
             [
-                'label' => __('Text Color', 'px-elements'),
+                'label' => __('Text Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -1560,7 +1560,7 @@ class Contact_Form_7 extends Widget_Base
             Group_Control_Background::get_type(),
             [
                 'name' => 'contact_form_after_submit_feedback_background',
-                'label' => __('Background', 'px-elements'),
+                'label' => __('Background', 'pixerex-elements'),
                 'types' => ['classic', 'gradient'],
                 'selector' => '{{WRAPPER}} .eael-contact-form-7 .wpcf7-mail-sent-ng, {{WRAPPER}} .eael-contact-form-7 .wpcf7-mail-sent-ok',
                 'separator' => 'before',
@@ -1571,7 +1571,7 @@ class Contact_Form_7 extends Widget_Base
             Group_Control_Border::get_type(),
             [
                 'name' => 'contact_form_after_submit_feedback_border',
-                'label' => __('Border', 'px-elements'),
+                'label' => __('Border', 'pixerex-elements'),
                 'placeholder' => '1px',
                 'default' => '1px',
                 'selector' => '{{WRAPPER}} .eael-contact-form-7 .wpcf7-mail-sent-ng, {{WRAPPER}} .eael-contact-form-7 .wpcf7-mail-sent-ok',
@@ -1582,7 +1582,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_responsive_control(
             'contact_form_after_submit_feedback_border_radius',
             [
-                'label' => esc_html__('Radius', 'px-elements'),
+                'label' => esc_html__('Radius', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => ['px', 'em', '%'],
                 'range' => [
@@ -1605,7 +1605,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_responsive_control(
             'contact_form_after_submit_feedback_border_margin',
             [
-                'label' => esc_html__('Margin', 'px-elements'),
+                'label' => esc_html__('Margin', 'pixerex-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -1619,7 +1619,7 @@ class Contact_Form_7 extends Widget_Base
         $this->add_responsive_control(
             'contact_form_after_submit_feedback_border_padding',
             [
-                'label' => esc_html__('Padding', 'px-elements'),
+                'label' => esc_html__('Padding', 'pixerex-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [

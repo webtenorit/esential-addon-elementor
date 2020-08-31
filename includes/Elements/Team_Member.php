@@ -21,7 +21,7 @@ class Team_Member extends Widget_Base {
 	}
 
 	public function get_title() {
-		return esc_html__( 'Team Member', 'px-elements');
+		return esc_html__( 'Team Member', 'pixerex-elements');
 	}
 
 	public function get_icon() {
@@ -61,7 +61,7 @@ class Team_Member extends Widget_Base {
   		$this->start_controls_section(
   			'eael_section_team_member_image',
   			[
-  				'label' => esc_html__( 'Team Member Image', 'px-elements')
+  				'label' => esc_html__( 'Team Member Image', 'pixerex-elements')
   			]
   		);
 
@@ -69,7 +69,7 @@ class Team_Member extends Widget_Base {
 		$this->add_control(
 			'eael_team_member_image',
 			[
-				'label' => __( 'Team Member Avatar', 'px-elements'),
+				'label' => __( 'Team Member Avatar', 'pixerex-elements'),
 				'type' => Controls_Manager::MEDIA,
 				'default' => [
 					'url' => Utils::get_placeholder_image_src(),
@@ -95,7 +95,7 @@ class Team_Member extends Widget_Base {
   		$this->start_controls_section(
   			'eael_section_team_member_content',
   			[
-  				'label' => esc_html__( 'Team Member Content', 'px-elements')
+  				'label' => esc_html__( 'Team Member Content', 'pixerex-elements')
   			]
   		);
 
@@ -103,27 +103,27 @@ class Team_Member extends Widget_Base {
 		$this->add_control(
 			'eael_team_member_name',
 			[
-				'label' => esc_html__( 'Name', 'px-elements'),
+				'label' => esc_html__( 'Name', 'pixerex-elements'),
 				'type' => Controls_Manager::TEXT,
-				'default' => esc_html__( 'John Doe', 'px-elements'),
+				'default' => esc_html__( 'John Doe', 'pixerex-elements'),
 			]
 		);
 
 		$this->add_control(
 			'eael_team_member_job_title',
 			[
-				'label' => esc_html__( 'Job Position', 'px-elements'),
+				'label' => esc_html__( 'Job Position', 'pixerex-elements'),
 				'type' => Controls_Manager::TEXT,
-				'default' => esc_html__( 'Software Engineer', 'px-elements'),
+				'default' => esc_html__( 'Software Engineer', 'pixerex-elements'),
 			]
 		);
 
 		$this->add_control(
 			'eael_team_member_description',
 			[
-				'label' => esc_html__( 'Description', 'px-elements'),
+				'label' => esc_html__( 'Description', 'pixerex-elements'),
 				'type' => Controls_Manager::TEXTAREA,
-				'default' => esc_html__( 'Add team member description here. Remove the text if not necessary.', 'px-elements'),
+				'default' => esc_html__( 'Add team member description here. Remove the text if not necessary.', 'pixerex-elements'),
 			]
 		);
 
@@ -134,14 +134,14 @@ class Team_Member extends Widget_Base {
   		$this->start_controls_section(
   			'eael_section_team_member_social_profiles',
   			[
-  				'label' => esc_html__( 'Social Profiles', 'px-elements')
+  				'label' => esc_html__( 'Social Profiles', 'pixerex-elements')
   			]
   		);
 
 		$this->add_control(
 			'eael_team_member_enable_social_profiles',
 			[
-				'label' => esc_html__( 'Display Social Profiles?', 'px-elements'),
+				'label' => esc_html__( 'Display Social Profiles?', 'pixerex-elements'),
 				'type' => Controls_Manager::SWITCHER,
 				'default' => 'yes',
 			]
@@ -184,7 +184,7 @@ class Team_Member extends Widget_Base {
 				'fields' => [
 					[
 						'name' => 'social_new',
-						'label' => esc_html__( 'Icon', 'px-elements'),
+						'label' => esc_html__( 'Icon', 'pixerex-elements'),
 						'type' => Controls_Manager::ICONS,
 						'fa4compatibility' => 'social',
 						'default' => [
@@ -194,14 +194,14 @@ class Team_Member extends Widget_Base {
 					],
 					[
 						'name' => 'link',
-						'label' => esc_html__( 'Link', 'px-elements'),
+						'label' => esc_html__( 'Link', 'pixerex-elements'),
 						'type' => Controls_Manager::URL,
 						'label_block' => true,
 						'default' => [
 							'url' => '',
 							'is_external' => 'true',
 						],
-						'placeholder' => esc_html__( 'Place URL here', 'px-elements'),
+						'placeholder' => esc_html__( 'Place URL here', 'pixerex-elements'),
 					],
 				],
 				'title_field' => '<i class="{{ social_new.value }}"></i>',
@@ -215,14 +215,14 @@ class Team_Member extends Widget_Base {
 			$this->start_controls_section(
 				'eael_section_pro',
 				[
-					'label' => __( 'Go Premium for More Features', 'px-elements')
+					'label' => __( 'Go Premium for More Features', 'pixerex-elements')
 				]
 			);
 
 			$this->add_control(
 				'eael_control_get_pro',
 				[
-					'label' => __( 'Unlock more possibilities', 'px-elements'),
+					'label' => __( 'Unlock more possibilities', 'pixerex-elements'),
 					'type' => Controls_Manager::CHOOSE,
 					'options' => [
 						'1' => [
@@ -241,24 +241,24 @@ class Team_Member extends Widget_Base {
 		$this->start_controls_section(
 			'eael_section_team_members_styles_general',
 			[
-				'label' => esc_html__( 'Team Member Styles', 'px-elements'),
+				'label' => esc_html__( 'Team Member Styles', 'pixerex-elements'),
 				'tab' => Controls_Manager::TAB_STYLE
 			]
 		);
 
 		$team_member_style_presets_options = apply_filters('eael_team_member_style_presets_options', [
-			'eael-team-members-simple'        => esc_html__( 'Simple Style', 		'px-elements' ),
-			'eael-team-members-overlay'       => esc_html__( 'Overlay Style', 	'px-elements' ),
-			'eael-team-members-centered'      => esc_html__( 'Centered Style', 	'px-elements' ),
-			'eael-team-members-circle'        => esc_html__( 'Circle Style', 	'px-elements' ),
-			'eael-team-members-social-bottom' => esc_html__( 'Social on Bottom', 	'px-elements' ),
-			'eael-team-members-social-right'  => esc_html__( 'Social on Right', 	'px-elements' ),
+			'eael-team-members-simple'        => esc_html__( 'Simple Style', 		'pixerex-elements' ),
+			'eael-team-members-overlay'       => esc_html__( 'Overlay Style', 	'pixerex-elements' ),
+			'eael-team-members-centered'      => esc_html__( 'Centered Style', 	'pixerex-elements' ),
+			'eael-team-members-circle'        => esc_html__( 'Circle Style', 	'pixerex-elements' ),
+			'eael-team-members-social-bottom' => esc_html__( 'Social on Bottom', 	'pixerex-elements' ),
+			'eael-team-members-social-right'  => esc_html__( 'Social on Right', 	'pixerex-elements' ),
 		]);
 
 		$this->add_control(
 			'eael_team_members_preset',
 			[
-				'label'   => esc_html__( 'Style Preset', 'px-elements'),
+				'label'   => esc_html__( 'Style Preset', 'pixerex-elements'),
 				'type'    => Controls_Manager::SELECT,
 				'default' => 'eael-team-members-simple',
 				'options' => $team_member_style_presets_options
@@ -275,7 +275,7 @@ class Team_Member extends Widget_Base {
 		$this->add_control(
 			'eael_team_members_preset_pro_alert',
 			[
-				'label'     => esc_html__( 'Only available in pro version!', 'px-elements'),
+				'label'     => esc_html__( 'Only available in pro version!', 'pixerex-elements'),
 				'type'      => Controls_Manager::HEADING,
 				'condition' => [
 					'eael_team_members_preset' => $team_member_style_presets_condition
@@ -286,7 +286,7 @@ class Team_Member extends Widget_Base {
 		$this->add_control(
 			'content_card_style',
 			[
-				'label' => __( 'Content Card', 'px-elements'),
+				'label' => __( 'Content Card', 'pixerex-elements'),
 				'type' => Controls_Manager::HEADING,
 				'separator'	=> 'before'
 			]
@@ -296,7 +296,7 @@ class Team_Member extends Widget_Base {
 		$this->add_control(
 			'content_card_height',
 			[
-				'label' => esc_html__( 'Height', 'px-elements'),
+				'label' => esc_html__( 'Height', 'pixerex-elements'),
 				'type' => Controls_Manager::SLIDER,
 				'size_units'	=> [ 'px', 'em' ],
 				'range' => [
@@ -322,7 +322,7 @@ class Team_Member extends Widget_Base {
 		$this->add_control(
 			'eael_team_members_overlay_background',
 			[
-				'label' => esc_html__( 'Overlay Color', 'px-elements'),
+				'label' => esc_html__( 'Overlay Color', 'pixerex-elements'),
 				'type' => Controls_Manager::COLOR,
 				'default' => 'rgba(255,255,255,0.8)',
 				'selectors' => [
@@ -337,7 +337,7 @@ class Team_Member extends Widget_Base {
 		$this->add_control(
 			'eael_team_members_background',
 			[
-				'label' => esc_html__( 'Content Background Color', 'px-elements'),
+				'label' => esc_html__( 'Content Background Color', 'pixerex-elements'),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -349,24 +349,24 @@ class Team_Member extends Widget_Base {
 		$this->add_control(
 			'eael_team_members_alignment',
 			[
-				'label' => esc_html__( 'Set Alignment', 'px-elements'),
+				'label' => esc_html__( 'Set Alignment', 'pixerex-elements'),
 				'type' => Controls_Manager::CHOOSE,
 				'label_block' => true,
 				'options' => [
 					'default' => [
-						'title' => __( 'Default', 'px-elements'),
+						'title' => __( 'Default', 'pixerex-elements'),
 						'icon' => 'fa fa-ban',
 					],
 					'left' => [
-						'title' => esc_html__( 'Left', 'px-elements'),
+						'title' => esc_html__( 'Left', 'pixerex-elements'),
 						'icon' => 'fa fa-align-left',
 					],
 					'centered' => [
-						'title' => esc_html__( 'Center', 'px-elements'),
+						'title' => esc_html__( 'Center', 'pixerex-elements'),
 						'icon' => 'fa fa-align-center',
 					],
 					'right' => [
-						'title' => esc_html__( 'Right', 'px-elements'),
+						'title' => esc_html__( 'Right', 'pixerex-elements'),
 						'icon' => 'fa fa-align-right',
 					],
 				],
@@ -378,7 +378,7 @@ class Team_Member extends Widget_Base {
 		$this->add_responsive_control(
 			'eael_team_members_padding',
 			[
-				'label' => esc_html__( 'Content Padding', 'px-elements'),
+				'label' => esc_html__( 'Content Padding', 'pixerex-elements'),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
@@ -391,7 +391,7 @@ class Team_Member extends Widget_Base {
 			Group_Control_Border::get_type(),
 			[
 				'name' => 'eael_team_members_border',
-				'label' => esc_html__( 'Border', 'px-elements'),
+				'label' => esc_html__( 'Border', 'pixerex-elements'),
 				'selector' => '{{WRAPPER}} .eael-team-item',
 			]
 		);
@@ -399,7 +399,7 @@ class Team_Member extends Widget_Base {
 		$this->add_control(
 			'eael_team_members_border_radius',
 			[
-				'label' => esc_html__( 'Border Radius', 'px-elements'),
+				'label' => esc_html__( 'Border Radius', 'pixerex-elements'),
 				'type' => Controls_Manager::DIMENSIONS,
 				'selectors' => [
 					'{{WRAPPER}} .eael-team-item' => 'border-radius: {{TOP}}px {{RIGHT}}px {{BOTTOM}}px {{LEFT}}px;',
@@ -413,7 +413,7 @@ class Team_Member extends Widget_Base {
 		$this->start_controls_section(
 			'eael_section_team_members_image_styles',
 			[
-				'label' => esc_html__( 'Team Member Image Style', 'px-elements'),
+				'label' => esc_html__( 'Team Member Image Style', 'pixerex-elements'),
 				'tab' => Controls_Manager::TAB_STYLE
 			]
 		);
@@ -421,7 +421,7 @@ class Team_Member extends Widget_Base {
 		$this->add_responsive_control(
 			'eael_team_members_image_width',
 			[
-				'label' => esc_html__( 'Image Width', 'px-elements'),
+				'label' => esc_html__( 'Image Width', 'pixerex-elements'),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 100,
@@ -453,7 +453,7 @@ class Team_Member extends Widget_Base {
 		$this->add_responsive_control(
 			'eael_team_members_image_margin',
 			[
-				'label' => esc_html__( 'Margin', 'px-elements'),
+				'label' => esc_html__( 'Margin', 'pixerex-elements'),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -465,7 +465,7 @@ class Team_Member extends Widget_Base {
 		$this->add_responsive_control(
 			'eael_team_members_image_padding',
 			[
-				'label' => esc_html__( 'Padding', 'px-elements'),
+				'label' => esc_html__( 'Padding', 'pixerex-elements'),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
@@ -479,7 +479,7 @@ class Team_Member extends Widget_Base {
 			Group_Control_Border::get_type(),
 			[
 				'name' => 'eael_team_members_image_border',
-				'label' => esc_html__( 'Border', 'px-elements'),
+				'label' => esc_html__( 'Border', 'pixerex-elements'),
 				'selector' => '{{WRAPPER}} .eael-team-item figure img',
 			]
 		);
@@ -487,7 +487,7 @@ class Team_Member extends Widget_Base {
 		$this->add_control(
 			'eael_team_members_image_rounded',
 			[
-				'label' => esc_html__( 'Rounded Avatar?', 'px-elements'),
+				'label' => esc_html__( 'Rounded Avatar?', 'pixerex-elements'),
 				'type' => Controls_Manager::SWITCHER,
 				'return_value' => 'team-avatar-rounded',
 				'default' => '',
@@ -498,7 +498,7 @@ class Team_Member extends Widget_Base {
 		$this->add_control(
 			'eael_team_members_image_border_radius',
 			[
-				'label' => esc_html__( 'Border Radius', 'px-elements'),
+				'label' => esc_html__( 'Border Radius', 'pixerex-elements'),
 				'type' => Controls_Manager::DIMENSIONS,
 				'selectors' => [
 					'{{WRAPPER}} .eael-team-item figure img' => 'border-radius: {{TOP}}px {{RIGHT}}px {{BOTTOM}}px {{LEFT}}px;',
@@ -515,7 +515,7 @@ class Team_Member extends Widget_Base {
 		$this->start_controls_section(
 			'eael_section_team_members_typography',
 			[
-				'label' => esc_html__( 'Color &amp; Typography', 'px-elements'),
+				'label' => esc_html__( 'Color &amp; Typography', 'pixerex-elements'),
 				'tab' => Controls_Manager::TAB_STYLE
 			]
 		);
@@ -523,7 +523,7 @@ class Team_Member extends Widget_Base {
 		$this->add_control(
 			'eael_team_members_name_heading',
 			[
-				'label' => __( 'Member Name', 'px-elements'),
+				'label' => __( 'Member Name', 'pixerex-elements'),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -531,7 +531,7 @@ class Team_Member extends Widget_Base {
 		$this->add_control(
 			'eael_team_members_name_color',
 			[
-				'label' => esc_html__( 'Member Name Color', 'px-elements'),
+				'label' => esc_html__( 'Member Name Color', 'pixerex-elements'),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#272727',
 				'selectors' => [
@@ -551,7 +551,7 @@ class Team_Member extends Widget_Base {
 		$this->add_control(
 			'eael_team_members_position_heading',
 			[
-				'label' => __( 'Member Job Position', 'px-elements'),
+				'label' => __( 'Member Job Position', 'pixerex-elements'),
 				'type' => Controls_Manager::HEADING,
 				'separator'	=> 'before'
 			]
@@ -560,7 +560,7 @@ class Team_Member extends Widget_Base {
 		$this->add_control(
 			'eael_team_members_position_color',
 			[
-				'label' => esc_html__( 'Job Position Color', 'px-elements'),
+				'label' => esc_html__( 'Job Position Color', 'pixerex-elements'),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#272727',
 				'selectors' => [
@@ -580,7 +580,7 @@ class Team_Member extends Widget_Base {
 		$this->add_control(
 			'eael_team_members_description_heading',
 			[
-				'label' => __( 'Member Description', 'px-elements'),
+				'label' => __( 'Member Description', 'pixerex-elements'),
 				'type' => Controls_Manager::HEADING,
 				'separator'	=> 'before'
 			]
@@ -589,7 +589,7 @@ class Team_Member extends Widget_Base {
 		$this->add_control(
 			'eael_team_members_description_color',
 			[
-				'label' => esc_html__( 'Description Color', 'px-elements'),
+				'label' => esc_html__( 'Description Color', 'pixerex-elements'),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#272727',
 				'selectors' => [
@@ -612,7 +612,7 @@ class Team_Member extends Widget_Base {
 		$this->start_controls_section(
 			'eael_section_team_members_social_profiles_styles',
 			[
-				'label' => esc_html__( 'Social Profiles Style', 'px-elements'),
+				'label' => esc_html__( 'Social Profiles Style', 'pixerex-elements'),
 				'tab' => Controls_Manager::TAB_STYLE
 			]
 		);
@@ -621,7 +621,7 @@ class Team_Member extends Widget_Base {
 		$this->add_control(
 			'eael_team_members_social_icon_size',
 			[
-				'label' => esc_html__( 'Icon Size', 'px-elements'),
+				'label' => esc_html__( 'Icon Size', 'pixerex-elements'),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -644,7 +644,7 @@ class Team_Member extends Widget_Base {
 		$this->add_responsive_control(
 			'eael_team_members_social_profiles_padding',
 			[
-				'label' => esc_html__( 'Social Profiles Margin', 'px-elements'),
+				'label' => esc_html__( 'Social Profiles Margin', 'pixerex-elements'),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
@@ -657,7 +657,7 @@ class Team_Member extends Widget_Base {
 		$this->add_responsive_control(
 			'eael_team_members_social_icons_padding',
 			[
-				'label'      => esc_html__( 'Social Icon Padding', 'px-elements'),
+				'label'      => esc_html__( 'Social Icon Padding', 'pixerex-elements'),
 				'type'       => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors'  => [
@@ -669,7 +669,7 @@ class Team_Member extends Widget_Base {
 		$this->add_responsive_control(
 			'eael_team_members_social_icons_spacing',
 			[
-				'label'      => esc_html__( 'Social Icon Distance', 'px-elements'),
+				'label'      => esc_html__( 'Social Icon Distance', 'pixerex-elements'),
 				'type'       => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors'  => [
@@ -681,10 +681,10 @@ class Team_Member extends Widget_Base {
 		$this->add_control(
 			'eael_team_members_social_icons_used_gradient_bg',
 			[
-				'label' => __( 'Use Gradient Background', 'px-elements' ),
+				'label' => __( 'Use Gradient Background', 'pixerex-elements' ),
 				'type' => \Elementor\Controls_Manager::SWITCHER,
-				'label_on' => __( 'Yes', 'px-elements' ),
-				'label_off' => __( 'No', 'px-elements' ),
+				'label_on' => __( 'Yes', 'pixerex-elements' ),
+				'label_off' => __( 'No', 'pixerex-elements' ),
 				'return_value' => 'yes',
 			]
 		);
@@ -692,12 +692,12 @@ class Team_Member extends Widget_Base {
 
 		$this->start_controls_tabs( 'eael_team_members_social_icons_style_tabs' );
 
-		$this->start_controls_tab( 'normal', [ 'label' => esc_html__( 'Normal', 'px-elements') ] );
+		$this->start_controls_tab( 'normal', [ 'label' => esc_html__( 'Normal', 'pixerex-elements') ] );
 
 		$this->add_control(
 			'eael_team_members_social_icon_color',
 			[
-				'label' => esc_html__( 'Icon Color', 'px-elements'),
+				'label' => esc_html__( 'Icon Color', 'pixerex-elements'),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#f1ba63',
 				'selectors' => [
@@ -709,7 +709,7 @@ class Team_Member extends Widget_Base {
 		$this->add_control(
 			'eael_team_members_social_icon_background',
 			[
-				'label' => esc_html__( 'Background Color', 'px-elements'),
+				'label' => esc_html__( 'Background Color', 'pixerex-elements'),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -724,7 +724,7 @@ class Team_Member extends Widget_Base {
 			Group_Control_Background::get_type(),
 			[
 				'name' => 'eael_team_members_social_icon_gradient_background',
-				'label' => __( 'Background', 'px-elements' ),
+				'label' => __( 'Background', 'pixerex-elements' ),
 				'types' => [ 'classic', 'gradient' ],
 				'selector' => '{{WRAPPER}} .eael-team-member-social-link > a',
 				'condition' => [
@@ -745,7 +745,7 @@ class Team_Member extends Widget_Base {
 		$this->add_control(
 			'eael_team_members_social_icon_border_radius',
 			[
-				'label' => esc_html__( 'Border Radius', 'px-elements'),
+				'label' => esc_html__( 'Border Radius', 'pixerex-elements'),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -769,12 +769,12 @@ class Team_Member extends Widget_Base {
 
 		$this->end_controls_tab();
 
-		$this->start_controls_tab( 'eael_team_members_social_icon_hover', [ 'label' => esc_html__( 'Hover', 'px-elements') ] );
+		$this->start_controls_tab( 'eael_team_members_social_icon_hover', [ 'label' => esc_html__( 'Hover', 'pixerex-elements') ] );
 
 		$this->add_control(
 			'eael_team_members_social_icon_hover_color',
 			[
-				'label' => esc_html__( 'Icon Hover Color', 'px-elements'),
+				'label' => esc_html__( 'Icon Hover Color', 'pixerex-elements'),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#ad8647',
 				'selectors' => [
@@ -786,7 +786,7 @@ class Team_Member extends Widget_Base {
 		$this->add_control(
 			'eael_team_members_social_icon_hover_background',
 			[
-				'label' => esc_html__( 'Hover Background', 'px-elements'),
+				'label' => esc_html__( 'Hover Background', 'pixerex-elements'),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -801,7 +801,7 @@ class Team_Member extends Widget_Base {
 			Group_Control_Background::get_type(),
 			[
 				'name' => 'eael_team_members_social_icon_hover_gradient_background',
-				'label' => __( 'Background', 'px-elements' ),
+				'label' => __( 'Background', 'pixerex-elements' ),
 				'types' => [ 'classic', 'gradient' ],
 				'selector' => '{{WRAPPER}} .eael-team-member-social-link > a:hover',
 				'condition' => [
@@ -813,7 +813,7 @@ class Team_Member extends Widget_Base {
 		$this->add_control(
 			'eael_team_members_social_icon_hover_border_color',
 			[
-				'label' => esc_html__( 'Hover Border Color', 'px-elements'),
+				'label' => esc_html__( 'Hover Border Color', 'pixerex-elements'),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [

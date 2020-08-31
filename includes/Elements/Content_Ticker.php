@@ -23,7 +23,7 @@ class Content_Ticker extends Widget_Base
 
     public function get_title()
     {
-        return esc_html__('Content Ticker', 'px-elements');
+        return esc_html__('Content Ticker', 'pixerex-elements');
     }
 
     public function get_icon()
@@ -66,7 +66,7 @@ class Content_Ticker extends Widget_Base
         $this->start_controls_section(
             'eael_section_content_ticker_settings',
             [
-                'label' => esc_html__('Ticker Settings', 'px-elements'),
+                'label' => esc_html__('Ticker Settings', 'pixerex-elements'),
             ]
         );
 
@@ -74,8 +74,8 @@ class Content_Ticker extends Widget_Base
             'eael_ticker_options',
             [
                 'options' => [
-                    'dynamic' => esc_html__('Dynamic', 'px-elements'),
-                    'custom' => esc_html__('Custom', 'px-elements'),
+                    'dynamic' => esc_html__('Dynamic', 'pixerex-elements'),
+                    'custom' => esc_html__('Custom', 'pixerex-elements'),
                 ],
                 'conditions' => [
                     'custom',
@@ -86,7 +86,7 @@ class Content_Ticker extends Widget_Base
         $this->add_control(
             'eael_ticker_type',
             [
-                'label' => esc_html__('Ticker Type', 'px-elements'),
+                'label' => esc_html__('Ticker Type', 'pixerex-elements'),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'dynamic',
                 'label_block' => false,
@@ -97,7 +97,7 @@ class Content_Ticker extends Widget_Base
         $this->add_control(
             'eael_ticker_type_pro_alert',
             [
-                'label' => esc_html__('Custom Content available in pro version only!', 'px-elements'),
+                'label' => esc_html__('Custom Content available in pro version only!', 'pixerex-elements'),
                 'type' => Controls_Manager::HEADING,
                 'condition' => [
                     'eael_ticker_type' => $ticker_options['conditions'],
@@ -108,10 +108,10 @@ class Content_Ticker extends Widget_Base
         $this->add_control(
             'eael_ticker_tag_text',
             [
-                'label' => esc_html__('Tag Text', 'px-elements'),
+                'label' => esc_html__('Tag Text', 'pixerex-elements'),
                 'type' => Controls_Manager::TEXT,
                 'label_block' => false,
-                'default' => esc_html__('Trending Today', 'px-elements'),
+                'default' => esc_html__('Trending Today', 'pixerex-elements'),
             ]
         );
 
@@ -131,20 +131,20 @@ class Content_Ticker extends Widget_Base
         $this->start_controls_section(
             'section_additional_options',
             [
-                'label' => __('Animation Settings', 'px-elements'),
+                'label' => __('Animation Settings', 'pixerex-elements'),
             ]
         );
 
         $this->add_control(
             'carousel_effect',
             [
-                'label' => __('Effect', 'px-elements'),
-                'description' => __('Sets transition effect', 'px-elements'),
+                'label' => __('Effect', 'pixerex-elements'),
+                'description' => __('Sets transition effect', 'pixerex-elements'),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'slide',
                 'options' => [
-                    'slide' => __('Slide', 'px-elements'),
-                    'fade' => __('Fade', 'px-elements'),
+                    'slide' => __('Slide', 'pixerex-elements'),
+                    'fade' => __('Fade', 'pixerex-elements'),
                 ],
             ]
         );
@@ -152,7 +152,7 @@ class Content_Ticker extends Widget_Base
         $this->add_responsive_control(
             'items',
             [
-                'label' => __('Visible Items', 'px-elements'),
+                'label' => __('Visible Items', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'default' => ['size' => 1],
                 'tablet_default' => ['size' => 1],
@@ -175,7 +175,7 @@ class Content_Ticker extends Widget_Base
         $this->add_responsive_control(
             'margin',
             [
-                'label' => __('Items Gap', 'px-elements'),
+                'label' => __('Items Gap', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'default' => ['size' => 10],
                 'range' => [
@@ -195,8 +195,8 @@ class Content_Ticker extends Widget_Base
         $this->add_control(
             'slider_speed',
             [
-                'label' => __('Slider Speed', 'px-elements'),
-                'description' => __('Duration of transition between slides (in ms)', 'px-elements'),
+                'label' => __('Slider Speed', 'pixerex-elements'),
+                'description' => __('Duration of transition between slides (in ms)', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'default' => ['size' => 400],
                 'range' => [
@@ -214,11 +214,11 @@ class Content_Ticker extends Widget_Base
         $this->add_control(
             'autoplay',
             [
-                'label' => __('Autoplay', 'px-elements'),
+                'label' => __('Autoplay', 'pixerex-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'default' => 'yes',
-                'label_on' => __('Yes', 'px-elements'),
-                'label_off' => __('No', 'px-elements'),
+                'label_on' => __('Yes', 'pixerex-elements'),
+                'label_off' => __('No', 'pixerex-elements'),
                 'return_value' => 'yes',
                 'separator' => 'before',
             ]
@@ -227,7 +227,7 @@ class Content_Ticker extends Widget_Base
         $this->add_control(
             'autoplay_speed',
             [
-                'label' => __('Autoplay Speed', 'px-elements'),
+                'label' => __('Autoplay Speed', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'default' => ['size' => 2000],
                 'range' => [
@@ -247,11 +247,11 @@ class Content_Ticker extends Widget_Base
         $this->add_control(
             'pause_on_hover',
             [
-                'label' => __('Pause On Hover', 'px-elements'),
+                'label' => __('Pause On Hover', 'pixerex-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'default' => '',
-                'label_on' => __('Yes', 'px-elements'),
-                'label_off' => __('No', 'px-elements'),
+                'label_on' => __('Yes', 'pixerex-elements'),
+                'label_off' => __('No', 'pixerex-elements'),
                 'return_value' => 'yes',
                 'condition' => [
                     'autoplay' => 'yes',
@@ -262,11 +262,11 @@ class Content_Ticker extends Widget_Base
         $this->add_control(
             'infinite_loop',
             [
-                'label' => __('Infinite Loop', 'px-elements'),
+                'label' => __('Infinite Loop', 'pixerex-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'default' => 'yes',
-                'label_on' => __('Yes', 'px-elements'),
-                'label_off' => __('No', 'px-elements'),
+                'label_on' => __('Yes', 'pixerex-elements'),
+                'label_off' => __('No', 'pixerex-elements'),
                 'return_value' => 'yes',
             ]
         );
@@ -274,12 +274,12 @@ class Content_Ticker extends Widget_Base
         $this->add_control(
             'grab_cursor',
             [
-                'label' => __('Grab Cursor', 'px-elements'),
-                'description' => __('Shows grab cursor when you hover over the slider', 'px-elements'),
+                'label' => __('Grab Cursor', 'pixerex-elements'),
+                'description' => __('Shows grab cursor when you hover over the slider', 'pixerex-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'default' => '',
-                'label_on' => __('Show', 'px-elements'),
-                'label_off' => __('Hide', 'px-elements'),
+                'label_on' => __('Show', 'pixerex-elements'),
+                'label_off' => __('Hide', 'pixerex-elements'),
                 'return_value' => 'yes',
                 'separator' => 'before',
             ]
@@ -288,7 +288,7 @@ class Content_Ticker extends Widget_Base
         $this->add_control(
             'navigation_heading',
             [
-                'label' => __('Navigation', 'px-elements'),
+                'label' => __('Navigation', 'pixerex-elements'),
                 'type' => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -297,11 +297,11 @@ class Content_Ticker extends Widget_Base
         $this->add_control(
             'arrows',
             [
-                'label' => __('Arrows', 'px-elements'),
+                'label' => __('Arrows', 'pixerex-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'default' => 'yes',
-                'label_on' => __('Yes', 'px-elements'),
-                'label_off' => __('No', 'px-elements'),
+                'label_on' => __('Yes', 'pixerex-elements'),
+                'label_off' => __('No', 'pixerex-elements'),
                 'return_value' => 'yes',
             ]
         );
@@ -309,12 +309,12 @@ class Content_Ticker extends Widget_Base
         $this->add_control(
             'direction',
             [
-                'label' => __('Direction', 'px-elements'),
+                'label' => __('Direction', 'pixerex-elements'),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'left',
                 'options' => [
-                    'left' => __('Left', 'px-elements'),
-                    'right' => __('Right', 'px-elements'),
+                    'left' => __('Left', 'pixerex-elements'),
+                    'right' => __('Right', 'pixerex-elements'),
                 ],
                 'separator' => 'before',
                 'condition' => [
@@ -329,14 +329,14 @@ class Content_Ticker extends Widget_Base
             $this->start_controls_section(
                 'eael_section_pro',
                 [
-                    'label' => __('Go Premium for More Features', 'px-elements'),
+                    'label' => __('Go Premium for More Features', 'pixerex-elements'),
                 ]
             );
 
             $this->add_control(
                 'eael_control_get_pro',
                 [
-                    'label' => __('Unlock more possibilities', 'px-elements'),
+                    'label' => __('Unlock more possibilities', 'pixerex-elements'),
                     'type' => Controls_Manager::CHOOSE,
                     'options' => [
                         '1' => [
@@ -360,7 +360,7 @@ class Content_Ticker extends Widget_Base
         $this->start_controls_section(
             'eael_section_ticker_typography_settings',
             [
-                'label' => esc_html__('Ticker Content', 'px-elements'),
+                'label' => esc_html__('Ticker Content', 'pixerex-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -368,7 +368,7 @@ class Content_Ticker extends Widget_Base
         $this->add_control(
             'eael_ticker_content_bg',
             [
-                'label' => esc_html__('Background Color', 'px-elements'),
+                'label' => esc_html__('Background Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -380,7 +380,7 @@ class Content_Ticker extends Widget_Base
         $this->add_control(
             'eael_ticker_content_color',
             [
-                'label' => esc_html__('Text Color', 'px-elements'),
+                'label' => esc_html__('Text Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#222222',
                 'selectors' => [
@@ -391,7 +391,7 @@ class Content_Ticker extends Widget_Base
         $this->add_control(
             'eael_ticker_hover_content_color',
             [
-                'label' => esc_html__('Text Hover Color', 'px-elements'),
+                'label' => esc_html__('Text Hover Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#f44336',
                 'selectors' => [
@@ -412,7 +412,7 @@ class Content_Ticker extends Widget_Base
         $this->add_responsive_control(
             'eael_ticker_content_padding',
             [
-                'label' => esc_html__('Padding', 'px-elements'),
+                'label' => esc_html__('Padding', 'pixerex-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -426,14 +426,14 @@ class Content_Ticker extends Widget_Base
         $this->start_controls_section(
             'eael_section_ticker_tag_style_settings',
             [
-                'label' => esc_html__('Tag Style', 'px-elements'),
+                'label' => esc_html__('Tag Style', 'pixerex-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
         $this->add_control(
             'eael_ticker_tag_bg_color',
             [
-                'label' => esc_html__('Background Color', 'px-elements'),
+                'label' => esc_html__('Background Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#222222',
                 'selectors' => [
@@ -444,7 +444,7 @@ class Content_Ticker extends Widget_Base
         $this->add_control(
             'eael_ticker_tag_color',
             [
-                'label' => esc_html__('Color', 'px-elements'),
+                'label' => esc_html__('Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#fff',
                 'selectors' => [
@@ -463,7 +463,7 @@ class Content_Ticker extends Widget_Base
         $this->add_responsive_control(
             'eael_ticker_tag_padding',
             [
-                'label' => esc_html__('Padding', 'px-elements'),
+                'label' => esc_html__('Padding', 'pixerex-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -475,7 +475,7 @@ class Content_Ticker extends Widget_Base
         $this->add_responsive_control(
             'eael_ticker_tag_margin',
             [
-                'label' => esc_html__('Margin', 'px-elements'),
+                'label' => esc_html__('Margin', 'pixerex-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -486,7 +486,7 @@ class Content_Ticker extends Widget_Base
         $this->add_responsive_control(
             'eael_ticker_tag_radius',
             [
-                'label' => esc_html__('Border Radius', 'px-elements'),
+                'label' => esc_html__('Border Radius', 'pixerex-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -502,7 +502,7 @@ class Content_Ticker extends Widget_Base
         $this->start_controls_section(
             'section_arrows_style',
             [
-                'label' => __('Arrows', 'px-elements'),
+                'label' => __('Arrows', 'pixerex-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'arrows' => 'yes',
@@ -513,7 +513,7 @@ class Content_Ticker extends Widget_Base
         $this->add_control(
             'prev_arrow',
             [
-                'label' => __('Choose Prev Arrow', 'px-elements'),
+                'label' => __('Choose Prev Arrow', 'pixerex-elements'),
                 'type' => Controls_Manager::ICONS,
                 'label_block' => true,
                 'default' => [
@@ -526,7 +526,7 @@ class Content_Ticker extends Widget_Base
         $this->add_control(
             'arrow_new',
             [
-                'label' => __('Choose Next Arrow', 'px-elements'),
+                'label' => __('Choose Next Arrow', 'pixerex-elements'),
                 'type' => Controls_Manager::ICONS,
                 'fa4compatibility' => 'arrow',
                 'label_block' => true,
@@ -540,7 +540,7 @@ class Content_Ticker extends Widget_Base
         $this->add_responsive_control(
             'arrows_size',
             [
-                'label' => __('Arrows Size', 'px-elements'),
+                'label' => __('Arrows Size', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'default' => ['size' => '22'],
                 'range' => [
@@ -561,7 +561,7 @@ class Content_Ticker extends Widget_Base
         $this->add_responsive_control(
             'left_arrow_position',
             [
-                'label' => __('Align Left Arrow', 'px-elements'),
+                'label' => __('Align Left Arrow', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'range' => [
                     'px' => [
@@ -580,7 +580,7 @@ class Content_Ticker extends Widget_Base
         $this->add_responsive_control(
             'right_arrow_position',
             [
-                'label' => __('Align Right Arrow', 'px-elements'),
+                'label' => __('Align Right Arrow', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'range' => [
                     'px' => [
@@ -601,14 +601,14 @@ class Content_Ticker extends Widget_Base
         $this->start_controls_tab(
             'tab_arrows_normal',
             [
-                'label' => __('Normal', 'px-elements'),
+                'label' => __('Normal', 'pixerex-elements'),
             ]
         );
 
         $this->add_control(
             'arrows_bg_color_normal',
             [
-                'label' => __('Background Color', 'px-elements'),
+                'label' => __('Background Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -620,7 +620,7 @@ class Content_Ticker extends Widget_Base
         $this->add_control(
             'arrows_color_normal',
             [
-                'label' => __('Color', 'px-elements'),
+                'label' => __('Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -633,7 +633,7 @@ class Content_Ticker extends Widget_Base
             Group_Control_Border::get_type(),
             [
                 'name' => 'arrows_border_normal',
-                'label' => __('Border', 'px-elements'),
+                'label' => __('Border', 'pixerex-elements'),
                 'placeholder' => '1px',
                 'default' => '1px',
                 'selector' => '{{WRAPPER}} .swiper-container-wrap .swiper-button-next, {{WRAPPER}} .swiper-container-wrap .swiper-button-prev',
@@ -643,7 +643,7 @@ class Content_Ticker extends Widget_Base
         $this->add_control(
             'arrows_border_radius_normal',
             [
-                'label' => __('Border Radius', 'px-elements'),
+                'label' => __('Border Radius', 'pixerex-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%'],
                 'selectors' => [
@@ -657,14 +657,14 @@ class Content_Ticker extends Widget_Base
         $this->start_controls_tab(
             'tab_arrows_hover',
             [
-                'label' => __('Hover', 'px-elements'),
+                'label' => __('Hover', 'pixerex-elements'),
             ]
         );
 
         $this->add_control(
             'arrows_bg_color_hover',
             [
-                'label' => __('Background Color', 'px-elements'),
+                'label' => __('Background Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -676,7 +676,7 @@ class Content_Ticker extends Widget_Base
         $this->add_control(
             'arrows_color_hover',
             [
-                'label' => __('Color', 'px-elements'),
+                'label' => __('Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -688,7 +688,7 @@ class Content_Ticker extends Widget_Base
         $this->add_control(
             'arrows_border_color_hover',
             [
-                'label' => __('Border Color', 'px-elements'),
+                'label' => __('Border Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -704,7 +704,7 @@ class Content_Ticker extends Widget_Base
         $this->add_responsive_control(
             'arrows_padding',
             [
-                'label' => __('Padding', 'px-elements'),
+                'label' => __('Padding', 'pixerex-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%'],
                 'selectors' => [

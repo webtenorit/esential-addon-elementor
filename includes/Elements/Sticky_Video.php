@@ -21,7 +21,7 @@ class Sticky_Video extends Widget_Base
 
     public function get_title()
     {
-        return esc_html__('Sticky Video', 'px-elements');
+        return esc_html__('Sticky Video', 'pixerex-elements');
     }
 
     public function get_icon()
@@ -86,7 +86,7 @@ class Sticky_Video extends Widget_Base
         $this->start_controls_section(
             'eaelsv_sticky_option_section',
             [
-                'label' => __('Sticky Options', 'px-elements'),
+                'label' => __('Sticky Options', 'pixerex-elements'),
                 'tab' => Controls_Manager::TAB_CONTENT,
             ]
         );
@@ -94,11 +94,11 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_is_sticky',
             [
-                'label' => __('Sticky', 'px-elements'),
+                'label' => __('Sticky', 'pixerex-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'label_block' => false,
-                'label_on' => __('On', 'px-elements'),
-                'label_off' => __('Off', 'px-elements'),
+                'label_on' => __('On', 'pixerex-elements'),
+                'label_off' => __('Off', 'pixerex-elements'),
                 'return_value' => 'yes',
                 'default' => 'yes',
                 'selectors' => [
@@ -110,13 +110,13 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_sticky_position',
             [
-                'label' => __('Position', 'px-elements'),
+                'label' => __('Position', 'pixerex-elements'),
                 'type' => Controls_Manager::SELECT,
                 'options' => [
-                    'top-left' => __('Top Left', 'px-elements'),
-                    'top-right' => __('Top Right', 'px-elements'),
-                    'bottom-left' => __('Bottom Left', 'px-elements'),
-                    'bottom-right' => __('Bottom Right', 'px-elements'),
+                    'top-left' => __('Top Left', 'pixerex-elements'),
+                    'top-right' => __('Top Right', 'pixerex-elements'),
+                    'bottom-left' => __('Bottom Left', 'pixerex-elements'),
+                    'bottom-right' => __('Bottom Right', 'pixerex-elements'),
                 ],
                 'default' => 'bottom-right',
                 'condition' => [
@@ -130,7 +130,7 @@ class Sticky_Video extends Widget_Base
         $this->start_controls_section(
             'eael_section_video_settings',
             [
-                'label' => esc_html__('Video', 'px-elements'),
+                'label' => esc_html__('Video', 'pixerex-elements'),
                 'tab' => Controls_Manager::TAB_CONTENT,
             ]
         );
@@ -138,13 +138,13 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eael_video_source',
             [
-                'label' => __('Source', 'px-elements'),
+                'label' => __('Source', 'pixerex-elements'),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'youtube',
                 'options' => [
-                    'youtube' => __('YouTube', 'px-elements'),
-                    'vimeo' => __('Vimeo', 'px-elements'),
-                    'self_hosted' => __('Self Hosted', 'px-elements'),
+                    'youtube' => __('YouTube', 'pixerex-elements'),
+                    'vimeo' => __('Vimeo', 'pixerex-elements'),
+                    'self_hosted' => __('Self Hosted', 'pixerex-elements'),
                 ],
             ]
         );
@@ -152,9 +152,9 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_link_youtube',
             [
-                'label' => __('Link', 'px-elements'),
+                'label' => __('Link', 'pixerex-elements'),
                 'type' => Controls_Manager::TEXT,
-                'placeholder' => __('Enter your URL (YouTube)', 'px-elements'),
+                'placeholder' => __('Enter your URL (YouTube)', 'pixerex-elements'),
                 'label_block' => true,
                 'default' => 'https://www.youtube.com/watch?v=uuyXfUDqRZM',
                 'condition' => [
@@ -166,9 +166,9 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_link_vimeo',
             [
-                'label' => __('Link', 'px-elements'),
+                'label' => __('Link', 'pixerex-elements'),
                 'type' => Controls_Manager::TEXT,
-                'placeholder' => __('Enter your URL (Vimeo)', 'px-elements'),
+                'placeholder' => __('Enter your URL (Vimeo)', 'pixerex-elements'),
                 'label_block' => true,
                 'default' => 'https://vimeo.com/235215203',
                 'condition' => [
@@ -180,9 +180,9 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_link_dailymotion',
             [
-                'label' => __('Link', 'px-elements'),
+                'label' => __('Link', 'pixerex-elements'),
                 'type' => Controls_Manager::TEXT,
-                'placeholder' => __('Enter your URL (Dailymotion)', 'px-elements'),
+                'placeholder' => __('Enter your URL (Dailymotion)', 'pixerex-elements'),
                 'label_block' => true,
                 'condition' => [
                     'eael_video_source' => 'dailymotion',
@@ -193,7 +193,7 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_link_external',
             [
-                'label' => __('External URL', 'px-elements'),
+                'label' => __('External URL', 'pixerex-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'label_block' => false,
                 'condition' => [
@@ -224,9 +224,9 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_external_url',
             [
-                'label' => __('Link', 'px-elements'),
+                'label' => __('Link', 'pixerex-elements'),
                 'type' => Controls_Manager::TEXT,
-                'placeholder' => __('Enter your URL', 'px-elements'),
+                'placeholder' => __('Enter your URL', 'pixerex-elements'),
                 'label_block' => true,
                 'show_label' => false,
                 'condition' => [
@@ -239,7 +239,7 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eael_video_self_hosted_link',
             [
-                'label' => __('Choose File', 'px-elements'),
+                'label' => __('Choose File', 'pixerex-elements'),
                 'type' => Controls_Manager::MEDIA,
                 'label_block' => true,
                 'condition' => [
@@ -252,7 +252,7 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_start_time',
             [
-                'label' => __('Start Time', 'px-elements'),
+                'label' => __('Start Time', 'pixerex-elements'),
                 'type' => Controls_Manager::NUMBER,
                 'min' => 0,
                 'max' => 10000,
@@ -268,7 +268,7 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_end_time',
             [
-                'label' => __('End Time', 'px-elements'),
+                'label' => __('End Time', 'pixerex-elements'),
                 'type' => Controls_Manager::NUMBER,
                 'min' => 0,
                 'max' => 10000,
@@ -284,7 +284,7 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eael_video_video_options',
             [
-                'label' => __('Video Options', 'px-elements'),
+                'label' => __('Video Options', 'pixerex-elements'),
                 'type' => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -293,7 +293,7 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_autopaly',
             [
-                'label' => __('Autoplay', 'px-elements'),
+                'label' => __('Autoplay', 'pixerex-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'label_block' => false,
                 'return_value' => 'yes',
@@ -304,7 +304,7 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_mute',
             [
-                'label' => __('Mute', 'px-elements'),
+                'label' => __('Mute', 'pixerex-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'label_block' => false,
                 'return_value' => 'yes',
@@ -315,7 +315,7 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_loop',
             [
-                'label' => __('Loop', 'px-elements'),
+                'label' => __('Loop', 'pixerex-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'label_block' => false,
                 'return_value' => 'yes',
@@ -326,7 +326,7 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_sh_show_bar',
             [
-                'label' => __('Show Bar', 'px-elements'),
+                'label' => __('Show Bar', 'pixerex-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'label_block' => false,
                 'default' => 'yes',
@@ -341,7 +341,7 @@ class Sticky_Video extends Widget_Base
         $this->start_controls_section(
             'eael_video_image_overlay_section',
             [
-                'label' => __('Image Overlay', 'px-elements'),
+                'label' => __('Image Overlay', 'pixerex-elements'),
                 'tab' => Controls_Manager::TAB_CONTENT,
             ]
         );
@@ -349,11 +349,11 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_overlay_options',
             [
-                'label' => __('Image Overlay', 'px-elements'),
+                'label' => __('Image Overlay', 'pixerex-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'label_block' => false,
-                'label_on' => __('Show', 'px-elements'),
-                'label_off' => __('Hide', 'px-elements'),
+                'label_on' => __('Show', 'pixerex-elements'),
+                'label_off' => __('Hide', 'pixerex-elements'),
                 'return_value' => 'yes',
                 'default' => '',
             ]
@@ -362,7 +362,7 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_overlay_image',
             [
-                'label' => __('Choose Image', 'px-elements'),
+                'label' => __('Choose Image', 'pixerex-elements'),
                 'type' => Controls_Manager::MEDIA,
                 'label_block' => true,
                 'condition' => [
@@ -387,7 +387,7 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_overlay_play_icon',
             [
-                'label' => __('Play Icon', 'px-elements'),
+                'label' => __('Play Icon', 'pixerex-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'label_block' => false,
                 'return_value' => 'yes',
@@ -401,7 +401,7 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_icon_new',
             [
-                'label' => esc_html__('Choose Icon', 'px-elements'),
+                'label' => esc_html__('Choose Icon', 'pixerex-elements'),
                 'type' => Controls_Manager::ICONS,
                 'fa4compatibility' => 'eaelsv_icon',
                 'condition' => [
@@ -419,7 +419,7 @@ class Sticky_Video extends Widget_Base
         $this->start_controls_section(
             'eaelsv_sticky_video_interface',
             [
-                'label' => __('Sticky Video Interface', 'px-elements'),
+                'label' => __('Sticky Video Interface', 'pixerex-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'eaelsv_is_sticky' => 'yes',
@@ -431,7 +431,7 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_sticky_width',
             [
-                'label' => __('Width', 'px-elements'),
+                'label' => __('Width', 'pixerex-elements'),
                 'type' => Controls_Manager::NUMBER,
                 'min' => 100,
                 'max' => 500,
@@ -449,7 +449,7 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_sticky_height',
             [
-                'label' => __('Height', 'px-elements'),
+                'label' => __('Height', 'pixerex-elements'),
                 'type' => Controls_Manager::NUMBER,
                 'min' => 55,
                 'max' => 280,
@@ -469,7 +469,7 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_scroll_height_display_sticky',
             [
-                'label' => __('Scroll Height To Display Sticky (%)', 'px-elements'),
+                'label' => __('Scroll Height To Display Sticky (%)', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'range' => [
                     'px' => [
@@ -491,7 +491,7 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_sticky_close_button_color',
             [
-                'label' => __('Close Button Color', 'px-elements'),
+                'label' => __('Close Button Color', 'pixerex-elements'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'condition' => [
                     'eaelsv_is_sticky' => 'yes',
@@ -507,7 +507,7 @@ class Sticky_Video extends Widget_Base
         $this->start_controls_section(
             'eaelsv_sh_player_section',
             [
-                'label' => __('Player', 'px-elements'),
+                'label' => __('Player', 'pixerex-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -515,7 +515,7 @@ class Sticky_Video extends Widget_Base
         $this->add_responsive_control(
             'eaelsv_sh_video_width',
             [
-                'label' => esc_html__('Width', 'px-elements'),
+                'label' => esc_html__('Width', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => ['px', '%'],
                 'range' => [
@@ -538,15 +538,15 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_sh_video_border_type',
             [
-                'label' => __('Border Type', 'px-elements'),
+                'label' => __('Border Type', 'pixerex-elements'),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'none',
                 'options' => [
-                    'none' => __('None', 'px-elements'),
-                    'solid' => __('Solid', 'px-elements'),
-                    'double' => __('Double', 'px-elements'),
-                    'dotted' => __('Dotted', 'px-elements'),
-                    'dashed' => __('Dashed', 'px-elements'),
+                    'none' => __('None', 'pixerex-elements'),
+                    'solid' => __('Solid', 'pixerex-elements'),
+                    'double' => __('Double', 'pixerex-elements'),
+                    'dotted' => __('Dotted', 'pixerex-elements'),
+                    'dashed' => __('Dashed', 'pixerex-elements'),
                 ],
                 'selectors' => [
                     '{{WRAPPER}} .eael-sticky-video-wrapper' => 'border-style: {{VALUE}};',
@@ -557,7 +557,7 @@ class Sticky_Video extends Widget_Base
         $this->add_responsive_control(
             'eaelsv_sh_video_border_width',
             [
-                'label' => esc_html__('Border Width', 'px-elements'),
+                'label' => esc_html__('Border Width', 'pixerex-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px'],
                 'selectors' => [
@@ -569,7 +569,7 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_sh_video_border_color',
             [
-                'label' => esc_html__('Border Color', 'px-elements'),
+                'label' => esc_html__('Border Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -581,7 +581,7 @@ class Sticky_Video extends Widget_Base
         $this->add_responsive_control(
             'eaelsv_sh_video_border_radius',
             [
-                'label' => esc_html__('Border Radius', 'px-elements'),
+                'label' => esc_html__('Border Radius', 'pixerex-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%'],
                 'selectors' => [
@@ -597,7 +597,7 @@ class Sticky_Video extends Widget_Base
         $this->start_controls_section(
             'eaelsv_sh_player_interface_section',
             [
-                'label' => __('Interface', 'px-elements'),
+                'label' => __('Interface', 'pixerex-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -605,7 +605,7 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_sh_video_interface_color',
             [
-                'label' => esc_html__('Interface Color', 'px-elements'),
+                'label' => esc_html__('Interface Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#ADD8E6',
                 'selectors' => [
@@ -621,7 +621,7 @@ class Sticky_Video extends Widget_Base
         $this->add_responsive_control(
             'eaelsv_sh_play_button_size',
             [
-                'label' => __('Play Button Size', 'px-elements'),
+                'label' => __('Play Button Size', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'default' => [
                     'size' => 15,
@@ -646,7 +646,7 @@ class Sticky_Video extends Widget_Base
         $this->start_controls_section(
             'eaelsv_sh_player_bar_section',
             [
-                'label' => __('Bar', 'px-elements'),
+                'label' => __('Bar', 'pixerex-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -654,7 +654,7 @@ class Sticky_Video extends Widget_Base
         $this->add_responsive_control(
             'eaelsv_sh_player_bar_padding',
             [
-                'label' => __('Bar Padding', 'px-elements'),
+                'label' => __('Bar Padding', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'default' => [
                     'size' => 10,
@@ -677,7 +677,7 @@ class Sticky_Video extends Widget_Base
         $this->add_responsive_control(
             'eaelsv_sh_bar_margin',
             [
-                'label' => esc_html__('Bar Margin', 'px-elements'),
+                'label' => esc_html__('Bar Margin', 'pixerex-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px'],
                 'selectors' => [

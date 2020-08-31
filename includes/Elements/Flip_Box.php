@@ -23,7 +23,7 @@ class Flip_Box extends Widget_Base {
 	}
 
 	public function get_title() {
-		return esc_html__( 'Flip Box', 'px-elements');
+		return esc_html__( 'Flip Box', 'pixerex-elements');
 	}
 
 	public function get_icon() {
@@ -62,24 +62,24 @@ class Flip_Box extends Widget_Base {
   		$this->start_controls_section(
   			'eael_section_flipbox_content_settings',
   			[
-  				'label' => esc_html__( 'Flipbox Settings', 'px-elements')
+  				'label' => esc_html__( 'Flipbox Settings', 'pixerex-elements')
   			]
   		);
 
   		$this->add_control(
 		  'eael_flipbox_type',
 		  	[
-		   	'label'       	=> esc_html__( 'Flipbox Type', 'px-elements'),
+		   	'label'       	=> esc_html__( 'Flipbox Type', 'pixerex-elements'),
 		     	'type' 			=> Controls_Manager::SELECT,
 		     	'default' 		=> 'animate-left',
 		     	'label_block' 	=> false,
 		     	'options' 		=> [
-		     		'animate-left'  		=> esc_html__( 'Flip Left', 'px-elements'),
-		     		'animate-right' 		=> esc_html__( 'Flip Right', 'px-elements'),
-		     		'animate-up' 			=> esc_html__( 'Flip Top', 'px-elements'),
-		     		'animate-down' 		=> esc_html__( 'Flip Bottom', 'px-elements'),
-		     		'animate-zoom-in' 	=> esc_html__( 'Zoom In', 'px-elements'),
-		     		'animate-zoom-out' 	=> esc_html__( 'Zoom Out', 'px-elements'),
+		     		'animate-left'  		=> esc_html__( 'Flip Left', 'pixerex-elements'),
+		     		'animate-right' 		=> esc_html__( 'Flip Right', 'pixerex-elements'),
+		     		'animate-up' 			=> esc_html__( 'Flip Top', 'pixerex-elements'),
+		     		'animate-down' 		=> esc_html__( 'Flip Bottom', 'pixerex-elements'),
+		     		'animate-zoom-in' 	=> esc_html__( 'Zoom In', 'pixerex-elements'),
+		     		'animate-zoom-out' 	=> esc_html__( 'Zoom Out', 'pixerex-elements'),
 		     	],
 		  	]
 		);
@@ -89,19 +89,19 @@ class Flip_Box extends Widget_Base {
 			$this->start_controls_tab(
 				'front',
 				[
-					'label'	=> __( 'Front', 'px-elements')
+					'label'	=> __( 'Front', 'pixerex-elements')
 				]
 			);
 
 				$this->add_control(
 					'eael_flipbox_img_or_icon',
 					[
-						'label' => esc_html__( 'Icon Type', 'px-elements'),
+						'label' => esc_html__( 'Icon Type', 'pixerex-elements'),
 						'type' => Controls_Manager::SELECT,
 						'options' => [
-							'none'	=> __( 'None', 'px-elements'),
-							'img'	=> __( 'Image', 'px-elements'),
-							'icon'	=> __( 'Icon', 'px-elements')
+							'none'	=> __( 'None', 'pixerex-elements'),
+							'img'	=> __( 'Image', 'pixerex-elements'),
+							'icon'	=> __( 'Icon', 'pixerex-elements')
 						],
 						'default' => 'icon',
 					]
@@ -110,7 +110,7 @@ class Flip_Box extends Widget_Base {
 				$this->add_control(
 					'eael_flipbox_image',
 					[
-						'label' => esc_html__( 'Flipbox Image', 'px-elements'),
+						'label' => esc_html__( 'Flipbox Image', 'pixerex-elements'),
 						'type' => Controls_Manager::MEDIA,
 						'default' => [
 							'url' => Utils::get_placeholder_image_src(),
@@ -124,7 +124,7 @@ class Flip_Box extends Widget_Base {
 				$this->add_control(
 					'eael_flipbox_icon_new',
 					[
-						'label' => esc_html__( 'Icon', 'px-elements'),
+						'label' => esc_html__( 'Icon', 'pixerex-elements'),
 						'type' => Controls_Manager::ICONS,
 						'fa4compatibility' => 'eael_flipbox_icon',
 						'default' => [
@@ -140,7 +140,7 @@ class Flip_Box extends Widget_Base {
 				$this->add_responsive_control(
 					'eael_flipbox_image_resizer',
 					[
-						'label' => esc_html__( 'Image Resizer', 'px-elements'),
+						'label' => esc_html__( 'Image Resizer', 'pixerex-elements'),
 						'type' => Controls_Manager::SLIDER,
 						'default' => [
 							'size' => '100'
@@ -176,19 +176,19 @@ class Flip_Box extends Widget_Base {
 			$this->start_controls_tab(
 				'back',
 				[
-					'label'	=> __( 'Back', 'px-elements')
+					'label'	=> __( 'Back', 'pixerex-elements')
 				]
 			);
 
 				$this->add_control(
 					'eael_flipbox_img_or_icon_back',
 					[
-						'label' => esc_html__( 'Icon Type', 'px-elements'),
+						'label' => esc_html__( 'Icon Type', 'pixerex-elements'),
 						'type' => Controls_Manager::SELECT,
 						'options' => [
-							'none'	=> __( 'None', 'px-elements'),
-							'img'	=> __( 'Image', 'px-elements'),
-							'icon'	=> __( 'Icon', 'px-elements')
+							'none'	=> __( 'None', 'pixerex-elements'),
+							'img'	=> __( 'Image', 'pixerex-elements'),
+							'icon'	=> __( 'Icon', 'pixerex-elements')
 						],
 						'default' => 'icon'
 					]
@@ -197,7 +197,7 @@ class Flip_Box extends Widget_Base {
 				$this->add_control(
 					'eael_flipbox_image_back',
 					[
-						'label' => esc_html__( 'Flipbox Image', 'px-elements'),
+						'label' => esc_html__( 'Flipbox Image', 'pixerex-elements'),
 						'type' => Controls_Manager::MEDIA,
 						'default' => [
 							'url' => Utils::get_placeholder_image_src(),
@@ -211,7 +211,7 @@ class Flip_Box extends Widget_Base {
 				$this->add_control(
 					'eael_flipbox_icon_back_new',
 					[
-						'label' => esc_html__( 'Icon', 'px-elements'),
+						'label' => esc_html__( 'Icon', 'pixerex-elements'),
 						'type' => Controls_Manager::ICONS,
 						'fa4compatibility' => 'eael_flipbox_icon_back',
 						'default' => [
@@ -227,7 +227,7 @@ class Flip_Box extends Widget_Base {
 				$this->add_responsive_control(
 					'eael_flipbox_image_resizer_back',
 					[
-						'label' => esc_html__( 'Image Resizer', 'px-elements'),
+						'label' => esc_html__( 'Image Resizer', 'pixerex-elements'),
 						'type' => Controls_Manager::SLIDER,
 						'default' => [
 							'size' => '100'
@@ -266,7 +266,7 @@ class Flip_Box extends Widget_Base {
 		$this->add_control(
 			'eael_flipbox_height',
 			[
-				'label' => esc_html__( 'Height', 'px-elements'),
+				'label' => esc_html__( 'Height', 'pixerex-elements'),
 				'type' => Controls_Manager::SLIDER,
 				'size_units'	=> [ 'px', '%' ],
 				'range' => [
@@ -299,7 +299,7 @@ class Flip_Box extends Widget_Base {
 		$this->start_controls_section(
 			'eael_flipbox_content',
 			[
-				'label' => esc_html__( 'Flipbox Content', 'px-elements'),
+				'label' => esc_html__( 'Flipbox Content', 'pixerex-elements'),
 			]
 		);
 
@@ -308,27 +308,27 @@ class Flip_Box extends Widget_Base {
 			$this->start_controls_tab(
 				'eael_flipbox_content_front',
 				[
-					'label'	=> __( 'Front', 'px-elements')
+					'label'	=> __( 'Front', 'pixerex-elements')
 				]
 			);
 
 			$this->add_control(
 				'eael_flipbox_front_title',
 				[
-					'label' => esc_html__( 'Front Title', 'px-elements'),
+					'label' => esc_html__( 'Front Title', 'pixerex-elements'),
 					'type' => Controls_Manager::TEXT,
 					'label_block' => true,
-					'default' => esc_html__( 'Front Title', 'px-elements'),
+					'default' => esc_html__( 'Front Title', 'pixerex-elements'),
 				]
 			);
 
 			$this->add_control(
 				'eael_flipbox_front_text',
 				[
-					'label' => esc_html__( 'Front Text', 'px-elements'),
+					'label' => esc_html__( 'Front Text', 'pixerex-elements'),
 					'type' => Controls_Manager::WYSIWYG,
 					'label_block' => true,
-					'default' => __( 'This is front side content.', 'px-elements'),
+					'default' => __( 'This is front side content.', 'pixerex-elements'),
 				]
 			);
 
@@ -338,27 +338,27 @@ class Flip_Box extends Widget_Base {
 			$this->start_controls_tab(
 				'eael_flipbox_content_back',
 				[
-					'label'	=> __( 'Back', 'px-elements')
+					'label'	=> __( 'Back', 'pixerex-elements')
 				]
 			);
 
 			$this->add_control(
 				'eael_flipbox_back_title',
 				[
-					'label' => esc_html__( 'Back Title', 'px-elements'),
+					'label' => esc_html__( 'Back Title', 'pixerex-elements'),
 					'type' => Controls_Manager::TEXT,
 					'label_block' => true,
-					'default' => esc_html__( 'Back Title', 'px-elements'),
+					'default' => esc_html__( 'Back Title', 'pixerex-elements'),
 				]
 			);
 
 			$this->add_control(
 				'eael_flipbox_back_text',
 				[
-					'label' => esc_html__( 'Back Text', 'px-elements'),
+					'label' => esc_html__( 'Back Text', 'pixerex-elements'),
 					'type' => Controls_Manager::WYSIWYG,
 					'label_block' => true,
-					'default' => __( 'This is back side content.', 'px-elements'),
+					'default' => __( 'This is back side content.', 'pixerex-elements'),
 				]
 			);
 
@@ -369,20 +369,20 @@ class Flip_Box extends Widget_Base {
 		$this->add_control(
 			'eael_flipbox_content_alignment',
 			[
-				'label' => esc_html__( 'Content Alignment', 'px-elements'),
+				'label' => esc_html__( 'Content Alignment', 'pixerex-elements'),
 				'type' => Controls_Manager::CHOOSE,
 				'label_block' => true,
 				'options' => [
 					'left' => [
-						'title' => esc_html__( 'Left', 'px-elements'),
+						'title' => esc_html__( 'Left', 'pixerex-elements'),
 						'icon' => 'fa fa-align-left',
 					],
 					'center' => [
-						'title' => esc_html__( 'Center', 'px-elements'),
+						'title' => esc_html__( 'Center', 'pixerex-elements'),
 						'icon' => 'fa fa-align-center',
 					],
 					'right' => [
-						'title' => esc_html__( 'Right', 'px-elements'),
+						'title' => esc_html__( 'Right', 'pixerex-elements'),
 						'icon' => 'fa fa-align-right',
 					],
 				],
@@ -401,21 +401,21 @@ class Flip_Box extends Widget_Base {
 		$this->start_controls_section(
 			'eael_flixbox_link_section',
 			[
-				'label' => esc_html__( 'Link', 'px-elements')
+				'label' => esc_html__( 'Link', 'pixerex-elements')
 			]
 		);
 
 		$this->add_control(
             'flipbox_link_type',
             [
-                'label'                 => __( 'Link Type', 'px-elements'),
+                'label'                 => __( 'Link Type', 'pixerex-elements'),
                 'type'                  => Controls_Manager::SELECT,
                 'default'               => 'none',
                 'options'               => [
-                    'none'      => __( 'None', 'px-elements'),
-                    'box'       => __( 'Box', 'px-elements'),
-                    'title'     => __( 'Title', 'px-elements'),
-                    'button'    => __( 'Button', 'px-elements'),
+                    'none'      => __( 'None', 'pixerex-elements'),
+                    'box'       => __( 'Box', 'pixerex-elements'),
+                    'title'     => __( 'Title', 'pixerex-elements'),
+                    'button'    => __( 'Button', 'pixerex-elements'),
                 ],
             ]
         );
@@ -423,7 +423,7 @@ class Flip_Box extends Widget_Base {
         $this->add_control(
             'flipbox_link',
             [
-                'label'                 => __( 'Link', 'px-elements'),
+                'label'                 => __( 'Link', 'pixerex-elements'),
                 'type'                  => Controls_Manager::URL,
 				'dynamic'               => [
 					'active'        => true,
@@ -445,12 +445,12 @@ class Flip_Box extends Widget_Base {
         $this->add_control(
             'flipbox_button_text',
             [
-                'label'                 => __( 'Button Text', 'px-elements'),
+                'label'                 => __( 'Button Text', 'pixerex-elements'),
                 'type'                  => Controls_Manager::TEXT,
 				'dynamic'               => [
 					'active'   => true,
 				],
-                'default'               => __( 'Get Started', 'px-elements'),
+                'default'               => __( 'Get Started', 'pixerex-elements'),
                 'condition'             => [
                     'flipbox_link_type'   => 'button',
                 ],
@@ -460,7 +460,7 @@ class Flip_Box extends Widget_Base {
         $this->add_control(
             'button_icon_new',
             [
-                'label'                 => __( 'Button Icon', 'px-elements'),
+                'label'                 => __( 'Button Icon', 'pixerex-elements'),
 				'type'                  => Controls_Manager::ICONS,
 				'fa4compatibility' 		=> 'button_icon',
                 'condition'             => [
@@ -472,12 +472,12 @@ class Flip_Box extends Widget_Base {
         $this->add_control(
             'button_icon_position',
             [
-                'label'                 => __( 'Icon Position', 'px-elements'),
+                'label'                 => __( 'Icon Position', 'pixerex-elements'),
                 'type'                  => Controls_Manager::SELECT,
                 'default'               => 'after',
                 'options'               => [
-                    'after'     => __( 'After', 'px-elements'),
-                    'before'    => __( 'Before', 'px-elements'),
+                    'after'     => __( 'After', 'pixerex-elements'),
+                    'before'    => __( 'Before', 'pixerex-elements'),
                 ],
                 'condition'             => [
                     'flipbox_link_type'     => 'button',
@@ -492,14 +492,14 @@ class Flip_Box extends Widget_Base {
 			$this->start_controls_section(
 				'eael_section_pro',
 				[
-					'label' => __( 'Go Premium for More Features', 'px-elements')
+					'label' => __( 'Go Premium for More Features', 'pixerex-elements')
 				]
 			);
 
 			$this->add_control(
 				'eael_control_get_pro',
 				[
-					'label' => __( 'Unlock more possibilities', 'px-elements'),
+					'label' => __( 'Unlock more possibilities', 'pixerex-elements'),
 					'type' => Controls_Manager::CHOOSE,
 					'options' => [
 						'1' => [
@@ -523,7 +523,7 @@ class Flip_Box extends Widget_Base {
 		$this->start_controls_section(
 			'eael_section_flipbox_style_settings',
 			[
-				'label' => esc_html__( 'Filp Box Style', 'px-elements'),
+				'label' => esc_html__( 'Filp Box Style', 'pixerex-elements'),
 				'tab' => Controls_Manager::TAB_STYLE
 			]
 		);
@@ -531,7 +531,7 @@ class Flip_Box extends Widget_Base {
 		$this->add_control(
 			'eael_flipbox_front_bg_heading',
 			[
-				'label' => __( 'Front Background Color', 'px-elements' ),
+				'label' => __( 'Front Background Color', 'pixerex-elements' ),
 				'type' => Controls_Manager::HEADING
 			]
 		);
@@ -540,7 +540,7 @@ class Flip_Box extends Widget_Base {
 			Group_Control_Background::get_type(),
 			[
 				'name' => 'eael_flipbox_front_bg_color',
-				'label' => __( 'Front Background Color', 'px-elements'),
+				'label' => __( 'Front Background Color', 'pixerex-elements'),
 				'types' => [ 'classic', 'gradient' ],
 				'selector' => '{{WRAPPER}} .eael-elements-flip-box-front-container',
 			]
@@ -549,7 +549,7 @@ class Flip_Box extends Widget_Base {
 		$this->add_control(
 			'eael_flipbox_back_bg_heading',
 			[
-				'label' => __( 'Back Background Color', 'px-elements' ),
+				'label' => __( 'Back Background Color', 'pixerex-elements' ),
 				'type' => Controls_Manager::HEADING,
 				'separator'	=> 'before'
 			]
@@ -559,7 +559,7 @@ class Flip_Box extends Widget_Base {
 			Group_Control_Background::get_type(),
 			[
 				'name' => 'eael_flipbox_back_bg_color',
-				'label' => __( 'Back Background Color', 'px-elements'),
+				'label' => __( 'Back Background Color', 'pixerex-elements'),
 				'types' => [ 'classic', 'gradient' ],
 				'selector' => '{{WRAPPER}} .eael-elements-flip-box-rear-container',
 				'separator'	=> 'after'
@@ -569,7 +569,7 @@ class Flip_Box extends Widget_Base {
 		$this->add_responsive_control(
 			'eael_flipbox_front_back_padding',
 			[
-				'label' => esc_html__( 'Content Padding', 'px-elements'),
+				'label' => esc_html__( 'Content Padding', 'pixerex-elements'),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
@@ -583,7 +583,7 @@ class Flip_Box extends Widget_Base {
 			Group_Control_Border::get_type(),
 				[
 					'name' => 'eael_filbpox_border',
-					'label' => esc_html__( 'Border Style', 'px-elements'),
+					'label' => esc_html__( 'Border Style', 'pixerex-elements'),
 					'selector' => '{{WRAPPER}} .eael-elements-flip-box-front-container, {{WRAPPER}} .eael-elements-flip-box-rear-container',
 				]
 		);
@@ -591,7 +591,7 @@ class Flip_Box extends Widget_Base {
 		$this->add_control(
 			'eael_flipbox_border_radius',
 			[
-				'label' => esc_html__( 'Border Radius', 'px-elements'),
+				'label' => esc_html__( 'Border Radius', 'pixerex-elements'),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
@@ -619,7 +619,7 @@ class Flip_Box extends Widget_Base {
 		$this->start_controls_section(
 			'eael_section_flipbox_imgae_style_settings',
 			[
-				'label' => esc_html__( 'Image Style', 'px-elements'),
+				'label' => esc_html__( 'Image Style', 'pixerex-elements'),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 		     		'eael_flipbox_img_or_icon' => 'img'
@@ -630,14 +630,14 @@ class Flip_Box extends Widget_Base {
 		$this->add_control(
 		  'eael_flipbox_img_type',
 		  	[
-		   	'label'       	=> esc_html__( 'Image Type', 'px-elements'),
+		   	'label'       	=> esc_html__( 'Image Type', 'pixerex-elements'),
 		     	'type' 			=> Controls_Manager::SELECT,
 		     	'default' 		=> 'default',
 		     	'label_block' 	=> false,
 		     	'options' 		=> [
-		     		'circle'  	=> esc_html__( 'Circle', 'px-elements'),
-		     		'radius' 	=> esc_html__( 'Radius', 'px-elements'),
-		     		'default' 	=> esc_html__( 'Default', 'px-elements'),
+		     		'circle'  	=> esc_html__( 'Circle', 'pixerex-elements'),
+		     		'radius' 	=> esc_html__( 'Radius', 'pixerex-elements'),
+		     		'default' 	=> esc_html__( 'Default', 'pixerex-elements'),
 		     	],
 		     	'prefix_class' => 'eael-flipbox-img-',
 		     	'condition' => [
@@ -652,7 +652,7 @@ class Flip_Box extends Widget_Base {
 		$this->add_control(
 			'eael_filpbox_img_border_radius',
 			[
-				'label' => esc_html__( 'Border Radius', 'px-elements'),
+				'label' => esc_html__( 'Border Radius', 'pixerex-elements'),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -680,7 +680,7 @@ class Flip_Box extends Widget_Base {
 		$this->start_controls_section(
 			'eael_section_flipbox_icon_style_settings',
 			[
-				'label' => esc_html__( 'Icon Style', 'px-elements'),
+				'label' => esc_html__( 'Icon Style', 'pixerex-elements'),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 		     		'eael_flipbox_img_or_icon' => 'icon'
@@ -690,7 +690,7 @@ class Flip_Box extends Widget_Base {
 
 		$this->start_controls_tabs('eael_section_icon_style_settings');
 			$this->start_controls_tab('eael_section_icon_front_style_settings', [
-				'label' => esc_html__( 'Front', 'px-elements')
+				'label' => esc_html__( 'Front', 'pixerex-elements')
 			]);
 
 			/**
@@ -699,7 +699,7 @@ class Flip_Box extends Widget_Base {
 			$this->add_control(
 				'eael_flipbox_front_icon_heading',
 				[
-					'label' => esc_html__( 'Icon Style', 'px-elements'),
+					'label' => esc_html__( 'Icon Style', 'pixerex-elements'),
 					'type' => Controls_Manager::HEADING,
 					'condition' => [
 						'eael_flipbox_img_or_icon' => 'icon'
@@ -710,7 +710,7 @@ class Flip_Box extends Widget_Base {
 			$this->add_control(
 				'eael_flipbox_front_icon_color',
 				[
-					'label' => esc_html__( 'Color', 'px-elements'),
+					'label' => esc_html__( 'Color', 'pixerex-elements'),
 					'type' => Controls_Manager::COLOR,
 					'default' => '#fff',
 					'selectors' => [
@@ -725,7 +725,7 @@ class Flip_Box extends Widget_Base {
 			$this->add_control(
 				'eael_flipbox_front_icon_typography',
 				[
-					'label' => esc_html__( 'Icon Size', 'px-elements'),
+					'label' => esc_html__( 'Icon Size', 'pixerex-elements'),
 					'type' => Controls_Manager::SLIDER,
 					'size_units'	=> [ 'px' ],
 					'default'	=> [
@@ -753,7 +753,7 @@ class Flip_Box extends Widget_Base {
 				Group_Control_Border::get_type(),
 					[
 						'name' => 'eael_flipbox_icon_front_border',
-						'label' => esc_html__( 'Border', 'px-elements'),
+						'label' => esc_html__( 'Border', 'pixerex-elements'),
 						'selector' => '{{WRAPPER}} .eael-elements-flip-box-front-container .eael-elements-flip-box-icon-image',
 						'condition' => [
 							'eael_flipbox_img_or_icon' => 'icon'
@@ -764,7 +764,7 @@ class Flip_Box extends Widget_Base {
 			$this->add_responsive_control(
 				'eael_flipbox_icon_front_padding',
 				[
-					'label' => esc_html__( 'Padding', 'px-elements'),
+					'label' => esc_html__( 'Padding', 'pixerex-elements'),
 					'type' => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em' ],
 					'selectors' => [
@@ -776,7 +776,7 @@ class Flip_Box extends Widget_Base {
 			$this->add_control(
 				'eael_flipbox_icon_front_border_radius',
 				[
-					'label' => esc_html__( 'Border Radius', 'px-elements'),
+					'label' => esc_html__( 'Border Radius', 'pixerex-elements'),
 					'type' => Controls_Manager::SLIDER,
 					'size_units'	=> [ 'px', '%' ],
 					'range' => [
@@ -803,7 +803,7 @@ class Flip_Box extends Widget_Base {
 			$this->end_controls_tab();
 
 			$this->start_controls_tab('eael_section_icon_back_style_settings', [
-				'label' => esc_html__( 'Back', 'px-elements')
+				'label' => esc_html__( 'Back', 'pixerex-elements')
 			]);
 
 			/**
@@ -812,7 +812,7 @@ class Flip_Box extends Widget_Base {
 				$this->add_control(
 					'eael_flipbox_back_icon_heading',
 					[
-						'label' => esc_html__( 'Icon Style', 'px-elements'),
+						'label' => esc_html__( 'Icon Style', 'pixerex-elements'),
 						'type' => Controls_Manager::HEADING,
 						'condition'	=> [
 							'eael_flipbox_img_or_icon_back'	=> 'icon'
@@ -823,7 +823,7 @@ class Flip_Box extends Widget_Base {
 				$this->add_control(
 					'eael_flipbox_back_icon_color',
 					[
-						'label' => esc_html__( 'Color', 'px-elements'),
+						'label' => esc_html__( 'Color', 'pixerex-elements'),
 						'type' => Controls_Manager::COLOR,
 						'default' => '#fff',
 						'selectors' => [
@@ -838,7 +838,7 @@ class Flip_Box extends Widget_Base {
 				$this->add_control(
 					'eael_flipbox_back_icon_typography',
 					[
-						'label' => esc_html__( 'Icon Size', 'px-elements'),
+						'label' => esc_html__( 'Icon Size', 'pixerex-elements'),
 						'type' => Controls_Manager::SLIDER,
 						'size_units'	=> [ 'px' ],
 						'default'	=> [
@@ -866,7 +866,7 @@ class Flip_Box extends Widget_Base {
 				Group_Control_Border::get_type(),
 					[
 						'name' => 'eael_flipbox_icon_back_border',
-						'label' => esc_html__( 'Border', 'px-elements'),
+						'label' => esc_html__( 'Border', 'pixerex-elements'),
 						'selector' => '{{WRAPPER}} .eael-elements-flip-box-rear-container .eael-elements-flip-box-icon-image',
 						'condition' => [
 							'eael_flipbox_img_or_icon' => 'icon'
@@ -877,7 +877,7 @@ class Flip_Box extends Widget_Base {
 			$this->add_responsive_control(
 				'eael_flipbox_icon_back_padding',
 				[
-					'label' => esc_html__( 'Padding', 'px-elements'),
+					'label' => esc_html__( 'Padding', 'pixerex-elements'),
 					'type' => Controls_Manager::DIMENSIONS,
 					'size_units' => [ 'px', 'em' ],
 					'selectors' => [
@@ -889,7 +889,7 @@ class Flip_Box extends Widget_Base {
 			$this->add_control(
 				'eael_flipbox_icon_back_border_radius',
 				[
-					'label' => esc_html__( 'Border Radius', 'px-elements'),
+					'label' => esc_html__( 'Border Radius', 'pixerex-elements'),
 					'type' => Controls_Manager::SLIDER,
 					'size_units'	=> [ 'px', '%' ],
 					'range' => [
@@ -926,14 +926,14 @@ class Flip_Box extends Widget_Base {
 		$this->start_controls_section(
 			'eael_section_flipbox_title_style_settings',
 			[
-				'label' => esc_html__( 'Color &amp; Typography', 'px-elements'),
+				'label' => esc_html__( 'Color &amp; Typography', 'pixerex-elements'),
 				'tab' => Controls_Manager::TAB_STYLE
 			]
 		);
 
 		$this->start_controls_tabs('eael_section_flipbox_typo_style_settings');
 			$this->start_controls_tab('eael_section_flipbox_typo_style_front_settings', [
-				'label' => esc_html__( 'Front', 'px-elements')
+				'label' => esc_html__( 'Front', 'pixerex-elements')
 			]);
 
 				/**
@@ -942,7 +942,7 @@ class Flip_Box extends Widget_Base {
 				$this->add_control(
 					'eael_flipbox_front_title_heading',
 					[
-						'label' => esc_html__( 'Title Style', 'px-elements'),
+						'label' => esc_html__( 'Title Style', 'pixerex-elements'),
 						'type' => Controls_Manager::HEADING
 					]
 				);
@@ -950,7 +950,7 @@ class Flip_Box extends Widget_Base {
 				$this->add_control(
 					'eael_flipbox_front_title_color',
 					[
-						'label' => esc_html__( 'Color', 'px-elements'),
+						'label' => esc_html__( 'Color', 'pixerex-elements'),
 						'type' => Controls_Manager::COLOR,
 						'default' => '#fff',
 						'selectors' => [
@@ -973,7 +973,7 @@ class Flip_Box extends Widget_Base {
 				$this->add_control(
 					'eael_flipbox_front_content_heading',
 					[
-						'label' => esc_html__( 'Content Style', 'px-elements'),
+						'label' => esc_html__( 'Content Style', 'pixerex-elements'),
 						'type' => Controls_Manager::HEADING
 					]
 				);
@@ -981,7 +981,7 @@ class Flip_Box extends Widget_Base {
 				$this->add_control(
 					'eael_flipbox_front_content_color',
 					[
-						'label' => esc_html__( 'Color', 'px-elements'),
+						'label' => esc_html__( 'Color', 'pixerex-elements'),
 						'type' => Controls_Manager::COLOR,
 						'default' => '#fff',
 						'selectors' => [
@@ -1001,7 +1001,7 @@ class Flip_Box extends Widget_Base {
 			$this->end_controls_tab();
 
 			$this->start_controls_tab('eael_section_flipbox_typo_style_back_settings', [
-				'label' => esc_html__( 'Back', 'px-elements')
+				'label' => esc_html__( 'Back', 'pixerex-elements')
 			]);
 
 				/**
@@ -1010,7 +1010,7 @@ class Flip_Box extends Widget_Base {
 				$this->add_control(
 					'eael_flipbox_back_title_heading',
 					[
-						'label' => esc_html__( 'Title Style', 'px-elements'),
+						'label' => esc_html__( 'Title Style', 'pixerex-elements'),
 						'type' => Controls_Manager::HEADING,
 						'separator' => 'before'
 					]
@@ -1019,7 +1019,7 @@ class Flip_Box extends Widget_Base {
 				$this->add_control(
 					'eael_flipbox_back_title_color',
 					[
-						'label' => esc_html__( 'Color', 'px-elements'),
+						'label' => esc_html__( 'Color', 'pixerex-elements'),
 						'type' => Controls_Manager::COLOR,
 						'default' => '#fff',
 						'selectors' => [
@@ -1042,7 +1042,7 @@ class Flip_Box extends Widget_Base {
 				$this->add_control(
 					'eael_flipbox_back_content_heading',
 					[
-						'label' => esc_html__( 'Content Style', 'px-elements'),
+						'label' => esc_html__( 'Content Style', 'pixerex-elements'),
 						'type' => Controls_Manager::HEADING,
 						'separator' => 'before'
 					]
@@ -1051,7 +1051,7 @@ class Flip_Box extends Widget_Base {
 				$this->add_control(
 					'eael_flipbox_back_content_color',
 					[
-						'label' => esc_html__( 'Color', 'px-elements'),
+						'label' => esc_html__( 'Color', 'pixerex-elements'),
 						'type' => Controls_Manager::COLOR,
 						'default' => '#fff',
 						'selectors' => [
@@ -1081,7 +1081,7 @@ class Flip_Box extends Widget_Base {
 		$this->start_controls_section(
 			'eael_section_flipbox_button_style_settings',
 			[
-				'label' => esc_html__( 'Button Style', 'px-elements'),
+				'label' => esc_html__( 'Button Style', 'pixerex-elements'),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition'	=> [
 					'flipbox_link_type'	=> 'button'
@@ -1094,13 +1094,13 @@ class Flip_Box extends Widget_Base {
 			$this->start_controls_tab(
 				'flipbox_button_normal_style',
 				[
-					'label'	=> __( 'Normal', 'px-elements')
+					'label'	=> __( 'Normal', 'pixerex-elements')
 				]
 			);
 				$this->add_responsive_control(
 					'eael_flipbox_button_margin',
 					[
-						'label' => esc_html__( 'Margin', 'px-elements'),
+						'label' => esc_html__( 'Margin', 'pixerex-elements'),
 						'type' => Controls_Manager::DIMENSIONS,
 						'size_units' => [ 'px', 'em' ],
 						'selectors' => [
@@ -1112,7 +1112,7 @@ class Flip_Box extends Widget_Base {
 				$this->add_responsive_control(
 					'eael_flipbox_button_padding',
 					[
-						'label' => esc_html__( 'Padding', 'px-elements'),
+						'label' => esc_html__( 'Padding', 'pixerex-elements'),
 						'type' => Controls_Manager::DIMENSIONS,
 						'size_units' => [ 'px', 'em' ],
 						'selectors' => [
@@ -1124,7 +1124,7 @@ class Flip_Box extends Widget_Base {
 				$this->add_control(
 					'eael_flipbox_button_color',
 					[
-						'label' => esc_html__( 'Color', 'px-elements'),
+						'label' => esc_html__( 'Color', 'pixerex-elements'),
 						'type' => Controls_Manager::COLOR,
 						'default' => '#ffffff',
 						'selectors' => [
@@ -1136,7 +1136,7 @@ class Flip_Box extends Widget_Base {
 				$this->add_control(
 					'eael_flipbox_button_bg_color',
 					[
-						'label' => esc_html__( 'Background', 'px-elements'),
+						'label' => esc_html__( 'Background', 'pixerex-elements'),
 						'type' => Controls_Manager::COLOR,
 						'default' => '#000000',
 						'selectors' => [
@@ -1148,7 +1148,7 @@ class Flip_Box extends Widget_Base {
 				$this->add_control(
 					'eael_flipbox_button_border_radius',
 					[
-						'label' => esc_html__( 'Border Radius', 'px-elements'),
+						'label' => esc_html__( 'Border Radius', 'pixerex-elements'),
 						'type' => Controls_Manager::SLIDER,
 						'size_units'	=> [ 'px' ],
 						'range' => [
@@ -1176,13 +1176,13 @@ class Flip_Box extends Widget_Base {
 			$this->start_controls_tab(
 				'flipbox_button_hover_style',
 				[
-					'label'	=> __( 'Hover', 'px-elements')
+					'label'	=> __( 'Hover', 'pixerex-elements')
 				]
 			);
 				$this->add_control(
 					'eael_flipbox_button_hover_color',
 					[
-						'label' => esc_html__( 'Color', 'px-elements'),
+						'label' => esc_html__( 'Color', 'pixerex-elements'),
 						'type' => Controls_Manager::COLOR,
 						'default' => '#ffffff',
 						'selectors' => [
@@ -1194,7 +1194,7 @@ class Flip_Box extends Widget_Base {
 				$this->add_control(
 					'eael_flipbox_button_hover_bg_color',
 					[
-						'label' => esc_html__( 'Background', 'px-elements'),
+						'label' => esc_html__( 'Background', 'pixerex-elements'),
 						'type' => Controls_Manager::COLOR,
 						'default' => '#000000',
 						'selectors' => [
@@ -1331,9 +1331,9 @@ class Flip_Box extends Widget_Base {
 									<img class="eael-flipbox-image-as-icon" src="<?php echo esc_url( $flipbox_image_url ); ?>" alt="<?php echo esc_attr(get_post_meta($flipbox_image['id'], '_wp_attachment_image_alt', true)); ?>">
 								<?php endif; ?>
 	                        </div>
-	                        <h2 class="eael-elements-flip-box-heading"><?php echo esc_html__( $settings['eael_flipbox_front_title'], 'px-elements'); ?></h2>
+	                        <h2 class="eael-elements-flip-box-heading"><?php echo esc_html__( $settings['eael_flipbox_front_title'], 'pixerex-elements'); ?></h2>
 	                        <div class="eael-elements-flip-box-content">
-	                           <p><?php echo __( $settings['eael_flipbox_front_text'], 'px-elements'); ?></p>
+	                           <p><?php echo __( $settings['eael_flipbox_front_text'], 'pixerex-elements'); ?></p>
 	                        </div>
 	                    </div>
 	                </div>
@@ -1362,9 +1362,9 @@ class Flip_Box extends Widget_Base {
 	                			</div>
 	                    	<?php endif; ?>
 
-	                        <<?php echo $flipbox_if_html_title_tag,' ', $this->get_render_attribute_string('flipbox-title-container'); ?>><?php echo esc_html__( $settings['eael_flipbox_back_title'], 'px-elements'); ?></<?php echo $flipbox_if_html_title_tag; ?>>
+	                        <<?php echo $flipbox_if_html_title_tag,' ', $this->get_render_attribute_string('flipbox-title-container'); ?>><?php echo esc_html__( $settings['eael_flipbox_back_title'], 'pixerex-elements'); ?></<?php echo $flipbox_if_html_title_tag; ?>>
 	                        <div class="eael-elements-flip-box-content">
-	                           <p><?php echo __( $settings['eael_flipbox_back_text'], 'px-elements'); ?></p>
+	                           <p><?php echo __( $settings['eael_flipbox_back_text'], 'pixerex-elements'); ?></p>
 	                        </div>
 
 	                        <?php if( $settings['flipbox_link_type'] == 'button' && ! empty($settings['flipbox_button_text']) ) : ?>

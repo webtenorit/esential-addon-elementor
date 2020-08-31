@@ -43,7 +43,7 @@ class Fancy_Text extends WPML_Elementor_Module_With_Items {
      * @return string
      */
 	protected function get_title( $field ) {
-		return __( 'Fancy Text: String', 'px-elements');
+		return __( 'Fancy Text: String', 'pixerex-elements');
 	}
 
 	/**

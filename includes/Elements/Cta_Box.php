@@ -25,7 +25,7 @@ class Cta_Box extends Widget_Base
 
     public function get_title()
     {
-        return esc_html__('Call to Action', 'px-elements');
+        return esc_html__('Call to Action', 'pixerex-elements');
     }
 
     public function get_icon()
@@ -66,21 +66,21 @@ class Cta_Box extends Widget_Base
         $this->start_controls_section(
             'eael_section_cta_content_settings',
             [
-                'label' => esc_html__('Content Settings', 'px-elements'),
+                'label' => esc_html__('Content Settings', 'pixerex-elements'),
             ]
         );
 
         $this->add_control(
             'eael_cta_type',
             [
-                'label' => esc_html__('Content Style', 'px-elements'),
+                'label' => esc_html__('Content Style', 'pixerex-elements'),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'cta-basic',
                 'label_block' => false,
                 'options' => [
-                    'cta-basic' => esc_html__('Basic', 'px-elements'),
-                    'cta-flex' => esc_html__('Flex Grid', 'px-elements'),
-                    'cta-icon-flex' => esc_html__('Flex Grid with Icon', 'px-elements'),
+                    'cta-basic' => esc_html__('Basic', 'pixerex-elements'),
+                    'cta-flex' => esc_html__('Flex Grid', 'pixerex-elements'),
+                    'cta-icon-flex' => esc_html__('Flex Grid with Icon', 'pixerex-elements'),
                 ],
             ]
         );
@@ -91,14 +91,14 @@ class Cta_Box extends Widget_Base
         $this->add_responsive_control(
             'eael_cta_content_type',
             [
-                'label' => esc_html__('Alignment', 'px-elements'),
+                'label' => esc_html__('Alignment', 'pixerex-elements'),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'cta-default',
                 'label_block' => false,
                 'options' => [
-                    'cta-default' => esc_html__('Left', 'px-elements'),
-                    'cta-center' => esc_html__('Center', 'px-elements'),
-                    'cta-right' => esc_html__('Right', 'px-elements'),
+                    'cta-default' => esc_html__('Left', 'pixerex-elements'),
+                    'cta-center' => esc_html__('Center', 'pixerex-elements'),
+                    'cta-right' => esc_html__('Right', 'pixerex-elements'),
                 ],
                 'devices' => [ 'desktop', 'tablet', 'mobile' ],
                 'prefix_class' => 'content-align-%s',
@@ -111,14 +111,14 @@ class Cta_Box extends Widget_Base
         $this->add_control(
             'eael_cta_color_type',
             [
-                'label' => esc_html__('Color Style', 'px-elements'),
+                'label' => esc_html__('Color Style', 'pixerex-elements'),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'cta-bg-color',
                 'label_block' => false,
                 'options' => [
-                    'cta-bg-color' => esc_html__('Background Color', 'px-elements'),
-                    'cta-bg-img' => esc_html__('Background Image', 'px-elements'),
-                    'cta-bg-img-fixed' => esc_html__('Background Fixed Image', 'px-elements'),
+                    'cta-bg-color' => esc_html__('Background Color', 'pixerex-elements'),
+                    'cta-bg-img' => esc_html__('Background Image', 'pixerex-elements'),
+                    'cta-bg-img-fixed' => esc_html__('Background Fixed Image', 'pixerex-elements'),
                 ],
             ]
         );
@@ -126,10 +126,10 @@ class Cta_Box extends Widget_Base
         $this->add_control(
             'eael_cta_bg_overlay',
             [
-                'label' => __('Background Overlay', 'px-elements'),
+                'label' => __('Background Overlay', 'pixerex-elements'),
                 'type' => Controls_Manager::SWITCHER,
-                'label_on' => __('Show', 'px-elements'),
-                'label_off' => __('Hide', 'px-elements'),
+                'label_on' => __('Show', 'pixerex-elements'),
+                'label_off' => __('Hide', 'pixerex-elements'),
                 'return_value' => 'yes',
                 'default' => 'yes',
                 'prefix_class' => 'eael-cta-overlay-',
@@ -145,7 +145,7 @@ class Cta_Box extends Widget_Base
         $this->add_control(
             'eael_cta_flex_grid_icon_new',
             [
-                'label' => esc_html__('Icon', 'px-elements'),
+                'label' => esc_html__('Icon', 'pixerex-elements'),
                 'type' => Controls_Manager::ICONS,
                 'fa4compatibility' => 'eael_cta_flex_grid_icon',
                 'default' => [
@@ -161,7 +161,7 @@ class Cta_Box extends Widget_Base
         $this->add_control(
             'eael_cta_sub_title',
             [
-                'label' => esc_html__('Sub Title', 'px-elements'),
+                'label' => esc_html__('Sub Title', 'pixerex-elements'),
                 'type' => Controls_Manager::TEXT,
                 'label_block' => true,
                 'default' => '',
@@ -170,10 +170,10 @@ class Cta_Box extends Widget_Base
         $this->add_control(
             'eael_cta_title',
             [
-                'label' => esc_html__('Title', 'px-elements'),
+                'label' => esc_html__('Title', 'pixerex-elements'),
                 'type' => Controls_Manager::TEXT,
                 'label_block' => true,
-                'default' => esc_html__('The Ultimate Addons For Elementor', 'px-elements'),
+                'default' => esc_html__('The Ultimate Addons For Elementor', 'pixerex-elements'),
                 'dynamic' => ['active' => true],
             ]
         );
@@ -181,19 +181,19 @@ class Cta_Box extends Widget_Base
         $this->add_control(
             'title_tag',
             [
-                'label' => __('Select Tag', 'px-elements'),
+                'label' => __('Select Tag', 'pixerex-elements'),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'h2',
                 'options' => [
-                    'h1' => __('H1', 'px-elements'),
-                    'h2' => __('H2', 'px-elements'),
-                    'h3' => __('H3', 'px-elements'),
-                    'h4' => __('H4', 'px-elements'),
-                    'h5' => __('H5', 'px-elements'),
-                    'h6' => __('H6', 'px-elements'),
-                    'span' => __('Span', 'px-elements'),
-                    'p' => __('P', 'px-elements'),
-                    'div' => __('Div', 'px-elements'),
+                    'h1' => __('H1', 'pixerex-elements'),
+                    'h2' => __('H2', 'pixerex-elements'),
+                    'h3' => __('H3', 'pixerex-elements'),
+                    'h4' => __('H4', 'pixerex-elements'),
+                    'h5' => __('H5', 'pixerex-elements'),
+                    'h6' => __('H6', 'pixerex-elements'),
+                    'span' => __('Span', 'pixerex-elements'),
+                    'p' => __('P', 'pixerex-elements'),
+                    'div' => __('Div', 'pixerex-elements'),
                 ],
             ]
         );
@@ -201,11 +201,11 @@ class Cta_Box extends Widget_Base
         $this->add_control(
             'eael_cta_title_content_type',
             [
-                'label' => __('Content Type', 'px-elements'),
+                'label' => __('Content Type', 'pixerex-elements'),
                 'type' => Controls_Manager::SELECT,
                 'options' => [
-                    'content' => __('Content', 'px-elements'),
-                    'template' => __('Saved Templates', 'px-elements'),
+                    'content' => __('Content', 'pixerex-elements'),
+                    'template' => __('Saved Templates', 'pixerex-elements'),
                 ],
                 'default' => 'content',
             ]
@@ -214,7 +214,7 @@ class Cta_Box extends Widget_Base
         $this->add_control(
             'eael_primary_templates',
             [
-                'label' => __('Choose Template', 'px-elements'),
+                'label' => __('Choose Template', 'pixerex-elements'),
                 'type' => Controls_Manager::SELECT,
                 'options' => $this->eael_get_page_templates(),
                 'condition' => [
@@ -225,10 +225,10 @@ class Cta_Box extends Widget_Base
         $this->add_control(
             'eael_cta_content',
             [
-                'label' => esc_html__('Content', 'px-elements'),
+                'label' => esc_html__('Content', 'pixerex-elements'),
                 'type' => Controls_Manager::WYSIWYG,
                 'label_block' => true,
-                'default' => esc_html__('Add a strong one liner supporting the heading above and giving users a reason to click on the button below.', 'px-elements'),
+                'default' => esc_html__('Add a strong one liner supporting the heading above and giving users a reason to click on the button below.', 'pixerex-elements'),
                 'separator' => 'after',
                 'condition' => [
                     'eael_cta_title_content_type' => 'content',
@@ -239,17 +239,17 @@ class Cta_Box extends Widget_Base
         $this->add_control(
             'eael_cta_btn_text',
             [
-                'label' => esc_html__('Primary Button Text', 'px-elements'),
+                'label' => esc_html__('Primary Button Text', 'pixerex-elements'),
                 'type' => Controls_Manager::TEXT,
                 'label_block' => true,
-                'default' => esc_html__('Button Text', 'px-elements'),
+                'default' => esc_html__('Button Text', 'pixerex-elements'),
             ]
         );
 
         $this->add_control(
             'eael_cta_btn_link',
             [
-                'label' => esc_html__('Primary Button Link', 'px-elements'),
+                'label' => esc_html__('Primary Button Link', 'pixerex-elements'),
                 'type' => Controls_Manager::URL,
                 'label_block' => true,
                 'default' => [
@@ -264,20 +264,20 @@ class Cta_Box extends Widget_Base
         $this->add_control(
 			'eael_cta_secondary_btn_is_show',
 			[
-				'label' => __( 'Show Secondary Button', 'px-elements' ),
+				'label' => __( 'Show Secondary Button', 'pixerex-elements' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'px-elements' ),
-				'label_off' => __( 'Hide', 'px-elements' ),
+				'label_on' => __( 'Show', 'pixerex-elements' ),
+				'label_off' => __( 'Hide', 'pixerex-elements' ),
 				'return_value' => 'yes',
 			]
 		);
         $this->add_control(
             'eael_cta_secondary_btn_text',
             [
-                'label' => esc_html__('Secondary Button Text', 'px-elements'),
+                'label' => esc_html__('Secondary Button Text', 'pixerex-elements'),
                 'type' => Controls_Manager::TEXT,
                 'label_block' => true,
-                'default' => esc_html__('Button Text Two', 'px-elements'),
+                'default' => esc_html__('Button Text Two', 'pixerex-elements'),
                 'condition' => array(
                     'eael_cta_secondary_btn_is_show' => 'yes'
                 )
@@ -287,7 +287,7 @@ class Cta_Box extends Widget_Base
         $this->add_control(
             'eael_cta_secondary_btn_link',
             [
-                'label' => esc_html__('Secondary Button Link', 'px-elements'),
+                'label' => esc_html__('Secondary Button Link', 'pixerex-elements'),
                 'type' => Controls_Manager::URL,
                 'label_block' => true,
                 'default' => [
@@ -308,7 +308,7 @@ class Cta_Box extends Widget_Base
         $this->add_control(
             'eael_cta_bg_image',
             [
-                'label' => esc_html__('Background Image', 'px-elements'),
+                'label' => esc_html__('Background Image', 'pixerex-elements'),
                 'type' => Controls_Manager::MEDIA,
                 'default' => [
                     'url' => Utils::get_placeholder_image_src(),
@@ -329,14 +329,14 @@ class Cta_Box extends Widget_Base
             $this->start_controls_section(
                 'eael_section_pro',
                 [
-                    'label' => __('Go Premium for More Features', 'px-elements'),
+                    'label' => __('Go Premium for More Features', 'pixerex-elements'),
                 ]
             );
 
             $this->add_control(
                 'eael_control_get_pro',
                 [
-                    'label' => __('Unlock more possibilities', 'px-elements'),
+                    'label' => __('Unlock more possibilities', 'pixerex-elements'),
                     'type' => Controls_Manager::CHOOSE,
                     'options' => [
                         '1' => [
@@ -360,7 +360,7 @@ class Cta_Box extends Widget_Base
         $this->start_controls_section(
             'eael_section_cta_style_settings',
             [
-                'label' => esc_html__('Call to Action Style', 'px-elements'),
+                'label' => esc_html__('Call to Action Style', 'pixerex-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -368,10 +368,10 @@ class Cta_Box extends Widget_Base
         $this->add_control(
             'eael_cta_container_width',
             [
-                'label' => esc_html__('Set max width for the container?', 'px-elements'),
+                'label' => esc_html__('Set max width for the container?', 'pixerex-elements'),
                 'type' => Controls_Manager::SWITCHER,
-                'label_on' => __('yes', 'px-elements'),
-                'label_off' => __('no', 'px-elements'),
+                'label_on' => __('yes', 'pixerex-elements'),
+                'label_off' => __('no', 'pixerex-elements'),
                 'default' => 'yes',
             ]
         );
@@ -379,7 +379,7 @@ class Cta_Box extends Widget_Base
         $this->add_responsive_control(
             'eael_cta_container_width_value',
             [
-                'label' => __('Container Max Width (% or px)', 'px-elements'),
+                'label' => __('Container Max Width (% or px)', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'default' => [
                     'size' => 1170,
@@ -409,7 +409,7 @@ class Cta_Box extends Widget_Base
         $this->add_control(
             'eael_cta_bg_color',
             [
-                'label' => esc_html__('Background Color', 'px-elements'),
+                'label' => esc_html__('Background Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#f4f4f4',
                 'selectors' => [
@@ -421,7 +421,7 @@ class Cta_Box extends Widget_Base
         $this->add_responsive_control(
             'eael_cta_container_padding',
             [
-                'label' => esc_html__('Padding', 'px-elements'),
+                'label' => esc_html__('Padding', 'pixerex-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -433,7 +433,7 @@ class Cta_Box extends Widget_Base
         $this->add_responsive_control(
             'eael_cta_container_margin',
             [
-                'label' => esc_html__('Margin', 'px-elements'),
+                'label' => esc_html__('Margin', 'pixerex-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -446,7 +446,7 @@ class Cta_Box extends Widget_Base
             Group_Control_Border::get_type(),
             [
                 'name' => 'eael_cta_border',
-                'label' => esc_html__('Border', 'px-elements'),
+                'label' => esc_html__('Border', 'pixerex-elements'),
                 'selector' => '{{WRAPPER}} .eael-call-to-action',
             ]
         );
@@ -454,7 +454,7 @@ class Cta_Box extends Widget_Base
         $this->add_control(
             'eael_cta_border_radius',
             [
-                'label' => esc_html__('Border Radius', 'px-elements'),
+                'label' => esc_html__('Border Radius', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'range' => [
                     'px' => [
@@ -485,7 +485,7 @@ class Cta_Box extends Widget_Base
         $this->start_controls_section(
             'eael_section_cta_title_style_settings',
             [
-                'label' => esc_html__('Color &amp; Typography ', 'px-elements'),
+                'label' => esc_html__('Color &amp; Typography ', 'pixerex-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -493,7 +493,7 @@ class Cta_Box extends Widget_Base
         $this->add_control(
             'eael_cta_title_heading',
             [
-                'label' => esc_html__('Title Style', 'px-elements'),
+                'label' => esc_html__('Title Style', 'pixerex-elements'),
                 'type' => Controls_Manager::HEADING,
             ]
         );
@@ -501,7 +501,7 @@ class Cta_Box extends Widget_Base
         $this->add_control(
             'eael_cta_title_color',
             [
-                'label' => esc_html__('Color', 'px-elements'),
+                'label' => esc_html__('Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -521,7 +521,7 @@ class Cta_Box extends Widget_Base
         $this->add_responsive_control(
             'eael_cta_title_margin',
             [
-                'label' => esc_html__('Space', 'px-elements'),
+                'label' => esc_html__('Space', 'pixerex-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -533,7 +533,7 @@ class Cta_Box extends Widget_Base
         $this->add_control(
             'eael_cta_sub_title_heading',
             [
-                'label' => esc_html__('Sub Title Style', 'px-elements'),
+                'label' => esc_html__('Sub Title Style', 'pixerex-elements'),
                 'type' => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -542,7 +542,7 @@ class Cta_Box extends Widget_Base
         $this->add_control(
             'eael_cta_sub_title_color',
             [
-                'label' => esc_html__('Color', 'px-elements'),
+                'label' => esc_html__('Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -562,7 +562,7 @@ class Cta_Box extends Widget_Base
         $this->add_responsive_control(
             'eael_cta_sub_title_margin',
             [
-                'label' => esc_html__('Space', 'px-elements'),
+                'label' => esc_html__('Space', 'pixerex-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -575,7 +575,7 @@ class Cta_Box extends Widget_Base
         $this->add_control(
             'eael_cta_content_heading',
             [
-                'label' => esc_html__('Content Style', 'px-elements'),
+                'label' => esc_html__('Content Style', 'pixerex-elements'),
                 'type' => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -584,7 +584,7 @@ class Cta_Box extends Widget_Base
         $this->add_control(
             'eael_cta_content_color',
             [
-                'label' => esc_html__('Color', 'px-elements'),
+                'label' => esc_html__('Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -611,7 +611,7 @@ class Cta_Box extends Widget_Base
         $this->start_controls_section(
             'eael_section_cta_btn_style_settings',
             [
-                'label' => esc_html__('Primary Button Style', 'px-elements'),
+                'label' => esc_html__('Primary Button Style', 'pixerex-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -619,14 +619,14 @@ class Cta_Box extends Widget_Base
         $this->add_control(
             'eael_cta_btn_effect_type',
             [
-                'label' => esc_html__('Effect', 'px-elements'),
+                'label' => esc_html__('Effect', 'pixerex-elements'),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'default',
                 'label_block' => false,
                 'options' => [
-                    'default' => esc_html__('Default', 'px-elements'),
-                    'top-to-bottom' => esc_html__('Top to Bottom', 'px-elements'),
-                    'left-to-right' => esc_html__('Left to Right', 'px-elements'),
+                    'default' => esc_html__('Default', 'pixerex-elements'),
+                    'top-to-bottom' => esc_html__('Top to Bottom', 'pixerex-elements'),
+                    'left-to-right' => esc_html__('Left to Right', 'pixerex-elements'),
                 ],
             ]
         );
@@ -634,7 +634,7 @@ class Cta_Box extends Widget_Base
         $this->add_responsive_control(
             'eael_cta_btn_padding',
             [
-                'label' => esc_html__('Padding', 'px-elements'),
+                'label' => esc_html__('Padding', 'pixerex-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -646,7 +646,7 @@ class Cta_Box extends Widget_Base
         $this->add_responsive_control(
             'eael_cta_btn_margin',
             [
-                'label' => esc_html__('Margin', 'px-elements'),
+                'label' => esc_html__('Margin', 'pixerex-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -665,10 +665,10 @@ class Cta_Box extends Widget_Base
         $this->add_control(
 			'eael_cta_btn_is_used_gradient_bg',
 			[
-				'label' => __( 'Use Gradient Background', 'px-elements' ),
+				'label' => __( 'Use Gradient Background', 'pixerex-elements' ),
 				'type' => \Elementor\Controls_Manager::SWITCHER,
-				'label_on' => __( 'yes', 'px-elements' ),
-				'label_off' => __( 'No', 'px-elements' ),
+				'label_on' => __( 'yes', 'pixerex-elements' ),
+				'label_off' => __( 'No', 'pixerex-elements' ),
 				'return_value' => 'yes',
 			]
         );
@@ -676,12 +676,12 @@ class Cta_Box extends Widget_Base
         $this->start_controls_tabs('eael_cta_button_tabs');
 
         // Normal State Tab
-        $this->start_controls_tab('eael_cta_btn_normal', ['label' => esc_html__('Normal', 'px-elements')]);
+        $this->start_controls_tab('eael_cta_btn_normal', ['label' => esc_html__('Normal', 'pixerex-elements')]);
 
         $this->add_control(
             'eael_cta_btn_normal_text_color',
             [
-                'label' => esc_html__('Text Color', 'px-elements'),
+                'label' => esc_html__('Text Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#4d4d4d',
                 'selectors' => [
@@ -695,7 +695,7 @@ class Cta_Box extends Widget_Base
         $this->add_control(
             'eael_cta_btn_normal_bg_color',
             [
-                'label' => esc_html__('Background Color', 'px-elements'),
+                'label' => esc_html__('Background Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#f9f9f9',
                 'selectors' => [
@@ -710,7 +710,7 @@ class Cta_Box extends Widget_Base
 			\Elementor\Group_Control_Background::get_type(),
 			[
 				'name' => 'eael_cta_btn_normal_gradient_bg_color',
-				'label' => __( 'Background', 'px-elements' ),
+				'label' => __( 'Background', 'pixerex-elements' ),
                 'types' => [ 'classic', 'gradient' ],
                 'selector' => '{{WRAPPER}} .eael-call-to-action .cta-button:not(.cta-secondary-button)',
                 'condition' => [
@@ -723,7 +723,7 @@ class Cta_Box extends Widget_Base
             Group_Control_Border::get_type(),
             [
                 'name' => 'eael_cat_btn_normal_border',
-                'label' => esc_html__('Border', 'px-elements'),
+                'label' => esc_html__('Border', 'pixerex-elements'),
                 'selector' => '{{WRAPPER}} .eael-call-to-action .cta-button:not(.cta-secondary-button)',
             ]
         );
@@ -731,7 +731,7 @@ class Cta_Box extends Widget_Base
         $this->add_control(
             'eael_cta_btn_border_radius',
             [
-                'label' => esc_html__('Border Radius', 'px-elements'),
+                'label' => esc_html__('Border Radius', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'range' => [
                     'px' => [
@@ -747,12 +747,12 @@ class Cta_Box extends Widget_Base
         $this->end_controls_tab();
 
         // Hover State Tab
-        $this->start_controls_tab('eael_cta_btn_hover', ['label' => esc_html__('Hover', 'px-elements')]);
+        $this->start_controls_tab('eael_cta_btn_hover', ['label' => esc_html__('Hover', 'pixerex-elements')]);
 
         $this->add_control(
             'eael_cta_btn_hover_text_color',
             [
-                'label' => esc_html__('Text Color', 'px-elements'),
+                'label' => esc_html__('Text Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#f9f9f9',
                 'selectors' => [
@@ -764,7 +764,7 @@ class Cta_Box extends Widget_Base
         $this->add_control(
             'eael_cta_btn_hover_bg_color',
             [
-                'label' => esc_html__('Background Color', 'px-elements'),
+                'label' => esc_html__('Background Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#3F51B5',
                 'selectors' => [
@@ -780,7 +780,7 @@ class Cta_Box extends Widget_Base
 			\Elementor\Group_Control_Background::get_type(),
 			[
 				'name' => 'eael_cta_btn_hover_gradient_bg_color',
-				'label' => __( 'Background', 'px-elements' ),
+				'label' => __( 'Background', 'pixerex-elements' ),
                 'types' => [ 'classic', 'gradient' ],
                 'selector' => '{{WRAPPER}} .eael-call-to-action .cta-button:hover:not(.cta-secondary-button)',
                 'condition' => [
@@ -792,7 +792,7 @@ class Cta_Box extends Widget_Base
         $this->add_control(
             'eael_cta_btn_hover_border_color',
             [
-                'label' => esc_html__('Border Color', 'px-elements'),
+                'label' => esc_html__('Border Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -825,7 +825,7 @@ class Cta_Box extends Widget_Base
         $this->start_controls_section(
             'eael_section_cta_secondary_btn_style_settings',
             [
-                'label' => esc_html__('Secondary Button Style', 'px-elements'),
+                'label' => esc_html__('Secondary Button Style', 'pixerex-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'eael_cta_secondary_btn_is_show' => 'yes',
@@ -836,14 +836,14 @@ class Cta_Box extends Widget_Base
         $this->add_control(
             'eael_cta_secondary_btn_effect_type',
             [
-                'label' => esc_html__('Effect', 'px-elements'),
+                'label' => esc_html__('Effect', 'pixerex-elements'),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'default',
                 'label_block' => false,
                 'options' => [
-                    'default' => esc_html__('Default', 'px-elements'),
-                    'top-to-bottom' => esc_html__('Top to Bottom', 'px-elements'),
-                    'left-to-right' => esc_html__('Left to Right', 'px-elements'),
+                    'default' => esc_html__('Default', 'pixerex-elements'),
+                    'top-to-bottom' => esc_html__('Top to Bottom', 'pixerex-elements'),
+                    'left-to-right' => esc_html__('Left to Right', 'pixerex-elements'),
                 ],
             ]
         );
@@ -851,7 +851,7 @@ class Cta_Box extends Widget_Base
         $this->add_responsive_control(
             'eael_cta_secondary_btn_padding',
             [
-                'label' => esc_html__('Padding', 'px-elements'),
+                'label' => esc_html__('Padding', 'pixerex-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -863,7 +863,7 @@ class Cta_Box extends Widget_Base
         $this->add_responsive_control(
             'eael_cta_secondary_btn_margin',
             [
-                'label' => esc_html__('Margin', 'px-elements'),
+                'label' => esc_html__('Margin', 'pixerex-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -882,12 +882,12 @@ class Cta_Box extends Widget_Base
         $this->start_controls_tabs('eael_cta_secondary_button_tabs');
 
         // Normal State Tab
-        $this->start_controls_tab('eael_cta_secondary_btn_normal', ['label' => esc_html__('Normal', 'px-elements')]);
+        $this->start_controls_tab('eael_cta_secondary_btn_normal', ['label' => esc_html__('Normal', 'pixerex-elements')]);
 
         $this->add_control(
             'eael_cta_secondary_btn_normal_text_color',
             [
-                'label' => esc_html__('Text Color', 'px-elements'),
+                'label' => esc_html__('Text Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#4d4d4d',
                 'selectors' => [
@@ -900,7 +900,7 @@ class Cta_Box extends Widget_Base
 			\Elementor\Group_Control_Background::get_type(),
 			[
 				'name' => 'eael_cta_secondary_btn_normal_bg_color',
-				'label' => __( 'Background', 'px-elements' ),
+				'label' => __( 'Background', 'pixerex-elements' ),
 				'types' => [ 'classic', 'gradient' ],
 				'selector' => '{{WRAPPER}} .eael-call-to-action .cta-button.cta-secondary-button',
 			]
@@ -910,7 +910,7 @@ class Cta_Box extends Widget_Base
             Group_Control_Border::get_type(),
             [
                 'name' => 'eael_cat_secondary_btn_normal_border',
-                'label' => esc_html__('Border', 'px-elements'),
+                'label' => esc_html__('Border', 'pixerex-elements'),
                 'selector' => '{{WRAPPER}} .eael-call-to-action .cta-button.cta-secondary-button',
             ]
         );
@@ -918,7 +918,7 @@ class Cta_Box extends Widget_Base
         $this->add_control(
             'eael_cta_secondary_btn_border_radius',
             [
-                'label' => esc_html__('Border Radius', 'px-elements'),
+                'label' => esc_html__('Border Radius', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'range' => [
                     'px' => [
@@ -934,12 +934,12 @@ class Cta_Box extends Widget_Base
         $this->end_controls_tab();
 
         // Hover State Tab
-        $this->start_controls_tab('eael_cta_secondary_btn_hover', ['label' => esc_html__('Hover', 'px-elements')]);
+        $this->start_controls_tab('eael_cta_secondary_btn_hover', ['label' => esc_html__('Hover', 'pixerex-elements')]);
 
         $this->add_control(
             'eael_cta_secondary_btn_hover_text_color',
             [
-                'label' => esc_html__('Text Color', 'px-elements'),
+                'label' => esc_html__('Text Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#f9f9f9',
                 'selectors' => [
@@ -952,7 +952,7 @@ class Cta_Box extends Widget_Base
 			\Elementor\Group_Control_Background::get_type(),
 			[
 				'name' => 'eael_cta_secondary_btn_hover_bg_color',
-				'label' => __( 'Background', 'px-elements' ),
+				'label' => __( 'Background', 'pixerex-elements' ),
                 'types' => [ 'classic', 'gradient' ],
                 'selector' => '{{WRAPPER}} .eael-call-to-action .cta-button.cta-secondary-button:after, {{WRAPPER}} .eael-call-to-action .cta-button.cta-secondary-button:hover',
 			]
@@ -961,7 +961,7 @@ class Cta_Box extends Widget_Base
         $this->add_control(
             'eael_cta_secondary_btn_hover_border_color',
             [
-                'label' => esc_html__('Border Color', 'px-elements'),
+                'label' => esc_html__('Border Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -994,7 +994,7 @@ class Cta_Box extends Widget_Base
         $this->start_controls_section(
             'eael_section_cta_icon_style_settings',
             [
-                'label' => esc_html__('Icon Style', 'px-elements'),
+                'label' => esc_html__('Icon Style', 'pixerex-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'eael_cta_type' => 'cta-icon-flex',
@@ -1005,7 +1005,7 @@ class Cta_Box extends Widget_Base
         $this->add_control(
             'eael_section_cta_icon_size',
             [
-                'label' => esc_html__('Font Size', 'px-elements'),
+                'label' => esc_html__('Font Size', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'default' => [
                     'size' => 80,
@@ -1025,7 +1025,7 @@ class Cta_Box extends Widget_Base
         $this->add_control(
             'eael_section_cta_icon_color',
             [
-                'label' => esc_html__('Color', 'px-elements'),
+                'label' => esc_html__('Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#444',
                 'selectors' => [

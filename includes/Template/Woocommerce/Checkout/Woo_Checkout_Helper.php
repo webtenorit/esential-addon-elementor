@@ -50,7 +50,7 @@ trait Woo_Checkout_Helper {
 			$non_js_checkout = ! empty( $_POST['woocommerce_checkout_update_totals'] ); // WPCS: input var ok, CSRF ok.
 
 			if ( wc_notice_count( 'error' ) === 0 && $non_js_checkout ) {
-				wc_add_notice( __( 'The order totals have been updated. Please confirm your order by pressing the "Place order" button at the bottom of the page.', 'px-elements' ) );
+				wc_add_notice( __( 'The order totals have been updated. Please confirm your order by pressing the "Place order" button at the bottom of the page.', 'pixerex-elements' ) );
 			}
 
 			if($settings['ea_woo_checkout_layout'] == 'default'){
@@ -113,12 +113,12 @@ trait Woo_Checkout_Helper {
 
 				// Order or payment link is invalid.
 				if ( ! $order || $order->get_id() !== $order_id || ! hash_equals( $order->get_order_key(), $order_key ) ) {
-					throw new Exception( __( 'Sorry, this order is invalid and cannot be paid for.', 'px-elements' ) );
+					throw new Exception( __( 'Sorry, this order is invalid and cannot be paid for.', 'pixerex-elements' ) );
 				}
 
 				// Logged out customer does not have permission to pay for this order.
 				if ( ! current_user_can( 'pay_for_order', $order_id ) && ! is_user_logged_in() ) {
-					echo '<div class="woocommerce-info">' . esc_html__( 'Please log in to your account below to continue to the payment form.', 'px-elements' ) . '</div>';
+					echo '<div class="woocommerce-info">' . esc_html__( 'Please log in to your account below to continue to the payment form.', 'pixerex-elements' ) . '</div>';
 					woocommerce_login_form(
 						array(
 							'redirect' => $order->get_checkout_payment_url(),
@@ -131,19 +131,19 @@ trait Woo_Checkout_Helper {
 				if ( ! $order->get_user_id() && is_user_logged_in() ) {
 					// If order has does not have same billing email then current logged in user then show warning.
 					if ( $order->get_billing_email() !== wp_get_current_user()->user_email ) {
-						wc_print_notice( __( 'You are paying for a guest order. Please continue with payment only if you recognize this order.', 'px-elements' ), 'error' );
+						wc_print_notice( __( 'You are paying for a guest order. Please continue with payment only if you recognize this order.', 'pixerex-elements' ), 'error' );
 					}
 				}
 
 				// Logged in customer trying to pay for someone else's order.
 				if ( ! current_user_can( 'pay_for_order', $order_id ) ) {
-					throw new Exception( __( 'This order cannot be paid for. Please contact us if you need assistance.', 'px-elements' ) );
+					throw new Exception( __( 'This order cannot be paid for. Please contact us if you need assistance.', 'pixerex-elements' ) );
 				}
 
 				// Does not need payment.
 				if ( ! $order->needs_payment() ) {
 					/* translators: %s: order status */
-					throw new Exception( sprintf( __( 'This order&rsquo;s status is &ldquo;%s&rdquo;&mdash;it cannot be paid for. Please contact us if you need assistance.', 'px-elements' ), wc_get_order_status_name( $order->get_status() ) ) );
+					throw new Exception( sprintf( __( 'This order&rsquo;s status is &ldquo;%s&rdquo;&mdash;it cannot be paid for. Please contact us if you need assistance.', 'pixerex-elements' ), wc_get_order_status_name( $order->get_status() ) ) );
 				}
 
 				// Ensure order items are still stocked if paying for a failed order. Pending orders do not need this check because stock is held.
@@ -172,7 +172,7 @@ trait Woo_Checkout_Helper {
 
 							if ( ! apply_filters( 'woocommerce_pay_order_product_in_stock', $product->is_in_stock(), $product, $order ) ) {
 								/* translators: %s: product name */
-								throw new Exception( sprintf( __( 'Sorry, "%s" is no longer in stock so this order cannot be paid for. We apologize for any inconvenience caused.', 'px-elements' ), $product->get_name() ) );
+								throw new Exception( sprintf( __( 'Sorry, "%s" is no longer in stock so this order cannot be paid for. We apologize for any inconvenience caused.', 'pixerex-elements' ), $product->get_name() ) );
 							}
 
 							// We only need to check products managing stock, with a limited stock qty.
@@ -186,7 +186,7 @@ trait Woo_Checkout_Helper {
 
 							if ( ! apply_filters( 'woocommerce_pay_order_product_has_enough_stock', ( $product->get_stock_quantity() >= ( $held_stock + $required_stock ) ), $product, $order ) ) {
 								/* translators: 1: product name 2: quantity in stock */
-								throw new Exception( sprintf( __( 'Sorry, we do not have enough "%1$s" in stock to fulfill your order (%2$s available). We apologize for any inconvenience caused.', 'px-elements' ), $product->get_name(), wc_format_stock_quantity_for_display( $product->get_stock_quantity() - $held_stock, $product ) ) );
+								throw new Exception( sprintf( __( 'Sorry, we do not have enough "%1$s" in stock to fulfill your order (%2$s available). We apologize for any inconvenience caused.', 'pixerex-elements' ), $product->get_name(), wc_format_stock_quantity_for_display( $product->get_stock_quantity() - $held_stock, $product ) ) );
 							}
 						}
 					}
@@ -212,7 +212,7 @@ trait Woo_Checkout_Helper {
 					array(
 						'order'              => $order,
 						'available_gateways' => $available_gateways,
-						'order_button_text'  => apply_filters( 'woocommerce_pay_order_button_text', __( 'Pay for order', 'px-elements' ) ),
+						'order_button_text'  => apply_filters( 'woocommerce_pay_order_button_text', __( 'Pay for order', 'pixerex-elements' ) ),
 					)
 				);
 
@@ -233,13 +233,13 @@ trait Woo_Checkout_Helper {
 
 				} else {
 					/* translators: %s: order status */
-					wc_print_notice( sprintf( __( 'This order&rsquo;s status is &ldquo;%s&rdquo;&mdash;it cannot be paid for. Please contact us if you need assistance.', 'px-elements' ), wc_get_order_status_name( $order->get_status() ) ), 'error' );
+					wc_print_notice( sprintf( __( 'This order&rsquo;s status is &ldquo;%s&rdquo;&mdash;it cannot be paid for. Please contact us if you need assistance.', 'pixerex-elements' ), wc_get_order_status_name( $order->get_status() ) ), 'error' );
 				}
 			} else {
-				wc_print_notice( __( 'Sorry, this order is invalid and cannot be paid for.', 'px-elements' ), 'error' );
+				wc_print_notice( __( 'Sorry, this order is invalid and cannot be paid for.', 'pixerex-elements' ), 'error' );
 			}
 		} else {
-			wc_print_notice( __( 'Invalid order.', 'px-elements' ), 'error' );
+			wc_print_notice( __( 'Invalid order.', 'pixerex-elements' ), 'error' );
 		}
 
 		do_action( 'after_woocommerce_pay' );
@@ -285,11 +285,11 @@ trait Woo_Checkout_Helper {
 				<?php Icons_Manager::render_icon( $settings['ea_woo_checkout_login_icon'], [ 'aria-hidden' => 'true' ] ); ?>
             </div>
             <div class="woocommerce-form-login-toggle">
-				<?php wc_print_notice( apply_filters( 'woocommerce_checkout_login_message', esc_html__( 'Returning customer?', 'px-elements' ) ) . ' <a href="#" class="showlogin">' . esc_html__( 'Click here to login', 'px-elements' ) . '</a>', 'notice' ); ?>
+				<?php wc_print_notice( apply_filters( 'woocommerce_checkout_login_message', esc_html__( 'Returning customer?', 'pixerex-elements' ) ) . ' <a href="#" class="showlogin">' . esc_html__( 'Click here to login', 'pixerex-elements' ) . '</a>', 'notice' ); ?>
             </div>
 
 			<?php
-			$message  = esc_html__( 'If you have shopped with us before, please enter your details below. If you are a new customer, please proceed to the Billing section.', 'px-elements' );
+			$message  = esc_html__( 'If you have shopped with us before, please enter your details below. If you are a new customer, please proceed to the Billing section.', 'pixerex-elements' );
 			$redirect = wc_get_checkout_url();
 			$hidden   = true;
 			?>
@@ -300,11 +300,11 @@ trait Woo_Checkout_Helper {
 				<?php echo ( $message ) ? wpautop( wptexturize( $message ) ) : ''; // @codingStandardsIgnoreLine ?>
 
                 <p class="form-row form-row-first">
-                    <label for="username"><?php esc_html_e( 'Username or email', 'px-elements' ); ?>&nbsp;<span class="required">*</span></label>
+                    <label for="username"><?php esc_html_e( 'Username or email', 'pixerex-elements' ); ?>&nbsp;<span class="required">*</span></label>
                     <input type="text" class="input-text" name="username" id="username" autocomplete="username" />
                 </p>
                 <p class="form-row form-row-last">
-                    <label for="password"><?php esc_html_e( 'Password', 'px-elements' ); ?>&nbsp;<span class="required">*</span></label>
+                    <label for="password"><?php esc_html_e( 'Password', 'pixerex-elements' ); ?>&nbsp;<span class="required">*</span></label>
                     <input class="input-text" type="password" name="password" id="password" autocomplete="current-password" />
                 </p>
                 <div class="clear"></div>
@@ -313,14 +313,14 @@ trait Woo_Checkout_Helper {
 
                 <p class="form-row">
                     <label class="woocommerce-form__label woocommerce-form__label-for-checkbox woocommerce-form-login__rememberme">
-                        <input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever" /> <span><?php esc_html_e( 'Remember me', 'px-elements' ); ?></span>
+                        <input class="woocommerce-form__input woocommerce-form__input-checkbox" name="rememberme" type="checkbox" id="rememberme" value="forever" /> <span><?php esc_html_e( 'Remember me', 'pixerex-elements' ); ?></span>
                     </label>
 					<?php wp_nonce_field( 'woocommerce-login', 'woocommerce-login-nonce' ); ?>
                     <input type="hidden" name="redirect" value="<?php echo esc_url( $redirect ); ?>" />
-                    <button type="submit" class="woocommerce-button button woocommerce-form-login__submit" name="login" value="<?php esc_attr_e( 'Login', 'px-elements' ); ?>"><?php esc_html_e( 'Login', 'px-elements' ); ?></button>
+                    <button type="submit" class="woocommerce-button button woocommerce-form-login__submit" name="login" value="<?php esc_attr_e( 'Login', 'pixerex-elements' ); ?>"><?php esc_html_e( 'Login', 'pixerex-elements' ); ?></button>
                 </p>
                 <p class="lost_password">
-                    <a href="<?php echo esc_url( wp_lostpassword_url() ); ?>"><?php esc_html_e( 'Lost your password?', 'px-elements' ); ?></a>
+                    <a href="<?php echo esc_url( wp_lostpassword_url() ); ?>"><?php esc_html_e( 'Lost your password?', 'pixerex-elements' ); ?></a>
                 </p>
 
                 <div class="clear"></div>
@@ -344,7 +344,7 @@ trait Woo_Checkout_Helper {
 		$settings = self::ea_get_woo_checkout_settings();
 		?>
 		<?php do_action('woocommerce_checkout_before_order_review_heading'); ?>
-		<h3 id="order_review_heading" class="woo-checkout-section-title"><?php esc_html_e( 'Your order', 'px-elements' ); ?></h3>
+		<h3 id="order_review_heading" class="woo-checkout-section-title"><?php esc_html_e( 'Your order', 'pixerex-elements' ); ?></h3>
 
 		<?php do_action('woocommerce_checkout_before_order_review'); ?>
 
@@ -426,7 +426,7 @@ trait Woo_Checkout_Helper {
 
 				<div class="footer-content">
 					<div class="cart-subtotal">
-						<div><?php esc_html_e( 'Subtotal', 'px-elements' ); ?></div>
+						<div><?php esc_html_e( 'Subtotal', 'pixerex-elements' ); ?></div>
 						<div><?php wc_cart_totals_subtotal_html(); ?></div>
 					</div>
 
@@ -474,7 +474,7 @@ trait Woo_Checkout_Helper {
 					<?php do_action( 'woocommerce_review_order_before_order_total' ); ?>
 
 					<div class="order-total">
-						<div><?php esc_html_e( 'Total', 'px-elements' ); ?></div>
+						<div><?php esc_html_e( 'Total', 'pixerex-elements' ); ?></div>
 						<div><?php wc_cart_totals_order_total_html(); ?></div>
 					</div>
 				</div>
@@ -492,7 +492,7 @@ trait Woo_Checkout_Helper {
 		<?php
 		// If checkout registration is disabled and not logged in, the user cannot checkout.
 		if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_required() && ! is_user_logged_in() ) {
-			echo esc_html( apply_filters( 'woocommerce_checkout_must_be_logged_in_message', __( 'You must be logged in to checkout.', 'px-elements' ) ) );
+			echo esc_html( apply_filters( 'woocommerce_checkout_must_be_logged_in_message', __( 'You must be logged in to checkout.', 'pixerex-elements' ) ) );
 			return;
 		}
 		?>
@@ -519,7 +519,7 @@ trait Woo_Checkout_Helper {
 			<?php endif; ?>
 
 			<div class="woo-checkout-payment">
-				<h3 id="payment-title" class="woo-checkout-section-title"><?php esc_html_e( 'Payment Methods', 'px-elements' ); ?></h3>
+				<h3 id="payment-title" class="woo-checkout-section-title"><?php esc_html_e( 'Payment Methods', 'pixerex-elements' ); ?></h3>
 
 				<?php woocommerce_checkout_payment(); ?>
 			</div>

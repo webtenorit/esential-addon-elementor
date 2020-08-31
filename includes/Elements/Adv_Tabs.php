@@ -26,7 +26,7 @@ class Adv_Tabs extends Widget_Base
 
     public function get_title()
     {
-        return esc_html__('Advanced Tabs', 'px-elements');
+        return esc_html__('Advanced Tabs', 'pixerex-elements');
     }
 
     public function get_icon()
@@ -69,26 +69,26 @@ class Adv_Tabs extends Widget_Base
         $this->start_controls_section(
             'eael_section_adv_tabs_settings',
             [
-                'label' => esc_html__('General Settings', 'px-elements'),
+                'label' => esc_html__('General Settings', 'pixerex-elements'),
             ]
         );
         $this->add_control(
             'eael_adv_tab_layout',
             [
-                'label' => esc_html__('Layout', 'px-elements'),
+                'label' => esc_html__('Layout', 'pixerex-elements'),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'eael-tabs-horizontal',
                 'label_block' => false,
                 'options' => [
-                    'eael-tabs-horizontal' => esc_html__('Horizontal', 'px-elements'),
-                    'eael-tabs-vertical' => esc_html__('Vertical', 'px-elements'),
+                    'eael-tabs-horizontal' => esc_html__('Horizontal', 'pixerex-elements'),
+                    'eael-tabs-vertical' => esc_html__('Vertical', 'pixerex-elements'),
                 ],
             ]
         );
         $this->add_control(
             'eael_adv_tabs_icon_show',
             [
-                'label' => esc_html__('Enable Icon', 'px-elements'),
+                'label' => esc_html__('Enable Icon', 'pixerex-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'default' => 'yes',
                 'return_value' => 'yes',
@@ -97,13 +97,13 @@ class Adv_Tabs extends Widget_Base
         $this->add_control(
             'eael_adv_tab_icon_position',
             [
-                'label' => esc_html__('Icon Position', 'px-elements'),
+                'label' => esc_html__('Icon Position', 'pixerex-elements'),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'eael-tab-inline-icon',
                 'label_block' => false,
                 'options' => [
-                    'eael-tab-top-icon' => esc_html__('Stacked', 'px-elements'),
-                    'eael-tab-inline-icon' => esc_html__('Inline', 'px-elements'),
+                    'eael-tab-top-icon' => esc_html__('Stacked', 'pixerex-elements'),
+                    'eael-tab-inline-icon' => esc_html__('Inline', 'pixerex-elements'),
                 ],
                 'condition' => [
                     'eael_adv_tabs_icon_show' => 'yes',
@@ -118,7 +118,7 @@ class Adv_Tabs extends Widget_Base
         $this->start_controls_section(
             'eael_section_adv_tabs_content_settings',
             [
-                'label' => esc_html__('Content', 'px-elements'),
+                'label' => esc_html__('Content', 'pixerex-elements'),
             ]
         );
         $this->add_control(
@@ -127,34 +127,34 @@ class Adv_Tabs extends Widget_Base
                 'type' => Controls_Manager::REPEATER,
                 'seperator' => 'before',
                 'default' => [
-                    ['eael_adv_tabs_tab_title' => esc_html__('Tab Title 1', 'px-elements')],
-                    ['eael_adv_tabs_tab_title' => esc_html__('Tab Title 2', 'px-elements')],
-                    ['eael_adv_tabs_tab_title' => esc_html__('Tab Title 3', 'px-elements')],
+                    ['eael_adv_tabs_tab_title' => esc_html__('Tab Title 1', 'pixerex-elements')],
+                    ['eael_adv_tabs_tab_title' => esc_html__('Tab Title 2', 'pixerex-elements')],
+                    ['eael_adv_tabs_tab_title' => esc_html__('Tab Title 3', 'pixerex-elements')],
                 ],
                 'fields' => [
                     [
                         'name' => 'eael_adv_tabs_tab_show_as_default',
-                        'label' => __('Set as Default', 'px-elements'),
+                        'label' => __('Set as Default', 'pixerex-elements'),
                         'type' => Controls_Manager::SWITCHER,
                         'default' => 'inactive',
                         'return_value' => 'active-default',
                     ],
                     [
                         'name' => 'eael_adv_tabs_icon_type',
-                        'label' => esc_html__('Icon Type', 'px-elements'),
+                        'label' => esc_html__('Icon Type', 'pixerex-elements'),
                         'type' => Controls_Manager::CHOOSE,
                         'label_block' => false,
                         'options' => [
                             'none' => [
-                                'title' => esc_html__('None', 'px-elements'),
+                                'title' => esc_html__('None', 'pixerex-elements'),
                                 'icon' => 'fa fa-ban',
                             ],
                             'icon' => [
-                                'title' => esc_html__('Icon', 'px-elements'),
+                                'title' => esc_html__('Icon', 'pixerex-elements'),
                                 'icon' => 'fa fa-gear',
                             ],
                             'image' => [
-                                'title' => esc_html__('Image', 'px-elements'),
+                                'title' => esc_html__('Image', 'pixerex-elements'),
                                 'icon' => 'fa fa-picture-o',
                             ],
                         ],
@@ -162,7 +162,7 @@ class Adv_Tabs extends Widget_Base
                     ],
                     [
                         'name' => 'eael_adv_tabs_tab_title_icon_new',
-                        'label' => esc_html__('Icon', 'px-elements'),
+                        'label' => esc_html__('Icon', 'pixerex-elements'),
                         'type' => Controls_Manager::ICONS,
                         'fa4compatibility' => 'eael_adv_tabs_tab_title_icon',
                         'default' => [
@@ -175,7 +175,7 @@ class Adv_Tabs extends Widget_Base
                     ],
                     [
                         'name' => 'eael_adv_tabs_tab_title_image',
-                        'label' => esc_html__('Image', 'px-elements'),
+                        'label' => esc_html__('Image', 'pixerex-elements'),
                         'type' => Controls_Manager::MEDIA,
                         'default' => [
                             'url' => Utils::get_placeholder_image_src(),
@@ -186,24 +186,24 @@ class Adv_Tabs extends Widget_Base
                     ],
                     [
                         'name' => 'eael_adv_tabs_tab_title',
-                        'label' => esc_html__('Tab Title', 'px-elements'),
+                        'label' => esc_html__('Tab Title', 'pixerex-elements'),
                         'type' => Controls_Manager::TEXT,
-                        'default' => esc_html__('Tab Title', 'px-elements'),
+                        'default' => esc_html__('Tab Title', 'pixerex-elements'),
                         'dynamic' => ['active' => true],
                     ],
                     [
                         'name' => 'eael_adv_tabs_text_type',
-                        'label' => __('Content Type', 'px-elements'),
+                        'label' => __('Content Type', 'pixerex-elements'),
                         'type' => Controls_Manager::SELECT,
                         'options' => [
-                            'content' => __('Content', 'px-elements'),
-                            'template' => __('Saved Templates', 'px-elements'),
+                            'content' => __('Content', 'pixerex-elements'),
+                            'template' => __('Saved Templates', 'pixerex-elements'),
                         ],
                         'default' => 'content',
                     ],
                     [
                         'name' => 'eael_primary_templates',
-                        'label' => __('Choose Template', 'px-elements'),
+                        'label' => __('Choose Template', 'pixerex-elements'),
                         'type' => Controls_Manager::SELECT,
                         'options' => $this->eael_get_page_templates(),
                         'condition' => [
@@ -212,9 +212,9 @@ class Adv_Tabs extends Widget_Base
                     ],
                     [
                         'name' => 'eael_adv_tabs_tab_content',
-                        'label' => esc_html__('Tab Content', 'px-elements'),
+                        'label' => esc_html__('Tab Content', 'pixerex-elements'),
                         'type' => Controls_Manager::WYSIWYG,
-                        'default' => esc_html__('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, neque qui velit. Magni dolorum quidem ipsam eligendi, totam, facilis laudantium cum accusamus ullam voluptatibus commodi numquam, error, est. Ea, consequatur.', 'px-elements'),
+                        'default' => esc_html__('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, neque qui velit. Magni dolorum quidem ipsam eligendi, totam, facilis laudantium cum accusamus ullam voluptatibus commodi numquam, error, est. Ea, consequatur.', 'pixerex-elements'),
                         'dynamic' => ['active' => true],
                         'condition' => [
                             'eael_adv_tabs_text_type' => 'content',
@@ -231,14 +231,14 @@ class Adv_Tabs extends Widget_Base
             $this->start_controls_section(
                 'eael_section_pro',
                 [
-                    'label' => __( 'Go Premium for More Features', 'px-elements')
+                    'label' => __( 'Go Premium for More Features', 'pixerex-elements')
                 ]
             );
 
             $this->add_control(
                 'eael_control_get_pro',
                 [
-                    'label' => __( 'Unlock more possibilities', 'px-elements'),
+                    'label' => __( 'Unlock more possibilities', 'pixerex-elements'),
                     'type' => Controls_Manager::CHOOSE,
                     'options' => [
                         '1' => [
@@ -262,7 +262,7 @@ class Adv_Tabs extends Widget_Base
         $this->start_controls_section(
             'eael_section_adv_tabs_style_settings',
             [
-                'label' => esc_html__('General', 'px-elements'),
+                'label' => esc_html__('General', 'pixerex-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -270,7 +270,7 @@ class Adv_Tabs extends Widget_Base
         $this->add_responsive_control(
             'eael_adv_tabs_padding',
             [
-                'label' => esc_html__('Padding', 'px-elements'),
+                'label' => esc_html__('Padding', 'pixerex-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -281,7 +281,7 @@ class Adv_Tabs extends Widget_Base
         $this->add_responsive_control(
             'eael_adv_tabs_margin',
             [
-                'label' => esc_html__('Margin', 'px-elements'),
+                'label' => esc_html__('Margin', 'pixerex-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -293,7 +293,7 @@ class Adv_Tabs extends Widget_Base
             Group_Control_Border::get_type(),
             [
                 'name' => 'eael_adv_tabs_border',
-                'label' => esc_html__('Border', 'px-elements'),
+                'label' => esc_html__('Border', 'pixerex-elements'),
                 'selector' => '{{WRAPPER}} .eael-advance-tabs',
             ]
         );
@@ -301,7 +301,7 @@ class Adv_Tabs extends Widget_Base
         $this->add_responsive_control(
             'eael_adv_tabs_border_radius',
             [
-                'label' => esc_html__('Border Radius', 'px-elements'),
+                'label' => esc_html__('Border Radius', 'pixerex-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -326,7 +326,7 @@ class Adv_Tabs extends Widget_Base
         $this->start_controls_section(
             'eael_section_adv_tabs_tab_style_settings',
             [
-                'label' => esc_html__('Tab Title', 'px-elements'),
+                'label' => esc_html__('Tab Title', 'pixerex-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -340,7 +340,7 @@ class Adv_Tabs extends Widget_Base
         $this->add_responsive_control(
             'eael_adv_tabs_title_width',
             [
-                'label' => __('Title Min Width', 'px-elements'),
+                'label' => __('Title Min Width', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => ['px', 'em'],
                 'range' => [
@@ -366,7 +366,7 @@ class Adv_Tabs extends Widget_Base
         $this->add_responsive_control(
             'eael_adv_tabs_tab_icon_size',
             [
-                'label' => __('Icon Size', 'px-elements'),
+                'label' => __('Icon Size', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'default' => [
                     'size' => 16,
@@ -389,7 +389,7 @@ class Adv_Tabs extends Widget_Base
         $this->add_responsive_control(
             'eael_adv_tabs_tab_icon_gap',
             [
-                'label' => __('Icon Gap', 'px-elements'),
+                'label' => __('Icon Gap', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'default' => [
                     'size' => 10,
@@ -412,7 +412,7 @@ class Adv_Tabs extends Widget_Base
         $this->add_responsive_control(
             'eael_adv_tabs_tab_padding',
             [
-                'label' => esc_html__('Padding', 'px-elements'),
+                'label' => esc_html__('Padding', 'pixerex-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -423,7 +423,7 @@ class Adv_Tabs extends Widget_Base
         $this->add_responsive_control(
             'eael_adv_tabs_tab_margin',
             [
-                'label' => esc_html__('Margin', 'px-elements'),
+                'label' => esc_html__('Margin', 'pixerex-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -434,11 +434,11 @@ class Adv_Tabs extends Widget_Base
 
         $this->start_controls_tabs('eael_adv_tabs_header_tabs');
         // Normal State Tab
-        $this->start_controls_tab('eael_adv_tabs_header_normal', ['label' => esc_html__('Normal', 'px-elements')]);
+        $this->start_controls_tab('eael_adv_tabs_header_normal', ['label' => esc_html__('Normal', 'pixerex-elements')]);
         $this->add_control(
             'eael_adv_tabs_tab_color',
             [
-                'label' => esc_html__('Background Color', 'px-elements'),
+                'label' => esc_html__('Background Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#f1f1f1',
                 'selectors' => [
@@ -457,7 +457,7 @@ class Adv_Tabs extends Widget_Base
         $this->add_control(
             'eael_adv_tabs_tab_text_color',
             [
-                'label' => esc_html__('Text Color', 'px-elements'),
+                'label' => esc_html__('Text Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#333',
                 'selectors' => [
@@ -468,7 +468,7 @@ class Adv_Tabs extends Widget_Base
         $this->add_control(
             'eael_adv_tabs_tab_icon_color',
             [
-                'label' => esc_html__('Icon Color', 'px-elements'),
+                'label' => esc_html__('Icon Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#333',
                 'selectors' => [
@@ -483,14 +483,14 @@ class Adv_Tabs extends Widget_Base
             Group_Control_Border::get_type(),
             [
                 'name' => 'eael_adv_tabs_tab_border',
-                'label' => esc_html__('Border', 'px-elements'),
+                'label' => esc_html__('Border', 'pixerex-elements'),
                 'selector' => '{{WRAPPER}} .eael-advance-tabs .eael-tabs-nav > ul li',
             ]
         );
         $this->add_responsive_control(
             'eael_adv_tabs_tab_border_radius',
             [
-                'label' => esc_html__('Border Radius', 'px-elements'),
+                'label' => esc_html__('Border Radius', 'pixerex-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -500,11 +500,11 @@ class Adv_Tabs extends Widget_Base
         );
         $this->end_controls_tab();
         // Hover State Tab
-        $this->start_controls_tab('eael_adv_tabs_header_hover', ['label' => esc_html__('Hover', 'px-elements')]);
+        $this->start_controls_tab('eael_adv_tabs_header_hover', ['label' => esc_html__('Hover', 'pixerex-elements')]);
         $this->add_control(
             'eael_adv_tabs_tab_color_hover',
             [
-                'label' => esc_html__('Tab Background Color', 'px-elements'),
+                'label' => esc_html__('Tab Background Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#333',
                 'selectors' => [
@@ -523,7 +523,7 @@ class Adv_Tabs extends Widget_Base
         $this->add_control(
             'eael_adv_tabs_tab_text_color_hover',
             [
-                'label' => esc_html__('Text Color', 'px-elements'),
+                'label' => esc_html__('Text Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#fff',
                 'selectors' => [
@@ -534,7 +534,7 @@ class Adv_Tabs extends Widget_Base
         $this->add_control(
             'eael_adv_tabs_tab_icon_color_hover',
             [
-                'label' => esc_html__('Icon Color', 'px-elements'),
+                'label' => esc_html__('Icon Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#fff',
                 'selectors' => [
@@ -549,14 +549,14 @@ class Adv_Tabs extends Widget_Base
             Group_Control_Border::get_type(),
             [
                 'name' => 'eael_adv_tabs_tab_border_hover',
-                'label' => esc_html__('Border', 'px-elements'),
+                'label' => esc_html__('Border', 'pixerex-elements'),
                 'selector' => '{{WRAPPER}} .eael-advance-tabs .eael-tabs-nav > ul li:hover',
             ]
         );
         $this->add_responsive_control(
             'eael_adv_tabs_tab_border_radius_hover',
             [
-                'label' => esc_html__('Border Radius', 'px-elements'),
+                'label' => esc_html__('Border Radius', 'pixerex-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -566,11 +566,11 @@ class Adv_Tabs extends Widget_Base
         );
         $this->end_controls_tab();
         // Active State Tab
-        $this->start_controls_tab('eael_adv_tabs_header_active', ['label' => esc_html__('Active', 'px-elements')]);
+        $this->start_controls_tab('eael_adv_tabs_header_active', ['label' => esc_html__('Active', 'pixerex-elements')]);
         $this->add_control(
             'eael_adv_tabs_tab_color_active',
             [
-                'label' => esc_html__('Tab Background Color', 'px-elements'),
+                'label' => esc_html__('Tab Background Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#444',
                 'selectors' => [
@@ -590,7 +590,7 @@ class Adv_Tabs extends Widget_Base
         $this->add_control(
             'eael_adv_tabs_tab_text_color_active',
             [
-                'label' => esc_html__('Text Color', 'px-elements'),
+                'label' => esc_html__('Text Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#fff',
                 'selectors' => [
@@ -602,7 +602,7 @@ class Adv_Tabs extends Widget_Base
         $this->add_control(
             'eael_adv_tabs_tab_icon_color_active',
             [
-                'label' => esc_html__('Icon Color', 'px-elements'),
+                'label' => esc_html__('Icon Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#fff',
                 'selectors' => [
@@ -618,14 +618,14 @@ class Adv_Tabs extends Widget_Base
             Group_Control_Border::get_type(),
             [
                 'name' => 'eael_adv_tabs_tab_border_active',
-                'label' => esc_html__('Border', 'px-elements'),
+                'label' => esc_html__('Border', 'pixerex-elements'),
                 'selector' => '{{WRAPPER}} .eael-advance-tabs .eael-tabs-nav > ul li.active, {{WRAPPER}} .eael-advance-tabs .eael-tabs-nav > ul li.active-default',
             ]
         );
         $this->add_responsive_control(
             'eael_adv_tabs_tab_border_radius_active',
             [
-                'label' => esc_html__('Border Radius', 'px-elements'),
+                'label' => esc_html__('Border Radius', 'pixerex-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -646,14 +646,14 @@ class Adv_Tabs extends Widget_Base
         $this->start_controls_section(
             'eael_section_adv_tabs_tab_content_style_settings',
             [
-                'label' => esc_html__('Content', 'px-elements'),
+                'label' => esc_html__('Content', 'pixerex-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
         $this->add_control(
             'adv_tabs_content_bg_color',
             [
-                'label' => esc_html__('Background Color', 'px-elements'),
+                'label' => esc_html__('Background Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -672,7 +672,7 @@ class Adv_Tabs extends Widget_Base
         $this->add_control(
             'adv_tabs_content_text_color',
             [
-                'label' => esc_html__('Text Color', 'px-elements'),
+                'label' => esc_html__('Text Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#333',
                 'selectors' => [
@@ -690,7 +690,7 @@ class Adv_Tabs extends Widget_Base
         $this->add_responsive_control(
             'eael_adv_tabs_content_padding',
             [
-                'label' => esc_html__('Padding', 'px-elements'),
+                'label' => esc_html__('Padding', 'pixerex-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -701,7 +701,7 @@ class Adv_Tabs extends Widget_Base
         $this->add_responsive_control(
             'eael_adv_tabs_content_margin',
             [
-                'label' => esc_html__('Margin', 'px-elements'),
+                'label' => esc_html__('Margin', 'pixerex-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -713,14 +713,14 @@ class Adv_Tabs extends Widget_Base
             Group_Control_Border::get_type(),
             [
                 'name' => 'eael_adv_tabs_content_border',
-                'label' => esc_html__('Border', 'px-elements'),
+                'label' => esc_html__('Border', 'pixerex-elements'),
                 'selector' => '{{WRAPPER}} .eael-advance-tabs .eael-tabs-content > div',
             ]
         );
         $this->add_responsive_control(
             'eael_adv_tabs_content_border_radius',
             [
-                'label' => esc_html__('Border Radius', 'px-elements'),
+                'label' => esc_html__('Border Radius', 'pixerex-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -746,14 +746,14 @@ class Adv_Tabs extends Widget_Base
         $this->start_controls_section(
             'eael_section_adv_tabs_tab_caret_style_settings',
             [
-                'label' => esc_html__('Caret', 'px-elements'),
+                'label' => esc_html__('Caret', 'pixerex-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
         $this->add_control(
             'eael_adv_tabs_tab_caret_show',
             [
-                'label' => esc_html__('Show Caret on Active Tab', 'px-elements'),
+                'label' => esc_html__('Show Caret on Active Tab', 'pixerex-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'default' => 'yes',
                 'return_value' => 'yes',
@@ -762,7 +762,7 @@ class Adv_Tabs extends Widget_Base
         $this->add_control(
             'eael_adv_tabs_tab_caret_size',
             [
-                'label' => esc_html__('Caret Size', 'px-elements'),
+                'label' => esc_html__('Caret Size', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'default' => [
                     'size' => 10,
@@ -784,7 +784,7 @@ class Adv_Tabs extends Widget_Base
         $this->add_control(
             'eael_adv_tabs_tab_caret_color',
             [
-                'label' => esc_html__('Caret Color', 'px-elements'),
+                'label' => esc_html__('Caret Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#444',
                 'selectors' => [
@@ -816,8 +816,8 @@ class Adv_Tabs extends Widget_Base
 			[
 				'label'     => __( 'Vertical Layout', 'essential-addons-elementor' ),
 				'type'      => Controls_Manager::SWITCHER,
-				'label_on'  => __( 'Yes', 'px-elements' ),
-				'label_off' => __( 'No', 'px-elements' ),
+				'label_on'  => __( 'Yes', 'pixerex-elements' ),
+				'label_off' => __( 'No', 'pixerex-elements' ),
 				'return_value' => 'yes',
 				'default' => 'yes',
 			]

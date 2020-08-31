@@ -23,7 +23,7 @@ class Twitter_Feed extends Widget_Base
 
     public function get_title()
     {
-        return esc_html__('Twitter Feed', 'px-elements');
+        return esc_html__('Twitter Feed', 'pixerex-elements');
     }
 
     public function get_icon()
@@ -77,18 +77,18 @@ class Twitter_Feed extends Widget_Base
         $this->start_controls_section(
             'eael_section_twitter_feed_acc_settings',
             [
-                'label' => esc_html__('Account Settings', 'px-elements'),
+                'label' => esc_html__('Account Settings', 'pixerex-elements'),
             ]
         );
 
         $this->add_control(
             'eael_twitter_feed_ac_name',
             [
-                'label' => esc_html__('Account Name', 'px-elements'),
+                'label' => esc_html__('Account Name', 'pixerex-elements'),
                 'type' => Controls_Manager::TEXT,
                 'default' => '@wpdevteam',
                 'label_block' => false,
-                'description' => esc_html__('Use @ sign with your account name.', 'px-elements'),
+                'description' => esc_html__('Use @ sign with your account name.', 'pixerex-elements'),
 
             ]
         );
@@ -96,10 +96,10 @@ class Twitter_Feed extends Widget_Base
         $this->add_control(
             'eael_twitter_feed_hashtag_name',
             [
-                'label' => esc_html__('Hashtag Name', 'px-elements'),
+                'label' => esc_html__('Hashtag Name', 'pixerex-elements'),
                 'type' => Controls_Manager::TEXT,
                 'label_block' => false,
-                'description' => esc_html__('Remove # sign from your hashtag name.', 'px-elements'),
+                'description' => esc_html__('Remove # sign from your hashtag name.', 'pixerex-elements'),
 
             ]
         );
@@ -107,7 +107,7 @@ class Twitter_Feed extends Widget_Base
         $this->add_control(
             'eael_twitter_feed_consumer_key',
             [
-                'label' => esc_html__('Consumer Key', 'px-elements'),
+                'label' => esc_html__('Consumer Key', 'pixerex-elements'),
                 'type' => Controls_Manager::TEXT,
                 'label_block' => false,
                 'default' => 'wwC72W809xRKd9ySwUzXzjkmS',
@@ -118,7 +118,7 @@ class Twitter_Feed extends Widget_Base
         $this->add_control(
             'eael_twitter_feed_consumer_secret',
             [
-                'label' => esc_html__('Consumer Secret', 'px-elements'),
+                'label' => esc_html__('Consumer Secret', 'pixerex-elements'),
                 'type' => Controls_Manager::TEXT,
                 'label_block' => false,
                 'default' => 'rn54hBqxjve2CWOtZqwJigT3F5OEvrriK2XAcqoQVohzr2UA8h',
@@ -131,19 +131,19 @@ class Twitter_Feed extends Widget_Base
         $this->start_controls_section(
             'eael_section_twitter_feed_settings',
             [
-                'label' => esc_html__('Layout Settings', 'px-elements'),
+                'label' => esc_html__('Layout Settings', 'pixerex-elements'),
             ]
         );
 
         $this->add_control(
             'eael_twitter_feed_type',
             [
-                'label' => esc_html__('Content Layout', 'px-elements'),
+                'label' => esc_html__('Content Layout', 'pixerex-elements'),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'masonry',
                 'options' => [
-                    'list' => esc_html__('List', 'px-elements'),
-                    'masonry' => esc_html__('Masonry', 'px-elements'),
+                    'list' => esc_html__('List', 'pixerex-elements'),
+                    'masonry' => esc_html__('Masonry', 'pixerex-elements'),
                 ],
             ]
         );
@@ -151,7 +151,7 @@ class Twitter_Feed extends Widget_Base
         $this->add_control(
             'eael_twitter_feed_type_col_type',
             [
-                'label' => __('Column Grid', 'px-elements'),
+                'label' => __('Column Grid', 'pixerex-elements'),
                 'type' => Controls_Manager::SELECT,
                 'options' => [
                     'col-2' => '2 Columns',
@@ -168,7 +168,7 @@ class Twitter_Feed extends Widget_Base
         $this->add_control(
             'eael_twitter_feed_content_length',
             [
-                'label' => esc_html__('Content Length', 'px-elements'),
+                'label' => esc_html__('Content Length', 'pixerex-elements'),
                 'type' => Controls_Manager::NUMBER,
                 'label_block' => false,
                 'min' => 1,
@@ -180,7 +180,7 @@ class Twitter_Feed extends Widget_Base
         $this->add_responsive_control(
             'eael_twitter_feed_column_spacing',
             [
-                'label' => esc_html__('Column spacing', 'px-elements'),
+                'label' => esc_html__('Column spacing', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'range' => [
                     'px' => [
@@ -197,7 +197,7 @@ class Twitter_Feed extends Widget_Base
         $this->add_control(
             'eael_twitter_feed_post_limit',
             [
-                'label' => esc_html__('Post Limit', 'px-elements'),
+                'label' => esc_html__('Post Limit', 'pixerex-elements'),
                 'type' => Controls_Manager::NUMBER,
                 'label_block' => false,
                 'default' => 10,
@@ -207,10 +207,10 @@ class Twitter_Feed extends Widget_Base
         $this->add_control(
             'eael_twitter_feed_media',
             [
-                'label' => esc_html__('Show Media Elements', 'px-elements'),
+                'label' => esc_html__('Show Media Elements', 'pixerex-elements'),
                 'type' => Controls_Manager::SWITCHER,
-                'label_on' => __('yes', 'px-elements'),
-                'label_off' => __('no', 'px-elements'),
+                'label_on' => __('yes', 'pixerex-elements'),
+                'label_off' => __('no', 'pixerex-elements'),
                 'default' => 'true',
                 'return_value' => 'true',
             ]
@@ -221,17 +221,17 @@ class Twitter_Feed extends Widget_Base
         $this->start_controls_section(
             'eael_section_twitter_feed_card_settings',
             [
-                'label' => esc_html__('Card Settings', 'px-elements'),
+                'label' => esc_html__('Card Settings', 'pixerex-elements'),
             ]
         );
 
         $this->add_control(
             'eael_twitter_feed_show_avatar',
             [
-                'label' => esc_html__('Show Avatar', 'px-elements'),
+                'label' => esc_html__('Show Avatar', 'pixerex-elements'),
                 'type' => Controls_Manager::SWITCHER,
-                'label_on' => __('yes', 'px-elements'),
-                'label_off' => __('no', 'px-elements'),
+                'label_on' => __('yes', 'pixerex-elements'),
+                'label_off' => __('no', 'pixerex-elements'),
                 'default' => 'true',
                 'return_value' => 'true',
             ]
@@ -240,7 +240,7 @@ class Twitter_Feed extends Widget_Base
         $this->add_control(
             'eael_twitter_feed_avatar_style',
             [
-                'label' => __('Avatar Style', 'px-elements'),
+                'label' => __('Avatar Style', 'pixerex-elements'),
                 'type' => Controls_Manager::SELECT,
                 'options' => [
                     'circle' => 'Circle',
@@ -257,10 +257,10 @@ class Twitter_Feed extends Widget_Base
         $this->add_control(
             'eael_twitter_feed_show_date',
             [
-                'label' => esc_html__('Show Date', 'px-elements'),
+                'label' => esc_html__('Show Date', 'pixerex-elements'),
                 'type' => Controls_Manager::SWITCHER,
-                'label_on' => __('yes', 'px-elements'),
-                'label_off' => __('no', 'px-elements'),
+                'label_on' => __('yes', 'pixerex-elements'),
+                'label_off' => __('no', 'pixerex-elements'),
                 'default' => 'true',
                 'return_value' => 'true',
             ]
@@ -269,10 +269,10 @@ class Twitter_Feed extends Widget_Base
         $this->add_control(
             'eael_twitter_feed_show_read_more',
             [
-                'label' => esc_html__('Show Read More', 'px-elements'),
+                'label' => esc_html__('Show Read More', 'pixerex-elements'),
                 'type' => Controls_Manager::SWITCHER,
-                'label_on' => __('yes', 'px-elements'),
-                'label_off' => __('no', 'px-elements'),
+                'label_on' => __('yes', 'pixerex-elements'),
+                'label_off' => __('no', 'pixerex-elements'),
                 'default' => 'true',
                 'return_value' => 'true',
             ]
@@ -281,10 +281,10 @@ class Twitter_Feed extends Widget_Base
         $this->add_control(
             'eael_twitter_feed_show_icon',
             [
-                'label' => esc_html__('Show Icon', 'px-elements'),
+                'label' => esc_html__('Show Icon', 'pixerex-elements'),
                 'type' => Controls_Manager::SWITCHER,
-                'label_on' => __('yes', 'px-elements'),
-                'label_off' => __('no', 'px-elements'),
+                'label_on' => __('yes', 'pixerex-elements'),
+                'label_off' => __('no', 'pixerex-elements'),
                 'default' => 'true',
                 'return_value' => 'true',
             ]
@@ -296,14 +296,14 @@ class Twitter_Feed extends Widget_Base
             $this->start_controls_section(
                 'eael_section_pro',
                 [
-                    'label' => __('Go Premium for More Features', 'px-elements'),
+                    'label' => __('Go Premium for More Features', 'pixerex-elements'),
                 ]
             );
 
             $this->add_control(
                 'eael_control_get_pro',
                 [
-                    'label' => __('Unlock more possibilities', 'px-elements'),
+                    'label' => __('Unlock more possibilities', 'pixerex-elements'),
                     'type' => Controls_Manager::CHOOSE,
                     'options' => [
                         '1' => [
@@ -327,7 +327,7 @@ class Twitter_Feed extends Widget_Base
         $this->start_controls_section(
             'eael_section_twitter_feed_card_style_settings',
             [
-                'label' => esc_html__('Card Style', 'px-elements'),
+                'label' => esc_html__('Card Style', 'pixerex-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -335,7 +335,7 @@ class Twitter_Feed extends Widget_Base
         $this->add_control(
             'eael_twitter_feed_card_bg_color',
             [
-                'label' => esc_html__('Background Color', 'px-elements'),
+                'label' => esc_html__('Background Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -347,7 +347,7 @@ class Twitter_Feed extends Widget_Base
         $this->add_responsive_control(
             'eael_twitter_feed_card_container_padding',
             [
-                'label' => esc_html__('Padding', 'px-elements'),
+                'label' => esc_html__('Padding', 'pixerex-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -361,7 +361,7 @@ class Twitter_Feed extends Widget_Base
             Group_Control_Border::get_type(),
             [
                 'name' => 'eael_twitter_feed_card_border',
-                'label' => esc_html__('Border', 'px-elements'),
+                'label' => esc_html__('Border', 'pixerex-elements'),
                 'selector' => '{{WRAPPER}} .eael-twitter-feed-item-inner',
             ]
         );
@@ -369,7 +369,7 @@ class Twitter_Feed extends Widget_Base
         $this->add_control(
             'eael_twitter_feed_card_border_radius',
             [
-                'label' => esc_html__('Border Radius', 'px-elements'),
+                'label' => esc_html__('Border Radius', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'range' => [
                     'px' => [
@@ -400,7 +400,7 @@ class Twitter_Feed extends Widget_Base
         $this->start_controls_section(
             'eael_section_twitter_feed_card_typo_settings',
             [
-                'label' => esc_html__('Color &amp; Typography', 'px-elements'),
+                'label' => esc_html__('Color &amp; Typography', 'pixerex-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -408,7 +408,7 @@ class Twitter_Feed extends Widget_Base
         $this->add_control(
             'eael_twitter_feed_title_heading',
             [
-                'label' => esc_html__('Title Style', 'px-elements'),
+                'label' => esc_html__('Title Style', 'pixerex-elements'),
                 'type' => Controls_Manager::HEADING,
             ]
         );
@@ -416,7 +416,7 @@ class Twitter_Feed extends Widget_Base
         $this->add_control(
             'eael_twitter_feed_title_color',
             [
-                'label' => esc_html__('Color', 'px-elements'),
+                'label' => esc_html__('Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -436,7 +436,7 @@ class Twitter_Feed extends Widget_Base
         $this->add_control(
             'eael_twitter_feed_content_heading',
             [
-                'label' => esc_html__('Content Style', 'px-elements'),
+                'label' => esc_html__('Content Style', 'pixerex-elements'),
                 'type' => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -445,7 +445,7 @@ class Twitter_Feed extends Widget_Base
         $this->add_control(
             'eael_twitter_feed_content_color',
             [
-                'label' => esc_html__('Color', 'px-elements'),
+                'label' => esc_html__('Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -466,7 +466,7 @@ class Twitter_Feed extends Widget_Base
         $this->add_control(
             'eael_twitter_feed_content_link_heading',
             [
-                'label' => esc_html__('Link Style', 'px-elements'),
+                'label' => esc_html__('Link Style', 'pixerex-elements'),
                 'type' => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -475,7 +475,7 @@ class Twitter_Feed extends Widget_Base
         $this->add_control(
             'eael_twitter_feed_content_link_color',
             [
-                'label' => esc_html__('Color', 'px-elements'),
+                'label' => esc_html__('Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -487,7 +487,7 @@ class Twitter_Feed extends Widget_Base
         $this->add_control(
             'eael_twitter_feed_content_link_hover_color',
             [
-                'label' => esc_html__('Hover Color', 'px-elements'),
+                'label' => esc_html__('Hover Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [

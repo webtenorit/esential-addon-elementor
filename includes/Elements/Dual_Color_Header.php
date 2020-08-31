@@ -20,7 +20,7 @@ class Dual_Color_Header extends Widget_Base {
 	}
 
 	public function get_title() {
-		return esc_html__( 'Dual Color Heading', 'px-elements');
+		return esc_html__( 'Dual Color Heading', 'pixerex-elements');
 	}
 
 	public function get_icon() {
@@ -59,22 +59,22 @@ class Dual_Color_Header extends Widget_Base {
   		$this->start_controls_section(
   			'eael_section_dch_content_settings',
   			[
-  				'label' => esc_html__( 'Content Settings', 'px-elements')
+  				'label' => esc_html__( 'Content Settings', 'pixerex-elements')
   			]
   		);
 
   		$this->add_control(
 		  'eael_dch_type',
 		  	[
-		   	'label'       	=> esc_html__( 'Content Style', 'px-elements'),
+		   	'label'       	=> esc_html__( 'Content Style', 'pixerex-elements'),
 		     	'type' 			=> Controls_Manager::SELECT,
 		     	'default' 		=> 'dch-default',
 		     	'label_block' 	=> false,
 		     	'options' 		=> [
-		     		'dch-default'  					=> esc_html__( 'Default', 'px-elements'),
-		     		'dch-icon-on-top'  				=> esc_html__( 'Icon on top', 'px-elements'),
-		     		'dch-icon-subtext-on-top'  	=> esc_html__( 'Icon &amp; sub-text on top', 'px-elements'),
-		     		'dch-subtext-on-top'  			=> esc_html__( 'Sub-text on top', 'px-elements'),
+		     		'dch-default'  					=> esc_html__( 'Default', 'pixerex-elements'),
+		     		'dch-icon-on-top'  				=> esc_html__( 'Icon on top', 'pixerex-elements'),
+		     		'dch-icon-subtext-on-top'  	=> esc_html__( 'Icon &amp; sub-text on top', 'pixerex-elements'),
+		     		'dch-subtext-on-top'  			=> esc_html__( 'Sub-text on top', 'pixerex-elements'),
 		     	],
 		  	]
 		);
@@ -82,11 +82,11 @@ class Dual_Color_Header extends Widget_Base {
 		$this->add_control(
 			'eael_show_dch_icon_content',
 			[
-				'label' => __( 'Show Icon', 'px-elements'),
+				'label' => __( 'Show Icon', 'pixerex-elements'),
 				'type' => Controls_Manager::SWITCHER,
 				'default' => 'yes',
-				'label_on' => __( 'Show', 'px-elements'),
-				'label_off' => __( 'Hide', 'px-elements'),
+				'label_on' => __( 'Show', 'pixerex-elements'),
+				'label_off' => __( 'Hide', 'pixerex-elements'),
 				'return_value' => 'yes',
 				'separator' => 'after',
 			]
@@ -97,7 +97,7 @@ class Dual_Color_Header extends Widget_Base {
 		$this->add_control(
 			'eael_dch_icon_new',
 			[
-				'label' => esc_html__( 'Icon', 'px-elements'),
+				'label' => esc_html__( 'Icon', 'pixerex-elements'),
 				'type' => Controls_Manager::ICONS,
 				'fa4compatibility' => 'eael_dch_icon',
 				'default' => [
@@ -113,19 +113,19 @@ class Dual_Color_Header extends Widget_Base {
 		$this->add_control(
             'title_tag',
             [
-                'label' => __('Title Tag', 'px-elements'),
+                'label' => __('Title Tag', 'pixerex-elements'),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'h2',
                 'options' => [
-                    'h1' => __('H1', 'px-elements'),
-                    'h2' => __('H2', 'px-elements'),
-                    'h3' => __('H3', 'px-elements'),
-                    'h4' => __('H4', 'px-elements'),
-                    'h5' => __('H5', 'px-elements'),
-                    'h6' => __('H6', 'px-elements'),
-                    'span' => __('Span', 'px-elements'),
-                    'p' => __('P', 'px-elements'),
-                    'div' => __('Div', 'px-elements'),
+                    'h1' => __('H1', 'pixerex-elements'),
+                    'h2' => __('H2', 'pixerex-elements'),
+                    'h3' => __('H3', 'pixerex-elements'),
+                    'h4' => __('H4', 'pixerex-elements'),
+                    'h5' => __('H5', 'pixerex-elements'),
+                    'h6' => __('H6', 'pixerex-elements'),
+                    'span' => __('Span', 'pixerex-elements'),
+                    'p' => __('P', 'pixerex-elements'),
+                    'div' => __('Div', 'pixerex-elements'),
                 ],
             ]
         );
@@ -133,10 +133,10 @@ class Dual_Color_Header extends Widget_Base {
 		$this->add_control(
 			'eael_dch_first_title',
 			[
-				'label' => esc_html__( 'Title ( First Part )', 'px-elements'),
+				'label' => esc_html__( 'Title ( First Part )', 'pixerex-elements'),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
-				'default' => esc_html__( 'Dual Heading', 'px-elements'),
+				'default' => esc_html__( 'Dual Heading', 'pixerex-elements'),
 				'dynamic' => [ 'action' => true ]
 			]
 		);
@@ -144,10 +144,10 @@ class Dual_Color_Header extends Widget_Base {
 		$this->add_control(
 			'eael_dch_last_title',
 			[
-				'label' => esc_html__( 'Title ( Last Part )', 'px-elements'),
+				'label' => esc_html__( 'Title ( Last Part )', 'pixerex-elements'),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => true,
-				'default' => esc_html__( 'Example', 'px-elements'),
+				'default' => esc_html__( 'Example', 'pixerex-elements'),
 				'dynamic' => [ 'action' => true ]
 			]
 		);
@@ -155,30 +155,30 @@ class Dual_Color_Header extends Widget_Base {
 		$this->add_control(
 			'eael_dch_subtext',
 			[
-				'label' => esc_html__( 'Sub Text', 'px-elements'),
+				'label' => esc_html__( 'Sub Text', 'pixerex-elements'),
 				'type' => Controls_Manager::WYSIWYG,
 				'label_block' => true,
-				'default' => esc_html__( 'Insert a meaningful line to evaluate the headline.', 'px-elements')
+				'default' => esc_html__( 'Insert a meaningful line to evaluate the headline.', 'pixerex-elements')
 			]
 		);
 
 		$this->add_responsive_control(
 			'eael_dch_content_alignment',
 			[
-				'label' => esc_html__( 'Alignment', 'px-elements'),
+				'label' => esc_html__( 'Alignment', 'pixerex-elements'),
 				'type' => Controls_Manager::CHOOSE,
 				'label_block' => true,
 				'options' => [
 					'left' => [
-						'title' => esc_html__( 'Left', 'px-elements'),
+						'title' => esc_html__( 'Left', 'pixerex-elements'),
 						'icon' => 'fa fa-align-left',
 					],
 					'center' => [
-						'title' => esc_html__( 'Center', 'px-elements'),
+						'title' => esc_html__( 'Center', 'pixerex-elements'),
 						'icon' => 'fa fa-align-center',
 					],
 					'right' => [
-						'title' => esc_html__( 'Right', 'px-elements'),
+						'title' => esc_html__( 'Right', 'pixerex-elements'),
 						'icon' => 'fa fa-align-right',
 					],
 				],
@@ -193,14 +193,14 @@ class Dual_Color_Header extends Widget_Base {
 			$this->start_controls_section(
 				'eael_section_pro',
 				[
-					'label' => __( 'Go Premium for More Features', 'px-elements')
+					'label' => __( 'Go Premium for More Features', 'pixerex-elements')
 				]
 			);
 
 			$this->add_control(
 				'eael_control_get_pro',
 				[
-					'label' => __( 'Unlock more possibilities', 'px-elements'),
+					'label' => __( 'Unlock more possibilities', 'pixerex-elements'),
 					'type' => Controls_Manager::CHOOSE,
 					'options' => [
 						'1' => [
@@ -224,7 +224,7 @@ class Dual_Color_Header extends Widget_Base {
 		$this->start_controls_section(
 			'eael_section_dch_style_settings',
 			[
-				'label' => esc_html__( 'Dual Heading Style', 'px-elements'),
+				'label' => esc_html__( 'Dual Heading Style', 'pixerex-elements'),
 				'tab' => Controls_Manager::TAB_STYLE
 			]
 		);
@@ -232,7 +232,7 @@ class Dual_Color_Header extends Widget_Base {
 		$this->add_control(
 			'eael_dch_bg_color',
 			[
-				'label' => esc_html__( 'Background Color', 'px-elements'),
+				'label' => esc_html__( 'Background Color', 'pixerex-elements'),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -244,7 +244,7 @@ class Dual_Color_Header extends Widget_Base {
 		$this->add_responsive_control(
 			'eael_dch_container_padding',
 			[
-				'label' => esc_html__( 'Padding', 'px-elements'),
+				'label' => esc_html__( 'Padding', 'pixerex-elements'),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
@@ -256,7 +256,7 @@ class Dual_Color_Header extends Widget_Base {
 		$this->add_responsive_control(
 			'eael_dch_container_margin',
 			[
-				'label' => esc_html__( 'Margin', 'px-elements'),
+				'label' => esc_html__( 'Margin', 'pixerex-elements'),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
@@ -269,7 +269,7 @@ class Dual_Color_Header extends Widget_Base {
 			Group_Control_Border::get_type(),
 			[
 				'name' => 'eael_dch_border',
-				'label' => esc_html__( 'Border', 'px-elements'),
+				'label' => esc_html__( 'Border', 'pixerex-elements'),
 				'selector' => '{{WRAPPER}} .eael-dual-header',
 			]
 		);
@@ -277,7 +277,7 @@ class Dual_Color_Header extends Widget_Base {
 		$this->add_control(
 			'eael_dch_border_radius',
 			[
-				'label' => esc_html__( 'Border Radius', 'px-elements'),
+				'label' => esc_html__( 'Border Radius', 'pixerex-elements'),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -308,7 +308,7 @@ class Dual_Color_Header extends Widget_Base {
 		$this->start_controls_section(
 			'eael_section_dch_icon_style_settings',
 			[
-				'label' => esc_html__( 'Icon Style', 'px-elements'),
+				'label' => esc_html__( 'Icon Style', 'pixerex-elements'),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition' => [
 		     		'eael_show_dch_icon_content' => 'yes'
@@ -319,7 +319,7 @@ class Dual_Color_Header extends Widget_Base {
 		$this->add_control(
     		'eael_dch_icon_size',
     		[
-        		'label' => __( 'Icon Size', 'px-elements'),
+        		'label' => __( 'Icon Size', 'pixerex-elements'),
        			'type' => Controls_Manager::SLIDER,
         		'default' => [
             		'size' => 36,
@@ -341,7 +341,7 @@ class Dual_Color_Header extends Widget_Base {
 		$this->add_control(
 			'eael_dch_icon_color',
 			[
-				'label' => esc_html__( 'Icon Color', 'px-elements'),
+				'label' => esc_html__( 'Icon Color', 'pixerex-elements'),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#4d4d4d',
 				'selectors' => [
@@ -360,7 +360,7 @@ class Dual_Color_Header extends Widget_Base {
 		$this->start_controls_section(
 			'eael_section_dch_title_style_settings',
 			[
-				'label' => esc_html__( 'Color &amp; Typography', 'px-elements'),
+				'label' => esc_html__( 'Color &amp; Typography', 'pixerex-elements'),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -368,7 +368,7 @@ class Dual_Color_Header extends Widget_Base {
 		$this->add_control(
 			'eael_dch_title_heading',
 			[
-				'label' => esc_html__( 'Title Style', 'px-elements'),
+				'label' => esc_html__( 'Title Style', 'pixerex-elements'),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -376,7 +376,7 @@ class Dual_Color_Header extends Widget_Base {
 		$this->add_control(
 			'eael_dch_base_title_color',
 			[
-				'label' => esc_html__( 'Main Color', 'px-elements'),
+				'label' => esc_html__( 'Main Color', 'pixerex-elements'),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#4d4d4d',
 				'selectors' => [
@@ -388,7 +388,7 @@ class Dual_Color_Header extends Widget_Base {
 		$this->add_control(
 			'eael_dch_dual_title_color',
 			[
-				'label' => esc_html__( 'Dual Color', 'px-elements'),
+				'label' => esc_html__( 'Dual Color', 'pixerex-elements'),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#1abc9c',
 				'selectors' => [
@@ -408,7 +408,7 @@ class Dual_Color_Header extends Widget_Base {
 		$this->add_control(
 			'eael_dch_sub_title_heading',
 			[
-				'label' => esc_html__( 'Sub-title Style ', 'px-elements'),
+				'label' => esc_html__( 'Sub-title Style ', 'pixerex-elements'),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before'
 			]
@@ -417,7 +417,7 @@ class Dual_Color_Header extends Widget_Base {
 		$this->add_control(
 			'eael_dch_subtext_color',
 			[
-				'label' => esc_html__( 'Color', 'px-elements'),
+				'label' => esc_html__( 'Color', 'pixerex-elements'),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#4d4d4d',
 				'selectors' => [
@@ -446,7 +446,7 @@ class Dual_Color_Header extends Widget_Base {
 	?>
 	<?php if( 'dch-default' == $settings['eael_dch_type'] ) : ?>
 	<div class="eael-dual-header">
-		<<?php echo $settings['title_tag']; ?> class="title"><span class="lead"><?php esc_html_e( $settings['eael_dch_first_title'], 'px-elements'); ?></span> <span><?php esc_html_e( $settings['eael_dch_last_title'], 'px-elements'); ?></span></<?php echo $settings['title_tag']; ?>>
+		<<?php echo $settings['title_tag']; ?> class="title"><span class="lead"><?php esc_html_e( $settings['eael_dch_first_title'], 'pixerex-elements'); ?></span> <span><?php esc_html_e( $settings['eael_dch_last_title'], 'pixerex-elements'); ?></span></<?php echo $settings['title_tag']; ?>>
 	   <span class="subtext"><?php echo $settings['eael_dch_subtext']; ?></span>
 	   <?php if( 'yes' == $settings['eael_show_dch_icon_content'] ) : ?>
 			<?php if($icon_is_new || $icon_migrated) { ?>
@@ -471,7 +471,7 @@ class Dual_Color_Header extends Widget_Base {
 				<i class="<?php echo esc_attr( $settings['eael_dch_icon'] ); ?>"></i>
 			<?php } ?>
 		<?php endif; ?>
-		<<?php echo $settings['title_tag']; ?> class="title"><span class="lead"><?php esc_html_e( $settings['eael_dch_first_title'], 'px-elements'); ?></span> <span><?php esc_html_e( $settings['eael_dch_last_title'], 'px-elements'); ?></span></<?php echo $settings['title_tag']; ?>>
+		<<?php echo $settings['title_tag']; ?> class="title"><span class="lead"><?php esc_html_e( $settings['eael_dch_first_title'], 'pixerex-elements'); ?></span> <span><?php esc_html_e( $settings['eael_dch_last_title'], 'pixerex-elements'); ?></span></<?php echo $settings['title_tag']; ?>>
 	   <span class="subtext"><?php echo $settings['eael_dch_subtext']; ?></span>
 	</div>
 	<?php endif; ?>
@@ -486,14 +486,14 @@ class Dual_Color_Header extends Widget_Base {
 			<?php } ?>
 		<?php endif; ?>
 	   <span class="subtext"><?php echo $settings['eael_dch_subtext']; ?></span>
-	   <<?php echo $settings['title_tag']; ?> class="title"><span class="lead"><?php esc_html_e( $settings['eael_dch_first_title'], 'px-elements'); ?></span> <span><?php esc_html_e( $settings['eael_dch_last_title'], 'px-elements'); ?></span></<?php echo $settings['title_tag']; ?>>
+	   <<?php echo $settings['title_tag']; ?> class="title"><span class="lead"><?php esc_html_e( $settings['eael_dch_first_title'], 'pixerex-elements'); ?></span> <span><?php esc_html_e( $settings['eael_dch_last_title'], 'pixerex-elements'); ?></span></<?php echo $settings['title_tag']; ?>>
 	</div>
 	<?php endif; ?>
 
 	<?php if( 'dch-subtext-on-top' == $settings['eael_dch_type'] ) : ?>
 	<div class="eael-dual-header">
 	   <span class="subtext"><?php echo $settings['eael_dch_subtext']; ?></span>
-			<<?php echo $settings['title_tag']; ?> class="title"><span class="lead"><?php esc_html_e( $settings['eael_dch_first_title'], 'px-elements'); ?></span> <span><?php esc_html_e( $settings['eael_dch_last_title'], 'px-elements'); ?></span></<?php echo $settings['title_tag']; ?>>
+			<<?php echo $settings['title_tag']; ?> class="title"><span class="lead"><?php esc_html_e( $settings['eael_dch_first_title'], 'pixerex-elements'); ?></span> <span><?php esc_html_e( $settings['eael_dch_last_title'], 'pixerex-elements'); ?></span></<?php echo $settings['title_tag']; ?>>
 		<?php if( 'yes' == $settings['eael_show_dch_icon_content'] ) : ?>
 			<?php if($icon_is_new || $icon_migrated) { ?>
 				<i class="<?php echo esc_attr( $settings['eael_dch_icon_new']['value'] ); ?>"></i>

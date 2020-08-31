@@ -38,7 +38,7 @@ class GravityForms extends Widget_Base {
 	 * @return string Widget title.
 	 */
     public function get_title() {
-        return __( 'Gravity Forms', 'px-elements');
+        return __( 'Gravity Forms', 'pixerex-elements');
     }
 
     /**
@@ -102,7 +102,7 @@ class GravityForms extends Widget_Base {
             $this->start_controls_section(
                 'eael_global_warning',
                 [
-                    'label'             => __( 'Warning!', 'px-elements'),
+                    'label'             => __( 'Warning!', 'pixerex-elements'),
                 ]
             );
 
@@ -110,7 +110,7 @@ class GravityForms extends Widget_Base {
                 'eael_global_warning_text',
                 [
                     'type' => Controls_Manager::RAW_HTML,
-                    'raw' => __( '<strong>Gravity Forms</strong> is not installed/activated on your site. Please install and activate <strong>Gravity Forms</strong> first.', 'px-elements'),
+                    'raw' => __( '<strong>Gravity Forms</strong> is not installed/activated on your site. Please install and activate <strong>Gravity Forms</strong> first.', 'pixerex-elements'),
                     'content_classes' => 'eael-warning',
                 ]
             );
@@ -124,14 +124,14 @@ class GravityForms extends Widget_Base {
             $this->start_controls_section(
                 'section_info_box',
                 [
-                    'label'                 => __( 'Gravity Forms', 'px-elements'),
+                    'label'                 => __( 'Gravity Forms', 'pixerex-elements'),
                 ]
             );
             
             $this->add_control(
                 'contact_form_list',
                 [
-                    'label'                 => esc_html__( 'Select Form', 'px-elements'),
+                    'label'                 => esc_html__( 'Select Form', 'pixerex-elements'),
                     'type'                  => Controls_Manager::SELECT,
                     'label_block'           => true,
                     'options'               => $this->eael_select_gravity_form(),
@@ -142,10 +142,10 @@ class GravityForms extends Widget_Base {
             $this->add_control(
                 'custom_title_description',
                 [
-                    'label'                 => __( 'Custom Title & Description', 'px-elements'),
+                    'label'                 => __( 'Custom Title & Description', 'pixerex-elements'),
                     'type'                  => Controls_Manager::SWITCHER,
-                    'label_on'              => __( 'Yes', 'px-elements'),
-                    'label_off'             => __( 'No', 'px-elements'),
+                    'label_on'              => __( 'Yes', 'pixerex-elements'),
+                    'label_off'             => __( 'No', 'pixerex-elements'),
                     'return_value'          => 'yes',
                 ]
             );
@@ -153,11 +153,11 @@ class GravityForms extends Widget_Base {
             $this->add_control(
                 'form_title',
                 [
-                    'label'                 => __( 'Title', 'px-elements'),
+                    'label'                 => __( 'Title', 'pixerex-elements'),
                     'type'                  => Controls_Manager::SWITCHER,
                     'default'               => 'yes',
-                    'label_on'              => __( 'Show', 'px-elements'),
-                    'label_off'             => __( 'Hide', 'px-elements'),
+                    'label_on'              => __( 'Show', 'pixerex-elements'),
+                    'label_off'             => __( 'Hide', 'pixerex-elements'),
                     'return_value'          => 'yes',
                     'condition'             => [
                         'custom_title_description!'   => 'yes',
@@ -168,11 +168,11 @@ class GravityForms extends Widget_Base {
             $this->add_control(
                 'form_description',
                 [
-                    'label'                 => __( 'Description', 'px-elements'),
+                    'label'                 => __( 'Description', 'pixerex-elements'),
                     'type'                  => Controls_Manager::SWITCHER,
                     'default'               => 'yes',
-                    'label_on'              => __( 'Show', 'px-elements'),
-                    'label_off'             => __( 'Hide', 'px-elements'),
+                    'label_on'              => __( 'Show', 'pixerex-elements'),
+                    'label_off'             => __( 'Hide', 'pixerex-elements'),
                     'return_value'          => 'yes',
                     'condition'             => [
                         'custom_title_description!'   => 'yes',
@@ -183,7 +183,7 @@ class GravityForms extends Widget_Base {
             $this->add_control(
                 'form_title_custom',
                 [
-                    'label'                 => esc_html__( 'Title', 'px-elements'),
+                    'label'                 => esc_html__( 'Title', 'pixerex-elements'),
                     'type'                  => Controls_Manager::TEXT,
                     'label_block'           => true,
                     'default'               => '',
@@ -196,7 +196,7 @@ class GravityForms extends Widget_Base {
             $this->add_control(
                 'form_description_custom',
                 [
-                    'label'                 => esc_html__( 'Description', 'px-elements'),
+                    'label'                 => esc_html__( 'Description', 'pixerex-elements'),
                     'type'                  => Controls_Manager::TEXTAREA,
                     'default'               => '',
                     'condition'             => [
@@ -208,11 +208,11 @@ class GravityForms extends Widget_Base {
             $this->add_control(
                 'labels_switch',
                 [
-                    'label'                 => __( 'Labels', 'px-elements'),
+                    'label'                 => __( 'Labels', 'pixerex-elements'),
                     'type'                  => Controls_Manager::SWITCHER,
                     'default'               => 'yes',
-                    'label_on'              => __( 'Show', 'px-elements'),
-                    'label_off'             => __( 'Hide', 'px-elements'),
+                    'label_on'              => __( 'Show', 'pixerex-elements'),
+                    'label_off'             => __( 'Hide', 'pixerex-elements'),
                     'return_value'          => 'yes',
                 ]
             );
@@ -220,11 +220,11 @@ class GravityForms extends Widget_Base {
             $this->add_control(
                 'placeholder_switch',
                 [
-                    'label'                 => __( 'Placeholder', 'px-elements'),
+                    'label'                 => __( 'Placeholder', 'pixerex-elements'),
                     'type'                  => Controls_Manager::SWITCHER,
                     'default'               => 'yes',
-                    'label_on'              => __( 'Show', 'px-elements'),
-                    'label_off'             => __( 'Hide', 'px-elements'),
+                    'label_on'              => __( 'Show', 'pixerex-elements'),
+                    'label_off'             => __( 'Hide', 'pixerex-elements'),
                     'return_value'          => 'yes',
                 ]
             );
@@ -232,11 +232,11 @@ class GravityForms extends Widget_Base {
             $this->add_control(
                 'form_ajax',
                 [
-                    'label'                 => __( 'Use Ajax', 'px-elements'),
+                    'label'                 => __( 'Use Ajax', 'pixerex-elements'),
                     'type'                  => Controls_Manager::SWITCHER,
-                    'description'           => __( 'Use ajax to submit the form', 'px-elements'),
-                    'label_on'              => __( 'Yes', 'px-elements'),
-                    'label_off'             => __( 'No', 'px-elements'),
+                    'description'           => __( 'Use ajax to submit the form', 'pixerex-elements'),
+                    'label_on'              => __( 'Yes', 'pixerex-elements'),
+                    'label_off'             => __( 'No', 'pixerex-elements'),
                     'return_value'          => 'yes',
                 ]
             );
@@ -250,19 +250,19 @@ class GravityForms extends Widget_Base {
             $this->start_controls_section(
                 'section_errors',
                 [
-                    'label'                 => __( 'Errors', 'px-elements'),
+                    'label'                 => __( 'Errors', 'pixerex-elements'),
                 ]
             );
             
             $this->add_control(
                 'error_messages',
                 [
-                    'label'                 => __( 'Error Messages', 'px-elements'),
+                    'label'                 => __( 'Error Messages', 'pixerex-elements'),
                     'type'                  => Controls_Manager::SELECT,
                     'default'               => 'show',
                     'options'               => [
-                        'show'          => __( 'Show', 'px-elements'),
-                        'hide'          => __( 'Hide', 'px-elements'),
+                        'show'          => __( 'Show', 'pixerex-elements'),
+                        'hide'          => __( 'Hide', 'pixerex-elements'),
                     ],
                     'selectors_dictionary'  => [
                         'show'          => 'block',
@@ -277,12 +277,12 @@ class GravityForms extends Widget_Base {
             $this->add_control(
                 'validation_errors',
                 [
-                    'label'                 => __( 'Validation Errors', 'px-elements'),
+                    'label'                 => __( 'Validation Errors', 'pixerex-elements'),
                     'type'                  => Controls_Manager::SELECT,
                     'default'               => 'show',
                     'options'               => [
-                        'show'          => __( 'Show', 'px-elements'),
-                        'hide'          => __( 'Hide', 'px-elements'),
+                        'show'          => __( 'Show', 'pixerex-elements'),
+                        'hide'          => __( 'Hide', 'pixerex-elements'),
                     ],
                     'selectors_dictionary'  => [
                         'show'          => 'block',
@@ -308,7 +308,7 @@ class GravityForms extends Widget_Base {
         $this->start_controls_section(
             'section_container_style',
             [
-                'label'                 => __( 'Form Container', 'px-elements'),
+                'label'                 => __( 'Form Container', 'pixerex-elements'),
                 'tab'                   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -316,7 +316,7 @@ class GravityForms extends Widget_Base {
 		$this->add_control(
 			'eael_gravity_form_background',
 			[
-				'label' => esc_html__( 'Form Background Color', 'px-elements'),
+				'label' => esc_html__( 'Form Background Color', 'pixerex-elements'),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .eael-contact-form' => 'background: {{VALUE}};',
@@ -327,24 +327,24 @@ class GravityForms extends Widget_Base {
 		$this->add_responsive_control(
 			'eael_gravity_form_alignment',
 			[
-				'label' => esc_html__( 'Form Alignment', 'px-elements'),
+				'label' => esc_html__( 'Form Alignment', 'pixerex-elements'),
 				'type' => Controls_Manager::CHOOSE,
 				'label_block' => true,
 				'options' => [
 					'default' => [
-						'title' => __( 'Default', 'px-elements'),
+						'title' => __( 'Default', 'pixerex-elements'),
 						'icon' => 'fa fa-ban',
 					],
 					'left' => [
-						'title' => esc_html__( 'Left', 'px-elements'),
+						'title' => esc_html__( 'Left', 'pixerex-elements'),
 						'icon' => 'eicon-h-align-left',
 					],
 					'center' => [
-						'title' => esc_html__( 'Center', 'px-elements'),
+						'title' => esc_html__( 'Center', 'pixerex-elements'),
 						'icon' => 'eicon-h-align-center',
 					],
 					'right' => [
-						'title' => esc_html__( 'Right', 'px-elements'),
+						'title' => esc_html__( 'Right', 'pixerex-elements'),
 						'icon' => 'eicon-h-align-right',
 					],
 				],
@@ -355,7 +355,7 @@ class GravityForms extends Widget_Base {
   		$this->add_responsive_control(
   			'eael_gravity_form_width',
   			[
-  				'label' => esc_html__( 'Form Width', 'px-elements'),
+  				'label' => esc_html__( 'Form Width', 'pixerex-elements'),
   				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'px', 'em', '%' ],
 				'range' => [
@@ -377,7 +377,7 @@ class GravityForms extends Widget_Base {
   		$this->add_responsive_control(
   			'eael_gravity_form_max_width',
   			[
-  				'label' => esc_html__( 'Form Max Width', 'px-elements'),
+  				'label' => esc_html__( 'Form Max Width', 'pixerex-elements'),
   				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'px', 'em', '%' ],
 				'range' => [
@@ -400,7 +400,7 @@ class GravityForms extends Widget_Base {
 		$this->add_responsive_control(
 			'eael_gravity_form_margin',
 			[
-				'label' => esc_html__( 'Form Margin', 'px-elements'),
+				'label' => esc_html__( 'Form Margin', 'pixerex-elements'),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
@@ -412,7 +412,7 @@ class GravityForms extends Widget_Base {
 		$this->add_responsive_control(
 			'eael_gravity_form_padding',
 			[
-				'label' => esc_html__( 'Form Padding', 'px-elements'),
+				'label' => esc_html__( 'Form Padding', 'pixerex-elements'),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
@@ -425,7 +425,7 @@ class GravityForms extends Widget_Base {
 		$this->add_control(
 			'eael_gravity_form_border_radius',
 			[
-				'label' => esc_html__( 'Border Radius', 'px-elements'),
+				'label' => esc_html__( 'Border Radius', 'pixerex-elements'),
 				'type' => Controls_Manager::DIMENSIONS,
 				'separator' => 'before',
 				'size_units' => [ 'px' ],
@@ -461,7 +461,7 @@ class GravityForms extends Widget_Base {
         $this->start_controls_section(
             'section_general_style',
             [
-                'label'                 => __( 'Title & Description', 'px-elements'),
+                'label'                 => __( 'Title & Description', 'pixerex-elements'),
                 'tab'                   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -469,19 +469,19 @@ class GravityForms extends Widget_Base {
         $this->add_responsive_control(
             'heading_alignment',
             [
-                'label'                 => __( 'Alignment', 'px-elements'),
+                'label'                 => __( 'Alignment', 'pixerex-elements'),
 				'type'                  => Controls_Manager::CHOOSE,
 				'options'               => [
 					'left'      => [
-						'title' => __( 'Left', 'px-elements'),
+						'title' => __( 'Left', 'pixerex-elements'),
 						'icon'  => 'fa fa-align-left',
 					],
 					'center'    => [
-						'title' => __( 'Center', 'px-elements'),
+						'title' => __( 'Center', 'pixerex-elements'),
 						'icon'  => 'fa fa-align-center',
 					],
 					'right'     => [
-						'title' => __( 'Right', 'px-elements'),
+						'title' => __( 'Right', 'pixerex-elements'),
 						'icon'  => 'fa fa-align-right',
 					],
 				],
@@ -495,7 +495,7 @@ class GravityForms extends Widget_Base {
         $this->add_control(
             'title_heading',
             [
-                'label'                 => __( 'Title', 'px-elements'),
+                'label'                 => __( 'Title', 'pixerex-elements'),
                 'type'                  => Controls_Manager::HEADING,
 				'separator'             => 'before',
             ]
@@ -504,7 +504,7 @@ class GravityForms extends Widget_Base {
         $this->add_control(
             'title_text_color',
             [
-                'label'                 => __( 'Text Color', 'px-elements'),
+                'label'                 => __( 'Text Color', 'pixerex-elements'),
                 'type'                  => Controls_Manager::COLOR,
                 'default'               => '',
                 'selectors'             => [
@@ -517,7 +517,7 @@ class GravityForms extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name'                  => 'title_typography',
-                'label'                 => __( 'Typography', 'px-elements'),
+                'label'                 => __( 'Typography', 'pixerex-elements'),
                 'scheme'                => Scheme_Typography::TYPOGRAPHY_4,
                 'selector'              => '{{WRAPPER}} .eael-gravity-form .gform_wrapper .gform_title, {{WRAPPER}} .eael-gravity-form .eael-gravity-form-title',
             ]
@@ -526,7 +526,7 @@ class GravityForms extends Widget_Base {
         $this->add_control(
             'description_heading',
             [
-                'label'                 => __( 'Description', 'px-elements'),
+                'label'                 => __( 'Description', 'pixerex-elements'),
                 'type'                  => Controls_Manager::HEADING,
 				'separator'             => 'before',
             ]
@@ -535,7 +535,7 @@ class GravityForms extends Widget_Base {
         $this->add_control(
             'description_text_color',
             [
-                'label'                 => __( 'Text Color', 'px-elements'),
+                'label'                 => __( 'Text Color', 'pixerex-elements'),
                 'type'                  => Controls_Manager::COLOR,
                 'default'               => '',
                 'selectors'             => [
@@ -548,7 +548,7 @@ class GravityForms extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name'                  => 'description_typography',
-                'label'                 => __( 'Typography', 'px-elements'),
+                'label'                 => __( 'Typography', 'pixerex-elements'),
                 'scheme'                => Scheme_Typography::TYPOGRAPHY_4,
                 'selector'              => '{{WRAPPER}} .eael-gravity-form .gform_wrapper .gform_description, {{WRAPPER}} .eael-gravity-form .eael-gravity-form-description',
             ]
@@ -563,7 +563,7 @@ class GravityForms extends Widget_Base {
         $this->start_controls_section(
             'section_label_style',
             [
-                'label'                 => __( 'Labels', 'px-elements'),
+                'label'                 => __( 'Labels', 'pixerex-elements'),
                 'tab'                   => Controls_Manager::TAB_STYLE,
                 'condition'             => [
                     'labels_switch'   => 'yes',
@@ -574,7 +574,7 @@ class GravityForms extends Widget_Base {
         $this->add_control(
             'text_color_label',
             [
-                'label'                 => __( 'Text Color', 'px-elements'),
+                'label'                 => __( 'Text Color', 'pixerex-elements'),
                 'type'                  => Controls_Manager::COLOR,
                 'selectors'             => [
                     '{{WRAPPER}} .eael-gravity-form .gfield label' => 'color: {{VALUE}}',
@@ -589,7 +589,7 @@ class GravityForms extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name'                  => 'typography_label',
-                'label'                 => __( 'Typography', 'px-elements'),
+                'label'                 => __( 'Typography', 'pixerex-elements'),
                 'selector'              => '{{WRAPPER}} .eael-gravity-form .gfield label',
                 'condition'             => [
                     'labels_switch'   => 'yes',
@@ -606,7 +606,7 @@ class GravityForms extends Widget_Base {
         $this->start_controls_section(
             'section_fields_style',
             [
-                'label'                 => __( 'Input & Textarea', 'px-elements'),
+                'label'                 => __( 'Input & Textarea', 'pixerex-elements'),
                 'tab'                   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -614,19 +614,19 @@ class GravityForms extends Widget_Base {
         $this->add_responsive_control(
             'input_alignment',
             [
-                'label'                 => __( 'Alignment', 'px-elements'),
+                'label'                 => __( 'Alignment', 'pixerex-elements'),
 				'type'                  => Controls_Manager::CHOOSE,
 				'options'               => [
 					'left'      => [
-						'title' => __( 'Left', 'px-elements'),
+						'title' => __( 'Left', 'pixerex-elements'),
 						'icon'  => 'fa fa-align-left',
 					],
 					'center'    => [
-						'title' => __( 'Center', 'px-elements'),
+						'title' => __( 'Center', 'pixerex-elements'),
 						'icon'  => 'fa fa-align-center',
 					],
 					'right'     => [
-						'title' => __( 'Right', 'px-elements'),
+						'title' => __( 'Right', 'pixerex-elements'),
 						'icon'  => 'fa fa-align-right',
 					],
 				],
@@ -642,14 +642,14 @@ class GravityForms extends Widget_Base {
         $this->start_controls_tab(
             'tab_fields_normal',
             [
-                'label'                 => __( 'Normal', 'px-elements'),
+                'label'                 => __( 'Normal', 'pixerex-elements'),
             ]
         );
 
         $this->add_control(
             'field_bg_color',
             [
-                'label'                 => __( 'Background Color', 'px-elements'),
+                'label'                 => __( 'Background Color', 'pixerex-elements'),
                 'type'                  => Controls_Manager::COLOR,
                 'default'               => '',
                 'selectors'             => [
@@ -661,7 +661,7 @@ class GravityForms extends Widget_Base {
         $this->add_control(
             'field_text_color',
             [
-                'label'                 => __( 'Text Color', 'px-elements'),
+                'label'                 => __( 'Text Color', 'pixerex-elements'),
                 'type'                  => Controls_Manager::COLOR,
                 'default'               => '',
                 'selectors'             => [
@@ -673,7 +673,7 @@ class GravityForms extends Widget_Base {
         $this->add_responsive_control(
             'field_spacing',
             [
-                'label'                 => __( 'Spacing', 'px-elements'),
+                'label'                 => __( 'Spacing', 'pixerex-elements'),
                 'type'                  => Controls_Manager::SLIDER,
                 'range'                 => [
                     'px'        => [
@@ -692,7 +692,7 @@ class GravityForms extends Widget_Base {
         $this->add_responsive_control(
             'field_spacing_right',
             [
-                'label'                 => __( 'Spacing Right', 'px-elements'),
+                'label'                 => __( 'Spacing Right', 'pixerex-elements'),
                 'type'                  => Controls_Manager::SLIDER,
                 'range'                 => [
                     'px'        => [
@@ -711,7 +711,7 @@ class GravityForms extends Widget_Base {
 		$this->add_responsive_control(
 			'field_padding',
 			[
-				'label'                 => __( 'Padding', 'px-elements'),
+				'label'                 => __( 'Padding', 'pixerex-elements'),
 				'type'                  => Controls_Manager::DIMENSIONS,
 				'size_units'            => [ 'px', 'em', '%' ],
 				'selectors'             => [
@@ -723,7 +723,7 @@ class GravityForms extends Widget_Base {
         $this->add_responsive_control(
             'text_indent',
             [
-                'label'                 => __( 'Text Indent', 'px-elements'),
+                'label'                 => __( 'Text Indent', 'pixerex-elements'),
                 'type'                  => Controls_Manager::SLIDER,
                 'range'                 => [
                     'px'        => [
@@ -747,7 +747,7 @@ class GravityForms extends Widget_Base {
         $this->add_responsive_control(
             'input_width',
             [
-                'label'                 => __( 'Input Width', 'px-elements'),
+                'label'                 => __( 'Input Width', 'pixerex-elements'),
                 'type'                  => Controls_Manager::SLIDER,
                 'range'                 => [
                     'px' => [
@@ -766,7 +766,7 @@ class GravityForms extends Widget_Base {
         $this->add_responsive_control(
             'input_height',
             [
-                'label'                 => __( 'Input Height', 'px-elements'),
+                'label'                 => __( 'Input Height', 'pixerex-elements'),
                 'type'                  => Controls_Manager::SLIDER,
                 'range'                 => [
                     'px' => [
@@ -785,7 +785,7 @@ class GravityForms extends Widget_Base {
         $this->add_responsive_control(
             'textarea_width',
             [
-                'label'                 => __( 'Textarea Width', 'px-elements'),
+                'label'                 => __( 'Textarea Width', 'pixerex-elements'),
                 'type'                  => Controls_Manager::SLIDER,
                 'range'                 => [
                     'px' => [
@@ -804,7 +804,7 @@ class GravityForms extends Widget_Base {
         $this->add_responsive_control(
             'textarea_height',
             [
-                'label'                 => __( 'Textarea Height', 'px-elements'),
+                'label'                 => __( 'Textarea Height', 'pixerex-elements'),
                 'type'                  => Controls_Manager::SLIDER,
                 'range'                 => [
                     'px' => [
@@ -824,7 +824,7 @@ class GravityForms extends Widget_Base {
 			Group_Control_Border::get_type(),
 			[
 				'name'                  => 'field_border',
-				'label'                 => __( 'Border', 'px-elements'),
+				'label'                 => __( 'Border', 'pixerex-elements'),
 				'placeholder'           => '1px',
 				'default'               => '1px',
 				'selector'              => '{{WRAPPER}} .eael-gravity-form .gfield input[type="text"], {{WRAPPER}} .eael-gravity-form .gfield textarea, {{WRAPPER}} .eael-gravity-form .gfield select',
@@ -835,7 +835,7 @@ class GravityForms extends Widget_Base {
 		$this->add_control(
 			'field_radius',
 			[
-				'label'                 => __( 'Border Radius', 'px-elements'),
+				'label'                 => __( 'Border Radius', 'pixerex-elements'),
 				'type'                  => Controls_Manager::DIMENSIONS,
 				'size_units'            => [ 'px', 'em', '%' ],
 				'selectors'             => [
@@ -848,7 +848,7 @@ class GravityForms extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name'                  => 'field_typography',
-                'label'                 => __( 'Typography', 'px-elements'),
+                'label'                 => __( 'Typography', 'pixerex-elements'),
                 'selector'              => '{{WRAPPER}} .eael-gravity-form .gfield .ginput_complex.ginput_container input[type="text"], {{WRAPPER}} .eael-gravity-form .gfield .ginput_container_date input[type="text"], {{WRAPPER}} .eael-gravity-form .gfield .ginput_container_phone input[type="text"], {{WRAPPER}} .eael-gravity-form .gfield .ginput_container_email input[type="text"], {{WRAPPER}} .eael-gravity-form .gfield .ginput_container_text input[type="text"], {{WRAPPER}} .eael-gravity-form .gfield textarea, {{WRAPPER}} .eael-gravity-form .gfield select',
 				'separator'             => 'before',
             ]
@@ -868,14 +868,14 @@ class GravityForms extends Widget_Base {
         $this->start_controls_tab(
             'tab_fields_focus',
             [
-                'label'                 => __( 'Focus', 'px-elements'),
+                'label'                 => __( 'Focus', 'pixerex-elements'),
             ]
         );
 
         $this->add_control(
             'field_bg_color_focus',
             [
-                'label'                 => __( 'Background Color', 'px-elements'),
+                'label'                 => __( 'Background Color', 'pixerex-elements'),
                 'type'                  => Controls_Manager::COLOR,
                 'default'               => '',
                 'selectors'             => [
@@ -888,7 +888,7 @@ class GravityForms extends Widget_Base {
 			Group_Control_Border::get_type(),
 			[
 				'name'                  => 'focus_input_border',
-				'label'                 => __( 'Border', 'px-elements'),
+				'label'                 => __( 'Border', 'pixerex-elements'),
 				'placeholder'           => '1px',
 				'default'               => '1px',
 				'selector'              => '{{WRAPPER}} .eael-gravity-form .gfield input:focus, {{WRAPPER}} .eael-gravity-form .gfield textarea:focus',
@@ -917,7 +917,7 @@ class GravityForms extends Widget_Base {
         $this->start_controls_section(
             'section_field_description_style',
             [
-                'label'                 => __( 'Field Description', 'px-elements'),
+                'label'                 => __( 'Field Description', 'pixerex-elements'),
                 'tab'                   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -925,7 +925,7 @@ class GravityForms extends Widget_Base {
         $this->add_control(
             'field_description_text_color',
             [
-                'label'                 => __( 'Text Color', 'px-elements'),
+                'label'                 => __( 'Text Color', 'pixerex-elements'),
                 'type'                  => Controls_Manager::COLOR,
                 'selectors'             => [
                     '{{WRAPPER}} .eael-gravity-form .gfield .gfield_description' => 'color: {{VALUE}}',
@@ -937,7 +937,7 @@ class GravityForms extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name'                  => 'field_description_typography',
-                'label'                 => __( 'Typography', 'px-elements'),
+                'label'                 => __( 'Typography', 'pixerex-elements'),
                 'selector'              => '{{WRAPPER}} .eael-gravity-form .gfield .gfield_description',
             ]
         );
@@ -945,7 +945,7 @@ class GravityForms extends Widget_Base {
         $this->add_responsive_control(
             'field_description_spacing',
             [
-                'label'                 => __( 'Spacing', 'px-elements'),
+                'label'                 => __( 'Spacing', 'pixerex-elements'),
                 'type'                  => Controls_Manager::SLIDER,
                 'range'                 => [
                     'px'        => [
@@ -970,7 +970,7 @@ class GravityForms extends Widget_Base {
         $this->start_controls_section(
             'section_field_style',
             [
-                'label'                 => __( 'Section Field', 'px-elements'),
+                'label'                 => __( 'Section Field', 'pixerex-elements'),
                 'tab'                   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -978,7 +978,7 @@ class GravityForms extends Widget_Base {
         $this->add_control(
             'section_field_text_color',
             [
-                'label'                 => __( 'Text Color', 'px-elements'),
+                'label'                 => __( 'Text Color', 'pixerex-elements'),
                 'type'                  => Controls_Manager::COLOR,
                 'default'               => '',
                 'selectors'             => [
@@ -991,7 +991,7 @@ class GravityForms extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name'                  => 'section_field_typography',
-                'label'                 => __( 'Typography', 'px-elements'),
+                'label'                 => __( 'Typography', 'pixerex-elements'),
                 'scheme'                => Scheme_Typography::TYPOGRAPHY_4,
                 'selector'              => '{{WRAPPER}} .eael-gravity-form .gfield.gsection .gsection_title',
 				'separator'             => 'before',
@@ -1001,15 +1001,15 @@ class GravityForms extends Widget_Base {
         $this->add_control(
             'section_field_border_type',
             [
-                'label'                 => __( 'Border Type', 'px-elements'),
+                'label'                 => __( 'Border Type', 'pixerex-elements'),
                 'type'                  => Controls_Manager::SELECT,
                 'default'               => 'solid',
                 'options'               => [
-                    'none'      => __( 'None', 'px-elements'),
-                    'solid'     => __( 'Solid', 'px-elements'),
-                    'double'    => __( 'Double', 'px-elements'),
-                    'dotted'    => __( 'Dotted', 'px-elements'),
-                    'dashed'    => __( 'Dashed', 'px-elements'),
+                    'none'      => __( 'None', 'pixerex-elements'),
+                    'solid'     => __( 'Solid', 'pixerex-elements'),
+                    'double'    => __( 'Double', 'pixerex-elements'),
+                    'dotted'    => __( 'Dotted', 'pixerex-elements'),
+                    'dashed'    => __( 'Dashed', 'pixerex-elements'),
                 ],
                 'selectors'             => [
                     '{{WRAPPER}} .eael-gravity-form .gfield.gsection' => 'border-bottom-style: {{VALUE}}',
@@ -1021,7 +1021,7 @@ class GravityForms extends Widget_Base {
         $this->add_responsive_control(
             'section_field_border_height',
             [
-                'label'                 => __( 'Border Height', 'px-elements'),
+                'label'                 => __( 'Border Height', 'pixerex-elements'),
                 'type'                  => Controls_Manager::SLIDER,
                 'default'               => [
                     'size'  => 1,
@@ -1046,7 +1046,7 @@ class GravityForms extends Widget_Base {
         $this->add_control(
             'section_field_border_color',
             [
-                'label'                 => __( 'Border Color', 'px-elements'),
+                'label'                 => __( 'Border Color', 'pixerex-elements'),
                 'type'                  => Controls_Manager::COLOR,
                 'default'               => '',
                 'selectors'             => [
@@ -1061,7 +1061,7 @@ class GravityForms extends Widget_Base {
 		$this->add_responsive_control(
 			'section_field_margin',
 			[
-				'label'                 => __( 'Margin', 'px-elements'),
+				'label'                 => __( 'Margin', 'pixerex-elements'),
 				'type'                  => Controls_Manager::DIMENSIONS,
 				'size_units'            => [ 'px', 'em', '%' ],
 				'selectors'             => [
@@ -1080,7 +1080,7 @@ class GravityForms extends Widget_Base {
         $this->start_controls_section(
             'section_price_style',
             [
-                'label'                 => __( 'Price', 'px-elements'),
+                'label'                 => __( 'Price', 'pixerex-elements'),
                 'tab'                   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -1088,7 +1088,7 @@ class GravityForms extends Widget_Base {
         $this->add_control(
             'price_label_color',
             [
-                'label'                 => __( 'Price Label Color', 'px-elements'),
+                'label'                 => __( 'Price Label Color', 'pixerex-elements'),
                 'type'                  => Controls_Manager::COLOR,
                 'default'               => '',
                 'selectors'             => [
@@ -1100,7 +1100,7 @@ class GravityForms extends Widget_Base {
         $this->add_control(
             'price_text_color',
             [
-                'label'                 => __( 'Price Color', 'px-elements'),
+                'label'                 => __( 'Price Color', 'pixerex-elements'),
                 'type'                  => Controls_Manager::COLOR,
                 'default'               => '',
                 'selectors'             => [
@@ -1118,7 +1118,7 @@ class GravityForms extends Widget_Base {
         $this->start_controls_section(
             'section_total_price_style',
             [
-                'label'                 => __( 'Total Price', 'px-elements'),
+                'label'                 => __( 'Total Price', 'pixerex-elements'),
                 'tab'                   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -1127,7 +1127,7 @@ class GravityForms extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name'                  => 'total_price_typography',
-                'label'                 => __( 'Typography', 'px-elements'),
+                'label'                 => __( 'Typography', 'pixerex-elements'),
                 'selector'              => '{{WRAPPER}} .eael-gravity-form .gform_wrapper .ginput_container_total .ginput_total',
 				'separator'             => 'before',
             ]
@@ -1136,7 +1136,7 @@ class GravityForms extends Widget_Base {
         $this->add_control(
             'total_price_text_color',
             [
-                'label'                 => __( 'Color', 'px-elements'),
+                'label'                 => __( 'Color', 'pixerex-elements'),
                 'type'                  => Controls_Manager::COLOR,
                 'default'               => '',
                 'selectors'             => [
@@ -1154,7 +1154,7 @@ class GravityForms extends Widget_Base {
         $this->start_controls_section(
             'section_placeholder_style',
             [
-                'label'                 => __( 'Placeholder', 'px-elements'),
+                'label'                 => __( 'Placeholder', 'pixerex-elements'),
                 'tab'                   => Controls_Manager::TAB_STYLE,
                 'condition'             => [
                     'placeholder_switch'   => 'yes',
@@ -1165,7 +1165,7 @@ class GravityForms extends Widget_Base {
         $this->add_control(
             'text_color_placeholder',
             [
-                'label'                 => __( 'Text Color', 'px-elements'),
+                'label'                 => __( 'Text Color', 'pixerex-elements'),
                 'type'                  => Controls_Manager::COLOR,
                 'selectors'             => [
                     '{{WRAPPER}} .eael-gravity-form .gfield input::-webkit-input-placeholder, {{WRAPPER}} .eael-gravity-form .gfield textarea::-webkit-input-placeholder' => 'color: {{VALUE}}',
@@ -1185,7 +1185,7 @@ class GravityForms extends Widget_Base {
         $this->start_controls_section(
             'section_checkbox_style',
             [
-                'label'                 => __( 'Checkbox', 'px-elements'),
+                'label'                 => __( 'Checkbox', 'pixerex-elements'),
                 'tab'                   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -1193,10 +1193,10 @@ class GravityForms extends Widget_Base {
         $this->add_control(
             'custom_radio_checkbox',
             [
-                'label'                 => __( 'Custom Styles', 'px-elements'),
+                'label'                 => __( 'Custom Styles', 'pixerex-elements'),
                 'type'                  => Controls_Manager::SWITCHER,
-                'label_on'              => __( 'Yes', 'px-elements'),
-                'label_off'             => __( 'No', 'px-elements'),
+                'label_on'              => __( 'Yes', 'pixerex-elements'),
+                'label_off'             => __( 'No', 'pixerex-elements'),
                 'return_value'          => 'yes',
             ]
         );
@@ -1204,7 +1204,7 @@ class GravityForms extends Widget_Base {
         $this->add_responsive_control(
             'checkbox_size',
             [
-                'label'                 => __( 'Size', 'px-elements'),
+                'label'                 => __( 'Size', 'pixerex-elements'),
                 'type'                  => Controls_Manager::SLIDER,
                 'default'               => [
                     'size'      => '15',
@@ -1232,7 +1232,7 @@ class GravityForms extends Widget_Base {
         $this->start_controls_tab(
             'checkbox_normal',
             [
-                'label'                 => __( 'Normal', 'px-elements'),
+                'label'                 => __( 'Normal', 'pixerex-elements'),
                 'condition'             => [
                     'custom_radio_checkbox' => 'yes',
                 ],
@@ -1242,7 +1242,7 @@ class GravityForms extends Widget_Base {
         $this->add_control(
             'checkbox_color',
             [
-                'label'                 => __( 'Color', 'px-elements'),
+                'label'                 => __( 'Color', 'pixerex-elements'),
                 'type'                  => Controls_Manager::COLOR,
                 'default'               => '',
                 'selectors'             => [
@@ -1257,7 +1257,7 @@ class GravityForms extends Widget_Base {
         $this->add_responsive_control(
             'checkbox_border_width',
             [
-                'label'                 => __( 'Border Width', 'px-elements'),
+                'label'                 => __( 'Border Width', 'pixerex-elements'),
                 'type'                  => Controls_Manager::SLIDER,
                 'range'                 => [
                     'px'        => [
@@ -1279,7 +1279,7 @@ class GravityForms extends Widget_Base {
         $this->add_control(
             'checkbox_border_color',
             [
-                'label'                 => __( 'Border Color', 'px-elements'),
+                'label'                 => __( 'Border Color', 'pixerex-elements'),
                 'type'                  => Controls_Manager::COLOR,
                 'default'               => '',
                 'selectors'             => [
@@ -1294,7 +1294,7 @@ class GravityForms extends Widget_Base {
         $this->add_control(
             'checkbox_heading',
             [
-                'label'                 => __( 'Checkbox', 'px-elements'),
+                'label'                 => __( 'Checkbox', 'pixerex-elements'),
                 'type'                  => Controls_Manager::HEADING,
 				'condition'             => [
 					'custom_radio_checkbox' => 'yes',
@@ -1305,7 +1305,7 @@ class GravityForms extends Widget_Base {
 		$this->add_control(
 			'checkbox_border_radius',
 			[
-				'label'                 => __( 'Border Radius', 'px-elements'),
+				'label'                 => __( 'Border Radius', 'pixerex-elements'),
 				'type'                  => Controls_Manager::DIMENSIONS,
 				'size_units'            => [ 'px', 'em', '%' ],
 				'selectors'             => [
@@ -1320,7 +1320,7 @@ class GravityForms extends Widget_Base {
         $this->add_responsive_control(
 			'checkbox_margin',
 			[
-				'label' => esc_html__( 'Margin', 'px-elements'),
+				'label' => esc_html__( 'Margin', 'pixerex-elements'),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
@@ -1332,7 +1332,7 @@ class GravityForms extends Widget_Base {
         $this->add_responsive_control(
 			'checkbox_padding',
 			[
-				'label'                 => __( 'Padding', 'px-elements'),
+				'label'                 => __( 'Padding', 'pixerex-elements'),
 				'type'                  => Controls_Manager::DIMENSIONS,
 				'size_units'            => [ 'px', 'em', '%' ],
 				'selectors'             => [
@@ -1346,7 +1346,7 @@ class GravityForms extends Widget_Base {
         $this->start_controls_tab(
             'checkbox_checked',
             [
-                'label'                 => __( 'Checked', 'px-elements'),
+                'label'                 => __( 'Checked', 'pixerex-elements'),
                 'condition'             => [
                     'custom_radio_checkbox' => 'yes',
                 ],
@@ -1356,7 +1356,7 @@ class GravityForms extends Widget_Base {
         $this->add_control(
             'checkbox_color_checked',
             [
-                'label'                 => __( 'Color', 'px-elements'),
+                'label'                 => __( 'Color', 'pixerex-elements'),
                 'type'                  => Controls_Manager::COLOR,
                 'default'               => '',
                 'selectors'             => [
@@ -1381,7 +1381,7 @@ class GravityForms extends Widget_Base {
         $this->start_controls_section(
             'section_radio_style',
             [
-                'label'                 => __( 'Radio', 'px-elements'),
+                'label'                 => __( 'Radio', 'pixerex-elements'),
                 'tab'                   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -1389,10 +1389,10 @@ class GravityForms extends Widget_Base {
         $this->add_control(
             'custom_radio_style',
             [
-                'label'                 => __( 'Custom Styles', 'px-elements'),
+                'label'                 => __( 'Custom Styles', 'pixerex-elements'),
                 'type'                  => Controls_Manager::SWITCHER,
-                'label_on'              => __( 'Yes', 'px-elements'),
-                'label_off'             => __( 'No', 'px-elements'),
+                'label_on'              => __( 'Yes', 'pixerex-elements'),
+                'label_off'             => __( 'No', 'pixerex-elements'),
                 'return_value'          => 'yes',
             ]
         );
@@ -1400,7 +1400,7 @@ class GravityForms extends Widget_Base {
         $this->add_responsive_control(
             'radio_size',
             [
-                'label'                 => __( 'Size', 'px-elements'),
+                'label'                 => __( 'Size', 'pixerex-elements'),
                 'type'                  => Controls_Manager::SLIDER,
                 'default'               => [
                     'size'      => '15',
@@ -1428,7 +1428,7 @@ class GravityForms extends Widget_Base {
         $this->start_controls_tab(
             'radio_normal',
             [
-                'label'                 => __( 'Normal', 'px-elements'),
+                'label'                 => __( 'Normal', 'pixerex-elements'),
                 'condition'             => [
                     'custom_radio_style' => 'yes',
                 ],
@@ -1438,7 +1438,7 @@ class GravityForms extends Widget_Base {
         $this->add_control(
             'radio_color',
             [
-                'label'                 => __( 'Color', 'px-elements'),
+                'label'                 => __( 'Color', 'pixerex-elements'),
                 'type'                  => Controls_Manager::COLOR,
                 'default'               => '',
                 'selectors'             => [
@@ -1453,7 +1453,7 @@ class GravityForms extends Widget_Base {
         $this->add_responsive_control(
             'radio_border_width',
             [
-                'label'                 => __( 'Border Width', 'px-elements'),
+                'label'                 => __( 'Border Width', 'pixerex-elements'),
                 'type'                  => Controls_Manager::SLIDER,
                 'range'                 => [
                     'px'        => [
@@ -1475,7 +1475,7 @@ class GravityForms extends Widget_Base {
         $this->add_control(
             'radio_border_color',
             [
-                'label'                 => __( 'Border Color', 'px-elements'),
+                'label'                 => __( 'Border Color', 'pixerex-elements'),
                 'type'                  => Controls_Manager::COLOR,
                 'default'               => '',
                 'selectors'             => [
@@ -1490,7 +1490,7 @@ class GravityForms extends Widget_Base {
         $this->add_control(
             'radio_heading',
             [
-                'label'                 => __( 'Radio Buttons', 'px-elements'),
+                'label'                 => __( 'Radio Buttons', 'pixerex-elements'),
                 'type'                  => Controls_Manager::HEADING,
 				'condition'             => [
 					'custom_radio_style' => 'yes',
@@ -1501,7 +1501,7 @@ class GravityForms extends Widget_Base {
 		$this->add_control(
 			'radio_border_radius',
 			[
-				'label'                 => __( 'Border Radius', 'px-elements'),
+				'label'                 => __( 'Border Radius', 'pixerex-elements'),
 				'type'                  => Controls_Manager::DIMENSIONS,
 				'size_units'            => [ 'px', 'em', '%' ],
 				'selectors'             => [
@@ -1516,7 +1516,7 @@ class GravityForms extends Widget_Base {
         $this->add_responsive_control(
 			'radio_margin',
 			[
-				'label' => esc_html__( 'Margin', 'px-elements'),
+				'label' => esc_html__( 'Margin', 'pixerex-elements'),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
@@ -1528,7 +1528,7 @@ class GravityForms extends Widget_Base {
         $this->add_responsive_control(
 			'radio_padding',
 			[
-				'label'                 => __( 'Padding', 'px-elements'),
+				'label'                 => __( 'Padding', 'pixerex-elements'),
 				'type'                  => Controls_Manager::DIMENSIONS,
 				'size_units'            => [ 'px', 'em', '%' ],
 				'selectors'             => [
@@ -1542,7 +1542,7 @@ class GravityForms extends Widget_Base {
         $this->start_controls_tab(
             'radio_checked',
             [
-                'label'                 => __( 'Checked', 'px-elements'),
+                'label'                 => __( 'Checked', 'pixerex-elements'),
                 'condition'             => [
                     'custom_radio_style' => 'yes',
                 ],
@@ -1552,7 +1552,7 @@ class GravityForms extends Widget_Base {
         $this->add_control(
             'radio_color_checked',
             [
-                'label'                 => __( 'Color', 'px-elements'),
+                'label'                 => __( 'Color', 'pixerex-elements'),
                 'type'                  => Controls_Manager::COLOR,
                 'default'               => '',
                 'selectors'             => [
@@ -1578,7 +1578,7 @@ class GravityForms extends Widget_Base {
         $this->start_controls_section(
             'scrolling_text_style',
             [
-                'label' => __( 'Scrolling Text', 'px-elements'),
+                'label' => __( 'Scrolling Text', 'pixerex-elements'),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -1587,7 +1587,7 @@ class GravityForms extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name'                  => 'scrolling_text_typography',
-                'label'                 => __( 'Typography', 'px-elements'),
+                'label'                 => __( 'Typography', 'pixerex-elements'),
                 'selector'              => '{{WRAPPER}} .eael-gravity-form .gform_wrapper .gf_scroll_text .gsection_description',
 				'separator'             => 'before',
             ]
@@ -1596,7 +1596,7 @@ class GravityForms extends Widget_Base {
         $this->add_control(
             'scrolling_text_color',
             [
-                'label'                 => __( 'Color', 'px-elements'),
+                'label'                 => __( 'Color', 'pixerex-elements'),
                 'type'                  => Controls_Manager::COLOR,
                 'default'               => '',
                 'selectors'             => [
@@ -1608,7 +1608,7 @@ class GravityForms extends Widget_Base {
         $this->add_control(
             'scrolling_text_bg_color',
             [
-                'label'                 => __( 'Background Color', 'px-elements'),
+                'label'                 => __( 'Background Color', 'pixerex-elements'),
                 'type'                  => Controls_Manager::COLOR,
                 'default'               => '',
                 'selectors'             => [
@@ -1620,7 +1620,7 @@ class GravityForms extends Widget_Base {
         $this->add_responsive_control(
             'scrolling_text_width',
             [
-                'label'                 => __( 'Width', 'px-elements'),
+                'label'                 => __( 'Width', 'pixerex-elements'),
                 'type'                  => Controls_Manager::SLIDER,
                 'default'               => [
                     'size'      => '100',
@@ -1644,7 +1644,7 @@ class GravityForms extends Widget_Base {
 			Group_Control_Border::get_type(),
 			[
 				'name'                  => 'scrolling_text_border',
-				'label'                 => __( 'Border', 'px-elements'),
+				'label'                 => __( 'Border', 'pixerex-elements'),
 				'placeholder'           => '1px',
 				'default'               => '1px',
 				'selector'              => '{{WRAPPER}} .eael-gravity-form .gform_wrapper .gf_scroll_text',
@@ -1654,7 +1654,7 @@ class GravityForms extends Widget_Base {
         $this->add_control(
 			'scrolling_text_border_radius',
 			[
-				'label'                 => __( 'Border Radius', 'px-elements'),
+				'label'                 => __( 'Border Radius', 'pixerex-elements'),
 				'type'                  => Controls_Manager::DIMENSIONS,
 				'size_units'            => [ 'px', 'em', '%' ],
 				'selectors'             => [
@@ -1666,7 +1666,7 @@ class GravityForms extends Widget_Base {
         $this->add_responsive_control(
 			'scrolling_text_padding',
 			[
-				'label'                 => __( 'Padding', 'px-elements'),
+				'label'                 => __( 'Padding', 'pixerex-elements'),
 				'type'                  => Controls_Manager::DIMENSIONS,
 				'size_units'            => [ 'px', 'em', '%' ],
 				'selectors'             => [
@@ -1680,7 +1680,7 @@ class GravityForms extends Widget_Base {
         $this->add_responsive_control(
 			'scrolling_text_margin',
 			[
-				'label' => esc_html__( 'Margin', 'px-elements'),
+				'label' => esc_html__( 'Margin', 'pixerex-elements'),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
@@ -1698,7 +1698,7 @@ class GravityForms extends Widget_Base {
         $this->start_controls_section(
             'section_submit_button_style',
             [
-                'label'                 => __( 'Submit Button', 'px-elements'),
+                'label'                 => __( 'Submit Button', 'pixerex-elements'),
                 'tab'                   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -1706,19 +1706,19 @@ class GravityForms extends Widget_Base {
         $this->add_responsive_control(
 			'button_align',
 			[
-				'label'                 => __( 'Alignment', 'px-elements'),
+				'label'                 => __( 'Alignment', 'pixerex-elements'),
 				'type'                  => Controls_Manager::CHOOSE,
 				'options'               => [
 					'left'        => [
-						'title'   => __( 'Left', 'px-elements'),
+						'title'   => __( 'Left', 'pixerex-elements'),
 						'icon'    => 'eicon-h-align-left',
 					],
 					'center'      => [
-						'title'   => __( 'Center', 'px-elements'),
+						'title'   => __( 'Center', 'pixerex-elements'),
 						'icon'    => 'eicon-h-align-center',
 					],
 					'right'       => [
-						'title'   => __( 'Right', 'px-elements'),
+						'title'   => __( 'Right', 'pixerex-elements'),
 						'icon'    => 'eicon-h-align-right',
 					],
 				],
@@ -1736,12 +1736,12 @@ class GravityForms extends Widget_Base {
         $this->add_control(
             'button_width_type',
             [
-                'label'                 => __( 'Width', 'px-elements'),
+                'label'                 => __( 'Width', 'pixerex-elements'),
                 'type'                  => Controls_Manager::SELECT,
                 'default'               => 'custom',
                 'options'               => [
-                    'full-width'    => __( 'Full Width', 'px-elements'),
-                    'custom'        => __( 'Custom', 'px-elements'),
+                    'full-width'    => __( 'Full Width', 'pixerex-elements'),
+                    'custom'        => __( 'Custom', 'pixerex-elements'),
                 ],
                 'prefix_class'          => 'eael-gravity-form-button-',
             ]
@@ -1750,7 +1750,7 @@ class GravityForms extends Widget_Base {
         $this->add_responsive_control(
             'button_width',
             [
-                'label'                 => __( 'Width', 'px-elements'),
+                'label'                 => __( 'Width', 'pixerex-elements'),
                 'type'                  => Controls_Manager::SLIDER,
                 'default'               => [
                     'size'      => '100',
@@ -1779,14 +1779,14 @@ class GravityForms extends Widget_Base {
         $this->start_controls_tab(
             'tab_button_normal',
             [
-                'label'                 => __( 'Normal', 'px-elements'),
+                'label'                 => __( 'Normal', 'pixerex-elements'),
             ]
         );
 
         $this->add_control(
             'button_bg_color_normal',
             [
-                'label'                 => __( 'Background Color', 'px-elements'),
+                'label'                 => __( 'Background Color', 'pixerex-elements'),
                 'type'                  => Controls_Manager::COLOR,
                 'default'               => '',
                 'selectors'             => [
@@ -1799,7 +1799,7 @@ class GravityForms extends Widget_Base {
         $this->add_control(
             'button_text_color_normal',
             [
-                'label'                 => __( 'Text Color', 'px-elements'),
+                'label'                 => __( 'Text Color', 'pixerex-elements'),
                 'type'                  => Controls_Manager::COLOR,
                 'default'               => '',
                 'selectors'             => [
@@ -1813,7 +1813,7 @@ class GravityForms extends Widget_Base {
 			Group_Control_Border::get_type(),
 			[
 				'name'                  => 'button_border_normal',
-				'label'                 => __( 'Border', 'px-elements'),
+				'label'                 => __( 'Border', 'pixerex-elements'),
 				'placeholder'           => '1px',
 				'default'               => '1px',
 				'selector'              => '{{WRAPPER}} .eael-gravity-form .gform_footer input[type="submit"], {{WRAPPER}} .eael-gravity-form .gform_body .gform_page_footer input[type="submit"]',
@@ -1823,7 +1823,7 @@ class GravityForms extends Widget_Base {
 		$this->add_control(
 			'button_border_radius',
 			[
-				'label'                 => __( 'Border Radius', 'px-elements'),
+				'label'                 => __( 'Border Radius', 'pixerex-elements'),
 				'type'                  => Controls_Manager::DIMENSIONS,
 				'size_units'            => [ 'px', 'em', '%' ],
 				'selectors'             => [
@@ -1836,7 +1836,7 @@ class GravityForms extends Widget_Base {
 		$this->add_responsive_control(
 			'button_padding',
 			[
-				'label'                 => __( 'Padding', 'px-elements'),
+				'label'                 => __( 'Padding', 'pixerex-elements'),
 				'type'                  => Controls_Manager::DIMENSIONS,
 				'size_units'            => [ 'px', 'em', '%' ],
 				'selectors'             => [
@@ -1849,7 +1849,7 @@ class GravityForms extends Widget_Base {
         $this->add_responsive_control(
             'button_margin',
             [
-                'label'                 => __( 'Margin Top', 'px-elements'),
+                'label'                 => __( 'Margin Top', 'pixerex-elements'),
                 'type'                  => Controls_Manager::SLIDER,
                 'range'                 => [
                     'px'        => [
@@ -1871,14 +1871,14 @@ class GravityForms extends Widget_Base {
         $this->start_controls_tab(
             'tab_button_hover',
             [
-                'label'                 => __( 'Hover', 'px-elements'),
+                'label'                 => __( 'Hover', 'pixerex-elements'),
             ]
         );
 
         $this->add_control(
             'button_bg_color_hover',
             [
-                'label'                 => __( 'Background Color', 'px-elements'),
+                'label'                 => __( 'Background Color', 'pixerex-elements'),
                 'type'                  => Controls_Manager::COLOR,
                 'default'               => '',
                 'selectors'             => [
@@ -1891,7 +1891,7 @@ class GravityForms extends Widget_Base {
         $this->add_control(
             'button_text_color_hover',
             [
-                'label'                 => __( 'Text Color', 'px-elements'),
+                'label'                 => __( 'Text Color', 'pixerex-elements'),
                 'type'                  => Controls_Manager::COLOR,
                 'default'               => '',
                 'selectors'             => [
@@ -1904,7 +1904,7 @@ class GravityForms extends Widget_Base {
         $this->add_control(
             'button_border_color_hover',
             [
-                'label'                 => __( 'Border Color', 'px-elements'),
+                'label'                 => __( 'Border Color', 'pixerex-elements'),
                 'type'                  => Controls_Manager::COLOR,
                 'default'               => '',
                 'selectors'             => [
@@ -1922,7 +1922,7 @@ class GravityForms extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name'                  => 'button_typography',
-                'label'                 => __( 'Typography', 'px-elements'),
+                'label'                 => __( 'Typography', 'pixerex-elements'),
                 'scheme'                => Scheme_Typography::TYPOGRAPHY_4,
                 'selector'              => '{{WRAPPER}} .eael-gravity-form .gform_footer input[type="submit"], {{WRAPPER}} .eael-gravity-form .gform_body .gform_page_footer input[type="submit"]',
 				'separator'             => 'before',
@@ -1948,7 +1948,7 @@ class GravityForms extends Widget_Base {
         $this->start_controls_section(
             'eael_gravity_forms_section_next_button_style',
             [
-                'label'                 => __( 'Next/Previous Button', 'px-elements'),
+                'label'                 => __( 'Next/Previous Button', 'pixerex-elements'),
                 'tab'                   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -1956,19 +1956,19 @@ class GravityForms extends Widget_Base {
         $this->add_responsive_control(
 			'eael_gravity_forms_next_button_align',
 			[
-				'label'                 => __( 'Alignment', 'px-elements'),
+				'label'                 => __( 'Alignment', 'pixerex-elements'),
 				'type'                  => Controls_Manager::CHOOSE,
 				'options'               => [
 					'left'        => [
-						'title'   => __( 'Left', 'px-elements'),
+						'title'   => __( 'Left', 'pixerex-elements'),
 						'icon'    => 'eicon-h-align-left',
 					],
 					'center'      => [
-						'title'   => __( 'Center', 'px-elements'),
+						'title'   => __( 'Center', 'pixerex-elements'),
 						'icon'    => 'eicon-h-align-center',
 					],
 					'right'       => [
-						'title'   => __( 'Right', 'px-elements'),
+						'title'   => __( 'Right', 'pixerex-elements'),
 						'icon'    => 'eicon-h-align-right',
 					],
 				],
@@ -1983,7 +1983,7 @@ class GravityForms extends Widget_Base {
         $this->add_responsive_control(
             'eael_gravity_forms_next_button_width',
             [
-                'label'                 => __( 'Width', 'px-elements'),
+                'label'                 => __( 'Width', 'pixerex-elements'),
                 'type'                  => Controls_Manager::SLIDER,
                 'default'               => [
                     'size'      => '100',
@@ -2008,14 +2008,14 @@ class GravityForms extends Widget_Base {
         $this->start_controls_tab(
             'eael_gravity_forms_tab_next_button_normal',
             [
-                'label'                 => __( 'Normal', 'px-elements'),
+                'label'                 => __( 'Normal', 'pixerex-elements'),
             ]
         );
 
         $this->add_control(
             'eael_gravity_forms_next_button_bg_color_normal',
             [
-                'label'                 => __( 'Background Color', 'px-elements'),
+                'label'                 => __( 'Background Color', 'pixerex-elements'),
                 'type'                  => Controls_Manager::COLOR,
                 'default'               => '',
                 'selectors'             => [
@@ -2027,7 +2027,7 @@ class GravityForms extends Widget_Base {
         $this->add_control(
             'eael_gravity_forms_next_button_text_color_normal',
             [
-                'label'                 => __( 'Text Color', 'px-elements'),
+                'label'                 => __( 'Text Color', 'pixerex-elements'),
                 'type'                  => Controls_Manager::COLOR,
                 'default'               => '',
                 'selectors'             => [
@@ -2040,7 +2040,7 @@ class GravityForms extends Widget_Base {
 			Group_Control_Border::get_type(),
 			[
 				'name'                  => 'eael_gravity_forms_next_button_border_normal',
-				'label'                 => __( 'Border', 'px-elements'),
+				'label'                 => __( 'Border', 'pixerex-elements'),
 				'placeholder'           => '1px',
 				'default'               => '1px',
 				'selector'              => '{{WRAPPER}} .eael-gravity-form .gform_body .gform_page_footer input[type="button"]',
@@ -2050,7 +2050,7 @@ class GravityForms extends Widget_Base {
 		$this->add_control(
 			'eael_gravity_forms_next_button_border_radius',
 			[
-				'label'                 => __( 'Border Radius', 'px-elements'),
+				'label'                 => __( 'Border Radius', 'pixerex-elements'),
 				'type'                  => Controls_Manager::DIMENSIONS,
 				'size_units'            => [ 'px', 'em', '%' ],
 				'selectors'             => [
@@ -2062,7 +2062,7 @@ class GravityForms extends Widget_Base {
 		$this->add_responsive_control(
 			'eael_gravity_forms_next_button_padding',
 			[
-				'label'                 => __( 'Padding', 'px-elements'),
+				'label'                 => __( 'Padding', 'pixerex-elements'),
 				'type'                  => Controls_Manager::DIMENSIONS,
 				'size_units'            => [ 'px', 'em', '%' ],
 				'selectors'             => [
@@ -2074,7 +2074,7 @@ class GravityForms extends Widget_Base {
         $this->add_responsive_control(
             'eael_gravity_forms_next_button_margin',
             [
-                'label'                 => __( 'Margin Top', 'px-elements'),
+                'label'                 => __( 'Margin Top', 'pixerex-elements'),
                 'type'                  => Controls_Manager::SLIDER,
                 'range'                 => [
                     'px'        => [
@@ -2095,14 +2095,14 @@ class GravityForms extends Widget_Base {
         $this->start_controls_tab(
             'eael_gravity_forms_tab_next_button_hover',
             [
-                'label'                 => __( 'Hover', 'px-elements'),
+                'label'                 => __( 'Hover', 'pixerex-elements'),
             ]
         );
 
         $this->add_control(
             'eael_gravity_forms_next_button_bg_color_hover',
             [
-                'label'                 => __( 'Background Color', 'px-elements'),
+                'label'                 => __( 'Background Color', 'pixerex-elements'),
                 'type'                  => Controls_Manager::COLOR,
                 'default'               => '',
                 'selectors'             => [
@@ -2114,7 +2114,7 @@ class GravityForms extends Widget_Base {
         $this->add_control(
             'eael_gravity_forms_next_button_text_color_hover',
             [
-                'label'                 => __( 'Text Color', 'px-elements'),
+                'label'                 => __( 'Text Color', 'pixerex-elements'),
                 'type'                  => Controls_Manager::COLOR,
                 'default'               => '',
                 'selectors'             => [
@@ -2126,7 +2126,7 @@ class GravityForms extends Widget_Base {
         $this->add_control(
             'eael_gravity_forms_next_button_border_color_hover',
             [
-                'label'                 => __( 'Border Color', 'px-elements'),
+                'label'                 => __( 'Border Color', 'pixerex-elements'),
                 'type'                  => Controls_Manager::COLOR,
                 'default'               => '',
                 'selectors'             => [
@@ -2143,7 +2143,7 @@ class GravityForms extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name'                  => 'eael_gravity_forms_next_button_typography',
-                'label'                 => __( 'Typography', 'px-elements'),
+                'label'                 => __( 'Typography', 'pixerex-elements'),
                 'scheme'                => Scheme_Typography::TYPOGRAPHY_4,
                 'selector'              => '{{WRAPPER}} .eael-gravity-form .gform_body .gform_page_footer input[type="button"]',
 				'separator'             => 'before',
@@ -2169,7 +2169,7 @@ class GravityForms extends Widget_Base {
         $this->start_controls_section(
             'section_error_style',
             [
-                'label'                 => __( 'Errors', 'px-elements'),
+                'label'                 => __( 'Errors', 'pixerex-elements'),
                 'tab'                   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -2177,7 +2177,7 @@ class GravityForms extends Widget_Base {
         $this->add_control(
             'error_messages_heading',
             [
-                'label'                 => __( 'Error Messages', 'px-elements'),
+                'label'                 => __( 'Error Messages', 'pixerex-elements'),
                 'type'                  => Controls_Manager::HEADING,
 				'condition'             => [
 					'error_messages' => 'show',
@@ -2188,7 +2188,7 @@ class GravityForms extends Widget_Base {
         $this->add_control(
             'error_message_text_color',
             [
-                'label'                 => __( 'Text Color', 'px-elements'),
+                'label'                 => __( 'Text Color', 'pixerex-elements'),
                 'type'                  => Controls_Manager::COLOR,
                 'default'               => '',
                 'selectors'             => [
@@ -2203,7 +2203,7 @@ class GravityForms extends Widget_Base {
         $this->add_control(
             'validation_errors_heading',
             [
-                'label'                 => __( 'Validation Errors', 'px-elements'),
+                'label'                 => __( 'Validation Errors', 'pixerex-elements'),
                 'type'                  => Controls_Manager::HEADING,
                 'separator'             => 'before',
 				'condition'             => [
@@ -2215,7 +2215,7 @@ class GravityForms extends Widget_Base {
         $this->add_control(
             'validation_error_description_color',
             [
-                'label'                 => __( 'Error Description Color', 'px-elements'),
+                'label'                 => __( 'Error Description Color', 'pixerex-elements'),
                 'type'                  => Controls_Manager::COLOR,
                 'default'               => '',
                 'selectors'             => [
@@ -2230,7 +2230,7 @@ class GravityForms extends Widget_Base {
         $this->add_control(
             'validation_error_border_color',
             [
-                'label'                 => __( 'Error Border Color', 'px-elements'),
+                'label'                 => __( 'Error Border Color', 'pixerex-elements'),
                 'type'                  => Controls_Manager::COLOR,
                 'default'               => '',
                 'selectors'             => [
@@ -2246,7 +2246,7 @@ class GravityForms extends Widget_Base {
         $this->add_control(
             'validation_errors_bg_color',
             [
-                'label'                 => __( 'Error Field Background Color', 'px-elements'),
+                'label'                 => __( 'Error Field Background Color', 'pixerex-elements'),
                 'type'                  => Controls_Manager::COLOR,
                 'default'               => '',
                 'selectors'             => [
@@ -2261,7 +2261,7 @@ class GravityForms extends Widget_Base {
         $this->add_control(
             'validation_error_field_label_color',
             [
-                'label'                 => __( 'Error Field Label Color', 'px-elements'),
+                'label'                 => __( 'Error Field Label Color', 'pixerex-elements'),
                 'type'                  => Controls_Manager::COLOR,
                 'default'               => '',
                 'selectors'             => [
@@ -2276,7 +2276,7 @@ class GravityForms extends Widget_Base {
         $this->add_control(
             'validation_error_field_input_border_color',
             [
-                'label'                 => __( 'Error Field Input Border Color', 'px-elements'),
+                'label'                 => __( 'Error Field Input Border Color', 'pixerex-elements'),
                 'type'                  => Controls_Manager::COLOR,
                 'default'               => '',
                 'selectors'             => [
@@ -2291,7 +2291,7 @@ class GravityForms extends Widget_Base {
         $this->add_control(
             'validation_error_field_input_border_width',
             [
-                'label'                 => __( 'Error Field Input Border Width', 'px-elements'),
+                'label'                 => __( 'Error Field Input Border Width', 'pixerex-elements'),
                 'type'                  => Controls_Manager::NUMBER,
                 'default'               => 1,
                 'min'                   => 1,
@@ -2315,7 +2315,7 @@ class GravityForms extends Widget_Base {
         $this->start_controls_section(
             'section_ty_style',
             [
-                'label'                 => __( 'Thank You Message', 'px-elements'),
+                'label'                 => __( 'Thank You Message', 'pixerex-elements'),
                 'tab'                   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -2323,7 +2323,7 @@ class GravityForms extends Widget_Base {
         $this->add_control(
             'ty_message_text_color',
             [
-                'label'                 => __( 'Text Color', 'px-elements'),
+                'label'                 => __( 'Text Color', 'pixerex-elements'),
                 'type'                  => Controls_Manager::COLOR,
                 'default'               => '',
                 'selectors'             => [
@@ -2336,7 +2336,7 @@ class GravityForms extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name'                  => 'eaelgf_thankyou_message_typography',
-                'label'                 => __( 'Typography', 'px-elements'),
+                'label'                 => __( 'Typography', 'pixerex-elements'),
                 'scheme'                => Scheme_Typography::TYPOGRAPHY_4,
                 'selector'              => '{{WRAPPER}} .eael-gravity-form .gform_confirmation_wrapper .gform_confirmation_message',
 				'separator'             => 'before',

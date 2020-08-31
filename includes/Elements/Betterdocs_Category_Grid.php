@@ -26,7 +26,7 @@ class Betterdocs_Category_Grid extends Widget_Base
 
     public function get_title()
     {
-        return __('BetterDocs Category Grid', 'px-elements');
+        return __('BetterDocs Category Grid', 'pixerex-elements');
     }
 
     public function get_categories()
@@ -86,7 +86,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->start_controls_section(
                 'eael_global_warning',
                 [
-                    'label' => __('Warning!', 'px-elements'),
+                    'label' => __('Warning!', 'pixerex-elements'),
                 ]
             );
 
@@ -94,7 +94,7 @@ class Betterdocs_Category_Grid extends Widget_Base
                 'eael_global_warning_text',
                 [
                     'type' => Controls_Manager::RAW_HTML,
-                    'raw' => __('<strong>BetterDocs</strong> is not installed/activated on your site. Please install and activate <a href="plugin-install.php?s=BetterDocs&tab=search&type=term" target="_blank">BetterDocs</a> first.', 'px-elements'),
+                    'raw' => __('<strong>BetterDocs</strong> is not installed/activated on your site. Please install and activate <a href="plugin-install.php?s=BetterDocs&tab=search&type=term" target="_blank">BetterDocs</a> first.', 'pixerex-elements'),
                     'content_classes' => 'eael-warning',
                 ]
             );
@@ -116,14 +116,14 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->start_controls_section(
                 'select_layout',
                 [
-                    'label' => __('Layout Options', 'px-elements'),
+                    'label' => __('Layout Options', 'pixerex-elements'),
                 ]
             );
 
             $this->add_control(
                 'layout_template',
                 [
-                    'label' => __('Select Layout', 'px-elements'),
+                    'label' => __('Select Layout', 'pixerex-elements'),
                     'type' => Controls_Manager::SELECT2,
                     'options'   => $this->template_list(),
                     'default' => $this->get_default(),
@@ -134,12 +134,12 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_control(
                 'layout_mode',
                 [
-                    'label' => __('Layout Mode', 'px-elements'),
+                    'label' => __('Layout Mode', 'pixerex-elements'),
                     'type' => Controls_Manager::SELECT2,
                     'options' => [
-                        'grid'  => __('Grid', 'px-elements'),
-                        'fit-to-screen'  => __( 'Fit to Screen', 'px-elements' ),
-                        'masonry' => __('Masonry', 'px-elements'),
+                        'grid'  => __('Grid', 'pixerex-elements'),
+                        'fit-to-screen'  => __( 'Fit to Screen', 'pixerex-elements' ),
+                        'masonry' => __('Masonry', 'pixerex-elements'),
                     ],
                     'default' => 'grid',
                     'label_block' => true,
@@ -149,7 +149,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_responsive_control(
                 'grid_column',
                 [
-                    'label' => __('Grid Column', 'px-elements'),
+                    'label' => __('Grid Column', 'pixerex-elements'),
                     'type' => Controls_Manager::SELECT,
                     'default' => '3',
                     'tablet_default' => '2',
@@ -171,10 +171,10 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_control(
                 'show_header',
                 [
-                    'label' => __('Show Header', 'px-elements'),
+                    'label' => __('Show Header', 'pixerex-elements'),
                     'type' => Controls_Manager::SWITCHER,
-                    'label_on' => __('Show', 'px-elements'),
-                    'label_off' => __('Hide', 'px-elements'),
+                    'label_on' => __('Show', 'pixerex-elements'),
+                    'label_off' => __('Hide', 'pixerex-elements'),
                     'return_value' => 'true',
                     'default' => 'true',
                 ]
@@ -184,10 +184,10 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_control(
                 'show_icon',
                 [
-                    'label' => __('Show Icon', 'px-elements'),
+                    'label' => __('Show Icon', 'pixerex-elements'),
                     'type' => Controls_Manager::SWITCHER,
-                    'label_on' => __('Show', 'px-elements'),
-                    'label_off' => __('Hide', 'px-elements'),
+                    'label_on' => __('Show', 'pixerex-elements'),
+                    'label_off' => __('Hide', 'pixerex-elements'),
                     'return_value' => 'true',
                     'default' => 'true',
                     'condition' => [
@@ -199,10 +199,10 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_control(
                 'show_title',
                 [
-                    'label' => __('Show Title', 'px-elements'),
+                    'label' => __('Show Title', 'pixerex-elements'),
                     'type' => Controls_Manager::SWITCHER,
-                    'label_on' => __('Show', 'px-elements'),
-                    'label_off' => __('Hide', 'px-elements'),
+                    'label_on' => __('Show', 'pixerex-elements'),
+                    'label_off' => __('Hide', 'pixerex-elements'),
                     'return_value' => 'true',
                     'default' => 'true',
                     'condition' => [
@@ -214,19 +214,19 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_control(
                 'title_tag',
                 [
-                    'label' => __('Select Tag', 'px-elements'),
+                    'label' => __('Select Tag', 'pixerex-elements'),
                     'type' => Controls_Manager::SELECT,
                     'default' => 'h2',
                     'options' => [
-                        'h1' => __('H1', 'px-elements'),
-                        'h2' => __('H2', 'px-elements'),
-                        'h3' => __('H3', 'px-elements'),
-                        'h4' => __('H4', 'px-elements'),
-                        'h5' => __('H5', 'px-elements'),
-                        'h6' => __('H6', 'px-elements'),
-                        'span' => __('Span', 'px-elements'),
-                        'p' => __('P', 'px-elements'),
-                        'div' => __('Div', 'px-elements'),
+                        'h1' => __('H1', 'pixerex-elements'),
+                        'h2' => __('H2', 'pixerex-elements'),
+                        'h3' => __('H3', 'pixerex-elements'),
+                        'h4' => __('H4', 'pixerex-elements'),
+                        'h5' => __('H5', 'pixerex-elements'),
+                        'h6' => __('H6', 'pixerex-elements'),
+                        'span' => __('Span', 'pixerex-elements'),
+                        'p' => __('P', 'pixerex-elements'),
+                        'div' => __('Div', 'pixerex-elements'),
                     ],
                     'condition' => [
                         'show_title' => 'true',
@@ -238,10 +238,10 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_control(
                 'show_count',
                 [
-                    'label' => __('Show Count', 'px-elements'),
+                    'label' => __('Show Count', 'pixerex-elements'),
                     'type' => Controls_Manager::SWITCHER,
-                    'label_on' => __('Show', 'px-elements'),
-                    'label_off' => __('Hide', 'px-elements'),
+                    'label_on' => __('Show', 'pixerex-elements'),
+                    'label_off' => __('Hide', 'pixerex-elements'),
                     'return_value' => 'true',
                     'default' => 'true',
                     'condition' => [
@@ -254,10 +254,10 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_control(
                 'show_list',
                 [
-                    'label' => __('Show List', 'px-elements'),
+                    'label' => __('Show List', 'pixerex-elements'),
                     'type' => Controls_Manager::SWITCHER,
-                    'label_on' => __('Show', 'px-elements'),
-                    'label_off' => __('Hide', 'px-elements'),
+                    'label_on' => __('Show', 'pixerex-elements'),
+                    'label_off' => __('Hide', 'pixerex-elements'),
                     'return_value' => 'true',
                     'default' => 'true',
                 ]
@@ -266,10 +266,10 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_control(
                 'show_button',
                 [
-                    'label' => __('Show Button', 'px-elements'),
+                    'label' => __('Show Button', 'pixerex-elements'),
                     'type' => Controls_Manager::SWITCHER,
-                    'label_on' => __('Show', 'px-elements'),
-                    'label_off' => __('Hide', 'px-elements'),
+                    'label_on' => __('Show', 'pixerex-elements'),
+                    'label_off' => __('Hide', 'pixerex-elements'),
                     'return_value' => 'true',
                     'default' => 'true',
                 ]
@@ -278,9 +278,9 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_control(
                 'button_text',
                 [
-                    'label' => __('Button Text', 'px-elements'),
+                    'label' => __('Button Text', 'pixerex-elements'),
                     'type' => Controls_Manager::TEXT,
-                    'default' => __('Explore More', 'px-elements'),
+                    'default' => __('Explore More', 'pixerex-elements'),
                     'condition' => [
                         'show_button' => 'true',
                     ],
@@ -297,7 +297,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->start_controls_section(
                 'section_column_settings',
                 [
-                    'label' => __('Grid', 'px-elements'),
+                    'label' => __('Grid', 'pixerex-elements'),
                     'tab' => Controls_Manager::TAB_STYLE,
                 ]
             );
@@ -308,7 +308,7 @@ class Betterdocs_Category_Grid extends Widget_Base
                 // Normal State Tab
                 $this->start_controls_tab(
                     'grid_normal',
-                    ['label' => esc_html__('Normal', 'px-elements')]
+                    ['label' => esc_html__('Normal', 'pixerex-elements')]
                 );
 
                 $this->add_group_control(
@@ -324,7 +324,7 @@ class Betterdocs_Category_Grid extends Widget_Base
                     Group_Control_Box_Shadow::get_type(),
                     [
                         'name' => 'grid_box_shadow',
-                        'label' => __( 'Box Shadow', 'px-elements' ),
+                        'label' => __( 'Box Shadow', 'pixerex-elements' ),
                         'selector' => '{{WRAPPER}} .eael-better-docs-category-grid-wrapper .eael-bd-cg-inner',
                     ]
                 );
@@ -334,7 +334,7 @@ class Betterdocs_Category_Grid extends Widget_Base
                     Group_Control_Border::get_type(),
                     [
                         'name' => 'grid_border',
-                        'label' => __( 'Border', 'px-elements' ),
+                        'label' => __( 'Border', 'pixerex-elements' ),
                         'selector' => '{{WRAPPER}} .eael-better-docs-category-grid-wrapper .eael-bd-cg-inner',
                     ]
                 );
@@ -342,7 +342,7 @@ class Betterdocs_Category_Grid extends Widget_Base
                 $this->add_responsive_control(
                     'grid_border_radius',
                     [
-                        'label' => __( 'Border Radius', 'px-elements' ),
+                        'label' => __( 'Border Radius', 'pixerex-elements' ),
                         'type' => Controls_Manager::DIMENSIONS,
                         'size_units' => [ 'px', '%', 'em' ],
                         'selectors' => [
@@ -356,7 +356,7 @@ class Betterdocs_Category_Grid extends Widget_Base
                 // Hover State Tab
                 $this->start_controls_tab(
                     'grid_hover',
-                    ['label' => esc_html__('Hover', 'px-elements')]
+                    ['label' => esc_html__('Hover', 'pixerex-elements')]
                 );
 
                 $this->add_group_control(
@@ -372,7 +372,7 @@ class Betterdocs_Category_Grid extends Widget_Base
                     Group_Control_Box_Shadow::get_type(),
                     [
                         'name' => 'grid_hover_box_shadow',
-                        'label' => __( 'Box Shadow', 'px-elements' ),
+                        'label' => __( 'Box Shadow', 'pixerex-elements' ),
                         'selector' => '{{WRAPPER}} .eael-better-docs-category-grid-wrapper .eael-bd-cg-inner:hover',
                     ]
                 );
@@ -382,7 +382,7 @@ class Betterdocs_Category_Grid extends Widget_Base
                     Group_Control_Border::get_type(),
                     [
                         'name' => 'grid_hover_border',
-                        'label' => __( 'Border', 'px-elements' ),
+                        'label' => __( 'Border', 'pixerex-elements' ),
                         'selector' => '{{WRAPPER}} .eael-better-docs-category-grid-wrapper .eael-bd-cg-inner:hover',
                     ]
                 );
@@ -390,7 +390,7 @@ class Betterdocs_Category_Grid extends Widget_Base
                 $this->add_responsive_control(
                     'grid_hover_border_radius',
                     [
-                        'label' => __( 'Border Radius', 'px-elements' ),
+                        'label' => __( 'Border Radius', 'pixerex-elements' ),
                         'type' => Controls_Manager::DIMENSIONS,
                         'size_units' => [ 'px', '%', 'em' ],
                         'selectors' => [
@@ -406,7 +406,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_responsive_control(
                 'grid_padding',
                 [
-                    'label' => __( 'Grid Padding', 'px-elements' ),
+                    'label' => __( 'Grid Padding', 'pixerex-elements' ),
                     'type' => Controls_Manager::DIMENSIONS,
                     'size_units' => [ 'px', '%', 'em' ],
                     'selectors' => [
@@ -419,7 +419,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_responsive_control(
                 'column_padding', // Legacy control id
                 [
-                    'label' => __( 'Grid Spacing', 'px-elements' ),
+                    'label' => __( 'Grid Spacing', 'pixerex-elements' ),
                     'type' => Controls_Manager::DIMENSIONS,
                     'size_units' => [ 'px', '%', 'em' ],
                     'selectors' => [
@@ -434,7 +434,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->start_controls_section(
                 'section_icon_settings',
                 [
-                    'label' => __('Icon', 'px-elements'),
+                    'label' => __('Icon', 'pixerex-elements'),
                     'tab' => Controls_Manager::TAB_STYLE,
                     'condition' => [
                         'show_icon'    => 'true',
@@ -448,7 +448,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             // Normal State Tab
             $this->start_controls_tab(
                 'icon_normal',
-                ['label' => esc_html__('Normal', 'px-elements')]
+                ['label' => esc_html__('Normal', 'pixerex-elements')]
             );
 
             $this->add_group_control(
@@ -467,7 +467,7 @@ class Betterdocs_Category_Grid extends Widget_Base
                 Group_Control_Border::get_type(),
                 [
                     'name' => 'header_icon_border', // Legacy control name change it with 'border_size' if anything happens.
-                    'label' => __( 'Border', 'px-elements' ),
+                    'label' => __( 'Border', 'pixerex-elements' ),
                     'selector' => '{{WRAPPER}} .eael-bd-cg-header .eael-docs-cat-icon',
                 ]
             );
@@ -475,7 +475,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_control(
                 'header_icon_border_radius',
                 [
-                    'label' => __( 'Border Radius', 'px-elements' ),
+                    'label' => __( 'Border Radius', 'pixerex-elements' ),
                     'type' => Controls_Manager::DIMENSIONS,
                     'size_units' => [ 'px', '%', 'em' ],
                     'selectors' => [
@@ -489,7 +489,7 @@ class Betterdocs_Category_Grid extends Widget_Base
              // Hover State Tab
              $this->start_controls_tab(
                 'icon_hover',
-                ['label' => esc_html__('Hover', 'px-elements')]
+                ['label' => esc_html__('Hover', 'pixerex-elements')]
             );
 
             $this->add_group_control(
@@ -508,7 +508,7 @@ class Betterdocs_Category_Grid extends Widget_Base
                 Group_Control_Border::get_type(),
                 [
                     'name' => 'header_icon_border_hover', // Legacy control name change it with 'border_size' if anything happens.
-                    'label' => __( 'Border', 'px-elements' ),
+                    'label' => __( 'Border', 'pixerex-elements' ),
                     'selector' => '{{WRAPPER}} .eael-bd-cg-header .eael-docs-cat-icon:hover',
                 ]
             );
@@ -516,7 +516,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_control(
                 'header_icon_border_radius_hover',
                 [
-                    'label' => __( 'Border Radius', 'px-elements' ),
+                    'label' => __( 'Border Radius', 'pixerex-elements' ),
                     'type' => Controls_Manager::DIMENSIONS,
                     'size_units' => [ 'px', '%', 'em' ],
                     'selectors' => [
@@ -532,7 +532,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_responsive_control(
                 'header_icon_size',
                 [
-                    'label' => __('Size', 'px-elements'),
+                    'label' => __('Size', 'pixerex-elements'),
                     'type' => Controls_Manager::SLIDER,
                     'size_units' => ['px', '%', 'em'],
                     'range' => [
@@ -551,7 +551,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_responsive_control(
                 'header_icon_padding',
                 [
-                    'label' => esc_html__('Padding', 'px-elements'),
+                    'label' => esc_html__('Padding', 'pixerex-elements'),
                     'type' => Controls_Manager::DIMENSIONS,
                     'size_units' => ['px', 'em', '%'],
                     'selectors' => [
@@ -563,7 +563,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_responsive_control(
                 'header_icon_margin',
                 [
-                    'label' => esc_html__('Margin', 'px-elements'),
+                    'label' => esc_html__('Margin', 'pixerex-elements'),
                     'type' => Controls_Manager::DIMENSIONS,
                     'size_units' => ['px', 'em', '%'],
                     'selectors' => [
@@ -582,7 +582,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->start_controls_section(
                 'section_title_settings',
                 [
-                    'label' => __('Title', 'px-elements'),
+                    'label' => __('Title', 'pixerex-elements'),
                     'tab' => Controls_Manager::TAB_STYLE,
                     'condition' => [
                         'show_title'    => 'true'
@@ -603,13 +603,13 @@ class Betterdocs_Category_Grid extends Widget_Base
             // Normal State Tab
             $this->start_controls_tab(
                 'title_normal',
-                ['label' => esc_html__('Normal', 'px-elements')]
+                ['label' => esc_html__('Normal', 'pixerex-elements')]
             );
 
             $this->add_control(
                 'cat_title_color',
                 [
-                    'label' => esc_html__('Color', 'px-elements'),
+                    'label' => esc_html__('Color', 'pixerex-elements'),
                     'type' => Controls_Manager::COLOR,
                     'selectors' => [
                         '{{WRAPPER}} .eael-docs-cat-title' => 'color: {{VALUE}};',
@@ -633,7 +633,7 @@ class Betterdocs_Category_Grid extends Widget_Base
                 Group_Control_Border::get_type(),
                 [
                     'name' => 'title_border', // Legacy control name change it with 'border_size' if anything happens.
-                    'label' => __( 'Border', 'px-elements' ),
+                    'label' => __( 'Border', 'pixerex-elements' ),
                     'selector' => '{{WRAPPER}} .eael-bd-cg-header-inner, {{WRAPPER}} .layout-2 .eael-docs-cat-title',
                 ]
             );
@@ -641,7 +641,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_control(
                 'title_border_radius',
                 [
-                    'label' => __( 'Border Radius', 'px-elements' ),
+                    'label' => __( 'Border Radius', 'pixerex-elements' ),
                     'type' => Controls_Manager::DIMENSIONS,
                     'size_units' => [ 'px', '%', 'em' ],
                     'selectors' => [
@@ -656,13 +656,13 @@ class Betterdocs_Category_Grid extends Widget_Base
             // Hover State Tab
             $this->start_controls_tab(
                 'title_hover',
-                ['label' => esc_html__('Hover', 'px-elements')]
+                ['label' => esc_html__('Hover', 'pixerex-elements')]
             );
 
             $this->add_control(
                 'cat_title_color_hover',
                 [
-                    'label' => esc_html__('Color', 'px-elements'),
+                    'label' => esc_html__('Color', 'pixerex-elements'),
                     'type' => Controls_Manager::COLOR,
                     'selectors' => [
                         '{{WRAPPER}} .eael-docs-cat-title:hover' => 'color: {{VALUE}};',
@@ -686,7 +686,7 @@ class Betterdocs_Category_Grid extends Widget_Base
                 Group_Control_Border::get_type(),
                 [
                     'name' => 'title_border_hover', // Legacy control name change it with 'border_size' if anything happens.
-                    'label' => __( 'Border', 'px-elements' ),
+                    'label' => __( 'Border', 'pixerex-elements' ),
                     'selector' => '{{WRAPPER}} .eael-bd-cg-header-inner:hover, {{WRAPPER}} .layout-2 .eael-docs-cat-title:hover',
                 ]
             );
@@ -694,7 +694,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_control(
                 'title_border_radius_hover',
                 [
-                    'label' => __( 'Border Radius', 'px-elements' ),
+                    'label' => __( 'Border Radius', 'pixerex-elements' ),
                     'type' => Controls_Manager::DIMENSIONS,
                     'size_units' => [ 'px', '%', 'em' ],
                     'selectors' => [
@@ -714,7 +714,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_responsive_control(
                 'cat_title_padding',
                 [
-                    'label' => esc_html__('Padding', 'px-elements'),
+                    'label' => esc_html__('Padding', 'pixerex-elements'),
                     'type' => Controls_Manager::DIMENSIONS,
                     'size_units' => ['px', 'em', '%'],
                     'selectors' => [
@@ -728,7 +728,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_responsive_control(
                 'cat_title_margin',
                 [
-                    'label' => esc_html__('Margin', 'px-elements'),
+                    'label' => esc_html__('Margin', 'pixerex-elements'),
                     'type' => Controls_Manager::DIMENSIONS,
                     'size_units' => ['px', 'em', '%'],
                     'selectors' => [
@@ -749,7 +749,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->start_controls_section(
                 'section_count_settings',
                 [
-                    'label' => __('Count', 'px-elements'),
+                    'label' => __('Count', 'pixerex-elements'),
                     'tab' => Controls_Manager::TAB_STYLE,
                     'condition' => [
                         'show_count'    => 'true'
@@ -760,7 +760,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_control(
                 'count_color',
                 [
-                    'label' => esc_html__('Color', 'px-elements'),
+                    'label' => esc_html__('Color', 'pixerex-elements'),
                     'type' => Controls_Manager::COLOR,
                     'selectors' => [
                         '{{WRAPPER}} .eael-docs-item-count' => 'color: {{VALUE}};',
@@ -783,7 +783,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_control(
                 'count_ticker_color',
                 [
-                    'label' => esc_html__('Ticker Background', 'px-elements'),
+                    'label' => esc_html__('Ticker Background', 'pixerex-elements'),
                     'type' => Controls_Manager::COLOR,
                     'selectors' => [
                         '{{WRAPPER}} .layout-2 .eael-docs-item-count:after' => 'border-top-color: {{VALUE}};',
@@ -797,7 +797,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_responsive_control(
                 'count_font_size',
                 [
-                    'label' => __('Font Size', 'px-elements'),
+                    'label' => __('Font Size', 'pixerex-elements'),
                     'type' => Controls_Manager::SLIDER,
                     'size_units' => ['px', '%', 'em'],
                     'range' => [
@@ -815,7 +815,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_responsive_control(
                 'count_size',
                 [
-                    'label' => __('Size', 'px-elements'),
+                    'label' => __('Size', 'pixerex-elements'),
                     'type' => Controls_Manager::SLIDER,
                     'size_units' => ['px', '%', 'em'],
                     'range' => [
@@ -837,7 +837,7 @@ class Betterdocs_Category_Grid extends Widget_Base
                 Group_Control_Border::get_type(),
                 [
                     'name' => 'count_border', // Legacy control name change it with 'border_size' if anything happens.
-                    'label' => __( 'Border', 'px-elements' ),
+                    'label' => __( 'Border', 'pixerex-elements' ),
                     'selector' => '{{WRAPPER}} .eael-docs-item-count',
                     'condition' => [
                         'layout_template!' => 'Layout_2'
@@ -848,7 +848,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_control(
                 'count_border_radius',
                 [
-                    'label' => __( 'Border Radius', 'px-elements' ),
+                    'label' => __( 'Border Radius', 'pixerex-elements' ),
                     'type' => Controls_Manager::DIMENSIONS,
                     'size_units' => [ 'px', '%', 'em' ],
                     'selectors' => [
@@ -870,7 +870,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->start_controls_section(
                 'section_article_settings',
                 [
-                    'label' => __('List', 'px-elements'),
+                    'label' => __('List', 'pixerex-elements'),
                     'tab' => Controls_Manager::TAB_STYLE,
                     'condition' => [
                         'show_list' => 'true'
@@ -881,7 +881,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_control(
                 'list_settings_heading',
                 [
-                    'label' => esc_html__('List', 'px-elements'),
+                    'label' => esc_html__('List', 'pixerex-elements'),
                     'type' => Controls_Manager::HEADING,
                 ]
             );
@@ -897,7 +897,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_control(
                 'list_color',
                 [
-                    'label' => esc_html__('Color', 'px-elements'),
+                    'label' => esc_html__('Color', 'pixerex-elements'),
                     'type' => Controls_Manager::COLOR,
                     'selectors' => [
                         '{{WRAPPER}} .eael-bd-cg-body ul li a' => 'color: {{VALUE}};',
@@ -908,7 +908,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_control(
                 'list_hover_color',
                 [
-                    'label' => esc_html__('Hover Color', 'px-elements'),
+                    'label' => esc_html__('Hover Color', 'pixerex-elements'),
                     'type' => Controls_Manager::COLOR,
                     'selectors' => [
                         '{{WRAPPER}} .eael-bd-cg-body ul li a:hover' => 'color: {{VALUE}};',
@@ -919,7 +919,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_responsive_control(
                 'list_margin',
                 [
-                    'label' => esc_html__('List Item Spacing', 'px-elements'),
+                    'label' => esc_html__('List Item Spacing', 'pixerex-elements'),
                     'type' => Controls_Manager::DIMENSIONS,
                     'size_units' => ['px', 'em', '%'],
                     'selectors' => [
@@ -943,7 +943,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_responsive_control(
                 'list_area_padding',
                 [
-                    'label' => esc_html__('List Area Padding', 'px-elements'),
+                    'label' => esc_html__('List Area Padding', 'pixerex-elements'),
                     'type' => Controls_Manager::DIMENSIONS,
                     'allowed_dimensions' => 'vertical',
                     'size_units' => ['px', 'em', '%'],
@@ -956,7 +956,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_control(
                 'icon_settings_heading',
                 [
-                    'label' => esc_html__('Icon', 'px-elements'),
+                    'label' => esc_html__('Icon', 'pixerex-elements'),
                     'type' => Controls_Manager::HEADING,
                     'separator' => 'before',
                 ]
@@ -965,7 +965,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_control(
                 'list_icon',
                 [
-                    'label' => __( 'Icon', 'px-elements' ),
+                    'label' => __( 'Icon', 'pixerex-elements' ),
                     'type' => Controls_Manager::ICONS,
                     'default'   => [
                         'value'     => 'far fa-file-alt',
@@ -977,7 +977,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_control(
                 'list_icon_color',
                 [
-                    'label' => esc_html__('Color', 'px-elements'),
+                    'label' => esc_html__('Color', 'pixerex-elements'),
                     'type' => Controls_Manager::COLOR,
                     'selectors' => [
                         '{{WRAPPER}} .eael-bd-cg-body .eael-bd-cg-post-list-icon' => 'color: {{VALUE}};',
@@ -988,7 +988,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_responsive_control(
                 'list_icon_size',
                 [
-                    'label' => __('Size', 'px-elements'),
+                    'label' => __('Size', 'pixerex-elements'),
                     'type' => Controls_Manager::SLIDER,
                     'size_units' => ['px', '%', 'em'],
                     'range' => [
@@ -1007,7 +1007,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_responsive_control(
                 'list_icon_spacing',
                 [
-                    'label' => esc_html__('Spacing', 'px-elements'),
+                    'label' => esc_html__('Spacing', 'pixerex-elements'),
                     'type' => Controls_Manager::DIMENSIONS,
                     'size_units' => ['px', 'em', '%'],
                     'selectors' => [
@@ -1026,7 +1026,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->start_controls_section(
                 'section_nested_list_settings',
                 [
-                    'label' => __('Nested List', 'px-elements'),
+                    'label' => __('Nested List', 'pixerex-elements'),
                     'tab' => Controls_Manager::TAB_STYLE,
                     'condition' => [
                         'nested_subcategory' => 'true'
@@ -1037,7 +1037,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_control(
                 'section_nested_list_title',
                 [
-                    'label' => esc_html__('Title', 'px-elements'),
+                    'label' => esc_html__('Title', 'pixerex-elements'),
                     'type' => Controls_Manager::HEADING,
                 ]
             );
@@ -1053,7 +1053,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_control(
                 'nested_list_title_color',
                 [
-                    'label' => esc_html__('Color', 'px-elements'),
+                    'label' => esc_html__('Color', 'pixerex-elements'),
                     'type' => Controls_Manager::COLOR,
                     'selectors' => [
                         '{{WRAPPER}} .eael-bd-grid-sub-cat-title a' => 'color: {{VALUE}};',
@@ -1077,7 +1077,7 @@ class Betterdocs_Category_Grid extends Widget_Base
                 Group_Control_Border::get_type(),
                 [
                     'name' => 'nested_list_title_border',
-                    'label' => esc_html__('Border', 'px-elements'),
+                    'label' => esc_html__('Border', 'pixerex-elements'),
                     'selector' => '{{WRAPPER}} .eael-bd-grid-sub-cat-title'
                 ]
             );
@@ -1085,7 +1085,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_responsive_control(
                 'nested_list_title_spacing',
                 [
-                    'label' => esc_html__('Spacing', 'px-elements'),
+                    'label' => esc_html__('Spacing', 'pixerex-elements'),
                     'type' => Controls_Manager::DIMENSIONS,
                     'size_units' => ['px', 'em', '%'],
                     'selectors' => [
@@ -1097,7 +1097,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_control(
                 'section_nested_list_icon',
                 [
-                    'label' => esc_html__('Icon', 'px-elements'),
+                    'label' => esc_html__('Icon', 'pixerex-elements'),
                     'type' => Controls_Manager::HEADING,
                     'separator' => 'before'
                 ]
@@ -1106,7 +1106,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_control(
                 'nested_list_title_closed_icon',
                 [
-                    'label' => __( 'Collapse Icon', 'px-elements' ),
+                    'label' => __( 'Collapse Icon', 'pixerex-elements' ),
                     'type' => Controls_Manager::ICONS,
                     'default'   => [
                         'value'     => 'fas fa-angle-right',
@@ -1118,7 +1118,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_control(
                 'nested_list_title_open_icon',
                 [
-                    'label' => __( 'Open Icon', 'px-elements' ),
+                    'label' => __( 'Open Icon', 'pixerex-elements' ),
                     'type' => Controls_Manager::ICONS,
                     'default'   => [
                         'value'     => 'fas fa-angle-down',
@@ -1130,7 +1130,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_control(
                 'nested_list_icon_color',
                 [
-                    'label' => esc_html__('Color', 'px-elements'),
+                    'label' => esc_html__('Color', 'pixerex-elements'),
                     'type' => Controls_Manager::COLOR,
                     'selectors' => [
                         '{{WRAPPER}} .eael-bd-grid-sub-cat-title .toggle-arrow' => 'color: {{VALUE}};',
@@ -1141,7 +1141,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_responsive_control(
                 'nested_list_icon_size',
                 [
-                    'label' => __('Size', 'px-elements'),
+                    'label' => __('Size', 'pixerex-elements'),
                     'type' => Controls_Manager::SLIDER,
                     'size_units' => ['px', '%', 'em'],
                     'range' => [
@@ -1160,7 +1160,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_responsive_control(
                 'nested_list_icon_margin',
                 [
-                    'label' => esc_html__('Area Spacing', 'px-elements'),
+                    'label' => esc_html__('Area Spacing', 'pixerex-elements'),
                     'type' => Controls_Manager::DIMENSIONS,
                     'size_units' => ['px', 'em', '%'],
                     'selectors' => [
@@ -1181,7 +1181,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->start_controls_section(
                 'section_button_settings',
                 [
-                    'label' => __('Button', 'px-elements'),
+                    'label' => __('Button', 'pixerex-elements'),
                     'tab' => Controls_Manager::TAB_STYLE,
                     'condition' => [
                         'show_button'   => 'true'
@@ -1192,10 +1192,10 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_control(
                 'show_button_icon',
                 [
-                    'label' => __('Show Icon', 'px-elements'),
+                    'label' => __('Show Icon', 'pixerex-elements'),
                     'type' => Controls_Manager::SWITCHER,
-                    'label_on' => __('Show', 'px-elements'),
-                    'label_off' => __('Hide', 'px-elements'),
+                    'label_on' => __('Show', 'pixerex-elements'),
+                    'label_off' => __('Hide', 'pixerex-elements'),
                     'return_value' => 'true',
                     'default' => 'true'
                 ]
@@ -1204,7 +1204,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_control(
                 'button_icon',
                 [
-                    'label' => __( 'Icon', 'px-elements' ),
+                    'label' => __( 'Icon', 'pixerex-elements' ),
                     'type' => Controls_Manager::ICONS,
                     'default'   => [
                         'value' => 'fas fa-angle-right',
@@ -1219,12 +1219,12 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_control(
                 'icon_position',
                 [
-                    'label' => __('Icon Position', 'px-elements'),
+                    'label' => __('Icon Position', 'pixerex-elements'),
                     'type' => Controls_Manager::SELECT,
                     'default' => 'after',
                     'options' => [
-                        'before' => __( 'Before', 'px-elements' ),
-                        'after' => __( 'After', 'px-elements' )
+                        'before' => __( 'Before', 'pixerex-elements' ),
+                        'after' => __( 'After', 'pixerex-elements' )
                     ],
                     'condition' => [
                         'show_button_icon'  => 'true'
@@ -1239,7 +1239,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             // Normal State Tab
             $this->start_controls_tab(
                 'button_normal',
-                ['label' => esc_html__('Normal', 'px-elements')]
+                ['label' => esc_html__('Normal', 'pixerex-elements')]
             );
 
             $this->add_group_control(
@@ -1253,7 +1253,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_control(
                 'button_color_normal',
                 [
-                    'label' => esc_html__('Color', 'px-elements'),
+                    'label' => esc_html__('Color', 'pixerex-elements'),
                     'type' => Controls_Manager::COLOR,
                     'selectors' => [
                         '{{WRAPPER}} .eael-bd-cg-button' => 'color: {{VALUE}};',
@@ -1277,7 +1277,7 @@ class Betterdocs_Category_Grid extends Widget_Base
                 Group_Control_Border::get_type(),
                 [
                     'name' => 'button_border_normal',
-                    'label' => esc_html__('Border', 'px-elements'),
+                    'label' => esc_html__('Border', 'pixerex-elements'),
                     'selector' => '{{WRAPPER}} .eael-bd-cg-button',
                 ]
             );
@@ -1285,7 +1285,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_responsive_control(
                 'button_border_radius',
                 [
-                    'label' => esc_html__('Border Radius', 'px-elements'),
+                    'label' => esc_html__('Border Radius', 'pixerex-elements'),
                     'type' => Controls_Manager::DIMENSIONS,
                     'size_units' => ['px', 'em', '%'],
                     'selectors' => [
@@ -1297,7 +1297,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_responsive_control(
                 'button_padding',
                 [
-                    'label' => esc_html__('Padding', 'px-elements'),
+                    'label' => esc_html__('Padding', 'pixerex-elements'),
                     'type' => Controls_Manager::DIMENSIONS,
                     'size_units' => ['px', 'em', '%'],
                     'selectors' => [
@@ -1309,7 +1309,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_responsive_control(
                 'button_area_margin',
                 [
-                    'label' => esc_html__('Area Spacing', 'px-elements'),
+                    'label' => esc_html__('Area Spacing', 'pixerex-elements'),
                     'type' => Controls_Manager::DIMENSIONS,
                     'size_units' => ['px', 'em', '%'],
                     'selectors' => [
@@ -1323,13 +1323,13 @@ class Betterdocs_Category_Grid extends Widget_Base
             // Normal State Tab
             $this->start_controls_tab(
                 'button_hover',
-                ['label' => esc_html__('Hover', 'px-elements')]
+                ['label' => esc_html__('Hover', 'pixerex-elements')]
             );
 
             $this->add_control(
                 'button_color_hover',
                 [
-                    'label' => esc_html__('Color', 'px-elements'),
+                    'label' => esc_html__('Color', 'pixerex-elements'),
                     'type' => Controls_Manager::COLOR,
                     'selectors' => [
                         '{{WRAPPER}} .eael-bd-cg-button:hover' => 'color: {{VALUE}};',
@@ -1353,7 +1353,7 @@ class Betterdocs_Category_Grid extends Widget_Base
                 Group_Control_Border::get_type(),
                 [
                     'name' => 'button_border_hover',
-                    'label' => esc_html__('Border', 'px-elements'),
+                    'label' => esc_html__('Border', 'pixerex-elements'),
                     'selector' => '{{WRAPPER}} .eael-bd-cg-button:hover',
                 ]
             );
@@ -1361,7 +1361,7 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_responsive_control(
                 'button_hover_border_radius',
                 [
-                    'label' => esc_html__('Border Radius', 'px-elements'),
+                    'label' => esc_html__('Border Radius', 'pixerex-elements'),
                     'type' => Controls_Manager::DIMENSIONS,
                     'size_units' => ['px', 'em', '%'],
                     'selectors' => [
@@ -1377,19 +1377,19 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_responsive_control(
                 'button_text_alignment',
                 [
-                    'label' => __('Text Alignment', 'px-elements'),
+                    'label' => __('Text Alignment', 'pixerex-elements'),
                     'type' => Controls_Manager::CHOOSE,
                     'options' => [
                         'left' => [
-                            'title' => __('Left', 'px-elements'),
+                            'title' => __('Left', 'pixerex-elements'),
                             'icon' => 'fa fa-align-left',
                         ],
                         'center' => [
-                            'title' => __('Center', 'px-elements'),
+                            'title' => __('Center', 'pixerex-elements'),
                             'icon' => 'fa fa-align-center',
                         ],
                         'right' => [
-                            'title' => __('Right', 'px-elements'),
+                            'title' => __('Right', 'pixerex-elements'),
                             'icon' => 'fa fa-align-right',
                         ],
                     ],
@@ -1402,19 +1402,19 @@ class Betterdocs_Category_Grid extends Widget_Base
             $this->add_responsive_control(
                 'button_alignment',
                 [
-                    'label' => __('Button Alignment', 'px-elements'),
+                    'label' => __('Button Alignment', 'pixerex-elements'),
                     'type' => Controls_Manager::CHOOSE,
                     'options' => [
                         'left' => [
-                            'title' => __('Left', 'px-elements'),
+                            'title' => __('Left', 'pixerex-elements'),
                             'icon' => 'fa fa-align-left',
                         ],
                         'center' => [
-                            'title' => __('Center', 'px-elements'),
+                            'title' => __('Center', 'pixerex-elements'),
                             'icon' => 'fa fa-align-center',
                         ],
                         'right' => [
-                            'title' => __('Right', 'px-elements'),
+                            'title' => __('Right', 'pixerex-elements'),
                             'icon' => 'fa fa-align-right',
                         ],
                     ],
@@ -1496,13 +1496,13 @@ class Betterdocs_Category_Grid extends Widget_Base
                         $html .= ob_get_clean(); 
                     }
                 }else {
-                    _e('<p class="no-posts-found">No posts found!</p>', 'px-elements');
+                    _e('<p class="no-posts-found">No posts found!</p>', 'pixerex-elements');
                 }
 
                 wp_reset_postdata();
 
             }else {
-                $html .= '<h4>'.__( 'File Not Found', 'px-elements' ).'</h4>';
+                $html .= '<h4>'.__( 'File Not Found', 'pixerex-elements' ).'</h4>';
             }
             $html .= '</div>';
             $html .= '<div class="clearfix"></div>';

@@ -49,7 +49,7 @@ class Data_Table_Body extends WPML_Elementor_Module_With_Items
 	protected function get_title( $field ) {
 		switch($field) {
 			case 'eael_data_table_content_row_title':
-                return __( 'Data Table: Cell Text', 'px-elements' );
+                return __( 'Data Table: Cell Text', 'pixerex-elements' );
 
 			default:
 				return '';

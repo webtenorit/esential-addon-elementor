@@ -31,7 +31,7 @@ class Table_of_Content
         $element->start_controls_section(
             'eael_ext_table_of_content_section',
             [
-                'label' => __('<i class="eaicon-logo"></i> Table of Contents', 'px-elements'),
+                'label' => __('<i class="eaicon-logo"></i> Table of Contents', 'pixerex-elements'),
                 'tab' => Controls_Manager::TAB_SETTINGS,
             ]
         );
@@ -39,11 +39,11 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_table_of_content',
             [
-                'label' => __('Enable Table of Contents', 'px-elements'),
+                'label' => __('Enable Table of Contents', 'pixerex-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'default' => 'no',
-                'label_on' => __('Yes', 'px-elements'),
-                'label_off' => __('No', 'px-elements'),
+                'label_on' => __('Yes', 'pixerex-elements'),
+                'label_off' => __('No', 'pixerex-elements'),
                 'return_value' => 'yes',
             ]
         );
@@ -61,7 +61,7 @@ class Table_of_Content
                 'eael_ext_toc_global_warning_text',
                 [
                     'type' => Controls_Manager::RAW_HTML,
-                    'raw' => __('You can modify the Global Table of Contents by <strong><a href="' . get_bloginfo('url') . '/wp-admin/post.php?post=' . $global_settings['eael_ext_table_of_content']['post_id'] . '&action=elementor">Clicking Here</a></strong>', 'px-elements'),
+                    'raw' => __('You can modify the Global Table of Contents by <strong><a href="' . get_bloginfo('url') . '/wp-admin/post.php?post=' . $global_settings['eael_ext_table_of_content']['post_id'] . '&action=elementor">Clicking Here</a></strong>', 'pixerex-elements'),
                     'content_classes' => 'eael-warning',
                     'condition' => [
                         'eael_ext_table_of_content' => 'yes',
@@ -72,12 +72,12 @@ class Table_of_Content
             $element->add_control(
                 'eael_ext_toc_global',
                 [
-                    'label' => __('Enable Table of Contents Globally', 'px-elements'),
-                    'description' => __('Enabling this option will effect on entire site.', 'px-elements'),
+                    'label' => __('Enable Table of Contents Globally', 'pixerex-elements'),
+                    'description' => __('Enabling this option will effect on entire site.', 'pixerex-elements'),
                     'type' => Controls_Manager::SWITCHER,
                     'default' => 'no',
-                    'label_on' => __('Yes', 'px-elements'),
-                    'label_off' => __('No', 'px-elements'),
+                    'label_on' => __('Yes', 'pixerex-elements'),
+                    'label_off' => __('No', 'pixerex-elements'),
                     'return_value' => 'yes',
                     'condition' => [
                         'eael_ext_table_of_content' => 'yes',
@@ -88,13 +88,13 @@ class Table_of_Content
             $element->add_control(
                 'eael_ext_toc_global_display_condition',
                 [
-                    'label' => __('Display On', 'px-elements'),
+                    'label' => __('Display On', 'pixerex-elements'),
                     'type' => Controls_Manager::SELECT,
                     'default' => 'all',
                     'options' => [
-                        'posts' => __('All Posts', 'px-elements'),
-                        'pages' => __('All Pages', 'px-elements'),
-                        'all' => __('All Posts & Pages', 'px-elements'),
+                        'posts' => __('All Posts', 'pixerex-elements'),
+                        'pages' => __('All Pages', 'pixerex-elements'),
+                        'all' => __('All Posts & Pages', 'pixerex-elements'),
                     ],
                     'condition' => [
                         'eael_ext_table_of_content' => 'yes',
@@ -107,9 +107,9 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_title',
             [
-                'label' => __('Title', 'px-elements'),
+                'label' => __('Title', 'pixerex-elements'),
                 'type' => Controls_Manager::TEXT,
-                'default' => __('Table of Contents', 'px-elements'),
+                'default' => __('Table of Contents', 'pixerex-elements'),
                 'label_block' => false,
                 'condition' => [
                     'eael_ext_table_of_content' => 'yes',
@@ -121,7 +121,7 @@ class Table_of_Content
 
         $element->start_controls_tab( 'eael_toc_include',
             [
-                'label' => __( 'Include', 'px-elements' ),
+                'label' => __( 'Include', 'pixerex-elements' ),
                 'condition' => [
                     'eael_ext_table_of_content' => 'yes',
                 ]
@@ -131,7 +131,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_supported_heading_tag',
             [
-                'label' => __('Supported Heading Tag', 'px-elements'),
+                'label' => __('Supported Heading Tag', 'pixerex-elements'),
                 'type' => Controls_Manager::SELECT2,
                 'multiple' => true,
                 'label_block' => true,
@@ -143,12 +143,12 @@ class Table_of_Content
                     'h6',
                 ],
                 'options' => [
-                    'h1' => __('H1', 'px-elements'),
-                    'h2' => __('H2', 'px-elements'),
-                    'h3' => __('H3', 'px-elements'),
-                    'h4' => __('H4', 'px-elements'),
-                    'h5' => __('H5', 'px-elements'),
-                    'h6' => __('H6', 'px-elements'),
+                    'h1' => __('H1', 'pixerex-elements'),
+                    'h2' => __('H2', 'pixerex-elements'),
+                    'h3' => __('H3', 'pixerex-elements'),
+                    'h4' => __('H4', 'pixerex-elements'),
+                    'h5' => __('H5', 'pixerex-elements'),
+                    'h6' => __('H6', 'pixerex-elements'),
                 ],
                 'render_type' => 'none',
                 'condition' => [
@@ -160,9 +160,9 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_content_selector',
             [
-                'label' => __('Content Selector', 'px-elements'),
+                'label' => __('Content Selector', 'pixerex-elements'),
                 'type' => Controls_Manager::TEXT,
-                'description' => __('Which content are searched for heading tag, Provide unique selector to replace default selector', 'px-elements'),
+                'description' => __('Which content are searched for heading tag, Provide unique selector to replace default selector', 'pixerex-elements'),
                 'label_block' => false,
                 'condition' => [
                     'eael_ext_table_of_content' => 'yes',
@@ -174,7 +174,7 @@ class Table_of_Content
 
         $element->start_controls_tab( 'eael_toc_exclude',
             [
-                'label' => __( 'Exclude', 'px-elements' ),
+                'label' => __( 'Exclude', 'pixerex-elements' ),
                 'condition' => [
                     'eael_ext_table_of_content' => 'yes',
                 ]
@@ -184,9 +184,9 @@ class Table_of_Content
         $element->add_control(
             'eael_toc_exclude_selector',
             [
-                'label' => __( 'Exclude By Selector', 'px-elements' ),
+                'label' => __( 'Exclude By Selector', 'pixerex-elements' ),
                 'type' => Controls_Manager::TEXT,
-                'description' => __( 'CSS selectors, in a comma-separated list', 'px-elements' ),
+                'description' => __( 'CSS selectors, in a comma-separated list', 'pixerex-elements' ),
                 'default' => '',
                 'label_block' => true,
                 'condition' => [
@@ -202,11 +202,11 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_collapse_sub_heading',
             [
-                'label' => __('Keep Sub Heading Collapsed', 'px-elements'),
+                'label' => __('Keep Sub Heading Collapsed', 'pixerex-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'default' => 'yes',
-                'label_on' => __('Yes', 'px-elements'),
-                'label_off' => __('No', 'px-elements'),
+                'label_on' => __('Yes', 'pixerex-elements'),
+                'label_off' => __('No', 'pixerex-elements'),
                 'return_value' => 'yes',
                 'condition' => [
                     'eael_ext_table_of_content' => 'yes',
@@ -217,11 +217,11 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_use_title_in_url',
             [
-                'label' => __('Heading Text in URL', 'px-elements'),
+                'label' => __('Heading Text in URL', 'pixerex-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'default' => 'no',
-                'label_on' => __('Yes', 'px-elements'),
-                'label_off' => __('No', 'px-elements'),
+                'label_on' => __('Yes', 'pixerex-elements'),
+                'label_off' => __('No', 'pixerex-elements'),
                 'return_value' => 'yes',
                 'condition' => [
                     'eael_ext_table_of_content' => 'yes',
@@ -232,11 +232,11 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_word_wrap',
             [
-                'label' => __('Stop Word Wrap', 'px-elements'),
+                'label' => __('Stop Word Wrap', 'pixerex-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'default' => 'no',
-                'label_on' => __('Yes', 'px-elements'),
-                'label_off' => __('No', 'px-elements'),
+                'label_on' => __('Yes', 'pixerex-elements'),
+                'label_off' => __('No', 'pixerex-elements'),
                 'return_value' => 'yes',
                 'condition' => [
                     'eael_ext_table_of_content' => 'yes',
@@ -247,11 +247,11 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_auto_collapse',
             [
-                'label' => __('TOC Auto Collapse', 'px-elements'),
+                'label' => __('TOC Auto Collapse', 'pixerex-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'default' => 'yes',
-                'label_on' => __('Yes', 'px-elements'),
-                'label_off' => __('No', 'px-elements'),
+                'label_on' => __('Yes', 'pixerex-elements'),
+                'label_off' => __('No', 'pixerex-elements'),
                 'return_value' => 'yes',
                 'condition' => [
                     'eael_ext_table_of_content' => 'yes',
@@ -262,11 +262,11 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_hide_in_mobile',
             [
-                'label' => __('Hide TOC in mobile', 'px-elements'),
+                'label' => __('Hide TOC in mobile', 'pixerex-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'default' => 'no',
-                'label_on' => __('Yes', 'px-elements'),
-                'label_off' => __('No', 'px-elements'),
+                'label_on' => __('Yes', 'pixerex-elements'),
+                'label_off' => __('No', 'pixerex-elements'),
                 'return_value' => 'yes',
                 'condition' => [
                     'eael_ext_table_of_content' => 'yes',
@@ -277,7 +277,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_sticky_scroll',
             [
-                'label' => __('Sticky Scroll Effect', 'px-elements'),
+                'label' => __('Sticky Scroll Effect', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => ['px'],
                 'range' => [
@@ -300,7 +300,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_sticky_offset',
             [
-                'label' => __('Sticky Top Offset', 'px-elements'),
+                'label' => __('Sticky Top Offset', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => ['px'],
                 'range' => [
@@ -326,7 +326,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_sticky_z_index',
             [
-                'label' => __('Z Index', 'px-elements'),
+                'label' => __('Z Index', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => ['px'],
                 'range' => [
@@ -353,7 +353,7 @@ class Table_of_Content
             'eael_ext_toc_ad_warning_text',
             [
                 'type' => Controls_Manager::RAW_HTML,
-                'raw' => __('Need more information about TOC <strong><a href="https://essential-addons.com/elementor/docs/table-of-content/" class="eael-btn" target="_blank">Visit documentation</a></strong>', 'px-elements'),
+                'raw' => __('Need more information about TOC <strong><a href="https://essential-addons.com/elementor/docs/table-of-content/" class="eael-btn" target="_blank">Visit documentation</a></strong>', 'pixerex-elements'),
                 'content_classes' => 'eael-warning',
                 'separator' => 'before',
                 'condition' => [
@@ -367,7 +367,7 @@ class Table_of_Content
         $element->start_controls_section(
             'eael_ext_toc_main',
             [
-                'label' => esc_html__('EA TOC', 'px-elements'),
+                'label' => esc_html__('EA TOC', 'pixerex-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'eael_ext_table_of_content' => 'yes',
@@ -378,7 +378,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_width',
             [
-                'label' => __('Width', 'px-elements'),
+                'label' => __('Width', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => ['px'],
                 'range' => [
@@ -404,13 +404,13 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_position',
             [
-                'label' => __('Position', 'px-elements'),
+                'label' => __('Position', 'pixerex-elements'),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'left',
                 'label_block' => false,
                 'options' => [
-                    'left' => __('Left', 'px-elements'),
-                    'right' => __('Right', 'px-elements'),
+                    'left' => __('Left', 'pixerex-elements'),
+                    'right' => __('Right', 'pixerex-elements'),
                 ],
                 'separator' => 'before',
                 'condition' => [
@@ -422,13 +422,13 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_list_icon',
             [
-                'label' => __('List Icon', 'px-elements'),
+                'label' => __('List Icon', 'pixerex-elements'),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'bullet',
                 'label_block' => false,
                 'options' => [
-                    'bullet' => __('Bullet', 'px-elements'),
-                    'number' => __('Number', 'px-elements'),
+                    'bullet' => __('Bullet', 'pixerex-elements'),
+                    'number' => __('Number', 'pixerex-elements'),
                 ],
                 'condition' => [
                     'eael_ext_table_of_content' => 'yes',
@@ -439,7 +439,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_box_list_bullet_size',
             [
-                'label' => __('Bullet Size', 'px-elements'),
+                'label' => __('Bullet Size', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => ['px'],
                 'range' => [
@@ -465,7 +465,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_box_list_top_position',
             [
-                'label' => __('Top Position', 'px-elements'),
+                'label' => __('Top Position', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => ['px'],
                 'range' => [
@@ -492,7 +492,7 @@ class Table_of_Content
             Group_Control_Border::get_type(),
             [
                 'name' => 'eael_ext_toc_border',
-                'label' => __('Border', 'px-elements'),
+                'label' => __('Border', 'pixerex-elements'),
                 'selector' => '{{WRAPPER}} .eael-toc,{{WRAPPER}} button.eael-toc-button',
                 'condition' => [
                     'eael_ext_table_of_content' => 'yes',
@@ -504,7 +504,7 @@ class Table_of_Content
             Group_Control_Box_Shadow::get_type(),
             [
                 'name' => 'eael_ext_toc_table_box_shadow',
-                'label' => __('Box Shadow', 'px-elements'),
+                'label' => __('Box Shadow', 'pixerex-elements'),
                 'selector' => '{{WRAPPER}} .eael-toc:not(.collapsed)',
                 'condition' => [
                     'eael_ext_table_of_content' => 'yes',
@@ -515,7 +515,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_box_border_radius',
             [
-                'label' => __('Border Radius', 'px-elements'),
+                'label' => __('Border Radius', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => ['px'],
                 'range' => [
@@ -549,7 +549,7 @@ class Table_of_Content
         $element->start_controls_section(
             'eael_ext_table_of_content_header_style',
             [
-                'label' => esc_html__('EA TOC Header', 'px-elements'),
+                'label' => esc_html__('EA TOC Header', 'pixerex-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'eael_ext_table_of_content' => 'yes',
@@ -560,7 +560,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_table_of_content_header_bg',
             [
-                'label' => __('Background Color', 'px-elements'),
+                'label' => __('Background Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#ff7d50',
                 'selectors' => [
@@ -573,7 +573,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_table_of_content_header_text_color',
             [
-                'label' => __('Text Color', 'px-elements'),
+                'label' => __('Text Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#ffffff',
                 'selectors' => [
@@ -595,7 +595,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_header_padding',
             [
-                'label' => esc_html__('Padding', 'px-elements'),
+                'label' => esc_html__('Padding', 'pixerex-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px'],
                 'selectors' => [
@@ -607,7 +607,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_header_collapse_close_button',
             [
-                'label' => __('Collapse', 'px-elements'),
+                'label' => __('Collapse', 'pixerex-elements'),
                 'type' => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -616,7 +616,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_table_of_content_header_icon',
             [
-                'label' => __('Icon', 'px-elements'),
+                'label' => __('Icon', 'pixerex-elements'),
                 'type' => Controls_Manager::ICONS,
                 'label_block' => true,
                 'default' => [
@@ -630,12 +630,12 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_close_button_text_style',
             [
-                'label' => __('Text Orientation', 'px-elements'),
+                'label' => __('Text Orientation', 'pixerex-elements'),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'top_to_bottom',
                 'options' => [
-                    'top_to_bottom' => __('Top to Bottom', 'px-elements'),
-                    'bottom_to_top' => __('Bottom to Top', 'px-elements'),
+                    'top_to_bottom' => __('Top to Bottom', 'pixerex-elements'),
+                    'bottom_to_top' => __('Bottom to Top', 'pixerex-elements'),
                 ],
             ]
         );
@@ -643,7 +643,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_table_of_content_close_button',
             [
-                'label' => __('Close Button', 'px-elements'),
+                'label' => __('Close Button', 'pixerex-elements'),
                 'type' => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -652,7 +652,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_table_of_content_close_button_icon_size',
             [
-                'label'      => __('Icon Size', 'px-elements'),
+                'label'      => __('Icon Size', 'pixerex-elements'),
                 'type'       => Controls_Manager::SLIDER,
                 'size_units' => ['px'],
                 'range'      => [
@@ -670,7 +670,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_table_of_content_close_button_size',
             [
-                'label'      => __('Button Size', 'px-elements'),
+                'label'      => __('Button Size', 'pixerex-elements'),
                 'type'       => Controls_Manager::SLIDER,
                 'size_units' => ['px'],
                 'range'      => [
@@ -688,7 +688,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_table_of_content_close_button_line_height',
             [
-                'label'      => __('Line Height', 'px-elements'),
+                'label'      => __('Line Height', 'pixerex-elements'),
                 'type'       => Controls_Manager::SLIDER,
                 'size_units' => ['px'],
                 'range'      => [
@@ -706,7 +706,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_table_of_content_close_button_bg',
             [
-                'label' => __('Background Color', 'px-elements'),
+                'label' => __('Background Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#ffffff',
                 'selectors' => [
@@ -718,7 +718,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_table_of_content_close_button_text_color',
             [
-                'label' => __('Close Button Color', 'px-elements'),
+                'label' => __('Close Button Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#ff7d50',
                 'selectors' => [
@@ -730,7 +730,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_table_of_content_close_button_border_radius',
             [
-                'label'      => __('Border Radius', 'px-elements'),
+                'label'      => __('Border Radius', 'pixerex-elements'),
                 'type'       => Controls_Manager::SLIDER,
                 'size_units' => ['px'],
                 'range'      => [
@@ -749,7 +749,7 @@ class Table_of_Content
             Group_Control_Box_Shadow::get_type(),
             [
                 'name'     => 'eael_ext_table_of_content_close_button_box_shadow',
-                'label'    => __('Box Shadow', 'px-elements'),
+                'label'    => __('Box Shadow', 'pixerex-elements'),
                 'selector' => '{{WRAPPER}} .eael-toc .eael-toc-close',
             ]
         );
@@ -759,7 +759,7 @@ class Table_of_Content
         $element->start_controls_section(
             'eael_ext_table_of_content_list_style_section',
             [
-                'label' => esc_html__('EA TOC Body', 'px-elements'),
+                'label' => esc_html__('EA TOC Body', 'pixerex-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'eael_ext_table_of_content' => 'yes',
@@ -770,7 +770,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_table_of_content_body_bg',
             [
-                'label' => __('Background Color', 'px-elements'),
+                'label' => __('Background Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#fff6f3',
                 'selectors' => [
@@ -783,7 +783,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_body_padding',
             [
-                'label' => esc_html__('Padding', 'px-elements'),
+                'label' => esc_html__('Padding', 'pixerex-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px'],
                 'selectors' => [
@@ -795,7 +795,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_table_of_content_list_style_separator',
             [
-                'label' => __('List', 'px-elements'),
+                'label' => __('List', 'pixerex-elements'),
                 'type' => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -804,13 +804,13 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_table_of_content_list_style',
             [
-                'label' => __('Indicator Style', 'px-elements'),
+                'label' => __('Indicator Style', 'pixerex-elements'),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'none',
                 'options' => [
-                    'none' => __('None', 'px-elements'),
-                    'arrow' => __('Arrow', 'px-elements'),
-                    'bar' => __('Bar', 'px-elements'),
+                    'none' => __('None', 'pixerex-elements'),
+                    'arrow' => __('Arrow', 'pixerex-elements'),
+                    'bar' => __('Bar', 'pixerex-elements'),
                 ],
             ]
         );
@@ -818,7 +818,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_indicator_size',
             [
-                'label' => __('Indicator Size', 'px-elements'),
+                'label' => __('Indicator Size', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => ['px'],
                 'range' => [
@@ -844,7 +844,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_indicator_position',
             [
-                'label' => __('Indicator Position', 'px-elements'),
+                'label' => __('Indicator Position', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => ['px'],
                 'range' => [
@@ -881,14 +881,14 @@ class Table_of_Content
 
         $element->start_controls_tab('normal',
             [
-                'label' => __('Normal', 'px-elements'),
+                'label' => __('Normal', 'pixerex-elements'),
             ]
         );
 
         $element->add_control(
             'eael_ext_table_of_content_list_text_color',
             [
-                'label' => __('Text Color', 'px-elements'),
+                'label' => __('Text Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#707070',
                 'selectors' => [
@@ -904,14 +904,14 @@ class Table_of_Content
 
         $element->start_controls_tab('hover',
             [
-                'label' => __('Hover', 'px-elements'),
+                'label' => __('Hover', 'pixerex-elements'),
             ]
         );
 
         $element->add_control(
             'eael_ext_table_of_list_hover_color',
             [
-                'label' => __('Text Color', 'px-elements'),
+                'label' => __('Text Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#ff7d50',
                 'selectors' => [
@@ -930,14 +930,14 @@ class Table_of_Content
 
         $element->start_controls_tab('active',
             [
-                'label' => __('Active', 'px-elements'),
+                'label' => __('Active', 'pixerex-elements'),
             ]
         );
 
         $element->add_control(
             'eael_ext_table_of_content_list_text_color_active',
             [
-                'label' => __('Text Color', 'px-elements'),
+                'label' => __('Text Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#ff7d50',
                 'selectors' => [
@@ -961,7 +961,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_top_level_space',
             [
-                'label' => __('Top Level Space', 'px-elements'),
+                'label' => __('Top Level Space', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => ['px'],
                 'range' => [
@@ -987,7 +987,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_subitem_level_space',
             [
-                'label' => __('Sub Item Space', 'px-elements'),
+                'label' => __('Sub Item Space', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => ['px'],
                 'range' => [
@@ -1013,7 +1013,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_table_of_content_list_separator',
             [
-                'label' => __('Separator', 'px-elements'),
+                'label' => __('Separator', 'pixerex-elements'),
                 'type' => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -1022,14 +1022,14 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_table_of_content_list_separator_style',
             [
-                'label' => __('Style', 'px-elements'),
+                'label' => __('Style', 'pixerex-elements'),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'dashed',
                 'options' => [
-                    'solid' => __('Solid', 'px-elements'),
-                    'dashed' => __('Dashed', 'px-elements'),
-                    'dotted' => __('Dotted', 'px-elements'),
-                    'none' => __('None', 'px-elements'),
+                    'solid' => __('Solid', 'pixerex-elements'),
+                    'dashed' => __('Dashed', 'pixerex-elements'),
+                    'dotted' => __('Dotted', 'pixerex-elements'),
+                    'none' => __('None', 'pixerex-elements'),
                 ],
                 'selectors' => [
                     '{{WRAPPER}} .eael-toc .eael-toc-body .eael-toc-list > li:not(:last-child)' => 'border-bottom: 0.5px {{VALUE}}',
@@ -1040,7 +1040,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_table_of_content_list_separator_color',
             [
-                'label' => __('Color', 'px-elements'),
+                'label' => __('Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .eael-toc .eael-toc-body .eael-toc-list > li:not(:last-child)' => 'border-bottom-color: {{VALUE}}',

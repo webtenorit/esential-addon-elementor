@@ -18,7 +18,7 @@ trait Core
      */
     public function i18n()
     {
-        load_plugin_textdomain('px-elements');
+        load_plugin_textdomain('pixerex-elements');
     }
 
     /**
@@ -45,11 +45,11 @@ trait Core
     public function insert_plugin_links($links)
     {
         // settings
-        $links[] = sprintf('<a href="admin.php?page=eael-settings">' . __('Settings', 'px-elements') . '</a>');
+        $links[] = sprintf('<a href="admin.php?page=eael-settings">' . __('Settings', 'pixerex-elements') . '</a>');
 
         // go pro
         if (!$this->pro_enabled) {
-            $links[] = sprintf('<a href="https://wpdeveloper.net/in/upgrade-essential-addons-elementor" target="_blank" style="color: #39b54a; font-weight: bold;">' . __('Go Pro', 'px-elements') . '</a>');
+            $links[] = sprintf('<a href="https://wpdeveloper.net/in/upgrade-essential-addons-elementor" target="_blank" style="color: #39b54a; font-weight: bold;">' . __('Go Pro', 'pixerex-elements') . '</a>');
         }
 
         return $links;
@@ -64,10 +64,10 @@ trait Core
     {
         if (EAEL_PLUGIN_BASENAME == $file) {
             // docs & faq
-            $links[] = sprintf('<a href="https://essential-addons.com/elementor/docs/?utm_medium=admin&utm_source=wp.org&utm_term=ea" target="_blank">' . __('Docs & FAQs', 'px-elements') . '</a>');
+            $links[] = sprintf('<a href="https://essential-addons.com/elementor/docs/?utm_medium=admin&utm_source=wp.org&utm_term=ea" target="_blank">' . __('Docs & FAQs', 'pixerex-elements') . '</a>');
 
             // video tutorials
-            $links[] = sprintf('<a href="https://www.youtube.com/channel/UCOjzLEdsnpnFVkm1JKFurPA?utm_medium=admin&utm_source=wp.org&utm_term=ea" target="_blank">' . __('Video Tutorials','px-elements') . '</a>');
+            $links[] = sprintf('<a href="https://www.youtube.com/channel/UCOjzLEdsnpnFVkm1JKFurPA?utm_medium=admin&utm_source=wp.org&utm_term=ea" target="_blank">' . __('Video Tutorials','pixerex-elements') . '</a>');
         }
 
         return $links;
@@ -105,14 +105,14 @@ trait Core
         if ($this->is_plugin_installed($elementor)) {
             $activation_url = wp_nonce_url('plugins.php?action=activate&amp;plugin=' . $elementor . '&amp;plugin_status=all&amp;paged=1&amp;s', 'activate-plugin_' . $elementor);
             
-            $message = sprintf( __('%1$sEssential Addons for Elementor%2$s requires %1$sElementor%2$s plugin to be active. Please activate Elementor to continue.', 'px-elements'), "<strong>", "</strong>");
+            $message = sprintf( __('%1$sEssential Addons for Elementor%2$s requires %1$sElementor%2$s plugin to be active. Please activate Elementor to continue.', 'pixerex-elements'), "<strong>", "</strong>");
 
-            $button_text = __('Activate Elementor', 'px-elements');
+            $button_text = __('Activate Elementor', 'pixerex-elements');
         } else {
             $activation_url = wp_nonce_url(self_admin_url('update.php?action=install-plugin&plugin=elementor'), 'install-plugin_elementor');
 
-            $message = sprintf(__('%1$sEssential Addons for Elementor%2$s requires %1$sElementor%2$s plugin to be installed and activated. Please install Elementor to continue.', 'px-elements'), '<strong>', '</strong>');
-            $button_text = __('Install Elementor', 'px-elements');
+            $message = sprintf(__('%1$sEssential Addons for Elementor%2$s requires %1$sElementor%2$s plugin to be installed and activated. Please install Elementor to continue.', 'pixerex-elements'), '<strong>', '</strong>');
+            $button_text = __('Install Elementor', 'pixerex-elements');
         }
 
         $button = '<p><a href="' . $activation_url . '" class="button-primary">' . $button_text . '</a></p>';

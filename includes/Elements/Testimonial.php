@@ -20,7 +20,7 @@ class Testimonial extends Widget_Base {
 	}
 
 	public function get_title() {
-		return esc_html__( 'Testimonial', 'px-elements');
+		return esc_html__( 'Testimonial', 'pixerex-elements');
 	}
 
 	public function get_icon() {
@@ -78,14 +78,14 @@ class Testimonial extends Widget_Base {
   		$this->start_controls_section(
   			'eael_section_testimonial_image',
   			[
-  				'label' => esc_html__( 'Testimonial Image', 'px-elements')
+  				'label' => esc_html__( 'Testimonial Image', 'pixerex-elements')
   			]
   		);
 
 		$this->add_control(
 			'eael_testimonial_enable_avatar',
 			[
-				'label' => esc_html__( 'Display Avatar?', 'px-elements'),
+				'label' => esc_html__( 'Display Avatar?', 'pixerex-elements'),
 				'type' => Controls_Manager::SWITCHER,
 				'default' => 'yes',
 			]
@@ -94,7 +94,7 @@ class Testimonial extends Widget_Base {
 		$this->add_control(
 			'image',
 			[
-				'label' => __( 'Testimonial Avatar', 'px-elements'),
+				'label' => __( 'Testimonial Avatar', 'pixerex-elements'),
 				'type' => Controls_Manager::MEDIA,
 				'default' => [
 					'url' => Utils::get_placeholder_image_src(),
@@ -124,16 +124,16 @@ class Testimonial extends Widget_Base {
   		$this->start_controls_section(
   			'eael_section_testimonial_content',
   			[
-  				'label' => esc_html__( 'Testimonial Content', 'px-elements')
+  				'label' => esc_html__( 'Testimonial Content', 'pixerex-elements')
   			]
   		);
 
 		$this->add_control(
 			'eael_testimonial_name',
 			[
-				'label' => esc_html__( 'User Name', 'px-elements'),
+				'label' => esc_html__( 'User Name', 'pixerex-elements'),
 				'type' => Controls_Manager::TEXT,
-				'default' => esc_html__( 'John Doe', 'px-elements'),
+				'default' => esc_html__( 'John Doe', 'pixerex-elements'),
 				'dynamic' => [ 'active' => true ]
 			]
 		);
@@ -141,9 +141,9 @@ class Testimonial extends Widget_Base {
 		$this->add_control(
 			'eael_testimonial_company_title',
 			[
-				'label' => esc_html__( 'Company Name', 'px-elements'),
+				'label' => esc_html__( 'Company Name', 'pixerex-elements'),
 				'type' => Controls_Manager::TEXT,
-				'default' => esc_html__( 'Codetic', 'px-elements'),
+				'default' => esc_html__( 'Codetic', 'pixerex-elements'),
 				'dynamic' => [ 'active' => true ]
 			]
 		);
@@ -151,16 +151,16 @@ class Testimonial extends Widget_Base {
 		$this->add_control(
 			'eael_testimonial_description',
 			[
-				'label' => esc_html__( 'Testimonial Description', 'px-elements'),
+				'label' => esc_html__( 'Testimonial Description', 'pixerex-elements'),
 				'type' => Controls_Manager::WYSIWYG,
-				'default' => esc_html__( 'Add testimonial description here. Edit and place your own text.', 'px-elements'),
+				'default' => esc_html__( 'Add testimonial description here. Edit and place your own text.', 'pixerex-elements'),
 			]
 		);
 
 		$this->add_control(
 			'content_height',
 			[
-				'label' => esc_html__( 'Description Height', 'px-elements'),
+				'label' => esc_html__( 'Description Height', 'pixerex-elements'),
 				'type' => Controls_Manager::SLIDER,
 				'size_units'	=> ['px', '%', 'em'],
 				'range' => [
@@ -177,7 +177,7 @@ class Testimonial extends Widget_Base {
 		$this->add_control(
 			'eael_testimonial_enable_rating',
 			[
-				'label' => esc_html__( 'Display Rating?', 'px-elements'),
+				'label' => esc_html__( 'Display Rating?', 'pixerex-elements'),
 				'type' => Controls_Manager::SWITCHER,
 				'default' => 'yes',
 			]
@@ -187,15 +187,15 @@ class Testimonial extends Widget_Base {
 		$this->add_control(
 		  'eael_testimonial_rating_number',
 		  [
-		     'label'       => __( 'Rating Number', 'px-elements'),
+		     'label'       => __( 'Rating Number', 'pixerex-elements'),
 		     'type' => Controls_Manager::SELECT,
 		     'default' => 'rating-five',
 		     'options' => [
-		     	'rating-one'  => __( '1', 'px-elements'),
-		     	'rating-two' => __( '2', 'px-elements'),
-		     	'rating-three' => __( '3', 'px-elements'),
-		     	'rating-four' => __( '4', 'px-elements'),
-		     	'rating-five'   => __( '5', 'px-elements'),
+		     	'rating-one'  => __( '1', 'pixerex-elements'),
+		     	'rating-two' => __( '2', 'pixerex-elements'),
+		     	'rating-three' => __( '3', 'pixerex-elements'),
+		     	'rating-four' => __( '4', 'pixerex-elements'),
+		     	'rating-five'   => __( '5', 'pixerex-elements'),
 		     ],
 			'condition' => [
 				'eael_testimonial_enable_rating' => 'yes',
@@ -210,14 +210,14 @@ class Testimonial extends Widget_Base {
 			$this->start_controls_section(
 				'eael_section_pro',
 				[
-					'label' => __( 'Go Premium for More Features', 'px-elements')
+					'label' => __( 'Go Premium for More Features', 'pixerex-elements')
 				]
 			);
 
 			$this->add_control(
 				'eael_control_get_pro',
 				[
-					'label' => __( 'Unlock more possibilities', 'px-elements'),
+					'label' => __( 'Unlock more possibilities', 'pixerex-elements'),
 					'type' => Controls_Manager::CHOOSE,
 					'options' => [
 						'1' => [
@@ -237,7 +237,7 @@ class Testimonial extends Widget_Base {
 		$this->start_controls_section(
 			'eael_section_testimonial_styles_general',
 			[
-				'label' => esc_html__( 'Testimonial Styles', 'px-elements'),
+				'label' => esc_html__( 'Testimonial Styles', 'pixerex-elements'),
 				'tab' => Controls_Manager::TAB_STYLE
 			]
 		);
@@ -245,17 +245,17 @@ class Testimonial extends Widget_Base {
 		$this->add_control(
 			'eael_testimonial_style',
 			[
-				'label'		=> __( 'Select Style', 'px-elements'),
+				'label'		=> __( 'Select Style', 'pixerex-elements'),
 				'type'		=> Controls_Manager::SELECT,
 				'default'	=> 'default-style',
 				'options'	=> [
-					'default-style'						=> __( 'Default', 'px-elements'),
-					'classic-style'						=> __( 'Classic', 'px-elements'),
-					'middle-style'						=> __( 'Content | Icon/Image | Bio', 'px-elements'),
-					'icon-img-left-content'				=> __( 'Icon/Image | Content', 'px-elements'),
-					'icon-img-right-content'			=> __( 'Content | Icon/Image', 'px-elements'),
-					'content-top-icon-title-inline'		=> __( 'Content Top | Icon Title Inline', 'px-elements'),
-					'content-bottom-icon-title-inline'	=> __( 'Content Bottom | Icon Title Inline', 'px-elements')
+					'default-style'						=> __( 'Default', 'pixerex-elements'),
+					'classic-style'						=> __( 'Classic', 'pixerex-elements'),
+					'middle-style'						=> __( 'Content | Icon/Image | Bio', 'pixerex-elements'),
+					'icon-img-left-content'				=> __( 'Icon/Image | Content', 'pixerex-elements'),
+					'icon-img-right-content'			=> __( 'Content | Icon/Image', 'pixerex-elements'),
+					'content-top-icon-title-inline'		=> __( 'Content Top | Icon Title Inline', 'pixerex-elements'),
+					'content-bottom-icon-title-inline'	=> __( 'Content Bottom | Icon Title Inline', 'pixerex-elements')
 				]
 			]
 		);
@@ -263,24 +263,24 @@ class Testimonial extends Widget_Base {
 		$this->add_control(
 			'eael_testimonial_alignment',
 			[
-				'label' => esc_html__( 'Layout Alignment', 'px-elements'),
+				'label' => esc_html__( 'Layout Alignment', 'pixerex-elements'),
 				'type' => Controls_Manager::CHOOSE,
 				'label_block' => true,
 				'options' => [
 					'default' => [
-						'title' => __( 'Default', 'px-elements'),
+						'title' => __( 'Default', 'pixerex-elements'),
 						'icon' => 'fa fa-ban',
 					],
 					'left' => [
-						'title' => esc_html__( 'Left', 'px-elements'),
+						'title' => esc_html__( 'Left', 'pixerex-elements'),
 						'icon' => 'fa fa-align-left',
 					],
 					'center' => [
-						'title' => esc_html__( 'Center', 'px-elements'),
+						'title' => esc_html__( 'Center', 'pixerex-elements'),
 						'icon' => 'fa fa-align-center',
 					],
 					'right' => [
-						'title' => esc_html__( 'Right', 'px-elements'),
+						'title' => esc_html__( 'Right', 'pixerex-elements'),
 						'icon' => 'fa fa-align-right',
 					],
 				],
@@ -295,7 +295,7 @@ class Testimonial extends Widget_Base {
 		$this->add_control(
 			'eael_testimonial_user_display_block',
 			[
-				'label' => esc_html__( 'Display User & Company Block?', 'px-elements'),
+				'label' => esc_html__( 'Display User & Company Block?', 'pixerex-elements'),
 				'type' => Controls_Manager::SWITCHER,
 				'return_value' => 'yes',
 				'default' => '',
@@ -308,7 +308,7 @@ class Testimonial extends Widget_Base {
 		$this->start_controls_section(
 			'eael_section_testimonial_image_styles',
 			[
-				'label' => esc_html__( 'Testimonial Image Style', 'px-elements'),
+				'label' => esc_html__( 'Testimonial Image Style', 'pixerex-elements'),
 				'tab' => Controls_Manager::TAB_STYLE,
 				'condition'	=> [
 					'eael_testimonial_enable_avatar'	=> 'yes'
@@ -319,7 +319,7 @@ class Testimonial extends Widget_Base {
 		$this->add_responsive_control(
 			'eael_testimonial_image_width',
 			[
-				'label' => esc_html__( 'Image Width', 'px-elements'),
+				'label' => esc_html__( 'Image Width', 'pixerex-elements'),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 150,
@@ -345,7 +345,7 @@ class Testimonial extends Widget_Base {
 		$this->add_responsive_control(
 			'eael_testimonial_max_image_width',
 			[
-				'label' => esc_html__( 'Image Max Width', 'px-elements'),
+				'label' => esc_html__( 'Image Max Width', 'pixerex-elements'),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 100,
@@ -367,7 +367,7 @@ class Testimonial extends Widget_Base {
 		$this->add_responsive_control(
 			'eael_testimonial_image_margin',
 			[
-				'label' => esc_html__( 'Margin', 'px-elements'),
+				'label' => esc_html__( 'Margin', 'pixerex-elements'),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'selectors' => [
@@ -379,7 +379,7 @@ class Testimonial extends Widget_Base {
 		$this->add_responsive_control(
 			'eael_testimonial_image_padding',
 			[
-				'label' => esc_html__( 'Padding', 'px-elements'),
+				'label' => esc_html__( 'Padding', 'pixerex-elements'),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
@@ -393,7 +393,7 @@ class Testimonial extends Widget_Base {
 			Group_Control_Border::get_type(),
 			[
 				'name' => 'eael_testimonial_image_border',
-				'label' => esc_html__( 'Border', 'px-elements'),
+				'label' => esc_html__( 'Border', 'pixerex-elements'),
 				'selector' => '{{WRAPPER}} .eael-testimonial-image img',
 			]
 		);
@@ -401,7 +401,7 @@ class Testimonial extends Widget_Base {
 		$this->add_control(
 			'eael_testimonial_image_rounded',
 			[
-				'label' => esc_html__( 'Rounded Avatar?', 'px-elements'),
+				'label' => esc_html__( 'Rounded Avatar?', 'pixerex-elements'),
 				'type' => Controls_Manager::SWITCHER,
 				'return_value' => 'testimonial-avatar-rounded',
 				'default' => '',
@@ -412,7 +412,7 @@ class Testimonial extends Widget_Base {
 		$this->add_control(
 			'eael_testimonial_image_border_radius',
 			[
-				'label' => esc_html__( 'Border Radius', 'px-elements'),
+				'label' => esc_html__( 'Border Radius', 'pixerex-elements'),
 				'type' => Controls_Manager::DIMENSIONS,
 				'selectors' => [
 					'{{WRAPPER}} .eael-testimonial-image img' => 'border-radius: {{TOP}}px {{RIGHT}}px {{BOTTOM}}px {{LEFT}}px;',
@@ -429,7 +429,7 @@ class Testimonial extends Widget_Base {
 		$this->start_controls_section(
 			'eael_section_testimonial_typography',
 			[
-				'label' => esc_html__( 'Color, Typography &amp; Spacing', 'px-elements'),
+				'label' => esc_html__( 'Color, Typography &amp; Spacing', 'pixerex-elements'),
 				'tab' => Controls_Manager::TAB_STYLE
 			]
 		);
@@ -437,7 +437,7 @@ class Testimonial extends Widget_Base {
 		$this->add_control(
 			'eael_testimonial_name_heading',
 			[
-				'label' => __( 'User Name', 'px-elements'),
+				'label' => __( 'User Name', 'pixerex-elements'),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -445,7 +445,7 @@ class Testimonial extends Widget_Base {
 		$this->add_control(
 			'eael_testimonial_name_color',
 			[
-				'label' => esc_html__( 'User Name Color', 'px-elements'),
+				'label' => esc_html__( 'User Name Color', 'pixerex-elements'),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#272727',
 				'selectors' => [
@@ -465,7 +465,7 @@ class Testimonial extends Widget_Base {
 		$this->add_control(
 			'eael_testimonial_name_margin',
 			[
-				'label' => esc_html__( 'Margin', 'px-elements'),
+				'label' => esc_html__( 'Margin', 'pixerex-elements'),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
@@ -477,7 +477,7 @@ class Testimonial extends Widget_Base {
 		$this->add_control(
 			'eael_testimonial_company_heading',
 			[
-				'label' 	=> __( 'Company Name', 'px-elements'),
+				'label' 	=> __( 'Company Name', 'pixerex-elements'),
 				'type' 		=> Controls_Manager::HEADING,
 				'separator'	=> 'before'
 			]
@@ -486,7 +486,7 @@ class Testimonial extends Widget_Base {
 		$this->add_control(
 			'eael_testimonial_company_color',
 			[
-				'label' => esc_html__( 'Company Color', 'px-elements'),
+				'label' => esc_html__( 'Company Color', 'pixerex-elements'),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#272727',
 				'selectors' => [
@@ -506,7 +506,7 @@ class Testimonial extends Widget_Base {
 		$this->add_control(
 			'eael_testimonial_company_margin',
 			[
-				'label' => esc_html__( 'Margin', 'px-elements'),
+				'label' => esc_html__( 'Margin', 'pixerex-elements'),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
@@ -518,7 +518,7 @@ class Testimonial extends Widget_Base {
 		$this->add_control(
 			'eael_testimonial_description_heading',
 			[
-				'label' => __( 'Testimonial Text', 'px-elements'),
+				'label' => __( 'Testimonial Text', 'pixerex-elements'),
 				'type' => Controls_Manager::HEADING,
 				'separator'	=> 'before'
 			]
@@ -527,7 +527,7 @@ class Testimonial extends Widget_Base {
 		$this->add_control(
 			'eael_testimonial_description_color',
 			[
-				'label' => esc_html__( 'Testimonial Text Color', 'px-elements'),
+				'label' => esc_html__( 'Testimonial Text Color', 'pixerex-elements'),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#7a7a7a',
 				'selectors' => [
@@ -547,7 +547,7 @@ class Testimonial extends Widget_Base {
 		$this->add_control(
 			'eael_testimonial_description_margin',
 			[
-				'label' => esc_html__( 'Margin', 'px-elements'),
+				'label' => esc_html__( 'Margin', 'pixerex-elements'),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
@@ -559,7 +559,7 @@ class Testimonial extends Widget_Base {
 		$this->add_control(
 			'eael_testimonial_rating_heading',
 			[
-				'label' => __( 'Rating', 'px-elements'),
+				'label' => __( 'Rating', 'pixerex-elements'),
 				'type' => Controls_Manager::HEADING,
 				'separator'	=> 'before'
 			]
@@ -568,7 +568,7 @@ class Testimonial extends Widget_Base {
 		$this->add_control(
 			'eael_testimonial_rating_item_distance',
 			[
-				'label' => esc_html__( 'Distance Between Rating Item', 'px-elements'),
+				'label' => esc_html__( 'Distance Between Rating Item', 'pixerex-elements'),
 				'type' => Controls_Manager::SLIDER,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
@@ -580,7 +580,7 @@ class Testimonial extends Widget_Base {
 		$this->add_control(
 			'eael_testimonial_rating_margin',
 			[
-				'label' => esc_html__( 'Margin', 'px-elements'),
+				'label' => esc_html__( 'Margin', 'pixerex-elements'),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%', 'em' ],
 				'selectors' => [
@@ -594,7 +594,7 @@ class Testimonial extends Widget_Base {
 		$this->start_controls_section(
 			'eael_section_testimonial_quotation_typography',
 			[
-				'label' => esc_html__( 'Quotation Style', 'px-elements'),
+				'label' => esc_html__( 'Quotation Style', 'pixerex-elements'),
 				'tab' => Controls_Manager::TAB_STYLE
 			]
 		);
@@ -602,7 +602,7 @@ class Testimonial extends Widget_Base {
 		$this->add_control(
 			'eael_testimonial_quotation_color',
 			[
-				'label' => esc_html__( 'Quotation Mark Color', 'px-elements'),
+				'label' => esc_html__( 'Quotation Mark Color', 'pixerex-elements'),
 				'type' => Controls_Manager::COLOR,
 				'default' => 'rgba(0,0,0,0.15)',
 				'selectors' => [
@@ -622,7 +622,7 @@ class Testimonial extends Widget_Base {
 		$this->add_responsive_control(
 			'eael_testimonial_quotation_top',
 			[
-				'label' => esc_html__( 'Quotation Postion From Top', 'px-elements'),
+				'label' => esc_html__( 'Quotation Postion From Top', 'pixerex-elements'),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 5,
@@ -644,7 +644,7 @@ class Testimonial extends Widget_Base {
 		$this->add_responsive_control(
 			'eael_testimonial_quotation_right',
 			[
-				'label' => esc_html__( 'Quotation Postion From Right', 'px-elements'),
+				'label' => esc_html__( 'Quotation Postion From Right', 'pixerex-elements'),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 5,

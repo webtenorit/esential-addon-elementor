@@ -51,13 +51,13 @@ class Event_Calendar extends WPML_Elementor_Module_With_Items
 	protected function get_title( $field ) {
 		switch($field) {
 			case 'eael_event_title':
-                return __( 'Event: Title', 'px-elements' );
+                return __( 'Event: Title', 'pixerex-elements' );
                 
             case 'eael_event_link':
-                return __( 'Event: Content', 'px-elements' );
+                return __( 'Event: Content', 'pixerex-elements' );
                 
             case 'eael_event_description':
-                return __( 'Event : Description', 'px-elements' );
+                return __( 'Event : Description', 'pixerex-elements' );
 
 			default:
 				return '';

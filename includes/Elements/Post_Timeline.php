@@ -23,7 +23,7 @@ class Post_Timeline extends Widget_Base
 
     public function get_title()
     {
-        return __('Post Timeline', 'px-elements');
+        return __('Post Timeline', 'pixerex-elements');
     }
 
     public function get_icon()
@@ -74,7 +74,7 @@ class Post_Timeline extends Widget_Base
         $this->start_controls_section(
             'eael_section_post_timeline_style',
             [
-                'label' => __('Timeline Style', 'px-elements'),
+                'label' => __('Timeline Style', 'pixerex-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -82,10 +82,10 @@ class Post_Timeline extends Widget_Base
         $this->add_control(
 			'eael_timeline_display_overlay',
 			[
-				'label' => __( 'Show Overlay', 'px-elements' ),
+				'label' => __( 'Show Overlay', 'pixerex-elements' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'px-elements' ),
-				'label_off' => __( 'Hide', 'px-elements' ),
+				'label_on' => __( 'Show', 'pixerex-elements' ),
+				'label_off' => __( 'Hide', 'pixerex-elements' ),
 				'return_value' => 'yes',
                 'default' => 'yes',
                 'selectors' => [
@@ -97,9 +97,9 @@ class Post_Timeline extends Widget_Base
         $this->add_control(
             'eael_timeline_overlay_color',
             [
-                'label' => __('Overlay Color', 'px-elements'),
+                'label' => __('Overlay Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
-                'description' => __('Leave blank or Clear to use default gradient overlay', 'px-elements'),
+                'description' => __('Leave blank or Clear to use default gradient overlay', 'pixerex-elements'),
                 'default' => 'linear-gradient(45deg, #3f3f46 0%, #05abe0 100%) repeat scroll 0 0 rgba(0, 0, 0, 0)',
                 'selectors' => [
                     '{{WRAPPER}} .eael-timeline-post-inner' => 'background: {{VALUE}}',
@@ -113,7 +113,7 @@ class Post_Timeline extends Widget_Base
         $this->add_control(
             'eael_timeline_bullet_color',
             [
-                'label' => __('Timeline Bullet Color', 'px-elements'),
+                'label' => __('Timeline Bullet Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#9fa9af',
                 'selectors' => [
@@ -126,7 +126,7 @@ class Post_Timeline extends Widget_Base
         $this->add_control(
             'eael_timeline_bullet_border_color',
             [
-                'label' => __('Timeline Bullet Border Color', 'px-elements'),
+                'label' => __('Timeline Bullet Border Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#fff',
                 'selectors' => [
@@ -139,7 +139,7 @@ class Post_Timeline extends Widget_Base
         $this->add_control(
             'eael_timeline_vertical_line_color',
             [
-                'label' => __('Timeline Vertical Line Color', 'px-elements'),
+                'label' => __('Timeline Vertical Line Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => 'rgba(83, 85, 86, .2)',
                 'selectors' => [
@@ -152,7 +152,7 @@ class Post_Timeline extends Widget_Base
         $this->add_control(
             'eael_timeline_border_color',
             [
-                'label' => __('Border & Arrow Color', 'px-elements'),
+                'label' => __('Border & Arrow Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#e5eaed',
                 'selectors' => [
@@ -167,7 +167,7 @@ class Post_Timeline extends Widget_Base
         $this->add_control(
             'eael_timeline_date_background_color',
             [
-                'label' => __('Date Background Color', 'px-elements'),
+                'label' => __('Date Background Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => 'rgba(0, 0, 0, 0.7)',
                 'selectors' => [
@@ -181,7 +181,7 @@ class Post_Timeline extends Widget_Base
         $this->add_control(
             'eael_timeline_date_color',
             [
-                'label' => __('Date Text Color', 'px-elements'),
+                'label' => __('Date Text Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#fff',
                 'selectors' => [
@@ -196,7 +196,7 @@ class Post_Timeline extends Widget_Base
         $this->start_controls_section(
             'eael_section_typography',
             [
-                'label' => __('Typography', 'px-elements'),
+                'label' => __('Typography', 'pixerex-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -204,7 +204,7 @@ class Post_Timeline extends Widget_Base
         $this->add_control(
             'eael_timeline_title_style',
             [
-                'label' => __('Title Style', 'px-elements'),
+                'label' => __('Title Style', 'pixerex-elements'),
                 'type' => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -213,7 +213,7 @@ class Post_Timeline extends Widget_Base
         $this->add_control(
             'eael_timeline_title_color',
             [
-                'label' => __('Title Color', 'px-elements'),
+                'label' => __('Title Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#fff',
                 'selectors' => [
@@ -226,19 +226,19 @@ class Post_Timeline extends Widget_Base
         $this->add_responsive_control(
             'eael_timeline_title_alignment',
             [
-                'label' => __('Title Alignment', 'px-elements'),
+                'label' => __('Title Alignment', 'pixerex-elements'),
                 'type' => Controls_Manager::CHOOSE,
                 'options' => [
                     'left' => [
-                        'title' => __('Left', 'px-elements'),
+                        'title' => __('Left', 'pixerex-elements'),
                         'icon' => 'fa fa-align-left',
                     ],
                     'center' => [
-                        'title' => __('Center', 'px-elements'),
+                        'title' => __('Center', 'pixerex-elements'),
                         'icon' => 'fa fa-align-center',
                     ],
                     'right' => [
-                        'title' => __('Right', 'px-elements'),
+                        'title' => __('Right', 'pixerex-elements'),
                         'icon' => 'fa fa-align-right',
                     ],
                 ],
@@ -252,7 +252,7 @@ class Post_Timeline extends Widget_Base
             Group_Control_Typography::get_type(),
             [
                 'name' => 'eael_timeline_title_typography',
-                'label' => __('Typography', 'px-elements'),
+                'label' => __('Typography', 'pixerex-elements'),
                 'scheme' => Scheme_Typography::TYPOGRAPHY_1,
                 'selector' => '{{WRAPPER}} .eael-timeline-post-title h2',
             ]
@@ -261,7 +261,7 @@ class Post_Timeline extends Widget_Base
         $this->add_control(
             'eael_timeline_excerpt_style',
             [
-                'label' => __('Excerpt Style', 'px-elements'),
+                'label' => __('Excerpt Style', 'pixerex-elements'),
                 'type' => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -270,7 +270,7 @@ class Post_Timeline extends Widget_Base
         $this->add_control(
             'eael_timeline_excerpt_color',
             [
-                'label' => __('Excerpt Color', 'px-elements'),
+                'label' => __('Excerpt Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#ffffff',
                 'selectors' => [
@@ -282,23 +282,23 @@ class Post_Timeline extends Widget_Base
         $this->add_responsive_control(
             'eael_timeline_excerpt_alignment',
             [
-                'label' => __('Excerpt Alignment', 'px-elements'),
+                'label' => __('Excerpt Alignment', 'pixerex-elements'),
                 'type' => Controls_Manager::CHOOSE,
                 'options' => [
                     'left' => [
-                        'title' => __('Left', 'px-elements'),
+                        'title' => __('Left', 'pixerex-elements'),
                         'icon' => 'fa fa-align-left',
                     ],
                     'center' => [
-                        'title' => __('Center', 'px-elements'),
+                        'title' => __('Center', 'pixerex-elements'),
                         'icon' => 'fa fa-align-center',
                     ],
                     'right' => [
-                        'title' => __('Right', 'px-elements'),
+                        'title' => __('Right', 'pixerex-elements'),
                         'icon' => 'fa fa-align-right',
                     ],
                     'justify' => [
-                        'title' => __('Justified', 'px-elements'),
+                        'title' => __('Justified', 'pixerex-elements'),
                         'icon' => 'fa fa-align-justify',
                     ],
                 ],
@@ -312,7 +312,7 @@ class Post_Timeline extends Widget_Base
             Group_Control_Typography::get_type(),
             [
                 'name' => 'eael_timeline_excerpt_typography',
-                'label' => __('excerpt Typography', 'px-elements'),
+                'label' => __('excerpt Typography', 'pixerex-elements'),
                 'scheme' => Scheme_Typography::TYPOGRAPHY_3,
                 'selector' => '{{WRAPPER}} .eael-timeline-post-excerpt p',
             ]
@@ -366,7 +366,7 @@ class Post_Timeline extends Widget_Base
                 echo '<div class="eael-load-more-button-wrap">
 					<button class="eael-load-more-button" id="eael-load-more-btn-' . $this->get_id() . '" data-widget="' . $this->get_id() . '" data-class="' . get_class($this) . '" data-args="' . http_build_query($args) . '" data-settings="' . http_build_query($settings) . '" data-page="1">
 						<div class="eael-btn-loader button__loader"></div>
-						<span>' . esc_html__($settings['show_load_more_text'], 'px-elements') . '</span>
+						<span>' . esc_html__($settings['show_load_more_text'], 'pixerex-elements') . '</span>
 					</button>
 				</div>';
             }

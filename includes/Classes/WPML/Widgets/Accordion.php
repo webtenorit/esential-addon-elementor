@@ -46,10 +46,10 @@ class Accordion extends WPML_Elementor_Module_With_Items {
 	protected function get_title( $field ) {
 		switch($field) {
 			case 'eael_adv_accordion_tab_title':
-				return __( 'Advance Accordion: Title', 'px-elements');
+				return __( 'Advance Accordion: Title', 'pixerex-elements');
 
 			case 'eael_adv_accordion_tab_content':
-				return __( 'Advance Accordion: Content', 'px-elements');
+				return __( 'Advance Accordion: Content', 'pixerex-elements');
 
 			default:
 				return '';

@@ -43,14 +43,14 @@ trait Helper
     protected function eael_query_controls()
     {
         $post_types = $this->eael_get_post_types();
-        $post_types['by_id'] = __('Manual Selection', 'px-elements');
+        $post_types['by_id'] = __('Manual Selection', 'pixerex-elements');
         $taxonomies = get_taxonomies([], 'objects');
 
         if ('eael-content-ticker' === $this->get_name()) {
             $this->start_controls_section(
                 'eael_section_content_ticker_filters',
                 [
-                    'label' => __('Dynamic Content Settings', 'px-elements'),
+                    'label' => __('Dynamic Content Settings', 'pixerex-elements'),
                     'condition' => [
                         'eael_ticker_type' => 'dynamic',
                     ],
@@ -60,7 +60,7 @@ trait Helper
             $this->start_controls_section(
                 'eael_section_timeline__filters',
                 [
-                    'label' => __('Dynamic Content Settings', 'px-elements'),
+                    'label' => __('Dynamic Content Settings', 'pixerex-elements'),
                     'condition' => [
                         'eael_content_timeline_choose' => 'dynamic',
                     ],
@@ -70,7 +70,7 @@ trait Helper
             $this->start_controls_section(
                 'eael_section_post__filters',
                 [
-                    'label' => __('Query', 'px-elements'),
+                    'label' => __('Query', 'pixerex-elements'),
                 ]
             );
         }
@@ -78,7 +78,7 @@ trait Helper
         $this->add_control(
             'post_type',
             [
-                'label' => __('Source', 'px-elements'),
+                'label' => __('Source', 'pixerex-elements'),
                 'type' => Controls_Manager::SELECT,
                 'options' => $post_types,
                 'default' => key($post_types),
@@ -88,7 +88,7 @@ trait Helper
         $this->add_control(
             'posts_ids',
             [
-                'label' => __('Search & Select', 'px-elements'),
+                'label' => __('Search & Select', 'pixerex-elements'),
                 'type' => Controls_Manager::SELECT2,
                 'options' => $this->eael_get_all_types_post(),
                 'label_block' => true,
@@ -101,7 +101,7 @@ trait Helper
 
         $this->add_control(
             'authors', [
-                'label' => __('Author', 'px-elements'),
+                'label' => __('Author', 'pixerex-elements'),
                 'label_block' => true,
                 'type' => Controls_Manager::SELECT2,
                 'multiple' => true,
@@ -137,7 +137,7 @@ trait Helper
         $this->add_control(
             'post__not_in',
             [
-                'label' => __('Exclude', 'px-elements'),
+                'label' => __('Exclude', 'pixerex-elements'),
                 'type' => Controls_Manager::SELECT2,
                 'options' => $this->eael_get_all_types_post(),
                 'label_block' => true,
@@ -152,7 +152,7 @@ trait Helper
         $this->add_control(
             'posts_per_page',
             [
-                'label' => __('Posts Per Page', 'px-elements'),
+                'label' => __('Posts Per Page', 'pixerex-elements'),
                 'type' => Controls_Manager::NUMBER,
                 'default' => '4',
             ]
@@ -161,7 +161,7 @@ trait Helper
         $this->add_control(
             'offset',
             [
-                'label' => __('Offset', 'px-elements'),
+                'label' => __('Offset', 'pixerex-elements'),
                 'type' => Controls_Manager::NUMBER,
                 'default' => '0',
             ]
@@ -170,7 +170,7 @@ trait Helper
         $this->add_control(
             'orderby',
             [
-                'label' => __('Order By', 'px-elements'),
+                'label' => __('Order By', 'pixerex-elements'),
                 'type' => Controls_Manager::SELECT,
                 'options' => $this->eael_get_post_orderby_options(),
                 'default' => 'date',
@@ -181,7 +181,7 @@ trait Helper
         $this->add_control(
             'order',
             [
-                'label' => __('Order', 'px-elements'),
+                'label' => __('Order', 'pixerex-elements'),
                 'type' => Controls_Manager::SELECT,
                 'options' => [
                     'asc' => 'Ascending',
@@ -204,7 +204,7 @@ trait Helper
         $this->start_controls_section(
             'eael_section_post__filters',
             [
-                'label' => __('Query', 'px-elements'),
+                'label' => __('Query', 'pixerex-elements'),
             ]
         );
 
@@ -212,7 +212,7 @@ trait Helper
             $this->add_control(
                 'grid_query_heading',
                 [
-                    'label' => __('Category Grid', 'px-elements'),
+                    'label' => __('Category Grid', 'pixerex-elements'),
                     'type' => Controls_Manager::HEADING,
                 ]
             );
@@ -221,7 +221,7 @@ trait Helper
         $this->add_control(
             'include',
             [
-                'label' => __('Include', 'px-elements'),
+                'label' => __('Include', 'pixerex-elements'),
                 'label_block' => true,
                 'type' => Controls_Manager::SELECT2,
                 'options' => $this->eael_post_type_categories('term_id', 'doc_category'),
@@ -233,7 +233,7 @@ trait Helper
         $this->add_control(
             'exclude',
             [
-                'label' => __('Exclude', 'px-elements'),
+                'label' => __('Exclude', 'pixerex-elements'),
                 'type' => Controls_Manager::SELECT2,
                 'options' => $this->eael_post_type_categories('term_id', 'doc_category'),
                 'label_block' => true,
@@ -246,7 +246,7 @@ trait Helper
             $this->add_control(
                 'grid_per_page',
                 [
-                    'label' => __('Grid Per Page', 'px-elements'),
+                    'label' => __('Grid Per Page', 'pixerex-elements'),
                     'type' => Controls_Manager::NUMBER,
                     'default' => '8',
                 ]
@@ -255,7 +255,7 @@ trait Helper
             $this->add_control(
                 'box_per_page',
                 [
-                    'label' => __('Box Per Page', 'px-elements'),
+                    'label' => __('Box Per Page', 'pixerex-elements'),
                     'type' => Controls_Manager::NUMBER,
                     'default' => '8',
                 ]
@@ -265,7 +265,7 @@ trait Helper
         $this->add_control(
             'offset',
             [
-                'label' => __('Offset', 'px-elements'),
+                'label' => __('Offset', 'pixerex-elements'),
                 'type' => Controls_Manager::NUMBER,
                 'default' => '0',
             ]
@@ -274,16 +274,16 @@ trait Helper
         $this->add_control(
             'orderby',
             [
-                'label' => __('Order By', 'px-elements'),
+                'label' => __('Order By', 'pixerex-elements'),
                 'type' => Controls_Manager::SELECT,
                 'options' => [
-                    'name' => __('Name', 'px-elements'),
-                    'slug' => __('Slug', 'px-elements'),
-                    'term_group' => __('Term Group', 'px-elements'),
-                    'term_id' => __('Term ID', 'px-elements'),
-                    'id' => __('ID', 'px-elements'),
-                    'description' => __('Description', 'px-elements'),
-                    'parent' => __('Parent', 'px-elements'),
+                    'name' => __('Name', 'pixerex-elements'),
+                    'slug' => __('Slug', 'pixerex-elements'),
+                    'term_group' => __('Term Group', 'pixerex-elements'),
+                    'term_id' => __('Term ID', 'pixerex-elements'),
+                    'id' => __('ID', 'pixerex-elements'),
+                    'description' => __('Description', 'pixerex-elements'),
+                    'parent' => __('Parent', 'pixerex-elements'),
                 ],
                 'default' => 'name',
             ]
@@ -292,7 +292,7 @@ trait Helper
         $this->add_control(
             'order',
             [
-                'label' => __('Order', 'px-elements'),
+                'label' => __('Order', 'pixerex-elements'),
                 'type' => Controls_Manager::SELECT,
                 'options' => [
                     'asc' => 'Ascending',
@@ -307,7 +307,7 @@ trait Helper
             $this->add_control(
                 'grid_posts_query_heading',
                 [
-                    'label' => __('Grid List Posts', 'px-elements'),
+                    'label' => __('Grid List Posts', 'pixerex-elements'),
                     'type' => Controls_Manager::HEADING,
                     'separator' => 'before',
                 ]
@@ -316,7 +316,7 @@ trait Helper
             $this->add_control(
                 'post_per_page',
                 [
-                    'label' => __('Post Per Page', 'px-elements'),
+                    'label' => __('Post Per Page', 'pixerex-elements'),
                     'type' => Controls_Manager::NUMBER,
                     'default' => '6',
                 ]
@@ -325,7 +325,7 @@ trait Helper
             $this->add_control(
                 'post_orderby',
                 [
-                    'label' => __('Order By', 'px-elements'),
+                    'label' => __('Order By', 'pixerex-elements'),
                     'type' => Controls_Manager::SELECT,
                     'options' => $this->eael_get_post_orderby_options(),
                     'default' => 'date',
@@ -335,7 +335,7 @@ trait Helper
             $this->add_control(
                 'post_order',
                 [
-                    'label' => __('Order', 'px-elements'),
+                    'label' => __('Order', 'pixerex-elements'),
                     'type' => Controls_Manager::SELECT,
                     'options' => [
                         'asc' => 'Ascending',
@@ -348,10 +348,10 @@ trait Helper
             $this->add_control(
                 'nested_subcategory',
                 [
-                    'label' => __('Enable Nested Subcategory', 'px-elements'),
+                    'label' => __('Enable Nested Subcategory', 'pixerex-elements'),
                     'type' => Controls_Manager::SWITCHER,
-                    'label_on' => __('Yes', 'px-elements'),
-                    'label_off' => __('No', 'px-elements'),
+                    'label_on' => __('Yes', 'pixerex-elements'),
+                    'label_off' => __('No', 'pixerex-elements'),
                     'return_value' => 'true',
                     'default' => '',
                 ]
@@ -370,7 +370,7 @@ trait Helper
         $this->start_controls_section(
             'eael_section_post_timeline_layout',
             [
-                'label' => __('Layout Settings', 'px-elements'),
+                'label' => __('Layout Settings', 'pixerex-elements'),
             ]
         );
 
@@ -378,18 +378,18 @@ trait Helper
             $this->add_responsive_control(
                 'eael_post_grid_columns',
                 [
-                    'label' => esc_html__('Column', 'px-elements'),
+                    'label' => esc_html__('Column', 'pixerex-elements'),
                     'type' => Controls_Manager::SELECT,
                     'default' => 'eael-col-4',
                     'tablet_default' => 'eael-col-2',
                     'mobile_default' => 'eael-col-1',
                     'options' => [
-                        'eael-col-1' => esc_html__('1', 'px-elements'),
-                        'eael-col-2' => esc_html__('2', 'px-elements'),
-                        'eael-col-3' => esc_html__('3', 'px-elements'),
-                        'eael-col-4' => esc_html__('4', 'px-elements'),
-                        'eael-col-5' => esc_html__('5', 'px-elements'),
-                        'eael-col-6' => esc_html__('6', 'px-elements'),
+                        'eael-col-1' => esc_html__('1', 'pixerex-elements'),
+                        'eael-col-2' => esc_html__('2', 'pixerex-elements'),
+                        'eael-col-3' => esc_html__('3', 'pixerex-elements'),
+                        'eael-col-4' => esc_html__('4', 'pixerex-elements'),
+                        'eael-col-5' => esc_html__('5', 'pixerex-elements'),
+                        'eael-col-6' => esc_html__('6', 'pixerex-elements'),
                     ],
                     'prefix_class' => 'elementor-grid%s-',
                     'frontend_available' => true,
@@ -399,12 +399,12 @@ trait Helper
             $this->add_control(
                 'layout_mode',
                 [
-                    'label' => esc_html__('Layout', 'px-elements'),
+                    'label' => esc_html__('Layout', 'pixerex-elements'),
                     'type' => Controls_Manager::SELECT,
                     'default' => 'masonry',
                     'options' => [
-                        'grid' => esc_html__('Grid', 'px-elements'),
-                        'masonry' => esc_html__('Masonry', 'px-elements'),
+                        'grid' => esc_html__('Grid', 'pixerex-elements'),
+                        'masonry' => esc_html__('Masonry', 'pixerex-elements'),
                     ],
                 ]
             );
@@ -415,12 +415,12 @@ trait Helper
             $this->add_control(
                 'grid_style',
                 [
-                    'label' => esc_html__('Post Block Style Preset', 'px-elements'),
+                    'label' => esc_html__('Post Block Style Preset', 'pixerex-elements'),
                     'type' => Controls_Manager::SELECT,
                     'default' => 'post-block-style-default',
                     'options' => [
-                        'post-block-style-default' => esc_html__('Default', 'px-elements'),
-                        'post-block-style-overlay' => esc_html__('Overlay', 'px-elements'),
+                        'post-block-style-default' => esc_html__('Default', 'pixerex-elements'),
+                        'post-block-style-overlay' => esc_html__('Overlay', 'pixerex-elements'),
                     ],
                 ]
             );
@@ -437,13 +437,13 @@ trait Helper
                 $this->add_control(
                     'content_timeline_layout',
                     [
-                        'label' => esc_html__('Layout', 'px-elements'),
+                        'label' => esc_html__('Layout', 'pixerex-elements'),
                         'type' => Controls_Manager::SELECT,
                         'default' => 'center',
                         'options' => [
-                            'left' => esc_html__('Right', 'px-elements'),
-                            'center' => esc_html__('Center', 'px-elements'),
-                            'right' => esc_html__('Left', 'px-elements'),
+                            'left' => esc_html__('Right', 'pixerex-elements'),
+                            'center' => esc_html__('Center', 'pixerex-elements'),
+                            'right' => esc_html__('Left', 'pixerex-elements'),
                         ],
                         'default' => 'center',
                     ]
@@ -452,12 +452,12 @@ trait Helper
                 $this->add_control(
                     'date_position',
                     [
-                        'label' => esc_html__('Date Position', 'px-elements'),
+                        'label' => esc_html__('Date Position', 'pixerex-elements'),
                         'type' => Controls_Manager::SELECT,
                         'default' => 'inside',
                         'options' => [
-                            'inside' => esc_html__('Inside', 'px-elements'),
-                            'outside' => esc_html__('Outside', 'px-elements'),
+                            'inside' => esc_html__('Inside', 'pixerex-elements'),
+                            'outside' => esc_html__('Outside', 'pixerex-elements'),
                         ],
                         'default' => 'inside',
                         'condition' => [
@@ -470,10 +470,10 @@ trait Helper
                 $this->add_control(
                     'show_load_more',
                     [
-                        'label' => __('Show Load More', 'px-elements'),
+                        'label' => __('Show Load More', 'pixerex-elements'),
                         'type' => Controls_Manager::SWITCHER,
-                        'label_on' => __('Show', 'px-elements'),
-                        'label_off' => __('Hide', 'px-elements'),
+                        'label_on' => __('Show', 'pixerex-elements'),
+                        'label_off' => __('Hide', 'pixerex-elements'),
                         'return_value' => 'yes',
                         'default' => '',
                     ]
@@ -482,10 +482,10 @@ trait Helper
                 $this->add_control(
                     'show_load_more_text',
                     [
-                        'label' => esc_html__('Label Text', 'px-elements'),
+                        'label' => esc_html__('Label Text', 'pixerex-elements'),
                         'type' => Controls_Manager::TEXT,
                         'label_block' => false,
-                        'default' => esc_html__('Load More', 'px-elements'),
+                        'default' => esc_html__('Load More', 'pixerex-elements'),
                         'condition' => [
                             'show_load_more' => 'yes',
                         ],
@@ -499,10 +499,10 @@ trait Helper
             $this->add_control(
                 'eael_show_image',
                 [
-                    'label' => __('Show Image', 'px-elements'),
+                    'label' => __('Show Image', 'pixerex-elements'),
                     'type' => Controls_Manager::SWITCHER,
-                    'label_on' => __('Show', 'px-elements'),
-                    'label_off' => __('Hide', 'px-elements'),
+                    'label_on' => __('Show', 'pixerex-elements'),
+                    'label_off' => __('Hide', 'pixerex-elements'),
                     'return_value' => 'yes',
                     'default' => 'yes',
                 ]
@@ -527,19 +527,19 @@ trait Helper
             $this->add_control(
                 'eael_show_image_or_icon',
                 [
-                    'label' => __('Show Circle Image / Icon', 'px-elements'),
+                    'label' => __('Show Circle Image / Icon', 'pixerex-elements'),
                     'type' => Controls_Manager::CHOOSE,
                     'options' => [
                         'img' => [
-                            'title' => __('Image', 'px-elements'),
+                            'title' => __('Image', 'pixerex-elements'),
                             'icon' => 'fa fa-picture-o',
                         ],
                         'icon' => [
-                            'title' => __('Icon', 'px-elements'),
+                            'title' => __('Icon', 'pixerex-elements'),
                             'icon' => 'fa fa-info',
                         ],
                         'bullet' => [
-                            'title' => __('Bullet', 'px-elements'),
+                            'title' => __('Bullet', 'pixerex-elements'),
                             'icon' => 'fa fa-circle',
                         ],
                     ],
@@ -553,7 +553,7 @@ trait Helper
             $this->add_control(
                 'eael_icon_image',
                 [
-                    'label' => esc_html__('Icon Image', 'px-elements'),
+                    'label' => esc_html__('Icon Image', 'pixerex-elements'),
                     'type' => Controls_Manager::MEDIA,
                     'default' => [
                         'url' => Utils::get_placeholder_image_src(),
@@ -566,7 +566,7 @@ trait Helper
             $this->add_control(
                 'eael_icon_image_size',
                 [
-                    'label' => esc_html__('Icon Image Size', 'px-elements'),
+                    'label' => esc_html__('Icon Image Size', 'pixerex-elements'),
                     'type' => Controls_Manager::SLIDER,
                     'default' => [
                         'size' => 24,
@@ -588,7 +588,7 @@ trait Helper
             $this->add_control(
                 'eael_content_timeline_circle_icon_new',
                 [
-                    'label' => esc_html__('Icon', 'px-elements'),
+                    'label' => esc_html__('Icon', 'pixerex-elements'),
                     'fa4compatibility' => 'eael_content_timeline_circle_icon',
                     'type' => Controls_Manager::ICONS,
                     'default' => [
@@ -607,10 +607,10 @@ trait Helper
         $this->add_control(
             'eael_show_title',
             [
-                'label' => __('Show Title', 'px-elements'),
+                'label' => __('Show Title', 'pixerex-elements'),
                 'type' => Controls_Manager::SWITCHER,
-                'label_on' => __('Show', 'px-elements'),
-                'label_off' => __('Hide', 'px-elements'),
+                'label_on' => __('Show', 'pixerex-elements'),
+                'label_off' => __('Hide', 'pixerex-elements'),
                 'return_value' => 'yes',
                 'default' => 'yes',
             ]
@@ -619,19 +619,19 @@ trait Helper
         $this->add_control(
             'title_tag',
             [
-                'label' => __('Select Tag', 'px-elements'),
+                'label' => __('Select Tag', 'pixerex-elements'),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'h2',
                 'options' => [
-                    'h1' => __('H1', 'px-elements'),
-                    'h2' => __('H2', 'px-elements'),
-                    'h3' => __('H3', 'px-elements'),
-                    'h4' => __('H4', 'px-elements'),
-                    'h5' => __('H5', 'px-elements'),
-                    'h6' => __('H6', 'px-elements'),
-                    'span' => __('Span', 'px-elements'),
-                    'p' => __('P', 'px-elements'),
-                    'div' => __('Div', 'px-elements'),
+                    'h1' => __('H1', 'pixerex-elements'),
+                    'h2' => __('H2', 'pixerex-elements'),
+                    'h3' => __('H3', 'pixerex-elements'),
+                    'h4' => __('H4', 'pixerex-elements'),
+                    'h5' => __('H5', 'pixerex-elements'),
+                    'h6' => __('H6', 'pixerex-elements'),
+                    'span' => __('Span', 'pixerex-elements'),
+                    'p' => __('P', 'pixerex-elements'),
+                    'div' => __('Div', 'pixerex-elements'),
                 ],
                 'condition' => [
                     'eael_show_title' => 'yes',
@@ -643,7 +643,7 @@ trait Helper
             $this->add_control(
                 'eael_title_length',
                 [
-                    'label' => __('Title Length', 'px-elements'),
+                    'label' => __('Title Length', 'pixerex-elements'),
                     'type' => Controls_Manager::NUMBER,
                     'condition' => [
                         'eael_show_title' => 'yes',
@@ -655,10 +655,10 @@ trait Helper
         $this->add_control(
             'eael_show_excerpt',
             [
-                'label' => __('Show excerpt', 'px-elements'),
+                'label' => __('Show excerpt', 'pixerex-elements'),
                 'type' => Controls_Manager::SWITCHER,
-                'label_on' => __('Show', 'px-elements'),
-                'label_off' => __('Hide', 'px-elements'),
+                'label_on' => __('Show', 'pixerex-elements'),
+                'label_off' => __('Hide', 'pixerex-elements'),
                 'return_value' => 'yes',
                 'default' => 'yes',
             ]
@@ -668,7 +668,7 @@ trait Helper
             $this->add_control(
                 'eael_excerpt_length',
                 [
-                    'label' => __('Excerpt Words', 'px-elements'),
+                    'label' => __('Excerpt Words', 'pixerex-elements'),
                     'type' => Controls_Manager::NUMBER,
                     'default' => 10,
                     'condition' => [
@@ -681,10 +681,10 @@ trait Helper
             $this->add_control(
                 'excerpt_expanison_indicator',
                 [
-                    'label' => esc_html__('Expanison Indicator', 'px-elements'),
+                    'label' => esc_html__('Expanison Indicator', 'pixerex-elements'),
                     'type' => Controls_Manager::TEXT,
                     'label_block' => false,
-                    'default' => esc_html__('...', 'px-elements'),
+                    'default' => esc_html__('...', 'pixerex-elements'),
                     'condition' => [
                         'eael_show_excerpt' => 'yes',
                         'eael_content_timeline_choose' => 'dynamic',
@@ -695,7 +695,7 @@ trait Helper
             $this->add_control(
                 'eael_excerpt_length',
                 [
-                    'label' => __('Excerpt Words', 'px-elements'),
+                    'label' => __('Excerpt Words', 'pixerex-elements'),
                     'type' => Controls_Manager::NUMBER,
                     'default' => 10,
                     'condition' => [
@@ -707,10 +707,10 @@ trait Helper
             $this->add_control(
                 'excerpt_expanison_indicator',
                 [
-                    'label' => esc_html__('Expanison Indicator', 'px-elements'),
+                    'label' => esc_html__('Expanison Indicator', 'pixerex-elements'),
                     'type' => Controls_Manager::TEXT,
                     'label_block' => false,
-                    'default' => esc_html__('...', 'px-elements'),
+                    'default' => esc_html__('...', 'pixerex-elements'),
                     'condition' => [
                         'eael_show_excerpt' => 'yes',
                     ],
@@ -721,10 +721,10 @@ trait Helper
         $this->add_control(
             'eael_show_read_more',
             [
-                'label' => __('Show Read More', 'px-elements'),
+                'label' => __('Show Read More', 'pixerex-elements'),
                 'type' => Controls_Manager::SWITCHER,
-                'label_on' => __('Show', 'px-elements'),
-                'label_off' => __('Hide', 'px-elements'),
+                'label_on' => __('Show', 'pixerex-elements'),
+                'label_off' => __('Hide', 'pixerex-elements'),
                 'return_value' => 'yes',
                 'default' => 'yes',
                 'condition' => [
@@ -736,10 +736,10 @@ trait Helper
         $this->add_control(
             'eael_read_more_text',
             [
-                'label' => esc_html__('Label Text', 'px-elements'),
+                'label' => esc_html__('Label Text', 'pixerex-elements'),
                 'type' => Controls_Manager::TEXT,
                 'label_block' => false,
-                'default' => esc_html__('Read More', 'px-elements'),
+                'default' => esc_html__('Read More', 'pixerex-elements'),
                 'condition' => [
                     'eael_content_timeline_choose' => 'dynamic',
                     'eael_show_read_more' => 'yes',
@@ -755,10 +755,10 @@ trait Helper
             $this->add_control(
                 'eael_show_read_more_button',
                 [
-                    'label' => __('Show Read More Button', 'px-elements'),
+                    'label' => __('Show Read More Button', 'pixerex-elements'),
                     'type' => Controls_Manager::SWITCHER,
-                    'label_on' => __('Show', 'px-elements'),
-                    'label_off' => __('Hide', 'px-elements'),
+                    'label_on' => __('Show', 'pixerex-elements'),
+                    'label_off' => __('Hide', 'pixerex-elements'),
                     'return_value' => 'yes',
                     'default' => 'yes',
                     'condition' => [
@@ -770,9 +770,9 @@ trait Helper
             $this->add_control(
                 'read_more_button_text',
                 [
-                    'label' => __('Button Text', 'px-elements'),
+                    'label' => __('Button Text', 'pixerex-elements'),
                     'type' => Controls_Manager::TEXT,
-                    'default' => __('Read More', 'px-elements'),
+                    'default' => __('Read More', 'pixerex-elements'),
                     'condition' => [
                         'eael_show_read_more_button' => 'yes',
                         'post_type!' => 'product',
@@ -785,10 +785,10 @@ trait Helper
             $this->add_control(
                 'eael_show_post_terms',
                 [
-                    'label' => __('Show Post Terms', 'px-elements'),
+                    'label' => __('Show Post Terms', 'pixerex-elements'),
                     'type' => Controls_Manager::SWITCHER,
-                    'label_on' => __('Show', 'px-elements'),
-                    'label_off' => __('Hide', 'px-elements'),
+                    'label_on' => __('Show', 'pixerex-elements'),
+                    'label_off' => __('Hide', 'pixerex-elements'),
                     'return_value' => 'yes',
                     'condition' => [
                         'eael_show_image' => 'yes',
@@ -799,11 +799,11 @@ trait Helper
             $this->add_control(
                 'eael_post_terms',
                 [
-                    'label' => __('Show Terms From', 'px-elements'),
+                    'label' => __('Show Terms From', 'pixerex-elements'),
                     'type' => Controls_Manager::SELECT,
                     'options' => [
-                        'category' => __('Category', 'px-elements'),
-                        'tags' => __('Tags', 'px-elements'),
+                        'category' => __('Category', 'pixerex-elements'),
+                        'tags' => __('Tags', 'pixerex-elements'),
                     ],
                     'default' => 'category',
                     'condition' => [
@@ -815,12 +815,12 @@ trait Helper
             $this->add_control(
                 'eael_post_terms_max_length',
                 [
-                    'label' => __('Max Terms to Show', 'px-elements'),
+                    'label' => __('Max Terms to Show', 'pixerex-elements'),
                     'type' => Controls_Manager::SELECT,
                     'options' => [
-                        1 => __('1', 'px-elements'),
-                        2 => __('2', 'px-elements'),
-                        3 => __('3', 'px-elements'),
+                        1 => __('1', 'pixerex-elements'),
+                        2 => __('2', 'pixerex-elements'),
+                        3 => __('3', 'pixerex-elements'),
                     ],
                     'default' => 1,
                     'condition' => [
@@ -836,10 +836,10 @@ trait Helper
             $this->add_control(
                 'eael_show_meta',
                 [
-                    'label' => __('Show Meta', 'px-elements'),
+                    'label' => __('Show Meta', 'pixerex-elements'),
                     'type' => Controls_Manager::SWITCHER,
-                    'label_on' => __('Show', 'px-elements'),
-                    'label_off' => __('Hide', 'px-elements'),
+                    'label_on' => __('Show', 'pixerex-elements'),
+                    'label_off' => __('Hide', 'pixerex-elements'),
                     'return_value' => 'yes',
                     'default' => 'yes',
                 ]
@@ -848,12 +848,12 @@ trait Helper
             $this->add_control(
                 'meta_position',
                 [
-                    'label' => esc_html__('Meta Position', 'px-elements'),
+                    'label' => esc_html__('Meta Position', 'pixerex-elements'),
                     'type' => Controls_Manager::SELECT,
                     'default' => 'meta-entry-footer',
                     'options' => [
-                        'meta-entry-header' => esc_html__('Entry Header', 'px-elements'),
-                        'meta-entry-footer' => esc_html__('Entry Footer', 'px-elements'),
+                        'meta-entry-header' => esc_html__('Entry Header', 'pixerex-elements'),
+                        'meta-entry-footer' => esc_html__('Entry Footer', 'pixerex-elements'),
                     ],
                     'condition' => [
                         'eael_show_meta' => 'yes',
@@ -864,10 +864,10 @@ trait Helper
             $this->add_control(
                 'eael_show_avatar',
                 [
-                    'label' => __('Show Avatar', 'px-elements'),
+                    'label' => __('Show Avatar', 'pixerex-elements'),
                     'type' => Controls_Manager::SWITCHER,
-                    'label_on' => __('Show', 'px-elements'),
-                    'label_off' => __('Hide', 'px-elements'),
+                    'label_on' => __('Show', 'pixerex-elements'),
+                    'label_off' => __('Hide', 'pixerex-elements'),
                     'return_value' => 'yes',
                     'default' => 'yes',
                     'condition' => [
@@ -880,10 +880,10 @@ trait Helper
             $this->add_control(
                 'eael_show_author',
                 [
-                    'label' => __('Show Author Name', 'px-elements'),
+                    'label' => __('Show Author Name', 'pixerex-elements'),
                     'type' => Controls_Manager::SWITCHER,
-                    'label_on' => __('Show', 'px-elements'),
-                    'label_off' => __('Hide', 'px-elements'),
+                    'label_on' => __('Show', 'pixerex-elements'),
+                    'label_off' => __('Hide', 'pixerex-elements'),
                     'return_value' => 'yes',
                     'default' => 'yes',
                     'condition' => [
@@ -895,10 +895,10 @@ trait Helper
             $this->add_control(
                 'eael_show_date',
                 [
-                    'label' => __('Show Date', 'px-elements'),
+                    'label' => __('Show Date', 'pixerex-elements'),
                     'type' => Controls_Manager::SWITCHER,
-                    'label_on' => __('Show', 'px-elements'),
-                    'label_off' => __('Hide', 'px-elements'),
+                    'label_on' => __('Show', 'pixerex-elements'),
+                    'label_off' => __('Hide', 'pixerex-elements'),
                     'return_value' => 'yes',
                     'default' => 'yes',
                     'condition' => [
@@ -998,7 +998,7 @@ trait Helper
             $this->start_controls_section(
                 'eael_section_read_more_btn',
                 [
-                    'label' => __('Read More Button Style', 'px-elements'),
+                    'label' => __('Read More Button Style', 'pixerex-elements'),
                     'tab' => Controls_Manager::TAB_STYLE,
                     'condition' => [
                         'eael_show_read_more_button' => 'yes',
@@ -1020,14 +1020,14 @@ trait Helper
             $this->start_controls_tab(
                 'read_more_button_style_normal',
                 [
-                    'label' => __('Normal', 'px-elements'),
+                    'label' => __('Normal', 'pixerex-elements'),
                 ]
             );
 
             $this->add_control(
                 'eael_post_read_more_btn_color',
                 [
-                    'label' => esc_html__('Text Color', 'px-elements'),
+                    'label' => esc_html__('Text Color', 'pixerex-elements'),
                     'type' => Controls_Manager::COLOR,
                     'default' => '#61ce70',
                     'selectors' => [
@@ -1040,7 +1040,7 @@ trait Helper
                 Group_Control_Background::get_type(),
                 [
                     'name' => 'read_more_btn_background',
-                    'label' => __('Background', 'px-elements'),
+                    'label' => __('Background', 'pixerex-elements'),
                     'types' => ['classic', 'gradient'],
                     'selector' => '{{WRAPPER}} .eael-post-elements-readmore-btn',
                     'exclude' => [
@@ -1053,7 +1053,7 @@ trait Helper
                 Group_Control_Border::get_type(),
                 [
                     'name' => 'read_more_btn_border',
-                    'label' => __('Border', 'px-elements'),
+                    'label' => __('Border', 'pixerex-elements'),
                     'selector' => '{{WRAPPER}} .eael-post-elements-readmore-btn',
                 ]
             );
@@ -1061,7 +1061,7 @@ trait Helper
             $this->add_responsive_control(
                 'read_more_btn_border_radius',
                 [
-                    'label' => esc_html__('Border Radius', 'px-elements'),
+                    'label' => esc_html__('Border Radius', 'pixerex-elements'),
                     'type' => Controls_Manager::DIMENSIONS,
                     'size_units' => ['px', 'em', '%'],
                     'selectors' => [
@@ -1075,14 +1075,14 @@ trait Helper
             $this->start_controls_tab(
                 'read_more_button_style_hover',
                 [
-                    'label' => __('Hover', 'px-elements'),
+                    'label' => __('Hover', 'pixerex-elements'),
                 ]
             );
 
             $this->add_control(
                 'eael_post_read_more_btn_hover_color',
                 [
-                    'label' => esc_html__('Text Color', 'px-elements'),
+                    'label' => esc_html__('Text Color', 'pixerex-elements'),
                     'type' => Controls_Manager::COLOR,
                     'selectors' => [
                         '{{WRAPPER}} .eael-post-elements-readmore-btn:hover' => 'color: {{VALUE}};',
@@ -1094,7 +1094,7 @@ trait Helper
                 Group_Control_Background::get_type(),
                 [
                     'name' => 'read_more_btn_hover_background',
-                    'label' => __('Background', 'px-elements'),
+                    'label' => __('Background', 'pixerex-elements'),
                     'types' => ['classic', 'gradient'],
                     'selector' => '{{WRAPPER}} .eael-post-elements-readmore-btn:hover',
                     'exclude' => [
@@ -1107,7 +1107,7 @@ trait Helper
                 Group_Control_Border::get_type(),
                 [
                     'name' => 'read_more_btn_hover_border',
-                    'label' => __('Border', 'px-elements'),
+                    'label' => __('Border', 'pixerex-elements'),
                     'selector' => '{{WRAPPER}} .eael-post-elements-readmore-btn:hover',
                 ]
             );
@@ -1115,7 +1115,7 @@ trait Helper
             $this->add_responsive_control(
                 'read_more_btn_border_hover_radius',
                 [
-                    'label' => esc_html__('Border Radius', 'px-elements'),
+                    'label' => esc_html__('Border Radius', 'pixerex-elements'),
                     'type' => Controls_Manager::DIMENSIONS,
                     'size_units' => ['px', 'em', '%'],
                     'selectors' => [
@@ -1131,7 +1131,7 @@ trait Helper
             $this->add_responsive_control(
                 'eael_post_read_more_btn_padding',
                 [
-                    'label' => esc_html__('Padding', 'px-elements'),
+                    'label' => esc_html__('Padding', 'pixerex-elements'),
                     'type' => Controls_Manager::DIMENSIONS,
                     'size_units' => ['px', 'em', '%'],
                     'selectors' => [
@@ -1143,7 +1143,7 @@ trait Helper
             $this->add_responsive_control(
                 'read_more_btn_margin',
                 [
-                    'label' => esc_html__('Margin', 'px-elements'),
+                    'label' => esc_html__('Margin', 'pixerex-elements'),
                     'type' => Controls_Manager::DIMENSIONS,
                     'size_units' => ['px', 'em', '%'],
                     'selectors' => [
@@ -1165,7 +1165,7 @@ trait Helper
         $this->start_controls_section(
             'eael_section_load_more_btn',
             [
-                'label' => __('Load More Button Style', 'px-elements'),
+                'label' => __('Load More Button Style', 'pixerex-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'show_load_more' => ['yes', '1', 'true'],
@@ -1176,7 +1176,7 @@ trait Helper
         $this->add_responsive_control(
             'eael_post_grid_load_more_btn_padding',
             [
-                'label' => esc_html__('Padding', 'px-elements'),
+                'label' => esc_html__('Padding', 'pixerex-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -1188,7 +1188,7 @@ trait Helper
         $this->add_responsive_control(
             'eael_post_grid_load_more_btn_margin',
             [
-                'label' => esc_html__('Margin', 'px-elements'),
+                'label' => esc_html__('Margin', 'pixerex-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -1207,12 +1207,12 @@ trait Helper
         $this->start_controls_tabs('eael_post_grid_load_more_btn_tabs');
 
         // Normal State Tab
-        $this->start_controls_tab('eael_post_grid_load_more_btn_normal', ['label' => esc_html__('Normal', 'px-elements')]);
+        $this->start_controls_tab('eael_post_grid_load_more_btn_normal', ['label' => esc_html__('Normal', 'pixerex-elements')]);
 
         $this->add_control(
             'eael_post_grid_load_more_btn_normal_text_color',
             [
-                'label' => esc_html__('Text Color', 'px-elements'),
+                'label' => esc_html__('Text Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#fff',
                 'selectors' => [
@@ -1224,7 +1224,7 @@ trait Helper
         $this->add_control(
             'eael_cta_btn_normal_bg_color',
             [
-                'label' => esc_html__('Background Color', 'px-elements'),
+                'label' => esc_html__('Background Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#29d8d8',
                 'selectors' => [
@@ -1237,7 +1237,7 @@ trait Helper
             Group_Control_Border::get_type(),
             [
                 'name' => 'eael_post_grid_load_more_btn_normal_border',
-                'label' => esc_html__('Border', 'px-elements'),
+                'label' => esc_html__('Border', 'pixerex-elements'),
                 'selector' => '{{WRAPPER}} .eael-load-more-button',
             ]
         );
@@ -1245,7 +1245,7 @@ trait Helper
         $this->add_control(
             'eael_post_grid_load_more_btn_border_radius',
             [
-                'label' => esc_html__('Border Radius', 'px-elements'),
+                'label' => esc_html__('Border Radius', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'range' => [
                     'px' => [
@@ -1269,12 +1269,12 @@ trait Helper
         $this->end_controls_tab();
 
         // Hover State Tab
-        $this->start_controls_tab('eael_post_grid_load_more_btn_hover', ['label' => esc_html__('Hover', 'px-elements')]);
+        $this->start_controls_tab('eael_post_grid_load_more_btn_hover', ['label' => esc_html__('Hover', 'pixerex-elements')]);
 
         $this->add_control(
             'eael_post_grid_load_more_btn_hover_text_color',
             [
-                'label' => esc_html__('Text Color', 'px-elements'),
+                'label' => esc_html__('Text Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#fff',
                 'selectors' => [
@@ -1286,7 +1286,7 @@ trait Helper
         $this->add_control(
             'eael_post_grid_load_more_btn_hover_bg_color',
             [
-                'label' => esc_html__('Background Color', 'px-elements'),
+                'label' => esc_html__('Background Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#27bdbd',
                 'selectors' => [
@@ -1298,7 +1298,7 @@ trait Helper
         $this->add_control(
             'eael_post_grid_load_more_btn_hover_border_color',
             [
-                'label' => esc_html__('Border Color', 'px-elements'),
+                'label' => esc_html__('Border Color', 'pixerex-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -1322,19 +1322,19 @@ trait Helper
         $this->add_responsive_control(
             'eael_post_grid_loadmore_button_alignment',
             [
-                'label' => __('Button Alignment', 'px-elements'),
+                'label' => __('Button Alignment', 'pixerex-elements'),
                 'type' => Controls_Manager::CHOOSE,
                 'options' => [
                     'flex-start' => [
-                        'title' => __('Left', 'px-elements'),
+                        'title' => __('Left', 'pixerex-elements'),
                         'icon' => 'fa fa-align-left',
                     ],
                     'center' => [
-                        'title' => __('Center', 'px-elements'),
+                        'title' => __('Center', 'pixerex-elements'),
                         'icon' => 'fa fa-align-center',
                     ],
                     'flex-end' => [
-                        'title' => __('Right', 'px-elements'),
+                        'title' => __('Right', 'pixerex-elements'),
                         'icon' => 'fa fa-align-right',
                     ],
                 ],
@@ -1357,14 +1357,14 @@ trait Helper
         $this->start_controls_section(
             'eael_section_pro',
             [
-                'label' => __('Go Premium for More Features', 'px-elements'),
+                'label' => __('Go Premium for More Features', 'pixerex-elements'),
             ]
         );
 
         $this->add_control(
             'eael_control_get_pro',
             [
-                'label' => __('Unlock more possibilities', 'px-elements'),
+                'label' => __('Unlock more possibilities', 'pixerex-elements'),
                 'type' => Controls_Manager::CHOOSE,
                 'options' => [
                     '1' => [
@@ -1637,13 +1637,13 @@ trait Helper
                 'post_type' => 'wpcf7_contact_form',
                 'showposts' => 999,
             ));
-            $options[0] = esc_html__('Select a Contact Form', 'px-elements');
+            $options[0] = esc_html__('Select a Contact Form', 'pixerex-elements');
             if (!empty($wpcf7_form_list) && !is_wp_error($wpcf7_form_list)) {
                 foreach ($wpcf7_form_list as $post) {
                     $options[$post->ID] = $post->post_title;
                 }
             } else {
-                $options[0] = esc_html__('Create a Form First', 'px-elements');
+                $options[0] = esc_html__('Create a Form First', 'pixerex-elements');
             }
         }
         return $options;
@@ -1663,13 +1663,13 @@ trait Helper
 
             if (!empty($gravity_forms) && !is_wp_error($gravity_forms)) {
 
-                $options[0] = esc_html__('Select Gravity Form', 'px-elements');
+                $options[0] = esc_html__('Select Gravity Form', 'pixerex-elements');
                 foreach ($gravity_forms as $form) {
                     $options[$form->id] = $form->title;
                 }
 
             } else {
-                $options[0] = esc_html__('Create a Form First', 'px-elements');
+                $options[0] = esc_html__('Create a Form First', 'pixerex-elements');
             }
         }
 
@@ -1691,12 +1691,12 @@ trait Helper
         $options = array();
 
         if (!empty($wpuf_form_list) && !is_wp_error($wpuf_form_list)) {
-            $options[0] = esc_html__('Select weForm', 'px-elements');
+            $options[0] = esc_html__('Select weForm', 'pixerex-elements');
             foreach ($wpuf_form_list as $post) {
                 $options[$post->ID] = $post->post_title;
             }
         } else {
-            $options[0] = esc_html__('Create a Form First', 'px-elements');
+            $options[0] = esc_html__('Create a Form First', 'pixerex-elements');
         }
 
         return $options;
@@ -1716,14 +1716,14 @@ trait Helper
 
             if (!empty($contact_forms) && !is_wp_error($contact_forms)) {
 
-                $options[0] = esc_html__('Select Ninja Form', 'px-elements');
+                $options[0] = esc_html__('Select Ninja Form', 'pixerex-elements');
 
                 foreach ($contact_forms as $form) {
                     $options[$form->get_id()] = $form->get_setting('title');
                 }
             }
         } else {
-            $options[0] = esc_html__('Create a Form First', 'px-elements');
+            $options[0] = esc_html__('Create a Form First', 'pixerex-elements');
         }
 
         return $options;
@@ -1742,13 +1742,13 @@ trait Helper
             $contact_forms = \Caldera_Forms_Forms::get_forms(true, true);
 
             if (!empty($contact_forms) && !is_wp_error($contact_forms)) {
-                $options[0] = esc_html__('Select Caldera Form', 'px-elements');
+                $options[0] = esc_html__('Select Caldera Form', 'pixerex-elements');
                 foreach ($contact_forms as $form) {
                     $options[$form['ID']] = $form['name'];
                 }
             }
         } else {
-            $options[0] = esc_html__('Create a Form First', 'px-elements');
+            $options[0] = esc_html__('Create a Form First', 'pixerex-elements');
         }
 
         return $options;
@@ -1772,13 +1772,13 @@ trait Helper
             $contact_forms = get_posts($args);
 
             if (!empty($contact_forms) && !is_wp_error($contact_forms)) {
-                $options[0] = esc_html__('Select a WPForm', 'px-elements');
+                $options[0] = esc_html__('Select a WPForm', 'pixerex-elements');
                 foreach ($contact_forms as $post) {
                     $options[$post->ID] = $post->post_title;
                 }
             }
         } else {
-            $options[0] = esc_html__('Create a Form First', 'px-elements');
+            $options[0] = esc_html__('Create a Form First', 'pixerex-elements');
         }
 
         return $options;
@@ -2090,7 +2090,7 @@ trait Helper
                             $html .= '<span class="eael-twitter-feed-item-author">' . $item['user']['name'] . '</span>
                         </a>';
                         if ($settings['eael_twitter_feed_show_date'] == 'true') {
-                            $html .= '<span class="eael-twitter-feed-item-date">' . sprintf(__('%s ago', 'px-elements'), human_time_diff(strtotime($item['created_at']))) . '</span>';
+                            $html .= '<span class="eael-twitter-feed-item-date">' . sprintf(__('%s ago', 'pixerex-elements'), human_time_diff(strtotime($item['created_at']))) . '</span>';
                         }
                     $html .= '</div>
                     
@@ -2441,9 +2441,9 @@ trait Helper
     public function eael_event_calendar_source($source)
     {
         if (apply_filters('eael/pro_enabled', false)) {
-            $source['eventon'] = __('EventON', 'px-elements');
+            $source['eventon'] = __('EventON', 'pixerex-elements');
         } else {
-            $source['eventon'] = __('EventON (Pro) ', 'px-elements');
+            $source['eventon'] = __('EventON (Pro) ', 'pixerex-elements');
         }
 
         return $source;
@@ -2470,7 +2470,7 @@ trait Helper
             $wb->add_control(
                 'ea_adv_data_table_source_ninja_table_id',
                 [
-                    'label' => esc_html__('Table ID', 'px-elements'),
+                    'label' => esc_html__('Table ID', 'pixerex-elements'),
                     'type' => Controls_Manager::SELECT,
                     'options' => $this->eael_list_ninja_tables(),
                     'condition' => [
@@ -2483,7 +2483,7 @@ trait Helper
                 'ea_adv_data_table_ninja_required',
                 [
                     'type' => Controls_Manager::RAW_HTML,
-                    'raw' => __('<strong>Ninja Tables</strong> is not installed/activated on your site. Please install and activate <a href="plugin-install.php?s=Ninja+Tables&tab=search&type=term" target="_blank">Ninja Tables</a> first.', 'px-elements'),
+                    'raw' => __('<strong>Ninja Tables</strong> is not installed/activated on your site. Please install and activate <a href="plugin-install.php?s=Ninja+Tables&tab=search&type=term" target="_blank">Ninja Tables</a> first.', 'pixerex-elements'),
                     'content_classes' => 'eael-warning',
                     'condition' => [
                         'ea_adv_data_table_source' => 'ninja',
@@ -2605,12 +2605,12 @@ trait Helper
         $this->add_control(
             $prefix . '_position',
             [
-                'label' => __('Position', 'px-elements'),
+                'label' => __('Position', 'pixerex-elements'),
                 'type' => Controls_Manager::SELECT,
                 'default' => '',
                 'options' => [
-                    '' => __('Default', 'px-elements'),
-                    'absolute' => __('Absolute', 'px-elements'),
+                    '' => __('Default', 'pixerex-elements'),
+                    'absolute' => __('Absolute', 'pixerex-elements'),
                 ],
                 'selectors' => [
                     $selectors => 'position: {{VALUE}}',
@@ -2618,13 +2618,13 @@ trait Helper
             ]
         );
 
-        $start = is_rtl() ? __('Right', 'px-elements') : __('Left', 'px-elements');
-        $end = !is_rtl() ? __('Right', 'px-elements') : __('Left', 'px-elements');
+        $start = is_rtl() ? __('Right', 'pixerex-elements') : __('Left', 'pixerex-elements');
+        $end = !is_rtl() ? __('Right', 'pixerex-elements') : __('Left', 'pixerex-elements');
 
         $this->add_control(
             $prefix . '_offset_orientation_h',
             [
-                'label' => __('Horizontal Orientation', 'px-elements'),
+                'label' => __('Horizontal Orientation', 'pixerex-elements'),
                 'type' => Controls_Manager::CHOOSE,
                 'toggle' => false,
                 'default' => 'start',
@@ -2649,7 +2649,7 @@ trait Helper
         $this->add_responsive_control(
             $prefix . '_offset_x',
             [
-                'label' => __('Offset', 'px-elements'),
+                'label' => __('Offset', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'range' => [
                     'px' => [
@@ -2688,7 +2688,7 @@ trait Helper
         $this->add_responsive_control(
             $prefix . '_offset_x_end',
             [
-                'label' => __('Offset', 'px-elements'),
+                'label' => __('Offset', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'range' => [
                     'px' => [
@@ -2727,17 +2727,17 @@ trait Helper
         $this->add_control(
             $prefix . '_offset_orientation_v',
             [
-                'label' => __('Vertical Orientation', 'px-elements'),
+                'label' => __('Vertical Orientation', 'pixerex-elements'),
                 'type' => Controls_Manager::CHOOSE,
                 'toggle' => false,
                 'default' => 'start',
                 'options' => [
                     'start' => [
-                        'title' => __('Top', 'px-elements'),
+                        'title' => __('Top', 'pixerex-elements'),
                         'icon' => 'eicon-v-align-top',
                     ],
                     'end' => [
-                        'title' => __('Bottom', 'px-elements'),
+                        'title' => __('Bottom', 'pixerex-elements'),
                         'icon' => 'eicon-v-align-bottom',
                     ],
                 ],
@@ -2751,7 +2751,7 @@ trait Helper
         $this->add_responsive_control(
             $prefix . '_offset_y',
             [
-                'label' => __('Offset', 'px-elements'),
+                'label' => __('Offset', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'range' => [
                     'px' => [
@@ -2789,7 +2789,7 @@ trait Helper
         $this->add_responsive_control(
             $prefix . '_offset_y_end',
             [
-                'label' => __('Offset', 'px-elements'),
+                'label' => __('Offset', 'pixerex-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'range' => [
                     'px' => [
@@ -2836,7 +2836,7 @@ trait Helper
      */
     public function eael_toc_rank_math_support($toc_plugins)
     {
-        $toc_plugins['px-elements/essential_adons_elementor.php'] = __('Essential Addons for Elementor', 'px-elements');
+        $toc_plugins['pixerex-elements/essential_adons_elementor.php'] = __('Essential Addons for Elementor', 'pixerex-elements');
         return $toc_plugins;
     }
 }

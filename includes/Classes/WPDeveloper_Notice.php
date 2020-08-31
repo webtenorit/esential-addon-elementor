@@ -444,7 +444,7 @@ class WPDeveloper_Notice {
     private function upsale_button(){
         $upsale_args = $this->get_upsale_args();
         $plugin_slug = ( isset( $upsale_args['slug'] )) ? $upsale_args['slug'] : '' ;
-        $btn_text = ( isset( $upsale_args['btn_text'] )) ? $upsale_args['btn_text'] : __( 'Install Now!', 'px-elements' ) ;
+        $btn_text = ( isset( $upsale_args['btn_text'] )) ? $upsale_args['btn_text'] : __( 'Install Now!', 'pixerex-elements' ) ;
         if( empty( $plugin_slug ) ) {
             return;
         }

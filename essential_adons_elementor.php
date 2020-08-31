@@ -2,11 +2,11 @@
 /**
  * Plugin Name: Pixerex Elements
  * Description: The Pixerex Elements plugin you install after Elementor! 70+ Premium elements, including WooCommerce, Event Calender, Data Table, Post Grid, Instagram Feed.
- * Plugin URI: https://github.com/webtenorit/px-elements.git
- * Author: px-elements
+ * Plugin URI: https://github.com/webtenorit/pixerex-elements.git
+ * Author: pixerex-elements
  * Version: 1.0.0
  * Author URI: #
- * Text Domain: px-elements
+ * Text Domain: pixerex-elements
  * Domain Path: /languages
  *
  * WC tested up to: 4.4.1
@@ -27,8 +27,8 @@ define('EAEL_PLUGIN_BASENAME', plugin_basename(__FILE__));
 define('EAEL_PLUGIN_PATH', trailingslashit(plugin_dir_path(__FILE__)));
 define('EAEL_PLUGIN_URL', trailingslashit(plugins_url('/', __FILE__)));
 define('EAEL_PLUGIN_VERSION', '1.0.0');
-define('EAEL_ASSET_PATH', wp_upload_dir()['basedir'] . '/px-elements');
-define('EAEL_ASSET_URL', wp_upload_dir()['baseurl'] . '/px-elements');
+define('EAEL_ASSET_PATH', wp_upload_dir()['basedir'] . '/pixerex-elements');
+define('EAEL_ASSET_URL', wp_upload_dir()['baseurl'] . '/pixerex-elements');
 /**
  * Including composer autoloader globally.
  *

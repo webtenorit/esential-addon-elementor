@@ -26,7 +26,7 @@ class Betterdocs_Search_Form extends Widget_Base
 
     public function get_title()
     {
-        return __('BetterDocs Search Form', 'px-elements');
+        return __('BetterDocs Search Form', 'pixerex-elements');
     }
 
     public function get_categories()
@@ -78,7 +78,7 @@ class Betterdocs_Search_Form extends Widget_Base
             $this->start_controls_section(
                 'eael_global_warning',
                 [
-                    'label' => __('Warning!', 'px-elements'),
+                    'label' => __('Warning!', 'pixerex-elements'),
                 ]
             );
 
@@ -86,7 +86,7 @@ class Betterdocs_Search_Form extends Widget_Base
                 'eael_global_warning_text',
                 [
                     'type' => Controls_Manager::RAW_HTML,
-                    'raw' => __('<strong>BetterDocs</strong> is not installed/activated on your site. Please install and activate <a href="plugin-install.php?s=BetterDocs&tab=search&type=term" target="_blank">BetterDocs</a> first.', 'px-elements'),
+                    'raw' => __('<strong>BetterDocs</strong> is not installed/activated on your site. Please install and activate <a href="plugin-install.php?s=BetterDocs&tab=search&type=term" target="_blank">BetterDocs</a> first.', 'pixerex-elements'),
                     'content_classes' => 'eael-warning',
                 ]
             );
@@ -102,7 +102,7 @@ class Betterdocs_Search_Form extends Widget_Base
             $this->start_controls_section(
                 'section_search_box_settings',
                 [
-                    'label' => __('Search Box', 'px-elements'),
+                    'label' => __('Search Box', 'pixerex-elements'),
                 ]
             );
 
@@ -118,7 +118,7 @@ class Betterdocs_Search_Form extends Widget_Base
             $this->add_responsive_control(
                 'search_box_padding',
                 [
-                    'label' => esc_html__( 'Padding', 'px-elements'),
+                    'label' => esc_html__( 'Padding', 'pixerex-elements'),
                     'type' => Controls_Manager::DIMENSIONS,
                     'size_units' => [ 'px', 'em', '%' ],
                     'default'   => [
@@ -143,14 +143,14 @@ class Betterdocs_Search_Form extends Widget_Base
             $this->start_controls_section(
                 'section_search_field_settings',
                 [
-                    'label' => __('Search Field', 'px-elements'),
+                    'label' => __('Search Field', 'pixerex-elements'),
                 ]
             );
 
             $this->add_control(
                 'search_field_bg',
                 [
-                    'label' => esc_html__( 'Field Background Color', 'px-elements'),
+                    'label' => esc_html__( 'Field Background Color', 'pixerex-elements'),
                     'type' => Controls_Manager::COLOR,
                     'selectors' => [
                         '{{WRAPPER}} .betterdocs-searchform' => 'background: {{VALUE}};',
@@ -161,7 +161,7 @@ class Betterdocs_Search_Form extends Widget_Base
             $this->add_control(
                 'search_field_text_color',
                 [
-                    'label' => esc_html__( 'Field Color', 'px-elements'),
+                    'label' => esc_html__( 'Field Color', 'pixerex-elements'),
                     'type' => Controls_Manager::COLOR,
                     'selectors' => [
                         '{{WRAPPER}} .betterdocs-searchform .betterdocs-search-field' => 'color: {{VALUE}};',
@@ -180,7 +180,7 @@ class Betterdocs_Search_Form extends Widget_Base
             $this->add_responsive_control(
                 'search_field_padding',
                 [
-                    'label' => __('Field Padding', 'px-elements'),
+                    'label' => __('Field Padding', 'pixerex-elements'),
                     'type' => Controls_Manager::DIMENSIONS,
                     'size_units' => ['px', 'em', '%'],
                     'selectors' => [
@@ -192,7 +192,7 @@ class Betterdocs_Search_Form extends Widget_Base
             $this->add_responsive_control(
                 'search_field_padding_radius',
                 [
-                    'label' => esc_html__( 'Border Radius', 'px-elements'),
+                    'label' => esc_html__( 'Border Radius', 'pixerex-elements'),
                     'type' => Controls_Manager::DIMENSIONS,
                     'size_units' => [ 'px', 'em', '%' ],
                     'selectors' => [
@@ -204,7 +204,7 @@ class Betterdocs_Search_Form extends Widget_Base
             $this->add_control(
                 'field_search_icon_heading',
                 [
-                    'label' => esc_html__( 'Search Icon', 'px-elements'),
+                    'label' => esc_html__( 'Search Icon', 'pixerex-elements'),
                     'type' => Controls_Manager::HEADING,
                     'separator' => 'before'
                 ]
@@ -213,7 +213,7 @@ class Betterdocs_Search_Form extends Widget_Base
             $this->add_control(
                 'field_search_icon_color',
                 [
-                    'label' => esc_html__( 'Color', 'px-elements'),
+                    'label' => esc_html__( 'Color', 'pixerex-elements'),
                     'type' => Controls_Manager::COLOR,
                     'selectors' => [
                         '{{WRAPPER}} .betterdocs-searchform svg.docs-search-icon' => 'fill: {{VALUE}};',
@@ -224,7 +224,7 @@ class Betterdocs_Search_Form extends Widget_Base
             $this->add_control(
                 'field_search_icon_size',
                 [
-                    'label' => esc_html__( 'Size', 'px-elements'),
+                    'label' => esc_html__( 'Size', 'pixerex-elements'),
                     'type' => Controls_Manager::SLIDER,
                     'size_units'    => [ 'px', '%', 'em' ],
                     'range' => [
@@ -241,7 +241,7 @@ class Betterdocs_Search_Form extends Widget_Base
             $this->add_control(
                 'field_close_icon_heading',
                 [
-                    'label' => esc_html__( 'Close Icon', 'px-elements'),
+                    'label' => esc_html__( 'Close Icon', 'pixerex-elements'),
                     'type' => Controls_Manager::HEADING,
                     'separator' => 'before'
                 ]
@@ -250,7 +250,7 @@ class Betterdocs_Search_Form extends Widget_Base
             $this->add_control(
                 'search_field_close_icon_color',
                 [
-                    'label' => esc_html__( 'Color', 'px-elements'),
+                    'label' => esc_html__( 'Color', 'pixerex-elements'),
                     'type' => Controls_Manager::COLOR,
                     'selectors' => [
                         '{{WRAPPER}} .docs-search-close .close-line' => 'fill: {{VALUE}};',
@@ -261,7 +261,7 @@ class Betterdocs_Search_Form extends Widget_Base
             $this->add_control(
                 'search_field_close_icon_border_color',
                 [
-                    'label' => esc_html__( 'Border Color', 'px-elements'),
+                    'label' => esc_html__( 'Border Color', 'pixerex-elements'),
                     'type' => Controls_Manager::COLOR,
                     'selectors' => [
                         '{{WRAPPER}} .docs-search-loader, {{WRAPPER}} .docs-search-close .close-border' => 'stroke: {{VALUE}};',
@@ -280,14 +280,14 @@ class Betterdocs_Search_Form extends Widget_Base
             $this->start_controls_section(
                 'section_search_result_settings',
                 [
-                    'label' => __('Search Result Box', 'px-elements'),
+                    'label' => __('Search Result Box', 'pixerex-elements'),
                 ]
             );
 
             $this->add_responsive_control(
                 'result_box_width',
                 [
-                    'label' => __('Width', 'px-elements'),
+                    'label' => __('Width', 'pixerex-elements'),
                     'type' => Controls_Manager::SLIDER,
                     'default' => [
                         'size' => 100,
@@ -309,7 +309,7 @@ class Betterdocs_Search_Form extends Widget_Base
             $this->add_responsive_control(
                 'result_box_max_width',
                 [
-                    'label' => __('Max Width', 'px-elements'),
+                    'label' => __('Max Width', 'pixerex-elements'),
                     'type' => Controls_Manager::SLIDER,
                     'default' => [
                         'size' => 1600,
@@ -341,7 +341,7 @@ class Betterdocs_Search_Form extends Widget_Base
                 Group_Control_Border::get_type(),
                 [
                     'name' => 'result_box_border',
-                    'label' => esc_html__( 'Border', 'px-elements'),
+                    'label' => esc_html__( 'Border', 'pixerex-elements'),
                     'selector' => '{{WRAPPER}} .betterdocs-live-search .docs-search-result',
                 ]
             );
@@ -356,7 +356,7 @@ class Betterdocs_Search_Form extends Widget_Base
             $this->start_controls_section(
                 'section_search_result_item_settings',
                 [
-                    'label' => __('Search Result List', 'px-elements'),
+                    'label' => __('Search Result List', 'pixerex-elements'),
                 ]
             );
 
@@ -365,13 +365,13 @@ class Betterdocs_Search_Form extends Widget_Base
                 // Normal State Tab
                 $this->start_controls_tab(
                     'item_normal',
-                    [ 'label' => esc_html__( 'Normal', 'px-elements') ]
+                    [ 'label' => esc_html__( 'Normal', 'pixerex-elements') ]
                 );
 
                 $this->add_control(
                     'result_box_item',
                     [
-                        'label' => esc_html__( 'Item', 'px-elements'),
+                        'label' => esc_html__( 'Item', 'pixerex-elements'),
                         'type' => Controls_Manager::HEADING
                     ]
                 );
@@ -387,7 +387,7 @@ class Betterdocs_Search_Form extends Widget_Base
                 $this->add_control(
                     'result_box_item_color',
                     [
-                        'label' => esc_html__( 'Item Color', 'px-elements'),
+                        'label' => esc_html__( 'Item Color', 'pixerex-elements'),
                         'type' => Controls_Manager::COLOR,
                         'selectors' => [
                             '{{WRAPPER}} .betterdocs-live-search .docs-search-result li a' => 'color: {{VALUE}};',
@@ -399,7 +399,7 @@ class Betterdocs_Search_Form extends Widget_Base
                     Group_Control_Border::get_type(),
                     [
                         'name' => 'result_item_border',
-                        'label' => esc_html__( 'Border', 'px-elements'),
+                        'label' => esc_html__( 'Border', 'pixerex-elements'),
                         'selector' => '{{WRAPPER}} .betterdocs-live-search .docs-search-result li'
                     ]
                 );
@@ -407,7 +407,7 @@ class Betterdocs_Search_Form extends Widget_Base
                 $this->add_responsive_control(
                     'result_box_item_padding',
                     [
-                        'label' => __('Padding', 'px-elements'),
+                        'label' => __('Padding', 'pixerex-elements'),
                         'type' => Controls_Manager::DIMENSIONS,
                         'size_units' => ['px', 'em', '%'],
                         'selectors' => [
@@ -419,7 +419,7 @@ class Betterdocs_Search_Form extends Widget_Base
                 $this->add_control(
                     'search_result_box_item_count',
                     [
-                        'label' => esc_html__( 'Count', 'px-elements'),
+                        'label' => esc_html__( 'Count', 'pixerex-elements'),
                         'type' => Controls_Manager::HEADING,
                         'separator' => 'before'
                     ]
@@ -436,7 +436,7 @@ class Betterdocs_Search_Form extends Widget_Base
                 $this->add_control(
                     'result_box_item_count_color',
                     [
-                        'label' => esc_html__( 'Item Color', 'px-elements'),
+                        'label' => esc_html__( 'Item Color', 'pixerex-elements'),
                         'type' => Controls_Manager::COLOR,
                         'selectors' => [
                             '{{WRAPPER}} .betterdocs-live-search .docs-search-result li span' => 'color: {{VALUE}};',
@@ -449,13 +449,13 @@ class Betterdocs_Search_Form extends Widget_Base
                 // Hover State Tab
                 $this->start_controls_tab(
                     'item_hover',
-                    [ 'label' => esc_html__( 'Hover', 'px-elements') ]
+                    [ 'label' => esc_html__( 'Hover', 'pixerex-elements') ]
                 );
 
                 $this->add_responsive_control(
                     'result_item_transition',
                     [
-                        'label' => __('Transition', 'px-elements'),
+                        'label' => __('Transition', 'pixerex-elements'),
                         'type'  => Controls_Manager::SLIDER,
                         'default' => [
                             'size' => 300,
@@ -477,7 +477,7 @@ class Betterdocs_Search_Form extends Widget_Base
                 $this->add_control(
                     'result_box_item_hover_heading',
                     [
-                        'label' => esc_html__( 'Item', 'px-elements'),
+                        'label' => esc_html__( 'Item', 'pixerex-elements'),
                         'type' => Controls_Manager::HEADING
                     ]
                 );
@@ -497,7 +497,7 @@ class Betterdocs_Search_Form extends Widget_Base
                 $this->add_control(
                     'result_box_item_hover_color',
                     [
-                        'label' => esc_html__( 'Item Color', 'px-elements'),
+                        'label' => esc_html__( 'Item Color', 'pixerex-elements'),
                         'type' => Controls_Manager::COLOR,
                         'selectors' => [
                             '{{WRAPPER}} .betterdocs-live-search .docs-search-result li:hover a' => 'color: {{VALUE}};',
@@ -509,7 +509,7 @@ class Betterdocs_Search_Form extends Widget_Base
                     Group_Control_Border::get_type(),
                     [
                         'name' => 'result_item_hover_border',
-                        'label' => esc_html__( 'Border', 'px-elements'),
+                        'label' => esc_html__( 'Border', 'pixerex-elements'),
                         'selector' => '{{WRAPPER}} .betterdocs-live-search .docs-search-result li:hover'
                     ]
                 );
@@ -517,7 +517,7 @@ class Betterdocs_Search_Form extends Widget_Base
                 $this->add_control(
                     'result_box_item_hover_count_heading',
                     [
-                        'label' => esc_html__( 'Count', 'px-elements'),
+                        'label' => esc_html__( 'Count', 'pixerex-elements'),
                         'type' => Controls_Manager::HEADING,
                         'separator' => 'before'
                     ]
@@ -526,7 +526,7 @@ class Betterdocs_Search_Form extends Widget_Base
                 $this->add_control(
                     'result_box_item_hover_count_color',
                     [
-                        'label' => esc_html__( 'Item Color', 'px-elements'),
+                        'label' => esc_html__( 'Item Color', 'pixerex-elements'),
                         'type' => Controls_Manager::COLOR,
                         'selectors' => [
                             '{{WRAPPER}} .betterdocs-live-search .docs-search-result li:hover span' => 'color: {{VALUE}};',

@@ -28,7 +28,7 @@ class Promotion
             <div class="ea-nerd-box-title">' . $texts['title'] . '</div>
             <div class="ea-nerd-box-message">' . $texts['messages'] . '</div>
             <a class="ea-nerd-box-link elementor-button elementor-button-default" href="https://wpdeveloper.net/upgrade/ea-pro" target="_blank">
-            ' . __('Upgrade Essential Addons', 'px-elements') . '
+            ' . __('Upgrade Essential Addons', 'pixerex-elements') . '
             </a>
         </div>';
 
@@ -50,8 +50,8 @@ class Promotion
             [
                 'type' => Controls_Manager::RAW_HTML,
                 'raw' => $this->teaser_template([
-                    'title' => __('Meet EA Parallax', 'px-elements'),
-                    'messages' => __('Create stunning Parallax effects on your site and blow everyone away.', 'px-elements'),
+                    'title' => __('Meet EA Parallax', 'pixerex-elements'),
+                    'messages' => __('Create stunning Parallax effects on your site and blow everyone away.', 'pixerex-elements'),
                 ]),
             ]
         );
@@ -74,8 +74,8 @@ class Promotion
             [
                 'type' => Controls_Manager::RAW_HTML,
                 'raw' => $this->teaser_template([
-                    'title' => __('Meet EA Particles', 'px-elements'),
-                    'messages' => __('Create stunning Particles effects on your site and blow everyone away.', 'px-elements'),
+                    'title' => __('Meet EA Particles', 'pixerex-elements'),
+                    'messages' => __('Create stunning Particles effects on your site and blow everyone away.', 'pixerex-elements'),
                 ]),
             ]
         );
@@ -98,8 +98,8 @@ class Promotion
             [
                 'type' => Controls_Manager::RAW_HTML,
                 'raw' => $this->teaser_template([
-                    'title' => __('Meet EA Content Protection', 'px-elements'),
-                    'messages' => __('Put a restriction on any of your content and protect your privacy.', 'px-elements'),
+                    'title' => __('Meet EA Content Protection', 'pixerex-elements'),
+                    'messages' => __('Put a restriction on any of your content and protect your privacy.', 'pixerex-elements'),
                 ]),
             ]
         );
@@ -122,8 +122,8 @@ class Promotion
             [
                 'type' => Controls_Manager::RAW_HTML,
                 'raw' => $this->teaser_template([
-                    'title' => __('Meet EA Advanced Tooltip', 'px-elements'),
-                    'messages' => __('Highlight any Elementor widgets with a key message when they are hovered.', 'px-elements'),
+                    'title' => __('Meet EA Advanced Tooltip', 'pixerex-elements'),
+                    'messages' => __('Highlight any Elementor widgets with a key message when they are hovered.', 'pixerex-elements'),
                 ]),
             ]
         );

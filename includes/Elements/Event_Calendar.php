@@ -30,7 +30,7 @@ class Event_Calendar extends Widget_Base {
     }
 
     public function get_title () {
-        return esc_html__('Event Calendar', 'px-elements');
+        return esc_html__('Event Calendar', 'pixerex-elements');
     }
 
     public function get_icon () {
@@ -72,7 +72,7 @@ class Event_Calendar extends Widget_Base {
         $this->start_controls_section(
             'eael_event_section',
             [
-                'label' => __('Events', 'px-elements'),
+                'label' => __('Events', 'pixerex-elements'),
                 'tab'   => Controls_Manager::TAB_CONTENT,
             ]
         );
@@ -80,12 +80,12 @@ class Event_Calendar extends Widget_Base {
         $this->add_control(
             'eael_event_calendar_type',
             [
-                'label'   => __('Source', 'px-elements'),
+                'label'   => __('Source', 'pixerex-elements'),
                 'type'    => Controls_Manager::SELECT,
                 'options' => apply_filters('eael/event-calendar/source', [
-                    'manual' => __('Manual', 'px-elements'),
-                    'google' => __('Google', 'px-elements'),
-                    'the_events_calendar' => __('The Events Calendar', 'px-elements'),
+                    'manual' => __('Manual', 'pixerex-elements'),
+                    'google' => __('Google', 'pixerex-elements'),
+                    'the_events_calendar' => __('The Events Calendar', 'pixerex-elements'),
 
                 ]),
                 'default' => 'manual',
@@ -111,7 +111,7 @@ class Event_Calendar extends Widget_Base {
             $this->add_control(
                 'eael_event_calendar_pro_enable_warning',
                 [
-                    'label' => esc_html__('Only Available in Pro Version!', 'px-elements'),
+                    'label' => esc_html__('Only Available in Pro Version!', 'pixerex-elements'),
                     'type' => Controls_Manager::HEADING,
                     'condition' => [
                         'eael_event_calendar_type' => ['eventon'],
@@ -129,14 +129,14 @@ class Event_Calendar extends Widget_Base {
         $repeater->start_controls_tab(
             'eaelec_event_info_tab',
             [
-                'label' => __('General', 'px-elements'),
+                'label' => __('General', 'pixerex-elements'),
             ]
         );
 
         $repeater->add_control(
             'eael_event_title',
             [
-                'label'       => __('Title', 'px-elements'),
+                'label'       => __('Title', 'pixerex-elements'),
                 'type'        => Controls_Manager::TEXT,
                 'label_block' => true,
             ]
@@ -145,9 +145,9 @@ class Event_Calendar extends Widget_Base {
         $repeater->add_control(
             'eael_event_link',
             [
-                'label'         => __('Link', 'px-elements'),
+                'label'         => __('Link', 'pixerex-elements'),
                 'type'          => Controls_Manager::URL,
-                'placeholder'   => __('https://sample-domain.com', 'px-elements'),
+                'placeholder'   => __('https://sample-domain.com', 'pixerex-elements'),
                 'show_external' => true,
             ]
         );
@@ -155,7 +155,7 @@ class Event_Calendar extends Widget_Base {
         $repeater->add_control(
             'eael_event_all_day',
             [
-                'label'        => __('All Day', 'px-elements'),
+                'label'        => __('All Day', 'pixerex-elements'),
                 'type'         => Controls_Manager::SWITCHER,
                 'label_block'  => false,
                 'return_value' => 'yes',
@@ -165,7 +165,7 @@ class Event_Calendar extends Widget_Base {
         $repeater->add_control(
             'eael_event_start_date',
             [
-                'label'     => __('Start Date', 'px-elements'),
+                'label'     => __('Start Date', 'pixerex-elements'),
                 'type'      => Controls_Manager::DATE_TIME,
                 'default'   => date('Y-m-d H:i', current_time('timestamp', 0)),
                 'condition' => [
@@ -177,7 +177,7 @@ class Event_Calendar extends Widget_Base {
         $repeater->add_control(
             'eael_event_end_date',
             [
-                'label'     => __('End Date', 'px-elements'),
+                'label'     => __('End Date', 'pixerex-elements'),
                 'type'      => Controls_Manager::DATE_TIME,
                 'default'   => date('Y-m-d H:i', strtotime("+59 minute", current_time('timestamp', 0))),
                 'condition' => [
@@ -189,7 +189,7 @@ class Event_Calendar extends Widget_Base {
         $repeater->add_control(
             'eael_event_start_date_allday',
             [
-                'label'          => __('Start Date', 'px-elements'),
+                'label'          => __('Start Date', 'pixerex-elements'),
                 'type'           => Controls_Manager::DATE_TIME,
                 'picker_options' => ['enableTime' => false],
                 'default'        => date('Y-m-d', current_time('timestamp', 0)),
@@ -202,7 +202,7 @@ class Event_Calendar extends Widget_Base {
         $repeater->add_control(
             'eael_event_end_date_allday',
             [
-                'label'          => __('End Date', 'px-elements'),
+                'label'          => __('End Date', 'pixerex-elements'),
                 'type'           => Controls_Manager::DATE_TIME,
                 'picker_options' => ['enableTime' => false],
                 'default'        => date('Y-m-d', current_time('timestamp', 0)),
@@ -215,7 +215,7 @@ class Event_Calendar extends Widget_Base {
         $repeater->add_control(
             'eael_event_bg_color',
             [
-                'label'   => __('Event Background Color', 'px-elements'),
+                'label'   => __('Event Background Color', 'pixerex-elements'),
                 'type'    => Controls_Manager::COLOR,
                 'default' => '#5725ff',
             ]
@@ -224,7 +224,7 @@ class Event_Calendar extends Widget_Base {
         $repeater->add_control(
             'eael_event_text_color',
             [
-                'label'   => __('Event Text Color', 'px-elements'),
+                'label'   => __('Event Text Color', 'pixerex-elements'),
                 'type'    => Controls_Manager::COLOR,
                 'default' => '#ffffff',
             ]
@@ -233,7 +233,7 @@ class Event_Calendar extends Widget_Base {
         $repeater->add_control(
             'eael_event_border_color',
             [
-                'label'   => __('Popup Ribbon Color', 'px-elements'),
+                'label'   => __('Popup Ribbon Color', 'pixerex-elements'),
                 'type'    => Controls_Manager::COLOR,
                 'default' => '#E8E6ED',
             ]
@@ -244,14 +244,14 @@ class Event_Calendar extends Widget_Base {
         $repeater->start_controls_tab(
             'eaelec_event_content_tab',
             [
-                'label' => __('Content', 'px-elements'),
+                'label' => __('Content', 'pixerex-elements'),
             ]
         );
 
         $repeater->add_control(
             'eael_event_description',
             [
-                'label' => __('Description', 'px-elements'),
+                'label' => __('Description', 'pixerex-elements'),
                 'type'  => Controls_Manager::WYSIWYG,
             ]
         );
@@ -261,7 +261,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_control(
             'eael_event_items',
             [
-                'label'       => __('Event', 'px-elements'),
+                'label'       => __('Event', 'pixerex-elements'),
                 'type'        => Controls_Manager::REPEATER,
                 'fields'      => $repeater->get_controls(),
                 'default'     => [
@@ -281,7 +281,7 @@ class Event_Calendar extends Widget_Base {
         $this->start_controls_section(
             'eael_event_google_calendar',
             [
-                'label'     => __('Google Calendar', 'px-elements'),
+                'label'     => __('Google Calendar', 'pixerex-elements'),
                 'tab'       => Controls_Manager::TAB_CONTENT,
                 'condition' => [
                     'eael_event_calendar_type' => 'google',
@@ -292,29 +292,29 @@ class Event_Calendar extends Widget_Base {
         $this->add_control(
             'eael_event_google_api_key',
             [
-                'label'       => __('APi Key', 'px-elements'),
+                'label'       => __('APi Key', 'pixerex-elements'),
                 'type'        => Controls_Manager::TEXT,
                 'label_block' => true,
                 'description' => sprintf(__('<a href="https://essential-addons.com/elementor/docs/google-api-key/" class="eael-btn" target="_blank">%s</a>',
-                    'px-elements'), 'Get API Key'),
+                    'pixerex-elements'), 'Get API Key'),
             ]
         );
 
         $this->add_control(
             'eael_event_calendar_id',
             [
-                'label'       => __('Calendar ID', 'px-elements'),
+                'label'       => __('Calendar ID', 'pixerex-elements'),
                 'type'        => Controls_Manager::TEXT,
                 'label_block' => true,
                 'description' => sprintf(__('<a href="https://essential-addons.com/elementor/docs/google-calendar-id/" class="eael-btn" target="_blank">%s</a>',
-                    'px-elements'), 'Get google calendar ID'),
+                    'pixerex-elements'), 'Get google calendar ID'),
             ]
         );
 
         $this->add_control(
             'eael_google_calendar_start_date',
             [
-                'label'   => __('Start Date', 'px-elements'),
+                'label'   => __('Start Date', 'pixerex-elements'),
                 'type'    => Controls_Manager::DATE_TIME,
                 'default' => date('Y-m-d H:i', current_time('timestamp', 0)),
             ]
@@ -323,7 +323,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_control(
             'eael_google_calendar_end_date',
             [
-                'label'   => __('End Date', 'px-elements'),
+                'label'   => __('End Date', 'pixerex-elements'),
                 'type'    => Controls_Manager::DATE_TIME,
                 'default' => date('Y-m-d H:i', strtotime("+6 months", current_time('timestamp', 0))),
             ]
@@ -332,7 +332,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_control(
             'eael_google_calendar_max_result',
             [
-                'label'   => __('Max Result', 'px-elements'),
+                'label'   => __('Max Result', 'pixerex-elements'),
                 'type'    => Controls_Manager::NUMBER,
                 'min'     => 1,
                 'default' => 100,
@@ -346,7 +346,7 @@ class Event_Calendar extends Widget_Base {
             $this->start_controls_section(
                 'eael_event_the_events_calendar',
                 [
-                    'label'     => __('The Event Calendar', 'px-elements'),
+                    'label'     => __('The Event Calendar', 'pixerex-elements'),
                     'tab'       => Controls_Manager::TAB_CONTENT,
                     'condition' => [
                         'eael_event_calendar_type' => 'the_events_calendar',
@@ -357,13 +357,13 @@ class Event_Calendar extends Widget_Base {
             $this->add_control(
                 'eael_the_events_calendar_fetch',
                 [
-                    'label'       => __('Get Events', 'px-elements'),
+                    'label'       => __('Get Events', 'pixerex-elements'),
                     'type'        => Controls_Manager::SELECT,
                     'label_block' => true,
                     'default'     => ['all'],
                     'options'     => [
-                        'all'        => __('All', 'px-elements'),
-                        'date_range' => __('Date Range', 'px-elements'),
+                        'all'        => __('All', 'pixerex-elements'),
+                        'date_range' => __('Date Range', 'pixerex-elements'),
                     ],
                     'render_type' => 'none',
                 ]
@@ -373,7 +373,7 @@ class Event_Calendar extends Widget_Base {
             $this->add_control(
                 'eael_the_events_calendar_start_date',
                 [
-                    'label'     => __('Start Date', 'px-elements'),
+                    'label'     => __('Start Date', 'pixerex-elements'),
                     'type'      => Controls_Manager::DATE_TIME,
                     'default'   => date('Y-m-d H:i', current_time('timestamp', 0)),
                     'condition' => [
@@ -385,7 +385,7 @@ class Event_Calendar extends Widget_Base {
             $this->add_control(
                 'eael_the_events_calendar_end_date',
                 [
-                    'label'     => __('End Date', 'px-elements'),
+                    'label'     => __('End Date', 'pixerex-elements'),
                     'type'      => Controls_Manager::DATE_TIME,
                     'default'   => date('Y-m-d H:i', strtotime("+6 months", current_time('timestamp', 0))),
                     'condition' => [
@@ -397,7 +397,7 @@ class Event_Calendar extends Widget_Base {
             $this->add_control(
                 'eael_the_events_calendar_category',
                 [
-                    'label'       => __('Event Category', 'px-elements'),
+                    'label'       => __('Event Category', 'pixerex-elements'),
                     'type'        => Controls_Manager::SELECT2,
                     'multiple'    => true,
                     'label_block' => true,
@@ -409,7 +409,7 @@ class Event_Calendar extends Widget_Base {
             $this->add_control(
                 'eael_the_events_calendar_max_result',
                 [
-                    'label'   => __('Max Result', 'px-elements'),
+                    'label'   => __('Max Result', 'pixerex-elements'),
                     'type'    => Controls_Manager::NUMBER,
                     'min'     => 1,
                     'default' => 100,
@@ -425,7 +425,7 @@ class Event_Calendar extends Widget_Base {
         $this->start_controls_section(
             'eael_event_calendar_section',
             [
-                'label' => __('Calendar', 'px-elements'),
+                'label' => __('Calendar', 'pixerex-elements'),
                 'tab'   => Controls_Manager::TAB_CONTENT,
             ]
         );
@@ -433,7 +433,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_control(
             'eael_event_calendar_language',
             [
-                'label'   => __('Language', 'px-elements'),
+                'label'   => __('Language', 'pixerex-elements'),
                 'type'    => Controls_Manager::SELECT,
                 'options' => $this->eael_language_code_list(),
                 'default' => 'en'
@@ -443,13 +443,13 @@ class Event_Calendar extends Widget_Base {
         $this->add_control(
             'eael_event_calendar_default_view',
             [
-                'label'   => __('Calendar Default View', 'px-elements'),
+                'label'   => __('Calendar Default View', 'pixerex-elements'),
                 'type'    => Controls_Manager::SELECT,
                 'options' => [
-                    'timeGridDay'  => __('Day', 'px-elements'),
-                    'timeGridWeek' => __('Week', 'px-elements'),
-                    'dayGridMonth' => __('Month', 'px-elements'),
-                    'listMonth'    => __('List', 'px-elements'),
+                    'timeGridDay'  => __('Day', 'pixerex-elements'),
+                    'timeGridWeek' => __('Week', 'pixerex-elements'),
+                    'dayGridMonth' => __('Month', 'pixerex-elements'),
+                    'listMonth'    => __('List', 'pixerex-elements'),
                 ],
                 'default' => 'dayGridMonth',
             ]
@@ -458,16 +458,16 @@ class Event_Calendar extends Widget_Base {
         $this->add_control(
             'eael_event_calendar_first_day',
             [
-                'label'   => __('First Day of Week', 'px-elements'),
+                'label'   => __('First Day of Week', 'pixerex-elements'),
                 'type'    => Controls_Manager::SELECT,
                 'options' => [
-                    '0' => __('Sunday', 'px-elements'),
-                    '1' => __('Monday', 'px-elements'),
-                    '2' => __('Tuesday', 'px-elements'),
-                    '3' => __('Wednesday', 'px-elements'),
-                    '4' => __('Thursday', 'px-elements'),
-                    '5' => __('Friday', 'px-elements'),
-                    '6' => __('Saturday', 'px-elements'),
+                    '0' => __('Sunday', 'pixerex-elements'),
+                    '1' => __('Monday', 'pixerex-elements'),
+                    '2' => __('Tuesday', 'pixerex-elements'),
+                    '3' => __('Wednesday', 'pixerex-elements'),
+                    '4' => __('Thursday', 'pixerex-elements'),
+                    '5' => __('Friday', 'pixerex-elements'),
+                    '6' => __('Saturday', 'pixerex-elements'),
                 ],
                 'default' => '0',
             ]
@@ -476,11 +476,11 @@ class Event_Calendar extends Widget_Base {
         $this->add_control(
             'eael_event_details_link_hide',
             [
-                'label'        => __('Hide Event Details Link', 'px-elements'),
+                'label'        => __('Hide Event Details Link', 'pixerex-elements'),
                 'type'         => Controls_Manager::SWITCHER,
                 'label_block'  => false,
                 'return_value' => 'yes',
-                'description'  => __('Hide Event Details link in event popup','px-elements')
+                'description'  => __('Hide Event Details link in event popup','pixerex-elements')
             ]
         );
 
@@ -488,7 +488,7 @@ class Event_Calendar extends Widget_Base {
             $this->add_control(
                 'eael_event_on_featured_color',
                 [
-                    'label'     => __('Featured Event Color', 'px-elements'),
+                    'label'     => __('Featured Event Color', 'pixerex-elements'),
                     'type'      => Controls_Manager::COLOR,
                     'default'   => '#ffcb55',
                     'condition' => [
@@ -502,7 +502,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_control(
             'eael_event_global_bg_color',
             [
-                'label'     => __('Event Background Color', 'px-elements'),
+                'label'     => __('Event Background Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#5725ff',
                 'condition' => [
@@ -514,7 +514,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_control(
             'eael_event_global_text_color',
             [
-                'label'     => __('Event Text Color', 'px-elements'),
+                'label'     => __('Event Text Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#ffffff',
                 'condition' => [
@@ -525,7 +525,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_control(
             'eael_event_global_popup_ribbon_color',
             [
-                'label'     => __('Popup Ribbon Color', 'px-elements'),
+                'label'     => __('Popup Ribbon Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#10ecab',
                 'condition' => [
@@ -543,7 +543,7 @@ class Event_Calendar extends Widget_Base {
         $this->start_controls_section(
             'eael_event_calendar_interface',
             [
-                'label' => __('Calendar', 'px-elements'),
+                'label' => __('Calendar', 'pixerex-elements'),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -551,7 +551,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_control(
             'calendar_background_color',
             [
-                'label'     => __('Background', 'px-elements'),
+                'label'     => __('Background', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .eael-event-calendar-wrapper'                       => 'background: {{VALUE}}',
@@ -563,7 +563,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_control(
             'calendar_border_color',
             [
-                'label'     => __('Border Color', 'px-elements'),
+                'label'     => __('Border Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#CFCFDA',
                 'selectors' => [
@@ -582,7 +582,7 @@ class Event_Calendar extends Widget_Base {
             Group_Control_Box_Shadow::get_type(),
             [
                 'name'     => 'eael_calendar_box_shadow',
-                'label'    => __('Box Shadow', 'px-elements'),
+                'label'    => __('Box Shadow', 'pixerex-elements'),
                 'selector' => '{{WRAPPER}} .eael-event-calendar-wrapper .fc-view-container .fc-view > table',
             ]
         );
@@ -590,7 +590,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_responsive_control(
             'calendar_inside',
             [
-                'label'      => esc_html__('Inside Space', 'px-elements'),
+                'label'      => esc_html__('Inside Space', 'pixerex-elements'),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%'],
                 'selectors'  => [
@@ -602,7 +602,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_responsive_control(
             'calendar_outside',
             [
-                'label'      => esc_html__('Outside Space', 'px-elements'),
+                'label'      => esc_html__('Outside Space', 'pixerex-elements'),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%'],
                 'selectors'  => [
@@ -615,7 +615,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_control(
             'calendar_title_heading',
             [
-                'label' => __('Title', 'px-elements'),
+                'label' => __('Title', 'pixerex-elements'),
                 'type'  => Controls_Manager::HEADING,
             ]
         );
@@ -624,7 +624,7 @@ class Event_Calendar extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name'     => 'calendar_title_typography',
-                'label'    => __('Typography', 'px-elements'),
+                'label'    => __('Typography', 'pixerex-elements'),
                 'selector' => '{{WRAPPER}} .fc-toolbar h2',
             ]
         );
@@ -632,7 +632,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_control(
             'calendar_title_color',
             [
-                'label'     => __('Color', 'px-elements'),
+                'label'     => __('Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .fc-toolbar h2' => 'color: {{VALUE}};',
@@ -644,7 +644,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_control(
             'buttons_style_heading',
             [
-                'label'     => __('Button', 'px-elements'),
+                'label'     => __('Button', 'pixerex-elements'),
                 'type'      => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -654,7 +654,7 @@ class Event_Calendar extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name'     => 'calendar_button_typography_normal',
-                'label'    => __('Typography', 'px-elements'),
+                'label'    => __('Typography', 'pixerex-elements'),
                 'selector' => '{{WRAPPER}} .eael-event-calendar-wrapper .fc-toolbar.fc-header-toolbar .fc-button',
             ]
         );
@@ -665,14 +665,14 @@ class Event_Calendar extends Widget_Base {
         $this->start_controls_tab(
             'button_normal_state',
             [
-                'label' => __('Normal', 'px-elements'),
+                'label' => __('Normal', 'pixerex-elements'),
             ]
         );
 
         $this->add_control(
             'button_color_normal',
             [
-                'label'     => __('Color', 'px-elements'),
+                'label'     => __('Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .fc-toolbar.fc-header-toolbar .fc-button:not(.fc-button-active)' => 'color: {{VALUE}};',
@@ -683,7 +683,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_control(
             'button_background_normal',
             [
-                'label'     => __('Background', 'px-elements'),
+                'label'     => __('Background', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .fc-toolbar.fc-header-toolbar .fc-button:not(.fc-button-active)' => 'background-color: {{VALUE}};',
@@ -695,7 +695,7 @@ class Event_Calendar extends Widget_Base {
             Group_Control_Border::get_type(),
             [
                 'name'     => 'button_border_normal',
-                'label'    => __('Border', 'px-elements'),
+                'label'    => __('Border', 'pixerex-elements'),
                 'selector' => '{{WRAPPER}} .fc-toolbar.fc-header-toolbar .fc-button:not(.fc-button-active)',
             ]
         );
@@ -703,7 +703,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_responsive_control(
             'button_border_radius_normal',
             [
-                'label'      => esc_html__('Border Radius', 'px-elements'),
+                'label'      => esc_html__('Border Radius', 'pixerex-elements'),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%'],
                 'selectors'  => [
@@ -715,7 +715,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_responsive_control(
             'buttons_margin',
             [
-                'label'      => esc_html__('Space', 'px-elements'),
+                'label'      => esc_html__('Space', 'pixerex-elements'),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%'],
                 'selectors'  => [
@@ -732,14 +732,14 @@ class Event_Calendar extends Widget_Base {
         $this->start_controls_tab(
             'button_hover_state',
             [
-                'label' => __('Hover', 'px-elements'),
+                'label' => __('Hover', 'pixerex-elements'),
             ]
         );
 
         $this->add_control(
             'button_color_hover',
             [
-                'label'     => __('Color', 'px-elements'),
+                'label'     => __('Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .fc-toolbar.fc-header-toolbar .fc-button:hover' => 'color: {{VALUE}};',
@@ -750,7 +750,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_control(
             'button_background_hover',
             [
-                'label'     => __('Background', 'px-elements'),
+                'label'     => __('Background', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .fc-toolbar.fc-header-toolbar .fc-button:hover' => 'background-color: {{VALUE}};',
@@ -762,7 +762,7 @@ class Event_Calendar extends Widget_Base {
             Group_Control_Border::get_type(),
             [
                 'name'     => 'button_border_hover',
-                'label'    => __('Border', 'px-elements'),
+                'label'    => __('Border', 'pixerex-elements'),
                 'selector' => '{{WRAPPER}} .fc-toolbar.fc-header-toolbar .fc-button:hover',
             ]
         );
@@ -770,7 +770,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_responsive_control(
             'button_border_radius_hover',
             [
-                'label'      => esc_html__('Border Radius', 'px-elements'),
+                'label'      => esc_html__('Border Radius', 'pixerex-elements'),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%'],
                 'selectors'  => [
@@ -786,14 +786,14 @@ class Event_Calendar extends Widget_Base {
         $this->start_controls_tab(
             'button_active_state',
             [
-                'label' => __('Active', 'px-elements'),
+                'label' => __('Active', 'pixerex-elements'),
             ]
         );
 
         $this->add_control(
             'button_color_active',
             [
-                'label'     => __('Color', 'px-elements'),
+                'label'     => __('Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .fc-toolbar.fc-header-toolbar .fc-button.fc-button-active' => 'color: {{VALUE}};',
@@ -804,7 +804,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_control(
             'button_background_active',
             [
-                'label'     => __('Background', 'px-elements'),
+                'label'     => __('Background', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .fc-toolbar.fc-header-toolbar .fc-button.fc-button-active' => 'background-color: {{VALUE}};',
@@ -816,7 +816,7 @@ class Event_Calendar extends Widget_Base {
             Group_Control_Border::get_type(),
             [
                 'name'     => 'button_border_active',
-                'label'    => __('Border', 'px-elements'),
+                'label'    => __('Border', 'pixerex-elements'),
                 'selector' => '{{WRAPPER}} .fc-toolbar.fc-header-toolbar .fc-button.fc-button-active',
             ]
         );
@@ -824,7 +824,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_responsive_control(
             'button_border_radius_active',
             [
-                'label'      => esc_html__('Border Radius', 'px-elements'),
+                'label'      => esc_html__('Border Radius', 'pixerex-elements'),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%'],
                 'selectors'  => [
@@ -836,7 +836,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_responsive_control(
             'buttons_margin_active',
             [
-                'label'      => esc_html__('Space', 'px-elements'),
+                'label'      => esc_html__('Space', 'pixerex-elements'),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%'],
                 'selectors'  => [
@@ -859,7 +859,7 @@ class Event_Calendar extends Widget_Base {
         $this->start_controls_section(
             'calendar_week_days',
             [
-                'label' => __('Day', 'px-elements'),
+                'label' => __('Day', 'pixerex-elements'),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -868,7 +868,7 @@ class Event_Calendar extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name'     => 'days_typography',
-                'label'    => __('Typography', 'px-elements'),
+                'label'    => __('Typography', 'pixerex-elements'),
                 'selector' => '{{WRAPPER}} .fc-row table thead:first-child tr:first-child th > span,{{WRAPPER}} .fc-listWeek-view .fc-list-table .fc-widget-header span,{{WRAPPER}} .fc-listMonth-view .fc-list-table .fc-widget-header span',
             ]
         );
@@ -876,7 +876,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_control(
             'days_color',
             [
-                'label'     => __('Color', 'px-elements'),
+                'label'     => __('Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .fc-row table thead:first-child tr:first-child th > span' => 'color: {{VALUE}};',
@@ -888,19 +888,19 @@ class Event_Calendar extends Widget_Base {
         $this->add_responsive_control(
             'days_position_alignment',
             [
-                'label'     => __('Alignment', 'px-elements'),
+                'label'     => __('Alignment', 'pixerex-elements'),
                 'type'      => Controls_Manager::CHOOSE,
                 'options'   => [
                     'left'   => [
-                        'title' => __('Left', 'px-elements'),
+                        'title' => __('Left', 'pixerex-elements'),
                         'icon'  => 'fa fa-align-left',
                     ],
                     'center' => [
-                        'title' => __('Center', 'px-elements'),
+                        'title' => __('Center', 'pixerex-elements'),
                         'icon'  => 'fa fa-align-center',
                     ],
                     'right'  => [
-                        'title' => __('Right', 'px-elements'),
+                        'title' => __('Right', 'pixerex-elements'),
                         'icon'  => 'fa fa-align-right',
                     ],
                 ],
@@ -916,7 +916,7 @@ class Event_Calendar extends Widget_Base {
             Group_Control_Background::get_type(),
             [
                 'name'     => 'days_background',
-                'label'    => __('Background', 'px-elements'),
+                'label'    => __('Background', 'pixerex-elements'),
                 'types'    => ['classic', 'gradient'],
                 'selector' => '{{WRAPPER}} .fc-row table thead:first-child tr:first-child th',
                 'exclude'  => [
@@ -934,7 +934,7 @@ class Event_Calendar extends Widget_Base {
         $this->start_controls_section(
             'calendar_week_time',
             [
-                'label' => __('Time', 'px-elements'),
+                'label' => __('Time', 'pixerex-elements'),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -943,7 +943,7 @@ class Event_Calendar extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name'     => 'time_typography',
-                'label'    => __('Typography', 'px-elements'),
+                'label'    => __('Typography', 'pixerex-elements'),
                 'selector' => '{{WRAPPER}} .fc-unthemed .fc-timeGridDay-view .fc-bg table tbody tr>td span, {{WRAPPER}} .fc-unthemed .fc-timeGridWeek-view .fc-bg table tbody tr>td span ,{{WRAPPER}} .fc-unthemed .fc-timeGridDay-view .fc-slats table tbody tr>td span ,{{WRAPPER}} .fc-unthemed .fc-timeGridWeek-view .fc-slats table tbody tr>td span',
             ]
         );
@@ -951,7 +951,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_control(
             'time_color',
             [
-                'label'     => __('Color', 'px-elements'),
+                'label'     => __('Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .fc-unthemed .fc-timeGridDay-view .fc-bg table tbody tr>td span'     => 'color: {{VALUE}};',
@@ -968,7 +968,7 @@ class Event_Calendar extends Widget_Base {
         $this->start_controls_section(
             'date_styles',
             [
-                'label' => __('Date', 'px-elements'),
+                'label' => __('Date', 'pixerex-elements'),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -977,7 +977,7 @@ class Event_Calendar extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name'     => 'date_typography',
-                'label'    => __('Typography', 'px-elements'),
+                'label'    => __('Typography', 'pixerex-elements'),
                 'selector' => '{{WRAPPER}} .fc-day-number',
             ]
         );
@@ -985,7 +985,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_control(
             'date_color',
             [
-                'label'     => __('Color', 'px-elements'),
+                'label'     => __('Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .fc-day-number' => 'color: {{VALUE}}',
@@ -997,7 +997,7 @@ class Event_Calendar extends Widget_Base {
             'date_number_background',
             [
                 'type'      => Controls_Manager::COLOR,
-                'label'     => __('Number Background', 'px-elements'),
+                'label'     => __('Number Background', 'pixerex-elements'),
                 'selectors' => [
                     '{{WRAPPER}} .fc-day-number' => 'background: {{VALUE}}',
                 ],
@@ -1008,7 +1008,7 @@ class Event_Calendar extends Widget_Base {
             'date_background',
             [
                 'type'      => Controls_Manager::COLOR,
-                'label'     => __('Background', 'px-elements'),
+                'label'     => __('Background', 'pixerex-elements'),
                 'selectors' => [
                     '{{WRAPPER}} .fc-day'                  => 'background: {{VALUE}} !important',
                     '{{WRAPPER}} .fc-unthemed td.fc-today' => 'background: {{VALUE}} !important',
@@ -1020,19 +1020,19 @@ class Event_Calendar extends Widget_Base {
         $this->add_responsive_control(
             'date_position_alignment',
             [
-                'label'     => __('Alignment', 'px-elements'),
+                'label'     => __('Alignment', 'pixerex-elements'),
                 'type'      => Controls_Manager::CHOOSE,
                 'options'   => [
                     'left'   => [
-                        'title' => __('Left', 'px-elements'),
+                        'title' => __('Left', 'pixerex-elements'),
                         'icon'  => 'fa fa-align-left',
                     ],
                     'center' => [
-                        'title' => __('Center', 'px-elements'),
+                        'title' => __('Center', 'pixerex-elements'),
                         'icon'  => 'fa fa-align-center',
                     ],
                     'right'  => [
-                        'title' => __('Right', 'px-elements'),
+                        'title' => __('Right', 'pixerex-elements'),
                         'icon'  => 'fa fa-align-right',
                     ],
                 ],
@@ -1048,7 +1048,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_responsive_control(
             'date_padding',
             [
-                'label'      => esc_html__('Inside Space', 'px-elements'),
+                'label'      => esc_html__('Inside Space', 'pixerex-elements'),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors'  => [
@@ -1060,7 +1060,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_responsive_control(
             'date_border_radius',
             [
-                'label'      => esc_html__('Border Radius', 'px-elements'),
+                'label'      => esc_html__('Border Radius', 'pixerex-elements'),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%'],
                 'selectors'  => [
@@ -1072,7 +1072,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_responsive_control(
             'date_margin',
             [
-                'label'      => esc_html__('Outside Space', 'px-elements'),
+                'label'      => esc_html__('Outside Space', 'pixerex-elements'),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors'  => [
@@ -1084,7 +1084,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_control(
             'today_date_setting',
             [
-                'label'     => __('Today Date', 'px-elements'),
+                'label'     => __('Today Date', 'pixerex-elements'),
                 'type'      => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -1094,7 +1094,7 @@ class Event_Calendar extends Widget_Base {
             'today_date_color',
             [
                 'type'      => Controls_Manager::COLOR,
-                'label'     => __('Color', 'px-elements'),
+                'label'     => __('Color', 'pixerex-elements'),
                 'default'   => '#1111e1',
                 'selectors' => [
                     '{{WRAPPER}} .fc-today .fc-day-number' => 'color: {{VALUE}}',
@@ -1106,7 +1106,7 @@ class Event_Calendar extends Widget_Base {
             'today_date_background',
             [
                 'type'      => Controls_Manager::COLOR,
-                'label'     => __('Background', 'px-elements'),
+                'label'     => __('Background', 'pixerex-elements'),
                 'selectors' => [
                     '{{WRAPPER}} .fc-unthemed td.fc-today' => 'background: {{VALUE}} !important',
                 ],
@@ -1123,7 +1123,7 @@ class Event_Calendar extends Widget_Base {
         $this->start_controls_section(
             'calendar_list_view',
             [
-                'label' => __('List view', 'px-elements'),
+                'label' => __('List view', 'pixerex-elements'),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -1131,7 +1131,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_control(
             'eael_list_view_header_heading',
             [
-                'label' => __('Header', 'px-elements'),
+                'label' => __('Header', 'pixerex-elements'),
                 'type'  => Controls_Manager::HEADING,
             ]
         );
@@ -1139,7 +1139,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_control(
             'list_row_header_color',
             [
-                'label'     => __('Text Color', 'px-elements'),
+                'label'     => __('Text Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .eael-event-calendar-wrapper .fc-listWeek-view .fc-list-table .fc-widget-header span' => 'color: {{VALUE}};',
@@ -1151,7 +1151,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_control(
             'list_header_background_color',
             [
-                'label'     => __('Background Color', 'px-elements'),
+                'label'     => __('Background Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#f1edf8',
                 'selectors' => [
@@ -1164,7 +1164,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_control(
             'eael_list_view_body_heading',
             [
-                'label' => __('Body', 'px-elements'),
+                'label' => __('Body', 'pixerex-elements'),
                 'type'  => Controls_Manager::HEADING,
             ]
         );
@@ -1172,7 +1172,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_control(
             'list_element_text_color',
             [
-                'label'     => __('Text Color', 'px-elements'),
+                'label'     => __('Text Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .eael-event-calendar-wrapper .fc-listWeek-view .fc-list-table .fc-list-item' => 'color: {{VALUE}};',
@@ -1184,7 +1184,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_control(
             'list_element_even_color',
             [
-                'label'     => __('Even row Color', 'px-elements'),
+                'label'     => __('Even row Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#ffffff',
                 'selectors' => [
@@ -1196,7 +1196,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_control(
             'list_element_odd_color',
             [
-                'label'     => __('Odd row Color', 'px-elements'),
+                'label'     => __('Odd row Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#ffffff',
                 'selectors' => [
@@ -1212,7 +1212,7 @@ class Event_Calendar extends Widget_Base {
         $this->start_controls_section(
             'eaelec_event_section',
             [
-                'label' => __('Events', 'px-elements'),
+                'label' => __('Events', 'pixerex-elements'),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -1221,7 +1221,7 @@ class Event_Calendar extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name'     => 'eael_event_typography',
-                'label'    => __('Typography', 'px-elements'),
+                'label'    => __('Typography', 'pixerex-elements'),
                 'selector' => '{{WRAPPER}} .fc-content .fc-title,{{WRAPPER}} .fc-content .fc-time,{{WRAPPER}} .eael-event-calendar-wrapper .fc-list-table .fc-list-item td',
             ]
         );
@@ -1229,7 +1229,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_responsive_control(
             'day_event_border_radius',
             [
-                'label'      => esc_html__('Border Radius', 'px-elements'),
+                'label'      => esc_html__('Border Radius', 'pixerex-elements'),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%'],
                 'selectors'  => [
@@ -1241,7 +1241,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_responsive_control(
             'day_event_padding',
             [
-                'label'      => esc_html__('Inside Space', 'px-elements'),
+                'label'      => esc_html__('Inside Space', 'pixerex-elements'),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px'.'em', '%'],
                 'selectors'  => [
@@ -1253,7 +1253,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_responsive_control(
             'day_event_margin',
             [
-                'label'      => esc_html__('Outside Space', 'px-elements'),
+                'label'      => esc_html__('Outside Space', 'pixerex-elements'),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px'.'em', '%'],
                 'selectors'  => [
@@ -1267,7 +1267,7 @@ class Event_Calendar extends Widget_Base {
         $this->start_controls_section(
             'event_popup',
             [
-                'label' => __('Event Popup', 'px-elements'),
+                'label' => __('Event Popup', 'pixerex-elements'),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -1275,7 +1275,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_control(
             'event_popup_title_heading',
             [
-                'label' => __('Title', 'px-elements'),
+                'label' => __('Title', 'pixerex-elements'),
                 'type'  => Controls_Manager::HEADING,
             ]
         );
@@ -1284,7 +1284,7 @@ class Event_Calendar extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name'     => 'event_popup_title_typography',
-                'label'    => __('Typography', 'px-elements'),
+                'label'    => __('Typography', 'pixerex-elements'),
                 'selector' => '{{WRAPPER}} .eaelec-modal-header .eael-ec-modal-title',
             ]
         );
@@ -1292,7 +1292,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_control(
             'event_popup_title_color',
             [
-                'label'     => __('Title Color', 'px-elements'),
+                'label'     => __('Title Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .eaelec-modal-header .eael-ec-modal-title' => 'color: {{VALUE}}',
@@ -1303,7 +1303,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_control(
             'event_popup_date_heading',
             [
-                'label'     => __('Date', 'px-elements'),
+                'label'     => __('Date', 'pixerex-elements'),
                 'type'      => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -1313,7 +1313,7 @@ class Event_Calendar extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name'     => 'event_popup_date_typography',
-                'label'    => __('Typography', 'px-elements'),
+                'label'    => __('Typography', 'pixerex-elements'),
                 'selector' => '{{WRAPPER}} .eaelec-modal-header > span.eaelec-event-popup-date',
             ]
         );
@@ -1321,7 +1321,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_control(
             'event_popup_date_color',
             [
-                'label'     => __('Date Color', 'px-elements'),
+                'label'     => __('Date Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .eaelec-modal-header span.eaelec-event-date-start' => 'color: {{VALUE}};',
@@ -1333,7 +1333,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_control(
             'event_popup_date_icon',
             [
-                'label'     => __('Date Icon', 'px-elements'),
+                'label'     => __('Date Icon', 'pixerex-elements'),
                 'type'      => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -1342,7 +1342,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_control(
             'event_popup_date_icon_size',
             [
-                'label'      => __('Icon Size', 'px-elements'),
+                'label'      => __('Icon Size', 'pixerex-elements'),
                 'type'       => Controls_Manager::SLIDER,
                 'size_units' => ['px'],
                 'range'      => [
@@ -1360,7 +1360,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_control(
             'event_popup_date_icon_color',
             [
-                'label'     => __('Icon Color', 'px-elements'),
+                'label'     => __('Icon Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .eaelec-modal-header span.eaelec-event-date-start i' => 'color: {{VALUE}};',
@@ -1371,7 +1371,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_control(
             'event_popup_content_heading',
             [
-                'label'     => __('Content', 'px-elements'),
+                'label'     => __('Content', 'pixerex-elements'),
                 'type'      => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -1381,7 +1381,7 @@ class Event_Calendar extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name'     => 'event_popup_content_typography',
-                'label'    => __('Typography', 'px-elements'),
+                'label'    => __('Typography', 'pixerex-elements'),
                 'selector' => '{{WRAPPER}} .eaelec-modal-body',
             ]
         );
@@ -1389,7 +1389,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_control(
             'event_popup_content_color',
             [
-                'label'     => __('Content Color', 'px-elements'),
+                'label'     => __('Content Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .eaelec-modal-body' => 'color: {{VALUE}};',
@@ -1400,7 +1400,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_control(
             'event_popup_close_button_style',
             [
-                'label'     => __(' Close Button', 'px-elements'),
+                'label'     => __(' Close Button', 'pixerex-elements'),
                 'type'      => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -1409,7 +1409,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_responsive_control(
             'close_button_icon_size',
             [
-                'label'      => __('Icon Size', 'px-elements'),
+                'label'      => __('Icon Size', 'pixerex-elements'),
                 'type'       => Controls_Manager::SLIDER,
                 'size_units' => ['px', 'em', '%'],
                 'range'      => [
@@ -1435,7 +1435,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_responsive_control(
             'close_button_size',
             [
-                'label'      => __('Button Size', 'px-elements'),
+                'label'      => __('Button Size', 'pixerex-elements'),
                 'type'       => Controls_Manager::SLIDER,
                 'size_units' => ['px', 'em', '%'],
                 'range'      => [
@@ -1461,7 +1461,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_control(
             'close_button_color',
             [
-                'label'     => __('Color', 'px-elements'),
+                'label'     => __('Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .eaelec-modal-close > span' => 'color: {{VALUE}};',
@@ -1473,7 +1473,7 @@ class Event_Calendar extends Widget_Base {
             Group_Control_Background::get_type(),
             [
                 'name'     => 'close_button_background',
-                'label'    => __('Background', 'px-elements'),
+                'label'    => __('Background', 'pixerex-elements'),
                 'types'    => [
                     'classic',
                     'gradient',
@@ -1489,7 +1489,7 @@ class Event_Calendar extends Widget_Base {
             Group_Control_Border::get_type(),
             [
                 'name'     => 'close_button_border',
-                'label'    => __('Border', 'px-elements'),
+                'label'    => __('Border', 'pixerex-elements'),
                 'selector' => '{{WRAPPER}} .eael-event-calendar-wrapper .eaelec-modal-close',
             ]
         );
@@ -1497,7 +1497,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_responsive_control(
             'close_button_border_radius',
             [
-                'label'      => __('Border Radius', 'px-elements'),
+                'label'      => __('Border Radius', 'pixerex-elements'),
                 'type'       => Controls_Manager::SLIDER,
                 'size_units' => ['px', '%'],
                 'range'      => [
@@ -1521,7 +1521,7 @@ class Event_Calendar extends Widget_Base {
             Group_Control_Box_Shadow::get_type(),
             [
                 'name'     => 'close_button_box_shadow',
-                'label'    => __('Box Shadow', 'px-elements'),
+                'label'    => __('Box Shadow', 'pixerex-elements'),
                 'selector' => '{{WRAPPER}} .eael-event-calendar-wrapper .eaelec-modal-close',
             ]
         );
@@ -1529,7 +1529,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_control(
             'event_popup_ext_link_heading',
             [
-                'label'     => __('External Link', 'px-elements'),
+                'label'     => __('External Link', 'pixerex-elements'),
                 'type'      => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -1539,7 +1539,7 @@ class Event_Calendar extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name'     => 'event_popup_ext_link_typography',
-                'label'    => __('Typography', 'px-elements'),
+                'label'    => __('Typography', 'pixerex-elements'),
                 'selector' => '{{WRAPPER}} .eaelec-modal-footer .eaelec-event-details-link',
             ]
         );
@@ -1547,7 +1547,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_control(
             'event_popup_ext_link_color',
             [
-                'label'     => __('Date Color', 'px-elements'),
+                'label'     => __('Date Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .eaelec-modal-footer .eaelec-event-details-link' => 'color: {{VALUE}};',
@@ -1560,7 +1560,7 @@ class Event_Calendar extends Widget_Base {
             Group_Control_Border::get_type(),
             [
                 'name'     => 'event_popup_border',
-                'label'    => __('Border', 'px-elements'),
+                'label'    => __('Border', 'pixerex-elements'),
                 'selector' => '{{WRAPPER}} .eaelec-modal .eaelec-modal-content',
             ]
         );
@@ -1568,7 +1568,7 @@ class Event_Calendar extends Widget_Base {
         $this->add_responsive_control(
             'event_popup_border_radius',
             [
-                'label'      => esc_html__('Border Radius', 'px-elements'),
+                'label'      => esc_html__('Border Radius', 'pixerex-elements'),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%'],
                 'selectors'  => [
@@ -1582,7 +1582,7 @@ class Event_Calendar extends Widget_Base {
             Group_Control_Background::get_type(),
             [
                 'name'     => 'event_popup_background',
-                'label'    => __('Background', 'px-elements'),
+                'label'    => __('Background', 'pixerex-elements'),
                 'types'    => ['classic', 'gradient'],
                 'selector' => '{{WRAPPER}} .eaelec-modal .eaelec-modal-content',
                 'exclude'  => [
@@ -1595,7 +1595,7 @@ class Event_Calendar extends Widget_Base {
             Group_Control_Box_Shadow::get_type(),
             [
                 'name'     => 'event_popup_box_shadow',
-                'label'    => __('Box Shadow', 'px-elements'),
+                'label'    => __('Box Shadow', 'pixerex-elements'),
                 'selector' => '{{WRAPPER}} .eaelec-modal .eaelec-modal-content',
             ]
         );
@@ -1619,8 +1619,8 @@ class Event_Calendar extends Widget_Base {
         $local = $settings['eael_event_calendar_language'];
         $default_view = $settings['eael_event_calendar_default_view'];
         $translate_date = [
-            'today' =>__('Today', 'px-elements'),
-            'tomorrow' =>__('Tomorrow', 'px-elements'),
+            'today' =>__('Today', 'pixerex-elements'),
+            'tomorrow' =>__('Tomorrow', 'pixerex-elements'),
         ];
 
         echo '<div class="eael-event-calendar-wrapper">';
@@ -1650,7 +1650,7 @@ class Event_Calendar extends Widget_Base {
                     <p></p>
                 </div>
                 <div class="eaelec-modal-footer">
-                    <a class="eaelec-event-details-link">'.__('Event Details', 'px-elements').'</a>
+                    <a class="eaelec-event-details-link">'.__('Event Details', 'pixerex-elements').'</a>
                 </div>
             </div>
         </div>';
@@ -1821,7 +1821,7 @@ class Event_Calendar extends Widget_Base {
             $calendar_data[] = [
                 'id'          => ++$key,
                 'title'       => !empty($event->post_title) ? $event->post_title : __('No Title',
-                    'px-elements'),
+                    'pixerex-elements'),
                 'description' => $event->post_content,
                 'start'       => tribe_get_start_date($event->ID, true, $date_format),
                 'end'         => tribe_get_end_date($event->ID, true, $date_format),

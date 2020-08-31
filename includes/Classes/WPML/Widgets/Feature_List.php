@@ -46,10 +46,10 @@ class Feature_List extends WPML_Elementor_Module_With_Items {
 	protected function get_title( $field ) {
 		switch($field) {
 			case 'eael_feature_list_title':
-				return __( 'Feature List: Title', 'px-elements');
+				return __( 'Feature List: Title', 'pixerex-elements');
 
 			case 'eael_feature_list_content':
-				return __( 'Feature List: Content', 'px-elements');
+				return __( 'Feature List: Content', 'pixerex-elements');
 
 			default:
 				return '';

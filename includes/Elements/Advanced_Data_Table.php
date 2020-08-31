@@ -22,7 +22,7 @@ class Advanced_Data_Table extends Widget_Base
 
     public function get_title()
     {
-        return esc_html__('Advanced Data Table', 'px-elements');
+        return esc_html__('Advanced Data Table', 'pixerex-elements');
     }
 
     public function get_icon()
@@ -69,32 +69,32 @@ class Advanced_Data_Table extends Widget_Base
         $this->start_controls_section(
             'ea_section_adv_data_table_source',
             [
-                'label' => esc_html__('Data Source', 'px-elements'),
+                'label' => esc_html__('Data Source', 'pixerex-elements'),
             ]
         );
 
         $this->add_control(
             'ea_adv_data_table_source',
             [
-                'label'   => esc_html__('Source', 'px-elements'),
+                'label'   => esc_html__('Source', 'pixerex-elements'),
                 'type'    => Controls_Manager::SELECT,
                 'options' => call_user_func(function () {
                     $source           = [];
-                    $source['static'] = __('Static Data', 'px-elements');
+                    $source['static'] = __('Static Data', 'pixerex-elements');
 
                     if (apply_filters('eael/pro_enabled', false)) {
-                        $source['database']   = __('Database', 'px-elements');
-                        $source['remote']     = __('Remote Database', 'px-elements');
-                        $source['google']     = __('Google Sheets', 'px-elements');
-                        $source['tablepress'] = __('TablePress', 'px-elements');
+                        $source['database']   = __('Database', 'pixerex-elements');
+                        $source['remote']     = __('Remote Database', 'pixerex-elements');
+                        $source['google']     = __('Google Sheets', 'pixerex-elements');
+                        $source['tablepress'] = __('TablePress', 'pixerex-elements');
                     } else {
-                        $source['database']   = __('Database(PRO)', 'px-elements');
-                        $source['remote']     = __('Remote Database(PRO)', 'px-elements');
-                        $source['google']     = __('Google Sheets(PRO)', 'px-elements');
-                        $source['tablepress'] = __('TablePress(PRO)', 'px-elements');
+                        $source['database']   = __('Database(PRO)', 'pixerex-elements');
+                        $source['remote']     = __('Remote Database(PRO)', 'pixerex-elements');
+                        $source['google']     = __('Google Sheets(PRO)', 'pixerex-elements');
+                        $source['tablepress'] = __('TablePress(PRO)', 'pixerex-elements');
                     }
 
-                    $source['ninja'] = __('Ninja Tables', 'px-elements');
+                    $source['ninja'] = __('Ninja Tables', 'pixerex-elements');
 
                     return $source;
                 }),
@@ -118,14 +118,14 @@ class Advanced_Data_Table extends Widget_Base
         $this->start_controls_section(
             'ea_section_adv_data_table_features',
             [
-                'label' => esc_html__('Advanced Features', 'px-elements'),
+                'label' => esc_html__('Advanced Features', 'pixerex-elements'),
             ]
         );
 
         $this->add_control(
             'ea_adv_data_table_sort',
             [
-                'label'        => esc_html__('Sort', 'px-elements'),
+                'label'        => esc_html__('Sort', 'pixerex-elements'),
                 'type'         => Controls_Manager::SWITCHER,
                 'return_value' => 'yes',
                 'default'      => 'yes',
@@ -135,7 +135,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_control(
             'ea_adv_data_table_search',
             [
-                'label'        => esc_html__('Search', 'px-elements'),
+                'label'        => esc_html__('Search', 'pixerex-elements'),
                 'type'         => Controls_Manager::SWITCHER,
                 'return_value' => 'yes',
                 'default'      => 'yes',
@@ -145,9 +145,9 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_control(
             'ea_adv_data_table_search_placeholder',
             [
-                'label'     => __('Placeholder', 'px-elements'),
+                'label'     => __('Placeholder', 'pixerex-elements'),
                 'type'      => Controls_Manager::TEXT,
-                'default'   => __('Search', 'px-elements'),
+                'default'   => __('Search', 'pixerex-elements'),
                 'condition' => [
                     'ea_adv_data_table_search' => 'yes',
                 ],
@@ -157,7 +157,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_control(
             'ea_adv_data_table_pagination',
             [
-                'label'        => esc_html__('Pagination', 'px-elements'),
+                'label'        => esc_html__('Pagination', 'pixerex-elements'),
                 'type'         => Controls_Manager::SWITCHER,
                 'return_value' => 'yes',
                 'default'      => 'yes',
@@ -167,11 +167,11 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_control(
             'ea_adv_data_table_pagination_type',
             [
-                'label'     => esc_html__('Pagination Type', 'px-elements'),
+                'label'     => esc_html__('Pagination Type', 'pixerex-elements'),
                 'type'      => Controls_Manager::SELECT,
                 'options'   => [
-                    'button' => esc_html__('Button', 'px-elements'),
-                    'select' => esc_html__('Select', 'px-elements'),
+                    'button' => esc_html__('Button', 'pixerex-elements'),
+                    'select' => esc_html__('Select', 'pixerex-elements'),
                 ],
                 'default'   => 'button',
                 'condition' => [
@@ -183,7 +183,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_control(
             'ea_adv_data_table_items_per_page',
             [
-                'label'     => esc_html__('Rows Per Page', 'px-elements'),
+                'label'     => esc_html__('Rows Per Page', 'pixerex-elements'),
                 'type'      => Controls_Manager::NUMBER,
                 'min'       => 1,
                 'default'   => 10,
@@ -197,7 +197,7 @@ class Advanced_Data_Table extends Widget_Base
             'eael_global_warning_text',
             [
                 'type'            => Controls_Manager::RAW_HTML,
-                'raw'             => __('Note: Pagination will be applied on Live Preview only.', 'px-elements'),
+                'raw'             => __('Note: Pagination will be applied on Live Preview only.', 'pixerex-elements'),
                 'content_classes' => 'eael-warning',
                 'condition'       => [
                     'ea_adv_data_table_pagination' => 'yes',
@@ -211,16 +211,16 @@ class Advanced_Data_Table extends Widget_Base
         $this->start_controls_section(
             'ea_section_adv_data_table_export_import',
             [
-                'label' => esc_html__('Export/Import', 'px-elements'),
+                'label' => esc_html__('Export/Import', 'pixerex-elements'),
             ]
         );
 
         $this->add_control(
             'ea_adv_data_table_export_csv_button',
             [
-                'label' => __('Export table as CSV file', 'px-elements'),
+                'label' => __('Export table as CSV file', 'pixerex-elements'),
                 'type'  => Controls_Manager::BUTTON,
-                'text'  => __('Export', 'px-elements'),
+                'text'  => __('Export', 'pixerex-elements'),
                 'event' => 'ea:advTable:export',
             ]
         );
@@ -228,7 +228,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_control(
             'heading-import',
             [
-                'label'     => __('Import', 'px-elements'),
+                'label'     => __('Import', 'pixerex-elements'),
                 'type'      => Controls_Manager::HEADING,
                 'condition' => [
                     'ea_adv_data_table_source' => 'static',
@@ -250,10 +250,10 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_control(
             'ea_adv_data_table_import_csv_button',
             [
-                'label'      => __('Import', 'px-elements'),
+                'label'      => __('Import', 'pixerex-elements'),
                 'type'       => Controls_Manager::BUTTON,
                 'show_label' => false,
-                'text'       => __('Import', 'px-elements'),
+                'text'       => __('Import', 'pixerex-elements'),
                 'event'      => 'ea:advTable:import',
                 'condition'  => [
                     'ea_adv_data_table_source' => 'static',
@@ -267,7 +267,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->start_controls_section(
             'ea_section_adv_data_table_style_table',
             [
-                'label' => __('Table', 'px-elements'),
+                'label' => __('Table', 'pixerex-elements'),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -275,7 +275,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_responsive_control(
             'ea_adv_data_table_width',
             [
-                'label'           => __('Width', 'px-elements'),
+                'label'           => __('Width', 'pixerex-elements'),
                 'type'            => Controls_Manager::SLIDER,
                 'size_units'      => ['px', '%'],
                 'range'           => [
@@ -312,7 +312,7 @@ class Advanced_Data_Table extends Widget_Base
             Group_Control_Border::get_type(),
             [
                 'name'           => 'ea_adv_data_table_border',
-                'label'          => __('Border', 'px-elements'),
+                'label'          => __('Border', 'pixerex-elements'),
                 'fields_options' => [
                     'border' => [
                         'default' => 'solid',
@@ -338,7 +338,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_control(
             'ea_adv_data_table_border_radius',
             [
-                'label'      => __('Border Radius', 'px-elements'),
+                'label'      => __('Border Radius', 'pixerex-elements'),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px'],
                 'selectors'  => [
@@ -351,7 +351,7 @@ class Advanced_Data_Table extends Widget_Base
             Group_Control_Box_Shadow::get_type(),
             [
                 'name'     => 'ea_adv_data_table_width_box_shadow',
-                'label'    => __('Box Shadow', 'px-elements'),
+                'label'    => __('Box Shadow', 'pixerex-elements'),
                 'selector' => '{{WRAPPER}} .ea-advanced-data-table-wrap .ea-advanced-data-table-wrap-inner',
             ]
         );
@@ -361,7 +361,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->start_controls_section(
             'ea_section_adv_data_table_style_head',
             [
-                'label' => __('Head', 'px-elements'),
+                'label' => __('Head', 'pixerex-elements'),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -370,7 +370,7 @@ class Advanced_Data_Table extends Widget_Base
             Group_Control_Typography::get_type(),
             [
                 'name'     => 'ea_adv_data_table_head_typography',
-                'label'    => __('Typography', 'px-elements'),
+                'label'    => __('Typography', 'pixerex-elements'),
                 'selector' => '{{WRAPPER}} th',
             ]
         );
@@ -378,19 +378,19 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_control(
             'ea_adv_data_table_head_horizontal_alignment',
             [
-                'label'     => esc_html__('Text Alignment', 'px-elements'),
+                'label'     => esc_html__('Text Alignment', 'pixerex-elements'),
                 'type'      => Controls_Manager::CHOOSE,
                 'options'   => [
                     'left'   => [
-                        'title' => esc_html__('Left', 'px-elements'),
+                        'title' => esc_html__('Left', 'pixerex-elements'),
                         'icon'  => 'fa fa-align-left',
                     ],
                     'center' => [
-                        'title' => esc_html__('Center', 'px-elements'),
+                        'title' => esc_html__('Center', 'pixerex-elements'),
                         'icon'  => 'fa fa-align-center',
                     ],
                     'right'  => [
-                        'title' => esc_html__('Right', 'px-elements'),
+                        'title' => esc_html__('Right', 'pixerex-elements'),
                         'icon'  => 'fa fa-align-right',
                     ],
                 ],
@@ -405,7 +405,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_control(
             'ea_adv_data_table_head_color',
             [
-                'label'     => __('Text Color', 'px-elements'),
+                'label'     => __('Text Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#444444',
                 'selectors' => [
@@ -419,7 +419,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_control(
             'ea_adv_data_table_head_background',
             [
-                'label'     => __('Background Color', 'px-elements'),
+                'label'     => __('Background Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#fbfbfb',
                 'selectors' => [
@@ -432,7 +432,7 @@ class Advanced_Data_Table extends Widget_Base
             Group_Control_Border::get_type(),
             [
                 'name'           => 'ea_adv_data_table_head_cell_border',
-                'label'          => __('Cell Border', 'px-elements'),
+                'label'          => __('Cell Border', 'pixerex-elements'),
                 'fields_options' => [
                     'border' => [
                         'default' => 'solid',
@@ -458,7 +458,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_responsive_control(
             'ea_adv_data_table_head_cell_padding',
             [
-                'label'           => __('Padding', 'px-elements'),
+                'label'           => __('Padding', 'pixerex-elements'),
                 'type'            => Controls_Manager::DIMENSIONS,
                 'size_units'      => ['px'],
                 'desktop_default' => [
@@ -480,7 +480,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->start_controls_section(
             'ea_section_adv_data_table_style_body',
             [
-                'label' => __('Body', 'px-elements'),
+                'label' => __('Body', 'pixerex-elements'),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -489,7 +489,7 @@ class Advanced_Data_Table extends Widget_Base
             Group_Control_Typography::get_type(),
             [
                 'name'     => 'ea_adv_data_table_body_typography',
-                'label'    => __('Typography', 'px-elements'),
+                'label'    => __('Typography', 'pixerex-elements'),
                 'selector' => '{{WRAPPER}} td',
             ]
         );
@@ -497,19 +497,19 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_control(
             'ea_adv_data_table_body_horizontal_alignment',
             [
-                'label'     => esc_html__('Text Alignment', 'px-elements'),
+                'label'     => esc_html__('Text Alignment', 'pixerex-elements'),
                 'type'      => Controls_Manager::CHOOSE,
                 'options'   => [
                     'left'   => [
-                        'title' => esc_html__('Left', 'px-elements'),
+                        'title' => esc_html__('Left', 'pixerex-elements'),
                         'icon'  => 'fa fa-align-left',
                     ],
                     'center' => [
-                        'title' => esc_html__('Center', 'px-elements'),
+                        'title' => esc_html__('Center', 'pixerex-elements'),
                         'icon'  => 'fa fa-align-center',
                     ],
                     'right'  => [
-                        'title' => esc_html__('Right', 'px-elements'),
+                        'title' => esc_html__('Right', 'pixerex-elements'),
                         'icon'  => 'fa fa-align-right',
                     ],
                 ],
@@ -524,7 +524,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_control(
             'ea_adv_data_table_body_color',
             [
-                'label'     => __('Text Color', 'px-elements'),
+                'label'     => __('Text Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#666666',
                 'selectors' => [
@@ -536,7 +536,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_control(
             'ea_adv_data_table_body_link_color',
             [
-                'label'     => __('Link Color', 'px-elements'),
+                'label'     => __('Link Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -548,7 +548,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_control(
             'ea_adv_data_table_body_link_hovercolor',
             [
-                'label'     => __('Link Hover Color', 'px-elements'),
+                'label'     => __('Link Hover Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -560,7 +560,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_control(
             'ea_adv_data_table_body_background',
             [
-                'label'     => __('Background Color', 'px-elements'),
+                'label'     => __('Background Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#ffffff',
                 'selectors' => [
@@ -573,7 +573,7 @@ class Advanced_Data_Table extends Widget_Base
             Group_Control_Border::get_type(),
             [
                 'name'           => 'ea_adv_data_table_body_cell_border',
-                'label'          => __('Cell Border', 'px-elements'),
+                'label'          => __('Cell Border', 'pixerex-elements'),
                 'fields_options' => [
                     'border' => [
                         'default' => 'solid',
@@ -599,16 +599,16 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_control(
             'ea_adv_data_table_body_highlight',
             [
-                'label'   => esc_html__('Highlight', 'px-elements'),
+                'label'   => esc_html__('Highlight', 'pixerex-elements'),
                 'type'    => Controls_Manager::SELECT,
                 'options' => [
-                    'none'  => esc_html__('None', 'px-elements'),
-                    'f-col' => esc_html__('First Column', 'px-elements'),
-                    'l-col' => esc_html__('Last Column', 'px-elements'),
-                    'e-col' => esc_html__('Even Column', 'px-elements'),
-                    'o-col' => esc_html__('Odd Column', 'px-elements'),
-                    'e-row' => esc_html__('Even Row', 'px-elements'),
-                    'o-row' => esc_html__('Odd Row', 'px-elements'),
+                    'none'  => esc_html__('None', 'pixerex-elements'),
+                    'f-col' => esc_html__('First Column', 'pixerex-elements'),
+                    'l-col' => esc_html__('Last Column', 'pixerex-elements'),
+                    'e-col' => esc_html__('Even Column', 'pixerex-elements'),
+                    'o-col' => esc_html__('Odd Column', 'pixerex-elements'),
+                    'e-row' => esc_html__('Even Row', 'pixerex-elements'),
+                    'o-row' => esc_html__('Odd Row', 'pixerex-elements'),
                 ],
                 'default' => 'none',
             ]
@@ -618,7 +618,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_control(
             'ea_adv_data_table_body_f_col_highlight_color',
             [
-                'label'     => __('Text Color', 'px-elements'),
+                'label'     => __('Text Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#444444',
                 'selectors' => [
@@ -633,7 +633,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_control(
             'ea_adv_data_table_body_f_col_highlight_background',
             [
-                'label'     => __('Background Color', 'px-elements'),
+                'label'     => __('Background Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#fbfbfb',
                 'selectors' => [
@@ -649,7 +649,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_control(
             'ea_adv_data_table_body_l_col_highlight_color',
             [
-                'label'     => __('Text Color', 'px-elements'),
+                'label'     => __('Text Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#444444',
                 'selectors' => [
@@ -664,7 +664,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_control(
             'ea_adv_data_table_body_l_col_highlight_background',
             [
-                'label'     => __('Background Color', 'px-elements'),
+                'label'     => __('Background Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#fbfbfb',
                 'selectors' => [
@@ -680,7 +680,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_control(
             'ea_adv_data_table_body_e_col_highlight_color',
             [
-                'label'     => __('Text Color', 'px-elements'),
+                'label'     => __('Text Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#444444',
                 'selectors' => [
@@ -695,7 +695,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_control(
             'ea_adv_data_table_body_e_col_highlight_background',
             [
-                'label'     => __('Background Color', 'px-elements'),
+                'label'     => __('Background Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#fbfbfb',
                 'selectors' => [
@@ -711,7 +711,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_control(
             'ea_adv_data_table_body_o_col_highlight_color',
             [
-                'label'     => __('Text Color', 'px-elements'),
+                'label'     => __('Text Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#444444',
                 'selectors' => [
@@ -726,7 +726,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_control(
             'ea_adv_data_table_body_o_col_highlight_background',
             [
-                'label'     => __('Background Color', 'px-elements'),
+                'label'     => __('Background Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#fbfbfb',
                 'selectors' => [
@@ -742,7 +742,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_control(
             'ea_adv_data_table_body_e_row_highlight_color',
             [
-                'label'     => __('Text Color', 'px-elements'),
+                'label'     => __('Text Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#444444',
                 'selectors' => [
@@ -757,7 +757,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_control(
             'ea_adv_data_table_body_e_row_highlight_background',
             [
-                'label'     => __('Background Color', 'px-elements'),
+                'label'     => __('Background Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#fbfbfb',
                 'selectors' => [
@@ -773,7 +773,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_control(
             'ea_adv_data_table_body_o_row_highlight_color',
             [
-                'label'     => __('Text Color', 'px-elements'),
+                'label'     => __('Text Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#444444',
                 'selectors' => [
@@ -788,7 +788,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_control(
             'ea_adv_data_table_body_o_row_highlight_background',
             [
-                'label'     => __('Background Color', 'px-elements'),
+                'label'     => __('Background Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#fbfbfb',
                 'selectors' => [
@@ -803,7 +803,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_responsive_control(
             'ea_adv_data_table_body_cell_padding',
             [
-                'label'           => __('Padding', 'px-elements'),
+                'label'           => __('Padding', 'pixerex-elements'),
                 'type'            => Controls_Manager::DIMENSIONS,
                 'size_units'      => ['px'],
                 'desktop_default' => [
@@ -825,7 +825,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->start_controls_section(
             'ea_section_adv_data_table_style_search',
             [
-                'label'     => __('Search', 'px-elements'),
+                'label'     => __('Search', 'pixerex-elements'),
                 'tab'       => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'ea_adv_data_table_search' => 'yes',
@@ -836,7 +836,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_control(
             'ea_adv_data_table_search_width',
             [
-                'label'      => __('Width', 'px-elements'),
+                'label'      => __('Width', 'pixerex-elements'),
                 'type'       => Controls_Manager::SLIDER,
                 'size_units' => ['px', '%'],
                 'range'      => [
@@ -864,7 +864,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_control(
             'ea_adv_data_table_search_height',
             [
-                'label'      => __('Height', 'px-elements'),
+                'label'      => __('Height', 'pixerex-elements'),
                 'type'       => Controls_Manager::SLIDER,
                 'size_units' => ['px'],
                 'range'      => [
@@ -887,7 +887,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_responsive_control(
             'ea_adv_data_table_search_padding',
             [
-                'label'      => esc_html__('Padding', 'px-elements'),
+                'label'      => esc_html__('Padding', 'pixerex-elements'),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px'],
                 'selectors'  => [
@@ -899,7 +899,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_control(
             'ea_adv_data_table_search_margin',
             [
-                'label'      => __('Margin Bottom', 'px-elements'),
+                'label'      => __('Margin Bottom', 'pixerex-elements'),
                 'type'       => Controls_Manager::SLIDER,
                 'size_units' => ['px'],
                 'range'      => [
@@ -922,20 +922,20 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_control(
             'ea_adv_data_table_search_alignment',
             [
-                'label'       => esc_html__('Alignment', 'px-elements'),
+                'label'       => esc_html__('Alignment', 'pixerex-elements'),
                 'type'        => Controls_Manager::CHOOSE,
                 'label_block' => true,
                 'options'     => [
                     'left'   => [
-                        'title' => esc_html__('Left', 'px-elements'),
+                        'title' => esc_html__('Left', 'pixerex-elements'),
                         'icon'  => 'fa fa-align-left',
                     ],
                     'center' => [
-                        'title' => esc_html__('Center', 'px-elements'),
+                        'title' => esc_html__('Center', 'pixerex-elements'),
                         'icon'  => 'fa fa-align-center',
                     ],
                     'right'  => [
-                        'title' => esc_html__('Right', 'px-elements'),
+                        'title' => esc_html__('Right', 'pixerex-elements'),
                         'icon'  => 'fa fa-align-right',
                     ],
                 ],
@@ -947,7 +947,7 @@ class Advanced_Data_Table extends Widget_Base
             Group_Control_Typography::get_type(),
             [
                 'name'     => 'ea_adv_data_table_search_typography',
-                'label'    => __('Typography', 'px-elements'),
+                'label'    => __('Typography', 'pixerex-elements'),
                 'selector' => '{{WRAPPER}} .ea-advanced-data-table-search',
             ]
         );
@@ -955,7 +955,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_control(
             'ea_adv_data_table_search_color',
             [
-                'label'     => __('Text Color', 'px-elements'),
+                'label'     => __('Text Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#666666',
                 'selectors' => [
@@ -967,7 +967,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_control(
             'ea_adv_data_table_search_background',
             [
-                'label'     => __('Background Color', 'px-elements'),
+                'label'     => __('Background Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#ffffff',
                 'selectors' => [
@@ -980,7 +980,7 @@ class Advanced_Data_Table extends Widget_Base
             Group_Control_Border::get_type(),
             [
                 'name'           => 'ea_adv_data_table_search_border',
-                'label'          => __('Border', 'px-elements'),
+                'label'          => __('Border', 'pixerex-elements'),
                 'fields_options' => [
                     'border' => [
                         'default' => 'solid',
@@ -1006,7 +1006,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_control(
             'ea_adv_data_table_search_border_radius',
             [
-                'label'      => __('Border Radius', 'px-elements'),
+                'label'      => __('Border Radius', 'pixerex-elements'),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px'],
                 'selectors'  => [
@@ -1020,7 +1020,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->start_controls_section(
             'ea_section_adv_data_table_style_pagination',
             [
-                'label'     => __('Pagination', 'px-elements'),
+                'label'     => __('Pagination', 'pixerex-elements'),
                 'tab'       => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'ea_adv_data_table_pagination' => 'yes',
@@ -1031,7 +1031,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_responsive_control(
             'ea_adv_data_table_pagination_select_width',
             [
-                'label'           => __('Width', 'px-elements'),
+                'label'           => __('Width', 'pixerex-elements'),
                 'type'            => Controls_Manager::SLIDER,
                 'size_units'      => ['px', '%'],
                 'range'           => [
@@ -1070,19 +1070,19 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_control(
             'ea_adv_data_table_pagination_alignment',
             [
-                'label'     => esc_html__('Alignment', 'px-elements'),
+                'label'     => esc_html__('Alignment', 'pixerex-elements'),
                 'type'      => Controls_Manager::CHOOSE,
                 'options'   => [
                     'left'   => [
-                        'title' => esc_html__('Left', 'px-elements'),
+                        'title' => esc_html__('Left', 'pixerex-elements'),
                         'icon'  => 'fa fa-align-left',
                     ],
                     'center' => [
-                        'title' => esc_html__('Center', 'px-elements'),
+                        'title' => esc_html__('Center', 'pixerex-elements'),
                         'icon'  => 'fa fa-align-center',
                     ],
                     'right'  => [
-                        'title' => esc_html__('Right', 'px-elements'),
+                        'title' => esc_html__('Right', 'pixerex-elements'),
                         'icon'  => 'fa fa-align-right',
                     ],
                 ],
@@ -1097,7 +1097,7 @@ class Advanced_Data_Table extends Widget_Base
             Group_Control_Typography::get_type(),
             [
                 'name'     => 'ea_adv_data_table_pagination_typography',
-                'label'    => __('Typography', 'px-elements'),
+                'label'    => __('Typography', 'pixerex-elements'),
                 'selector' => '{{WRAPPER}} .ea-advanced-data-table-pagination a, {{WRAPPER}} .ea-advanced-data-table-pagination select',
             ]
         );
@@ -1105,7 +1105,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_responsive_control(
             'ea_adv_data_table_pagination_padding',
             [
-                'label'           => esc_html__('Padding', 'px-elements'),
+                'label'           => esc_html__('Padding', 'pixerex-elements'),
                 'type'            => Controls_Manager::DIMENSIONS,
                 'size_units'      => ['px'],
                 'desktop_default' => [
@@ -1126,7 +1126,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_responsive_control(
             'ea_adv_data_table_pagination_margin',
             [
-                'label'           => esc_html__('Margin', 'px-elements'),
+                'label'           => esc_html__('Margin', 'pixerex-elements'),
                 'type'            => Controls_Manager::DIMENSIONS,
                 'size_units'      => ['px'],
                 'desktop_default' => [
@@ -1146,12 +1146,12 @@ class Advanced_Data_Table extends Widget_Base
 
         $this->start_controls_tabs('ea_adv_data_table_pagination_tabs');
 
-        $this->start_controls_tab('normal', ['label' => esc_html__('Normal', 'px-elements')]);
+        $this->start_controls_tab('normal', ['label' => esc_html__('Normal', 'pixerex-elements')]);
 
         $this->add_control(
             'ea_adv_data_table_pagination_color',
             [
-                'label'     => __('Text Color', 'px-elements'),
+                'label'     => __('Text Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#666666',
                 'selectors' => [
@@ -1164,7 +1164,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_control(
             'ea_adv_data_table_pagination_background',
             [
-                'label'     => __('Background Color', 'px-elements'),
+                'label'     => __('Background Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#ffffff',
                 'selectors' => [
@@ -1178,7 +1178,7 @@ class Advanced_Data_Table extends Widget_Base
             Group_Control_Border::get_type(),
             [
                 'name'           => 'ea_adv_data_table_pagination_border',
-                'label'          => __('Border', 'px-elements'),
+                'label'          => __('Border', 'pixerex-elements'),
                 'fields_options' => [
                     'border' => [
                         'default' => 'solid',
@@ -1204,7 +1204,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_control(
             'ea_adv_data_table_pagination_border_radius',
             [
-                'label'      => __('Border Radius', 'px-elements'),
+                'label'      => __('Border Radius', 'pixerex-elements'),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px'],
                 'selectors'  => [
@@ -1216,12 +1216,12 @@ class Advanced_Data_Table extends Widget_Base
 
         $this->end_controls_tab();
 
-        $this->start_controls_tab('hover', ['label' => esc_html__('Hover', 'px-elements')]);
+        $this->start_controls_tab('hover', ['label' => esc_html__('Hover', 'pixerex-elements')]);
 
         $this->add_control(
             'ea_adv_data_table_pagination_color_hover',
             [
-                'label'     => __('Text Color', 'px-elements'),
+                'label'     => __('Text Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#666666',
                 'selectors' => [
@@ -1235,7 +1235,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_control(
             'ea_adv_data_table_pagination_background_hover',
             [
-                'label'     => __('Background Color', 'px-elements'),
+                'label'     => __('Background Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#fafafa',
                 'selectors' => [
@@ -1250,7 +1250,7 @@ class Advanced_Data_Table extends Widget_Base
             Group_Control_Border::get_type(),
             [
                 'name'           => 'ea_adv_data_table_pagination_border_hover',
-                'label'          => __('Border', 'px-elements'),
+                'label'          => __('Border', 'pixerex-elements'),
                 'fields_options' => [
                     'border' => [
                         'default' => 'solid',
@@ -1276,7 +1276,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_control(
             'ea_adv_data_table_pagination_border_radius_hover',
             [
-                'label'      => __('Border Radius', 'px-elements'),
+                'label'      => __('Border Radius', 'pixerex-elements'),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px'],
                 'selectors'  => [
@@ -1296,7 +1296,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->start_controls_section(
             'ea_section_adv_data_table_style_button',
             [
-                'label' => __('Button', 'px-elements'),
+                'label' => __('Button', 'pixerex-elements'),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -1305,19 +1305,19 @@ class Advanced_Data_Table extends Widget_Base
             Group_Control_Typography::get_type(),
             [
                 'name'     => 'ea_adv_data_table_button_typography',
-                'label'    => __('Typography', 'px-elements'),
+                'label'    => __('Typography', 'pixerex-elements'),
                 'selector' => '{{WRAPPER}} td button, {{WRAPPER}} td .button',
             ]
         );
 
         $this->start_controls_tabs('ea_adv_data_table_button_tabs');
 
-        $this->start_controls_tab('ea_adv_data_table_button_tab_normal', ['label' => esc_html__('Normal', 'px-elements')]);
+        $this->start_controls_tab('ea_adv_data_table_button_tab_normal', ['label' => esc_html__('Normal', 'pixerex-elements')]);
 
         $this->add_control(
             'ea_adv_data_table_button_color',
             [
-                'label'     => __('Color', 'px-elements'),
+                'label'     => __('Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -1330,7 +1330,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_control(
             'ea_adv_data_table_button_background_color',
             [
-                'label'     => __('Background Color', 'px-elements'),
+                'label'     => __('Background Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -1342,12 +1342,12 @@ class Advanced_Data_Table extends Widget_Base
 
         $this->end_controls_tab();
 
-        $this->start_controls_tab('ea_adv_data_table_button_tab_hover', ['label' => esc_html__('Hover', 'px-elements')]);
+        $this->start_controls_tab('ea_adv_data_table_button_tab_hover', ['label' => esc_html__('Hover', 'pixerex-elements')]);
 
         $this->add_control(
             'ea_adv_data_table_button_color_hover',
             [
-                'label'     => __('Color', 'px-elements'),
+                'label'     => __('Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -1360,7 +1360,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_control(
             'ea_adv_data_table_button_background_color_hover',
             [
-                'label'     => __('Background Color', 'px-elements'),
+                'label'     => __('Background Color', 'pixerex-elements'),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -1378,7 +1378,7 @@ class Advanced_Data_Table extends Widget_Base
             Group_Control_Border::get_type(),
             [
                 'name'           => 'ea_adv_data_table_button_border',
-                'label'          => __('Border', 'px-elements'),
+                'label'          => __('Border', 'pixerex-elements'),
                 'fields_options' => [
                     'border' => [
                         'default' => '',
@@ -1400,7 +1400,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_control(
             'ea_adv_data_table_button_border_radius',
             [
-                'label'      => __('Border Radius', 'px-elements'),
+                'label'      => __('Border Radius', 'pixerex-elements'),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px'],
                 'selectors'  => [
@@ -1414,7 +1414,7 @@ class Advanced_Data_Table extends Widget_Base
             Group_Control_Box_Shadow::get_type(),
             [
                 'name'     => 'ea_adv_data_table_button_box_shadow',
-                'label'    => __('Box Shadow', 'px-elements'),
+                'label'    => __('Box Shadow', 'pixerex-elements'),
                 'selector' => '{{WRAPPER}} td button, {{WRAPPER}} td .button',
             ]
         );
@@ -1422,7 +1422,7 @@ class Advanced_Data_Table extends Widget_Base
         $this->add_control(
             'ea_adv_data_table_button_border_padding',
             [
-                'label'      => __('Padding', 'px-elements'),
+                'label'      => __('Padding', 'pixerex-elements'),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px'],
                 'selectors'  => [
@@ -1529,7 +1529,7 @@ class Advanced_Data_Table extends Widget_Base
                 }
             }
         } else {
-            _e('No content found', 'px-elements');
+            _e('No content found', 'pixerex-elements');
         }
 
         echo '</div>';
