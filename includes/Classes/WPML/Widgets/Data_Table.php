@@ -49,7 +49,7 @@ class Data_Table extends WPML_Elementor_Module_With_Items
 	protected function get_title( $field ) {
 		switch($field) {
 			case 'eael_data_table_header_col':
-                return __( 'Data Table: Header', 'essential-addons-for-elementor-lite' );
+                return __( 'Data Table: Header', 'px-elements' );
 
 			default:
 				return '';

@@ -15,7 +15,7 @@ class Woocommerce_Review extends Widget_Base {
 	}
 
 	public function get_title() {
-		return esc_html__( 'WooCommerce Review', 'essential-addons-for-elementor-lite');
+		return esc_html__( 'WooCommerce Review', 'px-elements');
 	}
 
 	public function get_icon() {
@@ -49,7 +49,7 @@ class Woocommerce_Review extends Widget_Base {
         $this->start_controls_section(
             'eael_global_warning',
             [
-                'label' => __('Warning!', 'essential-addons-for-elementor-lite'),
+                'label' => __('Warning!', 'px-elements'),
             ]
         );
 
@@ -58,7 +58,7 @@ class Woocommerce_Review extends Widget_Base {
             [
                 'type'            => Controls_Manager::RAW_HTML,
                 'raw'             => __('<strong>ReviewX</strong> is not installed/activated on your site. Please install and activate <a href="plugin-install.php?s=reviewx&tab=search&type=term" target="_blank">ReviewX</a> first.',
-                    'essential-addons-for-elementor-lite'),
+                    'px-elements'),
                 'content_classes' => 'eael-warning',
             ]
         );

@@ -25,7 +25,7 @@ class Filterable_Gallery extends Widget_Base
 
     public function get_title()
     {
-        return esc_html__('Filterable Gallery', 'essential-addons-for-elementor-lite');
+        return esc_html__('Filterable Gallery', 'px-elements');
     }
 
     public function get_icon()
@@ -86,14 +86,14 @@ class Filterable_Gallery extends Widget_Base
         $this->start_controls_section(
             'eael_section_fg_settings',
             [
-                'label' => esc_html__('Settings', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Settings', 'px-elements'),
             ]
         );
 
         $this->add_control(
             'eael_fg_items_to_show',
             [
-                'label' => esc_html__('Items to show', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Items to show', 'px-elements'),
                 'type' => Controls_Manager::TEXT,
                 'label_block' => false,
                 'default' => 6,
@@ -103,7 +103,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'eael_fg_filter_duration',
             [
-                'label' => esc_html__('Animation Duration (ms)', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Animation Duration (ms)', 'px-elements'),
                 'type' => Controls_Manager::TEXT,
                 'label_block' => false,
                 'default' => 500,
@@ -113,7 +113,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_responsive_control(
             'columns',
             [
-                'label' => __('Columns', 'essential-addons-for-elementor-lite'),
+                'label' => __('Columns', 'px-elements'),
                 'type' => Controls_Manager::SELECT,
                 'default' => '3',
                 'tablet_default' => '2',
@@ -134,12 +134,12 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'eael_fg_grid_style',
             [
-                'label' => esc_html__('Grid Style', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Grid Style', 'px-elements'),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'grid',
                 'options' => [
-                    'grid' => esc_html__('Grid', 'essential-addons-for-elementor-lite'),
-                    'masonry' => esc_html__('Masonry', 'essential-addons-for-elementor-lite'),
+                    'grid' => esc_html__('Grid', 'px-elements'),
+                    'masonry' => esc_html__('Masonry', 'px-elements'),
                 ],
             ]
         );
@@ -147,7 +147,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'eael_fg_grid_item_height',
             [
-                'label' => esc_html__('Image Height', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Image Height', 'px-elements'),
                 'type' => Controls_Manager::TEXT,
                 'default' => '300',
                 'condition' => [
@@ -162,13 +162,13 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'eael_fg_caption_style',
             [
-                'label' => esc_html__('Layout', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Layout', 'px-elements'),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'hoverer',
                 'options' => [
-                    'hoverer' => __('Overlay', 'essential-addons-for-elementor-lite'),
-                    'card' => __('Card', 'essential-addons-for-elementor-lite'),
-                    'layout_3'  => esc_html__('Search & Filter', 'essential-addons-for-elementor-lite')
+                    'hoverer' => __('Overlay', 'px-elements'),
+                    'card' => __('Card', 'px-elements'),
+                    'layout_3'  => esc_html__('Search & Filter', 'px-elements')
                 ],
             ]
         );
@@ -176,14 +176,14 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'eael_fg_grid_hover_style',
             [
-                'label' => esc_html__('Hover Style', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Hover Style', 'px-elements'),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'eael-slide-up',
                 'options' => [
-                    'eael-none' => esc_html__('None', 'essential-addons-for-elementor-lite'),
-                    'eael-slide-up' => esc_html__('Slide In Up', 'essential-addons-for-elementor-lite'),
-                    'eael-fade-in' => esc_html__('Fade In', 'essential-addons-for-elementor-lite'),
-                    'eael-zoom-in' => esc_html__('Zoom In ', 'essential-addons-for-elementor-lite'),
+                    'eael-none' => esc_html__('None', 'px-elements'),
+                    'eael-slide-up' => esc_html__('Slide In Up', 'px-elements'),
+                    'eael-fade-in' => esc_html__('Fade In', 'px-elements'),
+                    'eael-zoom-in' => esc_html__('Zoom In ', 'px-elements'),
                 ],
                 'condition' => [
                     'eael_fg_caption_style' => 'hoverer',
@@ -194,7 +194,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'eael_fg_grid_hover_transition',
             [
-                'label' => esc_html__('Hover Transition', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Hover Transition', 'px-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'default' => [
                     'size' => 500,
@@ -216,13 +216,13 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'eael_fg_show_popup',
             [
-                'label' => esc_html__('Link to', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Link to', 'px-elements'),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'buttons',
                 'options' => [
-                    'none' => esc_html__('None', 'essential-addons-for-elementor-lite'),
-                    'media' => esc_html__('Media', 'essential-addons-for-elementor-lite'),
-                    'buttons' => esc_html__('Buttons', 'essential-addons-for-elementor-lite'),
+                    'none' => esc_html__('None', 'px-elements'),
+                    'media' => esc_html__('Media', 'px-elements'),
+                    'buttons' => esc_html__('Buttons', 'px-elements'),
                 ],
                 'condition' => [
                     'eael_fg_caption_style!'    => 'layout_3'
@@ -233,7 +233,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'eael_section_fg_zoom_icon_new',
             [
-                'label' => esc_html__('Lightbox Icon', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Lightbox Icon', 'px-elements'),
                 'type' => Controls_Manager::ICONS,
                 'fa4compatibility' => 'eael_section_fg_zoom_icon',
                 'default' => [
@@ -249,7 +249,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'eael_section_fg_link_icon_new',
             [
-                'label' => esc_html__('Link Icon', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Link Icon', 'px-elements'),
                 'type' => Controls_Manager::ICONS,
                 'fa4compatibility' => 'eael_section_fg_link_icon',
                 'default' => [
@@ -265,10 +265,10 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
 			'eael_section_fg_mfp_caption',
 			[
-				'label' => __( 'Show Popup Caption', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Show Popup Caption', 'px-elements' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Show', 'essential-addons-for-elementor-lite' ),
-				'label_off' => __( 'Hide', 'essential-addons-for-elementor-lite' ),
+				'label_on' => __( 'Show', 'px-elements' ),
+				'label_off' => __( 'Hide', 'px-elements' ),
 				'return_value' => 'yes',
                 'default' => ''
             ]
@@ -277,10 +277,10 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
 			'eael_section_fg_full_image_clickable',
 			[
-				'label' => __( 'Full Image Clickable?', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Full Image Clickable?', 'px-elements' ),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'Yes', 'essential-addons-for-elementor-lite' ),
-				'label_off' => __( 'No', 'essential-addons-for-elementor-lite' ),
+				'label_on' => __( 'Yes', 'px-elements' ),
+				'label_off' => __( 'No', 'px-elements' ),
 				'return_value' => 'yes',
                 'default' => ''
 			]
@@ -289,12 +289,12 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'eael_section_fg_full_image_action',
             [
-                'label' => esc_html__('Full Image Action', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Full Image Action', 'px-elements'),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'lightbox',
                 'options' => [
-                    'lightbox' => esc_html__('Lightbox', 'essential-addons-for-elementor-lite'),
-                    'link' => esc_html__('Link', 'essential-addons-for-elementor-lite'),
+                    'lightbox' => esc_html__('Lightbox', 'px-elements'),
+                    'link' => esc_html__('Link', 'px-elements'),
                 ],
                 'condition' => [
                     'eael_section_fg_full_image_clickable'    => 'yes'
@@ -310,14 +310,14 @@ class Filterable_Gallery extends Widget_Base
         $this->start_controls_section(
             'eael_section_fg_control_settings',
             [
-                'label' => esc_html__('Filterable Controls', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Filterable Controls', 'px-elements'),
             ]
         );
 
         $this->add_control(
             'filter_enable',
             [
-                'label' => __('Enable Filter', 'essential-addons-for-elementor-lite'),
+                'label' => __('Enable Filter', 'px-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'default' => 'yes',
             ]
@@ -326,7 +326,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'eael_fg_all_label_text',
             [
-                'label' => esc_html__('Gallery All Label', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Gallery All Label', 'px-elements'),
                 'type' => Controls_Manager::TEXT,
                 'default' => 'All',
                 'condition' => [
@@ -338,7 +338,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'fg_all_label_icon',
             [
-                'label' => __('All label icon', 'essential-addons-for-elementor-lite'),
+                'label' => __('All label icon', 'px-elements'),
                 'type' => Controls_Manager::ICONS,
                 'default' => [
                     'value' => 'fas fa-angle-down',
@@ -354,19 +354,19 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'title_tag',
             [
-                'label' => __('Select Title Tag', 'essential-addons-for-elementor-lite'),
+                'label' => __('Select Title Tag', 'px-elements'),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'h5',
                 'options' => [
-                    'h1' => __('H1', 'essential-addons-for-elementor-lite'),
-                    'h2' => __('H2', 'essential-addons-for-elementor-lite'),
-                    'h3' => __('H3', 'essential-addons-for-elementor-lite'),
-                    'h4' => __('H4', 'essential-addons-for-elementor-lite'),
-                    'h5' => __('H5', 'essential-addons-for-elementor-lite'),
-                    'h6' => __('H6', 'essential-addons-for-elementor-lite'),
-                    'span' => __('Span', 'essential-addons-for-elementor-lite'),
-                    'p' => __('P', 'essential-addons-for-elementor-lite'),
-                    'div' => __('Div', 'essential-addons-for-elementor-lite'),
+                    'h1' => __('H1', 'px-elements'),
+                    'h2' => __('H2', 'px-elements'),
+                    'h3' => __('H3', 'px-elements'),
+                    'h4' => __('H4', 'px-elements'),
+                    'h5' => __('H5', 'px-elements'),
+                    'h6' => __('H6', 'px-elements'),
+                    'span' => __('Span', 'px-elements'),
+                    'p' => __('P', 'px-elements'),
+                    'div' => __('Div', 'px-elements'),
                 ],
             ]
         );
@@ -382,10 +382,10 @@ class Filterable_Gallery extends Widget_Base
                 'fields' => [
                     [
                         'name' => 'eael_fg_control',
-                        'label' => esc_html__('List Item', 'essential-addons-for-elementor-lite'),
+                        'label' => esc_html__('List Item', 'px-elements'),
                         'type' => Controls_Manager::TEXT,
                         'label_block' => true,
-                        'default' => esc_html__('Gallery Item', 'essential-addons-for-elementor-lite'),
+                        'default' => esc_html__('Gallery Item', 'px-elements'),
                     ],
                 ],
                 'title_field' => '{{eael_fg_control}}',
@@ -400,14 +400,14 @@ class Filterable_Gallery extends Widget_Base
         $this->start_controls_section(
             'eael_section_fg_grid_settings',
             [
-                'label' => esc_html__('Gallery Items', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Gallery Items', 'px-elements'),
             ]
         );
 
         $this->add_control(
             'photo_gallery',
             [
-                'label' => __('Enable Photo Gallery', 'essential-addons-for-elementor-lite'),
+                'label' => __('Enable Photo Gallery', 'px-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'default' => 'yes',
                 'frontend_available' => true,
@@ -419,11 +419,11 @@ class Filterable_Gallery extends Widget_Base
         $repeater->add_control(
             'fg_video_gallery_switch',
             [
-                'label' => __('Video Gallery?', 'essential-addons-for-elementor-lite'),
+                'label' => __('Video Gallery?', 'px-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'default' => 'false',
-                'label_on' => esc_html__('Yes', 'essential-addons-for-elementor-lite'),
-                'label_off' => esc_html__('No', 'essential-addons-for-elementor-lite'),
+                'label_on' => esc_html__('Yes', 'px-elements'),
+                'label_off' => esc_html__('No', 'px-elements'),
                 'return_value' => 'true',
             ]
         );
@@ -431,7 +431,7 @@ class Filterable_Gallery extends Widget_Base
         $repeater->add_control(
             'eael_fg_gallery_item_video_link',
             [
-                'label' => esc_html__('Video Link', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Video Link', 'px-elements'),
                 'type' => Controls_Manager::TEXT,
                 'label_block' => true,
                 'default' => 'https://www.youtube.com/watch?v=kB4U67tiQLA',
@@ -444,21 +444,21 @@ class Filterable_Gallery extends Widget_Base
         $repeater->add_control(
             'eael_fg_gallery_control_name',
             [
-                'label' => esc_html__('Control Name', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Control Name', 'px-elements'),
                 'type' => Controls_Manager::TEXT,
                 'label_block' => true,
                 'default' => '',
-                'description' => __('Use the gallery control name from Control Settings. Separate multiple items with comma (e.g. <strong>Gallery Item, Gallery Item 2</strong>)', 'essential-addons-for-elementor-lite'),
+                'description' => __('Use the gallery control name from Control Settings. Separate multiple items with comma (e.g. <strong>Gallery Item, Gallery Item 2</strong>)', 'px-elements'),
             ]
         );
 
         $repeater->add_control(
             'eael_fg_gallery_item_name',
             [
-                'label' => esc_html__('Item Name', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Item Name', 'px-elements'),
                 'type' => Controls_Manager::TEXT,
                 'label_block' => true,
-                'default' => esc_html__('Gallery item name', 'essential-addons-for-elementor-lite'),
+                'default' => esc_html__('Gallery item name', 'px-elements'),
             ]
         );
 
@@ -466,11 +466,11 @@ class Filterable_Gallery extends Widget_Base
         $repeater->add_control(
             'fg_item_price_switch',
             [
-                'label' => __('Enable Price ?', 'essential-addons-for-elementor-lite'),
+                'label' => __('Enable Price ?', 'px-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'default'   => 'false',
-                'label_on' => esc_html__('Yes', 'essential-addons-for-elementor-lite'),
-                'label_off' => esc_html__('No', 'essential-addons-for-elementor-lite'),
+                'label_on' => esc_html__('Yes', 'px-elements'),
+                'label_off' => esc_html__('No', 'px-elements'),
                 'return_value'  => 'true'
             ]
         );
@@ -478,9 +478,9 @@ class Filterable_Gallery extends Widget_Base
         $repeater->add_control(
             'fg_item_price',
             [
-                'label' => esc_html__('Item Price', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Item Price', 'px-elements'),
                 'type' => Controls_Manager::TEXT,
-                'default' => esc_html__('$20.00', 'essential-addons-for-elementor-lite'),
+                'default' => esc_html__('$20.00', 'px-elements'),
                 'condition' => [
                     'fg_item_price_switch' => 'true'
                 ]
@@ -490,11 +490,11 @@ class Filterable_Gallery extends Widget_Base
         $repeater->add_control(
             'fg_item_ratings_switch',
             [
-                'label' => __('Enable Ratings ?', 'essential-addons-for-elementor-lite'),
+                'label' => __('Enable Ratings ?', 'px-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'default'   => 'false',
-                'label_on' => esc_html__('Yes', 'essential-addons-for-elementor-lite'),
-                'label_off' => esc_html__('No', 'essential-addons-for-elementor-lite'),
+                'label_on' => esc_html__('Yes', 'px-elements'),
+                'label_off' => esc_html__('No', 'px-elements'),
                 'return_value'  => 'true'
             ]
         );
@@ -502,9 +502,9 @@ class Filterable_Gallery extends Widget_Base
         $repeater->add_control(
             'fg_item_ratings',
             [
-                'label' => esc_html__('Item Ratings', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Item Ratings', 'px-elements'),
                 'type' => Controls_Manager::TEXT,
-                'default' => esc_html__('5', 'essential-addons-for-elementor-lite'),
+                'default' => esc_html__('5', 'px-elements'),
                 'condition' => [
                     'fg_item_ratings_switch' => 'true'
                 ]
@@ -514,11 +514,11 @@ class Filterable_Gallery extends Widget_Base
         $repeater->add_control(
             'fg_item_cat_switch',
             [
-                'label' => __('Enable Category ?', 'essential-addons-for-elementor-lite'),
+                'label' => __('Enable Category ?', 'px-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'default'   => 'false',
-                'label_on' => esc_html__('Yes', 'essential-addons-for-elementor-lite'),
-                'label_off' => esc_html__('No', 'essential-addons-for-elementor-lite'),
+                'label_on' => esc_html__('Yes', 'px-elements'),
+                'label_off' => esc_html__('No', 'px-elements'),
                 'return_value'  => 'true'
             ]
         );
@@ -526,9 +526,9 @@ class Filterable_Gallery extends Widget_Base
         $repeater->add_control(
             'fg_item_cat',
             [
-                'label' => esc_html__('Item Category', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Item Category', 'px-elements'),
                 'type' => Controls_Manager::TEXT,
-                'default' => esc_html__('Essential Addons', 'essential-addons-for-elementor-lite'),
+                'default' => esc_html__('Essential Addons', 'px-elements'),
                 'condition' => [
                     'fg_item_cat_switch' => 'true'
                 ]
@@ -538,17 +538,17 @@ class Filterable_Gallery extends Widget_Base
         $repeater->add_control(
             'eael_fg_gallery_item_content',
             [
-                'label' => esc_html__('Item Content', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Item Content', 'px-elements'),
                 'type' => Controls_Manager::WYSIWYG,
                 'label_block' => true,
-                'default' => esc_html__('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, provident.', 'essential-addons-for-elementor-lite'),
+                'default' => esc_html__('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, provident.', 'px-elements'),
             ]
         );
 
         $repeater->add_control(
             'eael_fg_gallery_img',
             [
-                'label' => esc_html__('Image', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Image', 'px-elements'),
                 'type' => Controls_Manager::MEDIA,
                 'default' => [
                     'url' => EAEL_PLUGIN_URL . '/assets/front-end/img/flexia-preview.jpg',
@@ -559,7 +559,7 @@ class Filterable_Gallery extends Widget_Base
         $repeater->add_control(
             'fg_video_gallery_play_icon',
             [
-                'label' => __('Video play icon', 'essential-addons-for-elementor-lite'),
+                'label' => __('Video play icon', 'px-elements'),
                 'type' => Controls_Manager::MEDIA,
                 'default' => [
                     'url' => EAEL_PLUGIN_URL . 'assets/front-end/img/play-icon.png',
@@ -573,11 +573,11 @@ class Filterable_Gallery extends Widget_Base
         $repeater->add_control(
             'eael_fg_gallery_lightbox',
             [
-                'label' => __('Gallery Lightbox Button?', 'essential-addons-for-elementor-lite'),
+                'label' => __('Gallery Lightbox Button?', 'px-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'default' => 'true',
-                'label_on' => esc_html__('Yes', 'essential-addons-for-elementor-lite'),
-                'label_off' => esc_html__('No', 'essential-addons-for-elementor-lite'),
+                'label_on' => esc_html__('Yes', 'px-elements'),
+                'label_off' => esc_html__('No', 'px-elements'),
                 'return_value' => 'true',
                 'condition' => [
                     'fg_video_gallery_switch!' => 'true',
@@ -588,11 +588,11 @@ class Filterable_Gallery extends Widget_Base
         $repeater->add_control(
             'eael_fg_gallery_link',
             [
-                'label' => __('Gallery Link Button?', 'essential-addons-for-elementor-lite'),
+                'label' => __('Gallery Link Button?', 'px-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'default' => 'true',
-                'label_on' => esc_html__('Yes', 'essential-addons-for-elementor-lite'),
-                'label_off' => esc_html__('No', 'essential-addons-for-elementor-lite'),
+                'label_on' => esc_html__('Yes', 'px-elements'),
+                'label_off' => esc_html__('No', 'px-elements'),
                 'return_value' => 'true',
                 'condition' => [
                     'fg_video_gallery_switch!' => 'true',
@@ -643,14 +643,14 @@ class Filterable_Gallery extends Widget_Base
         $this->start_controls_section(
             'section_pagination',
             [
-                'label' => __('Load More Button', 'essential-addons-for-elementor-lite'),
+                'label' => __('Load More Button', 'px-elements'),
             ]
         );
 
         $this->add_control(
             'pagination',
             [
-                'label' => __('Load More Button', 'essential-addons-for-elementor-lite'),
+                'label' => __('Load More Button', 'px-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'default' => 'false',
                 'frontend_available' => true,
@@ -660,7 +660,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'images_per_page',
             [
-                'label' => __('Images Per Page', 'essential-addons-for-elementor-lite'),
+                'label' => __('Images Per Page', 'px-elements'),
                 'type' => Controls_Manager::TEXT,
                 'default' => 6,
                 'condition' => [
@@ -672,9 +672,9 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'load_more_text',
             [
-                'label' => __('Button Text', 'essential-addons-for-elementor-lite'),
+                'label' => __('Button Text', 'px-elements'),
                 'type' => Controls_Manager::TEXT,
-                'default' => __('Load More', 'essential-addons-for-elementor-lite'),
+                'default' => __('Load More', 'px-elements'),
                 'condition' => [
                     'pagination' => 'yes',
                 ],
@@ -684,9 +684,9 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'nomore_items_text',
             [
-                'label' => __('No More Items Text', 'essential-addons-for-elementor-lite'),
+                'label' => __('No More Items Text', 'px-elements'),
                 'type' => Controls_Manager::TEXT,
-                'default' => __('No more items!', 'essential-addons-for-elementor-lite'),
+                'default' => __('No more items!', 'px-elements'),
                 'condition' => [
                     'pagination' => 'yes',
                 ],
@@ -696,15 +696,15 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'button_size',
             [
-                'label' => __('Size', 'essential-addons-for-elementor-lite'),
+                'label' => __('Size', 'px-elements'),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'sm',
                 'options' => [
-                    'xs' => __('Extra Small', 'essential-addons-for-elementor-lite'),
-                    'sm' => __('Small', 'essential-addons-for-elementor-lite'),
-                    'md' => __('Medium', 'essential-addons-for-elementor-lite'),
-                    'lg' => __('Large', 'essential-addons-for-elementor-lite'),
-                    'xl' => __('Extra Large', 'essential-addons-for-elementor-lite'),
+                    'xs' => __('Extra Small', 'px-elements'),
+                    'sm' => __('Small', 'px-elements'),
+                    'md' => __('Medium', 'px-elements'),
+                    'lg' => __('Large', 'px-elements'),
+                    'xl' => __('Extra Large', 'px-elements'),
                 ],
                 'condition' => [
                     'pagination' => 'yes',
@@ -716,7 +716,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'load_more_icon_new',
             [
-                'label' => __('Button Icon', 'essential-addons-for-elementor-lite'),
+                'label' => __('Button Icon', 'px-elements'),
                 'type' => Controls_Manager::ICONS,
                 'fa4compatibility' => 'load_more_icon',
                 'condition' => [
@@ -728,12 +728,12 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'button_icon_position',
             [
-                'label' => __('Icon Position', 'essential-addons-for-elementor-lite'),
+                'label' => __('Icon Position', 'px-elements'),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'after',
                 'options' => [
-                    'after' => __('After', 'essential-addons-for-elementor-lite'),
-                    'before' => __('Before', 'essential-addons-for-elementor-lite'),
+                    'after' => __('After', 'px-elements'),
+                    'before' => __('Before', 'px-elements'),
                 ],
                 'condition' => [
                     'pagination' => 'yes',
@@ -744,19 +744,19 @@ class Filterable_Gallery extends Widget_Base
         $this->add_responsive_control(
             'load_more_align',
             [
-                'label' => __('Alignment', 'essential-addons-for-elementor-lite'),
+                'label' => __('Alignment', 'px-elements'),
                 'type' => Controls_Manager::CHOOSE,
                 'options' => [
                     'left' => [
-                        'title' => __('Left', 'essential-addons-for-elementor-lite'),
+                        'title' => __('Left', 'px-elements'),
                         'icon' => 'eicon-h-align-left',
                     ],
                     'center' => [
-                        'title' => __('Center', 'essential-addons-for-elementor-lite'),
+                        'title' => __('Center', 'px-elements'),
                         'icon' => 'eicon-h-align-center',
                     ],
                     'right' => [
-                        'title' => __('Right', 'essential-addons-for-elementor-lite'),
+                        'title' => __('Right', 'px-elements'),
                         'icon' => 'eicon-h-align-right',
                     ],
                 ],
@@ -776,14 +776,14 @@ class Filterable_Gallery extends Widget_Base
             $this->start_controls_section(
                 'eael_section_pro',
                 [
-                    'label' => __( 'Go Premium for More Features', 'essential-addons-for-elementor-lite')
+                    'label' => __( 'Go Premium for More Features', 'px-elements')
                 ]
             );
 
             $this->add_control(
                 'eael_control_get_pro',
                 [
-                    'label' => __( 'Unlock more possibilities', 'essential-addons-for-elementor-lite'),
+                    'label' => __( 'Unlock more possibilities', 'px-elements'),
                     'type' => Controls_Manager::CHOOSE,
                     'options' => [
                         '1' => [
@@ -807,7 +807,7 @@ class Filterable_Gallery extends Widget_Base
         $this->start_controls_section(
             'eael_section_fg_style_settings',
             [
-                'label' => esc_html__('General Style', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('General Style', 'px-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -815,7 +815,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'eael_fg_bg_color',
             [
-                'label' => esc_html__('Background Color', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Background Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#fff',
                 'selectors' => [
@@ -827,7 +827,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_responsive_control(
             'eael_fg_container_padding',
             [
-                'label' => esc_html__('Padding', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Padding', 'px-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -839,7 +839,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_responsive_control(
             'eael_fg_container_margin',
             [
-                'label' => esc_html__('Margin', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Margin', 'px-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -852,7 +852,7 @@ class Filterable_Gallery extends Widget_Base
             Group_Control_Border::get_type(),
             [
                 'name' => 'eael_fg_border',
-                'label' => esc_html__('Border', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Border', 'px-elements'),
                 'selector' => '{{WRAPPER}} .eael-filter-gallery-wrapper',
             ]
         );
@@ -860,7 +860,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'eael_fg_border_radius',
             [
-                'label' => esc_html__('Border Radius', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Border Radius', 'px-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'default' => [
                     'size' => 0,
@@ -894,7 +894,7 @@ class Filterable_Gallery extends Widget_Base
         $this->start_controls_section(
             'eael_section_fg_control_style_settings',
             [
-                'label' => esc_html__('Control Style', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Control Style', 'px-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'eael_fg_caption_style!' => 'layout_3'
@@ -904,7 +904,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_responsive_control(
             'eael_fg_control_padding',
             [
-                'label' => esc_html__('Padding', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Padding', 'px-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -916,7 +916,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_responsive_control(
             'eael_fg_control_margin',
             [
-                'label' => esc_html__('Margin', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Margin', 'px-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -935,12 +935,12 @@ class Filterable_Gallery extends Widget_Base
         $this->start_controls_tabs('eael_fg_control_tabs');
 
         // Normal State Tab
-        $this->start_controls_tab('eael_fg_control_normal', ['label' => esc_html__('Normal', 'essential-addons-for-elementor-lite')]);
+        $this->start_controls_tab('eael_fg_control_normal', ['label' => esc_html__('Normal', 'px-elements')]);
 
         $this->add_control(
             'eael_fg_control_normal_text_color',
             [
-                'label' => esc_html__('Text Color', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Text Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#444',
                 'selectors' => [
@@ -952,7 +952,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'eael_fg_control_normal_bg_color',
             [
-                'label' => esc_html__('Background Color', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Background Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -965,7 +965,7 @@ class Filterable_Gallery extends Widget_Base
             Group_Control_Border::get_type(),
             [
                 'name' => 'eael_fg_control_normal_border',
-                'label' => esc_html__('Border', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Border', 'px-elements'),
                 'selector' => '{{WRAPPER}} .eael-filter-gallery-control ul > li.control',
             ]
         );
@@ -973,7 +973,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'eael_fg_control_normal_border_radius',
             [
-                'label' => esc_html__('Border Radius', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Border Radius', 'px-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'default' => [
                     'size' => 0,
@@ -1001,12 +1001,12 @@ class Filterable_Gallery extends Widget_Base
         $this->end_controls_tab();
 
         // Active State Tab
-        $this->start_controls_tab('eael_cta_btn_hover', ['label' => esc_html__('Active', 'essential-addons-for-elementor-lite')]);
+        $this->start_controls_tab('eael_cta_btn_hover', ['label' => esc_html__('Active', 'px-elements')]);
 
         $this->add_control(
             'eael_fg_control_active_text_color',
             [
-                'label' => esc_html__('Text Color', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Text Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#fff',
                 'selectors' => [
@@ -1018,7 +1018,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'eael_fg_control_active_bg_color',
             [
-                'label' => esc_html__('Background Color', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Background Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#333',
                 'selectors' => [
@@ -1031,7 +1031,7 @@ class Filterable_Gallery extends Widget_Base
             Group_Control_Border::get_type(),
             [
                 'name' => 'eael_fg_control_active_border',
-                'label' => esc_html__('Border', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Border', 'px-elements'),
                 'selector' => '{{WRAPPER}} .eael-filter-gallery-control ul > li.control.active',
             ]
         );
@@ -1039,7 +1039,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'eael_fg_control_active_border_radius',
             [
-                'label' => esc_html__('Border Radius', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Border Radius', 'px-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'default' => [
                     'size' => 0,
@@ -1078,7 +1078,7 @@ class Filterable_Gallery extends Widget_Base
         $this->start_controls_section(
             'eael_section_fg_item_style_settings',
             [
-                'label' => esc_html__('Item Style', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Item Style', 'px-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -1086,7 +1086,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_responsive_control(
             'eael_fg_item_container_padding',
             [
-                'label' => esc_html__('Padding', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Padding', 'px-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -1098,7 +1098,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_responsive_control(
             'eael_fg_item_container_margin',
             [
-                'label' => esc_html__('Margin', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Margin', 'px-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -1111,7 +1111,7 @@ class Filterable_Gallery extends Widget_Base
             Group_Control_Border::get_type(),
             [
                 'name' => 'eael_fg_item_border',
-                'label' => esc_html__('Border', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Border', 'px-elements'),
                 'selector' => '{{WRAPPER}} .eael-filterable-gallery-item-wrap .eael-gallery-grid-item',
             ]
         );
@@ -1119,7 +1119,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'eael_fg_item_border_radius',
             [
-                'label' => esc_html__('Border Radius', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Border Radius', 'px-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'default' => [
                     'size' => 0,
@@ -1153,7 +1153,7 @@ class Filterable_Gallery extends Widget_Base
         $this->start_controls_section(
             'eael_section_fg_item_cap_style_settings',
             [
-                'label' => esc_html__('Item Hover Style', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Item Hover Style', 'px-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'eael_fg_caption_style' => ['hoverer' ]
@@ -1164,7 +1164,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'eael_fg_item_cap_bg_color',
             [
-                'label' => esc_html__('Background Color', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Background Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => 'rgba(0,0,0,0.7)',
                 'selectors' => [
@@ -1176,7 +1176,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_responsive_control(
             'eael_fg_item_cap_container_padding',
             [
-                'label' => esc_html__('Padding', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Padding', 'px-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -1188,7 +1188,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'eael_fg_item_hover_title_typography_heading',
             [
-                'label' => esc_html__('Title Typography', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Title Typography', 'px-elements'),
                 'type' => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -1197,7 +1197,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'eael_fg_item_hover_title_color',
             [
-                'label' => esc_html__('Color', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#ffffff',
                 'selectors' => [
@@ -1209,7 +1209,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'eael_fg_item_hover_title_hover_color',
             [
-                'label' => esc_html__('Hover Color', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Hover Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .gallery-item-caption-wrap.caption-style-hoverer .fg-item-title:hover' => 'color: {{VALUE}};',
@@ -1228,7 +1228,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'eael_fg_item_hover_content_typography_heading',
             [
-                'label' => esc_html__('Content Typography', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Content Typography', 'px-elements'),
                 'type' => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -1237,7 +1237,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'eael_fg_item_hover_content_color',
             [
-                'label' => esc_html__('Color', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#ffffff',
                 'selectors' => [
@@ -1258,7 +1258,7 @@ class Filterable_Gallery extends Widget_Base
             Group_Control_Border::get_type(),
             [
                 'name' => 'eael_fg_item_cap_border',
-                'label' => esc_html__('Border', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Border', 'px-elements'),
                 'selector' => '{{WRAPPER}} .gallery-item-caption-wrap.caption-style-hoverer',
             ]
         );
@@ -1274,21 +1274,21 @@ class Filterable_Gallery extends Widget_Base
         $this->add_responsive_control(
             'eael_fg_item_hoverer_content_alignment',
             [
-                'label' => esc_html__('Content Alignment', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Content Alignment', 'px-elements'),
                 'type' => Controls_Manager::CHOOSE,
                 'label_block' => true,
                 'separator' => 'before',
                 'options' => [
                     'left' => [
-                        'title' => esc_html__('Left', 'essential-addons-for-elementor-lite'),
+                        'title' => esc_html__('Left', 'px-elements'),
                         'icon' => 'fa fa-align-left',
                     ],
                     'center' => [
-                        'title' => esc_html__('Center', 'essential-addons-for-elementor-lite'),
+                        'title' => esc_html__('Center', 'px-elements'),
                         'icon' => 'fa fa-align-center',
                     ],
                     'right' => [
-                        'title' => esc_html__('Right', 'essential-addons-for-elementor-lite'),
+                        'title' => esc_html__('Right', 'px-elements'),
                         'icon' => 'fa fa-align-right',
                     ],
                 ],
@@ -1303,7 +1303,7 @@ class Filterable_Gallery extends Widget_Base
         $this->start_controls_section(
             'fg_item_thumb_style',
             [
-                'label' => esc_html__('Thumbnail Style', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Thumbnail Style', 'px-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'eael_fg_caption_style' => 'layout_3'
@@ -1315,7 +1315,7 @@ class Filterable_Gallery extends Widget_Base
             Group_Control_Border::get_type(),
             [
                 'name' => 'fg_item_thubm_border',
-                'label' => esc_html__('Border', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Border', 'px-elements'),
                 'selector' => '{{WRAPPER}} .fg-layout-3-item-thumb',
             ]
         );
@@ -1323,7 +1323,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_responsive_control(
             'fg_item_thubm_border_radius',
             [
-                'label' => esc_html__('Border Radius', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Border Radius', 'px-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -1343,7 +1343,7 @@ class Filterable_Gallery extends Widget_Base
         $this->start_controls_section(
             'eael_section_fg_item_card_hover_style',
             [
-                'label' => esc_html__('Item Hover Style', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Item Hover Style', 'px-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'eael_fg_caption_style' => ['card', 'layout_3']
@@ -1354,7 +1354,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'eael_fg_item_card_hover_bg_color',
             [
-                'label' => esc_html__('Background Color', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Background Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => 'rgba(0,0,0,0.7)',
                 'selectors' => [
@@ -1373,7 +1373,7 @@ class Filterable_Gallery extends Widget_Base
         $this->start_controls_section(
             'eael_section_fg_video_item_style',
             [
-                'label' => esc_html__('Video item hover', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Video item hover', 'px-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'eael_fg_caption_style!' => 'layout_3'
@@ -1384,7 +1384,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'eael_fg_video_item_hover_bg',
             [
-                'label' => esc_html__('Background Color', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Background Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => 'rgba(0, 0, 0, .7)',
                 'selectors' => [
@@ -1396,7 +1396,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'eael_fg_video_item_hover_bg_trans',
             [
-                'label' => esc_html__('Background transition', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Background transition', 'px-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => ['px'],
                 'default' => [
@@ -1416,7 +1416,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'eael_fg_video_item_hover_icon_size',
             [
-                'label' => esc_html__('Icon size', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Icon size', 'px-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => ['px', 'em'],
                 'default' => [
@@ -1439,7 +1439,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'eael_fg_video_item_icon_hover_scale',
             [
-                'label' => esc_html__('Hover icon scale', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Hover icon scale', 'px-elements'),
                 'type' => Controls_Manager::TEXT,
                 'default' => '1.1',
                 'selectors' => [
@@ -1451,7 +1451,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'eael_fg_video_item_icon_hover_scale_transition',
             [
-                'label' => esc_html__('Icon transition', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Icon transition', 'px-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => ['px'],
                 'default' => [
@@ -1478,7 +1478,7 @@ class Filterable_Gallery extends Widget_Base
         $this->start_controls_section(
             'eael_section_fg_item_content_style_settings',
             [
-                'label' => esc_html__('Item Card Style', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Item Card Style', 'px-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'eael_fg_caption_style' => [ 'card', 'layout_3' ]
@@ -1489,7 +1489,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'eael_fg_item_content_bg_color',
             [
-                'label' => esc_html__('Background Color', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Background Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#f1f2f9',
                 'selectors' => [
@@ -1505,7 +1505,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'eael_fg_item_layout_3_content_bg_color',
             [
-                'label' => esc_html__('Background Color', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Background Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#ffffff',
                 'selectors' => [
@@ -1520,7 +1520,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_responsive_control(
             'eael_fg_item_content_container_padding',
             [
-                'label' => esc_html__('Padding', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Padding', 'px-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -1534,7 +1534,7 @@ class Filterable_Gallery extends Widget_Base
             Group_Control_Border::get_type(),
             [
                 'name' => 'eael_fg_item_content_border',
-                'label' => esc_html__('Border', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Border', 'px-elements'),
                 'selector' => '{{WRAPPER}} .eael-filterable-gallery-item-wrap .gallery-item-caption-wrap.caption-style-card, {{WRAPPER}} .fg-layout-3-item-content',
             ]
         );
@@ -1550,7 +1550,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'eael_fg_item_content_title_typography_settings',
             [
-                'label' => esc_html__('Title Typography', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Title Typography', 'px-elements'),
                 'type' => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -1559,7 +1559,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'eael_fg_item_content_title_color',
             [
-                'label' => esc_html__('Color', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#F56A6A',
                 'selectors' => [
@@ -1574,7 +1574,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'eael_fg_item_layout_3_content_title_color',
             [
-                'label' => esc_html__('Color', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#031d3c',
                 'selectors' => [
@@ -1589,7 +1589,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'eael_fg_item_content_title_hover_color',
             [
-                'label' => esc_html__('Hover Color', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Hover Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -1610,7 +1610,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'eael_fg_item_content_text_typography_settings',
             [
-                'label' => esc_html__('Content Typography', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Content Typography', 'px-elements'),
                 'type' => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -1619,7 +1619,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'eael_fg_item_content_text_color',
             [
-                'label' => esc_html__('Color', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#444',
                 'selectors' => [
@@ -1634,7 +1634,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'eael_fg_item_layout_3_content_text_color',
             [
-                'label' => esc_html__('Color', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#7f8995',
                 'selectors' => [
@@ -1657,21 +1657,21 @@ class Filterable_Gallery extends Widget_Base
         $this->add_responsive_control(
             'eael_fg_item_content_alignment',
             [
-                'label' => esc_html__('Content Alignment', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Content Alignment', 'px-elements'),
                 'type' => Controls_Manager::CHOOSE,
                 'label_block' => true,
                 'separator' => 'before',
                 'options' => [
                     'left' => [
-                        'title' => esc_html__('Left', 'essential-addons-for-elementor-lite'),
+                        'title' => esc_html__('Left', 'px-elements'),
                         'icon' => 'fa fa-align-left',
                     ],
                     'center' => [
-                        'title' => esc_html__('Center', 'essential-addons-for-elementor-lite'),
+                        'title' => esc_html__('Center', 'px-elements'),
                         'icon' => 'fa fa-align-center',
                     ],
                     'right' => [
-                        'title' => esc_html__('Right', 'essential-addons-for-elementor-lite'),
+                        'title' => esc_html__('Right', 'px-elements'),
                         'icon' => 'fa fa-align-right',
                     ],
                 ],
@@ -1690,7 +1690,7 @@ class Filterable_Gallery extends Widget_Base
         $this->start_controls_section(
             'eael_section_fg_item_hover_icons_style',
             [
-                'label' => esc_html__('Icons Style', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Icons Style', 'px-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -1700,14 +1700,14 @@ class Filterable_Gallery extends Widget_Base
             $this->start_controls_tab(
                 'fg_icons_style_normal',
                 [
-                    'label'		=> __( 'Normal', 'essential-addons-for-elementor-lite')
+                    'label'		=> __( 'Normal', 'px-elements')
                 ]
             );
 
             $this->add_control(
                 'eael_fg_item_icon_bg_color',
                 [
-                    'label' => esc_html__('Background Color', 'essential-addons-for-elementor-lite'),
+                    'label' => esc_html__('Background Color', 'px-elements'),
                     'type' => Controls_Manager::COLOR,
                     'default' => '#ff622a',
                     'selectors' => [
@@ -1719,7 +1719,7 @@ class Filterable_Gallery extends Widget_Base
             $this->add_control(
                 'eael_fg_item_icon_color',
                 [
-                    'label' => esc_html__('Color', 'essential-addons-for-elementor-lite'),
+                    'label' => esc_html__('Color', 'px-elements'),
                     'type' => Controls_Manager::COLOR,
                     'default' => '#fff',
                     'selectors' => [
@@ -1731,7 +1731,7 @@ class Filterable_Gallery extends Widget_Base
             $this->add_responsive_control(
                 'eael_fg_item_icon_padding',
                 [
-                    'label' => esc_html__('Padding', 'essential-addons-for-elementor-lite'),
+                    'label' => esc_html__('Padding', 'px-elements'),
                     'type' => Controls_Manager::DIMENSIONS,
                     'size_units' => ['px', 'em', '%'],
                     'selectors' => [
@@ -1743,7 +1743,7 @@ class Filterable_Gallery extends Widget_Base
             $this->add_responsive_control(
                 'eael_fg_item_icon_margin',
                 [
-                    'label' => esc_html__('Margin', 'essential-addons-for-elementor-lite'),
+                    'label' => esc_html__('Margin', 'px-elements'),
                     'type' => Controls_Manager::DIMENSIONS,
                     'size_units' => ['px', 'em', '%'],
                     'selectors' => [
@@ -1755,7 +1755,7 @@ class Filterable_Gallery extends Widget_Base
             $this->add_control(
                 'eael_fg_item_icon_exact_size',
                 [
-                    'label' => esc_html__('Icon Size', 'essential-addons-for-elementor-lite'),
+                    'label' => esc_html__('Icon Size', 'px-elements'),
                     'type' => Controls_Manager::SLIDER,
                     'size_units' => ['px', 'em'],
                     'range' => [
@@ -1781,7 +1781,7 @@ class Filterable_Gallery extends Widget_Base
             $this->add_control(
                 'eael_fg_item_icon_size',
                 [
-                    'label' => esc_html__('Icon Font Size', 'essential-addons-for-elementor-lite'),
+                    'label' => esc_html__('Icon Font Size', 'px-elements'),
                     'type' => Controls_Manager::SLIDER,
                     'size_units' => ['px', 'em'],
                     'range' => [
@@ -1807,7 +1807,7 @@ class Filterable_Gallery extends Widget_Base
                 Group_Control_Border::get_type(),
                 [
                     'name' => 'eael_fg_item_icon_border',
-                    'label' => esc_html__('Border', 'essential-addons-for-elementor-lite'),
+                    'label' => esc_html__('Border', 'px-elements'),
                     'selector' => '{{WRAPPER}} .gallery-item-caption-wrap .gallery-item-buttons > a span',
                 ]
             );
@@ -1815,7 +1815,7 @@ class Filterable_Gallery extends Widget_Base
             $this->add_control(
                 'eael_fg_item_icon_border_radius',
                 [
-                    'label' => esc_html__('Border Radius', 'essential-addons-for-elementor-lite'),
+                    'label' => esc_html__('Border Radius', 'px-elements'),
                     'type' => Controls_Manager::SLIDER,
                     'default' => [
                         'size' => 100,
@@ -1836,14 +1836,14 @@ class Filterable_Gallery extends Widget_Base
             $this->start_controls_tab(
                 'fg_icons_style_hover',
                 [
-                    'label'		=> __( 'Hover', 'essential-addons-for-elementor-lite')
+                    'label'		=> __( 'Hover', 'px-elements')
                 ]
             );
 
             $this->add_control(
                 'eael_fg_item_icon_bg_color_hover',
                 [
-                    'label' => esc_html__('Background Color', 'essential-addons-for-elementor-lite'),
+                    'label' => esc_html__('Background Color', 'px-elements'),
                     'type' => Controls_Manager::COLOR,
                     'default' => '#ff622a',
                     'selectors' => [
@@ -1855,7 +1855,7 @@ class Filterable_Gallery extends Widget_Base
             $this->add_control(
                 'eael_fg_item_icon_color_hover',
                 [
-                    'label' => esc_html__('Color', 'essential-addons-for-elementor-lite'),
+                    'label' => esc_html__('Color', 'px-elements'),
                     'type' => Controls_Manager::COLOR,
                     'default' => '#fff',
                     'selectors' => [
@@ -1868,7 +1868,7 @@ class Filterable_Gallery extends Widget_Base
                 Group_Control_Border::get_type(),
                 [
                     'name' => 'eael_fg_item_icon_border_hover',
-                    'label' => esc_html__('Border', 'essential-addons-for-elementor-lite'),
+                    'label' => esc_html__('Border', 'px-elements'),
                     'selector' => '{{WRAPPER}} .gallery-item-caption-wrap .gallery-item-buttons > a span:hover',
                 ]
             );
@@ -1876,7 +1876,7 @@ class Filterable_Gallery extends Widget_Base
             $this->add_control(
                 'eael_fg_item_icon_border_radius_hover',
                 [
-                    'label' => esc_html__('Border Radius', 'essential-addons-for-elementor-lite'),
+                    'label' => esc_html__('Border Radius', 'px-elements'),
                     'type' => Controls_Manager::SLIDER,
                     'default' => [
                         'size' => 100,
@@ -1895,7 +1895,7 @@ class Filterable_Gallery extends Widget_Base
             $this->add_control(
                 'eael_fg_item_icon_transition',
                 [
-                    'label' => esc_html__('Transition', 'essential-addons-for-elementor-lite'),
+                    'label' => esc_html__('Transition', 'px-elements'),
                     'type' => Controls_Manager::SLIDER,
                     'default' => [
                         'size' => 300,
@@ -1920,7 +1920,7 @@ class Filterable_Gallery extends Widget_Base
         $this->start_controls_section(
             'fg_item_price_style',
             [
-                'label' => esc_html__('Price Style', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Price Style', 'px-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'eael_fg_caption_style' => 'layout_3'
@@ -1931,7 +1931,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'fg_item_price_color',
             [
-                'label' => __('Color', 'essential-addons-for-elementor-lite'),
+                'label' => __('Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .fg-caption-head .fg-item-price' => 'color: {{VALUE}}',
@@ -1943,7 +1943,7 @@ class Filterable_Gallery extends Widget_Base
             Group_Control_Typography::get_type(),
             [
                 'name' => 'fg_item_price_typography',
-                'label' => __('Typography', 'essential-addons-for-elementor-lite'),
+                'label' => __('Typography', 'px-elements'),
                 'scheme' => Scheme_Typography::TYPOGRAPHY_4,
                 'selector' => '{{WRAPPER}} .fg-caption-head .fg-item-price'
             ]
@@ -1954,7 +1954,7 @@ class Filterable_Gallery extends Widget_Base
         $this->start_controls_section(
             'fg_item_ratings_style',
             [
-                'label' => esc_html__('Ratings Style', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Ratings Style', 'px-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'eael_fg_caption_style' => 'layout_3'
@@ -1965,7 +1965,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'fg_item_ratings_color',
             [
-                'label' => __('Color', 'essential-addons-for-elementor-lite'),
+                'label' => __('Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .fg-caption-head .fg-item-ratings' => 'color: {{VALUE}}',
@@ -1976,7 +1976,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'fg_item_ratings_star_color',
             [
-                'label' => __('Star Color', 'essential-addons-for-elementor-lite'),
+                'label' => __('Star Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .fg-caption-head .fg-item-ratings i' => 'color: {{VALUE}}',
@@ -1988,7 +1988,7 @@ class Filterable_Gallery extends Widget_Base
             Group_Control_Typography::get_type(),
             [
                 'name' => 'fg_item_ratings_typography',
-                'label' => __('Typography', 'essential-addons-for-elementor-lite'),
+                'label' => __('Typography', 'px-elements'),
                 'scheme' => Scheme_Typography::TYPOGRAPHY_4,
                 'selector' => '{{WRAPPER}} .fg-caption-head .fg-item-ratings'
             ]
@@ -1999,7 +1999,7 @@ class Filterable_Gallery extends Widget_Base
         $this->start_controls_section(
             'fg_item_category_style',
             [
-                'label' => esc_html__('Category Style', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Category Style', 'px-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'eael_fg_caption_style' => 'layout_3'
@@ -2010,7 +2010,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'fg_item_category_color',
             [
-                'label' => __('Color', 'essential-addons-for-elementor-lite'),
+                'label' => __('Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .fg-item-category span' => 'color: {{VALUE}}',
@@ -2022,7 +2022,7 @@ class Filterable_Gallery extends Widget_Base
             Group_Control_Typography::get_type(),
             [
                 'name' => 'fg_item_category_typography',
-                'label' => __('Typography', 'essential-addons-for-elementor-lite'),
+                'label' => __('Typography', 'px-elements'),
                 'scheme' => Scheme_Typography::TYPOGRAPHY_4,
                 'selector' => '{{WRAPPER}} .fg-item-category span'
             ]
@@ -2032,7 +2032,7 @@ class Filterable_Gallery extends Widget_Base
             Group_Control_Background::get_type(),
             [
                 'name'      => 'fg_item_category_background',
-                'label'     => __( 'Background', 'essential-addons-for-elementor-lite'),
+                'label'     => __( 'Background', 'px-elements'),
                 'types'     => [ 'classic', 'gradient' ],
                 'selector'  => '{{WRAPPER}} .fg-item-category span',
             ]
@@ -2041,7 +2041,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_responsive_control(
             'fg_item_category_border_radius',
             [
-                'label' => __('Border Radius', 'essential-addons-for-elementor-lite'),
+                'label' => __('Border Radius', 'px-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%'],
                 'selectors' => [
@@ -2056,7 +2056,7 @@ class Filterable_Gallery extends Widget_Base
         $this->start_controls_section(
             'fg_search_form_style',
             [
-                'label' => esc_html__('Search Form Style', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Search Form Style', 'px-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'eael_fg_caption_style' => 'layout_3'
@@ -2067,7 +2067,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'fg_sf_controls',
             [
-                'label' => esc_html__('Controls', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Controls', 'px-elements'),
                 'type' => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -2077,7 +2077,7 @@ class Filterable_Gallery extends Widget_Base
             Group_Control_Typography::get_type(),
             [
                 'name' => 'fg_sf_controls_typography',
-                'label' => __('Typography', 'essential-addons-for-elementor-lite'),
+                'label' => __('Typography', 'px-elements'),
                 'scheme' => Scheme_Typography::TYPOGRAPHY_4,
                 'selector' => '{{WRAPPER}} .fg-filter-trigger > span'
             ]
@@ -2086,7 +2086,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_responsive_control(
             'fg_sf_controls_icon_space',
             [
-                'label' => esc_html__('Icon Space', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Icon Space', 'px-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'default' => [
                     'size' => 10,
@@ -2107,7 +2107,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_responsive_control(
             'fg_sf_controls_icon_size',
             [
-                'label' => esc_html__('Icon Size', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Icon Size', 'px-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'default' => [
                     'size' => 14,
@@ -2127,7 +2127,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_responsive_control(
             'fg_sf_controls_width',
             [
-                'label' => esc_html__('Width', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Width', 'px-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => [ 'px', '%' ],
                 'range' => [
@@ -2147,7 +2147,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'fg_sf_controls_color',
             [
-                'label' => __('Color', 'essential-addons-for-elementor-lite'),
+                'label' => __('Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default'   => '#7f8995',
                 'selectors' => [
@@ -2159,7 +2159,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'fg_sf_controls_background',
             [
-                'label' => __('Controls Background', 'essential-addons-for-elementor-lite'),
+                'label' => __('Controls Background', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .fg-filter-wrap button' => 'background: {{VALUE}}'
@@ -2170,7 +2170,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_responsive_control(
             'fg_sf_controls_border_radius',
             [
-                'label' => __('Border Radius', 'essential-addons-for-elementor-lite'),
+                'label' => __('Border Radius', 'px-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%'],
                 'selectors' => [
@@ -2182,7 +2182,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_responsive_control(
             'fg_sf_controls_margin',
             [
-                'label' => __('Margin', 'essential-addons-for-elementor-lite'),
+                'label' => __('Margin', 'px-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%'],
                 'selectors' => [
@@ -2202,7 +2202,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'fg_sf_separator',
             [
-                'label' => esc_html__('Separator', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Separator', 'px-elements'),
                 'type' => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -2211,7 +2211,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_responsive_control(
             'sf_left_border_size',
             [
-                'label' => esc_html__('Separator Size', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Separator Size', 'px-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'default' => [
                     'size' => 1,
@@ -2230,7 +2230,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'sf_left_border_color',
             [
-                'label' => __('Separator Color', 'essential-addons-for-elementor-lite'),
+                'label' => __('Separator Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default'   => '#abb5ff',
                 'selectors' => [
@@ -2242,7 +2242,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'fg_sf',
             [
-                'label' => esc_html__('Form', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Form', 'px-elements'),
                 'type' => Controls_Manager::HEADING,
                 'separator' => 'before'
             ]
@@ -2251,7 +2251,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'fg_sf_background',
             [
-                'label' => __('Background', 'essential-addons-for-elementor-lite'),
+                'label' => __('Background', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .fg-layout-3-filters-wrap .fg-layout-3-search-box' => 'background: {{VALUE}}'
@@ -2262,16 +2262,16 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'fg_sf_placeholder',
             [
-                'label' => esc_html__('Placeholder', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Placeholder', 'px-elements'),
                 'type' => Controls_Manager::TEXT,
-                'default'   => __( 'Search Gallery Item...', 'essential-addons-for-elementor-lite'),
+                'default'   => __( 'Search Gallery Item...', 'px-elements'),
             ]
         );
 
         $this->add_control(
             'fg_sf_placeholder_color',
             [
-                'label' => __('Placeholder Color', 'essential-addons-for-elementor-lite'),
+                'label' => __('Placeholder Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .fg-layout-3-search-box input[type="text"]::-webkit-input-placeholder' => 'color: {{VALUE}}',
@@ -2285,7 +2285,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_responsive_control(
             'fg_sf_form_width',
             [
-                'label' => esc_html__('Width', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Width', 'px-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => [ 'px', '%' ],
                 'range' => [
@@ -2305,7 +2305,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_responsive_control(
             'fg_sf_form_border_radius',
             [
-                'label' => __('Border Radius', 'essential-addons-for-elementor-lite'),
+                'label' => __('Border Radius', 'px-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%'],
                 'selectors' => [
@@ -2325,7 +2325,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'fg_sf_dropdown',
             [
-                'label' => esc_html__('Dropdown', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Dropdown', 'px-elements'),
                 'type' => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -2334,7 +2334,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'fg_sf_dropdown_color',
             [
-                'label' => __('Color', 'essential-addons-for-elementor-lite'),
+                'label' => __('Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .fg-layout-3-filter-controls li.control' => 'color: {{VALUE}}'
@@ -2345,7 +2345,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'fg_sf_dropdown_hover_color',
             [
-                'label' => __('Hover Color', 'essential-addons-for-elementor-lite'),
+                'label' => __('Hover Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .fg-layout-3-filter-controls li.control:hover' => 'color: {{VALUE}}'
@@ -2369,7 +2369,7 @@ class Filterable_Gallery extends Widget_Base
             Group_Control_Typography::get_type(),
             [
                 'name' => 'fg_sf_dropdown_typography',
-                'label' => __('Typography', 'essential-addons-for-elementor-lite'),
+                'label' => __('Typography', 'px-elements'),
                 'scheme' => Scheme_Typography::TYPOGRAPHY_4,
                 'selector' => '{{WRAPPER}} .fg-layout-3-filter-controls li.control'
             ]
@@ -2379,7 +2379,7 @@ class Filterable_Gallery extends Widget_Base
             Group_Control_Border::get_type(),
             [
                 'name' => 'fg_sf_dropdown_border',
-                'label' => __('Border', 'essential-addons-for-elementor-lite'),
+                'label' => __('Border', 'px-elements'),
                 'placeholder' => '1px',
                 'selector' => '{{WRAPPER}} .fg-layout-3-filter-controls li.control'
             ]
@@ -2388,7 +2388,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_responsive_control(
             'fg_sf_dropdown_spacing',
             [
-                'label' => __('Spacing', 'essential-addons-for-elementor-lite'),
+                'label' => __('Spacing', 'px-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%'],
                 'selectors' => [
@@ -2401,7 +2401,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_responsive_control(
             'fg_sf_dropdown_border_radius',
             [
-                'label' => __('Border Radius', 'essential-addons-for-elementor-lite'),
+                'label' => __('Border Radius', 'px-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%'],
                 'selectors' => [
@@ -2419,7 +2419,7 @@ class Filterable_Gallery extends Widget_Base
         $this->start_controls_section(
             'section_loadmore_button_style',
             [
-                'label' => __('Load More Button', 'essential-addons-for-elementor-lite'),
+                'label' => __('Load More Button', 'px-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'pagination' => 'yes',
@@ -2431,7 +2431,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_responsive_control(
             'button_margin_top',
             [
-                'label' => __('Top Spacing', 'essential-addons-for-elementor-lite'),
+                'label' => __('Top Spacing', 'px-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'range' => [
                     'px' => [
@@ -2452,7 +2452,7 @@ class Filterable_Gallery extends Widget_Base
         $this->start_controls_tab(
             'tab_load_more_button_normal',
             [
-                'label' => __('Normal', 'essential-addons-for-elementor-lite'),
+                'label' => __('Normal', 'px-elements'),
                 'condition' => [
                     'pagination' => 'yes',
                     'load_more_text!' => '',
@@ -2463,7 +2463,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'load_more_button_bg_color_normal',
             [
-                'label' => __('Background Color', 'essential-addons-for-elementor-lite'),
+                'label' => __('Background Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#333',
                 'selectors' => [
@@ -2479,7 +2479,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'load_more_button_text_color_normal',
             [
-                'label' => __('Text Color', 'essential-addons-for-elementor-lite'),
+                'label' => __('Text Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#fff',
                 'selectors' => [
@@ -2496,7 +2496,7 @@ class Filterable_Gallery extends Widget_Base
             Group_Control_Border::get_type(),
             [
                 'name' => 'load_more_button_border_normal',
-                'label' => __('Border', 'essential-addons-for-elementor-lite'),
+                'label' => __('Border', 'px-elements'),
                 'placeholder' => '1px',
                 'default' => '1px',
                 'selector' => '{{WRAPPER}} .eael-gallery-load-more',
@@ -2510,7 +2510,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'load_more_button_border_radius',
             [
-                'label' => __('Border Radius', 'essential-addons-for-elementor-lite'),
+                'label' => __('Border Radius', 'px-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%'],
                 'selectors' => [
@@ -2527,7 +2527,7 @@ class Filterable_Gallery extends Widget_Base
             Group_Control_Typography::get_type(),
             [
                 'name' => 'load_more_button_typography',
-                'label' => __('Typography', 'essential-addons-for-elementor-lite'),
+                'label' => __('Typography', 'px-elements'),
                 'scheme' => Scheme_Typography::TYPOGRAPHY_4,
                 'selector' => '{{WRAPPER}} .eael-gallery-load-more .eael-filterable-gallery-load-more-text',
                 'condition' => [
@@ -2540,7 +2540,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
     		'load_more_button_icon_size',
     		[
-        		'label' => __( 'Icon Size', 'essential-addons-for-elementor-lite'),
+        		'label' => __( 'Icon Size', 'px-elements'),
        			'type' => Controls_Manager::SLIDER,
         		'default' => [
             		'size' => 36,
@@ -2562,7 +2562,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
     		'load_more_button_icon_spacing',
     		[
-        		'label' => __( 'Icon Spacing', 'essential-addons-for-elementor-lite'),
+        		'label' => __( 'Icon Spacing', 'px-elements'),
        			'type' => Controls_Manager::SLIDER,
         		'range' => [
 					'px' => [
@@ -2580,7 +2580,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_responsive_control(
             'load_more_button_padding',
             [
-                'label' => __('Padding', 'essential-addons-for-elementor-lite'),
+                'label' => __('Padding', 'px-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -2608,7 +2608,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'load_more_button_icon_heading',
             [
-                'label' => __('Button Icon', 'essential-addons-for-elementor-lite'),
+                'label' => __('Button Icon', 'px-elements'),
                 'type' => Controls_Manager::HEADING,
                 'separator' => 'before',
                 'condition' => [
@@ -2621,7 +2621,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_responsive_control(
             'load_more_button_icon_margin',
             [
-                'label' => __('Margin', 'essential-addons-for-elementor-lite'),
+                'label' => __('Margin', 'px-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%'],
                 'placeholder' => [
@@ -2645,7 +2645,7 @@ class Filterable_Gallery extends Widget_Base
         $this->start_controls_tab(
             'tab_button_hover',
             [
-                'label' => __('Hover', 'essential-addons-for-elementor-lite'),
+                'label' => __('Hover', 'px-elements'),
                 'condition' => [
                     'pagination' => 'yes',
                     'load_more_text!' => '',
@@ -2656,7 +2656,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'button_bg_color_hover',
             [
-                'label' => __('Background Color', 'essential-addons-for-elementor-lite'),
+                'label' => __('Background Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -2672,7 +2672,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'button_text_color_hover',
             [
-                'label' => __('Text Color', 'essential-addons-for-elementor-lite'),
+                'label' => __('Text Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -2688,7 +2688,7 @@ class Filterable_Gallery extends Widget_Base
         $this->add_control(
             'button_border_color_hover',
             [
-                'label' => __('Border Color', 'essential-addons-for-elementor-lite'),
+                'label' => __('Border Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -2739,7 +2739,7 @@ class Filterable_Gallery extends Widget_Base
     protected function render_filters()
     {
         $settings = $this->get_settings_for_display();
-        $all_text = ($settings['eael_fg_all_label_text'] != '') ? $settings['eael_fg_all_label_text'] : esc_html__('All', 'essential-addons-for-elementor-lite');
+        $all_text = ($settings['eael_fg_all_label_text'] != '') ? $settings['eael_fg_all_label_text'] : esc_html__('All', 'px-elements');
 
         if ($settings['filter_enable'] == 'yes') {
             ?>
@@ -3217,7 +3217,7 @@ class Filterable_Gallery extends Widget_Base
 
         $gallery_settings['widget_id'] = $this->get_id();
 
-        $no_more_items_text = esc_html__($settings['nomore_items_text'], 'essential-addons-for-elementor-lite');
+        $no_more_items_text = esc_html__($settings['nomore_items_text'], 'px-elements');
         $grid_class = $settings['eael_fg_grid_style'] == 'grid' ? 'eael-filter-gallery-grid' : 'masonry';
 
         $this->add_render_attribute('gallery-items-wrap', [

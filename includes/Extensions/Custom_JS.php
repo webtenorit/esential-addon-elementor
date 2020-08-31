@@ -19,7 +19,7 @@ class Custom_JS
         $controls->start_controls_section(
             'eael_ext_section_custom_js',
             [
-                'label' => sprintf('<i class="eaicon-logo"></i> %s', __('Custom JS', 'essential-addons-for-elementor-lite')),
+                'label' => sprintf('<i class="eaicon-logo"></i> %s', __('Custom JS', 'px-elements')),
                 'tab' => Controls_Manager::TAB_ADVANCED,
             ]
         );
@@ -28,7 +28,7 @@ class Custom_JS
             'eael_custom_js_label',
             [
                 'type' => Controls_Manager::RAW_HTML,
-                'raw' => __('Add your own custom JS here', 'essential-addons-for-elementor-lite'),
+                'raw' => __('Add your own custom JS here', 'px-elements'),
             ]
         );
 
@@ -45,7 +45,7 @@ class Custom_JS
             'eael_custom_js_usage',
             [
                 'type' => Controls_Manager::RAW_HTML,
-                'raw' => __('You may use both jQuery selector e.g. $(‘.selector’) or Vanilla JS selector e.g. document.queryselector(‘.selector’)', 'essential-addons-for-elementor-lite'),
+                'raw' => __('You may use both jQuery selector e.g. $(‘.selector’) or Vanilla JS selector e.g. document.queryselector(‘.selector’)', 'px-elements'),
                 'content_classes' => 'elementor-descriptor',
             ]
         );
@@ -54,7 +54,7 @@ class Custom_JS
             'eael_custom_js_docs',
             [
                 'type' => Controls_Manager::RAW_HTML,
-                'raw' => __('For more information, <a href="https://essential-addons.com/elementor/docs/custom-js/" target="_blank">click here</a>', 'essential-addons-for-elementor-lite'),
+                'raw' => __('For more information, <a href="https://essential-addons.com/elementor/docs/custom-js/" target="_blank">click here</a>', 'px-elements'),
                 'content_classes' => 'elementor-descriptor',
             ]
         );

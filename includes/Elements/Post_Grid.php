@@ -22,7 +22,7 @@ class Post_Grid extends Widget_Base {
     }
 
     public function get_title() {
-        return __( 'Post Grid', 'essential-addons-for-elementor-lite' );
+        return __( 'Post Grid', 'px-elements' );
     }
 
     public function get_icon() {
@@ -78,14 +78,14 @@ class Post_Grid extends Widget_Base {
         $this->start_controls_section(
             'section_post_grid_links',
             [
-                'label' => __( 'Links', 'essential-addons-for-elementor-lite' ),
+                'label' => __( 'Links', 'px-elements' ),
             ]
         );
 
         $this->add_control(
             'image_link',
             [
-                'label'     => __( 'Image', 'essential-addons-for-elementor-lite' ),
+                'label'     => __( 'Image', 'px-elements' ),
                 'type'      => Controls_Manager::HEADING,
                 'condition' => [
                     'eael_show_image' => 'yes',
@@ -96,10 +96,10 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'image_link_nofollow',
             [
-                'label'        => __( 'No Follow', 'essential-addons-for-elementor-lite' ),
+                'label'        => __( 'No Follow', 'px-elements' ),
                 'type'         => Controls_Manager::SWITCHER,
-                'label_on'     => __( 'Yes', 'essential-addons-for-elementor-lite' ),
-                'label_off'    => __( 'No', 'essential-addons-for-elementor-lite' ),
+                'label_on'     => __( 'Yes', 'px-elements' ),
+                'label_off'    => __( 'No', 'px-elements' ),
                 'return_value' => 'true',
                 'condition'    => [
                     'eael_show_image' => 'yes',
@@ -110,10 +110,10 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'image_link_target_blank',
             [
-                'label'        => __( 'Target Blank', 'essential-addons-for-elementor-lite' ),
+                'label'        => __( 'Target Blank', 'px-elements' ),
                 'type'         => Controls_Manager::SWITCHER,
-                'label_on'     => __( 'Yes', 'essential-addons-for-elementor-lite' ),
-                'label_off'    => __( 'No', 'essential-addons-for-elementor-lite' ),
+                'label_on'     => __( 'Yes', 'px-elements' ),
+                'label_off'    => __( 'No', 'px-elements' ),
                 'return_value' => 'true',
                 'condition'    => [
                     'eael_show_image' => 'yes',
@@ -124,7 +124,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'title_link',
             [
-                'label'     => __( 'Title', 'essential-addons-for-elementor-lite' ),
+                'label'     => __( 'Title', 'px-elements' ),
                 'type'      => Controls_Manager::HEADING,
                 'condition' => [
                     'eael_show_title' => 'yes',
@@ -136,10 +136,10 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'title_link_nofollow',
             [
-                'label'        => __( 'No Follow', 'essential-addons-for-elementor-lite' ),
+                'label'        => __( 'No Follow', 'px-elements' ),
                 'type'         => Controls_Manager::SWITCHER,
-                'label_on'     => __( 'Yes', 'essential-addons-for-elementor-lite' ),
-                'label_off'    => __( 'No', 'essential-addons-for-elementor-lite' ),
+                'label_on'     => __( 'Yes', 'px-elements' ),
+                'label_off'    => __( 'No', 'px-elements' ),
                 'return_value' => 'true',
                 'condition'    => [
                     'eael_show_title' => 'yes',
@@ -150,10 +150,10 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'title_link_target_blank',
             [
-                'label'        => __( 'Target Blank', 'essential-addons-for-elementor-lite' ),
+                'label'        => __( 'Target Blank', 'px-elements' ),
                 'type'         => Controls_Manager::SWITCHER,
-                'label_on'     => __( 'Yes', 'essential-addons-for-elementor-lite' ),
-                'label_off'    => __( 'No', 'essential-addons-for-elementor-lite' ),
+                'label_on'     => __( 'Yes', 'px-elements' ),
+                'label_off'    => __( 'No', 'px-elements' ),
                 'return_value' => 'true',
                 'condition'    => [
                     'eael_show_title' => 'yes',
@@ -164,7 +164,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'read_more_link',
             [
-                'label'     => __( 'Read More', 'essential-addons-for-elementor-lite' ),
+                'label'     => __( 'Read More', 'px-elements' ),
                 'type'      => Controls_Manager::HEADING,
                 'condition' => [
                     'eael_show_read_more_button' => 'yes',
@@ -176,10 +176,10 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'read_more_link_nofollow',
             [
-                'label'        => __( 'No Follow', 'essential-addons-for-elementor-lite' ),
+                'label'        => __( 'No Follow', 'px-elements' ),
                 'type'         => Controls_Manager::SWITCHER,
-                'label_on'     => __( 'Yes', 'essential-addons-for-elementor-lite' ),
-                'label_off'    => __( 'No', 'essential-addons-for-elementor-lite' ),
+                'label_on'     => __( 'Yes', 'px-elements' ),
+                'label_off'    => __( 'No', 'px-elements' ),
                 'return_value' => 'true',
                 'condition'    => [
                     'eael_show_read_more_button' => 'yes',
@@ -190,10 +190,10 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'read_more_link_target_blank',
             [
-                'label'        => __( 'Target Blank', 'essential-addons-for-elementor-lite' ),
+                'label'        => __( 'Target Blank', 'px-elements' ),
                 'type'         => Controls_Manager::SWITCHER,
-                'label_on'     => __( 'Yes', 'essential-addons-for-elementor-lite' ),
-                'label_off'    => __( 'No', 'essential-addons-for-elementor-lite' ),
+                'label_on'     => __( 'Yes', 'px-elements' ),
+                'label_off'    => __( 'No', 'px-elements' ),
                 'return_value' => 'true',
                 'condition'    => [
                     'eael_show_read_more_button' => 'yes',
@@ -209,19 +209,19 @@ class Post_Grid extends Widget_Base {
         $this->start_controls_section(
             'eael_section_post_grid_style',
             [
-                'label' => __( 'Post Grid Style', 'essential-addons-for-elementor-lite' ),
+                'label' => __( 'Post Grid Style', 'px-elements' ),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
         $this->add_control(
             'eael_post_grid_preset_style',
             [
-                'label'   => __( 'Select Style', 'essential-addons-for-elementor-lite' ),
+                'label'   => __( 'Select Style', 'px-elements' ),
                 'type'    => \Elementor\Controls_Manager::SELECT,
                 'options' => [
-                    ''      => __( 'Default', 'essential-addons-for-elementor-lite' ),
-                    'two'   => __( 'Style Two', 'essential-addons-for-elementor-lite' ),
-                    'three' => __( 'Style Three', 'essential-addons-for-elementor-lite' ),
+                    ''      => __( 'Default', 'px-elements' ),
+                    'two'   => __( 'Style Two', 'px-elements' ),
+                    'three' => __( 'Style Three', 'px-elements' ),
                 ],
             ]
         );
@@ -230,7 +230,7 @@ class Post_Grid extends Widget_Base {
             'eael_post_grid_style_three_alert',
             [
                 'type'            => \Elementor\Controls_Manager::RAW_HTML,
-                'raw'             => __( 'Make sure to enable <strong>Show Date</strong> option from <strong>Layout Settings</strong>', 'essential-addons-for-elementor-lite' ),
+                'raw'             => __( 'Make sure to enable <strong>Show Date</strong> option from <strong>Layout Settings</strong>', 'px-elements' ),
                 'content_classes' => 'eael-warning',
                 'condition'       => [
                     'eael_post_grid_preset_style' => ['two', 'three'],
@@ -242,7 +242,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'eael_post_grid_bg_color',
             [
-                'label'     => __( 'Post Background Color', 'essential-addons-for-elementor-lite' ),
+                'label'     => __( 'Post Background Color', 'px-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#fff',
                 'selectors' => [
@@ -255,7 +255,7 @@ class Post_Grid extends Widget_Base {
         $this->add_responsive_control(
             'eael_post_grid_spacing',
             [
-                'label'      => esc_html__( 'Spacing Between Items', 'essential-addons-for-elementor-lite' ),
+                'label'      => esc_html__( 'Spacing Between Items', 'px-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%', 'em'],
                 'selectors'  => [
@@ -268,7 +268,7 @@ class Post_Grid extends Widget_Base {
             Group_Control_Border::get_type(),
             [
                 'name'     => 'eael_post_grid_border',
-                'label'    => esc_html__( 'Border', 'essential-addons-for-elementor-lite' ),
+                'label'    => esc_html__( 'Border', 'px-elements' ),
                 'selector' => '{{WRAPPER}} .eael-grid-post-holder',
             ]
         );
@@ -276,7 +276,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'eael_post_grid_border_radius',
             [
-                'label'     => esc_html__( 'Border Radius', 'essential-addons-for-elementor-lite' ),
+                'label'     => esc_html__( 'Border Radius', 'px-elements' ),
                 'type'      => Controls_Manager::DIMENSIONS,
                 'selectors' => [
                     '{{WRAPPER}} .eael-grid-post-holder' => 'border-radius: {{TOP}}px {{RIGHT}}px {{BOTTOM}}px {{LEFT}}px;',
@@ -301,7 +301,7 @@ class Post_Grid extends Widget_Base {
         $this->start_controls_section(
             'eael_section_post_grid_thumbnail_style',
             [
-                'label' => __( 'Thumbnail Style', 'essential-addons-for-elementor-lite' ),
+                'label' => __( 'Thumbnail Style', 'px-elements' ),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -309,7 +309,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'eael_post_grid_thumbnail_radius',
             [
-                'label'     => esc_html__( 'Radius', 'essential-addons-for-elementor-lite' ),
+                'label'     => esc_html__( 'Radius', 'px-elements' ),
                 'type'      => Controls_Manager::DIMENSIONS,
                 'selectors' => [
                     '{{WRAPPER}} .eael-post-grid .eael-grid-post .eael-entry-media img, {{WRAPPER}} .eael-grid-post .eael-entry-overlay' => 'border-radius: {{TOP}}px {{RIGHT}}px {{BOTTOM}}px {{LEFT}}px;',
@@ -325,7 +325,7 @@ class Post_Grid extends Widget_Base {
         $this->start_controls_section(
             'section_meta_date_style',
             [
-                'label'     => __( 'Meta Date Style', 'essential-addons-for-elementor-lite' ),
+                'label'     => __( 'Meta Date Style', 'px-elements' ),
                 'tab'       => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'eael_show_meta'              => 'yes',
@@ -337,7 +337,7 @@ class Post_Grid extends Widget_Base {
             \Elementor\Group_Control_Background::get_type(),
             [
                 'name'     => 'eael_post_grid_meta_date_background',
-                'label'    => __( 'Background', 'essential-addons-for-elementor-lite' ),
+                'label'    => __( 'Background', 'px-elements' ),
                 'types'    => ['classic', 'gradient'],
                 'selector' => '{{WRAPPER}} .eael-meta-posted-on',
             ]
@@ -345,7 +345,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'eael_post_grid_meta_date_color',
             [
-                'label'     => __( 'Color', 'essential-addons-for-elementor-lite' ),
+                'label'     => __( 'Color', 'px-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -357,7 +357,7 @@ class Post_Grid extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name'     => 'eael_post_grid_meta_date_typography',
-                'label'    => __( 'Typography', 'essential-addons-for-elementor-lite' ),
+                'label'    => __( 'Typography', 'px-elements' ),
                 'scheme'   => Scheme_Typography::TYPOGRAPHY_3,
                 'selector' => '{{WRAPPER}} .eael-meta-posted-on',
             ]
@@ -366,7 +366,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'eael_post_grid_meta_date_margin',
             [
-                'label'      => __( 'Margin', 'essential-addons-for-elementor-lite' ),
+                'label'      => __( 'Margin', 'px-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%', 'em'],
                 'selectors'  => [
@@ -378,7 +378,7 @@ class Post_Grid extends Widget_Base {
             \Elementor\Group_Control_Box_Shadow::get_type(),
             [
                 'name'      => 'eael_post_grid_meta_date_shadow',
-                'label'     => __( 'Shadow', 'essential-addons-for-elementor-lite' ),
+                'label'     => __( 'Shadow', 'px-elements' ),
                 'selector'  => '{{WRAPPER}} .eael-meta-posted-on',
                 'condition' => [
                     'eael_post_grid_preset_style' => ['three'],
@@ -392,7 +392,7 @@ class Post_Grid extends Widget_Base {
          */
         $this->eael_controls_custom_positioning(
             'eael_meta_date_position_',
-            __( 'Meta Date Position', 'essential-addons-for-elementor-lite' ),
+            __( 'Meta Date Position', 'px-elements' ),
             '.eael-meta-posted-on',
             [
                 'eael_show_meta'              => 'yes',
@@ -406,7 +406,7 @@ class Post_Grid extends Widget_Base {
         $this->start_controls_section(
             'section_meta_style_style',
             [
-                'label'     => __( 'Meta Style', 'essential-addons-for-elementor-lite' ),
+                'label'     => __( 'Meta Style', 'px-elements' ),
                 'tab'       => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'eael_post_grid_preset_style!' => 'three',
@@ -417,7 +417,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'eael_post_grid_meta_color',
             [
-                'label'     => __( 'Color', 'essential-addons-for-elementor-lite' ),
+                'label'     => __( 'Color', 'px-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -429,19 +429,19 @@ class Post_Grid extends Widget_Base {
         $this->add_responsive_control(
             'eael_post_grid_meta_alignment',
             [
-                'label'     => __( 'Alignment', 'essential-addons-for-elementor-lite' ),
+                'label'     => __( 'Alignment', 'px-elements' ),
                 'type'      => Controls_Manager::CHOOSE,
                 'options'   => [
                     'flex-start' => [
-                        'title' => __( 'Left', 'essential-addons-for-elementor-lite' ),
+                        'title' => __( 'Left', 'px-elements' ),
                         'icon'  => 'fa fa-align-left',
                     ],
                     'center'     => [
-                        'title' => __( 'Center', 'essential-addons-for-elementor-lite' ),
+                        'title' => __( 'Center', 'px-elements' ),
                         'icon'  => 'fa fa-align-center',
                     ],
                     'flex-end'   => [
-                        'title' => __( 'Right', 'essential-addons-for-elementor-lite' ),
+                        'title' => __( 'Right', 'px-elements' ),
                         'icon'  => 'fa fa-align-right',
                     ],
                 ],
@@ -456,7 +456,7 @@ class Post_Grid extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name'      => 'eael_post_grid_meta_typography',
-                'label'     => __( 'Typography', 'essential-addons-for-elementor-lite' ),
+                'label'     => __( 'Typography', 'px-elements' ),
                 'scheme'    => Scheme_Typography::TYPOGRAPHY_3,
                 'selector'  => '{{WRAPPER}} .eael-entry-meta > span',
                 'condition' => [
@@ -468,7 +468,7 @@ class Post_Grid extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name'      => 'eael_post_grid_meta_header_typography',
-                'label'     => __( 'Typography', 'essential-addons-for-elementor-lite' ),
+                'label'     => __( 'Typography', 'px-elements' ),
                 'scheme'    => Scheme_Typography::TYPOGRAPHY_3,
                 'selector'  => '{{WRAPPER}} .eael-entry-meta > span',
                 'condition' => [
@@ -480,7 +480,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'eael_post_grid_meta_margin',
             [
-                'label'      => __( 'Margin', 'essential-addons-for-elementor-lite' ),
+                'label'      => __( 'Margin', 'px-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%', 'em'],
                 'selectors'  => [
@@ -495,7 +495,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'eael_post_grid_meta_footer_margin',
             [
-                'label'      => __( 'Margin', 'essential-addons-for-elementor-lite' ),
+                'label'      => __( 'Margin', 'px-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%', 'em'],
                 'selectors'  => [
@@ -513,7 +513,7 @@ class Post_Grid extends Widget_Base {
          */
         $this->eael_controls_custom_positioning(
             'eael_meta_footer_',
-            __( 'Meta Position', 'essential-addons-for-elementor-lite' ),
+            __( 'Meta Position', 'px-elements' ),
             '.eael-grid-post .eael-entry-footer',
             [
                 'eael_show_meta'               => 'yes',
@@ -524,7 +524,7 @@ class Post_Grid extends Widget_Base {
 
         $this->eael_controls_custom_positioning(
             'eael_meta_header_',
-            __( 'Meta Position', 'essential-addons-for-elementor-lite' ),
+            __( 'Meta Position', 'px-elements' ),
             '.eael-grid-post .eael-entry-meta',
             [
                 'eael_show_meta'               => 'yes',
@@ -539,7 +539,7 @@ class Post_Grid extends Widget_Base {
         $this->start_controls_section(
             'eael_section_typography',
             [
-                'label' => __( 'Color, Typography & Spacing', 'essential-addons-for-elementor-lite' ),
+                'label' => __( 'Color, Typography & Spacing', 'px-elements' ),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -547,7 +547,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'eael_post_grid_title_style',
             [
-                'label'     => __( 'Title Style', 'essential-addons-for-elementor-lite' ),
+                'label'     => __( 'Title Style', 'px-elements' ),
                 'type'      => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -556,7 +556,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'eael_post_grid_title_color',
             [
-                'label'     => __( 'Title Color', 'essential-addons-for-elementor-lite' ),
+                'label'     => __( 'Title Color', 'px-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#303133',
                 'selectors' => [
@@ -569,7 +569,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'eael_post_grid_title_hover_color',
             [
-                'label'     => __( 'Title Hover Color', 'essential-addons-for-elementor-lite' ),
+                'label'     => __( 'Title Hover Color', 'px-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#23527c',
                 'selectors' => [
@@ -582,19 +582,19 @@ class Post_Grid extends Widget_Base {
         $this->add_responsive_control(
             'eael_post_grid_title_alignment',
             [
-                'label'     => __( 'Title Alignment', 'essential-addons-for-elementor-lite' ),
+                'label'     => __( 'Title Alignment', 'px-elements' ),
                 'type'      => Controls_Manager::CHOOSE,
                 'options'   => [
                     'left'   => [
-                        'title' => __( 'Left', 'essential-addons-for-elementor-lite' ),
+                        'title' => __( 'Left', 'px-elements' ),
                         'icon'  => 'fa fa-align-left',
                     ],
                     'center' => [
-                        'title' => __( 'Center', 'essential-addons-for-elementor-lite' ),
+                        'title' => __( 'Center', 'px-elements' ),
                         'icon'  => 'fa fa-align-center',
                     ],
                     'right'  => [
-                        'title' => __( 'Right', 'essential-addons-for-elementor-lite' ),
+                        'title' => __( 'Right', 'px-elements' ),
                         'icon'  => 'fa fa-align-right',
                     ],
                 ],
@@ -608,7 +608,7 @@ class Post_Grid extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name'     => 'eael_post_grid_title_typography',
-                'label'    => __( 'Typography', 'essential-addons-for-elementor-lite' ),
+                'label'    => __( 'Typography', 'px-elements' ),
                 'scheme'   => Scheme_Typography::TYPOGRAPHY_1,
                 'selector' => '{{WRAPPER}} .eael-entry-title',
             ]
@@ -617,7 +617,7 @@ class Post_Grid extends Widget_Base {
         $this->add_responsive_control(
             'eael_post_grid_title_margin',
             [
-                'label'      => __( 'Margin', 'essential-addons-for-elementor-lite' ),
+                'label'      => __( 'Margin', 'px-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%', 'em'],
                 'selectors'  => [
@@ -629,7 +629,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'eael_post_grid_excerpt_style',
             [
-                'label'     => __( 'Excerpt Style', 'essential-addons-for-elementor-lite' ),
+                'label'     => __( 'Excerpt Style', 'px-elements' ),
                 'type'      => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -638,7 +638,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'eael_post_grid_excerpt_color',
             [
-                'label'     => __( 'Excerpt Color', 'essential-addons-for-elementor-lite' ),
+                'label'     => __( 'Excerpt Color', 'px-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -650,23 +650,23 @@ class Post_Grid extends Widget_Base {
         $this->add_responsive_control(
             'eael_post_grid_excerpt_alignment',
             [
-                'label'     => __( 'Excerpt Alignment', 'essential-addons-for-elementor-lite' ),
+                'label'     => __( 'Excerpt Alignment', 'px-elements' ),
                 'type'      => Controls_Manager::CHOOSE,
                 'options'   => [
                     'left'    => [
-                        'title' => __( 'Left', 'essential-addons-for-elementor-lite' ),
+                        'title' => __( 'Left', 'px-elements' ),
                         'icon'  => 'fa fa-align-left',
                     ],
                     'center'  => [
-                        'title' => __( 'Center', 'essential-addons-for-elementor-lite' ),
+                        'title' => __( 'Center', 'px-elements' ),
                         'icon'  => 'fa fa-align-center',
                     ],
                     'right'   => [
-                        'title' => __( 'Right', 'essential-addons-for-elementor-lite' ),
+                        'title' => __( 'Right', 'px-elements' ),
                         'icon'  => 'fa fa-align-right',
                     ],
                     'justify' => [
-                        'title' => __( 'Justified', 'essential-addons-for-elementor-lite' ),
+                        'title' => __( 'Justified', 'px-elements' ),
                         'icon'  => 'fa fa-align-justify',
                     ],
                 ],
@@ -680,7 +680,7 @@ class Post_Grid extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name'     => 'eael_post_grid_excerpt_typography',
-                'label'    => __( 'Excerpt Typography', 'essential-addons-for-elementor-lite' ),
+                'label'    => __( 'Excerpt Typography', 'px-elements' ),
                 'scheme'   => Scheme_Typography::TYPOGRAPHY_3,
                 'selector' => '{{WRAPPER}} .eael-grid-post-excerpt p',
             ]
@@ -689,7 +689,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'content_height',
             [
-                'label'      => esc_html__( 'Content Height', 'essential-addons-for-elementor-lite' ),
+                'label'      => esc_html__( 'Content Height', 'px-elements' ),
                 'type'       => Controls_Manager::SLIDER,
                 'size_units' => ['px', '%', 'em'],
                 'range'      => [
@@ -705,7 +705,7 @@ class Post_Grid extends Widget_Base {
         $this->add_responsive_control(
             'eael_post_grid_excerpt_margin',
             [
-                'label'      => __( 'Margin', 'essential-addons-for-elementor-lite' ),
+                'label'      => __( 'Margin', 'px-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%', 'em'],
                 'selectors'  => [
@@ -722,7 +722,7 @@ class Post_Grid extends Widget_Base {
         $this->start_controls_section(
             'section_meta_terms_style',
             [
-                'label'     => __( 'Terms Style', 'essential-addons-for-elementor-lite' ),
+                'label'     => __( 'Terms Style', 'px-elements' ),
                 'tab'       => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'eael_post_grid_preset_style' => 'two',
@@ -733,7 +733,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'eael_post_grid_terms_color',
             [
-                'label'     => __( 'Terms Color', 'essential-addons-for-elementor-lite' ),
+                'label'     => __( 'Terms Color', 'px-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -745,19 +745,19 @@ class Post_Grid extends Widget_Base {
         $this->add_responsive_control(
             'eael_post_grid_terms_alignment',
             [
-                'label'     => __( 'Alignment', 'essential-addons-for-elementor-lite' ),
+                'label'     => __( 'Alignment', 'px-elements' ),
                 'type'      => Controls_Manager::CHOOSE,
                 'options'   => [
                     'flex-start' => [
-                        'title' => __( 'Left', 'essential-addons-for-elementor-lite' ),
+                        'title' => __( 'Left', 'px-elements' ),
                         'icon'  => 'fa fa-align-left',
                     ],
                     'center'     => [
-                        'title' => __( 'Center', 'essential-addons-for-elementor-lite' ),
+                        'title' => __( 'Center', 'px-elements' ),
                         'icon'  => 'fa fa-align-center',
                     ],
                     'flex-end'   => [
-                        'title' => __( 'Right', 'essential-addons-for-elementor-lite' ),
+                        'title' => __( 'Right', 'px-elements' ),
                         'icon'  => 'fa fa-align-right',
                     ],
                 ],
@@ -772,7 +772,7 @@ class Post_Grid extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name'     => 'eael_post_grid_terms_typography',
-                'label'    => __( 'Meta Typography', 'essential-addons-for-elementor-lite' ),
+                'label'    => __( 'Meta Typography', 'px-elements' ),
                 'scheme'   => Scheme_Typography::TYPOGRAPHY_3,
                 'selector' => '{{WRAPPER}} .post-meta-categories li, {{WRAPPER}} .post-meta-categories li a',
             ]
@@ -781,7 +781,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'eael_post_carousel_terms_margin',
             [
-                'label'      => __( 'Margin', 'essential-addons-for-elementor-lite' ),
+                'label'      => __( 'Margin', 'px-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%', 'em'],
                 'selectors'  => [
@@ -795,7 +795,7 @@ class Post_Grid extends Widget_Base {
         $this->start_controls_section(
             'section_terms_style',
             [
-                'label'     => __( 'Terms', 'essential-addons-for-elementor-lite' ),
+                'label'     => __( 'Terms', 'px-elements' ),
                 'tab'       => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'eael_show_post_terms'        => 'yes',
@@ -807,7 +807,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'terms_color',
             [
-                'label'     => __( 'Color', 'essential-addons-for-elementor-lite' ),
+                'label'     => __( 'Color', 'px-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -820,7 +820,7 @@ class Post_Grid extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name'     => 'terms_typography',
-                'label'    => __( 'Typography', 'essential-addons-for-elementor-lite' ),
+                'label'    => __( 'Typography', 'px-elements' ),
                 'selector' => '{{WRAPPER}} .post-carousel-categories li a',
             ]
         );
@@ -828,19 +828,19 @@ class Post_Grid extends Widget_Base {
         $this->add_responsive_control(
             'terms_color_alignment',
             [
-                'label'     => __( 'Alignment', 'essential-addons-for-elementor-lite' ),
+                'label'     => __( 'Alignment', 'px-elements' ),
                 'type'      => Controls_Manager::CHOOSE,
                 'options'   => [
                     'left'   => [
-                        'title' => __( 'Left', 'essential-addons-for-elementor-lite' ),
+                        'title' => __( 'Left', 'px-elements' ),
                         'icon'  => 'fa fa-align-left',
                     ],
                     'center' => [
-                        'title' => __( 'Center', 'essential-addons-for-elementor-lite' ),
+                        'title' => __( 'Center', 'px-elements' ),
                         'icon'  => 'fa fa-align-center',
                     ],
                     'right'  => [
-                        'title' => __( 'Right', 'essential-addons-for-elementor-lite' ),
+                        'title' => __( 'Right', 'px-elements' ),
                         'icon'  => 'fa fa-align-right',
                     ],
                 ],
@@ -853,7 +853,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'terms_spacing',
             [
-                'label'      => __( 'Spacing', 'essential-addons-for-elementor-lite' ),
+                'label'      => __( 'Spacing', 'px-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%'],
                 'selectors'  => [
@@ -868,7 +868,7 @@ class Post_Grid extends Widget_Base {
         $this->start_controls_section(
             'eael_section_hover_card_styles',
             [
-                'label' => __( 'Hover Card Style', 'essential-addons-for-elementor-lite' ),
+                'label' => __( 'Hover Card Style', 'px-elements' ),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -876,14 +876,14 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'eael_post_grid_hover_animation',
             [
-                'label'   => esc_html__( 'Animation', 'essential-addons-for-elementor-lite' ),
+                'label'   => esc_html__( 'Animation', 'px-elements' ),
                 'type'    => Controls_Manager::SELECT,
                 'default' => 'fade-in',
                 'options' => [
-                    'none'     => esc_html__( 'None', 'essential-addons-for-elementor-lite' ),
-                    'fade-in'  => esc_html__( 'FadeIn', 'essential-addons-for-elementor-lite' ),
-                    'zoom-in'  => esc_html__( 'ZoomIn', 'essential-addons-for-elementor-lite' ),
-                    'slide-up' => esc_html__( 'SlideUp', 'essential-addons-for-elementor-lite' ),
+                    'none'     => esc_html__( 'None', 'px-elements' ),
+                    'fade-in'  => esc_html__( 'FadeIn', 'px-elements' ),
+                    'zoom-in'  => esc_html__( 'ZoomIn', 'px-elements' ),
+                    'slide-up' => esc_html__( 'SlideUp', 'px-elements' ),
                 ],
             ]
         );
@@ -891,7 +891,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'eael_post_grid_bg_hover_icon_new',
             [
-                'label'            => __( 'Post Hover Icon', 'essential-addons-for-elementor-lite' ),
+                'label'            => __( 'Post Hover Icon', 'px-elements' ),
                 'type'             => Controls_Manager::ICONS,
                 'fa4compatibility' => 'eael_post_grid_bg_hover_icon',
                 'default'          => [
@@ -907,7 +907,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'eael_post_grid_hover_bg_color',
             [
-                'label'     => __( 'Background Color', 'essential-addons-for-elementor-lite' ),
+                'label'     => __( 'Background Color', 'px-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => 'rgba(0,0,0, .75)',
                 'selectors' => [
@@ -920,7 +920,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'eael_post_grid_hover_bg_radius',
             [
-                'label'     => esc_html__( 'Cards Radius', 'essential-addons-for-elementor-lite' ),
+                'label'     => esc_html__( 'Cards Radius', 'px-elements' ),
                 'type'      => Controls_Manager::DIMENSIONS,
                 'selectors' => [
                     '{{WRAPPER}} .eael-post-grid .eael-grid-post .eael-entry-media .eael-entry-overlay' => 'border-radius: {{TOP}}px {{RIGHT}}px {{BOTTOM}}px {{LEFT}}px;',
@@ -931,7 +931,7 @@ class Post_Grid extends Widget_Base {
         $this->add_control(
             'eael_post_grid_hover_icon_color',
             [
-                'label'     => __( 'Icon Color', 'essential-addons-for-elementor-lite' ),
+                'label'     => __( 'Icon Color', 'px-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#ffffff',
                 'selectors' => [
@@ -943,7 +943,7 @@ class Post_Grid extends Widget_Base {
         $this->add_responsive_control(
             'eael_post_grid_hover_icon_fontsize',
             [
-                'label'      => __( 'Icon font size', 'essential-addons-for-elementor-lite' ),
+                'label'      => __( 'Icon font size', 'px-elements' ),
                 'type'       => Controls_Manager::SLIDER,
                 'default'    => [
                     'unit' => 'px',
@@ -1055,7 +1055,7 @@ class Post_Grid extends Widget_Base {
                 echo '<div class="eael-load-more-button-wrap">
 					<button class="eael-load-more-button" id="eael-load-more-btn-' . $this->get_id() . '" data-widget="' . $this->get_id() . '" data-class="' . get_class( $this ) . '" data-args="' . http_build_query( $args ) . '" data-settings="' . http_build_query( $settings_arry ) . '" data-layout="'.$settings['layout_mode'].'" data-page="1">
 						<div class="eael-btn-loader button__loader"></div>
-						<span>' . esc_html__( $settings['show_load_more_text'], 'essential-addons-for-elementor-lite' ) . '</span>
+						<span>' . esc_html__( $settings['show_load_more_text'], 'px-elements' ) . '</span>
 					</button>
 				</div>';
             }

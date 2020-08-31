@@ -19,11 +19,11 @@
                             <div class="eael-admin-block-header-icon">
                                 <img src="<?php echo EAEL_PLUGIN_URL . 'assets/admin/images/icon-documentation.svg'; ?>" alt="essential-addons-for-elementor-documentation">
                             </div>
-                            <h4 class="eael-admin-title"><?php _e('Documentation', 'essential-addons-for-elementor-lite'); ?></h4>
+                            <h4 class="eael-admin-title"><?php _e('Documentation', 'px-elements'); ?></h4>
                         </header>
                         <div class="eael-admin-block-content">
-                            <p><?php _e('Get started by spending some time with the documentation to get familiar with Essential Addons. Build awesome websites for you or your clients with ease.', 'essential-addons-for-elementor-lite'); ?></a></p>
-                            <a href="https://essential-addons.com/elementor/docs/" class="ea-button" target="_blank"><?php _e('Documentation', 'essential-addons-for-elementor-lite'); ?></a>
+                            <p><?php _e('Get started by spending some time with the documentation to get familiar with Essential Addons. Build awesome websites for you or your clients with ease.', 'px-elements'); ?></a></p>
+                            <a href="https://essential-addons.com/elementor/docs/" class="ea-button" target="_blank"><?php _e('Documentation', 'px-elements'); ?></a>
                         </div>
                     </div>
                     <div class="eael-admin-block eael-admin-block-contribution">
@@ -31,11 +31,11 @@
                             <div class="eael-admin-block-header-icon">
                                 <img src="<?php echo EAEL_PLUGIN_URL . 'assets/admin/images/icon-contribute.svg'; ?>" alt="">
                             </div>
-                            <h4 class="eael-admin-title"><?php _e('Contribute to Essential Addons', 'essential-addons-for-elementor-lite'); ?></h4>
+                            <h4 class="eael-admin-title"><?php _e('Contribute to Essential Addons', 'px-elements'); ?></h4>
                         </header>
                         <div class="eael-admin-block-content">
-                            <p><?php _e('You can contribute to make Essential Addons better reporting bugs, creating issues, pull requests at', 'essential-addons-for-elementor-lite'); ?> <a href="https://github.com/rupok/essential-addons-for-elementor-lite/" target="_blank"><?php _e('Github.', 'essential-addons-for-elementor-lite'); ?></a></p>
-                            <a href="https://github.com/rupok/essential-addons-for-elementor-lite/issues/new" class="ea-button" target="_blank"><?php _e('Report a bug', 'essential-addons-for-elementor-lite'); ?></a>
+                            <p><?php _e('You can contribute to make Essential Addons better reporting bugs, creating issues, pull requests at', 'px-elements'); ?> <a href="https://github.com/rupok/px-elements/" target="_blank"><?php _e('Github.', 'px-elements'); ?></a></p>
+                            <a href="https://github.com/rupok/px-elements/issues/new" class="ea-button" target="_blank"><?php _e('Report a bug', 'px-elements'); ?></a>
                         </div>
                     </div>
                     <div class="eael-admin-block eael-admin-block-support">
@@ -43,13 +43,13 @@
                             <div class="eael-admin-block-header-icon">
                                 <img src="<?php echo EAEL_PLUGIN_URL . 'assets/admin/images/icon-need-help.svg'; ?>" alt="essential-addons-get-help">
                             </div>
-                            <h4 class="eael-admin-title"><?php _e('Need Help?', 'essential-addons-for-elementor-lite'); ?></h4>
+                            <h4 class="eael-admin-title"><?php _e('Need Help?', 'px-elements'); ?></h4>
                         </header>
                         <div class="eael-admin-block-content">
 
                         <?php if( !defined('EAEL_PRO_PLUGIN_BASENAME') ): ?>
-                            <p><?php _e('Stuck with something? Get help from the community on', 'essential-addons-for-elementor-lite'); ?> <a href="https://wordpress.org/support/plugin/essential-addons-for-elementor-lite/" target="_blank"><?php _e('WordPress.org Forum', 'essential-addons-for-elementor-lite'); ?></a> <?php _e('or', 'essential-addons-for-elementor-lite'); ?> <a href="https://www.facebook.com/groups/essentialaddons/" target="_blank"><?php _e('Facebook Community.', 'essential-addons-for-elementor-lite'); ?></a> <?php _e('In case of emergency, initiate a live chat at', 'essential-addons-for-elementor-lite'); ?> <a href="https://essential-addons.com/elementor/" target="_blank"><?php _e('Essential Addons website.', 'essential-addons-for-elementor-lite'); ?></a></p>
-                            <a href="http://wpdeveloper.net/support/" class="ea-button" target="_blank"><?php _e('Get Support', 'essential-addons-for-elementor-lite'); ?></a>
+                            <p><?php _e('Stuck with something? Get help from the community on', 'px-elements'); ?> <a href="https://wordpress.org/support/plugin/px-elements/" target="_blank"><?php _e('WordPress.org Forum', 'px-elements'); ?></a> <?php _e('or', 'px-elements'); ?> <a href="https://www.facebook.com/groups/essentialaddons/" target="_blank"><?php _e('Facebook Community.', 'px-elements'); ?></a> <?php _e('In case of emergency, initiate a live chat at', 'px-elements'); ?> <a href="https://essential-addons.com/elementor/" target="_blank"><?php _e('Essential Addons website.', 'px-elements'); ?></a></p>
+                            <a href="http://wpdeveloper.net/support/" class="ea-button" target="_blank"><?php _e('Get Support', 'px-elements'); ?></a>
                         <?php
                             else:
                                 do_action('eael_premium_support_link');
@@ -65,12 +65,12 @@
                             <div class="eael-admin-block-header-icon">
                                 <img src="<?php echo EAEL_PLUGIN_URL . 'assets/admin/images/icon-show-love.svg'; ?>" alt="rate-essential-addons">
                             </div>
-                            <h4 class="eael-admin-title"><?php _e('Show your Love', 'essential-addons-for-elementor-lite'); ?></h4>
+                            <h4 class="eael-admin-title"><?php _e('Show your Love', 'px-elements'); ?></h4>
                         </header>
                         <div class="eael-admin-block-content">
-                            <p><?php _e('We love to have you in Essential Addons family. We are making it more awesome everyday. Take your 2 minutes to review the plugin and spread the love to encourage us to keep it going.', 'essential-addons-for-elementor-lite'); ?></p>
+                            <p><?php _e('We love to have you in Essential Addons family. We are making it more awesome everyday. Take your 2 minutes to review the plugin and spread the love to encourage us to keep it going.', 'px-elements'); ?></p>
 
-                            <a href="https://wpdeveloper.net/review-essential-addons-elementor" class="review-flexia ea-button" target="_blank"><?php _e('Leave a Review', 'essential-addons-for-elementor-lite'); ?></a>
+                            <a href="https://wpdeveloper.net/review-essential-addons-elementor" class="review-flexia ea-button" target="_blank"><?php _e('Leave a Review', 'px-elements'); ?></a>
                         </div>
                     </div>
                     <?php
@@ -88,7 +88,7 @@
                 <div class="eael-admin-sidebar-cta">
                     <?php
                         if( !defined('EAEL_PRO_PLUGIN_BASENAME') ) {
-                            printf( __( '<a href="https://wpdeveloper.net/in/upgrade-essential-addons-elementor" target="_blank">%s</a>', 'essential-addons-for-elementor-lite'), 'Upgrade to Pro' );
+                            printf( __( '<a href="https://wpdeveloper.net/in/upgrade-essential-addons-elementor" target="_blank">%s</a>', 'px-elements'), 'Upgrade to Pro' );
                         }else {
                             do_action('eael_manage_license_action_link');
                         }

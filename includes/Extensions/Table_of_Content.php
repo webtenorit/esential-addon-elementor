@@ -31,7 +31,7 @@ class Table_of_Content
         $element->start_controls_section(
             'eael_ext_table_of_content_section',
             [
-                'label' => __('<i class="eaicon-logo"></i> Table of Contents', 'essential-addons-for-elementor-lite'),
+                'label' => __('<i class="eaicon-logo"></i> Table of Contents', 'px-elements'),
                 'tab' => Controls_Manager::TAB_SETTINGS,
             ]
         );
@@ -39,11 +39,11 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_table_of_content',
             [
-                'label' => __('Enable Table of Contents', 'essential-addons-for-elementor-lite'),
+                'label' => __('Enable Table of Contents', 'px-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'default' => 'no',
-                'label_on' => __('Yes', 'essential-addons-for-elementor-lite'),
-                'label_off' => __('No', 'essential-addons-for-elementor-lite'),
+                'label_on' => __('Yes', 'px-elements'),
+                'label_off' => __('No', 'px-elements'),
                 'return_value' => 'yes',
             ]
         );
@@ -61,7 +61,7 @@ class Table_of_Content
                 'eael_ext_toc_global_warning_text',
                 [
                     'type' => Controls_Manager::RAW_HTML,
-                    'raw' => __('You can modify the Global Table of Contents by <strong><a href="' . get_bloginfo('url') . '/wp-admin/post.php?post=' . $global_settings['eael_ext_table_of_content']['post_id'] . '&action=elementor">Clicking Here</a></strong>', 'essential-addons-for-elementor-lite'),
+                    'raw' => __('You can modify the Global Table of Contents by <strong><a href="' . get_bloginfo('url') . '/wp-admin/post.php?post=' . $global_settings['eael_ext_table_of_content']['post_id'] . '&action=elementor">Clicking Here</a></strong>', 'px-elements'),
                     'content_classes' => 'eael-warning',
                     'condition' => [
                         'eael_ext_table_of_content' => 'yes',
@@ -72,12 +72,12 @@ class Table_of_Content
             $element->add_control(
                 'eael_ext_toc_global',
                 [
-                    'label' => __('Enable Table of Contents Globally', 'essential-addons-for-elementor-lite'),
-                    'description' => __('Enabling this option will effect on entire site.', 'essential-addons-for-elementor-lite'),
+                    'label' => __('Enable Table of Contents Globally', 'px-elements'),
+                    'description' => __('Enabling this option will effect on entire site.', 'px-elements'),
                     'type' => Controls_Manager::SWITCHER,
                     'default' => 'no',
-                    'label_on' => __('Yes', 'essential-addons-for-elementor-lite'),
-                    'label_off' => __('No', 'essential-addons-for-elementor-lite'),
+                    'label_on' => __('Yes', 'px-elements'),
+                    'label_off' => __('No', 'px-elements'),
                     'return_value' => 'yes',
                     'condition' => [
                         'eael_ext_table_of_content' => 'yes',
@@ -88,13 +88,13 @@ class Table_of_Content
             $element->add_control(
                 'eael_ext_toc_global_display_condition',
                 [
-                    'label' => __('Display On', 'essential-addons-for-elementor-lite'),
+                    'label' => __('Display On', 'px-elements'),
                     'type' => Controls_Manager::SELECT,
                     'default' => 'all',
                     'options' => [
-                        'posts' => __('All Posts', 'essential-addons-for-elementor-lite'),
-                        'pages' => __('All Pages', 'essential-addons-for-elementor-lite'),
-                        'all' => __('All Posts & Pages', 'essential-addons-for-elementor-lite'),
+                        'posts' => __('All Posts', 'px-elements'),
+                        'pages' => __('All Pages', 'px-elements'),
+                        'all' => __('All Posts & Pages', 'px-elements'),
                     ],
                     'condition' => [
                         'eael_ext_table_of_content' => 'yes',
@@ -107,9 +107,9 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_title',
             [
-                'label' => __('Title', 'essential-addons-for-elementor-lite'),
+                'label' => __('Title', 'px-elements'),
                 'type' => Controls_Manager::TEXT,
-                'default' => __('Table of Contents', 'essential-addons-for-elementor-lite'),
+                'default' => __('Table of Contents', 'px-elements'),
                 'label_block' => false,
                 'condition' => [
                     'eael_ext_table_of_content' => 'yes',
@@ -121,7 +121,7 @@ class Table_of_Content
 
         $element->start_controls_tab( 'eael_toc_include',
             [
-                'label' => __( 'Include', 'essential-addons-for-elementor-lite' ),
+                'label' => __( 'Include', 'px-elements' ),
                 'condition' => [
                     'eael_ext_table_of_content' => 'yes',
                 ]
@@ -131,7 +131,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_supported_heading_tag',
             [
-                'label' => __('Supported Heading Tag', 'essential-addons-for-elementor-lite'),
+                'label' => __('Supported Heading Tag', 'px-elements'),
                 'type' => Controls_Manager::SELECT2,
                 'multiple' => true,
                 'label_block' => true,
@@ -143,12 +143,12 @@ class Table_of_Content
                     'h6',
                 ],
                 'options' => [
-                    'h1' => __('H1', 'essential-addons-for-elementor-lite'),
-                    'h2' => __('H2', 'essential-addons-for-elementor-lite'),
-                    'h3' => __('H3', 'essential-addons-for-elementor-lite'),
-                    'h4' => __('H4', 'essential-addons-for-elementor-lite'),
-                    'h5' => __('H5', 'essential-addons-for-elementor-lite'),
-                    'h6' => __('H6', 'essential-addons-for-elementor-lite'),
+                    'h1' => __('H1', 'px-elements'),
+                    'h2' => __('H2', 'px-elements'),
+                    'h3' => __('H3', 'px-elements'),
+                    'h4' => __('H4', 'px-elements'),
+                    'h5' => __('H5', 'px-elements'),
+                    'h6' => __('H6', 'px-elements'),
                 ],
                 'render_type' => 'none',
                 'condition' => [
@@ -160,9 +160,9 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_content_selector',
             [
-                'label' => __('Content Selector', 'essential-addons-for-elementor-lite'),
+                'label' => __('Content Selector', 'px-elements'),
                 'type' => Controls_Manager::TEXT,
-                'description' => __('Which content are searched for heading tag, Provide unique selector to replace default selector', 'essential-addons-for-elementor-lite'),
+                'description' => __('Which content are searched for heading tag, Provide unique selector to replace default selector', 'px-elements'),
                 'label_block' => false,
                 'condition' => [
                     'eael_ext_table_of_content' => 'yes',
@@ -174,7 +174,7 @@ class Table_of_Content
 
         $element->start_controls_tab( 'eael_toc_exclude',
             [
-                'label' => __( 'Exclude', 'essential-addons-for-elementor-lite' ),
+                'label' => __( 'Exclude', 'px-elements' ),
                 'condition' => [
                     'eael_ext_table_of_content' => 'yes',
                 ]
@@ -184,9 +184,9 @@ class Table_of_Content
         $element->add_control(
             'eael_toc_exclude_selector',
             [
-                'label' => __( 'Exclude By Selector', 'essential-addons-for-elementor-lite' ),
+                'label' => __( 'Exclude By Selector', 'px-elements' ),
                 'type' => Controls_Manager::TEXT,
-                'description' => __( 'CSS selectors, in a comma-separated list', 'essential-addons-for-elementor-lite' ),
+                'description' => __( 'CSS selectors, in a comma-separated list', 'px-elements' ),
                 'default' => '',
                 'label_block' => true,
                 'condition' => [
@@ -202,11 +202,11 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_collapse_sub_heading',
             [
-                'label' => __('Keep Sub Heading Collapsed', 'essential-addons-for-elementor-lite'),
+                'label' => __('Keep Sub Heading Collapsed', 'px-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'default' => 'yes',
-                'label_on' => __('Yes', 'essential-addons-for-elementor-lite'),
-                'label_off' => __('No', 'essential-addons-for-elementor-lite'),
+                'label_on' => __('Yes', 'px-elements'),
+                'label_off' => __('No', 'px-elements'),
                 'return_value' => 'yes',
                 'condition' => [
                     'eael_ext_table_of_content' => 'yes',
@@ -217,11 +217,11 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_use_title_in_url',
             [
-                'label' => __('Heading Text in URL', 'essential-addons-for-elementor-lite'),
+                'label' => __('Heading Text in URL', 'px-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'default' => 'no',
-                'label_on' => __('Yes', 'essential-addons-for-elementor-lite'),
-                'label_off' => __('No', 'essential-addons-for-elementor-lite'),
+                'label_on' => __('Yes', 'px-elements'),
+                'label_off' => __('No', 'px-elements'),
                 'return_value' => 'yes',
                 'condition' => [
                     'eael_ext_table_of_content' => 'yes',
@@ -232,11 +232,11 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_word_wrap',
             [
-                'label' => __('Stop Word Wrap', 'essential-addons-for-elementor-lite'),
+                'label' => __('Stop Word Wrap', 'px-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'default' => 'no',
-                'label_on' => __('Yes', 'essential-addons-for-elementor-lite'),
-                'label_off' => __('No', 'essential-addons-for-elementor-lite'),
+                'label_on' => __('Yes', 'px-elements'),
+                'label_off' => __('No', 'px-elements'),
                 'return_value' => 'yes',
                 'condition' => [
                     'eael_ext_table_of_content' => 'yes',
@@ -247,11 +247,11 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_auto_collapse',
             [
-                'label' => __('TOC Auto Collapse', 'essential-addons-for-elementor-lite'),
+                'label' => __('TOC Auto Collapse', 'px-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'default' => 'yes',
-                'label_on' => __('Yes', 'essential-addons-for-elementor-lite'),
-                'label_off' => __('No', 'essential-addons-for-elementor-lite'),
+                'label_on' => __('Yes', 'px-elements'),
+                'label_off' => __('No', 'px-elements'),
                 'return_value' => 'yes',
                 'condition' => [
                     'eael_ext_table_of_content' => 'yes',
@@ -262,11 +262,11 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_hide_in_mobile',
             [
-                'label' => __('Hide TOC in mobile', 'essential-addons-for-elementor-lite'),
+                'label' => __('Hide TOC in mobile', 'px-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'default' => 'no',
-                'label_on' => __('Yes', 'essential-addons-for-elementor-lite'),
-                'label_off' => __('No', 'essential-addons-for-elementor-lite'),
+                'label_on' => __('Yes', 'px-elements'),
+                'label_off' => __('No', 'px-elements'),
                 'return_value' => 'yes',
                 'condition' => [
                     'eael_ext_table_of_content' => 'yes',
@@ -277,7 +277,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_sticky_scroll',
             [
-                'label' => __('Sticky Scroll Effect', 'essential-addons-for-elementor-lite'),
+                'label' => __('Sticky Scroll Effect', 'px-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => ['px'],
                 'range' => [
@@ -300,7 +300,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_sticky_offset',
             [
-                'label' => __('Sticky Top Offset', 'essential-addons-for-elementor-lite'),
+                'label' => __('Sticky Top Offset', 'px-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => ['px'],
                 'range' => [
@@ -326,7 +326,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_sticky_z_index',
             [
-                'label' => __('Z Index', 'essential-addons-for-elementor-lite'),
+                'label' => __('Z Index', 'px-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => ['px'],
                 'range' => [
@@ -353,7 +353,7 @@ class Table_of_Content
             'eael_ext_toc_ad_warning_text',
             [
                 'type' => Controls_Manager::RAW_HTML,
-                'raw' => __('Need more information about TOC <strong><a href="https://essential-addons.com/elementor/docs/table-of-content/" class="eael-btn" target="_blank">Visit documentation</a></strong>', 'essential-addons-for-elementor-lite'),
+                'raw' => __('Need more information about TOC <strong><a href="https://essential-addons.com/elementor/docs/table-of-content/" class="eael-btn" target="_blank">Visit documentation</a></strong>', 'px-elements'),
                 'content_classes' => 'eael-warning',
                 'separator' => 'before',
                 'condition' => [
@@ -367,7 +367,7 @@ class Table_of_Content
         $element->start_controls_section(
             'eael_ext_toc_main',
             [
-                'label' => esc_html__('EA TOC', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('EA TOC', 'px-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'eael_ext_table_of_content' => 'yes',
@@ -378,7 +378,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_width',
             [
-                'label' => __('Width', 'essential-addons-for-elementor-lite'),
+                'label' => __('Width', 'px-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => ['px'],
                 'range' => [
@@ -404,13 +404,13 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_position',
             [
-                'label' => __('Position', 'essential-addons-for-elementor-lite'),
+                'label' => __('Position', 'px-elements'),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'left',
                 'label_block' => false,
                 'options' => [
-                    'left' => __('Left', 'essential-addons-for-elementor-lite'),
-                    'right' => __('Right', 'essential-addons-for-elementor-lite'),
+                    'left' => __('Left', 'px-elements'),
+                    'right' => __('Right', 'px-elements'),
                 ],
                 'separator' => 'before',
                 'condition' => [
@@ -422,13 +422,13 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_list_icon',
             [
-                'label' => __('List Icon', 'essential-addons-for-elementor-lite'),
+                'label' => __('List Icon', 'px-elements'),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'bullet',
                 'label_block' => false,
                 'options' => [
-                    'bullet' => __('Bullet', 'essential-addons-for-elementor-lite'),
-                    'number' => __('Number', 'essential-addons-for-elementor-lite'),
+                    'bullet' => __('Bullet', 'px-elements'),
+                    'number' => __('Number', 'px-elements'),
                 ],
                 'condition' => [
                     'eael_ext_table_of_content' => 'yes',
@@ -439,7 +439,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_box_list_bullet_size',
             [
-                'label' => __('Bullet Size', 'essential-addons-for-elementor-lite'),
+                'label' => __('Bullet Size', 'px-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => ['px'],
                 'range' => [
@@ -465,7 +465,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_box_list_top_position',
             [
-                'label' => __('Top Position', 'essential-addons-for-elementor-lite'),
+                'label' => __('Top Position', 'px-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => ['px'],
                 'range' => [
@@ -492,7 +492,7 @@ class Table_of_Content
             Group_Control_Border::get_type(),
             [
                 'name' => 'eael_ext_toc_border',
-                'label' => __('Border', 'essential-addons-for-elementor-lite'),
+                'label' => __('Border', 'px-elements'),
                 'selector' => '{{WRAPPER}} .eael-toc,{{WRAPPER}} button.eael-toc-button',
                 'condition' => [
                     'eael_ext_table_of_content' => 'yes',
@@ -504,7 +504,7 @@ class Table_of_Content
             Group_Control_Box_Shadow::get_type(),
             [
                 'name' => 'eael_ext_toc_table_box_shadow',
-                'label' => __('Box Shadow', 'essential-addons-for-elementor-lite'),
+                'label' => __('Box Shadow', 'px-elements'),
                 'selector' => '{{WRAPPER}} .eael-toc:not(.collapsed)',
                 'condition' => [
                     'eael_ext_table_of_content' => 'yes',
@@ -515,7 +515,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_box_border_radius',
             [
-                'label' => __('Border Radius', 'essential-addons-for-elementor-lite'),
+                'label' => __('Border Radius', 'px-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => ['px'],
                 'range' => [
@@ -549,7 +549,7 @@ class Table_of_Content
         $element->start_controls_section(
             'eael_ext_table_of_content_header_style',
             [
-                'label' => esc_html__('EA TOC Header', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('EA TOC Header', 'px-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'eael_ext_table_of_content' => 'yes',
@@ -560,7 +560,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_table_of_content_header_bg',
             [
-                'label' => __('Background Color', 'essential-addons-for-elementor-lite'),
+                'label' => __('Background Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#ff7d50',
                 'selectors' => [
@@ -573,7 +573,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_table_of_content_header_text_color',
             [
-                'label' => __('Text Color', 'essential-addons-for-elementor-lite'),
+                'label' => __('Text Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#ffffff',
                 'selectors' => [
@@ -595,7 +595,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_header_padding',
             [
-                'label' => esc_html__('Padding', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Padding', 'px-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px'],
                 'selectors' => [
@@ -607,7 +607,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_header_collapse_close_button',
             [
-                'label' => __('Collapse', 'essential-addons-for-elementor-lite'),
+                'label' => __('Collapse', 'px-elements'),
                 'type' => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -616,7 +616,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_table_of_content_header_icon',
             [
-                'label' => __('Icon', 'essential-addons-for-elementor-lite'),
+                'label' => __('Icon', 'px-elements'),
                 'type' => Controls_Manager::ICONS,
                 'label_block' => true,
                 'default' => [
@@ -630,12 +630,12 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_close_button_text_style',
             [
-                'label' => __('Text Orientation', 'essential-addons-for-elementor-lite'),
+                'label' => __('Text Orientation', 'px-elements'),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'top_to_bottom',
                 'options' => [
-                    'top_to_bottom' => __('Top to Bottom', 'essential-addons-for-elementor-lite'),
-                    'bottom_to_top' => __('Bottom to Top', 'essential-addons-for-elementor-lite'),
+                    'top_to_bottom' => __('Top to Bottom', 'px-elements'),
+                    'bottom_to_top' => __('Bottom to Top', 'px-elements'),
                 ],
             ]
         );
@@ -643,7 +643,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_table_of_content_close_button',
             [
-                'label' => __('Close Button', 'essential-addons-for-elementor-lite'),
+                'label' => __('Close Button', 'px-elements'),
                 'type' => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -652,7 +652,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_table_of_content_close_button_icon_size',
             [
-                'label'      => __('Icon Size', 'essential-addons-for-elementor-lite'),
+                'label'      => __('Icon Size', 'px-elements'),
                 'type'       => Controls_Manager::SLIDER,
                 'size_units' => ['px'],
                 'range'      => [
@@ -670,7 +670,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_table_of_content_close_button_size',
             [
-                'label'      => __('Button Size', 'essential-addons-for-elementor-lite'),
+                'label'      => __('Button Size', 'px-elements'),
                 'type'       => Controls_Manager::SLIDER,
                 'size_units' => ['px'],
                 'range'      => [
@@ -688,7 +688,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_table_of_content_close_button_line_height',
             [
-                'label'      => __('Line Height', 'essential-addons-for-elementor-lite'),
+                'label'      => __('Line Height', 'px-elements'),
                 'type'       => Controls_Manager::SLIDER,
                 'size_units' => ['px'],
                 'range'      => [
@@ -706,7 +706,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_table_of_content_close_button_bg',
             [
-                'label' => __('Background Color', 'essential-addons-for-elementor-lite'),
+                'label' => __('Background Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#ffffff',
                 'selectors' => [
@@ -718,7 +718,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_table_of_content_close_button_text_color',
             [
-                'label' => __('Close Button Color', 'essential-addons-for-elementor-lite'),
+                'label' => __('Close Button Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#ff7d50',
                 'selectors' => [
@@ -730,7 +730,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_table_of_content_close_button_border_radius',
             [
-                'label'      => __('Border Radius', 'essential-addons-for-elementor-lite'),
+                'label'      => __('Border Radius', 'px-elements'),
                 'type'       => Controls_Manager::SLIDER,
                 'size_units' => ['px'],
                 'range'      => [
@@ -749,7 +749,7 @@ class Table_of_Content
             Group_Control_Box_Shadow::get_type(),
             [
                 'name'     => 'eael_ext_table_of_content_close_button_box_shadow',
-                'label'    => __('Box Shadow', 'essential-addons-for-elementor-lite'),
+                'label'    => __('Box Shadow', 'px-elements'),
                 'selector' => '{{WRAPPER}} .eael-toc .eael-toc-close',
             ]
         );
@@ -759,7 +759,7 @@ class Table_of_Content
         $element->start_controls_section(
             'eael_ext_table_of_content_list_style_section',
             [
-                'label' => esc_html__('EA TOC Body', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('EA TOC Body', 'px-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'eael_ext_table_of_content' => 'yes',
@@ -770,7 +770,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_table_of_content_body_bg',
             [
-                'label' => __('Background Color', 'essential-addons-for-elementor-lite'),
+                'label' => __('Background Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#fff6f3',
                 'selectors' => [
@@ -783,7 +783,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_body_padding',
             [
-                'label' => esc_html__('Padding', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Padding', 'px-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px'],
                 'selectors' => [
@@ -795,7 +795,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_table_of_content_list_style_separator',
             [
-                'label' => __('List', 'essential-addons-for-elementor-lite'),
+                'label' => __('List', 'px-elements'),
                 'type' => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -804,13 +804,13 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_table_of_content_list_style',
             [
-                'label' => __('Indicator Style', 'essential-addons-for-elementor-lite'),
+                'label' => __('Indicator Style', 'px-elements'),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'none',
                 'options' => [
-                    'none' => __('None', 'essential-addons-for-elementor-lite'),
-                    'arrow' => __('Arrow', 'essential-addons-for-elementor-lite'),
-                    'bar' => __('Bar', 'essential-addons-for-elementor-lite'),
+                    'none' => __('None', 'px-elements'),
+                    'arrow' => __('Arrow', 'px-elements'),
+                    'bar' => __('Bar', 'px-elements'),
                 ],
             ]
         );
@@ -818,7 +818,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_indicator_size',
             [
-                'label' => __('Indicator Size', 'essential-addons-for-elementor-lite'),
+                'label' => __('Indicator Size', 'px-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => ['px'],
                 'range' => [
@@ -844,7 +844,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_indicator_position',
             [
-                'label' => __('Indicator Position', 'essential-addons-for-elementor-lite'),
+                'label' => __('Indicator Position', 'px-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => ['px'],
                 'range' => [
@@ -881,14 +881,14 @@ class Table_of_Content
 
         $element->start_controls_tab('normal',
             [
-                'label' => __('Normal', 'essential-addons-for-elementor-lite'),
+                'label' => __('Normal', 'px-elements'),
             ]
         );
 
         $element->add_control(
             'eael_ext_table_of_content_list_text_color',
             [
-                'label' => __('Text Color', 'essential-addons-for-elementor-lite'),
+                'label' => __('Text Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#707070',
                 'selectors' => [
@@ -904,14 +904,14 @@ class Table_of_Content
 
         $element->start_controls_tab('hover',
             [
-                'label' => __('Hover', 'essential-addons-for-elementor-lite'),
+                'label' => __('Hover', 'px-elements'),
             ]
         );
 
         $element->add_control(
             'eael_ext_table_of_list_hover_color',
             [
-                'label' => __('Text Color', 'essential-addons-for-elementor-lite'),
+                'label' => __('Text Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#ff7d50',
                 'selectors' => [
@@ -930,14 +930,14 @@ class Table_of_Content
 
         $element->start_controls_tab('active',
             [
-                'label' => __('Active', 'essential-addons-for-elementor-lite'),
+                'label' => __('Active', 'px-elements'),
             ]
         );
 
         $element->add_control(
             'eael_ext_table_of_content_list_text_color_active',
             [
-                'label' => __('Text Color', 'essential-addons-for-elementor-lite'),
+                'label' => __('Text Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#ff7d50',
                 'selectors' => [
@@ -961,7 +961,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_top_level_space',
             [
-                'label' => __('Top Level Space', 'essential-addons-for-elementor-lite'),
+                'label' => __('Top Level Space', 'px-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => ['px'],
                 'range' => [
@@ -987,7 +987,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_toc_subitem_level_space',
             [
-                'label' => __('Sub Item Space', 'essential-addons-for-elementor-lite'),
+                'label' => __('Sub Item Space', 'px-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => ['px'],
                 'range' => [
@@ -1013,7 +1013,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_table_of_content_list_separator',
             [
-                'label' => __('Separator', 'essential-addons-for-elementor-lite'),
+                'label' => __('Separator', 'px-elements'),
                 'type' => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -1022,14 +1022,14 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_table_of_content_list_separator_style',
             [
-                'label' => __('Style', 'essential-addons-for-elementor-lite'),
+                'label' => __('Style', 'px-elements'),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'dashed',
                 'options' => [
-                    'solid' => __('Solid', 'essential-addons-for-elementor-lite'),
-                    'dashed' => __('Dashed', 'essential-addons-for-elementor-lite'),
-                    'dotted' => __('Dotted', 'essential-addons-for-elementor-lite'),
-                    'none' => __('None', 'essential-addons-for-elementor-lite'),
+                    'solid' => __('Solid', 'px-elements'),
+                    'dashed' => __('Dashed', 'px-elements'),
+                    'dotted' => __('Dotted', 'px-elements'),
+                    'none' => __('None', 'px-elements'),
                 ],
                 'selectors' => [
                     '{{WRAPPER}} .eael-toc .eael-toc-body .eael-toc-list > li:not(:last-child)' => 'border-bottom: 0.5px {{VALUE}}',
@@ -1040,7 +1040,7 @@ class Table_of_Content
         $element->add_control(
             'eael_ext_table_of_content_list_separator_color',
             [
-                'label' => __('Color', 'essential-addons-for-elementor-lite'),
+                'label' => __('Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .eael-toc .eael-toc-body .eael-toc-list > li:not(:last-child)' => 'border-bottom-color: {{VALUE}}',

@@ -21,7 +21,7 @@ class Sticky_Video extends Widget_Base
 
     public function get_title()
     {
-        return esc_html__('Sticky Video', 'essential-addons-for-elementor-lite');
+        return esc_html__('Sticky Video', 'px-elements');
     }
 
     public function get_icon()
@@ -86,7 +86,7 @@ class Sticky_Video extends Widget_Base
         $this->start_controls_section(
             'eaelsv_sticky_option_section',
             [
-                'label' => __('Sticky Options', 'essential-addons-for-elementor-lite'),
+                'label' => __('Sticky Options', 'px-elements'),
                 'tab' => Controls_Manager::TAB_CONTENT,
             ]
         );
@@ -94,11 +94,11 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_is_sticky',
             [
-                'label' => __('Sticky', 'essential-addons-for-elementor-lite'),
+                'label' => __('Sticky', 'px-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'label_block' => false,
-                'label_on' => __('On', 'essential-addons-for-elementor-lite'),
-                'label_off' => __('Off', 'essential-addons-for-elementor-lite'),
+                'label_on' => __('On', 'px-elements'),
+                'label_off' => __('Off', 'px-elements'),
                 'return_value' => 'yes',
                 'default' => 'yes',
                 'selectors' => [
@@ -110,13 +110,13 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_sticky_position',
             [
-                'label' => __('Position', 'essential-addons-for-elementor-lite'),
+                'label' => __('Position', 'px-elements'),
                 'type' => Controls_Manager::SELECT,
                 'options' => [
-                    'top-left' => __('Top Left', 'essential-addons-for-elementor-lite'),
-                    'top-right' => __('Top Right', 'essential-addons-for-elementor-lite'),
-                    'bottom-left' => __('Bottom Left', 'essential-addons-for-elementor-lite'),
-                    'bottom-right' => __('Bottom Right', 'essential-addons-for-elementor-lite'),
+                    'top-left' => __('Top Left', 'px-elements'),
+                    'top-right' => __('Top Right', 'px-elements'),
+                    'bottom-left' => __('Bottom Left', 'px-elements'),
+                    'bottom-right' => __('Bottom Right', 'px-elements'),
                 ],
                 'default' => 'bottom-right',
                 'condition' => [
@@ -130,7 +130,7 @@ class Sticky_Video extends Widget_Base
         $this->start_controls_section(
             'eael_section_video_settings',
             [
-                'label' => esc_html__('Video', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Video', 'px-elements'),
                 'tab' => Controls_Manager::TAB_CONTENT,
             ]
         );
@@ -138,13 +138,13 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eael_video_source',
             [
-                'label' => __('Source', 'essential-addons-for-elementor-lite'),
+                'label' => __('Source', 'px-elements'),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'youtube',
                 'options' => [
-                    'youtube' => __('YouTube', 'essential-addons-for-elementor-lite'),
-                    'vimeo' => __('Vimeo', 'essential-addons-for-elementor-lite'),
-                    'self_hosted' => __('Self Hosted', 'essential-addons-for-elementor-lite'),
+                    'youtube' => __('YouTube', 'px-elements'),
+                    'vimeo' => __('Vimeo', 'px-elements'),
+                    'self_hosted' => __('Self Hosted', 'px-elements'),
                 ],
             ]
         );
@@ -152,9 +152,9 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_link_youtube',
             [
-                'label' => __('Link', 'essential-addons-for-elementor-lite'),
+                'label' => __('Link', 'px-elements'),
                 'type' => Controls_Manager::TEXT,
-                'placeholder' => __('Enter your URL (YouTube)', 'essential-addons-for-elementor-lite'),
+                'placeholder' => __('Enter your URL (YouTube)', 'px-elements'),
                 'label_block' => true,
                 'default' => 'https://www.youtube.com/watch?v=uuyXfUDqRZM',
                 'condition' => [
@@ -166,9 +166,9 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_link_vimeo',
             [
-                'label' => __('Link', 'essential-addons-for-elementor-lite'),
+                'label' => __('Link', 'px-elements'),
                 'type' => Controls_Manager::TEXT,
-                'placeholder' => __('Enter your URL (Vimeo)', 'essential-addons-for-elementor-lite'),
+                'placeholder' => __('Enter your URL (Vimeo)', 'px-elements'),
                 'label_block' => true,
                 'default' => 'https://vimeo.com/235215203',
                 'condition' => [
@@ -180,9 +180,9 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_link_dailymotion',
             [
-                'label' => __('Link', 'essential-addons-for-elementor-lite'),
+                'label' => __('Link', 'px-elements'),
                 'type' => Controls_Manager::TEXT,
-                'placeholder' => __('Enter your URL (Dailymotion)', 'essential-addons-for-elementor-lite'),
+                'placeholder' => __('Enter your URL (Dailymotion)', 'px-elements'),
                 'label_block' => true,
                 'condition' => [
                     'eael_video_source' => 'dailymotion',
@@ -193,7 +193,7 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_link_external',
             [
-                'label' => __('External URL', 'essential-addons-for-elementor-lite'),
+                'label' => __('External URL', 'px-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'label_block' => false,
                 'condition' => [
@@ -224,9 +224,9 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_external_url',
             [
-                'label' => __('Link', 'essential-addons-for-elementor-lite'),
+                'label' => __('Link', 'px-elements'),
                 'type' => Controls_Manager::TEXT,
-                'placeholder' => __('Enter your URL', 'essential-addons-for-elementor-lite'),
+                'placeholder' => __('Enter your URL', 'px-elements'),
                 'label_block' => true,
                 'show_label' => false,
                 'condition' => [
@@ -239,7 +239,7 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eael_video_self_hosted_link',
             [
-                'label' => __('Choose File', 'essential-addons-for-elementor-lite'),
+                'label' => __('Choose File', 'px-elements'),
                 'type' => Controls_Manager::MEDIA,
                 'label_block' => true,
                 'condition' => [
@@ -252,7 +252,7 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_start_time',
             [
-                'label' => __('Start Time', 'essential-addons-for-elementor-lite'),
+                'label' => __('Start Time', 'px-elements'),
                 'type' => Controls_Manager::NUMBER,
                 'min' => 0,
                 'max' => 10000,
@@ -268,7 +268,7 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_end_time',
             [
-                'label' => __('End Time', 'essential-addons-for-elementor-lite'),
+                'label' => __('End Time', 'px-elements'),
                 'type' => Controls_Manager::NUMBER,
                 'min' => 0,
                 'max' => 10000,
@@ -284,7 +284,7 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eael_video_video_options',
             [
-                'label' => __('Video Options', 'essential-addons-for-elementor-lite'),
+                'label' => __('Video Options', 'px-elements'),
                 'type' => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -293,7 +293,7 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_autopaly',
             [
-                'label' => __('Autoplay', 'essential-addons-for-elementor-lite'),
+                'label' => __('Autoplay', 'px-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'label_block' => false,
                 'return_value' => 'yes',
@@ -304,7 +304,7 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_mute',
             [
-                'label' => __('Mute', 'essential-addons-for-elementor-lite'),
+                'label' => __('Mute', 'px-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'label_block' => false,
                 'return_value' => 'yes',
@@ -315,7 +315,7 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_loop',
             [
-                'label' => __('Loop', 'essential-addons-for-elementor-lite'),
+                'label' => __('Loop', 'px-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'label_block' => false,
                 'return_value' => 'yes',
@@ -326,7 +326,7 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_sh_show_bar',
             [
-                'label' => __('Show Bar', 'essential-addons-for-elementor-lite'),
+                'label' => __('Show Bar', 'px-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'label_block' => false,
                 'default' => 'yes',
@@ -341,7 +341,7 @@ class Sticky_Video extends Widget_Base
         $this->start_controls_section(
             'eael_video_image_overlay_section',
             [
-                'label' => __('Image Overlay', 'essential-addons-for-elementor-lite'),
+                'label' => __('Image Overlay', 'px-elements'),
                 'tab' => Controls_Manager::TAB_CONTENT,
             ]
         );
@@ -349,11 +349,11 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_overlay_options',
             [
-                'label' => __('Image Overlay', 'essential-addons-for-elementor-lite'),
+                'label' => __('Image Overlay', 'px-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'label_block' => false,
-                'label_on' => __('Show', 'essential-addons-for-elementor-lite'),
-                'label_off' => __('Hide', 'essential-addons-for-elementor-lite'),
+                'label_on' => __('Show', 'px-elements'),
+                'label_off' => __('Hide', 'px-elements'),
                 'return_value' => 'yes',
                 'default' => '',
             ]
@@ -362,7 +362,7 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_overlay_image',
             [
-                'label' => __('Choose Image', 'essential-addons-for-elementor-lite'),
+                'label' => __('Choose Image', 'px-elements'),
                 'type' => Controls_Manager::MEDIA,
                 'label_block' => true,
                 'condition' => [
@@ -387,7 +387,7 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_overlay_play_icon',
             [
-                'label' => __('Play Icon', 'essential-addons-for-elementor-lite'),
+                'label' => __('Play Icon', 'px-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'label_block' => false,
                 'return_value' => 'yes',
@@ -401,7 +401,7 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_icon_new',
             [
-                'label' => esc_html__('Choose Icon', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Choose Icon', 'px-elements'),
                 'type' => Controls_Manager::ICONS,
                 'fa4compatibility' => 'eaelsv_icon',
                 'condition' => [
@@ -419,7 +419,7 @@ class Sticky_Video extends Widget_Base
         $this->start_controls_section(
             'eaelsv_sticky_video_interface',
             [
-                'label' => __('Sticky Video Interface', 'essential-addons-for-elementor-lite'),
+                'label' => __('Sticky Video Interface', 'px-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
                 'condition' => [
                     'eaelsv_is_sticky' => 'yes',
@@ -431,7 +431,7 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_sticky_width',
             [
-                'label' => __('Width', 'essential-addons-for-elementor-lite'),
+                'label' => __('Width', 'px-elements'),
                 'type' => Controls_Manager::NUMBER,
                 'min' => 100,
                 'max' => 500,
@@ -449,7 +449,7 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_sticky_height',
             [
-                'label' => __('Height', 'essential-addons-for-elementor-lite'),
+                'label' => __('Height', 'px-elements'),
                 'type' => Controls_Manager::NUMBER,
                 'min' => 55,
                 'max' => 280,
@@ -469,7 +469,7 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_scroll_height_display_sticky',
             [
-                'label' => __('Scroll Height To Display Sticky (%)', 'essential-addons-for-elementor-lite'),
+                'label' => __('Scroll Height To Display Sticky (%)', 'px-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'range' => [
                     'px' => [
@@ -491,7 +491,7 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_sticky_close_button_color',
             [
-                'label' => __('Close Button Color', 'essential-addons-for-elementor-lite'),
+                'label' => __('Close Button Color', 'px-elements'),
                 'type' => \Elementor\Controls_Manager::COLOR,
                 'condition' => [
                     'eaelsv_is_sticky' => 'yes',
@@ -507,7 +507,7 @@ class Sticky_Video extends Widget_Base
         $this->start_controls_section(
             'eaelsv_sh_player_section',
             [
-                'label' => __('Player', 'essential-addons-for-elementor-lite'),
+                'label' => __('Player', 'px-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -515,7 +515,7 @@ class Sticky_Video extends Widget_Base
         $this->add_responsive_control(
             'eaelsv_sh_video_width',
             [
-                'label' => esc_html__('Width', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Width', 'px-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => ['px', '%'],
                 'range' => [
@@ -538,15 +538,15 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_sh_video_border_type',
             [
-                'label' => __('Border Type', 'essential-addons-for-elementor-lite'),
+                'label' => __('Border Type', 'px-elements'),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'none',
                 'options' => [
-                    'none' => __('None', 'essential-addons-for-elementor-lite'),
-                    'solid' => __('Solid', 'essential-addons-for-elementor-lite'),
-                    'double' => __('Double', 'essential-addons-for-elementor-lite'),
-                    'dotted' => __('Dotted', 'essential-addons-for-elementor-lite'),
-                    'dashed' => __('Dashed', 'essential-addons-for-elementor-lite'),
+                    'none' => __('None', 'px-elements'),
+                    'solid' => __('Solid', 'px-elements'),
+                    'double' => __('Double', 'px-elements'),
+                    'dotted' => __('Dotted', 'px-elements'),
+                    'dashed' => __('Dashed', 'px-elements'),
                 ],
                 'selectors' => [
                     '{{WRAPPER}} .eael-sticky-video-wrapper' => 'border-style: {{VALUE}};',
@@ -557,7 +557,7 @@ class Sticky_Video extends Widget_Base
         $this->add_responsive_control(
             'eaelsv_sh_video_border_width',
             [
-                'label' => esc_html__('Border Width', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Border Width', 'px-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px'],
                 'selectors' => [
@@ -569,7 +569,7 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_sh_video_border_color',
             [
-                'label' => esc_html__('Border Color', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Border Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -581,7 +581,7 @@ class Sticky_Video extends Widget_Base
         $this->add_responsive_control(
             'eaelsv_sh_video_border_radius',
             [
-                'label' => esc_html__('Border Radius', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Border Radius', 'px-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%'],
                 'selectors' => [
@@ -597,7 +597,7 @@ class Sticky_Video extends Widget_Base
         $this->start_controls_section(
             'eaelsv_sh_player_interface_section',
             [
-                'label' => __('Interface', 'essential-addons-for-elementor-lite'),
+                'label' => __('Interface', 'px-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -605,7 +605,7 @@ class Sticky_Video extends Widget_Base
         $this->add_control(
             'eaelsv_sh_video_interface_color',
             [
-                'label' => esc_html__('Interface Color', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Interface Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#ADD8E6',
                 'selectors' => [
@@ -621,7 +621,7 @@ class Sticky_Video extends Widget_Base
         $this->add_responsive_control(
             'eaelsv_sh_play_button_size',
             [
-                'label' => __('Play Button Size', 'essential-addons-for-elementor-lite'),
+                'label' => __('Play Button Size', 'px-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'default' => [
                     'size' => 15,
@@ -646,7 +646,7 @@ class Sticky_Video extends Widget_Base
         $this->start_controls_section(
             'eaelsv_sh_player_bar_section',
             [
-                'label' => __('Bar', 'essential-addons-for-elementor-lite'),
+                'label' => __('Bar', 'px-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -654,7 +654,7 @@ class Sticky_Video extends Widget_Base
         $this->add_responsive_control(
             'eaelsv_sh_player_bar_padding',
             [
-                'label' => __('Bar Padding', 'essential-addons-for-elementor-lite'),
+                'label' => __('Bar Padding', 'px-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'default' => [
                     'size' => 10,
@@ -677,7 +677,7 @@ class Sticky_Video extends Widget_Base
         $this->add_responsive_control(
             'eaelsv_sh_bar_margin',
             [
-                'label' => esc_html__('Bar Margin', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Bar Margin', 'px-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px'],
                 'selectors' => [

@@ -212,7 +212,7 @@ trait Post_Grid {
                 }
             }
         } else {
-            _e( '<p class="no-posts-found">No posts found!</p>', 'essential-addons-for-elementor-lite' );
+            _e( '<p class="no-posts-found">No posts found!</p>', 'px-elements' );
         }
 
         wp_reset_postdata();

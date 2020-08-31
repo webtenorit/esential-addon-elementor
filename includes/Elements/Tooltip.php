@@ -20,7 +20,7 @@ class Tooltip extends Widget_Base {
 	}
 
 	public function get_title() {
-		return esc_html__( 'Tooltip', 'essential-addons-for-elementor-lite');
+		return esc_html__( 'Tooltip', 'px-elements');
 	}
 
 	public function get_icon() {
@@ -58,30 +58,30 @@ class Tooltip extends Widget_Base {
   		$this->start_controls_section(
   			'eael_section_tooltip_settings',
   			[
-  				'label' => esc_html__( 'Content Settings', 'essential-addons-for-elementor-lite')
+  				'label' => esc_html__( 'Content Settings', 'px-elements')
   			]
   		);
 		$this->add_responsive_control(
 			'eael_tooltip_type',
 			[
-				'label' => esc_html__( 'Content Type', 'essential-addons-for-elementor-lite'),
+				'label' => esc_html__( 'Content Type', 'px-elements'),
 				'type' => Controls_Manager::CHOOSE,
 				'label_block' => true,
 				'options' => [
 					'icon' => [
-						'title' => esc_html__( 'Icon', 'essential-addons-for-elementor-lite'),
+						'title' => esc_html__( 'Icon', 'px-elements'),
 						'icon' => 'fa fa-info',
 					],
 					'text' => [
-						'title' => esc_html__( 'Text', 'essential-addons-for-elementor-lite'),
+						'title' => esc_html__( 'Text', 'px-elements'),
 						'icon' => 'fa fa-text-width',
 					],
 					'image' => [
-						'title' => esc_html__( 'Image', 'essential-addons-for-elementor-lite'),
+						'title' => esc_html__( 'Image', 'px-elements'),
 						'icon' => 'fa fa-image',
 					],
 					'shortcode' => [
-						'title' => esc_html__( 'Shortcode', 'essential-addons-for-elementor-lite'),
+						'title' => esc_html__( 'Shortcode', 'px-elements'),
 						'icon' => 'fa fa-code',
 					],
 				],
@@ -91,10 +91,10 @@ class Tooltip extends Widget_Base {
   		$this->add_control(
 			'eael_tooltip_content',
 			[
-				'label' => esc_html__( 'Content', 'essential-addons-for-elementor-lite'),
+				'label' => esc_html__( 'Content', 'px-elements'),
 				'type' => Controls_Manager::WYSIWYG,
 				'label_block' => true,
-				'default' => esc_html__( 'Hover Me!', 'essential-addons-for-elementor-lite'),
+				'default' => esc_html__( 'Hover Me!', 'px-elements'),
 				'condition' => [
 					'eael_tooltip_type' => [ 'text' ]
 				],
@@ -104,20 +104,20 @@ class Tooltip extends Widget_Base {
 		$this->add_control(
 		  'eael_tooltip_content_tag',
 		  	[
-		   		'label'       	=> esc_html__( 'Content Tag', 'essential-addons-for-elementor-lite'),
+		   		'label'       	=> esc_html__( 'Content Tag', 'px-elements'),
 		     	'type' 			=> Controls_Manager::SELECT,
 		     	'default' 		=> 'span',
 		     	'label_block' 	=> false,
 		     	'options' 		=> [
-		     		'h1'  	=> esc_html__( 'H1', 'essential-addons-for-elementor-lite'),
-		     		'h2'  	=> esc_html__( 'H2', 'essential-addons-for-elementor-lite'),
-		     		'h3'  	=> esc_html__( 'H3', 'essential-addons-for-elementor-lite'),
-		     		'h4'  	=> esc_html__( 'H4', 'essential-addons-for-elementor-lite'),
-		     		'h5'  	=> esc_html__( 'H5', 'essential-addons-for-elementor-lite'),
-		     		'h6'  	=> esc_html__( 'H6', 'essential-addons-for-elementor-lite'),
-		     		'div'  	=> esc_html__( 'DIV', 'essential-addons-for-elementor-lite'),
-		     		'span'  => esc_html__( 'SPAN', 'essential-addons-for-elementor-lite'),
-		     		'p'  	=> esc_html__( 'P', 'essential-addons-for-elementor-lite'),
+		     		'h1'  	=> esc_html__( 'H1', 'px-elements'),
+		     		'h2'  	=> esc_html__( 'H2', 'px-elements'),
+		     		'h3'  	=> esc_html__( 'H3', 'px-elements'),
+		     		'h4'  	=> esc_html__( 'H4', 'px-elements'),
+		     		'h5'  	=> esc_html__( 'H5', 'px-elements'),
+		     		'h6'  	=> esc_html__( 'H6', 'px-elements'),
+		     		'div'  	=> esc_html__( 'DIV', 'px-elements'),
+		     		'span'  => esc_html__( 'SPAN', 'px-elements'),
+		     		'p'  	=> esc_html__( 'P', 'px-elements'),
 		     	],
 		     	'condition' => [
 		     		'eael_tooltip_type' => 'text'
@@ -127,10 +127,10 @@ class Tooltip extends Widget_Base {
 		$this->add_control(
 			'eael_tooltip_shortcode_content',
 			[
-				'label' => esc_html__( 'Shortcode', 'essential-addons-for-elementor-lite'),
+				'label' => esc_html__( 'Shortcode', 'px-elements'),
 				'type' => Controls_Manager::TEXTAREA,
 				'label_block' => true,
-				'default' => esc_html__( '[shortcode-here]', 'essential-addons-for-elementor-lite'),
+				'default' => esc_html__( '[shortcode-here]', 'px-elements'),
 				'condition' => [
 					'eael_tooltip_type' => [ 'shortcode' ]
 				]
@@ -139,7 +139,7 @@ class Tooltip extends Widget_Base {
 		$this->add_control(
 			'eael_tooltip_icon_content_new',
 			[
-				'label' => esc_html__( 'Icon', 'essential-addons-for-elementor-lite'),
+				'label' => esc_html__( 'Icon', 'px-elements'),
 				'type' => Controls_Manager::ICONS,
 				'fa4compatibility' => 'eael_tooltip_icon_content',
 				'default' => [
@@ -154,7 +154,7 @@ class Tooltip extends Widget_Base {
 		$this->add_control(
 			'eael_tooltip_img_content',
 			[
-				'label' => esc_html__( 'Image', 'essential-addons-for-elementor-lite'),
+				'label' => esc_html__( 'Image', 'px-elements'),
 				'type' => Controls_Manager::MEDIA,
 				'default' => [
 					'url' => Utils::get_placeholder_image_src(),
@@ -167,24 +167,24 @@ class Tooltip extends Widget_Base {
 		$this->add_responsive_control(
 			'eael_tooltip_content_alignment',
 			[
-				'label' => esc_html__( 'Alignment', 'essential-addons-for-elementor-lite'),
+				'label' => esc_html__( 'Alignment', 'px-elements'),
 				'type' => Controls_Manager::CHOOSE,
 				'label_block' => true,
 				'options' => [
 					'left' => [
-						'title' => esc_html__( 'Left', 'essential-addons-for-elementor-lite'),
+						'title' => esc_html__( 'Left', 'px-elements'),
 						'icon' => 'fa fa-align-left',
 					],
 					'center' => [
-						'title' => esc_html__( 'Center', 'essential-addons-for-elementor-lite'),
+						'title' => esc_html__( 'Center', 'px-elements'),
 						'icon' => 'fa fa-align-center',
 					],
 					'right' => [
-						'title' => esc_html__( 'Right', 'essential-addons-for-elementor-lite'),
+						'title' => esc_html__( 'Right', 'px-elements'),
 						'icon' => 'fa fa-align-right',
 					],
 					'justify' => [
-						'title' => __( 'Justified', 'essential-addons-for-elementor-lite'),
+						'title' => __( 'Justified', 'px-elements'),
 						'icon' => 'fa fa-align-justify',
 					],
 				],
@@ -196,7 +196,7 @@ class Tooltip extends Widget_Base {
 		$this->add_responsive_control(
 			'eael_tooltip_icon_size',
 			[
-				'label'     => esc_html__( 'Icon Size', 'essential-addons-for-elementor-lite'),
+				'label'     => esc_html__( 'Icon Size', 'px-elements'),
 				'type'      => Controls_Manager::SLIDER,
 				'size_units'	=> [ '%', 'px' ],
 				'default'   => [
@@ -223,7 +223,7 @@ class Tooltip extends Widget_Base {
 		$this->add_control(
 			'eael_tooltip_enable_link',
 			[
-				'label' => esc_html__( 'Enable Link', 'essential-addons-for-elementor-lite'),
+				'label' => esc_html__( 'Enable Link', 'px-elements'),
 				'type' => Controls_Manager::SWITCHER,
 				'default' => 'false',
 				'return_value' => 'yes',
@@ -235,7 +235,7 @@ class Tooltip extends Widget_Base {
 		$this->add_control(
 			'eael_tooltip_link',
 			[
-				'label' => esc_html__( 'Button Link', 'essential-addons-for-elementor-lite'),
+				'label' => esc_html__( 'Button Link', 'px-elements'),
 				'type' => Controls_Manager::URL,
 				'label_block' => true,
 				'default' => [
@@ -256,41 +256,41 @@ class Tooltip extends Widget_Base {
   		$this->start_controls_section(
   			'eael_section_tooltip_hover_content_settings',
   			[
-  				'label' => esc_html__( 'Tooltip Settings', 'essential-addons-for-elementor-lite')
+  				'label' => esc_html__( 'Tooltip Settings', 'px-elements')
   			]
   		);
   		$this->add_control(
 			'eael_tooltip_hover_content',
 			[
-				'label' => esc_html__( 'Content', 'essential-addons-for-elementor-lite'),
+				'label' => esc_html__( 'Content', 'px-elements'),
 				'type' => Controls_Manager::WYSIWYG,
 				'label_block' => true,
-				'default' => esc_html__( 'Tooltip content', 'essential-addons-for-elementor-lite'),
+				'default' => esc_html__( 'Tooltip content', 'px-elements'),
 				'dynamic' => [ 'active' => true ]
 			]
 		);
 		$this->add_control(
 		  'eael_tooltip_hover_dir',
 		  	[
-		   		'label'       	=> esc_html__( 'Hover Direction', 'essential-addons-for-elementor-lite'),
+		   		'label'       	=> esc_html__( 'Hover Direction', 'px-elements'),
 		     	'type' 			=> Controls_Manager::SELECT,
 		     	'default' 		=> 'right',
 		     	'label_block' 	=> false,
 		     	'options' 		=> [
-		     		'left'  	=> esc_html__( 'Left', 'essential-addons-for-elementor-lite'),
-		     		'right'  	=> esc_html__( 'Right', 'essential-addons-for-elementor-lite'),
-		     		'top'  		=> esc_html__( 'Top', 'essential-addons-for-elementor-lite'),
-		     		'bottom'  	=> esc_html__( 'Bottom', 'essential-addons-for-elementor-lite'),
+		     		'left'  	=> esc_html__( 'Left', 'px-elements'),
+		     		'right'  	=> esc_html__( 'Right', 'px-elements'),
+		     		'top'  		=> esc_html__( 'Top', 'px-elements'),
+		     		'bottom'  	=> esc_html__( 'Bottom', 'px-elements'),
 		     	],
 		  	]
 		);
 		$this->add_control(
 			'eael_tooltip_hover_speed',
 			[
-				'label' => esc_html__( 'Hover Speed', 'essential-addons-for-elementor-lite'),
+				'label' => esc_html__( 'Hover Speed', 'px-elements'),
 				'type' => Controls_Manager::TEXT,
 				'label_block' => false,
-				'default' => esc_html__( '300', 'essential-addons-for-elementor-lite'),
+				'default' => esc_html__( '300', 'px-elements'),
 				'selectors' => [
 		            '{{WRAPPER}} .eael-tooltip:hover .eael-tooltip-text.eael-tooltip-top' => 'animation-duration: {{SIZE}}ms;',
 		            '{{WRAPPER}} .eael-tooltip:hover .eael-tooltip-text.eael-tooltip-left' => 'animation-duration: {{SIZE}}ms;',
@@ -309,14 +309,14 @@ class Tooltip extends Widget_Base {
 		$this->start_controls_section(
 			'eael_section_tooltip_style_settings',
 			[
-				'label' => esc_html__( 'Content Style', 'essential-addons-for-elementor-lite'),
+				'label' => esc_html__( 'Content Style', 'px-elements'),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
 		$this->add_responsive_control(
 			'eael_tooltip_max_width',
 		    [
-		        'label' => __( 'Content Max Width', 'essential-addons-for-elementor-lite'),
+		        'label' => __( 'Content Max Width', 'px-elements'),
 		        'type' => Controls_Manager::SLIDER,
 		        'range' => [
 		            'px' => [
@@ -338,7 +338,7 @@ class Tooltip extends Widget_Base {
 		$this->add_responsive_control(
 			'eael_tooltip_content_padding',
 			[
-				'label' => esc_html__( 'Padding', 'essential-addons-for-elementor-lite'),
+				'label' => esc_html__( 'Padding', 'px-elements'),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
@@ -349,7 +349,7 @@ class Tooltip extends Widget_Base {
 		$this->add_responsive_control(
 			'eael_tooltip_content_margin',
 			[
-				'label' => esc_html__( 'Margin', 'essential-addons-for-elementor-lite'),
+				'label' => esc_html__( 'Margin', 'px-elements'),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
@@ -361,24 +361,24 @@ class Tooltip extends Widget_Base {
 		$this->add_responsive_control(
 			'eael_tooltip_text_alignment',
 			[
-				'label' => esc_html__( 'Content Alignment', 'essential-addons-for-elementor-lite'),
+				'label' => esc_html__( 'Content Alignment', 'px-elements'),
 				'type' => Controls_Manager::CHOOSE,
 				'label_block' => true,
 				'options' => [
 					'left' => [
-						'title' => esc_html__( 'Left', 'essential-addons-for-elementor-lite'),
+						'title' => esc_html__( 'Left', 'px-elements'),
 						'icon' => 'fa fa-align-left',
 					],
 					'center' => [
-						'title' => esc_html__( 'Center', 'essential-addons-for-elementor-lite'),
+						'title' => esc_html__( 'Center', 'px-elements'),
 						'icon' => 'fa fa-align-center',
 					],
 					'right' => [
-						'title' => esc_html__( 'Right', 'essential-addons-for-elementor-lite'),
+						'title' => esc_html__( 'Right', 'px-elements'),
 						'icon' => 'fa fa-align-right',
 					],
 					'justify' => [
-						'title' => __( 'Justified', 'essential-addons-for-elementor-lite'),
+						'title' => __( 'Justified', 'px-elements'),
 						'icon' => 'fa fa-align-justify',
 					],
 				],
@@ -389,11 +389,11 @@ class Tooltip extends Widget_Base {
 
 		$this->start_controls_tabs( 'eael_tooltip_content_style_tabs' );
 			// Normal State Tab
-			$this->start_controls_tab( 'eael_tooltip_content_normal', [ 'label' => esc_html__( 'Normal', 'essential-addons-for-elementor-lite') ] );
+			$this->start_controls_tab( 'eael_tooltip_content_normal', [ 'label' => esc_html__( 'Normal', 'px-elements') ] );
 				$this->add_control(
 					'eael_tooltip_content_bg_color',
 					[
-						'label' => esc_html__( 'Background Color', 'essential-addons-for-elementor-lite'),
+						'label' => esc_html__( 'Background Color', 'px-elements'),
 						'type' => Controls_Manager::COLOR,
 						'default' => '',
 						'selectors' => [
@@ -404,7 +404,7 @@ class Tooltip extends Widget_Base {
 				$this->add_control(
 					'eael_tooltip_content_color',
 					[
-						'label' => esc_html__( 'Text Color', 'essential-addons-for-elementor-lite'),
+						'label' => esc_html__( 'Text Color', 'px-elements'),
 						'type' => Controls_Manager::COLOR,
 						'default' => '',
 						'selectors' => [
@@ -425,18 +425,18 @@ class Tooltip extends Widget_Base {
 					Group_Control_Border::get_type(),
 					[
 						'name' => 'eael_tooltip_border',
-						'label' => esc_html__( 'Border', 'essential-addons-for-elementor-lite'),
+						'label' => esc_html__( 'Border', 'px-elements'),
 						'selector' => '{{WRAPPER}} .eael-tooltip',
 					]
 				);
 			$this->end_controls_tab();
 
 			// Hover State Tab
-			$this->start_controls_tab( 'eael_tooltip_content_hover', [ 'label' => esc_html__( 'Hover', 'essential-addons-for-elementor-lite') ] );
+			$this->start_controls_tab( 'eael_tooltip_content_hover', [ 'label' => esc_html__( 'Hover', 'px-elements') ] );
 				$this->add_control(
 					'eael_tooltip_content_hover_bg_color',
 					[
-						'label' => esc_html__( 'Background Color', 'essential-addons-for-elementor-lite'),
+						'label' => esc_html__( 'Background Color', 'px-elements'),
 						'type' => Controls_Manager::COLOR,
 						'default' => '',
 						'selectors' => [
@@ -447,7 +447,7 @@ class Tooltip extends Widget_Base {
 				$this->add_control(
 					'eael_tooltip_content_hover_color',
 					[
-						'label' => esc_html__( 'Text Color', 'essential-addons-for-elementor-lite'),
+						'label' => esc_html__( 'Text Color', 'px-elements'),
 						'type' => Controls_Manager::COLOR,
 						'default' => '#212121',
 						'selectors' => [
@@ -468,7 +468,7 @@ class Tooltip extends Widget_Base {
 					Group_Control_Border::get_type(),
 					[
 						'name' => 'eael_tooltip_hover_border',
-						'label' => esc_html__( 'Border', 'essential-addons-for-elementor-lite'),
+						'label' => esc_html__( 'Border', 'px-elements'),
 						'selector' => '{{WRAPPER}} .eael-tooltip:hover',
 					]
 				);
@@ -485,7 +485,7 @@ class Tooltip extends Widget_Base {
 		$this->add_responsive_control(
 			'eael_tooltip_content_radius',
 			[
-				'label' => esc_html__( 'Border Radius', 'essential-addons-for-elementor-lite'),
+				'label' => esc_html__( 'Border Radius', 'px-elements'),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
@@ -499,14 +499,14 @@ class Tooltip extends Widget_Base {
 			$this->start_controls_section(
 				'eael_section_pro',
 				[
-					'label' => __( 'Go Premium for More Features', 'essential-addons-for-elementor-lite')
+					'label' => __( 'Go Premium for More Features', 'px-elements')
 				]
 			);
 
 			$this->add_control(
 				'eael_control_get_pro',
 				[
-					'label' => __( 'Unlock more possibilities', 'essential-addons-for-elementor-lite'),
+					'label' => __( 'Unlock more possibilities', 'px-elements'),
 					'type' => Controls_Manager::CHOOSE,
 					'options' => [
 						'1' => [
@@ -530,14 +530,14 @@ class Tooltip extends Widget_Base {
 		$this->start_controls_section(
 			'eael_section_tooltip_hover_style_settings',
 			[
-				'label' => esc_html__( 'Tooltip Style', 'essential-addons-for-elementor-lite'),
+				'label' => esc_html__( 'Tooltip Style', 'px-elements'),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
 		$this->add_responsive_control(
 			'eael_tooltip_hover_width',
 		    [
-		        'label' => __( 'Tooltip Width', 'essential-addons-for-elementor-lite'),
+		        'label' => __( 'Tooltip Width', 'px-elements'),
 		        'type' => Controls_Manager::SLIDER,
 		        'default' => [
 		        	'size' => '150'
@@ -562,7 +562,7 @@ class Tooltip extends Widget_Base {
 		$this->add_responsive_control(
 			'eael_tooltip_hover_max_width',
 		    [
-		        'label' => __( 'Tooltip Max Width', 'essential-addons-for-elementor-lite'),
+		        'label' => __( 'Tooltip Max Width', 'px-elements'),
 		        'type' => Controls_Manager::SLIDER,
 		        'default' => [
 		        	'size' => '150'
@@ -587,7 +587,7 @@ class Tooltip extends Widget_Base {
 		$this->add_responsive_control(
 			'eael_tooltip_hover_content_padding',
 			[
-				'label' => esc_html__( 'Padding', 'essential-addons-for-elementor-lite'),
+				'label' => esc_html__( 'Padding', 'px-elements'),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
@@ -598,7 +598,7 @@ class Tooltip extends Widget_Base {
 		$this->add_responsive_control(
 			'eael_tooltip_hover_content_margin',
 			[
-				'label' => esc_html__( 'Margin', 'essential-addons-for-elementor-lite'),
+				'label' => esc_html__( 'Margin', 'px-elements'),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
@@ -609,7 +609,7 @@ class Tooltip extends Widget_Base {
 		$this->add_control(
 			'eael_tooltip_hover_content_bg_color',
 			[
-				'label' => esc_html__( 'Background Color', 'essential-addons-for-elementor-lite'),
+				'label' => esc_html__( 'Background Color', 'px-elements'),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#555',
 				'selectors' => [
@@ -620,7 +620,7 @@ class Tooltip extends Widget_Base {
 		$this->add_control(
 			'eael_tooltip_hover_content_color',
 			[
-				'label' => esc_html__( 'Text Color', 'essential-addons-for-elementor-lite'),
+				'label' => esc_html__( 'Text Color', 'px-elements'),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#fff',
 				'selectors' => [
@@ -645,7 +645,7 @@ class Tooltip extends Widget_Base {
 		$this->add_responsive_control(
 			'eael_tooltip_arrow_size',
 			[
-				'label' => __( 'Arrow Size', 'essential-addons-for-elementor-lite'),
+				'label' => __( 'Arrow Size', 'px-elements'),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 5,
@@ -671,7 +671,7 @@ class Tooltip extends Widget_Base {
 		$this->add_control(
 			'eael_tooltip_arrow_color',
 			[
-				'label' => esc_html__( 'Arrow Color', 'essential-addons-for-elementor-lite'),
+				'label' => esc_html__( 'Arrow Color', 'px-elements'),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#555',
 				'selectors' => [

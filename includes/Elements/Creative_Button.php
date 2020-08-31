@@ -21,7 +21,7 @@ class Creative_Button extends Widget_Base {
     }
 
     public function get_title() {
-        return esc_html__( 'Creative Button', 'essential-addons-for-elementor-lite' );
+        return esc_html__( 'Creative Button', 'px-elements' );
     }
 
     public function get_icon() {
@@ -58,38 +58,38 @@ class Creative_Button extends Widget_Base {
             $this->start_controls_section(
                 'eael_section_creative_button_content',
                 [
-                    'label' => esc_html__( 'Button Content', 'essential-addons-for-elementor-lite' ),
+                    'label' => esc_html__( 'Button Content', 'px-elements' ),
                 ]
             );
 
             $this->add_control(
                 'creative_button_text',
                 [
-                    'label'       => __( 'Button Text', 'essential-addons-for-elementor-lite' ),
+                    'label'       => __( 'Button Text', 'px-elements' ),
                     'type'        => Controls_Manager::TEXT,
                     'label_block' => true,
                     'default'     => 'Click Me!',
-                    'placeholder' => __( 'Enter button text', 'essential-addons-for-elementor-lite' ),
-                    'title'       => __( 'Enter button text here', 'essential-addons-for-elementor-lite' ),
+                    'placeholder' => __( 'Enter button text', 'px-elements' ),
+                    'title'       => __( 'Enter button text here', 'px-elements' ),
                 ]
             );
 
             $this->add_control(
                 'creative_button_secondary_text',
                 [
-                    'label'       => __( 'Button Secondary Text', 'essential-addons-for-elementor-lite' ),
+                    'label'       => __( 'Button Secondary Text', 'px-elements' ),
                     'type'        => Controls_Manager::TEXT,
                     'label_block' => true,
                     'default'     => 'Go!',
-                    'placeholder' => __( 'Enter button secondary text', 'essential-addons-for-elementor-lite' ),
-                    'title'       => __( 'Enter button secondary text here', 'essential-addons-for-elementor-lite' ),
+                    'placeholder' => __( 'Enter button secondary text', 'px-elements' ),
+                    'title'       => __( 'Enter button secondary text here', 'px-elements' ),
                 ]
             );
 
             $this->add_control(
                 'creative_button_link_url',
                 [
-                    'label'         => esc_html__( 'Link URL', 'essential-addons-for-elementor-lite' ),
+                    'label'         => esc_html__( 'Link URL', 'px-elements' ),
                     'type'          => Controls_Manager::URL,
                     'label_block'   => true,
                     'default'       => [
@@ -103,7 +103,7 @@ class Creative_Button extends Widget_Base {
             $this->add_control(
                 'eael_creative_button_icon_new',
                 [
-                    'label'            => esc_html__( 'Icon', 'essential-addons-for-elementor-lite' ),
+                    'label'            => esc_html__( 'Icon', 'px-elements' ),
                     'type'             => Controls_Manager::ICONS,
                     'fa4compatibility' => 'eael_creative_button_icon',
                     'condition'        => [
@@ -115,12 +115,12 @@ class Creative_Button extends Widget_Base {
             $this->add_control(
                 'eael_creative_button_icon_alignment',
                 [
-                    'label'     => esc_html__( 'Icon Position', 'essential-addons-for-elementor-lite' ),
+                    'label'     => esc_html__( 'Icon Position', 'px-elements' ),
                     'type'      => Controls_Manager::SELECT,
                     'default'   => 'left',
                     'options'   => [
-                        'left'  => esc_html__( 'Before', 'essential-addons-for-elementor-lite' ),
-                        'right' => esc_html__( 'After', 'essential-addons-for-elementor-lite' ),
+                        'left'  => esc_html__( 'Before', 'px-elements' ),
+                        'right' => esc_html__( 'After', 'px-elements' ),
                     ],
                     'condition' => [
                         'eael_creative_button_icon_new!' => '',
@@ -132,7 +132,7 @@ class Creative_Button extends Widget_Base {
             $this->add_responsive_control(
                 'eael_creative_button_icon_indent',
                 [
-                    'label'     => esc_html__( 'Icon Spacing', 'essential-addons-for-elementor-lite' ),
+                    'label'     => esc_html__( 'Icon Spacing', 'px-elements' ),
                     'type'      => Controls_Manager::SLIDER,
                     'range'     => [
                         'px' => [
@@ -160,14 +160,14 @@ class Creative_Button extends Widget_Base {
             $this->start_controls_section(
                 'eael_section_pro',
                 [
-                    'label' => __( 'Go Premium for More Features', 'essential-addons-for-elementor-lite' ),
+                    'label' => __( 'Go Premium for More Features', 'px-elements' ),
                 ]
             );
 
             $this->add_control(
                 'eael_control_get_pro',
                 [
-                    'label'       => __( 'Unlock more possibilities', 'essential-addons-for-elementor-lite' ),
+                    'label'       => __( 'Unlock more possibilities', 'px-elements' ),
                     'type'        => Controls_Manager::CHOOSE,
                     'options'     => [
                         '1' => [
@@ -187,7 +187,7 @@ class Creative_Button extends Widget_Base {
         $this->start_controls_section(
             'eael_section_creative_button_settings',
             [
-                'label' => esc_html__( 'Button Effects &amp; Styles', 'essential-addons-for-elementor-lite' ),
+                'label' => esc_html__( 'Button Effects &amp; Styles', 'px-elements' ),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -195,26 +195,26 @@ class Creative_Button extends Widget_Base {
             $this->add_control(
                 'creative_button_effect',
                 [
-                    'label'       => esc_html__( 'Set Button Effect', 'essential-addons-for-elementor-lite' ),
+                    'label'       => esc_html__( 'Set Button Effect', 'px-elements' ),
                     'type'        => Controls_Manager::SELECT,
                     'default'     => 'eael-creative-button--default',
                     'options'     => [
-                        'eael-creative-button--default' => esc_html__( 'Default', 'essential-addons-for-elementor-lite' ),
-                        'eael-creative-button--winona'  => esc_html__( 'Winona', 'essential-addons-for-elementor-lite' ),
-                        'eael-creative-button--ujarak'  => esc_html__( 'Ujarak', 'essential-addons-for-elementor-lite' ),
-                        'eael-creative-button--wayra'   => esc_html__( 'Wayra', 'essential-addons-for-elementor-lite' ),
-                        'eael-creative-button--tamaya'  => esc_html__( 'Tamaya', 'essential-addons-for-elementor-lite' ),
-                        'eael-creative-button--rayen'   => esc_html__( 'Rayen', 'essential-addons-for-elementor-lite' ),
-                        'eael-creative-button--pipaluk' => esc_html__( 'Pipaluk (Pro)', 'essential-addons-for-elementor-lite' ),
-                        'eael-creative-button--moema'   => esc_html__( 'Moema (Pro)', 'essential-addons-for-elementor-lite' ),
-                        'eael-creative-button--wave'    => esc_html__( 'Wave (Pro)', 'essential-addons-for-elementor-lite' ),
-                        'eael-creative-button--aylen'   => esc_html__( 'Aylen (Pro)', 'essential-addons-for-elementor-lite' ),
-                        'eael-creative-button--saqui'   => esc_html__( 'Saqui (Pro)', 'essential-addons-for-elementor-lite' ),
-                        'eael-creative-button--wapasha' => esc_html__( 'Wapasha (Pro)', 'essential-addons-for-elementor-lite' ),
-                        'eael-creative-button--nuka'    => esc_html__( 'Nuka (Pro)', 'essential-addons-for-elementor-lite' ),
-                        'eael-creative-button--antiman' => esc_html__( 'Antiman (Pro)', 'essential-addons-for-elementor-lite' ),
-                        'eael-creative-button--quidel'  => esc_html__( 'Quidel (Pro)', 'essential-addons-for-elementor-lite' ),
-                        'eael-creative-button--shikoba' => esc_html__( 'Shikoba (Pro)', 'essential-addons-for-elementor-lite' ),
+                        'eael-creative-button--default' => esc_html__( 'Default', 'px-elements' ),
+                        'eael-creative-button--winona'  => esc_html__( 'Winona', 'px-elements' ),
+                        'eael-creative-button--ujarak'  => esc_html__( 'Ujarak', 'px-elements' ),
+                        'eael-creative-button--wayra'   => esc_html__( 'Wayra', 'px-elements' ),
+                        'eael-creative-button--tamaya'  => esc_html__( 'Tamaya', 'px-elements' ),
+                        'eael-creative-button--rayen'   => esc_html__( 'Rayen', 'px-elements' ),
+                        'eael-creative-button--pipaluk' => esc_html__( 'Pipaluk (Pro)', 'px-elements' ),
+                        'eael-creative-button--moema'   => esc_html__( 'Moema (Pro)', 'px-elements' ),
+                        'eael-creative-button--wave'    => esc_html__( 'Wave (Pro)', 'px-elements' ),
+                        'eael-creative-button--aylen'   => esc_html__( 'Aylen (Pro)', 'px-elements' ),
+                        'eael-creative-button--saqui'   => esc_html__( 'Saqui (Pro)', 'px-elements' ),
+                        'eael-creative-button--wapasha' => esc_html__( 'Wapasha (Pro)', 'px-elements' ),
+                        'eael-creative-button--nuka'    => esc_html__( 'Nuka (Pro)', 'px-elements' ),
+                        'eael-creative-button--antiman' => esc_html__( 'Antiman (Pro)', 'px-elements' ),
+                        'eael-creative-button--quidel'  => esc_html__( 'Quidel (Pro)', 'px-elements' ),
+                        'eael-creative-button--shikoba' => esc_html__( 'Shikoba (Pro)', 'px-elements' ),
                     ],
                     'description' => '10 more effects on <a href="https://wpdeveloper.net/in/upgrade-essential-addons-elementor">Pro version</a>',
                 ]
@@ -222,22 +222,22 @@ class Creative_Button extends Widget_Base {
             $this->add_control(
                 'use_gradient_background',
                 [
-                    'label'        => __( 'Use Gradient Background', 'essential-addons-for-elementor-lite' ),
+                    'label'        => __( 'Use Gradient Background', 'px-elements' ),
                     'type'         => Controls_Manager::SWITCHER,
-                    'label_on'     => __( 'Show', 'essential-addons-for-elementor-lite' ),
-                    'label_off'    => __( 'Hide', 'essential-addons-for-elementor-lite' ),
+                    'label_on'     => __( 'Show', 'px-elements' ),
+                    'label_off'    => __( 'Hide', 'px-elements' ),
                     'return_value' => 'yes',
                     'default'      => '',
                 ]
             );
             $this->start_controls_tabs( 'eael_creative_button_tabs' );
 
-            $this->start_controls_tab( 'normal', ['label' => esc_html__( 'Normal', 'essential-addons-for-elementor-lite' )] );
+            $this->start_controls_tab( 'normal', ['label' => esc_html__( 'Normal', 'px-elements' )] );
 
             $this->add_control(
                 'eael_creative_button_text_color',
                 [
-                    'label'     => esc_html__( 'Text Color', 'essential-addons-for-elementor-lite' ),
+                    'label'     => esc_html__( 'Text Color', 'px-elements' ),
                     'type'      => Controls_Manager::COLOR,
                     'default'   => '#ffffff',
                     'selectors' => [
@@ -250,7 +250,7 @@ class Creative_Button extends Widget_Base {
             $this->add_control(
                 'eael_creative_button_background_color',
                 [
-                    'label'     => esc_html__( 'Background Color', 'essential-addons-for-elementor-lite' ),
+                    'label'     => esc_html__( 'Background Color', 'px-elements' ),
                     'type'      => Controls_Manager::COLOR,
                     'default'   => '#f54',
                     'selectors' => [
@@ -295,7 +295,7 @@ class Creative_Button extends Widget_Base {
             $this->add_control(
                 'eael_creative_button_border_radius',
                 [
-                    'label'     => esc_html__( 'Border Radius', 'essential-addons-for-elementor-lite' ),
+                    'label'     => esc_html__( 'Border Radius', 'px-elements' ),
                     'type'      => Controls_Manager::SLIDER,
                     'range'     => [
                         'px' => [
@@ -312,12 +312,12 @@ class Creative_Button extends Widget_Base {
 
             $this->end_controls_tab();
 
-            $this->start_controls_tab( 'eael_creative_button_hover', ['label' => esc_html__( 'Hover', 'essential-addons-for-elementor-lite' )] );
+            $this->start_controls_tab( 'eael_creative_button_hover', ['label' => esc_html__( 'Hover', 'px-elements' )] );
 
             $this->add_control(
                 'eael_creative_button_hover_text_color',
                 [
-                    'label'     => esc_html__( 'Text Color', 'essential-addons-for-elementor-lite' ),
+                    'label'     => esc_html__( 'Text Color', 'px-elements' ),
                     'type'      => Controls_Manager::COLOR,
                     'default'   => '#ffffff',
                     'selectors' => [
@@ -330,7 +330,7 @@ class Creative_Button extends Widget_Base {
             $this->add_control(
                 'eael_creative_button_hover_background_color',
                 [
-                    'label'     => esc_html__( 'Background Color', 'essential-addons-for-elementor-lite' ),
+                    'label'     => esc_html__( 'Background Color', 'px-elements' ),
                     'type'      => Controls_Manager::COLOR,
                     'default'   => '#f54',
                     'selectors' => [
@@ -367,7 +367,7 @@ class Creative_Button extends Widget_Base {
             $this->add_control(
                 'eael_creative_button_hover_border_color',
                 [
-                    'label'     => esc_html__( 'Border Color', 'essential-addons-for-elementor-lite' ),
+                    'label'     => esc_html__( 'Border Color', 'px-elements' ),
                     'type'      => Controls_Manager::COLOR,
                     'default'   => '',
                     'selectors' => [
@@ -387,20 +387,20 @@ class Creative_Button extends Widget_Base {
             $this->add_responsive_control(
                 'eael_creative_button_alignment',
                 [
-                    'label'       => esc_html__( 'Button Alignment', 'essential-addons-for-elementor-lite' ),
+                    'label'       => esc_html__( 'Button Alignment', 'px-elements' ),
                     'type'        => Controls_Manager::CHOOSE,
                     'label_block' => true,
                     'options'     => [
                         'flex-start' => [
-                            'title' => esc_html__( 'Left', 'essential-addons-for-elementor-lite' ),
+                            'title' => esc_html__( 'Left', 'px-elements' ),
                             'icon'  => 'fa fa-align-left',
                         ],
                         'center'     => [
-                            'title' => esc_html__( 'Center', 'essential-addons-for-elementor-lite' ),
+                            'title' => esc_html__( 'Center', 'px-elements' ),
                             'icon'  => 'fa fa-align-center',
                         ],
                         'flex-end'   => [
-                            'title' => esc_html__( 'Right', 'essential-addons-for-elementor-lite' ),
+                            'title' => esc_html__( 'Right', 'px-elements' ),
                             'icon'  => 'fa fa-align-right',
                         ],
                     ],
@@ -414,7 +414,7 @@ class Creative_Button extends Widget_Base {
             $this->add_responsive_control(
                 'eael_creative_button_width',
                 [
-                    'label'      => esc_html__( 'Width', 'essential-addons-for-elementor-lite' ),
+                    'label'      => esc_html__( 'Width', 'px-elements' ),
                     'type'       => Controls_Manager::SLIDER,
                     'size_units' => ['px', '%'],
                     'range'      => [
@@ -446,7 +446,7 @@ class Creative_Button extends Widget_Base {
             $this->add_responsive_control(
                 'eael_creative_button_icon_size',
                 [
-                    'label'      => esc_html__( 'Icon Size', 'essential-addons-for-elementor-lite' ),
+                    'label'      => esc_html__( 'Icon Size', 'px-elements' ),
                     'type'       => Controls_Manager::SLIDER,
                     'size_units' => ['px', '%'],
                     'default'    => [
@@ -474,7 +474,7 @@ class Creative_Button extends Widget_Base {
             $this->add_responsive_control(
                 'eael_creative_button_padding',
                 [
-                    'label'      => esc_html__( 'Button Padding', 'essential-addons-for-elementor-lite' ),
+                    'label'      => esc_html__( 'Button Padding', 'px-elements' ),
                     'type'       => Controls_Manager::DIMENSIONS,
                     'size_units' => ['px', 'em', '%'],
                     'selectors'  => [

@@ -46,10 +46,10 @@ class Image_Accordion extends WPML_Elementor_Module_With_Items {
 	protected function get_title( $field ) {
 		switch($field) {
 			case 'eael_accordion_tittle':
-				return __( 'Image Accordion: Title', 'essential-addons-for-elementor-lite');
+				return __( 'Image Accordion: Title', 'px-elements');
 
 			case 'eael_accordion_content':
-				return __( 'Image Accordion: Content', 'essential-addons-for-elementor-lite');
+				return __( 'Image Accordion: Content', 'px-elements');
 
 			default:
 				return '';

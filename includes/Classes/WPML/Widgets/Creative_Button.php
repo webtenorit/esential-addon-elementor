@@ -52,7 +52,7 @@ class Creative_Button extends WPML_Elementor_Module_With_Items
     {
         switch ($field) {
             case 'url':
-                return __('Creative Button: Link URL', 'essential-addons-for-elementor-lite');
+                return __('Creative Button: Link URL', 'px-elements');
 
             default:
                 return '';

@@ -25,7 +25,7 @@ class Adv_Accordion extends Widget_Base
 
     public function get_title()
     {
-        return esc_html__('Advanced Accordion', 'essential-addons-for-elementor-lite');
+        return esc_html__('Advanced Accordion', 'px-elements');
     }
 
     public function get_icon()
@@ -68,26 +68,26 @@ class Adv_Accordion extends Widget_Base
         $this->start_controls_section(
             'eael_section_adv-accordion_settings',
             [
-                'label' => esc_html__('General Settings', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('General Settings', 'px-elements'),
             ]
         );
         $this->add_control(
             'eael_adv_accordion_type',
             [
-                'label' => esc_html__('Accordion Type', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Accordion Type', 'px-elements'),
                 'type' => Controls_Manager::SELECT,
                 'default' => 'accordion',
                 'label_block' => false,
                 'options' => [
-                    'accordion' => esc_html__('Accordion', 'essential-addons-for-elementor-lite'),
-                    'toggle' => esc_html__('Toggle', 'essential-addons-for-elementor-lite'),
+                    'accordion' => esc_html__('Accordion', 'px-elements'),
+                    'toggle' => esc_html__('Toggle', 'px-elements'),
                 ],
             ]
         );
         $this->add_control(
             'eael_adv_accordion_icon_show',
             [
-                'label' => esc_html__('Enable Toggle Icon', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Enable Toggle Icon', 'px-elements'),
                 'type' => Controls_Manager::SWITCHER,
                 'default' => 'yes',
                 'return_value' => 'yes',
@@ -96,10 +96,10 @@ class Adv_Accordion extends Widget_Base
         $this->add_control(
             'eael_adv_accordion_toggle_icon_postion',
             [
-                'label' => esc_html__('Toggle Icon Postion', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Toggle Icon Postion', 'px-elements'),
                 'type' => Controls_Manager::SWITCHER,
-                'label_on' => __( 'Right', 'essential-addons-for-elementor-lite' ),
-				'label_off' => __( 'Left', 'essential-addons-for-elementor-lite' ),
+                'label_on' => __( 'Right', 'px-elements' ),
+				'label_off' => __( 'Left', 'px-elements' ),
                 'default' => 'right',
                 'return_value' => 'right',
                 'condition' => [
@@ -111,7 +111,7 @@ class Adv_Accordion extends Widget_Base
         $this->add_control(
             'eael_adv_accordion_icon_new',
             [
-                'label' => esc_html__('Toggle Icon', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Toggle Icon', 'px-elements'),
                 'type' => Controls_Manager::ICONS,
                 'fa4compatibility' => 'eael_adv_accordion_icon',
                 'default' => [
@@ -126,7 +126,7 @@ class Adv_Accordion extends Widget_Base
         $this->add_control(
             'eael_adv_accordion_toggle_speed',
             [
-                'label' => esc_html__('Toggle Speed (ms)', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Toggle Speed (ms)', 'px-elements'),
                 'type' => Controls_Manager::NUMBER,
                 'label_block' => false,
                 'default' => 300,
@@ -140,7 +140,7 @@ class Adv_Accordion extends Widget_Base
         $this->start_controls_section(
             'eael_section_adv_accordion_content_settings',
             [
-                'label' => esc_html__('Content Settings', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Content Settings', 'px-elements'),
             ]
         );
         $this->add_control(
@@ -149,28 +149,28 @@ class Adv_Accordion extends Widget_Base
                 'type' => Controls_Manager::REPEATER,
                 'seperator' => 'before',
                 'default' => [
-                    ['eael_adv_accordion_tab_title' => esc_html__('Accordion Tab Title 1', 'essential-addons-for-elementor-lite')],
-                    ['eael_adv_accordion_tab_title' => esc_html__('Accordion Tab Title 2', 'essential-addons-for-elementor-lite')],
-                    ['eael_adv_accordion_tab_title' => esc_html__('Accordion Tab Title 3', 'essential-addons-for-elementor-lite')],
+                    ['eael_adv_accordion_tab_title' => esc_html__('Accordion Tab Title 1', 'px-elements')],
+                    ['eael_adv_accordion_tab_title' => esc_html__('Accordion Tab Title 2', 'px-elements')],
+                    ['eael_adv_accordion_tab_title' => esc_html__('Accordion Tab Title 3', 'px-elements')],
                 ],
                 'fields' => [
                     [
                         'name' => 'eael_adv_accordion_tab_default_active',
-                        'label' => esc_html__('Active as Default', 'essential-addons-for-elementor-lite'),
+                        'label' => esc_html__('Active as Default', 'px-elements'),
                         'type' => Controls_Manager::SWITCHER,
                         'default' => 'no',
                         'return_value' => 'yes',
                     ],
                     [
                         'name' => 'eael_adv_accordion_tab_icon_show',
-                        'label' => esc_html__('Enable Tab Icon', 'essential-addons-for-elementor-lite'),
+                        'label' => esc_html__('Enable Tab Icon', 'px-elements'),
                         'type' => Controls_Manager::SWITCHER,
                         'default' => 'yes',
                         'return_value' => 'yes',
                     ],
                     [
                         'name' => 'eael_adv_accordion_tab_title_icon_new',
-                        'label' => esc_html__('Icon', 'essential-addons-for-elementor-lite'),
+                        'label' => esc_html__('Icon', 'px-elements'),
                         'type' => Controls_Manager::ICONS,
                         'fa4compatibility' => 'eael_adv_accordion_tab_title_icon',
                         'default' => [
@@ -183,24 +183,24 @@ class Adv_Accordion extends Widget_Base
                     ],
                     [
                         'name' => 'eael_adv_accordion_tab_title',
-                        'label' => esc_html__('Tab Title', 'essential-addons-for-elementor-lite'),
+                        'label' => esc_html__('Tab Title', 'px-elements'),
                         'type' => Controls_Manager::TEXT,
-                        'default' => esc_html__('Tab Title', 'essential-addons-for-elementor-lite'),
+                        'default' => esc_html__('Tab Title', 'px-elements'),
                         'dynamic' => ['active' => true],
                     ],
                     [
                         'name' => 'eael_adv_accordion_text_type',
-                        'label' => __('Content Type', 'essential-addons-for-elementor-lite'),
+                        'label' => __('Content Type', 'px-elements'),
                         'type' => Controls_Manager::SELECT,
                         'options' => [
-                            'content' => __('Content', 'essential-addons-for-elementor-lite'),
-                            'template' => __('Saved Templates', 'essential-addons-for-elementor-lite'),
+                            'content' => __('Content', 'px-elements'),
+                            'template' => __('Saved Templates', 'px-elements'),
                         ],
                         'default' => 'content',
                     ],
                     [
                         'name' => 'eael_primary_templates',
-                        'label' => __('Choose Template', 'essential-addons-for-elementor-lite'),
+                        'label' => __('Choose Template', 'px-elements'),
                         'type' => Controls_Manager::SELECT,
                         'options' => $this->eael_get_page_templates(),
                         'condition' => [
@@ -209,9 +209,9 @@ class Adv_Accordion extends Widget_Base
                     ],
                     [
                         'name' => 'eael_adv_accordion_tab_content',
-                        'label' => esc_html__('Tab Content', 'essential-addons-for-elementor-lite'),
+                        'label' => esc_html__('Tab Content', 'px-elements'),
                         'type' => Controls_Manager::WYSIWYG,
-                        'default' => esc_html__('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, neque qui velit. Magni dolorum quidem ipsam eligendi, totam, facilis laudantium cum accusamus ullam voluptatibus commodi numquam, error, est. Ea, consequatur.', 'essential-addons-for-elementor-lite'),
+                        'default' => esc_html__('Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, neque qui velit. Magni dolorum quidem ipsam eligendi, totam, facilis laudantium cum accusamus ullam voluptatibus commodi numquam, error, est. Ea, consequatur.', 'px-elements'),
                         'dynamic' => ['active' => true],
                         'condition' => [
                             'eael_adv_accordion_text_type' => 'content',
@@ -227,14 +227,14 @@ class Adv_Accordion extends Widget_Base
             $this->start_controls_section(
                 'eael_section_pro',
                 [
-                    'label' => __('Go Premium for More Features', 'essential-addons-for-elementor-lite'),
+                    'label' => __('Go Premium for More Features', 'px-elements'),
                 ]
             );
 
             $this->add_control(
                 'eael_control_get_pro',
                 [
-                    'label' => __('Unlock more possibilities', 'essential-addons-for-elementor-lite'),
+                    'label' => __('Unlock more possibilities', 'px-elements'),
                     'type' => Controls_Manager::CHOOSE,
                     'options' => [
                         '1' => [
@@ -258,14 +258,14 @@ class Adv_Accordion extends Widget_Base
         $this->start_controls_section(
             'eael_section_adv_accordion_style_settings',
             [
-                'label' => esc_html__('General Style', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('General Style', 'px-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
         $this->add_responsive_control(
             'eael_adv_accordion_padding',
             [
-                'label' => esc_html__('Padding', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Padding', 'px-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -276,7 +276,7 @@ class Adv_Accordion extends Widget_Base
         $this->add_responsive_control(
             'eael_adv_accordion_margin',
             [
-                'label' => esc_html__('Margin', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Margin', 'px-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -288,14 +288,14 @@ class Adv_Accordion extends Widget_Base
             Group_Control_Border::get_type(),
             [
                 'name' => 'eael_adv_accordion_border',
-                'label' => esc_html__('Border', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Border', 'px-elements'),
                 'selector' => '{{WRAPPER}} .eael-adv-accordion',
             ]
         );
         $this->add_responsive_control(
             'eael_adv_accordion_border_radius',
             [
-                'label' => esc_html__('Border Radius', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Border Radius', 'px-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -320,7 +320,7 @@ class Adv_Accordion extends Widget_Base
         $this->start_controls_section(
             'eael_section_adv_accordions_tab_style_settings',
             [
-                'label' => esc_html__('Tab Style', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Tab Style', 'px-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -334,7 +334,7 @@ class Adv_Accordion extends Widget_Base
         $this->add_responsive_control(
             'eael_adv_accordion_tab_icon_size',
             [
-                'label' => __('Icon Size', 'essential-addons-for-elementor-lite'),
+                'label' => __('Icon Size', 'px-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'default' => [
                     'size' => 16,
@@ -357,7 +357,7 @@ class Adv_Accordion extends Widget_Base
         $this->add_responsive_control(
             'eael_adv_accordion_tab_icon_gap',
             [
-                'label' => __('Icon Gap', 'essential-addons-for-elementor-lite'),
+                'label' => __('Icon Gap', 'px-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'default' => [
                     'size' => 10,
@@ -384,7 +384,7 @@ class Adv_Accordion extends Widget_Base
         $this->add_responsive_control(
             'eael_adv_accordion_tab_icon_gap_left',
             [
-                'label' => __('Icon Gap', 'essential-addons-for-elementor-lite'),
+                'label' => __('Icon Gap', 'px-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'default' => [
                     'size' => 10,
@@ -411,7 +411,7 @@ class Adv_Accordion extends Widget_Base
         $this->add_responsive_control(
             'eael_adv_accordion_tab_distance',
             [
-                'label' => esc_html__('Distance', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Distance', 'px-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -423,7 +423,7 @@ class Adv_Accordion extends Widget_Base
         $this->add_responsive_control(
             'eael_adv_accordion_tab_padding',
             [
-                'label' => esc_html__('Padding', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Padding', 'px-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -434,7 +434,7 @@ class Adv_Accordion extends Widget_Base
         $this->add_responsive_control(
             'eael_adv_accordion_tab_margin',
             [
-                'label' => esc_html__('Margin', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Margin', 'px-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -445,11 +445,11 @@ class Adv_Accordion extends Widget_Base
 
         $this->start_controls_tabs('eael_adv_accordion_header_tabs');
         # Normal State Tab
-        $this->start_controls_tab('eael_adv_accordion_header_normal', ['label' => esc_html__('Normal', 'essential-addons-for-elementor-lite')]);
+        $this->start_controls_tab('eael_adv_accordion_header_normal', ['label' => esc_html__('Normal', 'px-elements')]);
         $this->add_control(
             'eael_adv_accordion_tab_color',
             [
-                'label' => esc_html__('Background Color', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Background Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#f1f1f1',
                 'selectors' => [
@@ -468,7 +468,7 @@ class Adv_Accordion extends Widget_Base
         $this->add_control(
             'eael_adv_accordion_tab_text_color',
             [
-                'label' => esc_html__('Text Color', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Text Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#333',
                 'selectors' => [
@@ -479,7 +479,7 @@ class Adv_Accordion extends Widget_Base
         $this->add_control(
             'eael_adv_accordion_tab_icon_color',
             [
-                'label' => esc_html__('Icon Color', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Icon Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#333',
                 'selectors' => [
@@ -494,14 +494,14 @@ class Adv_Accordion extends Widget_Base
             Group_Control_Border::get_type(),
             [
                 'name' => 'eael_adv_accordion_tab_border',
-                'label' => esc_html__('Border', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Border', 'px-elements'),
                 'selector' => '{{WRAPPER}} .eael-adv-accordion .eael-accordion-list .eael-accordion-header',
             ]
         );
         $this->add_responsive_control(
             'eael_adv_accordion_tab_border_radius',
             [
-                'label' => esc_html__('Border Radius', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Border Radius', 'px-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -515,13 +515,13 @@ class Adv_Accordion extends Widget_Base
         $this->start_controls_tab(
             'eael_adv_accordion_header_hover',
             [
-                'label' => esc_html__('Hover', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Hover', 'px-elements'),
             ]
         );
         $this->add_control(
             'eael_adv_accordion_tab_color_hover',
             [
-                'label' => esc_html__('Background Color', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Background Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#414141',
                 'selectors' => [
@@ -540,7 +540,7 @@ class Adv_Accordion extends Widget_Base
         $this->add_control(
             'eael_adv_accordion_tab_text_color_hover',
             [
-                'label' => esc_html__('Text Color', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Text Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#fff',
                 'selectors' => [
@@ -551,7 +551,7 @@ class Adv_Accordion extends Widget_Base
         $this->add_control(
             'eael_adv_accordion_tab_icon_color_hover',
             [
-                'label' => esc_html__('Icon Color', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Icon Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#fff',
                 'selectors' => [
@@ -566,14 +566,14 @@ class Adv_Accordion extends Widget_Base
             Group_Control_Border::get_type(),
             [
                 'name' => 'eael_adv_accordion_tab_border_hover',
-                'label' => esc_html__('Border', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Border', 'px-elements'),
                 'selector' => '{{WRAPPER}} .eael-adv-accordion .eael-accordion-list .eael-accordion-header:hover',
             ]
         );
         $this->add_responsive_control(
             'eael_adv_accordion_tab_border_radius_hover',
             [
-                'label' => esc_html__('Border Radius', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Border Radius', 'px-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -587,13 +587,13 @@ class Adv_Accordion extends Widget_Base
         $this->start_controls_tab(
             'eael_adv_accordion_header_active',
             [
-                'label' => esc_html__('Active', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Active', 'px-elements'),
             ]
         );
         $this->add_control(
             'eael_adv_accordion_tab_color_active',
             [
-                'label' => esc_html__('Background Color', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Background Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#444',
                 'selectors' => [
@@ -612,7 +612,7 @@ class Adv_Accordion extends Widget_Base
         $this->add_control(
             'eael_adv_accordion_tab_text_color_active',
             [
-                'label' => esc_html__('Text Color', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Text Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#fff',
                 'selectors' => [
@@ -623,7 +623,7 @@ class Adv_Accordion extends Widget_Base
         $this->add_control(
             'eael_adv_accordion_tab_icon_color_active',
             [
-                'label' => esc_html__('Icon Color', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Icon Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#fff',
                 'selectors' => [
@@ -638,14 +638,14 @@ class Adv_Accordion extends Widget_Base
             Group_Control_Border::get_type(),
             [
                 'name' => 'eael_adv_accordion_tab_border_active',
-                'label' => esc_html__('Border', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Border', 'px-elements'),
                 'selector' => '{{WRAPPER}} .eael-adv-accordion .eael-accordion-list .eael-accordion-header.active',
             ]
         );
         $this->add_responsive_control(
             'eael_adv_accordion_tab_border_radius_active',
             [
-                'label' => esc_html__('Border Radius', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Border Radius', 'px-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -665,7 +665,7 @@ class Adv_Accordion extends Widget_Base
         $this->start_controls_section(
             'eael_section_adv_accordion_tab_content_style_settings',
             [
-                'label' => esc_html__('Content Style', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Content Style', 'px-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -673,7 +673,7 @@ class Adv_Accordion extends Widget_Base
         $this->add_control(
             'adv_accordion_content_bg_color',
             [
-                'label' => esc_html__('Background Color', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Background Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '',
                 'selectors' => [
@@ -694,7 +694,7 @@ class Adv_Accordion extends Widget_Base
         $this->add_control(
             'adv_accordion_content_text_color',
             [
-                'label' => esc_html__('Text Color', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Text Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#333',
                 'selectors' => [
@@ -712,7 +712,7 @@ class Adv_Accordion extends Widget_Base
         $this->add_responsive_control(
             'eael_adv_accordion_content_padding',
             [
-                'label' => esc_html__('Padding', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Padding', 'px-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -723,7 +723,7 @@ class Adv_Accordion extends Widget_Base
         $this->add_responsive_control(
             'eael_adv_accordion_content_margin',
             [
-                'label' => esc_html__('Margin', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Margin', 'px-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', 'em', '%'],
                 'selectors' => [
@@ -735,7 +735,7 @@ class Adv_Accordion extends Widget_Base
             Group_Control_Border::get_type(),
             [
                 'name' => 'eael_adv_accordion_content_border',
-                'label' => esc_html__('Border', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Border', 'px-elements'),
                 'selector' => '{{WRAPPER}} .eael-adv-accordion .eael-accordion-list .eael-accordion-content',
             ]
         );
@@ -755,7 +755,7 @@ class Adv_Accordion extends Widget_Base
         $this->start_controls_section(
             'eael_section_adv_accordion_caret_settings',
             [
-                'label' => esc_html__('Toggle Caret Style', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Toggle Caret Style', 'px-elements'),
                 'tab' => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -763,7 +763,7 @@ class Adv_Accordion extends Widget_Base
         $this->add_responsive_control(
             'eael_adv_accordion_tab_toggle_icon_size',
             [
-                'label' => __('Icon Size', 'essential-addons-for-elementor-lite'),
+                'label' => __('Icon Size', 'px-elements'),
                 'type' => Controls_Manager::SLIDER,
                 'default' => [
                     'size' => 16,
@@ -789,7 +789,7 @@ class Adv_Accordion extends Widget_Base
         $this->add_responsive_control(
             'eael_adv_accordion_tab_toggle_icon_padding',
             [
-                'label' => __('Icon Padding', 'essential-addons-for-elementor-lite'),
+                'label' => __('Icon Padding', 'px-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%', 'em' ],
                 'selectors' => [
@@ -804,7 +804,7 @@ class Adv_Accordion extends Widget_Base
         $this->add_responsive_control(
             'eael_adv_accordion_tab_toggle_icon_radius',
             [
-                'label' => __('Icon Radius', 'essential-addons-for-elementor-lite'),
+                'label' => __('Icon Radius', 'px-elements'),
                 'type' => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%', 'em' ],
                 'selectors' => [
@@ -825,13 +825,13 @@ class Adv_Accordion extends Widget_Base
 		$this->start_controls_tab(
 			'eael_adv_accordion_tab_caret_tabs_normal',
 			[
-				'label' => __( 'Normal', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Normal', 'px-elements' ),
 			]
 		);
         $this->add_control(
             'eael_adv_tabs_tab_toggle_color',
             [
-                'label' => esc_html__('Caret Color', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Caret Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#444',
                 'selectors' => [
@@ -845,7 +845,7 @@ class Adv_Accordion extends Widget_Base
         $this->add_control(
             'eael_adv_tabs_tab_toggle_background_color',
             [
-                'label' => esc_html__('Background Color', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Background Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .eael-adv-accordion .eael-accordion-list .eael-accordion-header .fa-toggle' => 'background-color: {{VALUE}};',
@@ -859,7 +859,7 @@ class Adv_Accordion extends Widget_Base
 			Group_Control_Border::get_type(),
 			[
 				'name' => 'eael_adv_tabs_tab_toggle_border',
-				'label' => __( 'Border', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Border', 'px-elements' ),
 				'selector' => '{{WRAPPER}} .eael-adv-accordion .eael-accordion-list .eael-accordion-header .fa-toggle',
 			]
 		);
@@ -871,13 +871,13 @@ class Adv_Accordion extends Widget_Base
 		$this->start_controls_tab(
 			'eael_adv_accordion_tab_caret_tabs_hover',
 			[
-				'label' => __( 'Hover', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Hover', 'px-elements' ),
 			]
 		);
         $this->add_control(
             'eael_adv_tabs_tab_toggle_hover_color',
             [
-                'label' => esc_html__('Caret Color', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Caret Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .eael-adv-accordion .eael-accordion-list .eael-accordion-header.active .fa-toggle:hover' => 'color: {{VALUE}};',
@@ -891,7 +891,7 @@ class Adv_Accordion extends Widget_Base
         $this->add_control(
             'eael_adv_tabs_tab_toggle_hover_background_color',
             [
-                'label' => esc_html__('Background Color', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Background Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .eael-adv-accordion .eael-accordion-list .eael-accordion-header.active .fa-toggle:hover'   => 'background-color: {{VALUE}};',
@@ -906,7 +906,7 @@ class Adv_Accordion extends Widget_Base
 			Group_Control_Border::get_type(),
 			[
 				'name' => 'eael_adv_tabs_tab_toggle_border_hover',
-				'label' => __( 'Border', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Border', 'px-elements' ),
 				'selector' => '{{WRAPPER}} .eael-adv-accordion .eael-accordion-list .eael-accordion-header .fa-toggle:hover',
 			]
 		);
@@ -917,13 +917,13 @@ class Adv_Accordion extends Widget_Base
         $this->start_controls_tab(
 			'eael_adv_accordion_tab_caret_tabs_active',
 			[
-				'label' => __( 'Active', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Active', 'px-elements' ),
 			]
 		);
         $this->add_control(
             'eael_adv_tabs_tab_toggle_active_color',
             [
-                'label' => esc_html__('Caret Color', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Caret Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#fff',
                 'selectors' => [
@@ -938,7 +938,7 @@ class Adv_Accordion extends Widget_Base
         $this->add_control(
             'eael_adv_tabs_tab_toggle_active_background_color',
             [
-                'label' => esc_html__('Background Color', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Background Color', 'px-elements'),
                 'type' => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .eael-adv-accordion .eael-accordion-list .eael-accordion-header.active .fa-toggle'   => 'background-color: {{VALUE}};',
@@ -953,7 +953,7 @@ class Adv_Accordion extends Widget_Base
 			Group_Control_Border::get_type(),
 			[
 				'name' => 'eael_adv_tabs_tab_toggle_border_active',
-				'label' => __( 'Border', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Border', 'px-elements' ),
 				'selector' => '{{WRAPPER}} .eael-adv-accordion .eael-accordion-list .eael-accordion-header.active .fa-toggle',
 			]
 		);

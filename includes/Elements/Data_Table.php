@@ -23,7 +23,7 @@ class Data_Table extends Widget_Base {
 	}
 
 	public function get_title() {
-		return esc_html__( 'Data Table', 'essential-addons-for-elementor-lite');
+		return esc_html__( 'Data Table', 'px-elements');
 	}
 
 	public function get_icon() {
@@ -61,7 +61,7 @@ class Data_Table extends Widget_Base {
   		$this->start_controls_section(
   			'eael_section_data_table_header',
   			[
-  				'label' => esc_html__( 'Header', 'essential-addons-for-elementor-lite')
+  				'label' => esc_html__( 'Header', 'px-elements')
   			]
   		);
 
@@ -71,7 +71,7 @@ class Data_Table extends Widget_Base {
 			$this->add_control(
 				'eael_pricing_table_style_pro_alert',
 				[
-					'label'     => esc_html__( 'Sorting feature is available in pro version!', 'essential-addons-for-elementor-lite'),
+					'label'     => esc_html__( 'Sorting feature is available in pro version!', 'px-elements'),
 					'type'      => Controls_Manager::HEADING,
 					'condition' => [
 						'eael_section_data_table_enabled' => 'true',
@@ -85,7 +85,7 @@ class Data_Table extends Widget_Base {
 		$repeater->add_control(
 			'eael_data_table_header_col',
 			[
-				'label' => esc_html__( 'Column Name', 'essential-addons-for-elementor-lite'),
+				'label' => esc_html__( 'Column Name', 'px-elements'),
 				'default' => 'Table Header',
 				'type' => Controls_Manager::TEXT,
 				'label_block' => false,
@@ -95,7 +95,7 @@ class Data_Table extends Widget_Base {
 		$repeater->add_control(
 			'eael_data_table_header_col_span',
 			[
-				'label' => esc_html__( 'Column Span', 'essential-addons-for-elementor-lite'),
+				'label' => esc_html__( 'Column Span', 'px-elements'),
 				'default' => '',
 				'type' => Controls_Manager::TEXT,
 				'label_block' => false,
@@ -105,10 +105,10 @@ class Data_Table extends Widget_Base {
 		$repeater->add_control(
 			'eael_data_table_header_col_icon_enabled',
 			[
-				'label' => esc_html__( 'Enable Header Icon', 'essential-addons-for-elementor-lite'),
+				'label' => esc_html__( 'Enable Header Icon', 'px-elements'),
 				'type' => Controls_Manager::SWITCHER,
-				'label_on' => __( 'yes', 'essential-addons-for-elementor-lite'),
-				'label_off' => __( 'no', 'essential-addons-for-elementor-lite'),
+				'label_on' => __( 'yes', 'px-elements'),
+				'label_off' => __( 'no', 'px-elements'),
 				'default' => 'false',
 				'return_value' => 'true',
 			]
@@ -117,19 +117,19 @@ class Data_Table extends Widget_Base {
 		$repeater->add_control(
 			'eael_data_table_header_icon_type',
 			[
-				'label'	=> esc_html__( 'Header Icon Type', 'essential-addons-for-elementor-lite'),
+				'label'	=> esc_html__( 'Header Icon Type', 'px-elements'),
 				'type'	=> Controls_Manager::CHOOSE,
 				'options'               => [
 					'none'        => [
-						'title'   => esc_html__( 'None', 'essential-addons-for-elementor-lite'),
+						'title'   => esc_html__( 'None', 'px-elements'),
 						'icon'    => 'fa fa-ban',
 					],
 					'icon'        => [
-						'title'   => esc_html__( 'Icon', 'essential-addons-for-elementor-lite'),
+						'title'   => esc_html__( 'Icon', 'px-elements'),
 						'icon'    => 'fa fa-star',
 					],
 					'image'       => [
-						'title'   => esc_html__( 'Image', 'essential-addons-for-elementor-lite'),
+						'title'   => esc_html__( 'Image', 'px-elements'),
 						'icon'    => 'fa fa-picture-o',
 					],
 				],
@@ -144,7 +144,7 @@ class Data_Table extends Widget_Base {
 		$repeater->add_control(
 			'eael_data_table_header_col_icon_new',
 			[
-				'label' => esc_html__( 'Icon', 'essential-addons-for-elementor-lite'),
+				'label' => esc_html__( 'Icon', 'px-elements'),
 				'type' => Controls_Manager::ICONS,
 				'fa4compatibility' => 'eael_data_table_header_col_icon',
                 'default' => [
@@ -161,7 +161,7 @@ class Data_Table extends Widget_Base {
 		$repeater->add_control(
 			'eael_data_table_header_col_img',
 			[
-				'label' => esc_html__( 'Image', 'essential-addons-for-elementor-lite'),
+				'label' => esc_html__( 'Image', 'px-elements'),
 				'type' => Controls_Manager::MEDIA,
 				'default' => [
 					'url' => Utils::get_placeholder_image_src(),
@@ -175,7 +175,7 @@ class Data_Table extends Widget_Base {
 		$repeater->add_control(
 			'eael_data_table_header_col_img_size',
 			[
-				'label' => esc_html__( 'Image Size(px)', 'essential-addons-for-elementor-lite'),
+				'label' => esc_html__( 'Image Size(px)', 'px-elements'),
 				'default' => '25',
 				'type' => Controls_Manager::NUMBER,
 				'label_block' => false,
@@ -188,7 +188,7 @@ class Data_Table extends Widget_Base {
 		$repeater->add_control(
 			'eael_data_table_header_css_class',
 			[
-				'label'			=> esc_html__( 'CSS Class', 'essential-addons-for-elementor-lite'),
+				'label'			=> esc_html__( 'CSS Class', 'px-elements'),
 				'type'			=> Controls_Manager::TEXT,
 				'label_block' 	=> false,
 			]
@@ -197,7 +197,7 @@ class Data_Table extends Widget_Base {
 		$repeater->add_control(
 			'eael_data_table_header_css_id',
 			[
-				'label'			=> esc_html__( 'CSS ID', 'essential-addons-for-elementor-lite'),
+				'label'			=> esc_html__( 'CSS ID', 'px-elements'),
 				'type'			=> Controls_Manager::TEXT,
 				'label_block'	=> false,
 			]
@@ -227,7 +227,7 @@ class Data_Table extends Widget_Base {
   		$this->start_controls_section(
   			'eael_section_data_table_cotnent',
   			[
-  				'label' => esc_html__( 'Content', 'essential-addons-for-elementor-lite')
+  				'label' => esc_html__( 'Content', 'px-elements')
   			]
 		  );
 
@@ -236,13 +236,13 @@ class Data_Table extends Widget_Base {
 		$repeater->add_control(
 			'eael_data_table_content_row_type',
 			[
-				'label' => esc_html__( 'Row Type', 'essential-addons-for-elementor-lite'),
+				'label' => esc_html__( 'Row Type', 'px-elements'),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'row',
 				'label_block' => false,
 				'options' => [
-					'row' => esc_html__( 'Row', 'essential-addons-for-elementor-lite'),
-					'col' => esc_html__( 'Column', 'essential-addons-for-elementor-lite'),
+					'row' => esc_html__( 'Row', 'px-elements'),
+					'col' => esc_html__( 'Column', 'px-elements'),
 				]
 			]
 		);
@@ -250,7 +250,7 @@ class Data_Table extends Widget_Base {
 		$repeater->add_control(
 			'eael_data_table_content_row_colspan',
 			[
-				'label'			=> esc_html__( 'Col Span', 'essential-addons-for-elementor-lite'),
+				'label'			=> esc_html__( 'Col Span', 'px-elements'),
 				'type'			=> Controls_Manager::NUMBER,
 				'description'	=> esc_html__( 'Default: 1 (optional).'),
 				'default' 		=> 1,
@@ -265,19 +265,19 @@ class Data_Table extends Widget_Base {
 		$repeater->add_control(
 			'eael_data_table_content_type',
 			[
-				'label'		=> esc_html__( 'Content Type', 'essential-addons-for-elementor-lite'),
+				'label'		=> esc_html__( 'Content Type', 'px-elements'),
 				'type'	=> Controls_Manager::CHOOSE,
 				'options'               => [
 					'textarea'        => [
-						'title'   => esc_html__( 'Textarea', 'essential-addons-for-elementor-lite'),
+						'title'   => esc_html__( 'Textarea', 'px-elements'),
 						'icon'    => 'fa fa-text-width',
 					],
 					'editor'       => [
-						'title'   => esc_html__( 'Editor', 'essential-addons-for-elementor-lite'),
+						'title'   => esc_html__( 'Editor', 'px-elements'),
 						'icon'    => 'fa fa-pencil',
 					],
 					'template'        => [
-						'title'   => esc_html__( 'Templates', 'essential-addons-for-elementor-lite'),
+						'title'   => esc_html__( 'Templates', 'px-elements'),
 						'icon'    => 'fa fa-file',
 					]
 				],
@@ -291,7 +291,7 @@ class Data_Table extends Widget_Base {
 		$repeater->add_control(
 			'eael_data_table_content_row_rowspan',
 			[
-				'label'			=> esc_html__( 'Row Span', 'essential-addons-for-elementor-lite'),
+				'label'			=> esc_html__( 'Row Span', 'px-elements'),
 				'type'			=> Controls_Manager::NUMBER,
 				'description'	=> esc_html__( 'Default: 1 (optional).'),
 				'default' 		=> 1,
@@ -306,7 +306,7 @@ class Data_Table extends Widget_Base {
 		$repeater->add_control(
 			'eael_primary_templates_for_tables',
 			[
-				'label'                 => __( 'Choose Template', 'essential-addons-for-elementor-lite'),
+				'label'                 => __( 'Choose Template', 'px-elements'),
 				'type'                  => Controls_Manager::SELECT,
 				'options'               => $this->eael_get_page_templates(),
 				'condition'             => [
@@ -318,10 +318,10 @@ class Data_Table extends Widget_Base {
 		$repeater->add_control(
 			'eael_data_table_content_row_title',
 			[
-				'label' => esc_html__( 'Cell Text', 'essential-addons-for-elementor-lite'),
+				'label' => esc_html__( 'Cell Text', 'px-elements'),
 				'type' => Controls_Manager::TEXTAREA,
 				'label_block' => true,
-				'default' => esc_html__( 'Content', 'essential-addons-for-elementor-lite'),
+				'default' => esc_html__( 'Content', 'px-elements'),
 				'condition' => [
 					'eael_data_table_content_row_type' => 'col',
 					'eael_data_table_content_type' => 'textarea'
@@ -332,10 +332,10 @@ class Data_Table extends Widget_Base {
 		$repeater->add_control(
 			'eael_data_table_content_row_content',
 			[
-				'label' => esc_html__( 'Cell Text', 'essential-addons-for-elementor-lite'),
+				'label' => esc_html__( 'Cell Text', 'px-elements'),
 				'type' => Controls_Manager::WYSIWYG,
 				'label_block' => true,
-				'default' => esc_html__( 'Content', 'essential-addons-for-elementor-lite'),
+				'default' => esc_html__( 'Content', 'px-elements'),
 				'condition' => [
 					'eael_data_table_content_row_type' => 'col',
 					'eael_data_table_content_type' => 'editor'
@@ -346,7 +346,7 @@ class Data_Table extends Widget_Base {
 		$repeater->add_control(
 			'eael_data_table_content_row_title_link',
 			[
-				'label' => esc_html__( 'Link', 'essential-addons-for-elementor-lite'),
+				'label' => esc_html__( 'Link', 'px-elements'),
 				'type' => Controls_Manager::URL,
 				'label_block' => true,
 				'default' => [
@@ -365,7 +365,7 @@ class Data_Table extends Widget_Base {
 		$repeater->add_control(
 			'eael_data_table_content_row_css_class',
 			[
-				'label'			=> esc_html__( 'CSS Class', 'essential-addons-for-elementor-lite'),
+				'label'			=> esc_html__( 'CSS Class', 'px-elements'),
 				'type'			=> Controls_Manager::TEXT,
 				'label_block'	=> false,
 				'condition' 	=> [
@@ -377,7 +377,7 @@ class Data_Table extends Widget_Base {
 		$repeater->add_control(
 			'eael_data_table_content_row_css_id',
 			[
-				'label'			=> esc_html__( 'CSS ID', 'essential-addons-for-elementor-lite'),
+				'label'			=> esc_html__( 'CSS ID', 'px-elements'),
 				'type'			=> Controls_Manager::TEXT,
 				'label_block'	=> false,
 				'condition' 	=> [
@@ -409,16 +409,16 @@ class Data_Table extends Widget_Base {
         $this->start_controls_section(
             'ea_section_adv_data_table_export',
             [
-                'label' => esc_html__('Export', 'essential-addons-for-elementor-lite'),
+                'label' => esc_html__('Export', 'px-elements'),
             ]
         );
 
         $this->add_control(
             'ea_adv_data_table_export_csv_button',
             [
-                'label' => __('Export table as CSV file', 'essential-addons-for-elementor-lite'),
+                'label' => __('Export table as CSV file', 'px-elements'),
                 'type' => Controls_Manager::BUTTON,
-                'text' => __('Export', 'essential-addons-for-elementor-lite'),
+                'text' => __('Export', 'px-elements'),
                 'event' => 'ea:table:export',
             ]
         );
@@ -429,14 +429,14 @@ class Data_Table extends Widget_Base {
 			$this->start_controls_section(
 				'eael_section_pro',
 				[
-					'label' => __( 'Go Premium for More Features', 'essential-addons-for-elementor-lite')
+					'label' => __( 'Go Premium for More Features', 'px-elements')
 				]
 			);
 
 			$this->add_control(
 				'eael_control_get_pro',
 				[
-					'label' => __( 'Unlock more possibilities', 'essential-addons-for-elementor-lite'),
+					'label' => __( 'Unlock more possibilities', 'px-elements'),
 					'type' => Controls_Manager::CHOOSE,
 					'options' => [
 						'1' => [
@@ -460,7 +460,7 @@ class Data_Table extends Widget_Base {
 		$this->start_controls_section(
 			'eael_section_data_table_style_settings',
 			[
-				'label' => esc_html__( 'General Style', 'essential-addons-for-elementor-lite'),
+				'label' => esc_html__( 'General Style', 'px-elements'),
 				'tab' => Controls_Manager::TAB_STYLE
 			]
 		);
@@ -468,7 +468,7 @@ class Data_Table extends Widget_Base {
 		$this->add_responsive_control(
             'table_width',
             [
-                'label'                 => __( 'Width', 'essential-addons-for-elementor-lite'),
+                'label'                 => __( 'Width', 'px-elements'),
                 'type'                  => Controls_Manager::SLIDER,
                 'default'               => [
                     'size' => 100,
@@ -494,21 +494,21 @@ class Data_Table extends Widget_Base {
 		$this->add_control(
             'table_alignment',
             [
-                'label'                 => __( 'Alignment', 'essential-addons-for-elementor-lite'),
+                'label'                 => __( 'Alignment', 'px-elements'),
                 'type'                  => Controls_Manager::CHOOSE,
 				'label_block'           => false,
                 'default'               => 'center',
                 'options'               => [
                     'left' 		=> [
-                        'title' => __( 'Left', 'essential-addons-for-elementor-lite'),
+                        'title' => __( 'Left', 'px-elements'),
                         'icon' 	=> 'eicon-h-align-left',
                     ],
                     'center' 	=> [
-                        'title' => __( 'Center', 'essential-addons-for-elementor-lite'),
+                        'title' => __( 'Center', 'px-elements'),
                         'icon' 	=> 'eicon-h-align-center',
                     ],
                     'right' 	=> [
-                        'title' => __( 'Right', 'essential-addons-for-elementor-lite'),
+                        'title' => __( 'Right', 'px-elements'),
                         'icon' 	=> 'eicon-h-align-right',
                     ],
 				],
@@ -526,7 +526,7 @@ class Data_Table extends Widget_Base {
 		$this->start_controls_section(
 			'eael_section_data_table_title_style_settings',
 			[
-				'label' => esc_html__( 'Header Style', 'essential-addons-for-elementor-lite'),
+				'label' => esc_html__( 'Header Style', 'px-elements'),
 				'tab' => Controls_Manager::TAB_STYLE
 			]
 		);
@@ -535,7 +535,7 @@ class Data_Table extends Widget_Base {
 		$this->add_control(
 			'eael_section_data_table_header_radius',
 			[
-				'label' => esc_html__( 'Header Border Radius', 'essential-addons-for-elementor-lite'),
+				'label' => esc_html__( 'Header Border Radius', 'px-elements'),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -552,7 +552,7 @@ class Data_Table extends Widget_Base {
 		$this->add_responsive_control(
 			'eael_data_table_each_header_padding',
 			[
-				'label' => esc_html__( 'Padding', 'essential-addons-for-elementor-lite'),
+				'label' => esc_html__( 'Padding', 'px-elements'),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em' ],
 				'selectors' => [
@@ -564,12 +564,12 @@ class Data_Table extends Widget_Base {
 
 		$this->start_controls_tabs('eael_data_table_header_title_clrbg');
 
-			$this->start_controls_tab( 'eael_data_table_header_title_normal', [ 'label' => esc_html__( 'Normal', 'essential-addons-for-elementor-lite') ] );
+			$this->start_controls_tab( 'eael_data_table_header_title_normal', [ 'label' => esc_html__( 'Normal', 'px-elements') ] );
 
 				$this->add_control(
 					'eael_data_table_header_title_color',
 					[
-						'label' => esc_html__( 'Color', 'essential-addons-for-elementor-lite'),
+						'label' => esc_html__( 'Color', 'px-elements'),
 						'type' => Controls_Manager::COLOR,
 						'default' => '#fff',
 						'selectors' => [
@@ -584,7 +584,7 @@ class Data_Table extends Widget_Base {
 				$this->add_control(
 					'eael_data_table_header_title_bg_color',
 					[
-						'label' => esc_html__( 'Background Color', 'essential-addons-for-elementor-lite'),
+						'label' => esc_html__( 'Background Color', 'px-elements'),
 						'type' => Controls_Manager::COLOR,
 						'default' => '#4a4893',
 						'selectors' => [
@@ -597,19 +597,19 @@ class Data_Table extends Widget_Base {
 					Group_Control_Border::get_type(),
 						[
 							'name' => 'eael_data_table_header_border',
-							'label' => esc_html__( 'Border', 'essential-addons-for-elementor-lite'),
+							'label' => esc_html__( 'Border', 'px-elements'),
 							'selector' => '{{WRAPPER}} .eael-data-table thead tr th'
 						]
 				);
 
 			$this->end_controls_tab();
 
-			$this->start_controls_tab( 'eael_data_table_header_title_hover', [ 'label' => esc_html__( 'Hover', 'essential-addons-for-elementor-lite') ] );
+			$this->start_controls_tab( 'eael_data_table_header_title_hover', [ 'label' => esc_html__( 'Hover', 'px-elements') ] );
 
 				$this->add_control(
 					'eael_data_table_header_title_hover_color',
 					[
-						'label' => esc_html__( 'Color', 'essential-addons-for-elementor-lite'),
+						'label' => esc_html__( 'Color', 'px-elements'),
 						'type' => Controls_Manager::COLOR,
 						'default' => '#fff',
 						'selectors' => [
@@ -624,7 +624,7 @@ class Data_Table extends Widget_Base {
 				$this->add_control(
 					'eael_data_table_header_title_hover_bg_color',
 					[
-						'label' => esc_html__( 'Background Color', 'essential-addons-for-elementor-lite'),
+						'label' => esc_html__( 'Background Color', 'px-elements'),
 						'type' => Controls_Manager::COLOR,
 						'selectors' => [
 							'{{WRAPPER}} .eael-data-table thead tr th:hover' => 'background-color: {{VALUE}};',
@@ -636,7 +636,7 @@ class Data_Table extends Widget_Base {
 					Group_Control_Border::get_type(),
 						[
 							'name' => 'eael_data_table_header_hover_border',
-							'label' => esc_html__( 'Border', 'essential-addons-for-elementor-lite'),
+							'label' => esc_html__( 'Border', 'px-elements'),
 							'selector' => '{{WRAPPER}} .eael-data-table thead tr th:hover',
 						]
 				);
@@ -656,7 +656,7 @@ class Data_Table extends Widget_Base {
 		$this->add_responsive_control(
             'header_icon_size',
             [
-                'label'                 => __( 'Icon Size', 'essential-addons-for-elementor-lite'),
+                'label'                 => __( 'Icon Size', 'px-elements'),
 				'type'                  => Controls_Manager::SLIDER,
                 'size_units'            => [ 'px' ],
                 'range'                 => [
@@ -678,7 +678,7 @@ class Data_Table extends Widget_Base {
 		$this->add_responsive_control(
             'header_icon_position_from_top',
             [
-                'label'                 => __( 'Icon Position', 'essential-addons-for-elementor-lite'),
+                'label'                 => __( 'Icon Position', 'px-elements'),
 				'type'                  => Controls_Manager::SLIDER,
                 'size_units'            => [ 'px', '%' ],
                 'range'                 => [
@@ -700,7 +700,7 @@ class Data_Table extends Widget_Base {
 		$this->add_responsive_control(
             'header_icon_space',
             [
-                'label'                 => __( 'Icon Space', 'essential-addons-for-elementor-lite'),
+                'label'                 => __( 'Icon Space', 'px-elements'),
 				'type'                  => Controls_Manager::SLIDER,
                 'size_units'            => [ 'px' ],
                 'range'                 => [
@@ -718,20 +718,20 @@ class Data_Table extends Widget_Base {
 		$this->add_responsive_control(
 			'eael_data_table_header_title_alignment',
 			[
-				'label' => esc_html__( 'Title Alignment', 'essential-addons-for-elementor-lite'),
+				'label' => esc_html__( 'Title Alignment', 'px-elements'),
 				'type' => Controls_Manager::CHOOSE,
 				'label_block' => true,
 				'options' => [
 					'left' => [
-						'title' => esc_html__( 'Left', 'essential-addons-for-elementor-lite'),
+						'title' => esc_html__( 'Left', 'px-elements'),
 						'icon' => 'fa fa-align-left',
 					],
 					'center' => [
-						'title' => esc_html__( 'Center', 'essential-addons-for-elementor-lite'),
+						'title' => esc_html__( 'Center', 'px-elements'),
 						'icon' => 'fa fa-align-center',
 					],
 					'right' => [
-						'title' => esc_html__( 'Right', 'essential-addons-for-elementor-lite'),
+						'title' => esc_html__( 'Right', 'px-elements'),
 						'icon' => 'fa fa-align-right',
 					],
 				],
@@ -750,19 +750,19 @@ class Data_Table extends Widget_Base {
 		$this->start_controls_section(
 			'eael_section_data_table_content_style_settings',
 			[
-				'label' => esc_html__( 'Content Style', 'essential-addons-for-elementor-lite'),
+				'label' => esc_html__( 'Content Style', 'px-elements'),
 				'tab' => Controls_Manager::TAB_STYLE
 			]
 		);
 
 		$this->start_controls_tabs('eael_data_table_content_row_cell_styles');
 
-			$this->start_controls_tab('eael_data_table_odd_cell_style', ['label' => esc_html__( 'Normal', 'essential-addons-for-elementor-lite')]);
+			$this->start_controls_tab('eael_data_table_odd_cell_style', ['label' => esc_html__( 'Normal', 'px-elements')]);
 
 				$this->add_control(
 					'eael_data_table_content_odd_style_heading',
 					[
-						'label' => esc_html__( 'ODD Cell', 'essential-addons-for-elementor-lite'),
+						'label' => esc_html__( 'ODD Cell', 'px-elements'),
 						'type' => Controls_Manager::HEADING,
 					]
 				);
@@ -770,7 +770,7 @@ class Data_Table extends Widget_Base {
 				$this->add_control(
 					'eael_data_table_content_color_odd',
 					[
-						'label' => esc_html__( 'Color ( Odd Row )', 'essential-addons-for-elementor-lite'),
+						'label' => esc_html__( 'Color ( Odd Row )', 'px-elements'),
 						'type' => Controls_Manager::COLOR,
 						'default' => '#6d7882',
 						'selectors' => [
@@ -782,7 +782,7 @@ class Data_Table extends Widget_Base {
 				$this->add_control(
 					'eael_data_table_content_bg_odd',
 					[
-						'label' => esc_html__( 'Background ( Odd Row )', 'essential-addons-for-elementor-lite'),
+						'label' => esc_html__( 'Background ( Odd Row )', 'px-elements'),
 						'type' => Controls_Manager::COLOR,
 						'default' => '#f2f2f2',
 						'selectors' => [
@@ -794,7 +794,7 @@ class Data_Table extends Widget_Base {
 				$this->add_control(
 					'eael_data_table_content_even_style_heading',
 					[
-						'label' => esc_html__( 'Even Cell', 'essential-addons-for-elementor-lite'),
+						'label' => esc_html__( 'Even Cell', 'px-elements'),
 						'type' => Controls_Manager::HEADING,
 						'separator'	=> 'before'
 					]
@@ -803,7 +803,7 @@ class Data_Table extends Widget_Base {
 				$this->add_control(
 					'eael_data_table_content_even_color',
 					[
-						'label' => esc_html__( 'Color ( Even Row )', 'essential-addons-for-elementor-lite'),
+						'label' => esc_html__( 'Color ( Even Row )', 'px-elements'),
 						'type' => Controls_Manager::COLOR,
 						'default' => '#6d7882',
 						'selectors' => [
@@ -815,7 +815,7 @@ class Data_Table extends Widget_Base {
 				$this->add_control(
 					'eael_data_table_content_bg_even_color',
 					[
-						'label' => esc_html__( 'Background Color (Even Row)', 'essential-addons-for-elementor-lite'),
+						'label' => esc_html__( 'Background Color (Even Row)', 'px-elements'),
 						'type' => Controls_Manager::COLOR,
 						'default' => '',
 						'selectors' => [
@@ -828,7 +828,7 @@ class Data_Table extends Widget_Base {
 					Group_Control_Border::get_type(),
 						[
 							'name' => 'eael_data_table_cell_border',
-							'label' => esc_html__( 'Border', 'essential-addons-for-elementor-lite'),
+							'label' => esc_html__( 'Border', 'px-elements'),
 							'selector' => '{{WRAPPER}} .eael-data-table tbody tr td',
 							'separator'	=> 'before'
 						]
@@ -837,7 +837,7 @@ class Data_Table extends Widget_Base {
 				$this->add_responsive_control(
 					'eael_data_table_each_cell_padding',
 					[
-						'label' => esc_html__( 'Padding', 'essential-addons-for-elementor-lite'),
+						'label' => esc_html__( 'Padding', 'px-elements'),
 						'type' => Controls_Manager::DIMENSIONS,
 						'size_units' => [ 'px', 'em' ],
 						'selectors' => [
@@ -848,12 +848,12 @@ class Data_Table extends Widget_Base {
 
 			$this->end_controls_tab();
 
-			$this->start_controls_tab('eael_data_table_odd_cell_hover_style', ['label' => esc_html__( 'Hover', 'essential-addons-for-elementor-lite')]);
+			$this->start_controls_tab('eael_data_table_odd_cell_hover_style', ['label' => esc_html__( 'Hover', 'px-elements')]);
 
 				$this->add_control(
 					'eael_data_table_content_hover_color_odd',
 					[
-						'label' => esc_html__( 'Color ( Odd Row )', 'essential-addons-for-elementor-lite'),
+						'label' => esc_html__( 'Color ( Odd Row )', 'px-elements'),
 						'type' => Controls_Manager::COLOR,
 						'selectors' => [
 							'{{WRAPPER}} .eael-data-table tbody > tr:nth-child(2n) td:hover' => 'color: {{VALUE}};',
@@ -864,7 +864,7 @@ class Data_Table extends Widget_Base {
 				$this->add_control(
 					'eael_data_table_content_hover_bg_odd',
 					[
-						'label' => esc_html__( 'Background ( Odd Row )', 'essential-addons-for-elementor-lite'),
+						'label' => esc_html__( 'Background ( Odd Row )', 'px-elements'),
 						'type' => Controls_Manager::COLOR,
 						'selectors' => [
 							'{{WRAPPER}} .eael-data-table tbody > tr:nth-child(2n) td:hover' => 'background: {{VALUE}};',
@@ -875,7 +875,7 @@ class Data_Table extends Widget_Base {
 				$this->add_control(
 					'eael_data_table_content_even_hover_style_heading',
 					[
-						'label' => esc_html__( 'Even Cell', 'essential-addons-for-elementor-lite'),
+						'label' => esc_html__( 'Even Cell', 'px-elements'),
 						'type' => Controls_Manager::HEADING,
 					]
 				);
@@ -883,7 +883,7 @@ class Data_Table extends Widget_Base {
 				$this->add_control(
 					'eael_data_table_content_hover_color_even',
 					[
-						'label' => esc_html__( 'Color ( Even Row )', 'essential-addons-for-elementor-lite'),
+						'label' => esc_html__( 'Color ( Even Row )', 'px-elements'),
 						'type' => Controls_Manager::COLOR,
 						'default' => '#6d7882',
 						'selectors' => [
@@ -895,7 +895,7 @@ class Data_Table extends Widget_Base {
 				$this->add_control(
 					'eael_data_table_content_bg_even_hover_color',
 					[
-						'label' => esc_html__( 'Background Color (Even Row)', 'essential-addons-for-elementor-lite'),
+						'label' => esc_html__( 'Background Color (Even Row)', 'px-elements'),
 						'type' => Controls_Manager::COLOR,
 						'default' => '',
 						'selectors' => [
@@ -919,7 +919,7 @@ class Data_Table extends Widget_Base {
 		$this->add_control(
 			'eael_data_table_content_link_typo',
 			[
-				'label' => esc_html__( 'Link Color', 'essential-addons-for-elementor-lite'),
+				'label' => esc_html__( 'Link Color', 'px-elements'),
 				'type' => Controls_Manager::HEADING,
 				'separator'	=> 'before'
 			]
@@ -929,12 +929,12 @@ class Data_Table extends Widget_Base {
 		$this->start_controls_tabs( 'eael_data_table_link_tabs' );
 
 			// Normal State Tab
-			$this->start_controls_tab( 'eael_data_table_link_normal', [ 'label' => esc_html__( 'Normal', 'essential-addons-for-elementor-lite') ] );
+			$this->start_controls_tab( 'eael_data_table_link_normal', [ 'label' => esc_html__( 'Normal', 'px-elements') ] );
 
 			$this->add_control(
 				'eael_data_table_link_normal_text_color',
 				[
-					'label' => esc_html__( 'Text Color', 'essential-addons-for-elementor-lite'),
+					'label' => esc_html__( 'Text Color', 'px-elements'),
 					'type' => Controls_Manager::COLOR,
 					'default' => '#c15959',
 					'selectors' => [
@@ -946,12 +946,12 @@ class Data_Table extends Widget_Base {
 			$this->end_controls_tab();
 
 			// Hover State Tab
-			$this->start_controls_tab( 'eael_data_table_link_hover', [ 'label' => esc_html__( 'Hover', 'essential-addons-for-elementor-lite') ] );
+			$this->start_controls_tab( 'eael_data_table_link_hover', [ 'label' => esc_html__( 'Hover', 'px-elements') ] );
 
 			$this->add_control(
 				'eael_data_table_link_hover_text_color',
 				[
-					'label' => esc_html__( 'Text Color', 'essential-addons-for-elementor-lite'),
+					'label' => esc_html__( 'Text Color', 'px-elements'),
 					'type' => Controls_Manager::COLOR,
 					'default' => '#6d7882',
 					'selectors' => [
@@ -967,20 +967,20 @@ class Data_Table extends Widget_Base {
 		$this->add_responsive_control(
 			'eael_data_table_content_alignment',
 			[
-				'label' => esc_html__( 'Content Alignment', 'essential-addons-for-elementor-lite'),
+				'label' => esc_html__( 'Content Alignment', 'px-elements'),
 				'type' => Controls_Manager::CHOOSE,
 				'label_block' => true,
 				'options' => [
 					'left' => [
-						'title' => esc_html__( 'Left', 'essential-addons-for-elementor-lite'),
+						'title' => esc_html__( 'Left', 'px-elements'),
 						'icon' => 'fa fa-align-left',
 					],
 					'center' => [
-						'title' => esc_html__( 'Center', 'essential-addons-for-elementor-lite'),
+						'title' => esc_html__( 'Center', 'px-elements'),
 						'icon' => 'fa fa-align-center',
 					],
 					'right' => [
-						'title' => esc_html__( 'Right', 'essential-addons-for-elementor-lite'),
+						'title' => esc_html__( 'Right', 'px-elements'),
 						'icon' => 'fa fa-align-right',
 					],
 				],
@@ -1000,7 +1000,7 @@ class Data_Table extends Widget_Base {
 		$this->start_controls_section(
 			'eael_section_data_table_responsive_style_settings',
 			[
-				'label'		=> esc_html__( 'Responsive Options', 'essential-addons-for-elementor-lite'),
+				'label'		=> esc_html__( 'Responsive Options', 'px-elements'),
 				'devices'	=> [ 'tablet', 'mobile' ],
 				'tab'		=> Controls_Manager::TAB_STYLE
 			]
@@ -1009,11 +1009,11 @@ class Data_Table extends Widget_Base {
 		$this->add_control(
 		  'eael_enable_responsive_header_styles',
 		  	[
-				'label'			=> __( 'Enable Responsive Table', 'essential-addons-for-elementor-lite'),
-				'description'	=> esc_html__( 'If enabled, table header will be automatically responsive for mobile.', 'essential-addons-for-elementor-lite'),
+				'label'			=> __( 'Enable Responsive Table', 'px-elements'),
+				'description'	=> esc_html__( 'If enabled, table header will be automatically responsive for mobile.', 'px-elements'),
 				'type'			=> Controls_Manager::SWITCHER,
-				'label_on'		=> esc_html__( 'Yes', 'essential-addons-for-elementor-lite'),
-				'label_off' 	=> esc_html__( 'No', 'essential-addons-for-elementor-lite'),
+				'label_on'		=> esc_html__( 'Yes', 'px-elements'),
+				'label_off' 	=> esc_html__( 'No', 'px-elements'),
 				'return_value' 	=> 'yes',
 		  	]
 		);
@@ -1021,7 +1021,7 @@ class Data_Table extends Widget_Base {
 		$this->add_responsive_control(
             'mobile_table_header_width',
             [
-                'label'                 => __( 'Width', 'essential-addons-for-elementor-lite'),
+                'label'                 => __( 'Width', 'px-elements'),
 				'type'                  => Controls_Manager::SLIDER,
                 'default'               => [
                     'size' => 100,
@@ -1046,7 +1046,7 @@ class Data_Table extends Widget_Base {
 		$this->add_responsive_control(
 			'eael_data_table_responsive_header_color',
 			[
-				'label' => esc_html__( 'Color', 'essential-addons-for-elementor-lite'),
+				'label' => esc_html__( 'Color', 'px-elements'),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -1061,7 +1061,7 @@ class Data_Table extends Widget_Base {
 		$this->add_responsive_control(
 			'eael_data_table_responsive_header_bg_color',
 			[
-				'label' => esc_html__( 'Background Color', 'essential-addons-for-elementor-lite'),
+				'label' => esc_html__( 'Background Color', 'px-elements'),
 				'type' => Controls_Manager::COLOR,
 				'default' => '',
 				'selectors' => [
@@ -1088,7 +1088,7 @@ class Data_Table extends Widget_Base {
 			Group_Control_Border::get_type(),
 				[
 					'name' => 'eael_data_table_responsive_header_border',
-					'label' => esc_html__( 'Border', 'essential-addons-for-elementor-lite'),
+					'label' => esc_html__( 'Border', 'px-elements'),
 					'selector' => '{{WRAPPER}} tbody td .th-mobile-screen',
 					'condition'	=> [
 	                	'eael_enable_responsive_header_styles'	=> 'yes'
@@ -1203,7 +1203,7 @@ class Data_Table extends Widget_Base {
 										'style'	=> "width:{$header_title['eael_data_table_header_col_img_size']}px;",
 										'alt'	=> esc_attr(get_post_meta($header_title['eael_data_table_header_col_img']['id'], '_wp_attachment_image_alt', true))
 									]);
-							?><img <?php echo $this->get_render_attribute_string('data_table_th_img'.$i); ?>><?php endif; ?><span class="data-table-header-text"><?php echo __( $header_title['eael_data_table_header_col'], 'essential-addons-for-elementor-lite'); ?></span></th>
+							?><img <?php echo $this->get_render_attribute_string('data_table_th_img'.$i); ?>><?php endif; ?><span class="data-table-header-text"><?php echo __( $header_title['eael_data_table_header_col'], 'px-elements'); ?></span></th>
 			        	<?php $i++; endforeach; ?>
 			        </tr>
 			    </thead>

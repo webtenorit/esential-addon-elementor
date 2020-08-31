@@ -46,10 +46,10 @@ class Feature_List extends WPML_Elementor_Module_With_Items {
 	protected function get_title( $field ) {
 		switch($field) {
 			case 'eael_feature_list_title':
-				return __( 'Feature List: Title', 'essential-addons-for-elementor-lite');
+				return __( 'Feature List: Title', 'px-elements');
 
 			case 'eael_feature_list_content':
-				return __( 'Feature List: Content', 'essential-addons-for-elementor-lite');
+				return __( 'Feature List: Content', 'px-elements');
 
 			default:
 				return '';

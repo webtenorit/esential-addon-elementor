@@ -16,7 +16,7 @@ class EmbedPress extends Widget_Base {
 	}
 
 	public function get_title() {
-		return esc_html__( 'EmbedPress', 'essential-addons-for-elementor-lite');
+		return esc_html__( 'EmbedPress', 'px-elements');
 	}
 
 	public function get_icon() {
@@ -51,7 +51,7 @@ class EmbedPress extends Widget_Base {
         $this->start_controls_section(
             'eael_global_warning',
             [
-                'label' => __('Warning!', 'essential-addons-for-elementor-lite'),
+                'label' => __('Warning!', 'px-elements'),
             ]
         );
 
@@ -60,7 +60,7 @@ class EmbedPress extends Widget_Base {
             [
                 'type'            => Controls_Manager::RAW_HTML,
                 'raw'             => __('<strong>EmbedPress</strong> is not installed/activated on your site. Please install and activate <a href="plugin-install.php?s=embedpress&tab=search&type=term" target="_blank">EmbedPress</a> first.',
-                    'essential-addons-for-elementor-lite'),
+                    'px-elements'),
                 'content_classes' => 'eael-warning',
             ]
         );

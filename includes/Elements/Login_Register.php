@@ -121,7 +121,7 @@ class Login_Register extends Widget_Base {
 	 * @inheritDoc
 	 */
 	public function get_title() {
-		return esc_html__( 'Login | Register Form', 'essential-addons-for-elementor-lite' );
+		return esc_html__( 'Login | Register Form', 'px-elements' );
 	}
 
 	/**
@@ -175,13 +175,13 @@ class Login_Register extends Widget_Base {
 	 */
 	protected function get_form_field_types() {
 		return apply_filters( 'eael/registration-form-fields', [
-			'user_name'    => __( 'Username', 'essential-addons-for-elementor-lite' ),
-			'email'        => __( 'Email', 'essential-addons-for-elementor-lite' ),
-			'password'     => __( 'Password', 'essential-addons-for-elementor-lite' ),
-			'confirm_pass' => __( 'Confirm Password', 'essential-addons-for-elementor-lite' ),
-			'first_name'   => __( 'First Name', 'essential-addons-for-elementor-lite' ),
-			'last_name'    => __( 'Last Name', 'essential-addons-for-elementor-lite' ),
-			'website'      => __( 'Website', 'essential-addons-for-elementor-lite' ),
+			'user_name'    => __( 'Username', 'px-elements' ),
+			'email'        => __( 'Email', 'px-elements' ),
+			'password'     => __( 'Password', 'px-elements' ),
+			'confirm_pass' => __( 'Confirm Password', 'px-elements' ),
+			'first_name'   => __( 'First Name', 'px-elements' ),
+			'last_name'    => __( 'Last Name', 'px-elements' ),
+			'website'      => __( 'Website', 'px-elements' ),
 		] );
 	}
 
@@ -230,19 +230,19 @@ class Login_Register extends Widget_Base {
 	 */
 	protected function init_content_general_controls() {
 		$this->start_controls_section( 'section_content_general', [
-			'label' => __( 'General', 'essential-addons-for-elementor-lite' ),
+			'label' => __( 'General', 'px-elements' ),
 		] );
 		$this->add_control( 'default_form_type_notice', [
 			'type'            => Controls_Manager::RAW_HTML,
-			'raw'             => __( 'Choose the type of form you want to show by default. Note: you can show both forms in a single page even if you select only login or registration from below.', 'essential-addons-for-elementor-lite' ),
+			'raw'             => __( 'Choose the type of form you want to show by default. Note: you can show both forms in a single page even if you select only login or registration from below.', 'px-elements' ),
 			'content_classes' => 'elementor-panel-alert elementor-panel-alert-info',
 		] );
 		$this->add_control( 'default_form_type', [
-			'label'   => __( 'Default Form Type', 'essential-addons-for-elementor-lite' ),
+			'label'   => __( 'Default Form Type', 'px-elements' ),
 			'type'    => Controls_Manager::SELECT,
 			'options' => [
-				'login'    => __( 'Login', 'essential-addons-for-elementor-lite' ),
-				'register' => __( 'Registration', 'essential-addons-for-elementor-lite' ),
+				'login'    => __( 'Login', 'px-elements' ),
+				'register' => __( 'Registration', 'px-elements' ),
 			],
 			'default' => 'login',
 		] );
@@ -250,7 +250,7 @@ class Login_Register extends Widget_Base {
 			$this->add_control( 'registration_off_notice', [
 				'type'            => Controls_Manager::RAW_HTML,
 				/* translators: %1$s is settings page link open tag, %2$s is link closing tag */
-				'raw'             => sprintf( __( 'Registration is disabled on your site. Please enable it to use registration form. You can enable it from Dashboard » Settings » General » %1$sMembership%2$s.', 'essential-addons-for-elementor-lite' ), '<a href="' . esc_attr( esc_url( admin_url( 'options-general.php' ) ) ) . '" target="_blank">', '</a>' ),
+				'raw'             => sprintf( __( 'Registration is disabled on your site. Please enable it to use registration form. You can enable it from Dashboard » Settings » General » %1$sMembership%2$s.', 'px-elements' ), '<a href="' . esc_attr( esc_url( admin_url( 'options-general.php' ) ) ) . '" target="_blank">', '</a>' ),
 				'content_classes' => 'elementor-panel-alert elementor-panel-alert-warning',
 				'condition'       => [
 					'default_form_type' => 'register',
@@ -258,49 +258,49 @@ class Login_Register extends Widget_Base {
 			] );
 		}
 		$this->add_control( 'hide_for_logged_in_user', [
-			'label'   => __( 'Hide all Forms from Logged-in Users', 'essential-addons-for-elementor-lite' ),
+			'label'   => __( 'Hide all Forms from Logged-in Users', 'px-elements' ),
 			'type'    => Controls_Manager::SWITCHER,
 			'default' => 'yes',
 		] );
 		$this->add_control( 'gen_lgn_content_po_toggle', [
-			'label'        => __( 'Login Form General', 'essential-addons-for-elementor-lite' ),
+			'label'        => __( 'Login Form General', 'px-elements' ),
 			'type'         => Controls_Manager::POPOVER_TOGGLE,
-			'label_off'    => __( 'Controls', 'essential-addons-for-elementor-lite' ),
-			'label_on'     => __( 'Custom', 'essential-addons-for-elementor-lite' ),
+			'label_off'    => __( 'Controls', 'px-elements' ),
+			'label_on'     => __( 'Custom', 'px-elements' ),
 			'return_value' => 'yes',
 			'default'      => 'yes',
 		] );
 		$this->start_popover();
 		$this->add_control( 'show_log_out_message', [
-			'label'   => __( 'Show Logout Link', 'essential-addons-for-elementor-lite' ),
+			'label'   => __( 'Show Logout Link', 'px-elements' ),
 			'type'    => Controls_Manager::SWITCHER,
 			'default' => 'yes',
 		] );
 		$this->add_control( 'show_lost_password', [
-			'label'   => __( 'Show Lost your password?', 'essential-addons-for-elementor-lite' ),
+			'label'   => __( 'Show Lost your password?', 'px-elements' ),
 			'type'    => Controls_Manager::SWITCHER,
 			'default' => 'yes',
 		] );
 
 		$this->add_control( 'lost_password_text', [
-			'label'       => __( 'Lost Password Text', 'essential-addons-for-elementor-lite' ),
+			'label'       => __( 'Lost Password Text', 'px-elements' ),
 			'label_block' => true,
 			'type'        => Controls_Manager::TEXT,
 			'dynamic'     => [
 				'active' => true,
 			],
-			'default'     => __( 'Forgot password?', 'essential-addons-for-elementor-lite' ),
+			'default'     => __( 'Forgot password?', 'px-elements' ),
 			'condition'   => [
 				'show_lost_password' => 'yes',
 			],
 		] );
 		$this->add_control( 'lost_password_link_type', [
-			'label'       => __( 'Lost Password Link to', 'essential-addons-for-elementor-lite' ),
+			'label'       => __( 'Lost Password Link to', 'px-elements' ),
 			'label_block' => true,
 			'type'        => Controls_Manager::SELECT,
 			'options'     => [
-				'default' => __( 'Default WordPress Page', 'essential-addons-for-elementor-lite' ),
-				'custom'  => __( 'Custom URL', 'essential-addons-for-elementor-lite' ),
+				'default' => __( 'Default WordPress Page', 'px-elements' ),
+				'custom'  => __( 'Custom URL', 'px-elements' ),
 			],
 			'default'     => 'default',
 			'condition'   => [
@@ -308,7 +308,7 @@ class Login_Register extends Widget_Base {
 			],
 		] );
 		$this->add_control( 'lost_password_url', [
-			'label'         => __( 'Custom Lost Password URL', 'essential-addons-for-elementor-lite' ),
+			'label'         => __( 'Custom Lost Password URL', 'px-elements' ),
 			'label_block'   => true,
 			'type'          => Controls_Manager::URL,
 			'show_external' => false,
@@ -326,34 +326,34 @@ class Login_Register extends Widget_Base {
 				'type' => Controls_Manager::DIVIDER,
 			] );
 			$this->add_control( 'show_register_link', [
-				'label'     => __( 'Show Register Link', 'essential-addons-for-elementor-lite' ),
+				'label'     => __( 'Show Register Link', 'px-elements' ),
 				'type'      => Controls_Manager::SWITCHER,
 				'default'   => 'yes',
 				'separator' => 'before',
 
 			] );
 			$this->add_control( 'registration_link_text', [
-				'label'       => __( 'Register Link Text', 'essential-addons-for-elementor-lite' ),
+				'label'       => __( 'Register Link Text', 'px-elements' ),
 				'label_block' => true,
-				'description' => __( 'You can put text in two lines to make the last line linkable. Pro Tip: You can keep the first line empty and put the text only in the second line to get a link only.', 'essential-addons-for-elementor-lite' ),
+				'description' => __( 'You can put text in two lines to make the last line linkable. Pro Tip: You can keep the first line empty and put the text only in the second line to get a link only.', 'px-elements' ),
 				'type'        => Controls_Manager::TEXTAREA,
 				'rows'        => 2,
 				'dynamic'     => [
 					'active' => true,
 				],
-				'default'     => __( " \nRegister Now", 'essential-addons-for-elementor-lite' ),
+				'default'     => __( " \nRegister Now", 'px-elements' ),
 				'condition'   => [
 					'show_register_link' => 'yes',
 				],
 			] );
 			$this->add_control( 'registration_link_action', [
-				'label'       => __( 'Registration Link Action', 'essential-addons-for-elementor-lite' ),
+				'label'       => __( 'Registration Link Action', 'px-elements' ),
 				'label_block' => true,
 				'type'        => Controls_Manager::SELECT,
 				'options'     => [
-					'default' => __( 'WordPress Registration Page', 'essential-addons-for-elementor-lite' ),
-					'custom'  => __( 'Custom URL', 'essential-addons-for-elementor-lite' ),
-					'form'    => __( 'Show Register Form', 'essential-addons-for-elementor-lite' ),
+					'default' => __( 'WordPress Registration Page', 'px-elements' ),
+					'custom'  => __( 'Custom URL', 'px-elements' ),
+					'form'    => __( 'Show Register Form', 'px-elements' ),
 				],
 				'default'     => 'form',
 				'condition'   => [
@@ -361,7 +361,7 @@ class Login_Register extends Widget_Base {
 				],
 			] );
 			$this->add_control( 'custom_register_url', [
-				'label'         => __( 'Custom Register URL', 'essential-addons-for-elementor-lite' ),
+				'label'         => __( 'Custom Register URL', 'px-elements' ),
 				'label_block'   => true,
 				'type'          => Controls_Manager::URL,
 				'show_external' => false,
@@ -375,24 +375,24 @@ class Login_Register extends Widget_Base {
 			] );
 		} else {
 			$this->add_control( 'show_register_link', [
-				'label'     => __( 'Show Register Link', 'essential-addons-for-elementor-lite' ),
+				'label'     => __( 'Show Register Link', 'px-elements' ),
 				'type'      => Controls_Manager::HIDDEN,
 				'default'   => 'no',
 				'separator' => 'before',
 			] );
 		}
 		$this->add_control( 'enable_login_recaptcha', [
-			'label'        => __( 'Enable Google reCAPTCHA', 'essential-addons-for-elementor-lite' ),
-			'description'  => __( 'reCAPTCHA will prevent spam login from bots.', 'essential-addons-for-elementor-lite' ),
+			'label'        => __( 'Enable Google reCAPTCHA', 'px-elements' ),
+			'description'  => __( 'reCAPTCHA will prevent spam login from bots.', 'px-elements' ),
 			'type'         => Controls_Manager::SWITCHER,
-			'label_on'     => __( 'Yes', 'essential-addons-for-elementor-lite' ),
-			'label_off'    => __( 'No', 'essential-addons-for-elementor-lite' ),
+			'label_on'     => __( 'Yes', 'px-elements' ),
+			'label_off'    => __( 'No', 'px-elements' ),
 			'return_value' => 'yes',
 		] );
 		if ( empty( $this->recaptcha_sitekey ) ) {
 			$this->add_control( 'eael_login_recaptcha_keys_missing', [
 				'type'            => Controls_Manager::RAW_HTML,
-				'raw'             => sprintf( __( 'reCAPTCHA API keys are missing. Please add them from %sDashboard >> Essential Addons >> Elements >> Login | Register Form %sSettings', 'essential-addons-for-elementor-lite' ), '<strong>', '</strong>' ),
+				'raw'             => sprintf( __( 'reCAPTCHA API keys are missing. Please add them from %sDashboard >> Essential Addons >> Elements >> Login | Register Form %sSettings', 'px-elements' ), '<strong>', '</strong>' ),
 				'content_classes' => 'eael-warning',
 				'condition'       => [
 					'enable_login_recaptcha' => 'yes',
@@ -405,41 +405,41 @@ class Login_Register extends Widget_Base {
 		/*--show registration related control only if registration is enable on the site--*/
 		if ( $this->user_can_register ) {
 			$this->add_control( 'gen_reg_content_po_toggle', [
-				'label'        => __( 'Register Form General', 'essential-addons-for-elementor-lite' ),
+				'label'        => __( 'Register Form General', 'px-elements' ),
 				'type'         => Controls_Manager::POPOVER_TOGGLE,
-				'label_off'    => __( 'Default', 'essential-addons-for-elementor-lite' ),
-				'label_on'     => __( 'Custom', 'essential-addons-for-elementor-lite' ),
+				'label_off'    => __( 'Default', 'px-elements' ),
+				'label_on'     => __( 'Custom', 'px-elements' ),
 				'return_value' => 'yes',
 				'default'      => 'yes',
 			] );
 			$this->start_popover();
 			$this->add_control( 'show_login_link', [
-				'label'   => __( 'Show Login Link', 'essential-addons-for-elementor-lite' ),
+				'label'   => __( 'Show Login Link', 'px-elements' ),
 				'type'    => Controls_Manager::SWITCHER,
 				'default' => 'yes',
 			] );
 			$this->add_control( 'login_link_text', [
-				'label'       => __( 'Login Link Text', 'essential-addons-for-elementor-lite' ),
+				'label'       => __( 'Login Link Text', 'px-elements' ),
 				'label_block' => true,
-				'description' => __( 'You can put text in two lines to make the last line linkable. Pro Tip: You can keep the first line empty and put the text only in the second line to get a link only.', 'essential-addons-for-elementor-lite' ),
+				'description' => __( 'You can put text in two lines to make the last line linkable. Pro Tip: You can keep the first line empty and put the text only in the second line to get a link only.', 'px-elements' ),
 				'type'        => Controls_Manager::TEXTAREA,
 				'rows'        => 2,
 				'dynamic'     => [
 					'active' => true,
 				],
-				'default'     => __( " \nSign In", 'essential-addons-for-elementor-lite' ),
+				'default'     => __( " \nSign In", 'px-elements' ),
 				'condition'   => [
 					'show_login_link' => 'yes',
 				],
 			] );
 			$this->add_control( 'login_link_action', [
-				'label'       => __( 'Login Link Action', 'essential-addons-for-elementor-lite' ),
+				'label'       => __( 'Login Link Action', 'px-elements' ),
 				'label_block' => true,
 				'type'        => Controls_Manager::SELECT,
 				'options'     => [
-					'default' => __( 'Default WordPress Page', 'essential-addons-for-elementor-lite' ),
-					'custom'  => __( 'Custom URL', 'essential-addons-for-elementor-lite' ),
-					'form'    => __( 'Show Login Form', 'essential-addons-for-elementor-lite' ),
+					'default' => __( 'Default WordPress Page', 'px-elements' ),
+					'custom'  => __( 'Custom URL', 'px-elements' ),
+					'form'    => __( 'Show Login Form', 'px-elements' ),
 				],
 				'default'     => 'form',
 				'condition'   => [
@@ -447,7 +447,7 @@ class Login_Register extends Widget_Base {
 				],
 			] );
 			$this->add_control( 'custom_login_url', [
-				'label'         => __( 'Custom Login URL', 'essential-addons-for-elementor-lite' ),
+				'label'         => __( 'Custom Login URL', 'px-elements' ),
 				'label_block'   => true,
 				'show_external' => false,
 				'type'          => Controls_Manager::URL,
@@ -460,17 +460,17 @@ class Login_Register extends Widget_Base {
 				],
 			] );
 			$this->add_control( 'enable_register_recaptcha', [
-				'label'        => __( 'Enable Google reCAPTCHA', 'essential-addons-for-elementor-lite' ),
-				'description'  => __( 'reCAPTCHA will prevent spam registration from bots.', 'essential-addons-for-elementor-lite' ),
+				'label'        => __( 'Enable Google reCAPTCHA', 'px-elements' ),
+				'description'  => __( 'reCAPTCHA will prevent spam registration from bots.', 'px-elements' ),
 				'type'         => Controls_Manager::SWITCHER,
-				'label_on'     => __( 'Yes', 'essential-addons-for-elementor-lite' ),
-				'label_off'    => __( 'No', 'essential-addons-for-elementor-lite' ),
+				'label_on'     => __( 'Yes', 'px-elements' ),
+				'label_off'    => __( 'No', 'px-elements' ),
 				'return_value' => 'yes',
 			] );
 			if ( empty( $this->recaptcha_sitekey ) ) {
 				$this->add_control( 'eael_recaptcha_keys_missing', [
 					'type'            => Controls_Manager::RAW_HTML,
-					'raw'             => sprintf( __( 'reCAPTCHA API keys are missing. Please add them from %sDashboard >> Essential Addons >> Elements >> Login | Register Form %sSettings', 'essential-addons-for-elementor-lite' ), '<strong>', '</strong>' ),
+					'raw'             => sprintf( __( 'reCAPTCHA API keys are missing. Please add them from %sDashboard >> Essential Addons >> Elements >> Login | Register Form %sSettings', 'px-elements' ), '<strong>', '</strong>' ),
 					'content_classes' => 'eael-warning',
 					'condition'       => [
 						'enable_register_recaptcha' => 'yes',
@@ -481,7 +481,7 @@ class Login_Register extends Widget_Base {
 
 		} else {
 			$this->add_control( 'show_login_link', [
-				'label'   => __( 'Show Login Link', 'essential-addons-for-elementor-lite' ),
+				'label'   => __( 'Show Login Link', 'px-elements' ),
 				'type'    => Controls_Manager::HIDDEN,
 				'default' => 'no',
 			] );
@@ -496,23 +496,23 @@ class Login_Register extends Widget_Base {
 	 */
 	protected function init_content_login_fields_controls() {
 		$this->start_controls_section( 'section_content_login_fields', [
-			'label'      => __( 'Login Form Fields', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Login Form Fields', 'px-elements' ),
 			'conditions' => $this->get_form_controls_display_condition( 'login' ),
 		] );
 
 		$this->add_control( 'login_label_types', [
-			'label'   => __( 'Labels & Placeholders', 'essential-addons-for-elementor-lite' ),
+			'label'   => __( 'Labels & Placeholders', 'px-elements' ),
 			'type'    => Controls_Manager::SELECT,
 			'options' => [
-				'default' => __( 'Default', 'essential-addons-for-elementor-lite' ),
-				'custom'  => __( 'Custom', 'essential-addons-for-elementor-lite' ),
-				'none'    => __( 'Hide', 'essential-addons-for-elementor-lite' ),
+				'default' => __( 'Default', 'px-elements' ),
+				'custom'  => __( 'Custom', 'px-elements' ),
+				'none'    => __( 'Hide', 'px-elements' ),
 			],
 			'default' => 'default',
 		] );
 
 		$this->add_control( 'login_labels_heading', [
-			'label'     => __( 'Labels', 'essential-addons-for-elementor-lite' ),
+			'label'     => __( 'Labels', 'px-elements' ),
 			'type'      => Controls_Manager::HEADING,
 			'separator' => 'before',
 			'condition' => [ 'login_label_types' => 'custom', ],
@@ -520,9 +520,9 @@ class Login_Register extends Widget_Base {
 
 
 		$this->add_control( 'login_user_label', [
-			'label'       => __( 'Username Label', 'essential-addons-for-elementor-lite' ),
-			'placeholder' => __( 'Username or Email Address', 'essential-addons-for-elementor-lite' ),
-			'default'     => __( 'Username or Email Address', 'essential-addons-for-elementor-lite' ),
+			'label'       => __( 'Username Label', 'px-elements' ),
+			'placeholder' => __( 'Username or Email Address', 'px-elements' ),
+			'default'     => __( 'Username or Email Address', 'px-elements' ),
 			'type'        => Controls_Manager::TEXT,
 			'dynamic'     => [ 'active' => true, ],
 			'label_block' => true,
@@ -530,9 +530,9 @@ class Login_Register extends Widget_Base {
 		] );
 
 		$this->add_control( 'login_password_label', [
-			'label'       => __( 'Password Label', 'essential-addons-for-elementor-lite' ),
-			'placeholder' => __( 'Password', 'essential-addons-for-elementor-lite' ),
-			'default'     => __( 'Password', 'essential-addons-for-elementor-lite' ),
+			'label'       => __( 'Password Label', 'px-elements' ),
+			'placeholder' => __( 'Password', 'px-elements' ),
+			'default'     => __( 'Password', 'px-elements' ),
 			'type'        => Controls_Manager::TEXT,
 			'dynamic'     => [ 'active' => true, ],
 			'label_block' => true,
@@ -540,16 +540,16 @@ class Login_Register extends Widget_Base {
 		] );
 
 		$this->add_control( 'login_placeholders_heading', [
-			'label'     => esc_html__( 'Placeholders', 'essential-addons-for-elementor-lite' ),
+			'label'     => esc_html__( 'Placeholders', 'px-elements' ),
 			'type'      => Controls_Manager::HEADING,
 			'condition' => [ 'login_label_types' => 'custom', ],
 			'separator' => 'before',
 		] );
 
 		$this->add_control( 'login_user_placeholder', [
-			'label'       => __( 'Username Placeholder', 'essential-addons-for-elementor-lite' ),
-			'placeholder' => __( 'Username or Email Address', 'essential-addons-for-elementor-lite' ),
-			'default'     => __( 'Username or Email Address', 'essential-addons-for-elementor-lite' ),
+			'label'       => __( 'Username Placeholder', 'px-elements' ),
+			'placeholder' => __( 'Username or Email Address', 'px-elements' ),
+			'default'     => __( 'Username or Email Address', 'px-elements' ),
 			'type'        => Controls_Manager::TEXT,
 			'dynamic'     => [ 'active' => true, ],
 			'label_block' => true,
@@ -557,9 +557,9 @@ class Login_Register extends Widget_Base {
 		] );
 
 		$this->add_control( 'login_password_placeholder', [
-			'label'       => __( 'Password Placeholder', 'essential-addons-for-elementor-lite' ),
-			'placeholder' => __( 'Password', 'essential-addons-for-elementor-lite' ),
-			'default'     => __( 'Password', 'essential-addons-for-elementor-lite' ),
+			'label'       => __( 'Password Placeholder', 'px-elements' ),
+			'placeholder' => __( 'Password', 'px-elements' ),
+			'default'     => __( 'Password', 'px-elements' ),
 			'type'        => Controls_Manager::TEXT,
 			'dynamic'     => [ 'active' => true, ],
 			'label_block' => true,
@@ -567,7 +567,7 @@ class Login_Register extends Widget_Base {
 		] );
 
 		$this->add_responsive_control( 'login_field_width', [
-			'label'      => esc_html__( 'Input Fields width', 'essential-addons-for-elementor-lite' ),
+			'label'      => esc_html__( 'Input Fields width', 'px-elements' ),
 			'type'       => Controls_Manager::SLIDER,
 			'size_units' => [
 				'px',
@@ -595,34 +595,34 @@ class Login_Register extends Widget_Base {
 		] );
 
 		$this->add_control( 'login_show_remember_me', [
-			'label'     => __( 'Remember Me Checkbox', 'essential-addons-for-elementor-lite' ),
+			'label'     => __( 'Remember Me Checkbox', 'px-elements' ),
 			'type'      => Controls_Manager::SWITCHER,
 			'default'   => 'yes',
-			'label_off' => __( 'Hide', 'essential-addons-for-elementor-lite' ),
-			'label_on'  => __( 'Show', 'essential-addons-for-elementor-lite' ),
+			'label_off' => __( 'Hide', 'px-elements' ),
+			'label_on'  => __( 'Show', 'px-elements' ),
 		] );
 
 		$this->add_control( 'password_toggle', [
-			'label'     => __( 'Password Visibility Icon', 'essential-addons-for-elementor-lite' ),
+			'label'     => __( 'Password Visibility Icon', 'px-elements' ),
 			'type'      => Controls_Manager::SWITCHER,
-			'label_off' => __( 'Hide', 'essential-addons-for-elementor-lite' ),
-			'label_on'  => __( 'Show', 'essential-addons-for-elementor-lite' ),
+			'label_off' => __( 'Hide', 'px-elements' ),
+			'label_on'  => __( 'Show', 'px-elements' ),
 			'default'   => 'yes',
 		] );
 
 		/*--Login Fields Button--*/
 		$this->add_control( 'login_button_heading', [
-			'label'     => esc_html__( 'Login Button', 'essential-addons-for-elementor-lite' ),
+			'label'     => esc_html__( 'Login Button', 'px-elements' ),
 			'type'      => Controls_Manager::HEADING,
 			'separator' => 'before',
 		] );
 
 		$this->add_control( 'login_button_text', [
-			'label'       => __( 'Button Text', 'essential-addons-for-elementor-lite' ),
+			'label'       => __( 'Button Text', 'px-elements' ),
 			'type'        => Controls_Manager::TEXT,
 			'dynamic'     => [ 'active' => true, ],
-			'default'     => __( 'Log In', 'essential-addons-for-elementor-lite' ),
-			'placeholder' => __( 'Log In', 'essential-addons-for-elementor-lite' ),
+			'default'     => __( 'Log In', 'px-elements' ),
+			'placeholder' => __( 'Log In', 'px-elements' ),
 		] );
 
 		$this->end_controls_section();
@@ -630,11 +630,11 @@ class Login_Register extends Widget_Base {
 
 	protected function init_form_header_controls() {
 		$this->start_controls_section( 'section_content_lr_form_header', [
-			'label' => __( 'Form Header Content', 'essential-addons-for-elementor-lite' ),
+			'label' => __( 'Form Header Content', 'px-elements' ),
 		] );
 
 		$this->add_control( 'lr_form_image', [
-			'label'   => __( 'Form Header Image', 'essential-addons-for-elementor-lite' ),
+			'label'   => __( 'Form Header Image', 'px-elements' ),
 			'type'    => Controls_Manager::MEDIA,
 			'dynamic' => [
 				'active' => true,
@@ -652,15 +652,15 @@ class Login_Register extends Widget_Base {
 		] );
 
 		$this->add_control( "lr_form_image_position", [
-			'label'     => __( 'Header Image Position', 'essential-addons-for-elementor-lite' ),
+			'label'     => __( 'Header Image Position', 'px-elements' ),
 			'type'      => Controls_Manager::CHOOSE,
 			'options'   => [
 				'left'  => [
-					'title' => __( 'Left', 'essential-addons-for-elementor-lite' ),
+					'title' => __( 'Left', 'px-elements' ),
 					'icon'  => 'eicon-arrow-left',
 				],
 				'right' => [
-					'title' => __( 'Right', 'essential-addons-for-elementor-lite' ),
+					'title' => __( 'Right', 'px-elements' ),
 					'icon'  => 'eicon-arrow-right',
 				],
 			],
@@ -669,7 +669,7 @@ class Login_Register extends Widget_Base {
 		] );
 
 		$this->add_control( 'lr_form_logo', [
-			'label'   => __( 'Form Header Logo', 'essential-addons-for-elementor-lite' ),
+			'label'   => __( 'Form Header Logo', 'px-elements' ),
 			'type'    => Controls_Manager::MEDIA,
 			'dynamic' => [
 				'active' => true,
@@ -685,15 +685,15 @@ class Login_Register extends Widget_Base {
 			'separator' => 'none',
 		] );
 		$this->add_control( "lr_form_logo_position", [
-			'label'     => __( 'Form Logo Position', 'essential-addons-for-elementor-lite' ),
+			'label'     => __( 'Form Logo Position', 'px-elements' ),
 			'type'      => Controls_Manager::CHOOSE,
 			'options'   => [
 				'inline' => [
-					'title' => __( 'Left', 'essential-addons-for-elementor-lite' ),
+					'title' => __( 'Left', 'px-elements' ),
 					'icon'  => 'eicon-arrow-left',
 				],
 				'block'  => [
-					'title' => __( 'Top', 'essential-addons-for-elementor-lite' ),
+					'title' => __( 'Top', 'px-elements' ),
 					'icon'  => 'eicon-arrow-up',
 				],
 			],
@@ -702,31 +702,31 @@ class Login_Register extends Widget_Base {
 		] );
 
 		$this->add_control( 'login_form_title', [
-			'label'       => __( 'Login Form Title', 'essential-addons-for-elementor-lite' ),
+			'label'       => __( 'Login Form Title', 'px-elements' ),
 			'type'        => Controls_Manager::TEXT,
 			'dynamic'     => [ 'active' => true, ],
-			'placeholder' => __( 'Welcome Back!', 'essential-addons-for-elementor-lite' ),
+			'placeholder' => __( 'Welcome Back!', 'px-elements' ),
 			'separator'   => 'before',
 		] );
 		$this->add_control( 'login_form_subtitle', [
-			'label'       => __( 'Login Form Sub Title', 'essential-addons-for-elementor-lite' ),
+			'label'       => __( 'Login Form Sub Title', 'px-elements' ),
 			'type'        => Controls_Manager::TEXTAREA,
 			'dynamic'     => [ 'active' => true, ],
-			'placeholder' => __( 'Please login to your account', 'essential-addons-for-elementor-lite' ),
+			'placeholder' => __( 'Please login to your account', 'px-elements' ),
 		] );
 
 		$this->add_control( 'register_form_title', [
-			'label'       => __( 'Register Form Title', 'essential-addons-for-elementor-lite' ),
+			'label'       => __( 'Register Form Title', 'px-elements' ),
 			'type'        => Controls_Manager::TEXT,
 			'dynamic'     => [ 'active' => true, ],
-			'placeholder' => __( 'Create a New Account', 'essential-addons-for-elementor-lite' ),
+			'placeholder' => __( 'Create a New Account', 'px-elements' ),
 			'separator'   => 'before',
 		] );
 		$this->add_control( 'register_form_subtitle', [
-			'label'       => __( 'Register Form Sub Title', 'essential-addons-for-elementor-lite' ),
+			'label'       => __( 'Register Form Sub Title', 'px-elements' ),
 			'type'        => Controls_Manager::TEXTAREA,
 			'dynamic'     => [ 'active' => true, ],
-			'placeholder' => __( 'Create an account to enjoy awesome features.', 'essential-addons-for-elementor-lite' ),
+			'placeholder' => __( 'Create an account to enjoy awesome features.', 'px-elements' ),
 		] );
 
 		$this->end_controls_section();
@@ -735,12 +735,12 @@ class Login_Register extends Widget_Base {
 	protected function init_content_login_options_controls() {
 
 		$this->start_controls_section( 'section_content_login_options', [
-			'label'      => __( 'Login Form Options', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Login Form Options', 'px-elements' ),
 			'conditions' => $this->get_form_controls_display_condition( 'login' ),
 		] );
 
 		$this->add_control( 'redirect_after_login', [
-			'label' => __( 'Redirect After Login', 'essential-addons-for-elementor-lite' ),
+			'label' => __( 'Redirect After Login', 'px-elements' ),
 			'type'  => Controls_Manager::SWITCHER,
 		] );
 
@@ -749,7 +749,7 @@ class Login_Register extends Widget_Base {
 			'show_label'    => false,
 			'show_external' => false,
 			'placeholder'   => admin_url(),
-			'description'   => __( 'Please note that only your current domain is allowed here to keep your site secure.', 'essential-addons-for-elementor-lite' ),
+			'description'   => __( 'Please note that only your current domain is allowed here to keep your site secure.', 'px-elements' ),
 			'condition'     => [
 				'redirect_after_login' => 'yes',
 			],
@@ -762,7 +762,7 @@ class Login_Register extends Widget_Base {
 		] );
 		// @todo; in future
 		//$this->add_control( 'redirect_after_logout', [
-		//	'label' => __( 'Redirect After Logout', 'essential-addons-for-elementor-lite' ),
+		//	'label' => __( 'Redirect After Logout', 'px-elements' ),
 		//	'type'  => Controls_Manager::SWITCHER,
 		//] );
 		//
@@ -770,8 +770,8 @@ class Login_Register extends Widget_Base {
 		//	'type'          => Controls_Manager::URL,
 		//	'show_label'    => false,
 		//	'show_external' => false,
-		//	'placeholder'   => __( 'https://your-link.com', 'essential-addons-for-elementor-lite' ),
-		//	'description'   => __( 'Please note that only your current domain is allowed here to keep your site secure.', 'essential-addons-for-elementor-lite' ),
+		//	'placeholder'   => __( 'https://your-link.com', 'px-elements' ),
+		//	'description'   => __( 'Please note that only your current domain is allowed here to keep your site secure.', 'px-elements' ),
 		//	'condition'     => [
 		//		'redirect_after_logout' => 'yes',
 		//	],
@@ -783,39 +783,39 @@ class Login_Register extends Widget_Base {
 
 	protected function init_content_terms_controls() {
 		$this->start_controls_section( 'section_content_terms_conditions', [
-			'label'      => __( 'Terms & Conditions', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Terms & Conditions', 'px-elements' ),
 			'conditions' => $this->get_form_controls_display_condition( 'register' ),
 		] );
 
 		$this->add_control( 'show_terms_conditions', [
-			'label'        => __( 'Enforce Terms & Conditions', 'essential-addons-for-elementor-lite' ),
+			'label'        => __( 'Enforce Terms & Conditions', 'px-elements' ),
 			'type'         => Controls_Manager::SWITCHER,
-			'label_on'     => __( 'Yes', 'essential-addons-for-elementor-lite' ),
-			'label_off'    => __( 'No', 'essential-addons-for-elementor-lite' ),
+			'label_on'     => __( 'Yes', 'px-elements' ),
+			'label_off'    => __( 'No', 'px-elements' ),
 			'default'      => 'no',
 			'return_value' => 'yes',
 		] );
 
 		$this->add_control( 'acceptance_label', [
-			'label'       => __( 'Acceptance Label', 'essential-addons-for-elementor-lite' ),
-			'description' => __( 'Eg. I accept the terms & conditions. Note: First line is checkbox label & Last line will be used as link text.', 'essential-addons-for-elementor-lite' ),
+			'label'       => __( 'Acceptance Label', 'px-elements' ),
+			'description' => __( 'Eg. I accept the terms & conditions. Note: First line is checkbox label & Last line will be used as link text.', 'px-elements' ),
 			'type'        => Controls_Manager::TEXTAREA,
 			'rows'        => 2,
 			'label_block' => true,
-			'placeholder' => __( 'I Accept the Terms and Conditions.', 'essential-addons-for-elementor-lite' ),
+			'placeholder' => __( 'I Accept the Terms and Conditions.', 'px-elements' ),
 			/* translators: \n means new line. So, Don't translate this*/
-			'default'     => __( "I Accept\n the Terms and Conditions.", 'essential-addons-for-elementor-lite' ),
+			'default'     => __( "I Accept\n the Terms and Conditions.", 'px-elements' ),
 			'condition'   => [
 				'show_terms_conditions' => 'yes',
 			],
 		] );
 
 		$this->add_control( 'acceptance_text_source', [
-			'label'     => __( 'Content Source', 'essential-addons-for-elementor-lite' ),
+			'label'     => __( 'Content Source', 'px-elements' ),
 			'type'      => Controls_Manager::SELECT,
 			'options'   => [
-				'editor' => __( 'Editor', 'essential-addons-for-elementor-lite' ),
-				'custom' => __( 'Custom', 'essential-addons-for-elementor-lite' ),
+				'editor' => __( 'Editor', 'px-elements' ),
+				'custom' => __( 'Custom', 'px-elements' ),
 			],
 			'default'   => 'custom',
 			'condition' => [
@@ -824,10 +824,10 @@ class Login_Register extends Widget_Base {
 		] );
 
 		$this->add_control( 'acceptance_text', [
-			'label'     => __( 'Terms and Conditions', 'essential-addons-for-elementor-lite' ),
+			'label'     => __( 'Terms and Conditions', 'px-elements' ),
 			'type'      => Controls_Manager::WYSIWYG,
 			'rows'      => 3,
-			'default'   => __( 'Please go through the following terms and conditions carefully.', 'essential-addons-for-elementor-lite' ),
+			'default'   => __( 'Please go through the following terms and conditions carefully.', 'px-elements' ),
 			'condition' => [
 				'show_terms_conditions'  => 'yes',
 				'acceptance_text_source' => 'editor',
@@ -836,8 +836,8 @@ class Login_Register extends Widget_Base {
 
 
 		$this->add_control( 'acceptance_text_url', [
-			'label'       => __( 'Terms & Conditions URL', 'essential-addons-for-elementor-lite' ),
-			'description' => __( 'Enter the link where your terms & condition or privacy policy is found.', 'essential-addons-for-elementor-lite' ),
+			'label'       => __( 'Terms & Conditions URL', 'px-elements' ),
+			'description' => __( 'Enter the link where your terms & condition or privacy policy is found.', 'px-elements' ),
 			'type'        => Controls_Manager::URL,
 			'dynamic'     => [
 				'active' => true,
@@ -858,115 +858,115 @@ class Login_Register extends Widget_Base {
 
 	protected function init_content_validation_messages_controls() {
 		$this->start_controls_section( 'section_content_errors', [
-			'label' => __( 'Validation Messages', 'essential-addons-for-elementor-lite' ),
+			'label' => __( 'Validation Messages', 'px-elements' ),
 		] );
 
 		$this->add_control( 'err_message_heading', [
-			'label' => esc_html__( 'Error Messages', 'essential-addons-for-elementor-lite' ),
+			'label' => esc_html__( 'Error Messages', 'px-elements' ),
 			'type'  => Controls_Manager::HEADING,
 		] );
 
 		$this->add_control( 'err_email', [
-			'label'       => __( 'Invalid Email', 'essential-addons-for-elementor-lite' ),
+			'label'       => __( 'Invalid Email', 'px-elements' ),
 			'type'        => Controls_Manager::TEXT,
 			'label_block' => true,
-			'placeholder' => __( 'Eg. Your email is invalid.', 'essential-addons-for-elementor-lite' ),
-			'default'     => __( "You have used an invalid email", 'essential-addons-for-elementor-lite' ),
+			'placeholder' => __( 'Eg. Your email is invalid.', 'px-elements' ),
+			'default'     => __( "You have used an invalid email", 'px-elements' ),
 		] );
 		$this->add_control( 'err_email_missing', [
-			'label'       => __( 'Email is missing', 'essential-addons-for-elementor-lite' ),
+			'label'       => __( 'Email is missing', 'px-elements' ),
 			'type'        => Controls_Manager::TEXT,
 			'label_block' => true,
-			'placeholder' => __( 'Eg. Email is missing or Invalid', 'essential-addons-for-elementor-lite' ),
-			'default'     => __( 'Email is missing or Invalid', 'essential-addons-for-elementor-lite' ),
+			'placeholder' => __( 'Eg. Email is missing or Invalid', 'px-elements' ),
+			'default'     => __( 'Email is missing or Invalid', 'px-elements' ),
 		] );
 		$this->add_control( 'err_email_used', [
-			'label'       => __( 'Already Used Email', 'essential-addons-for-elementor-lite' ),
+			'label'       => __( 'Already Used Email', 'px-elements' ),
 			'type'        => Controls_Manager::TEXT,
 			'label_block' => true,
-			'placeholder' => __( 'Eg. Your email is already in use..', 'essential-addons-for-elementor-lite' ),
-			'default'     => __( 'The provided email is already registered with other account. Please login or reset password or use another email.', 'essential-addons-for-elementor-lite' ),
+			'placeholder' => __( 'Eg. Your email is already in use..', 'px-elements' ),
+			'default'     => __( 'The provided email is already registered with other account. Please login or reset password or use another email.', 'px-elements' ),
 		] );
 		$this->add_control( 'err_username', [
-			'label'       => __( 'Invalid Username', 'essential-addons-for-elementor-lite' ),
+			'label'       => __( 'Invalid Username', 'px-elements' ),
 			'type'        => Controls_Manager::TEXT,
 			'label_block' => true,
-			'placeholder' => __( 'Eg. Your username is invalid.', 'essential-addons-for-elementor-lite' ),
-			'default'     => __( "You have used an invalid username", 'essential-addons-for-elementor-lite' ),
+			'placeholder' => __( 'Eg. Your username is invalid.', 'px-elements' ),
+			'default'     => __( "You have used an invalid username", 'px-elements' ),
 		] );
 		$this->add_control( 'err_username_used', [
-			'label'       => __( 'Username already in use', 'essential-addons-for-elementor-lite' ),
+			'label'       => __( 'Username already in use', 'px-elements' ),
 			'type'        => Controls_Manager::TEXT,
 			'label_block' => true,
-			'placeholder' => __( 'Eg. Your username is already registered.', 'essential-addons-for-elementor-lite' ),
-			'default'     => __( 'Invalid username provided or the username already registered.', 'essential-addons-for-elementor-lite' ),
+			'placeholder' => __( 'Eg. Your username is already registered.', 'px-elements' ),
+			'default'     => __( 'Invalid username provided or the username already registered.', 'px-elements' ),
 		] );
 		$this->add_control( 'err_pass', [
-			'label'       => __( 'Invalid Password', 'essential-addons-for-elementor-lite' ),
+			'label'       => __( 'Invalid Password', 'px-elements' ),
 			'type'        => Controls_Manager::TEXT,
 			'label_block' => true,
-			'placeholder' => __( 'Eg. Your password is invalid', 'essential-addons-for-elementor-lite' ),
-			'default'     => __( "Your password is invalid.", 'essential-addons-for-elementor-lite' ),
+			'placeholder' => __( 'Eg. Your password is invalid', 'px-elements' ),
+			'default'     => __( "Your password is invalid.", 'px-elements' ),
 		] );
 
 		$this->add_control( 'err_conf_pass', [
-			'label'       => __( 'Invalid Password Confirmed', 'essential-addons-for-elementor-lite' ),
+			'label'       => __( 'Invalid Password Confirmed', 'px-elements' ),
 			'type'        => Controls_Manager::TEXT,
 			'label_block' => true,
-			'placeholder' => __( 'Eg. Password did not matched', 'essential-addons-for-elementor-lite' ),
-			'default'     => __( "Your confirmed password did not match", 'essential-addons-for-elementor-lite' ),
+			'placeholder' => __( 'Eg. Password did not matched', 'px-elements' ),
+			'default'     => __( "Your confirmed password did not match", 'px-elements' ),
 		] );
 
 		$this->add_control( 'err_loggedin', [
-			'label'       => __( 'Already Logged In', 'essential-addons-for-elementor-lite' ),
+			'label'       => __( 'Already Logged In', 'px-elements' ),
 			'type'        => Controls_Manager::TEXT,
 			'label_block' => true,
-			'placeholder' => __( 'Eg. You are already logged in', 'essential-addons-for-elementor-lite' ),
-			'default'     => __( "You are already logged in", 'essential-addons-for-elementor-lite' ),
+			'placeholder' => __( 'Eg. You are already logged in', 'px-elements' ),
+			'default'     => __( "You are already logged in", 'px-elements' ),
 		] );
 
 		$this->add_control( 'err_recaptcha', [
-			'label'       => __( 'reCAPTCHA Failed', 'essential-addons-for-elementor-lite' ),
+			'label'       => __( 'reCAPTCHA Failed', 'px-elements' ),
 			'type'        => Controls_Manager::TEXT,
 			'label_block' => true,
-			'placeholder' => __( 'Eg. Recaptcha Validation Failed', 'essential-addons-for-elementor-lite' ),
-			'default'     => __( "You did not pass recaptcha challenge.", 'essential-addons-for-elementor-lite' ),
+			'placeholder' => __( 'Eg. Recaptcha Validation Failed', 'px-elements' ),
+			'default'     => __( "You did not pass recaptcha challenge.", 'px-elements' ),
 		] );
 
 		$this->add_control( 'err_tc', [
-			'label'       => __( 'Terms & Condition Error', 'essential-addons-for-elementor-lite' ),
+			'label'       => __( 'Terms & Condition Error', 'px-elements' ),
 			'type'        => Controls_Manager::TEXT,
 			'label_block' => true,
-			'placeholder' => __( 'Eg. You must accept the Terms & Conditions', 'essential-addons-for-elementor-lite' ),
-			'default'     => __( 'You did not accept the Terms and Conditions. Please accept it and try again.', 'essential-addons-for-elementor-lite' ),
+			'placeholder' => __( 'Eg. You must accept the Terms & Conditions', 'px-elements' ),
+			'default'     => __( 'You did not accept the Terms and Conditions. Please accept it and try again.', 'px-elements' ),
 		] );
 
 		$this->add_control( 'err_unknown', [
-			'label'       => __( 'Other Errors', 'essential-addons-for-elementor-lite' ),
+			'label'       => __( 'Other Errors', 'px-elements' ),
 			'type'        => Controls_Manager::TEXT,
 			'label_block' => true,
-			'placeholder' => __( 'Eg. Something went wrong', 'essential-addons-for-elementor-lite' ),
-			'default'     => __( "Something went wrong!", 'essential-addons-for-elementor-lite' ),
+			'placeholder' => __( 'Eg. Something went wrong', 'px-elements' ),
+			'default'     => __( "Something went wrong!", 'px-elements' ),
 		] );
 
 		$this->add_control( 'success_message_heading', [
-			'label'     => esc_html__( 'Success Messages', 'essential-addons-for-elementor-lite' ),
+			'label'     => esc_html__( 'Success Messages', 'px-elements' ),
 			'type'      => Controls_Manager::HEADING,
 			'separator' => 'before',
 		] );
 
 		$this->add_control( 'success_login', [
-			'label'       => __( 'Successful Login', 'essential-addons-for-elementor-lite' ),
+			'label'       => __( 'Successful Login', 'px-elements' ),
 			'type'        => Controls_Manager::TEXT,
 			'label_block' => true,
-			'placeholder' => __( 'Eg. You have logged in successfully', 'essential-addons-for-elementor-lite' ),
-			'default'     => __( "You have logged in successfully", 'essential-addons-for-elementor-lite' ),
+			'placeholder' => __( 'Eg. You have logged in successfully', 'px-elements' ),
+			'default'     => __( "You have logged in successfully", 'px-elements' ),
 		] );
 		$this->add_control( 'success_register', [
-			'label'       => __( 'Successful Registration', 'essential-addons-for-elementor-lite' ),
+			'label'       => __( 'Successful Registration', 'px-elements' ),
 			'type'        => Controls_Manager::TEXTAREA,
-			'default'     => __( 'Registration completed successfully, Check your inbox for password if you did not provided while registering.', 'essential-addons-for-elementor-lite' ),
-			'placeholder' => __( 'eg. Registration completed successfully', 'essential-addons-for-elementor-lite' ),
+			'default'     => __( 'Registration completed successfully, Check your inbox for password if you did not provided while registering.', 'px-elements' ),
+			'placeholder' => __( 'eg. Registration completed successfully', 'px-elements' ),
 		] );
 
 		$this->end_controls_section();
@@ -976,25 +976,25 @@ class Login_Register extends Widget_Base {
 	protected function init_content_register_fields_controls() {
 
 		$this->start_controls_section( 'section_content_register_fields', [
-			'label'      => __( 'Register Form Fields', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Register Form Fields', 'px-elements' ),
 			'conditions' => $this->get_form_controls_display_condition( 'register' ),
 		] );
 		$this->add_control( 'register_form_field_note', [
 			'type'            => Controls_Manager::RAW_HTML,
-			'raw'             => __( 'Select the type of fields you want to show in the registration form', 'essential-addons-for-elementor-lite' ),
+			'raw'             => __( 'Select the type of fields you want to show in the registration form', 'px-elements' ),
 			'content_classes' => 'elementor-panel-alert elementor-panel-alert-info',
 		] );
 		$repeater = new Repeater();
 
 		$repeater->add_control( 'field_type', [
-			'label'   => __( 'Type', 'essential-addons-for-elementor-lite' ),
+			'label'   => __( 'Type', 'px-elements' ),
 			'type'    => Controls_Manager::SELECT,
 			'options' => $this->get_form_field_types(),
 			'default' => 'first_name',
 		] );
 
 		$repeater->add_control( 'field_label', [
-			'label'   => __( 'Label', 'essential-addons-for-elementor-lite' ),
+			'label'   => __( 'Label', 'px-elements' ),
 			'type'    => Controls_Manager::TEXT,
 			'default' => '',
 			'dynamic' => [
@@ -1003,7 +1003,7 @@ class Login_Register extends Widget_Base {
 		] );
 
 		$repeater->add_control( 'placeholder', [
-			'label'   => __( 'Placeholder', 'essential-addons-for-elementor-lite' ),
+			'label'   => __( 'Placeholder', 'px-elements' ),
 			'type'    => Controls_Manager::TEXT,
 			'default' => '',
 			'dynamic' => [
@@ -1012,7 +1012,7 @@ class Login_Register extends Widget_Base {
 		] );
 
 		$repeater->add_control( 'required', [
-			'label'     => __( 'Required', 'essential-addons-for-elementor-lite' ),
+			'label'     => __( 'Required', 'px-elements' ),
 			'type'      => Controls_Manager::SWITCHER,
 			'condition' => [
 				'field_type!' => [
@@ -1025,7 +1025,7 @@ class Login_Register extends Widget_Base {
 
 		$repeater->add_control( 'required_note', [
 			'type'            => Controls_Manager::RAW_HTML,
-			'raw'             => __( 'Note: This field is required by default.', 'essential-addons-for-elementor-lite' ),
+			'raw'             => __( 'Note: This field is required by default.', 'px-elements' ),
 			'condition'       => [
 				'field_type' => [
 					'email',
@@ -1037,10 +1037,10 @@ class Login_Register extends Widget_Base {
 		] );
 
 		$repeater->add_responsive_control( 'width', [
-			'label'   => __( 'Field Width', 'essential-addons-for-elementor-lite' ),
+			'label'   => __( 'Field Width', 'px-elements' ),
 			'type'    => Controls_Manager::SELECT,
 			'options' => [
-				''    => __( 'Default', 'essential-addons-for-elementor-lite' ),
+				''    => __( 'Default', 'px-elements' ),
 				'100' => '100%',
 				'80'  => '80%',
 				'75'  => '75%',
@@ -1056,27 +1056,27 @@ class Login_Register extends Widget_Base {
 		] );
 
 		$this->add_control( 'register_fields', [
-			'label' => __( 'Fields', 'essential-addons-for-elementor-lite' ),
+			'label' => __( 'Fields', 'px-elements' ),
 			'type'        => Controls_Manager::REPEATER,
 			'fields'      => $repeater->get_controls(),
 			'default'     => [
 				[
 					'field_type'  => 'user_name',
-					'field_label' => __( 'Username', 'essential-addons-for-elementor-lite' ),
-					'placeholder' => __( 'Username', 'essential-addons-for-elementor-lite' ),
+					'field_label' => __( 'Username', 'px-elements' ),
+					'placeholder' => __( 'Username', 'px-elements' ),
 					'width'       => '100',
 				],
 				[
 					'field_type'  => 'email',
-					'field_label' => __( 'Email', 'essential-addons-for-elementor-lite' ),
-					'placeholder' => __( 'Email', 'essential-addons-for-elementor-lite' ),
+					'field_label' => __( 'Email', 'px-elements' ),
+					'placeholder' => __( 'Email', 'px-elements' ),
 					'required'    => 'yes',
 					'width'       => '100',
 				],
 				[
 					'field_type'  => 'password',
-					'field_label' => __( 'Password', 'essential-addons-for-elementor-lite' ),
-					'placeholder' => __( 'Password', 'essential-addons-for-elementor-lite' ),
+					'field_label' => __( 'Password', 'px-elements' ),
+					'placeholder' => __( 'Password', 'px-elements' ),
 					'required'    => 'yes',
 					'width'       => '100',
 				],
@@ -1085,13 +1085,13 @@ class Login_Register extends Widget_Base {
 		] );
 
 		$this->add_control( 'show_labels', [
-			'label'   => __( 'Show Label', 'essential-addons-for-elementor-lite' ),
+			'label'   => __( 'Show Label', 'px-elements' ),
 			'type'    => Controls_Manager::SWITCHER,
 			'default' => 'yes',
 		] );
 
 		$this->add_control( 'mark_required', [
-			'label'     => __( 'Show Required Mark', 'essential-addons-for-elementor-lite' ),
+			'label'     => __( 'Show Required Mark', 'px-elements' ),
 			'type'      => Controls_Manager::SWITCHER,
 			'condition' => [
 				'show_labels' => 'yes',
@@ -1101,16 +1101,16 @@ class Login_Register extends Widget_Base {
 
 		/*--Register Fields Button--*/
 		$this->add_control( 'reg_button_heading', [
-			'label'     => esc_html__( 'Register Button', 'essential-addons-for-elementor-lite' ),
+			'label'     => esc_html__( 'Register Button', 'px-elements' ),
 			'type'      => Controls_Manager::HEADING,
 			'separator' => 'before',
 		] );
 
 		$this->add_control( 'reg_button_text', [
-			'label'   => __( 'Button Text', 'essential-addons-for-elementor-lite' ),
+			'label'   => __( 'Button Text', 'px-elements' ),
 			'type'    => Controls_Manager::TEXT,
 			'dynamic' => [ 'active' => true, ],
-			'default' => __( 'Register', 'essential-addons-for-elementor-lite' ),
+			'default' => __( 'Register', 'px-elements' ),
 		] );
 
 
@@ -1120,30 +1120,30 @@ class Login_Register extends Widget_Base {
 	protected function init_content_register_options_controls() {
 
 		$this->start_controls_section( 'section_content_register_actions', [
-			'label'      => __( 'Register Form Options', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Register Form Options', 'px-elements' ),
 			'conditions' => $this->get_form_controls_display_condition( 'register' ),
 		] );
 
 		$this->add_control( 'register_action', [
-			'label'       => __( 'Register Actions', 'essential-addons-for-elementor-lite' ),
-			'description' => __( 'You can select what should happen after a user registers successfully', 'essential-addons-for-elementor-lite' ),
+			'label'       => __( 'Register Actions', 'px-elements' ),
+			'description' => __( 'You can select what should happen after a user registers successfully', 'px-elements' ),
 			'type'        => Controls_Manager::SELECT2,
 			'multiple'    => true,
 			'label_block' => true,
 			'default'     => 'send_email',
 			'options'     => [
-				'redirect'   => __( 'Redirect', 'essential-addons-for-elementor-lite' ),
-				'auto_login' => __( 'Auto Login', 'essential-addons-for-elementor-lite' ),
-				'send_email' => __( 'Notify User By Email', 'essential-addons-for-elementor-lite' ),
+				'redirect'   => __( 'Redirect', 'px-elements' ),
+				'auto_login' => __( 'Auto Login', 'px-elements' ),
+				'send_email' => __( 'Notify User By Email', 'px-elements' ),
 			],
 		] );
 
 		$this->add_control( 'register_redirect_url', [
 			'type'          => Controls_Manager::URL,
-			'label'         => __( 'Custom Redirect URL', 'essential-addons-for-elementor-lite' ),
+			'label'         => __( 'Custom Redirect URL', 'px-elements' ),
 			'show_external' => false,
-			'placeholder'   => __( 'eg. https://your-link.com/wp-admin/', 'essential-addons-for-elementor-lite' ),
-			'description'   => __( 'Please note that only your current domain is allowed here to keep your site secure.', 'essential-addons-for-elementor-lite' ),
+			'placeholder'   => __( 'eg. https://your-link.com/wp-admin/', 'px-elements' ),
+			'description'   => __( 'Please note that only your current domain is allowed here to keep your site secure.', 'px-elements' ),
 			'default'       => [
 				'url'         => get_admin_url(),
 				'is_external' => false,
@@ -1155,7 +1155,7 @@ class Login_Register extends Widget_Base {
 		] );
 
 		$this->add_control( 'register_user_role', [
-			'label'     => __( 'New User Role', 'essential-addons-for-elementor-lite' ),
+			'label'     => __( 'New User Role', 'px-elements' ),
 			'type'      => Controls_Manager::SELECT,
 			'default'   => '',
 			'options'   => $this->get_user_roles(),
@@ -1168,17 +1168,17 @@ class Login_Register extends Widget_Base {
 
 	protected function init_content_register_user_email_controls() {
 		/* translators: %s: Site Name */
-		$default_subject = sprintf( __( 'Thank you for registering on "%s"!', 'essential-addons-for-elementor-lite' ), get_option( 'blogname' ) );
+		$default_subject = sprintf( __( 'Thank you for registering on "%s"!', 'px-elements' ), get_option( 'blogname' ) );
 		$default_message = $default_subject . "\r\n\r\n";
-		$default_message .= __( 'Username: [username]', 'essential-addons-for-elementor-lite' ) . "\r\n\r\n";
-		$default_message .= __( 'Password: [password]', 'essential-addons-for-elementor-lite' ) . "\r\n\r\n";
-		$default_message .= __( 'To reset your password, visit the following address:', 'essential-addons-for-elementor-lite' ) . "\r\n\r\n";
+		$default_message .= __( 'Username: [username]', 'px-elements' ) . "\r\n\r\n";
+		$default_message .= __( 'Password: [password]', 'px-elements' ) . "\r\n\r\n";
+		$default_message .= __( 'To reset your password, visit the following address:', 'px-elements' ) . "\r\n\r\n";
 		$default_message .= "[password_reset_link]\r\n\r\n";
-		$default_message .= __( 'Please click the following address to login to your account:', 'essential-addons-for-elementor-lite' ) . "\r\n\r\n";
+		$default_message .= __( 'Please click the following address to login to your account:', 'px-elements' ) . "\r\n\r\n";
 		$default_message .= wp_login_url() . "\r\n";
 
 		$this->start_controls_section( 'section_content_reg_email', [
-			'label'      => __( 'Register User Email Options', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Register User Email Options', 'px-elements' ),
 			'conditions' => [
 				'relation' => 'or',
 				'terms'    => [
@@ -1212,19 +1212,19 @@ class Login_Register extends Widget_Base {
 		] );
 
 		$this->add_control( 'reg_email_template_type', [
-			'label'       => __( 'Email Template Type', 'essential-addons-for-elementor-lite' ),
-			'description' => __( 'Default template uses WordPress Default email template. So, please select the Custom Option to send the user proper information if you used any username field.', 'essential-addons-for-elementor-lite' ),
+			'label'       => __( 'Email Template Type', 'px-elements' ),
+			'description' => __( 'Default template uses WordPress Default email template. So, please select the Custom Option to send the user proper information if you used any username field.', 'px-elements' ),
 			'type'        => Controls_Manager::SELECT,
 			'default'     => 'default',
 			'render_type' => 'none',
 			'options'     => [
-				'default' => __( 'WordPres Default', 'essential-addons-for-elementor-lite' ),
-				'custom'  => __( 'Custom', 'essential-addons-for-elementor-lite' ),
+				'default' => __( 'WordPres Default', 'px-elements' ),
+				'custom'  => __( 'Custom', 'px-elements' ),
 			],
 		] );
 
 		$this->add_control( 'reg_email_subject', [
-			'label'       => __( 'Email Subject', 'essential-addons-for-elementor-lite' ),
+			'label'       => __( 'Email Subject', 'px-elements' ),
 			'type'        => Controls_Manager::TEXT,
 			'placeholder' => $default_subject,
 			'default'     => $default_subject,
@@ -1236,9 +1236,9 @@ class Login_Register extends Widget_Base {
 		] );
 
 		$this->add_control( 'reg_email_message', [
-			'label'       => __( 'Email Message', 'essential-addons-for-elementor-lite' ),
+			'label'       => __( 'Email Message', 'px-elements' ),
 			'type'        => Controls_Manager::WYSIWYG,
-			'placeholder' => __( 'Enter Your Custom Email Message..', 'essential-addons-for-elementor-lite' ),
+			'placeholder' => __( 'Enter Your Custom Email Message..', 'px-elements' ),
 			'default'     => $default_message,
 			'label_block' => true,
 			'render_type' => 'none',
@@ -1249,7 +1249,7 @@ class Login_Register extends Widget_Base {
 
 		$this->add_control( 'reg_email_content_note', [
 			'type'            => Controls_Manager::RAW_HTML,
-			'raw'             => __( '<strong>Note:</strong> You can use dynamic content in the email body like [fieldname]. For example [username] will be replaced by user-typed username. Available tags are: [password], [username], [email], [firstname],[lastname], [website], [loginurl], [password_reset_link] and [sitetitle] ', 'essential-addons-for-elementor-lite' ),
+			'raw'             => __( '<strong>Note:</strong> You can use dynamic content in the email body like [fieldname]. For example [username] will be replaced by user-typed username. Available tags are: [password], [username], [email], [firstname],[lastname], [website], [loginurl], [password_reset_link] and [sitetitle] ', 'px-elements' ),
 			'content_classes' => 'elementor-panel-alert elementor-panel-alert-info',
 			'condition'       => [
 				'reg_email_template_type' => 'custom',
@@ -1258,13 +1258,13 @@ class Login_Register extends Widget_Base {
 		] );
 
 		$this->add_control( 'reg_email_content_type', [
-			'label'       => __( 'Email Content Type', 'essential-addons-for-elementor-lite' ),
+			'label'       => __( 'Email Content Type', 'px-elements' ),
 			'type'        => Controls_Manager::SELECT,
 			'default'     => 'html',
 			'render_type' => 'none',
 			'options'     => [
-				'html'  => __( 'HTML', 'essential-addons-for-elementor-lite' ),
-				'plain' => __( 'Plain', 'essential-addons-for-elementor-lite' ),
+				'html'  => __( 'HTML', 'px-elements' ),
+				'plain' => __( 'Plain', 'px-elements' ),
 			],
 			'condition'   => [
 				'reg_email_template_type' => 'custom',
@@ -1276,15 +1276,15 @@ class Login_Register extends Widget_Base {
 
 	protected function init_content_register_admin_email_controls() {
 		/* translators: %s: Site Name */
-		$default_subject = sprintf( __( '["%s"] New User Registration', 'essential-addons-for-elementor-lite' ), get_option( 'blogname' ) );
+		$default_subject = sprintf( __( '["%s"] New User Registration', 'px-elements' ), get_option( 'blogname' ) );
 		/* translators: %s: Site Name */
-		$default_message = sprintf( __( "New user registration on your site %s", 'essential-addons-for-elementor-lite' ), get_option( 'blogname' ) ) . "\r\n\r\n";
-		$default_message .= __( 'Username: [username]', 'essential-addons-for-elementor-lite' ) . "\r\n\r\n";
-		$default_message .= __( 'Email: [email]', 'essential-addons-for-elementor-lite' ) . "\r\n\r\n";
+		$default_message = sprintf( __( "New user registration on your site %s", 'px-elements' ), get_option( 'blogname' ) ) . "\r\n\r\n";
+		$default_message .= __( 'Username: [username]', 'px-elements' ) . "\r\n\r\n";
+		$default_message .= __( 'Email: [email]', 'px-elements' ) . "\r\n\r\n";
 
 
 		$this->start_controls_section( 'section_content_reg_admin_email', [
-			'label'      => __( 'Register Admin Email Options', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Register Admin Email Options', 'px-elements' ),
 			'conditions' => [
 				'relation' => 'or',
 				'terms'    => [
@@ -1318,19 +1318,19 @@ class Login_Register extends Widget_Base {
 		] );
 
 		$this->add_control( 'reg_admin_email_template_type', [
-			'label'       => __( 'Email Template Type', 'essential-addons-for-elementor-lite' ),
-			'description' => __( 'Default template uses WordPress Default Admin email template. You can customize it by choosing the custom option.', 'essential-addons-for-elementor-lite' ),
+			'label'       => __( 'Email Template Type', 'px-elements' ),
+			'description' => __( 'Default template uses WordPress Default Admin email template. You can customize it by choosing the custom option.', 'px-elements' ),
 			'type'        => Controls_Manager::SELECT,
 			'default'     => 'default',
 			'render_type' => 'none',
 			'options'     => [
-				'default' => __( 'WordPres Default', 'essential-addons-for-elementor-lite' ),
-				'custom'  => __( 'Custom', 'essential-addons-for-elementor-lite' ),
+				'default' => __( 'WordPres Default', 'px-elements' ),
+				'custom'  => __( 'Custom', 'px-elements' ),
 			],
 		] );
 
 		$this->add_control( 'reg_admin_email_subject', [
-			'label'       => __( 'Email Subject', 'essential-addons-for-elementor-lite' ),
+			'label'       => __( 'Email Subject', 'px-elements' ),
 			'type'        => Controls_Manager::TEXT,
 			'placeholder' => $default_subject,
 			'default'     => $default_subject,
@@ -1342,9 +1342,9 @@ class Login_Register extends Widget_Base {
 		] );
 
 		$this->add_control( 'reg_admin_email_message', [
-			'label'       => __( 'Email Message', 'essential-addons-for-elementor-lite' ),
+			'label'       => __( 'Email Message', 'px-elements' ),
 			'type'        => Controls_Manager::WYSIWYG,
-			'placeholder' => __( 'Enter Your Custom Email Message..', 'essential-addons-for-elementor-lite' ),
+			'placeholder' => __( 'Enter Your Custom Email Message..', 'px-elements' ),
 			'default'     => $default_message,
 			'label_block' => true,
 			'render_type' => 'none',
@@ -1355,7 +1355,7 @@ class Login_Register extends Widget_Base {
 
 		$this->add_control( 'reg_admin_email_content_note', [
 			'type'            => Controls_Manager::RAW_HTML,
-			'raw'             => __( '<strong>Note:</strong> You can use dynamic content in the email body like [fieldname]. For example [username] will be replaced by user-typed username. Available tags are: [username], [email], [firstname],[lastname], [website], [loginurl] and [sitetitle] ', 'essential-addons-for-elementor-lite' ),
+			'raw'             => __( '<strong>Note:</strong> You can use dynamic content in the email body like [fieldname]. For example [username] will be replaced by user-typed username. Available tags are: [username], [email], [firstname],[lastname], [website], [loginurl] and [sitetitle] ', 'px-elements' ),
 			'content_classes' => 'elementor-panel-alert elementor-panel-alert-info',
 			'condition'       => [
 				'reg_admin_email_template_type' => 'custom',
@@ -1364,13 +1364,13 @@ class Login_Register extends Widget_Base {
 		] );
 
 		$this->add_control( 'reg_admin_email_content_type', [
-			'label'       => __( 'Email Content Type', 'essential-addons-for-elementor-lite' ),
+			'label'       => __( 'Email Content Type', 'px-elements' ),
 			'type'        => Controls_Manager::SELECT,
 			'default'     => 'html',
 			'render_type' => 'none',
 			'options'     => [
-				'html'  => __( 'HTML', 'essential-addons-for-elementor-lite' ),
-				'plain' => __( 'Plain', 'essential-addons-for-elementor-lite' ),
+				'html'  => __( 'HTML', 'px-elements' ),
+				'plain' => __( 'Plain', 'px-elements' ),
 			],
 			'condition'   => [
 				'reg_admin_email_template_type' => 'custom',
@@ -1386,20 +1386,20 @@ class Login_Register extends Widget_Base {
 	 */
 	protected function init_style_general_controls() {
 		$this->start_controls_section( 'section_style_general', [
-			'label' => __( 'General', 'essential-addons-for-elementor-lite' ),
+			'label' => __( 'General', 'px-elements' ),
 			'tab'   => Controls_Manager::TAB_STYLE,
 		] );
 		//---Form Container or Box
 		$this->add_control( 'form_form_wrap_po_toggle', [
-			'label'        => __( 'Container Box', 'essential-addons-for-elementor-lite' ),
+			'label'        => __( 'Container Box', 'px-elements' ),
 			'type'         => Controls_Manager::POPOVER_TOGGLE,
-			'label_off'    => __( 'Default', 'essential-addons-for-elementor-lite' ),
-			'label_on'     => __( 'Custom', 'essential-addons-for-elementor-lite' ),
+			'label_off'    => __( 'Default', 'px-elements' ),
+			'label_on'     => __( 'Custom', 'px-elements' ),
 			'return_value' => 'yes',
 		] );
 		$this->start_popover();
 		$this->add_responsive_control( "eael_form_wrap_width", [
-			'label'           => esc_html__( 'Width', 'essential-addons-for-elementor-lite' ),
+			'label'           => esc_html__( 'Width', 'px-elements' ),
 			'type'            => Controls_Manager::SLIDER,
 			'size_units'      => [
 				'px',
@@ -1443,7 +1443,7 @@ class Login_Register extends Widget_Base {
 		] );
 
 		$this->add_responsive_control( "eael_form_wrap_margin", [
-			'label'      => __( 'Margin', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Margin', 'px-elements' ),
 			'type'       => Controls_Manager::DIMENSIONS,
 			'size_units' => [
 				'px',
@@ -1458,7 +1458,7 @@ class Login_Register extends Widget_Base {
 			],
 		] );
 		$this->add_responsive_control( "eael_form_wrap_padding", [
-			'label'      => __( 'Padding', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Padding', 'px-elements' ),
 			'type'       => Controls_Manager::DIMENSIONS,
 			'size_units' => [
 				'px',
@@ -1480,7 +1480,7 @@ class Login_Register extends Widget_Base {
 			],
 		] );
 		$this->add_control( "eael_form_wrap_border_radius", [
-			'label'      => __( 'Border Radius', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Border Radius', 'px-elements' ),
 			'type'       => Controls_Manager::DIMENSIONS,
 			'size_units' => [
 				'px',
@@ -1495,7 +1495,7 @@ class Login_Register extends Widget_Base {
 		] );
 		$this->add_group_control( Group_Control_Background::get_type(), [
 			'name'     => "eael_form_wrap_bg_color",
-			'label'    => __( 'Background Color', 'essential-addons-for-elementor-lite' ),
+			'label'    => __( 'Background Color', 'px-elements' ),
 			'types'    => [
 				'classic',
 				'gradient',
@@ -1507,7 +1507,7 @@ class Login_Register extends Widget_Base {
 		] );
 		$this->end_popover();
 		$this->add_group_control( Group_Control_Box_Shadow::get_type(), [
-			'label'    => __( 'Container Box Shadow', 'essential-addons-for-elementor-lite' ),
+			'label'    => __( 'Container Box Shadow', 'px-elements' ),
 			'name'     => 'eael_form_wrap_shadow',
 			'selector' => "{{WRAPPER}} .eael-lr-form-wrapper",
 			'exclude'  => [
@@ -1517,22 +1517,22 @@ class Login_Register extends Widget_Base {
 
 		//----Form Wrapper-----
 		$this->add_control( 'form_form_po_toggle', [
-			'label'        => __( 'Form', 'essential-addons-for-elementor-lite' ),
+			'label'        => __( 'Form', 'px-elements' ),
 			'type'         => Controls_Manager::POPOVER_TOGGLE,
-			'label_off'    => __( 'Default', 'essential-addons-for-elementor-lite' ),
-			'label_on'     => __( 'Custom', 'essential-addons-for-elementor-lite' ),
+			'label_off'    => __( 'Default', 'px-elements' ),
+			'label_on'     => __( 'Custom', 'px-elements' ),
 			'return_value' => 'yes',
 			'separator'    => 'before',
 		] );
 		$this->start_popover();
 		$this->add_control( 'eael_form_wrapper_heading', [
 			'type'      => Controls_Manager::HEADING,
-			'label'     => __( '---Form Wrapper---', 'essential-addons-for-elementor-lite' ),
+			'label'     => __( '---Form Wrapper---', 'px-elements' ),
 			'separator' => 'before',
 		] );
 
 		$this->add_responsive_control( "eael_form_width", [
-			'label'           => esc_html__( 'Wrapper width', 'essential-addons-for-elementor-lite' ),
+			'label'           => esc_html__( 'Wrapper width', 'px-elements' ),
 			'type'            => Controls_Manager::SLIDER,
 			'size_units'      => [
 				'px',
@@ -1576,7 +1576,7 @@ class Login_Register extends Widget_Base {
 		] );
 
 		$this->add_responsive_control( "eael_form_margin", [
-			'label'      => __( 'Wrapper Margin', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Wrapper Margin', 'px-elements' ),
 			'type'       => Controls_Manager::DIMENSIONS,
 			'size_units' => [
 				'px',
@@ -1591,7 +1591,7 @@ class Login_Register extends Widget_Base {
 			],
 		] );
 		$this->add_responsive_control( "eael_form_padding", [
-			'label'      => __( 'Wrapper Padding', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Wrapper Padding', 'px-elements' ),
 			'type'       => Controls_Manager::DIMENSIONS,
 			'size_units' => [
 				'px',
@@ -1613,7 +1613,7 @@ class Login_Register extends Widget_Base {
 			],
 		] );
 		$this->add_control( "eael_form_border_radius", [
-			'label'      => __( 'Wrapper Border Radius', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Wrapper Border Radius', 'px-elements' ),
 			'type'       => Controls_Manager::DIMENSIONS,
 			'size_units' => [
 				'px',
@@ -1628,7 +1628,7 @@ class Login_Register extends Widget_Base {
 		] );
 		$this->add_group_control( Group_Control_Background::get_type(), [
 			'name'     => "eael_form_bg_color",
-			'label'    => __( 'Background Color', 'essential-addons-for-elementor-lite' ),
+			'label'    => __( 'Background Color', 'px-elements' ),
 			'types'    => [
 				'classic',
 				'gradient',
@@ -1638,11 +1638,11 @@ class Login_Register extends Widget_Base {
 
 		$this->add_control( 'eael_form_input_container', [
 			'type'      => Controls_Manager::HEADING,
-			'label'     => __( '---Form Style---', 'essential-addons-for-elementor-lite' ),
+			'label'     => __( '---Form Style---', 'px-elements' ),
 			'separator' => 'before',
 		] );
 		$this->add_responsive_control( "eael_form_ic_width", [
-			'label'      => esc_html__( 'Form width', 'essential-addons-for-elementor-lite' ),
+			'label'      => esc_html__( 'Form width', 'px-elements' ),
 			'type'       => Controls_Manager::SLIDER,
 			'size_units' => [
 				'px',
@@ -1678,7 +1678,7 @@ class Login_Register extends Widget_Base {
 		] );
 
 		$this->add_responsive_control( "eael_form_ic_margin", [
-			'label'      => __( 'Form Margin', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Form Margin', 'px-elements' ),
 			'type'       => Controls_Manager::DIMENSIONS,
 			'size_units' => [
 				'px',
@@ -1693,7 +1693,7 @@ class Login_Register extends Widget_Base {
 			],
 		] );
 		$this->add_responsive_control( "eael_form_ic_padding", [
-			'label'      => __( 'Form Padding', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Form Padding', 'px-elements' ),
 			'type'       => Controls_Manager::DIMENSIONS,
 			'size_units' => [
 				'px',
@@ -1715,7 +1715,7 @@ class Login_Register extends Widget_Base {
 			],
 		] );
 		$this->add_control( "eael_form_ic_border_radius", [
-			'label'      => __( 'Border Radius', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Border Radius', 'px-elements' ),
 			'type'       => Controls_Manager::DIMENSIONS,
 			'size_units' => [
 				'px',
@@ -1730,7 +1730,7 @@ class Login_Register extends Widget_Base {
 		] );
 		$this->add_group_control( Group_Control_Background::get_type(), [
 			'name'     => "eael_form_ic_bg_color",
-			'label'    => __( 'Background Color', 'essential-addons-for-elementor-lite' ),
+			'label'    => __( 'Background Color', 'px-elements' ),
 			'types'    => [
 				'classic',
 				'gradient',
@@ -1740,7 +1740,7 @@ class Login_Register extends Widget_Base {
 		$this->end_popover();
 
 		$this->add_group_control( Group_Control_Box_Shadow::get_type(), [
-			'label'    => __( 'Form Wrapper Shadow', 'essential-addons-for-elementor-lite' ),
+			'label'    => __( 'Form Wrapper Shadow', 'px-elements' ),
 			'name'     => 'eael_form_shadow',
 			'selector' => "{{WRAPPER}} .lr-form-wrapper",
 			'exclude'  => [
@@ -1749,7 +1749,7 @@ class Login_Register extends Widget_Base {
 		] );
 
 		$this->add_group_control( Group_Control_Box_Shadow::get_type(), [
-			'label'    => __( 'Form Shadow', 'essential-addons-for-elementor-lite' ),
+			'label'    => __( 'Form Shadow', 'px-elements' ),
 			'name'     => 'eael_form_ic_shadow',
 			'selector' => "{{WRAPPER}} .lr-form-wrapper form",
 			'exclude'  => [
@@ -1762,7 +1762,7 @@ class Login_Register extends Widget_Base {
 
 	protected function init_style_header_content_controls( $form_type = 'login' ) {
 		$this->start_controls_section( "section_style_{$form_type}_header_content", [
-			'label'      => sprintf( __( '%s Form Header', 'essential-addons-for-elementor-lite' ), ucfirst( $form_type ) ),
+			'label'      => sprintf( __( '%s Form Header', 'px-elements' ), ucfirst( $form_type ) ),
 			// Login Form Header | Register Form Header
 			'tab'        => Controls_Manager::TAB_STYLE,
 			'conditions' => $this->get_form_controls_display_condition( $form_type ),
@@ -1774,17 +1774,17 @@ class Login_Register extends Widget_Base {
 		$title_selector        = "{{WRAPPER}} .eael-{$form_type}-form-wrapper .lr-form-header .form-dsc h4";
 		$subtitle_selector     = "{{WRAPPER}} .eael-{$form_type}-form-wrapper .lr-form-header .form-dsc p";
 		$this->add_control( "{$form_type}_fhc_po_toggle", [
-			'label'        => __( 'Header Content', 'essential-addons-for-elementor-lite' ),
+			'label'        => __( 'Header Content', 'px-elements' ),
 			'type'         => Controls_Manager::POPOVER_TOGGLE,
-			'label_off'    => __( 'Default', 'essential-addons-for-elementor-lite' ),
-			'label_on'     => __( 'Custom', 'essential-addons-for-elementor-lite' ),
+			'label_off'    => __( 'Default', 'px-elements' ),
+			'label_on'     => __( 'Custom', 'px-elements' ),
 			'return_value' => 'yes',
 		] );
 
 		$this->start_popover();
 
 		$this->add_responsive_control( "{$form_type}_fhc_width", [
-			'label'      => esc_html__( 'Header width', 'essential-addons-for-elementor-lite' ),
+			'label'      => esc_html__( 'Header width', 'px-elements' ),
 			'type'       => Controls_Manager::SLIDER,
 			'size_units' => [
 				'px',
@@ -1819,7 +1819,7 @@ class Login_Register extends Widget_Base {
 			],
 		] );
 		$this->add_responsive_control( "{$form_type}_fhc_height", [
-			'label'      => esc_html__( 'Header height', 'essential-addons-for-elementor-lite' ),
+			'label'      => esc_html__( 'Header height', 'px-elements' ),
 			'type'       => Controls_Manager::SLIDER,
 			'size_units' => [
 				'px',
@@ -1850,7 +1850,7 @@ class Login_Register extends Widget_Base {
 			],
 		] );
 		$this->add_responsive_control( "{$form_type}_fhc_margin", [
-			'label'      => __( 'Header Margin', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Header Margin', 'px-elements' ),
 			'type'       => Controls_Manager::DIMENSIONS,
 			'size_units' => [
 				'px',
@@ -1865,7 +1865,7 @@ class Login_Register extends Widget_Base {
 			],
 		] );
 		$this->add_responsive_control( "{$form_type}_fhc_padding", [
-			'label'      => __( 'Header Padding', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Header Padding', 'px-elements' ),
 			'type'       => Controls_Manager::DIMENSIONS,
 			'size_units' => [
 				'px',
@@ -1889,7 +1889,7 @@ class Login_Register extends Widget_Base {
 			],
 		] );
 		$this->add_control( "{$form_type}_fhc_border_radius", [
-			'label'      => __( 'Border Radius', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Border Radius', 'px-elements' ),
 			'type'       => Controls_Manager::DIMENSIONS,
 			'size_units' => [
 				'px',
@@ -1904,7 +1904,7 @@ class Login_Register extends Widget_Base {
 		] );
 		$this->add_group_control( Group_Control_Background::get_type(), [
 			'name'      => "{$form_type}_form_header_bg",
-			'label'     => __( 'Background Color', 'essential-addons-for-elementor-lite' ),
+			'label'     => __( 'Background Color', 'px-elements' ),
 			'types'     => [
 				'classic',
 				'gradient',
@@ -1918,16 +1918,16 @@ class Login_Register extends Widget_Base {
 
 
 		$this->add_control( "{$form_type}_form_img_po_toggle", [
-			'label'        => __( 'Form Illustration', 'essential-addons-for-elementor-lite' ),
+			'label'        => __( 'Form Illustration', 'px-elements' ),
 			'type'         => Controls_Manager::POPOVER_TOGGLE,
-			'label_off'    => __( 'Default', 'essential-addons-for-elementor-lite' ),
-			'label_on'     => __( 'Custom', 'essential-addons-for-elementor-lite' ),
+			'label_off'    => __( 'Default', 'px-elements' ),
+			'label_on'     => __( 'Custom', 'px-elements' ),
 			'return_value' => 'yes',
 			'separator'    => 'before',
 		] );
 		$this->start_popover();
 		$this->add_responsive_control( "{$form_type}_form_img_width", [
-			'label'           => esc_html__( 'Width', 'essential-addons-for-elementor-lite' ),
+			'label'           => esc_html__( 'Width', 'px-elements' ),
 			'type'            => Controls_Manager::SLIDER,
 			'size_units'      => [
 				'px',
@@ -1970,7 +1970,7 @@ class Login_Register extends Widget_Base {
 			],
 		] );
 		$this->add_responsive_control( "{$form_type}_form_img_height", [
-			'label'           => esc_html__( 'Height', 'essential-addons-for-elementor-lite' ),
+			'label'           => esc_html__( 'Height', 'px-elements' ),
 			'type'            => Controls_Manager::SLIDER,
 			'size_units'      => [
 				'px',
@@ -2008,7 +2008,7 @@ class Login_Register extends Widget_Base {
 			],
 		] );
 		$this->add_control( "{$form_type}_form_img_margin", [
-			'label'      => __( 'Margin', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Margin', 'px-elements' ),
 			'type'       => Controls_Manager::DIMENSIONS,
 			'size_units' => [
 				'px',
@@ -2023,7 +2023,7 @@ class Login_Register extends Widget_Base {
 			],
 		] );
 		$this->add_control( "{$form_type}_form_img_padding", [
-			'label'      => __( 'Padding', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Padding', 'px-elements' ),
 			'type'       => Controls_Manager::DIMENSIONS,
 			'size_units' => [
 				'px',
@@ -2045,7 +2045,7 @@ class Login_Register extends Widget_Base {
 			],
 		] );
 		$this->add_control( "{$form_type}_form_img_border_radius", [
-			'label'      => __( 'Border Radius', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Border Radius', 'px-elements' ),
 			'type'       => Controls_Manager::DIMENSIONS,
 			'size_units' => [
 				'px',
@@ -2060,7 +2060,7 @@ class Login_Register extends Widget_Base {
 		] );
 		$this->end_popover();
 		$this->add_group_control( Group_Control_Box_Shadow::get_type(), [
-			'label'    => __( 'Illustration Shadow', 'essential-addons-for-elementor-lite' ),
+			'label'    => __( 'Illustration Shadow', 'px-elements' ),
 			'name'     => "{$form_type}_form_img_shadow",
 			'selector' => $illustration_selector,
 			'exclude'  => [
@@ -2068,16 +2068,16 @@ class Login_Register extends Widget_Base {
 			],
 		] );
 		$this->add_control( "{$form_type}_form_logo_po_toggle", [
-			'label'        => __( 'Form Logo', 'essential-addons-for-elementor-lite' ),
+			'label'        => __( 'Form Logo', 'px-elements' ),
 			'type'         => Controls_Manager::POPOVER_TOGGLE,
-			'label_off'    => __( 'Default', 'essential-addons-for-elementor-lite' ),
-			'label_on'     => __( 'Custom', 'essential-addons-for-elementor-lite' ),
+			'label_off'    => __( 'Default', 'px-elements' ),
+			'label_on'     => __( 'Custom', 'px-elements' ),
 			'return_value' => 'yes',
 			'separator'    => 'before',
 		] );
 		$this->start_popover();
 		$this->add_responsive_control( "{$form_type}_form_logo_width", [
-			'label'      => esc_html__( 'width', 'essential-addons-for-elementor-lite' ),
+			'label'      => esc_html__( 'width', 'px-elements' ),
 			'type'       => Controls_Manager::SLIDER,
 			'size_units' => [
 				'px',
@@ -2112,7 +2112,7 @@ class Login_Register extends Widget_Base {
 			],
 		] );
 		$this->add_responsive_control( "{$form_type}_form_logo_height", [
-			'label'      => esc_html__( 'height', 'essential-addons-for-elementor-lite' ),
+			'label'      => esc_html__( 'height', 'px-elements' ),
 			'type'       => Controls_Manager::SLIDER,
 			'size_units' => [
 				'px',
@@ -2147,7 +2147,7 @@ class Login_Register extends Widget_Base {
 			],
 		] );
 		$this->add_responsive_control( "{$form_type}_form_logo_margin", [
-			'label'      => __( 'Margin', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Margin', 'px-elements' ),
 			'type'       => Controls_Manager::DIMENSIONS,
 			'size_units' => [
 				'px',
@@ -2162,7 +2162,7 @@ class Login_Register extends Widget_Base {
 			],
 		] );
 		$this->add_responsive_control( "{$form_type}_form_logo_padding", [
-			'label'      => __( 'Padding', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Padding', 'px-elements' ),
 			'type'       => Controls_Manager::DIMENSIONS,
 			'size_units' => [
 				'px',
@@ -2185,7 +2185,7 @@ class Login_Register extends Widget_Base {
 			],
 		] );
 		$this->add_control( "{$form_type}_form_logo_border_radius", [
-			'label'      => __( 'Border Radius', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Border Radius', 'px-elements' ),
 			'type'       => Controls_Manager::DIMENSIONS,
 			'size_units' => [
 				'px',
@@ -2200,7 +2200,7 @@ class Login_Register extends Widget_Base {
 		] );
 		$this->end_popover();
 		$this->add_group_control( Group_Control_Box_Shadow::get_type(), [
-			'label'    => __( 'Logo Shadow', 'essential-addons-for-elementor-lite' ),
+			'label'    => __( 'Logo Shadow', 'px-elements' ),
 			'name'     => "{$form_type}_form_logo_shadow",
 			'selector' => $logo_selector,
 			'exclude'  => [
@@ -2211,16 +2211,16 @@ class Login_Register extends Widget_Base {
 
 		/*-- Title Typography --*/
 		$this->add_control( "{$form_type}_form_title_po_toggle", [
-			'label'        => __( 'Title', 'essential-addons-for-elementor-lite' ),
+			'label'        => __( 'Title', 'px-elements' ),
 			'type'         => Controls_Manager::POPOVER_TOGGLE,
-			'label_off'    => __( 'Default', 'essential-addons-for-elementor-lite' ),
-			'label_on'     => __( 'Custom', 'essential-addons-for-elementor-lite' ),
+			'label_off'    => __( 'Default', 'px-elements' ),
+			'label_on'     => __( 'Custom', 'px-elements' ),
 			'return_value' => 'yes',
 			'separator'    => 'before',
 		] );
 		$this->start_popover();
 		$this->add_responsive_control( "{$form_type}_form_title_margin", [
-			'label'      => __( 'Margin', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Margin', 'px-elements' ),
 			'type'       => Controls_Manager::DIMENSIONS,
 			'size_units' => [
 				'px',
@@ -2235,7 +2235,7 @@ class Login_Register extends Widget_Base {
 			],
 		] );
 		$this->add_responsive_control( "{$form_type}_form_title_padding", [
-			'label'      => __( 'Padding', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Padding', 'px-elements' ),
 			'type'       => Controls_Manager::DIMENSIONS,
 			'size_units' => [
 				'px',
@@ -2250,7 +2250,7 @@ class Login_Register extends Widget_Base {
 			],
 		] );
 		$this->add_control( "{$form_type}_form_title_color", [
-			'label'     => __( 'Color', 'essential-addons-for-elementor-lite' ),
+			'label'     => __( 'Color', 'px-elements' ),
 			'type'      => Controls_Manager::COLOR,
 			'selectors' => [
 				$title_selector => 'color: {{VALUE}};',
@@ -2260,7 +2260,7 @@ class Login_Register extends Widget_Base {
 			],
 		] );
 		$this->add_control( "{$form_type}_form_title_bg_color", [
-			'label'     => __( 'Background Color', 'essential-addons-for-elementor-lite' ),
+			'label'     => __( 'Background Color', 'px-elements' ),
 			'type'      => Controls_Manager::COLOR,
 			'selectors' => [
 				$title_selector => 'background: {{VALUE}};',
@@ -2279,7 +2279,7 @@ class Login_Register extends Widget_Base {
 			],
 		] );
 		$this->add_control( "{$form_type}_form_title_border_radius", [
-			'label'      => __( 'Border Radius', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Border Radius', 'px-elements' ),
 			'type'       => Controls_Manager::DIMENSIONS,
 			'size_units' => [
 				'px',
@@ -2296,22 +2296,22 @@ class Login_Register extends Widget_Base {
 		$this->end_popover();
 		$this->add_group_control( Group_Control_Typography::get_type(), [
 			'name'     => "{$form_type}_form_title_typo",
-			'label'    => __( 'Title Typography', 'essential-addons-for-elementor-lite' ),
+			'label'    => __( 'Title Typography', 'px-elements' ),
 			'selector' => $title_selector,
 		] );
 
 		/*Subtitle----*/
 		$this->add_control( "{$form_type}_form_subtitle_po_toggle", [
-			'label'        => __( 'Subtitle', 'essential-addons-for-elementor-lite' ),
+			'label'        => __( 'Subtitle', 'px-elements' ),
 			'type'         => Controls_Manager::POPOVER_TOGGLE,
-			'label_off'    => __( 'Default', 'essential-addons-for-elementor-lite' ),
-			'label_on'     => __( 'Custom', 'essential-addons-for-elementor-lite' ),
+			'label_off'    => __( 'Default', 'px-elements' ),
+			'label_on'     => __( 'Custom', 'px-elements' ),
 			'return_value' => 'yes',
 			'separator'    => 'before',
 		] );
 		$this->start_popover();
 		$this->add_control( "{$form_type}_form_subtitle_margin", [
-			'label'      => __( 'Margin', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Margin', 'px-elements' ),
 			'type'       => Controls_Manager::DIMENSIONS,
 			'size_units' => [
 				'px',
@@ -2326,7 +2326,7 @@ class Login_Register extends Widget_Base {
 			],
 		] );
 		$this->add_control( "{$form_type}_form_subtitle_padding", [
-			'label'      => __( 'Padding', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Padding', 'px-elements' ),
 			'type'       => Controls_Manager::DIMENSIONS,
 			'size_units' => [
 				'px',
@@ -2341,7 +2341,7 @@ class Login_Register extends Widget_Base {
 			],
 		] );
 		$this->add_control( "{$form_type}_form_subtitle_color", [
-			'label'     => __( 'Color', 'essential-addons-for-elementor-lite' ),
+			'label'     => __( 'Color', 'px-elements' ),
 			'type'      => Controls_Manager::COLOR,
 			'selectors' => [
 				$subtitle_selector => 'color: {{VALUE}};',
@@ -2351,7 +2351,7 @@ class Login_Register extends Widget_Base {
 			],
 		] );
 		$this->add_control( "{$form_type}_form_subtitle_bg_color", [
-			'label'     => __( 'Background Color', 'essential-addons-for-elementor-lite' ),
+			'label'     => __( 'Background Color', 'px-elements' ),
 			'type'      => Controls_Manager::COLOR,
 			'selectors' => [
 				$subtitle_selector => 'background: {{VALUE}};',
@@ -2370,7 +2370,7 @@ class Login_Register extends Widget_Base {
 			],
 		] );
 		$this->add_control( "{$form_type}_form_subtitle_border_radius", [
-			'label'      => __( 'Border Radius', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Border Radius', 'px-elements' ),
 			'type'       => Controls_Manager::DIMENSIONS,
 			'size_units' => [
 				'px',
@@ -2387,7 +2387,7 @@ class Login_Register extends Widget_Base {
 		$this->end_popover();
 		$this->add_group_control( Group_Control_Typography::get_type(), [
 			'name'     => "{$form_type}_form_subtitle_typo",
-			'label'    => __( 'Subtitle Typography', 'essential-addons-for-elementor-lite' ),
+			'label'    => __( 'Subtitle Typography', 'px-elements' ),
 			'selector' => $subtitle_selector,
 		] );
 
@@ -2396,24 +2396,24 @@ class Login_Register extends Widget_Base {
 
 	protected function init_style_input_fields_controls() {
 		$this->start_controls_section( 'section_style_form_fields', [
-			'label' => __( 'Form Fields', 'essential-addons-for-elementor-lite' ),
+			'label' => __( 'Form Fields', 'px-elements' ),
 			'tab'   => Controls_Manager::TAB_STYLE,
 		] );
 		$this->add_control( 'eael_form_field_po_toggle', [
-			'label'        => __( 'Spacing', 'essential-addons-for-elementor-lite' ),
+			'label'        => __( 'Spacing', 'px-elements' ),
 			'type'         => Controls_Manager::POPOVER_TOGGLE,
-			'label_off'    => __( 'Default', 'essential-addons-for-elementor-lite' ),
-			'label_on'     => __( 'Custom', 'essential-addons-for-elementor-lite' ),
+			'label_off'    => __( 'Default', 'px-elements' ),
+			'label_on'     => __( 'Custom', 'px-elements' ),
 			'return_value' => 'yes',
 		] );
 
 		$this->start_popover();
 		$this->add_control( 'eael_form_input_fields_heading', [
 			'type'  => Controls_Manager::HEADING,
-			'label' => __( 'Form Input Fields', 'essential-addons-for-elementor-lite' ),
+			'label' => __( 'Form Input Fields', 'px-elements' ),
 		] );
 		$this->add_responsive_control( "eael_form_field_margin", [
-			'label'      => __( 'Margin', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Margin', 'px-elements' ),
 			'type'       => Controls_Manager::DIMENSIONS,
 			'size_units' => [
 				'px',
@@ -2428,7 +2428,7 @@ class Login_Register extends Widget_Base {
 			],
 		] );
 		$this->add_responsive_control( "eael_form_field_padding", [
-			'label'      => __( 'Padding', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Padding', 'px-elements' ),
 			'type'       => Controls_Manager::DIMENSIONS,
 			'size_units' => [
 				'px',
@@ -2444,11 +2444,11 @@ class Login_Register extends Widget_Base {
 		] );
 		$this->add_control( 'eael_form_rm_fields_heading', [
 			'type'      => Controls_Manager::HEADING,
-			'label'     => __( 'Remember Me Field', 'essential-addons-for-elementor-lite' ),
+			'label'     => __( 'Remember Me Field', 'px-elements' ),
 			'separator' => 'before',
 		] );
 		$this->add_responsive_control( "eael_form_rm_field_margin", [
-			'label'      => __( 'Margin', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Margin', 'px-elements' ),
 			'type'       => Controls_Manager::DIMENSIONS,
 			'size_units' => [
 				'px',
@@ -2463,7 +2463,7 @@ class Login_Register extends Widget_Base {
 			],
 		] );
 		$this->add_responsive_control( "eael_form_rm_field_padding", [
-			'label'      => __( 'Padding', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Padding', 'px-elements' ),
 			'type'       => Controls_Manager::DIMENSIONS,
 			'size_units' => [
 				'px',
@@ -2483,19 +2483,19 @@ class Login_Register extends Widget_Base {
 			'selector' => "{{WRAPPER}} .lr-form-wrapper .eael-lr-form-control",
 		] );
 		$this->add_responsive_control( "ph_align", [
-			'label'     => __( 'Text Alignment', 'essential-addons-for-elementor-lite' ),
+			'label'     => __( 'Text Alignment', 'px-elements' ),
 			'type'      => Controls_Manager::CHOOSE,
 			'options'   => [
 				'left'   => [
-					'title' => __( 'Left', 'essential-addons-for-elementor-lite' ),
+					'title' => __( 'Left', 'px-elements' ),
 					'icon'  => 'eicon-h-align-left',
 				],
 				'center' => [
-					'title' => __( 'Center', 'essential-addons-for-elementor-lite' ),
+					'title' => __( 'Center', 'px-elements' ),
 					'icon'  => 'eicon-h-align-center',
 				],
 				'right'  => [
-					'title' => __( 'Right', 'essential-addons-for-elementor-lite' ),
+					'title' => __( 'Right', 'px-elements' ),
 					'icon'  => 'eicon-h-align-right',
 				],
 			],
@@ -2506,31 +2506,31 @@ class Login_Register extends Widget_Base {
 		] );
 		$this->add_control( 'eael_form_label_colors_heading', [
 			'type'      => Controls_Manager::HEADING,
-			'label'     => __( 'Colors & Border', 'essential-addons-for-elementor-lite' ),
+			'label'     => __( 'Colors & Border', 'px-elements' ),
 			'separator' => 'before',
 		] );
 		$this->start_controls_tabs( "tabs_form_fields_style" );
 
 		/*-----Form Input Fields NORMAL state------ */
 		$this->start_controls_tab( "tab_form_field_style_normal", [
-			'label' => __( 'Normal', 'essential-addons-for-elementor-lite' ),
+			'label' => __( 'Normal', 'px-elements' ),
 		] );
 		$this->add_control( 'eael_field_color', [
-			'label'     => __( 'Text Color', 'essential-addons-for-elementor-lite' ),
+			'label'     => __( 'Text Color', 'px-elements' ),
 			'type'      => Controls_Manager::COLOR,
 			'selectors' => [
 				"{{WRAPPER}} .lr-form-wrapper .eael-lr-form-control" => 'color: {{VALUE}};',
 			],
 		] );
 		$this->add_control( 'eael_field_placeholder_color', [
-			'label'     => __( 'Placeholder Color', 'essential-addons-for-elementor-lite' ),
+			'label'     => __( 'Placeholder Color', 'px-elements' ),
 			'type'      => Controls_Manager::COLOR,
 			'selectors' => [
 				"{{WRAPPER}} .lr-form-wrapper input.eael-lr-form-control::placeholder" => 'color: {{VALUE}};',
 			],
 		] );
 		$this->add_control( 'eael_field_bg_color', [
-			'label'     => __( 'Background Color', 'essential-addons-for-elementor-lite' ),
+			'label'     => __( 'Background Color', 'px-elements' ),
 			'type'      => Controls_Manager::COLOR,
 			'default'   => '#ffffff',
 			'selectors' => [
@@ -2543,7 +2543,7 @@ class Login_Register extends Widget_Base {
 			'selector' => "{{WRAPPER}} .lr-form-wrapper .eael-lr-form-control",
 		] );
 		$this->add_control( "eael_field_border_radius", [
-			'label'      => __( 'Border Radius', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Border Radius', 'px-elements' ),
 			'type'       => Controls_Manager::DIMENSIONS,
 			'size_units' => [
 				'px',
@@ -2557,18 +2557,18 @@ class Login_Register extends Widget_Base {
 		$this->end_controls_tab();
 
 		$this->start_controls_tab( "tab_form_field_style_active", [
-			'label' => __( 'Focus', 'essential-addons-for-elementor-lite' ),
+			'label' => __( 'Focus', 'px-elements' ),
 		] );
 
 		$this->add_control( 'eael_field_placeholder_color_active', [
-			'label'     => __( 'Placeholder Color', 'essential-addons-for-elementor-lite' ),
+			'label'     => __( 'Placeholder Color', 'px-elements' ),
 			'type'      => Controls_Manager::COLOR,
 			'selectors' => [
 				"{{WRAPPER}} .lr-form-wrapper input.eael-lr-form-control:focus::placeholder" => 'color: {{VALUE}};',
 			],
 		] );
 		$this->add_control( 'eael_field_bg_color_active', [
-			'label'     => __( 'Background Color', 'essential-addons-for-elementor-lite' ),
+			'label'     => __( 'Background Color', 'px-elements' ),
 			'type'      => Controls_Manager::COLOR,
 			'default'   => '#ffffff',
 			'selectors' => [
@@ -2580,7 +2580,7 @@ class Login_Register extends Widget_Base {
 			'selector' => "{{WRAPPER}} .lr-form-wrapper .eael-lr-form-control:focus",
 		] );
 		$this->add_control( "eael_field_border_radius_focus", [
-			'label'      => __( 'Border Radius', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Border Radius', 'px-elements' ),
 			'type'       => Controls_Manager::DIMENSIONS,
 			'size_units' => [
 				'px',
@@ -2597,20 +2597,20 @@ class Login_Register extends Widget_Base {
 
 	protected function init_style_input_labels_controls() {
 		$this->start_controls_section( 'section_style_form_labels', [
-			'label' => __( 'Form Labels', 'essential-addons-for-elementor-lite' ),
+			'label' => __( 'Form Labels', 'px-elements' ),
 			'tab'   => Controls_Manager::TAB_STYLE,
 		] );
 		$this->add_control( 'eael_form_label_po_toggle', [
-			'label'        => __( 'Spacing', 'essential-addons-for-elementor-lite' ),
+			'label'        => __( 'Spacing', 'px-elements' ),
 			'type'         => Controls_Manager::POPOVER_TOGGLE,
-			'label_off'    => __( 'Default', 'essential-addons-for-elementor-lite' ),
-			'label_on'     => __( 'Custom', 'essential-addons-for-elementor-lite' ),
+			'label_off'    => __( 'Default', 'px-elements' ),
+			'label_on'     => __( 'Custom', 'px-elements' ),
 			'return_value' => 'yes',
 		] );
 
 		$this->start_popover();
 		$this->add_responsive_control( "eael_form_label_margin", [
-			'label'      => __( 'Margin', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Margin', 'px-elements' ),
 			'type'       => Controls_Manager::DIMENSIONS,
 			'size_units' => [
 				'px',
@@ -2625,7 +2625,7 @@ class Login_Register extends Widget_Base {
 			],
 		] );
 		$this->add_responsive_control( "eael_form_label_padding", [
-			'label'      => __( 'Padding', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Padding', 'px-elements' ),
 			'type'       => Controls_Manager::DIMENSIONS,
 			'size_units' => [
 				'px',
@@ -2646,16 +2646,16 @@ class Login_Register extends Widget_Base {
 		] );
 
 		$this->add_control( 'eael_form_label_c_po_toggle', [
-			'label'        => __( 'Colors', 'essential-addons-for-elementor-lite' ),
+			'label'        => __( 'Colors', 'px-elements' ),
 			'type'         => Controls_Manager::POPOVER_TOGGLE,
-			'label_off'    => __( 'Default', 'essential-addons-for-elementor-lite' ),
-			'label_on'     => __( 'Custom', 'essential-addons-for-elementor-lite' ),
+			'label_off'    => __( 'Default', 'px-elements' ),
+			'label_on'     => __( 'Custom', 'px-elements' ),
 			'return_value' => 'yes',
 		] );
 
 		$this->start_popover();
 		$this->add_control( 'eael_label_color', [
-			'label'     => __( 'Text Color', 'essential-addons-for-elementor-lite' ),
+			'label'     => __( 'Text Color', 'px-elements' ),
 			'type'      => Controls_Manager::COLOR,
 			'selectors' => [
 				"{{WRAPPER}} .lr-form-wrapper .eael-field-label" => 'color: {{VALUE}};',
@@ -2665,7 +2665,7 @@ class Login_Register extends Widget_Base {
 			],
 		] );
 		$this->add_control( 'eael_label_bg_color', [
-			'label'     => __( 'Background Color', 'essential-addons-for-elementor-lite' ),
+			'label'     => __( 'Background Color', 'px-elements' ),
 			'type'      => Controls_Manager::COLOR,
 			'default'   => '#ffffff',
 			'selectors' => [
@@ -2678,10 +2678,10 @@ class Login_Register extends Widget_Base {
 		$this->end_popover();
 
 		$this->add_control( 'eael_form_label_b_po_toggle', [
-			'label'        => __( 'Border', 'essential-addons-for-elementor-lite' ),
+			'label'        => __( 'Border', 'px-elements' ),
 			'type'         => Controls_Manager::POPOVER_TOGGLE,
-			'label_off'    => __( 'Default', 'essential-addons-for-elementor-lite' ),
-			'label_on'     => __( 'Custom', 'essential-addons-for-elementor-lite' ),
+			'label_off'    => __( 'Default', 'px-elements' ),
+			'label_on'     => __( 'Custom', 'px-elements' ),
 			'return_value' => 'yes',
 		] );
 
@@ -2694,7 +2694,7 @@ class Login_Register extends Widget_Base {
 			],
 		] );
 		$this->add_control( "eael_label_border_radius", [
-			'label'      => __( 'Border Radius', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Border Radius', 'px-elements' ),
 			'type'       => Controls_Manager::DIMENSIONS,
 			'size_units' => [
 				'px',
@@ -2710,7 +2710,7 @@ class Login_Register extends Widget_Base {
 		$this->end_popover();
 
 		$this->add_control( 'rmark_po_toggle', [
-			'label'     => __( 'Required Mark Style', 'essential-addons-for-elementor-lite' ),
+			'label'     => __( 'Required Mark Style', 'px-elements' ),
 			'type'      => Controls_Manager::POPOVER_TOGGLE,
 			'condition' => [
 				'show_labels'   => 'yes',
@@ -2720,7 +2720,7 @@ class Login_Register extends Widget_Base {
 
 		$this->start_popover();
 		$this->add_control( 'rmark_sign', [
-			'label'       => __( 'Mark Sign', 'essential-addons-for-elementor-lite' ),
+			'label'       => __( 'Mark Sign', 'px-elements' ),
 			'type'        => Controls_Manager::TEXT,
 			'default'     => '*',
 			'placeholder' => 'Enter * or (required) etc.',
@@ -2732,7 +2732,7 @@ class Login_Register extends Widget_Base {
 			],
 		] );
 		$this->add_control( "rmark_size", [
-			'label'      => esc_html__( 'Size', 'essential-addons-for-elementor-lite' ),
+			'label'      => esc_html__( 'Size', 'px-elements' ),
 			'type'       => Controls_Manager::SLIDER,
 			'size_units' => [
 				'px',
@@ -2754,7 +2754,7 @@ class Login_Register extends Widget_Base {
 			],
 		] );
 		$this->add_control( "rmakr_color", [
-			'label'     => __( 'Color', 'essential-addons-for-elementor-lite' ),
+			'label'     => __( 'Color', 'px-elements' ),
 			'type'      => Controls_Manager::COLOR,
 			'selectors' => [
 				"{{WRAPPER}} .eael-lr-form-wrapper .eael-lr-form-group label.mark-required:after" => 'color: {{VALUE}};',
@@ -2765,7 +2765,7 @@ class Login_Register extends Widget_Base {
 		] );
 
 		$this->add_responsive_control( "rmark_valign", [
-			'label'     => esc_html__( 'Vertical Alignment', 'essential-addons-for-elementor-lite' ),
+			'label'     => esc_html__( 'Vertical Alignment', 'px-elements' ),
 			'type'      => Controls_Manager::SLIDER,
 			'range'     => [
 				'px' => [
@@ -2786,7 +2786,7 @@ class Login_Register extends Widget_Base {
 			],
 		] );
 		$this->add_responsive_control( "rmark_halign", [
-			'label'     => esc_html__( 'Horizontal Alignment', 'essential-addons-for-elementor-lite' ),
+			'label'     => esc_html__( 'Horizontal Alignment', 'px-elements' ),
 			'type'      => Controls_Manager::SLIDER,
 			'range'     => [
 				'px' => [
@@ -2809,7 +2809,7 @@ class Login_Register extends Widget_Base {
 
 		$this->end_popover();
 		$this->add_control( 'lpv_po_toggle', [
-			'label'     => __( 'Password Visibility Style', 'essential-addons-for-elementor-lite' ),
+			'label'     => __( 'Password Visibility Style', 'px-elements' ),
 			'type'      => Controls_Manager::POPOVER_TOGGLE,
 			'condition' => [
 				'password_toggle' => 'yes',
@@ -2818,7 +2818,7 @@ class Login_Register extends Widget_Base {
 		$this->start_popover();
 
 		$this->add_responsive_control( "lpv_size", [
-			'label'      => esc_html__( 'Icon Size', 'essential-addons-for-elementor-lite' ),
+			'label'      => esc_html__( 'Icon Size', 'px-elements' ),
 			'type'       => Controls_Manager::SLIDER,
 			'size_units' => [
 				'px',
@@ -2840,7 +2840,7 @@ class Login_Register extends Widget_Base {
 			],
 		] );
 		$this->add_control( "lvp_open_color", [
-			'label'     => __( 'Open Eye Color', 'essential-addons-for-elementor-lite' ),
+			'label'     => __( 'Open Eye Color', 'px-elements' ),
 			'type'      => Controls_Manager::COLOR,
 			'selectors' => [
 				"{{WRAPPER}} .eael-lr-form-wrapper .eael-lr-form-group .dashicons-visibility" => 'color: {{VALUE}};',
@@ -2850,7 +2850,7 @@ class Login_Register extends Widget_Base {
 			],
 		] );
 		$this->add_control( "lvp_close_color", [
-			'label'     => __( 'Close Eye Color', 'essential-addons-for-elementor-lite' ),
+			'label'     => __( 'Close Eye Color', 'px-elements' ),
 			'type'      => Controls_Manager::COLOR,
 			'selectors' => [
 				"{{WRAPPER}} .eael-lr-form-wrapper .eael-lr-form-group .dashicons-hidden" => 'color: {{VALUE}};',
@@ -2861,7 +2861,7 @@ class Login_Register extends Widget_Base {
 		] );
 
 		$this->add_responsive_control( "lpv_valign", [
-			'label'     => esc_html__( 'Vertical Alignment', 'essential-addons-for-elementor-lite' ),
+			'label'     => esc_html__( 'Vertical Alignment', 'px-elements' ),
 			'type'      => Controls_Manager::SLIDER,
 			'range'     => [
 				'px' => [
@@ -2882,7 +2882,7 @@ class Login_Register extends Widget_Base {
 			],
 		] );
 		$this->add_responsive_control( "lpv_halign", [
-			'label'     => esc_html__( 'Horizontal Alignment', 'essential-addons-for-elementor-lite' ),
+			'label'     => esc_html__( 'Horizontal Alignment', 'px-elements' ),
 			'type'      => Controls_Manager::SLIDER,
 			'range'     => [
 				'px' => [
@@ -2939,20 +2939,20 @@ class Login_Register extends Widget_Base {
 	 */
 	protected function _init_button_style( $button_type = 'login' ) {
 		$this->start_controls_section( "section_style_{$button_type}_btn", [
-			'label'      => sprintf( __( '%s Button', 'essential-addons-for-elementor-lite' ), ucfirst( $button_type ) ),
+			'label'      => sprintf( __( '%s Button', 'px-elements' ), ucfirst( $button_type ) ),
 			'tab'        => Controls_Manager::TAB_STYLE,
 			'conditions' => $this->get_form_controls_display_condition( $button_type ),
 		] );
 		$this->add_control( "{$button_type}_btn_pot", [
-			'label'        => __( 'Spacing', 'essential-addons-for-elementor-lite' ),
+			'label'        => __( 'Spacing', 'px-elements' ),
 			'type'         => Controls_Manager::POPOVER_TOGGLE,
-			'label_off'    => __( 'Default', 'essential-addons-for-elementor-lite' ),
-			'label_on'     => __( 'Custom', 'essential-addons-for-elementor-lite' ),
+			'label_off'    => __( 'Default', 'px-elements' ),
+			'label_on'     => __( 'Custom', 'px-elements' ),
 			'return_value' => 'yes',
 		] );
 		$this->start_popover();
 		$this->add_responsive_control( "{$button_type}_btn_margin", [
-			'label'      => __( 'Margin', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Margin', 'px-elements' ),
 			'type'       => Controls_Manager::DIMENSIONS,
 			'size_units' => [
 				'px',
@@ -2967,7 +2967,7 @@ class Login_Register extends Widget_Base {
 			],
 		] );
 		$this->add_responsive_control( "{$button_type}_btn_padding", [
-			'label'      => __( 'Padding', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Padding', 'px-elements' ),
 			'type'       => Controls_Manager::DIMENSIONS,
 			'size_units' => [
 				'px',
@@ -2987,11 +2987,11 @@ class Login_Register extends Widget_Base {
 			'selector' => "{{WRAPPER}} .eael-{$button_type}-form .eael-lr-btn",
 		] );
 		$this->add_responsive_control( "{$button_type}_btn_d_type", [
-			'label'     => __( 'Display as', 'essential-addons-for-elementor-lite' ),
+			'label'     => __( 'Display as', 'px-elements' ),
 			'type'      => Controls_Manager::SELECT,
 			'options'   => [
-				'row'    => __( 'Inline', 'essential-addons-for-elementor-lite' ),
-				'column' => __( 'Block', 'essential-addons-for-elementor-lite' ),
+				'row'    => __( 'Inline', 'px-elements' ),
+				'column' => __( 'Block', 'px-elements' ),
 			],
 			'default'   => 'row',
 			'selectors' => [
@@ -3002,15 +3002,15 @@ class Login_Register extends Widget_Base {
 
 
 		$this->add_responsive_control( "{$button_type}_btn_jc", [
-			'label'     => __( 'Justify Content', 'essential-addons-for-elementor-lite' ),
+			'label'     => __( 'Justify Content', 'px-elements' ),
 			'type'      => Controls_Manager::SELECT,
 			'options'   => [
-				'flex-start'    => __( 'Start', 'essential-addons-for-elementor-lite' ),
-				'flex-end'      => __( 'End', 'essential-addons-for-elementor-lite' ),
-				'center'        => __( 'Center', 'essential-addons-for-elementor-lite' ),
-				'space-between' => __( 'Space Between', 'essential-addons-for-elementor-lite' ),
-				'space-around'  => __( 'Space Around', 'essential-addons-for-elementor-lite' ),
-				'space-evenly'  => __( 'Space Evenly', 'essential-addons-for-elementor-lite' ),
+				'flex-start'    => __( 'Start', 'px-elements' ),
+				'flex-end'      => __( 'End', 'px-elements' ),
+				'center'        => __( 'Center', 'px-elements' ),
+				'space-between' => __( 'Space Between', 'px-elements' ),
+				'space-around'  => __( 'Space Around', 'px-elements' ),
+				'space-evenly'  => __( 'Space Evenly', 'px-elements' ),
 			],
 			'default'   => 'space-between',
 			'condition' => [
@@ -3021,19 +3021,19 @@ class Login_Register extends Widget_Base {
 			],
 		] );
 		$this->add_responsive_control( "{$button_type}_btn_align", [
-			'label'     => __( 'Alignment', 'essential-addons-for-elementor-lite' ),
+			'label'     => __( 'Alignment', 'px-elements' ),
 			'type'      => Controls_Manager::CHOOSE,
 			'options'   => [
 				'mr-auto'         => [
-					'title' => __( 'Left', 'essential-addons-for-elementor-lite' ),
+					'title' => __( 'Left', 'px-elements' ),
 					'icon'  => 'eicon-h-align-left',
 				],
 				'ml-auto mr-auto' => [
-					'title' => __( 'Center', 'essential-addons-for-elementor-lite' ),
+					'title' => __( 'Center', 'px-elements' ),
 					'icon'  => 'eicon-h-align-center',
 				],
 				'ml-auto'         => [
-					'title' => __( 'Right', 'essential-addons-for-elementor-lite' ),
+					'title' => __( 'Right', 'px-elements' ),
 					'icon'  => 'eicon-h-align-right',
 				],
 			],
@@ -3044,17 +3044,17 @@ class Login_Register extends Widget_Base {
 		] );
 		$this->add_control( "tabs_{$button_type}_btn_colors_heading", [
 			'type'      => Controls_Manager::HEADING,
-			'label'     => __( 'Colors & Border', 'essential-addons-for-elementor-lite' ),
+			'label'     => __( 'Colors & Border', 'px-elements' ),
 			'separator' => 'before',
 		] );
 
 		$this->start_controls_tabs( "tabs_{$button_type}_btn_style" );
 		/*-----Login Button NORMAL state------ */
 		$this->start_controls_tab( "tab_{$button_type}_btn_normal", [
-			'label' => __( 'Normal', 'essential-addons-for-elementor-lite' ),
+			'label' => __( 'Normal', 'px-elements' ),
 		] );
 		$this->add_control( "{$button_type}_btn_color", [
-			'label'     => __( 'Text Color', 'essential-addons-for-elementor-lite' ),
+			'label'     => __( 'Text Color', 'px-elements' ),
 			'type'      => Controls_Manager::COLOR,
 			'selectors' => [
 				"{{WRAPPER}} .eael-{$button_type}-form .eael-lr-btn" => 'color: {{VALUE}};',
@@ -3062,7 +3062,7 @@ class Login_Register extends Widget_Base {
 		] );
 		$this->add_group_control( Group_Control_Background::get_type(), [
 			'name'     => "{$button_type}_btn_bg_color",
-			'label'    => __( 'Background Color', 'essential-addons-for-elementor-lite' ),
+			'label'    => __( 'Background Color', 'px-elements' ),
 			'types'    => [
 				'classic',
 				'gradient',
@@ -3074,7 +3074,7 @@ class Login_Register extends Widget_Base {
 			'selector' => "{{WRAPPER}} .eael-{$button_type}-form .eael-lr-btn",
 		] );
 		$this->add_control( "{$button_type}_btn_border_radius", [
-			'label'      => __( 'Border Radius', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Border Radius', 'px-elements' ),
 			'type'       => Controls_Manager::DIMENSIONS,
 			'size_units' => [
 				'px',
@@ -3088,10 +3088,10 @@ class Login_Register extends Widget_Base {
 
 		/*-----Login Button HOVER state------ */
 		$this->start_controls_tab( "tab_{$button_type}_button_hover", [
-			'label' => __( 'Hover', 'essential-addons-for-elementor-lite' ),
+			'label' => __( 'Hover', 'px-elements' ),
 		] );
 		$this->add_control( "{$button_type}_button_color_hover", [
-			'label'     => __( 'Text Color', 'essential-addons-for-elementor-lite' ),
+			'label'     => __( 'Text Color', 'px-elements' ),
 			'type'      => Controls_Manager::COLOR,
 			'selectors' => [
 				"{{WRAPPER}} .eael-{$button_type}-form .eael-lr-btn:hover" => 'color: {{VALUE}};',
@@ -3099,7 +3099,7 @@ class Login_Register extends Widget_Base {
 		] );
 		$this->add_group_control( Group_Control_Background::get_type(), [
 			'name'     => "{$button_type}_btn_bg_color_hover",
-			'label'    => __( 'Background Color', 'essential-addons-for-elementor-lite' ),
+			'label'    => __( 'Background Color', 'px-elements' ),
 			'types'    => [
 				'classic',
 				'gradient',
@@ -3111,7 +3111,7 @@ class Login_Register extends Widget_Base {
 			'selector' => "{{WRAPPER}} .eael-{$button_type}-form .eael-lr-btn:hover",
 		] );
 		$this->add_control( "{$button_type}_btn_border_radius_hover", [
-			'label'      => __( 'Border Radius', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Border Radius', 'px-elements' ),
 			'type'       => Controls_Manager::DIMENSIONS,
 			'size_units' => [
 				'px',
@@ -3126,7 +3126,7 @@ class Login_Register extends Widget_Base {
 		/*-----ends Button tabs--------*/
 
 		$this->add_responsive_control( "{$button_type}_btn_width", [
-			'label'      => esc_html__( 'Button width', 'essential-addons-for-elementor-lite' ),
+			'label'      => esc_html__( 'Button width', 'px-elements' ),
 			'type'       => Controls_Manager::SLIDER,
 			'size_units' => [
 				'px',
@@ -3149,7 +3149,7 @@ class Login_Register extends Widget_Base {
 			'separator'  => 'before',
 		] );
 		$this->add_responsive_control( "{$button_type}_btn_height", [
-			'label'      => esc_html__( 'Button Height', 'essential-addons-for-elementor-lite' ),
+			'label'      => esc_html__( 'Button Height', 'px-elements' ),
 			'type'       => Controls_Manager::SLIDER,
 			'size_units' => [
 				'px',
@@ -3180,14 +3180,14 @@ class Login_Register extends Widget_Base {
 	 */
 	protected function _init_recaptcha_style( $form_type = 'login' ) {
 		$this->start_controls_section( "section_style_{$form_type}_rc", [
-			'label'     => sprintf( __( '%s Form reCAPTCHA', 'essential-addons-for-elementor-lite' ), ucfirst( $form_type ) ),
+			'label'     => sprintf( __( '%s Form reCAPTCHA', 'px-elements' ), ucfirst( $form_type ) ),
 			'tab'       => Controls_Manager::TAB_STYLE,
 			'condition' => [
 				"enable_{$form_type}_recaptcha" => 'yes',
 			],
 		] );
 		$this->add_responsive_control( "{$form_type}_rc_margin", [
-			'label'      => __( 'Margin', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Margin', 'px-elements' ),
 			'type'       => Controls_Manager::DIMENSIONS,
 			'size_units' => [
 				'px',
@@ -3201,21 +3201,21 @@ class Login_Register extends Widget_Base {
 		] );
 
 		$this->add_control( "{$form_type}_rc_theme", [
-			'label'   => __( 'Theme', 'essential-addons-for-elementor-lite' ),
+			'label'   => __( 'Theme', 'px-elements' ),
 			'type'    => Controls_Manager::SELECT,
 			'options' => [
-				'light' => __( 'Light', 'essential-addons-for-elementor-lite' ),
-				'dark'  => __( 'Dark', 'essential-addons-for-elementor-lite' ),
+				'light' => __( 'Light', 'px-elements' ),
+				'dark'  => __( 'Dark', 'px-elements' ),
 			],
 			'default' => 'light',
 		] );
 
 		$this->add_control( "{$form_type}_rc_size", [
-			'label'   => __( 'Size', 'essential-addons-for-elementor-lite' ),
+			'label'   => __( 'Size', 'px-elements' ),
 			'type'    => Controls_Manager::SELECT,
 			'options' => [
-				'normal'  => __( 'Normal', 'essential-addons-for-elementor-lite' ),
-				'compact' => __( 'Compact', 'essential-addons-for-elementor-lite' ),
+				'normal'  => __( 'Normal', 'px-elements' ),
+				'compact' => __( 'Compact', 'px-elements' ),
 			],
 			'default' => 'normal',
 		] );
@@ -3229,9 +3229,9 @@ class Login_Register extends Widget_Base {
 	 * @param string $form_type the type of form where the link is being shown. accepts login or register.
 	 */
 	protected function _init_link_style( $form_type = 'login' ) {
-		$form_name = 'login' === $form_type ? __( 'Register', 'essential-addons-for-elementor-lite' ) : __( 'Login', 'essential-addons-for-elementor-lite' );
+		$form_name = 'login' === $form_type ? __( 'Register', 'px-elements' ) : __( 'Login', 'px-elements' );
 		$this->start_controls_section( "section_style_{$form_type}_link", [
-			'label'     => sprintf( __( '%s Link', 'essential-addons-for-elementor-lite' ), ucfirst( $form_name ) ),
+			'label'     => sprintf( __( '%s Link', 'px-elements' ), ucfirst( $form_name ) ),
 			'tab'       => Controls_Manager::TAB_STYLE,
 			'condition' => [
 				"show_{$form_type}_link" => 'yes',
@@ -3239,19 +3239,19 @@ class Login_Register extends Widget_Base {
 		] );
 		$this->add_control( "{$form_type}_link_style_notice", [
 			'type'            => Controls_Manager::RAW_HTML,
-			'raw'             => sprintf( __( 'Here you can style the %s link displayed on the %s Form', 'essential-addons-for-elementor-lite' ), $form_name, ucfirst( $form_type ) ),
+			'raw'             => sprintf( __( 'Here you can style the %s link displayed on the %s Form', 'px-elements' ), $form_name, ucfirst( $form_type ) ),
 			'content_classes' => 'elementor-panel-alert elementor-panel-alert-info',
 		] );
 		$this->add_control( "{$form_type}_link_pot", [
-			'label'        => __( 'Spacing', 'essential-addons-for-elementor-lite' ),
+			'label'        => __( 'Spacing', 'px-elements' ),
 			'type'         => Controls_Manager::POPOVER_TOGGLE,
-			'label_off'    => __( 'Default', 'essential-addons-for-elementor-lite' ),
-			'label_on'     => __( 'Custom', 'essential-addons-for-elementor-lite' ),
+			'label_off'    => __( 'Default', 'px-elements' ),
+			'label_on'     => __( 'Custom', 'px-elements' ),
 			'return_value' => 'yes',
 		] );
 		$this->start_popover();
 		$this->add_responsive_control( "{$form_type}_link_margin", [
-			'label'      => __( 'Margin', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Margin', 'px-elements' ),
 			'type'       => Controls_Manager::DIMENSIONS,
 			'size_units' => [
 				'px',
@@ -3266,7 +3266,7 @@ class Login_Register extends Widget_Base {
 			],
 		] );
 		$this->add_responsive_control( "{$form_type}_link_padding", [
-			'label'      => __( 'Padding', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Padding', 'px-elements' ),
 			'type'       => Controls_Manager::DIMENSIONS,
 			'size_units' => [
 				'px',
@@ -3287,11 +3287,11 @@ class Login_Register extends Widget_Base {
 		] );
 
 		$this->add_responsive_control( "{$form_type}_link_d_type", [
-			'label'     => __( 'Display as', 'essential-addons-for-elementor-lite' ),
+			'label'     => __( 'Display as', 'px-elements' ),
 			'type'      => Controls_Manager::SELECT,
 			'options'   => [
-				'row'    => __( 'Inline', 'essential-addons-for-elementor-lite' ),
-				'column' => __( 'Block', 'essential-addons-for-elementor-lite' ),
+				'row'    => __( 'Inline', 'px-elements' ),
+				'column' => __( 'Block', 'px-elements' ),
 			],
 			'default'   => 'row',
 			'selectors' => [
@@ -3301,15 +3301,15 @@ class Login_Register extends Widget_Base {
 
 
 		$this->add_responsive_control( "{$form_type}_link_jc", [
-			'label'     => __( 'Justify Content', 'essential-addons-for-elementor-lite' ),
+			'label'     => __( 'Justify Content', 'px-elements' ),
 			'type'      => Controls_Manager::SELECT,
 			'options'   => [
-				'flex-start'    => __( 'Start', 'essential-addons-for-elementor-lite' ),
-				'flex-end'      => __( 'End', 'essential-addons-for-elementor-lite' ),
-				'center'        => __( 'Center', 'essential-addons-for-elementor-lite' ),
-				'space-between' => __( 'Space Between', 'essential-addons-for-elementor-lite' ),
-				'space-around'  => __( 'Space Around', 'essential-addons-for-elementor-lite' ),
-				'space-evenly'  => __( 'Space Evenly', 'essential-addons-for-elementor-lite' ),
+				'flex-start'    => __( 'Start', 'px-elements' ),
+				'flex-end'      => __( 'End', 'px-elements' ),
+				'center'        => __( 'Center', 'px-elements' ),
+				'space-between' => __( 'Space Between', 'px-elements' ),
+				'space-around'  => __( 'Space Around', 'px-elements' ),
+				'space-evenly'  => __( 'Space Evenly', 'px-elements' ),
 			],
 			'default'   => 'center',
 			'condition' => [
@@ -3321,15 +3321,15 @@ class Login_Register extends Widget_Base {
 		] );
 
 		$this->add_responsive_control( "{$form_type}_link_ai", [
-			'label'     => __( 'Align Items', 'essential-addons-for-elementor-lite' ),
+			'label'     => __( 'Align Items', 'px-elements' ),
 			'type'      => Controls_Manager::SELECT,
 			'options'   => [
-				'flex-start'   => __( 'Start', 'essential-addons-for-elementor-lite' ),
-				'flex-end'     => __( 'End', 'essential-addons-for-elementor-lite' ),
-				'center'       => __( 'Center', 'essential-addons-for-elementor-lite' ),
-				'stretch'      => __( 'Stretch', 'essential-addons-for-elementor-lite' ),
-				'baseline'     => __( 'Baseline', 'essential-addons-for-elementor-lite' ),
-				'space-evenly' => __( 'Space Evenly', 'essential-addons-for-elementor-lite' ),
+				'flex-start'   => __( 'Start', 'px-elements' ),
+				'flex-end'     => __( 'End', 'px-elements' ),
+				'center'       => __( 'Center', 'px-elements' ),
+				'stretch'      => __( 'Stretch', 'px-elements' ),
+				'baseline'     => __( 'Baseline', 'px-elements' ),
+				'space-evenly' => __( 'Space Evenly', 'px-elements' ),
 			],
 			'default'   => 'center',
 			'condition' => [
@@ -3341,19 +3341,19 @@ class Login_Register extends Widget_Base {
 		] );
 
 		$this->add_responsive_control( "{$form_type}_link_align", [
-			'label'     => __( 'Alignment', 'essential-addons-for-elementor-lite' ),
+			'label'     => __( 'Alignment', 'px-elements' ),
 			'type'      => Controls_Manager::CHOOSE,
 			'options'   => [
 				'mr-auto'         => [
-					'title' => __( 'Left', 'essential-addons-for-elementor-lite' ),
+					'title' => __( 'Left', 'px-elements' ),
 					'icon'  => 'eicon-h-align-left',
 				],
 				'ml-auto mr-auto' => [
-					'title' => __( 'Center', 'essential-addons-for-elementor-lite' ),
+					'title' => __( 'Center', 'px-elements' ),
 					'icon'  => 'eicon-h-align-center',
 				],
 				'ml-auto'         => [
-					'title' => __( 'Right', 'essential-addons-for-elementor-lite' ),
+					'title' => __( 'Right', 'px-elements' ),
 					'icon'  => 'eicon-h-align-right',
 				],
 			],
@@ -3365,17 +3365,17 @@ class Login_Register extends Widget_Base {
 
 		$this->add_control( "tabs_{$form_type}_link_colors_heading", [
 			'type'      => Controls_Manager::HEADING,
-			'label'     => __( 'Colors & Border', 'essential-addons-for-elementor-lite' ),
+			'label'     => __( 'Colors & Border', 'px-elements' ),
 			'separator' => 'before',
 		] );
 
 		$this->start_controls_tabs( "tabs_{$form_type}_link_style" );
 		/*----- Link NORMAL state------ */
 		$this->start_controls_tab( "tab_{$form_type}_link_normal", [
-			'label' => __( 'Normal', 'essential-addons-for-elementor-lite' ),
+			'label' => __( 'Normal', 'px-elements' ),
 		] );
 		$this->add_control( "{$form_type}_link_color", [
-			'label'     => __( 'Text Color', 'essential-addons-for-elementor-lite' ),
+			'label'     => __( 'Text Color', 'px-elements' ),
 			'type'      => Controls_Manager::COLOR,
 			'selectors' => [
 				"{{WRAPPER}} .eael-{$form_type}-form .eael-lr-link" => 'color: {{VALUE}};',
@@ -3383,7 +3383,7 @@ class Login_Register extends Widget_Base {
 		] );
 		$this->add_group_control( Group_Control_Background::get_type(), [
 			'name'     => "{$form_type}_link_bg_color",
-			'label'    => __( 'Background Color', 'essential-addons-for-elementor-lite' ),
+			'label'    => __( 'Background Color', 'px-elements' ),
 			'types'    => [
 				'classic',
 				'gradient',
@@ -3395,7 +3395,7 @@ class Login_Register extends Widget_Base {
 			'selector' => "{{WRAPPER}} .eael-{$form_type}-form .eael-lr-link",
 		] );
 		$this->add_control( "{$form_type}_link_border_radius", [
-			'label'      => __( 'Border Radius', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Border Radius', 'px-elements' ),
 			'type'       => Controls_Manager::DIMENSIONS,
 			'size_units' => [
 				'px',
@@ -3409,10 +3409,10 @@ class Login_Register extends Widget_Base {
 
 		/*-----Link HOVER state------ */
 		$this->start_controls_tab( "tab_{$form_type}_link_hover", [
-			'label' => __( 'Hover', 'essential-addons-for-elementor-lite' ),
+			'label' => __( 'Hover', 'px-elements' ),
 		] );
 		$this->add_control( "{$form_type}_link_color_hover", [
-			'label'     => __( 'Text Color', 'essential-addons-for-elementor-lite' ),
+			'label'     => __( 'Text Color', 'px-elements' ),
 			'type'      => Controls_Manager::COLOR,
 			'selectors' => [
 				"{{WRAPPER}} .eael-{$form_type}-form .eael-lr-link:hover" => 'color: {{VALUE}};',
@@ -3420,7 +3420,7 @@ class Login_Register extends Widget_Base {
 		] );
 		$this->add_group_control( Group_Control_Background::get_type(), [
 			'name'     => "{$form_type}_link_bg_color_hover",
-			'label'    => __( 'Background Color', 'essential-addons-for-elementor-lite' ),
+			'label'    => __( 'Background Color', 'px-elements' ),
 			'types'    => [
 				'classic',
 				'gradient',
@@ -3432,7 +3432,7 @@ class Login_Register extends Widget_Base {
 			'selector' => "{{WRAPPER}} .eael-{$form_type}-form .eael-lr-link:hover",
 		] );
 		$this->add_control( "{$form_type}_link_border_radius_hover", [
-			'label'      => __( 'Border Radius', 'essential-addons-for-elementor-lite' ),
+			'label'      => __( 'Border Radius', 'px-elements' ),
 			'type'       => Controls_Manager::DIMENSIONS,
 			'size_units' => [
 				'px',
@@ -3446,7 +3446,7 @@ class Login_Register extends Widget_Base {
 		$this->end_controls_tabs();
 		/*-----ends Link tabs--------*/
 		$this->add_responsive_control( "{$form_type}_link_wrap_width", [
-			'label'      => esc_html__( 'Link Container width', 'essential-addons-for-elementor-lite' ),
+			'label'      => esc_html__( 'Link Container width', 'px-elements' ),
 			'type'       => Controls_Manager::SLIDER,
 			'size_units' => [
 				'px',
@@ -3469,7 +3469,7 @@ class Login_Register extends Widget_Base {
 			'separator'  => 'before',
 		] );
 		$this->add_responsive_control( "{$form_type}_link_width", [
-			'label'      => esc_html__( 'Link width', 'essential-addons-for-elementor-lite' ),
+			'label'      => esc_html__( 'Link width', 'px-elements' ),
 			'type'       => Controls_Manager::SLIDER,
 			'size_units' => [
 				'px',
@@ -3492,7 +3492,7 @@ class Login_Register extends Widget_Base {
 		] );
 
 		$this->add_responsive_control( "{$form_type}_link_height", [
-			'label'      => esc_html__( 'Link Height', 'essential-addons-for-elementor-lite' ),
+			'label'      => esc_html__( 'Link Height', 'px-elements' ),
 			'type'       => Controls_Manager::SLIDER,
 			'size_units' => [
 				'px',
@@ -3588,7 +3588,7 @@ class Login_Register extends Widget_Base {
 			//Reg link related
 			$reg_link_action = ! empty( $this->ds['registration_link_action'] ) ? $this->ds['registration_link_action'] : 'form';
 			$show_reg_link   = ( $this->user_can_register && 'yes' === $this->get_settings( 'show_register_link' ) );
-			$reg_link_text   = ! empty( $this->get_settings( 'registration_link_text' ) ) ? $this->get_settings( 'registration_link_text' ) : __( 'Register', 'essential-addons-for-elementor-lite' );
+			$reg_link_text   = ! empty( $this->get_settings( 'registration_link_text' ) ) ? $this->get_settings( 'registration_link_text' ) : __( 'Register', 'px-elements' );
 			$parts           = explode( "\n", $reg_link_text );
 			$reg_link_text   = array_pop( $parts );
 			$reg_message     = array_shift( $parts );
@@ -3615,8 +3615,8 @@ class Login_Register extends Widget_Base {
 			$display_label   = ( 'none' !== $label_type );
 
 			//Default label n placeholder
-			$u_label = $u_ph = __( 'Username or Email Address', 'essential-addons-for-elementor-lite' );
-			$p_label = $p_ph = __( 'Password', 'essential-addons-for-elementor-lite' );
+			$u_label = $u_ph = __( 'Username or Email Address', 'px-elements' );
+			$p_label = $p_ph = __( 'Password', 'px-elements' );
 			// custom label n placeholder
 			if ( $is_custom_label ) {
 				$u_label = isset( $this->ds['login_user_label'] ) ? $this->ds['login_user_label'] : '';
@@ -3633,7 +3633,7 @@ class Login_Register extends Widget_Base {
 
 			//Loss password
 			$show_lp = ( ! empty( $this->ds['show_lost_password'] ) && 'yes' === $this->ds['show_lost_password'] );
-			$lp_text = ! empty( $this->ds['lost_password_text'] ) ? $this->ds['lost_password_text'] : __( 'Forgot password?', 'essential-addons-for-elementor-lite' );
+			$lp_text = ! empty( $this->ds['lost_password_text'] ) ? $this->ds['lost_password_text'] : __( 'Forgot password?', 'px-elements' );
 			$lp_link = sprintf( '<a href="%s">%s</a>', esc_attr( wp_lostpassword_url() ), $lp_text );
 			if ( ! empty( $this->ds['lost_password_link_type'] ) && 'custom' === $this->ds['lost_password_link_type'] ) {
 				$lp_url  = ! empty( $this->ds['lost_password_url']['url'] ) ? $this->ds['lost_password_url']['url'] : wp_lostpassword_url();
@@ -3655,8 +3655,8 @@ class Login_Register extends Widget_Base {
 					<?php
 					if ( $show_logout_link && is_user_logged_in() && ! $this->in_editor ) {
 						/* translators: %s user display name */
-						$logged_in_msg = sprintf( __( 'You are already logged in as %s. ', 'essential-addons-for-elementor-lite' ), wp_get_current_user()->display_name );
-						printf( '%1$s   (<a href="%2$s">%3$s</a>)', $logged_in_msg, esc_url( wp_logout_url() ), __( 'Logout', 'essential-addons-for-elementor-lite' ) );
+						$logged_in_msg = sprintf( __( 'You are already logged in as %s. ', 'px-elements' ), wp_get_current_user()->display_name );
+						printf( '%1$s   (<a href="%2$s">%3$s</a>)', $logged_in_msg, esc_url( wp_logout_url() ), __( 'Logout', 'px-elements' ) );
 					} else {
 						if ( 'left' === $this->form_illustration_pos ) {
 							$this->print_form_illustration();
@@ -3696,7 +3696,7 @@ class Login_Register extends Widget_Base {
 									<?php if ( $show_rememberme ) { ?>
                                         <p class="forget-menot">
                                             <input name="eael-rememberme" type="checkbox" id="rememberme" value="forever">
-                                            <label for="rememberme" class="eael-checkbox-label check-rememberme"><?php esc_html_e( 'Remember Me', 'essential-addons-for-elementor-lite' ); ?></label>
+                                            <label for="rememberme" class="eael-checkbox-label check-rememberme"><?php esc_html_e( 'Remember Me', 'px-elements' ); ?></label>
                                         </p>
 									<?php }
 									if ( $show_lp ) {
@@ -3764,13 +3764,13 @@ class Login_Register extends Widget_Base {
 			$last_name_exists    = 0;
 			$website_exists      = 0;
 			$f_labels            = [
-				'email'            => __( 'Email', 'essential-addons-for-elementor-lite' ),
-				'password'         => __( 'Password', 'essential-addons-for-elementor-lite' ),
-				'confirm_password' => __( 'Confirm Password', 'essential-addons-for-elementor-lite' ),
-				'user_name'        => __( 'Username', 'essential-addons-for-elementor-lite' ),
-				'first_name'       => __( 'First Name', 'essential-addons-for-elementor-lite' ),
-				'last_name'        => __( 'Last Name', 'essential-addons-for-elementor-lite' ),
-				'website'          => __( 'Website', 'essential-addons-for-elementor-lite' ),
+				'email'            => __( 'Email', 'px-elements' ),
+				'password'         => __( 'Password', 'px-elements' ),
+				'confirm_password' => __( 'Confirm Password', 'px-elements' ),
+				'user_name'        => __( 'Username', 'px-elements' ),
+				'first_name'       => __( 'First Name', 'px-elements' ),
+				'last_name'        => __( 'Last Name', 'px-elements' ),
+				'website'          => __( 'Website', 'px-elements' ),
 			];
 			$repeated_f_labels   = [];
 
@@ -3778,7 +3778,7 @@ class Login_Register extends Widget_Base {
 			//Login link related
 			$lgn_link_action = ! empty( $this->ds['login_link_action'] ) ? $this->ds['login_link_action'] : 'form';
 			$show_lgn_link   = 'yes' === $this->get_settings( 'show_login_link' );
-			$lgn_link_text   = ! empty( $this->get_settings( 'login_link_text' ) ) ? $this->get_settings( 'login_link_text' ) : __( 'Login', 'essential-addons-for-elementor-lite' );
+			$lgn_link_text   = ! empty( $this->get_settings( 'login_link_text' ) ) ? $this->get_settings( 'login_link_text' ) : __( 'Login', 'px-elements' );
 			$btn_text        = ! empty( $this->ds['reg_button_text'] ) ? $this->ds['reg_button_text'] : '';
 
 			$parts                = explode( "\n", $lgn_link_text );
@@ -3988,7 +3988,7 @@ class Login_Register extends Widget_Base {
         <div class="lr-form-header header-<?php echo esc_attr( $this->form_logo_pos ); ?>">
 			<?php if ( ! empty( $this->form_logo ) ) { ?>
                 <div class="form-logo">
-                    <img src="<?php echo esc_attr( esc_url( $this->form_logo ) ); ?>" alt="<?php esc_attr_e( 'Form Logo Image', 'essential-addons-for-elementor-lite' ); ?>">
+                    <img src="<?php echo esc_attr( esc_url( $this->form_logo ) ); ?>" alt="<?php esc_attr_e( 'Form Logo Image', 'px-elements' ); ?>">
                 </div>
 			<?php } ?>
 
@@ -4094,7 +4094,7 @@ class Login_Register extends Widget_Base {
             <p class='eael-register-form-error elementor-alert elementor-alert-warning'>
 				<?php
 				/* translators: %s: Error fields */
-				printf( __( 'Error! you seem to have added %s field in the form more than once.', 'essential-addons-for-elementor-lite' ), $error_fields );
+				printf( __( 'Error! you seem to have added %s field in the form more than once.', 'px-elements' ), $error_fields );
 				?>
             </p>
 			<?php
@@ -4110,7 +4110,7 @@ class Login_Register extends Widget_Base {
             <p class='eael-register-form-error elementor-alert elementor-alert-warning'>
 				<?php
 				/* translators: %s: Error String */
-				printf( __( 'Error! It is required to use %s field.', 'essential-addons-for-elementor-lite' ), '<strong>Email</strong>' );
+				printf( __( 'Error! It is required to use %s field.', 'px-elements' ), '<strong>Email</strong>' );
 				?>
             </p>
 			<?php
@@ -4134,7 +4134,7 @@ class Login_Register extends Widget_Base {
             <p class='eael-register-form-error elementor-alert elementor-alert-warning'>
 				<?php
 				/* translators: %s: Error String */
-				printf( __( 'Error! It is required to use %s field with %s Field.', 'essential-addons-for-elementor-lite' ), '<strong>Password</strong>', '<strong>Password Confirmation</strong>' );
+				printf( __( 'Error! It is required to use %s field with %s Field.', 'px-elements' ), '<strong>Password</strong>', '<strong>Password Confirmation</strong>' );
 				?>
             </p>
 			<?php

@@ -46,10 +46,10 @@ class Pricing_Table extends WPML_Elementor_Module_With_Items {
 	protected function get_title( $field ) {
 		switch($field) {
 			case 'eael_pricing_table_item':
-				return __( 'Pricing Table: Feature', 'essential-addons-for-elementor-lite');
+				return __( 'Pricing Table: Feature', 'px-elements');
 
 			case 'eael_pricing_item_tooltip_content':
-				return __( 'Pricing Table: Feature Tooltip', 'essential-addons-for-elementor-lite');
+				return __( 'Pricing Table: Feature Tooltip', 'px-elements');
 
 			default:
 				return '';

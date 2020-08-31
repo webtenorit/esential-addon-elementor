@@ -22,7 +22,7 @@ class Feature_List extends Widget_Base {
     }
 
     public function get_title() {
-        return esc_html__( 'Feature List', 'essential-addons-for-elementor-lite' );
+        return esc_html__( 'Feature List', 'px-elements' );
     }
 
     public function get_icon() {
@@ -59,7 +59,7 @@ class Feature_List extends Widget_Base {
         $this->start_controls_section(
             'eael_section_feature_list_content_settings',
             [
-                'label' => esc_html__( 'Content Settings', 'essential-addons-for-elementor-lite' ),
+                'label' => esc_html__( 'Content Settings', 'px-elements' ),
             ]
         );
 
@@ -68,15 +68,15 @@ class Feature_List extends Widget_Base {
         $repeater->add_control(
             'eael_feature_list_icon_type',
             [
-                'label'       => esc_html__( 'Icon Type', 'essential-addons-for-elementor-lite' ),
+                'label'       => esc_html__( 'Icon Type', 'px-elements' ),
                 'type'        => Controls_Manager::CHOOSE,
                 'options'     => [
                     'icon'  => [
-                        'title' => esc_html__( 'Icon', 'essential-addons-for-elementor-lite' ),
+                        'title' => esc_html__( 'Icon', 'px-elements' ),
                         'icon'  => 'fa fa-star',
                     ],
                     'image' => [
-                        'title' => esc_html__( 'Image', 'essential-addons-for-elementor-lite' ),
+                        'title' => esc_html__( 'Image', 'px-elements' ),
                         'icon'  => 'fa fa-picture-o',
                     ],
                 ],
@@ -88,7 +88,7 @@ class Feature_List extends Widget_Base {
         $repeater->add_control(
             'eael_feature_list_icon_new',
             [
-                'label'            => esc_html__( 'Icon', 'essential-addons-for-elementor-lite' ),
+                'label'            => esc_html__( 'Icon', 'px-elements' ),
                 'type'             => Controls_Manager::ICONS,
                 'fa4compatibility' => 'eael_feature_list_icon',
                 'condition'        => [
@@ -101,10 +101,10 @@ class Feature_List extends Widget_Base {
         $repeater->add_control(
             'eael_feature_list_icon_is_individual_style',
             [
-                'label'            => esc_html__( 'Icon Style', 'essential-addons-for-elementor-lite' ),
+                'label'            => esc_html__( 'Icon Style', 'px-elements' ),
                 'type'             => Controls_Manager::SWITCHER,
-                'label_on'         => __( 'ON', 'essential-addons-for-elementor-lite' ),
-                'label_off'        => __( 'OFF', 'essential-addons-for-elementor-lite' ),
+                'label_on'         => __( 'ON', 'px-elements' ),
+                'label_off'        => __( 'OFF', 'px-elements' ),
                 'return_value'     => 'on',
                 'default'          => '',
                 'fa4compatibility' => 'eael_feature_list_icon',
@@ -116,7 +116,7 @@ class Feature_List extends Widget_Base {
         $repeater->add_control(
             'eael_feature_list_icon_individual_color',
             [
-                'label'            => esc_html__( 'Icon Color', 'essential-addons-for-elementor-lite' ),
+                'label'            => esc_html__( 'Icon Color', 'px-elements' ),
                 'type'             => Controls_Manager::COLOR,
                 'scheme'           => [
                     'type'  => Scheme_Color::get_type(),
@@ -131,7 +131,7 @@ class Feature_List extends Widget_Base {
         $repeater->add_control(
             'eael_feature_list_icon_individual_bg_color',
             [
-                'label'            => esc_html__( 'Icon Background', 'essential-addons-for-elementor-lite' ),
+                'label'            => esc_html__( 'Icon Background', 'px-elements' ),
                 'type'             => Controls_Manager::COLOR,
                 'scheme'           => [
                     'type'  => Scheme_Color::get_type(),
@@ -146,7 +146,7 @@ class Feature_List extends Widget_Base {
         $repeater->add_control(
             'eael_feature_list_icon_individual_box_bg_color',
             [
-                'label'            => esc_html__( 'Icon Box Background', 'essential-addons-for-elementor-lite' ),
+                'label'            => esc_html__( 'Icon Box Background', 'px-elements' ),
                 'type'             => Controls_Manager::COLOR,
                 'scheme'           => [
                     'type'  => Scheme_Color::get_type(),
@@ -163,7 +163,7 @@ class Feature_List extends Widget_Base {
         $repeater->add_control(
             'eael_feature_list_img',
             [
-                'label'     => esc_html__( 'Image', 'essential-addons-for-elementor-lite' ),
+                'label'     => esc_html__( 'Image', 'px-elements' ),
                 'type'      => Controls_Manager::MEDIA,
                 'default'   => [
                     'url' => Utils::get_placeholder_image_src(),
@@ -177,9 +177,9 @@ class Feature_List extends Widget_Base {
         $repeater->add_control(
             'eael_feature_list_title',
             [
-                'label'   => esc_html__( 'Title', 'essential-addons-for-elementor-lite' ),
+                'label'   => esc_html__( 'Title', 'px-elements' ),
                 'type'    => Controls_Manager::TEXT,
-                'default' => esc_html__( 'Title', 'essential-addons-for-elementor-lite' ),
+                'default' => esc_html__( 'Title', 'px-elements' ),
                 'dynamic' => ['active' => true],
             ]
         );
@@ -187,9 +187,9 @@ class Feature_List extends Widget_Base {
         $repeater->add_control(
             'eael_feature_list_content',
             [
-                'label'   => esc_html__( 'Content', 'essential-addons-for-elementor-lite' ),
+                'label'   => esc_html__( 'Content', 'px-elements' ),
                 'type'    => Controls_Manager::TEXTAREA,
-                'default' => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, neque qui velit. Magni dolorum quidem ipsam eligendi, totam, facilis laudantium cum accusamus ullam voluptatibus commodi numquam, error, est. Ea, consequatur.', 'essential-addons-for-elementor-lite' ),
+                'default' => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, neque qui velit. Magni dolorum quidem ipsam eligendi, totam, facilis laudantium cum accusamus ullam voluptatibus commodi numquam, error, est. Ea, consequatur.', 'px-elements' ),
                 'dynamic' => ['active' => true],
             ]
         );
@@ -197,10 +197,10 @@ class Feature_List extends Widget_Base {
         $repeater->add_control(
             'eael_feature_list_link',
             [
-                'label'       => esc_html__( 'Link', 'essential-addons-for-elementor-lite' ),
+                'label'       => esc_html__( 'Link', 'px-elements' ),
                 'type'        => Controls_Manager::URL,
                 'dynamic'     => ['active' => true],
-                'placeholder' => esc_html__( 'https://your-link.com', 'essential-addons-for-elementor-lite' ),
+                'placeholder' => esc_html__( 'https://your-link.com', 'px-elements' ),
                 'separator'   => 'before',
             ]
         );
@@ -208,7 +208,7 @@ class Feature_List extends Widget_Base {
         $this->add_control(
             'eael_feature_list',
             [
-                'label'       => esc_html__( 'Feature Item', 'essential-addons-for-elementor-lite' ),
+                'label'       => esc_html__( 'Feature Item', 'px-elements' ),
                 'type'        => Controls_Manager::REPEATER,
                 'seperator'   => 'before',
                 'default'     => [
@@ -217,24 +217,24 @@ class Feature_List extends Widget_Base {
                             'value'   => 'fas fa-check',
                             'library' => 'fa-solid',
                         ],
-                        'eael_feature_list_title'    => esc_html__( 'Feature Item 1', 'essential-addons-for-elementor-lite' ),
-                        'eael_feature_list_content'  => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipisi cing elit, sed do eiusmod tempor incididunt ut abore et dolore magna', 'essential-addons-for-elementor-lite' ),
+                        'eael_feature_list_title'    => esc_html__( 'Feature Item 1', 'px-elements' ),
+                        'eael_feature_list_content'  => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipisi cing elit, sed do eiusmod tempor incididunt ut abore et dolore magna', 'px-elements' ),
                     ],
                     [
                         'eael_feature_list_icon_new' => [
                             'value'   => 'fas fa-times',
                             'library' => 'fa-solid',
                         ],
-                        'eael_feature_list_title'    => esc_html__( 'Feature Item 2', 'essential-addons-for-elementor-lite' ),
-                        'eael_feature_list_content'  => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipisi cing elit, sed do eiusmod tempor incididunt ut abore et dolore magna', 'essential-addons-for-elementor-lite' ),
+                        'eael_feature_list_title'    => esc_html__( 'Feature Item 2', 'px-elements' ),
+                        'eael_feature_list_content'  => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipisi cing elit, sed do eiusmod tempor incididunt ut abore et dolore magna', 'px-elements' ),
                     ],
                     [
                         'eael_feature_list_icon_new' => [
                             'value'   => 'fas fa-anchor',
                             'library' => 'fa-solid',
                         ],
-                        'eael_feature_list_title'    => esc_html__( 'Feature Item 3', 'essential-addons-for-elementor-lite' ),
-                        'eael_feature_list_content'  => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipisi cing elit, sed do eiusmod tempor incididunt ut abore et dolore magna', 'essential-addons-for-elementor-lite' ),
+                        'eael_feature_list_title'    => esc_html__( 'Feature Item 3', 'px-elements' ),
+                        'eael_feature_list_content'  => esc_html__( 'Lorem ipsum dolor sit amet, consectetur adipisi cing elit, sed do eiusmod tempor incididunt ut abore et dolore magna', 'px-elements' ),
                     ],
                 ],
                 'fields'      => $repeater->get_controls(),
@@ -245,7 +245,7 @@ class Feature_List extends Widget_Base {
         $this->add_control(
             'eael_feature_list_title_size',
             [
-                'label'     => esc_html__( 'Title HTML Tag', 'essential-addons-for-elementor-lite' ),
+                'label'     => esc_html__( 'Title HTML Tag', 'px-elements' ),
                 'type'      => Controls_Manager::SELECT,
                 'options'   => [
                     'h1'   => 'H1',
@@ -266,14 +266,14 @@ class Feature_List extends Widget_Base {
         $this->add_control(
             'eael_feature_list_icon_shape',
             [
-                'label'       => esc_html__( 'Icon Shape', 'essential-addons-for-elementor-lite' ),
+                'label'       => esc_html__( 'Icon Shape', 'px-elements' ),
                 'type'        => Controls_Manager::SELECT,
                 'default'     => 'circle',
                 'label_block' => false,
                 'options'     => [
-                    'circle'  => esc_html__( 'Circle', 'essential-addons-for-elementor-lite' ),
-                    'square'  => esc_html__( 'Square', 'essential-addons-for-elementor-lite' ),
-                    'rhombus' => esc_html__( 'Rhombus', 'essential-addons-for-elementor-lite' ),
+                    'circle'  => esc_html__( 'Circle', 'px-elements' ),
+                    'square'  => esc_html__( 'Square', 'px-elements' ),
+                    'rhombus' => esc_html__( 'Rhombus', 'px-elements' ),
                 ],
             ]
         );
@@ -281,13 +281,13 @@ class Feature_List extends Widget_Base {
         $this->add_control(
             'eael_feature_list_icon_shape_view',
             [
-                'label'       => esc_html__( 'Shape View', 'essential-addons-for-elementor-lite' ),
+                'label'       => esc_html__( 'Shape View', 'px-elements' ),
                 'type'        => Controls_Manager::SELECT,
                 'default'     => 'stacked',
                 'label_block' => false,
                 'options'     => [
-                    'framed'  => esc_html__( 'Framed', 'essential-addons-for-elementor-lite' ),
-                    'stacked' => esc_html__( 'Stacked', 'essential-addons-for-elementor-lite' ),
+                    'framed'  => esc_html__( 'Framed', 'px-elements' ),
+                    'stacked' => esc_html__( 'Stacked', 'px-elements' ),
                 ],
             ]
         );
@@ -295,19 +295,19 @@ class Feature_List extends Widget_Base {
         $this->add_responsive_control(
             'eael_feature_list_icon_position',
             [
-                'label'           => esc_html__( 'Icon Position', 'essential-addons-for-elementor-lite' ),
+                'label'           => esc_html__( 'Icon Position', 'px-elements' ),
                 'type'            => Controls_Manager::CHOOSE,
                 'options'         => [
                     'left'  => [
-                        'title' => esc_html__( 'Left', 'essential-addons-for-elementor-lite' ),
+                        'title' => esc_html__( 'Left', 'px-elements' ),
                         'icon'  => 'fa fa-align-left',
                     ],
                     'top'   => [
-                        'title' => esc_html__( 'Top', 'essential-addons-for-elementor-lite' ),
+                        'title' => esc_html__( 'Top', 'px-elements' ),
                         'icon'  => 'fa fa-align-center',
                     ],
                     'right' => [
-                        'title' => esc_html__( 'Right', 'essential-addons-for-elementor-lite' ),
+                        'title' => esc_html__( 'Right', 'px-elements' ),
                         'icon'  => 'fa fa-align-right',
                     ],
                 ],
@@ -323,7 +323,7 @@ class Feature_List extends Widget_Base {
         $this->add_responsive_control(
             'eael_feature_list_icon_right_indicator_position',
             [
-                'label'      => __( 'Arrow Indicator Position', 'essential-addons-for-elementor-lite' ),
+                'label'      => __( 'Arrow Indicator Position', 'px-elements' ),
                 'type'       => Controls_Manager::SLIDER,
                 'size_units' => ['px', '%'],
                 'range'      => [
@@ -353,11 +353,11 @@ class Feature_List extends Widget_Base {
         $this->add_control(
             'eael_feature_list_connector',
             [
-                'label'        => esc_html__( 'Show Connector', 'essential-addons-for-elementor-lite' ),
+                'label'        => esc_html__( 'Show Connector', 'px-elements' ),
                 'type'         => Controls_Manager::SWITCHER,
                 'default'      => 'no',
-                'label_on'     => esc_html__( 'Show', 'essential-addons-for-elementor-lite' ),
-                'label_off'    => esc_html__( 'No', 'essential-addons-for-elementor-lite' ),
+                'label_on'     => esc_html__( 'Show', 'px-elements' ),
+                'label_off'    => esc_html__( 'No', 'px-elements' ),
                 'return_value' => 'yes',
             ]
         );
@@ -373,7 +373,7 @@ class Feature_List extends Widget_Base {
         $this->start_controls_section(
             'eael_section_feature_list_style',
             [
-                'label' => esc_html__( 'List', 'essential-addons-for-elementor-lite' ),
+                'label' => esc_html__( 'List', 'px-elements' ),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -381,7 +381,7 @@ class Feature_List extends Widget_Base {
         $this->add_responsive_control(
             'eael_feature_list_space_between',
             [
-                'label'     => esc_html__( 'Space Between', 'essential-addons-for-elementor-lite' ),
+                'label'     => esc_html__( 'Space Between', 'px-elements' ),
                 'type'      => Controls_Manager::SLIDER,
                 'default'   => [
                     'size' => 15,
@@ -403,13 +403,13 @@ class Feature_List extends Widget_Base {
         $this->add_control(
             'eael_feature_list_connector_type',
             [
-                'label'       => esc_html__( 'Connector Type', 'essential-addons-for-elementor-lite' ),
+                'label'       => esc_html__( 'Connector Type', 'px-elements' ),
                 'type'        => Controls_Manager::SELECT,
                 'default'     => 'connector-type-classic',
                 'label_block' => false,
                 'options'     => [
-                    'connector-type-classic' => esc_html__( 'Classic', 'essential-addons-for-elementor-lite' ),
-                    'connector-type-modern'  => esc_html__( 'Modern', 'essential-addons-for-elementor-lite' ),
+                    'connector-type-classic' => esc_html__( 'Classic', 'px-elements' ),
+                    'connector-type-modern'  => esc_html__( 'Modern', 'px-elements' ),
                 ],
                 'condition'   => [
                     'eael_feature_list_connector'      => 'yes',
@@ -422,14 +422,14 @@ class Feature_List extends Widget_Base {
         $this->add_control(
             'eael_feature_list_connector_styles',
             [
-                'label'       => esc_html__( 'Connector Styles', 'essential-addons-for-elementor-lite' ),
+                'label'       => esc_html__( 'Connector Styles', 'px-elements' ),
                 'type'        => Controls_Manager::SELECT,
                 'default'     => 'solid',
                 'label_block' => false,
                 'options'     => [
-                    'solid'  => esc_html__( 'Solid', 'essential-addons-for-elementor-lite' ),
-                    'dashed' => esc_html__( 'Dashed', 'essential-addons-for-elementor-lite' ),
-                    'dotted' => esc_html__( 'Dotted', 'essential-addons-for-elementor-lite' ),
+                    'solid'  => esc_html__( 'Solid', 'px-elements' ),
+                    'dashed' => esc_html__( 'Dashed', 'px-elements' ),
+                    'dotted' => esc_html__( 'Dotted', 'px-elements' ),
                 ],
                 'condition'   => [
                     'eael_feature_list_connector' => 'yes',
@@ -444,7 +444,7 @@ class Feature_List extends Widget_Base {
         $this->add_control(
             'eael_feature_list_connector_color',
             [
-                'label'     => esc_html__( 'Connector Color', 'essential-addons-for-elementor-lite' ),
+                'label'     => esc_html__( 'Connector Color', 'px-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'scheme'    => [
                     'type'  => Scheme_Color::get_type(),
@@ -464,7 +464,7 @@ class Feature_List extends Widget_Base {
         $this->add_control(
             'eael_feature_list_connector_width',
             [
-                'label'     => esc_html__( 'Connector Width', 'essential-addons-for-elementor-lite' ),
+                'label'     => esc_html__( 'Connector Width', 'px-elements' ),
                 'type'      => Controls_Manager::SLIDER,
                 'default'   => [
                     'unit' => 'px',
@@ -498,7 +498,7 @@ class Feature_List extends Widget_Base {
         $this->start_controls_section(
             'eael_section_feature_list_style_icon',
             [
-                'label' => esc_html__( 'Icon', 'essential-addons-for-elementor-lite' ),
+                'label' => esc_html__( 'Icon', 'px-elements' ),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -521,7 +521,7 @@ class Feature_List extends Widget_Base {
         $this->add_control(
             'eael_feature_list_secondary_color',
             [
-                'label'     => esc_html__( 'Secondary Color', 'essential-addons-for-elementor-lite' ),
+                'label'     => esc_html__( 'Secondary Color', 'px-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#ffffff',
                 'selectors' => [
@@ -537,7 +537,7 @@ class Feature_List extends Widget_Base {
         $this->add_control(
             'eael_feature_list_icon_color',
             [
-                'label'     => esc_html__( 'Color', 'essential-addons-for-elementor-lite' ),
+                'label'     => esc_html__( 'Color', 'px-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [
@@ -550,7 +550,7 @@ class Feature_List extends Widget_Base {
         $this->add_responsive_control(
             'eael_feature_list_icon_circle_size',
             [
-                'label'     => esc_html__( 'Size', 'essential-addons-for-elementor-lite' ),
+                'label'     => esc_html__( 'Size', 'px-elements' ),
                 'type'      => Controls_Manager::SLIDER,
                 'default'   => [
                     'size' => 70,
@@ -570,7 +570,7 @@ class Feature_List extends Widget_Base {
         $this->add_responsive_control(
             'eael_feature_list_icon_size',
             [
-                'label'     => esc_html__( 'Icon Size', 'essential-addons-for-elementor-lite' ),
+                'label'     => esc_html__( 'Icon Size', 'px-elements' ),
                 'type'      => Controls_Manager::SLIDER,
                 'default'   => [
                     'size' => 21,
@@ -592,7 +592,7 @@ class Feature_List extends Widget_Base {
         $this->add_responsive_control(
             'eael_feature_list_icon_padding',
             [
-                'label'      => esc_html__( 'Padding', 'essential-addons-for-elementor-lite' ),
+                'label'      => esc_html__( 'Padding', 'px-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%', 'em'],
                 'default'    => [
@@ -611,7 +611,7 @@ class Feature_List extends Widget_Base {
         $this->add_control(
             'eael_feature_list_icon_border_width',
             [
-                'label'     => esc_html__( 'Border Width', 'essential-addons-for-elementor-lite' ),
+                'label'     => esc_html__( 'Border Width', 'px-elements' ),
                 'type'      => Controls_Manager::SLIDER,
                 'default'   => [
                     'size' => 1,
@@ -635,7 +635,7 @@ class Feature_List extends Widget_Base {
         $this->add_control(
             'eael_feature_list_icon_border_radius',
             [
-                'label'      => esc_html__( 'Border Radius', 'essential-addons-for-elementor-lite' ),
+                'label'      => esc_html__( 'Border Radius', 'px-elements' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => ['px', '%'],
                 'selectors'  => [
@@ -651,7 +651,7 @@ class Feature_List extends Widget_Base {
         $this->add_responsive_control(
             'eael_feature_list_icon_space',
             [
-                'label'           => esc_html__( 'Spacing', 'essential-addons-for-elementor-lite' ),
+                'label'           => esc_html__( 'Spacing', 'px-elements' ),
                 'type'            => Controls_Manager::SLIDER,
                 'range'           => [
                     'px' => [
@@ -690,7 +690,7 @@ class Feature_List extends Widget_Base {
         $this->start_controls_section(
             'eael_section_feature_list_style_content',
             [
-                'label' => esc_html__( 'Content', 'essential-addons-for-elementor-lite' ),
+                'label' => esc_html__( 'Content', 'px-elements' ),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -730,7 +730,7 @@ class Feature_List extends Widget_Base {
         $this->add_control(
             'eael_feature_list_heading_title',
             [
-                'label' => esc_html__( 'Title', 'essential-addons-for-elementor-lite' ),
+                'label' => esc_html__( 'Title', 'px-elements' ),
                 'type'  => Controls_Manager::HEADING,
             ]
         );
@@ -738,7 +738,7 @@ class Feature_List extends Widget_Base {
         $this->add_responsive_control(
             'eael_feature_list_title_bottom_space',
             [
-                'label'     => esc_html__( 'Title Bottom Space', 'essential-addons-for-elementor-lite' ),
+                'label'     => esc_html__( 'Title Bottom Space', 'px-elements' ),
                 'type'      => Controls_Manager::SLIDER,
                 'default'   => [
                     'size' => 10,
@@ -758,7 +758,7 @@ class Feature_List extends Widget_Base {
         $this->add_control(
             'eael_feature_list_title_color',
             [
-                'label'     => esc_html__( 'Color', 'essential-addons-for-elementor-lite' ),
+                'label'     => esc_html__( 'Color', 'px-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#414247',
                 'selectors' => [
@@ -783,7 +783,7 @@ class Feature_List extends Widget_Base {
         $this->add_control(
             'eael_feature_list_description',
             [
-                'label'     => esc_html__( 'Description', 'essential-addons-for-elementor-lite' ),
+                'label'     => esc_html__( 'Description', 'px-elements' ),
                 'type'      => Controls_Manager::HEADING,
                 'separator' => 'before',
             ]
@@ -792,7 +792,7 @@ class Feature_List extends Widget_Base {
         $this->add_control(
             'eael_feature_list_description_color',
             [
-                'label'     => esc_html__( 'Color', 'essential-addons-for-elementor-lite' ),
+                'label'     => esc_html__( 'Color', 'px-elements' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '',
                 'selectors' => [

@@ -159,7 +159,7 @@ Check [Flexia](https://wordpress.org/themes/flexia/), the best friend of Element
 ### Documentation and Support
 
 - For documentation and tutorials go to our [Documentation](https://essential-addons.com/elementor/docs/). 
-- If you have any more questions, visit our support on the [Plugin's Forum](https://wordpress.org/support/plugin/essential-addons-for-elementor-lite).
+- If you have any more questions, visit our support on the [Plugin's Forum](https://wordpress.org/support/plugin/px-elements).
 - For more information about features, FAQs and documentation, check out our website at [Essential Addons for Elementor](https://essential-addons.com/elementor/).
 
 https://www.youtube.com/watch?v=6811orBQcJc
@@ -171,7 +171,7 @@ https://www.youtube.com/watch?v=6811orBQcJc
 
 - Join our [Facebook Group](https://www.facebook.com/groups/essentialaddons/).
 - Learn from our tutorials on [Youtube Channel](https://wpdeveloper.net/go/youtube-channel).
-- Or rate us on [WordPress](https://wordpress.org/support/plugin/essential-addons-for-elementor-lite/reviews/?rate=5#new-post) :)
+- Or rate us on [WordPress](https://wordpress.org/support/plugin/px-elements/reviews/?rate=5#new-post) :)
 
 ### 🔥 WHAT’S NEXT
 If you like Essential Addons, then consider checking out our other WordPress Plugins:

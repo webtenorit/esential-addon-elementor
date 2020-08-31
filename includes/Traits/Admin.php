@@ -30,8 +30,8 @@ trait Admin
         // if (!in_array('templately/templately.php', $plugins)) {
             /*add_submenu_page(
                 'eael-settings',
-                __('Templates Cloud', 'essential-addons-for-elementor-lite'),
-                __('Templates Cloud', 'essential-addons-for-elementor-lite'),
+                __('Templates Cloud', 'px-elements'),
+                __('Templates Cloud', 'px-elements'),
                 'manage_options',
                 'template-cloud',
                 [$this, 'templately_page']
@@ -46,7 +46,7 @@ trait Admin
     public function templately_page()
     {
         $plugin_name = basename(EAEL_PLUGIN_BASENAME, '.php');
-        $button_text = __('Install Templately', 'essential-addons-for-elementor-lite');
+        $button_text = __('Install Templately', 'px-elements');
         if (!function_exists('get_plugins')) {
             include ABSPATH . '/wp-admin/includes/plugin.php';
         }
@@ -54,7 +54,7 @@ trait Admin
         $installed = false;
         if (isset($plugins['templately/templately.php'])) {
             $installed = true;
-            $button_text = __('Activate Templately', 'essential-addons-for-elementor-lite');
+            $button_text = __('Activate Templately', 'px-elements');
         }
 
         ?>
@@ -68,8 +68,8 @@ trait Admin
                         <div class="template-cloud-install">
                             <div class="templately-left">
                                 <div class="templately-cloud-title">
-                                    <h1><?php echo __( 'Explore 100+ Free Templates', 'essential-addons-for-elementor-lite' ); ?></h1>
-                                    <p><?php echo __( 'From multipurpose themes to niche templates, you’ll always find something that catches your eye.', 'essential-addons-for-elementor-lite' ); ?></p>
+                                    <h1><?php echo __( 'Explore 100+ Free Templates', 'px-elements' ); ?></h1>
+                                    <p><?php echo __( 'From multipurpose themes to niche templates, you’ll always find something that catches your eye.', 'px-elements' ); ?></p>
                                 </div>
                             </div>
                             <div class="templately-installer-wrapper">
@@ -80,7 +80,7 @@ trait Admin
                                 </div>
                                 <div class="templately-right">
                                     <div class="templately-admin-install">
-                                        <p><?php echo __( 'Install Templately by Essential Addons to get access to the templates library and cloud.', 'essential-addons-for-elementor-lite' ); ?></p>
+                                        <p><?php echo __( 'Install Templately by Essential Addons to get access to the templates library and cloud.', 'px-elements' ); ?></p>
                                         <button class="eae-activate-templately"><?php echo $button_text; ?></button>
                                     </div>
                                 </div>
@@ -149,22 +149,22 @@ trait Admin
             $i18n = [
                     'login_register' => [
 	                        //m=modal, rm=response modal, r=reCAPTCHA, g= google, f=facebook, e=error
-                            'm_title' => __('Login | Register Form Settings', 'essential-addons-for-elementor-lite'),
-                            'm_footer' => __('To retrieve your API Keys, click here', 'essential-addons-for-elementor-lite'),
-                            'save' => __('Save', 'essential-addons-for-elementor-lite'),
-                            'cancel' => __('Cancel', 'essential-addons-for-elementor-lite'),
-                            'rm_title' => __('Login | Register Form Settings Saved', 'essential-addons-for-elementor-lite'),
-                            'rm_footer' => __('Reload the page to see updated data', 'essential-addons-for-elementor-lite'),
-                            'e_title' => __('Oops...', 'essential-addons-for-elementor-lite'),
-                            'e_text' => __('Something went wrong!', 'essential-addons-for-elementor-lite'),
-                            'r_title' => __('reCAPTCHA v2', 'essential-addons-for-elementor-lite'),
-                            'r_sitekey' => __('Site Key', 'essential-addons-for-elementor-lite'),
-                            'r_sitesecret' => __('Site Secret', 'essential-addons-for-elementor-lite'),
-                            'g_title' => __('Google Login', 'essential-addons-for-elementor-lite'),
-                            'g_cid' => __('Google Client ID', 'essential-addons-for-elementor-lite'),
-                            'f_title' => __('Facebook Login', 'essential-addons-for-elementor-lite'),
-                            'f_app_id' => __('Facebook APP ID', 'essential-addons-for-elementor-lite'),
-                            'f_app_secret' => __('Facebook APP Secret', 'essential-addons-for-elementor-lite'),
+                            'm_title' => __('Login | Register Form Settings', 'px-elements'),
+                            'm_footer' => __('To retrieve your API Keys, click here', 'px-elements'),
+                            'save' => __('Save', 'px-elements'),
+                            'cancel' => __('Cancel', 'px-elements'),
+                            'rm_title' => __('Login | Register Form Settings Saved', 'px-elements'),
+                            'rm_footer' => __('Reload the page to see updated data', 'px-elements'),
+                            'e_title' => __('Oops...', 'px-elements'),
+                            'e_text' => __('Something went wrong!', 'px-elements'),
+                            'r_title' => __('reCAPTCHA v2', 'px-elements'),
+                            'r_sitekey' => __('Site Key', 'px-elements'),
+                            'r_sitesecret' => __('Site Secret', 'px-elements'),
+                            'g_title' => __('Google Login', 'px-elements'),
+                            'g_cid' => __('Google Client ID', 'px-elements'),
+                            'f_title' => __('Facebook Login', 'px-elements'),
+                            'f_app_id' => __('Facebook APP ID', 'px-elements'),
+                            'f_app_secret' => __('Facebook APP Secret', 'px-elements'),
                     ]
             ];
 
@@ -191,20 +191,20 @@ trait Admin
 						<div class="eael-admin-logo-inline">
 							<img src="<?php echo EAEL_PLUGIN_URL . '/assets/admin/images/icon-ea-logo.svg'; ?>" alt="essential-addons-for-elementor">
 						</div>
-						<h2 class="title"><?php echo __('Essential Addons Settings', 'essential-addons-for-elementor-lite'); ?></h2>
+						<h2 class="title"><?php echo __('Essential Addons Settings', 'px-elements'); ?></h2>
 					</div>
 					<div class="eael-header-right">
-					<button type="submit" class="button eael-btn js-eael-settings-save"><?php echo __('Save settings', 'essential-addons-for-elementor-lite'); ?></button>
+					<button type="submit" class="button eael-btn js-eael-settings-save"><?php echo __('Save settings', 'px-elements'); ?></button>
 					</div>
 				</div>
 			  	<div class="eael-settings-tabs">
 			    	<ul class="eael-tabs">
-				      	<!-- <li><a href="#general" class="active"><img src="<?php echo EAEL_PLUGIN_URL . '/assets/admin/images/icon-general.svg'; ?>" alt="essential-addons-general-settings"><span><?php echo __('General', 'essential-addons-for-elementor-lite'); ?></span></a></li> -->
-				      	<li><a href="#elements"><img src="<?php echo EAEL_PLUGIN_URL . '/assets/admin/images/icon-elements.svg'; ?>" alt="essential-addons-elements"><span><?php echo __('Elements', 'essential-addons-for-elementor-lite'); ?></span></a></li>
-                        <li><a href="#extensions"><img src="<?php echo EAEL_PLUGIN_URL . '/assets/admin/images/icon-extensions.svg'; ?>" alt="essential-addons-extensions"><span><?php echo __('Extensions', 'essential-addons-for-elementor-lite'); ?></span></a></li>
-                        <li><a href="#tools"><img src="<?php echo EAEL_PLUGIN_URL . '/assets/admin/images/icon-tools.svg'; ?>" alt="essential-addons-tools"><span><?php echo __('Tools', 'essential-addons-for-elementor-lite'); ?></span></a></li>
+				      	<!-- <li><a href="#general" class="active"><img src="<?php echo EAEL_PLUGIN_URL . '/assets/admin/images/icon-general.svg'; ?>" alt="essential-addons-general-settings"><span><?php echo __('General', 'px-elements'); ?></span></a></li> -->
+				      	<li><a href="#elements"><img src="<?php echo EAEL_PLUGIN_URL . '/assets/admin/images/icon-elements.svg'; ?>" alt="essential-addons-elements"><span><?php echo __('Elements', 'px-elements'); ?></span></a></li>
+                        <li><a href="#extensions"><img src="<?php echo EAEL_PLUGIN_URL . '/assets/admin/images/icon-extensions.svg'; ?>" alt="essential-addons-extensions"><span><?php echo __('Extensions', 'px-elements'); ?></span></a></li>
+                        <li><a href="#tools"><img src="<?php echo EAEL_PLUGIN_URL . '/assets/admin/images/icon-tools.svg'; ?>" alt="essential-addons-tools"><span><?php echo __('Tools', 'px-elements'); ?></span></a></li>
                         <?php /* if (!$this->pro_enabled) {?>
-                            <li><a href="#go-pro"><img src="<?php echo EAEL_PLUGIN_URL . '/assets/admin/images/icon-upgrade.svg'; ?>" alt="essential-addons-go-pro"><span><?php echo __('Go Premium', 'essential-addons-for-elementor-lite'); ?></span></a></li>
+                            <li><a href="#go-pro"><img src="<?php echo EAEL_PLUGIN_URL . '/assets/admin/images/icon-upgrade.svg'; ?>" alt="essential-addons-go-pro"><span><?php echo __('Go Premium', 'px-elements'); ?></span></a></li>
                         <?php } */ ?>
                     </ul>
                     <?php
@@ -255,7 +255,7 @@ trait Admin
 		    if ( isset( $settings['fbAppSecret'] ) ) {
 			    update_option( 'eael_fb_app_secret', sanitize_text_field( $settings['fbAppSecret']));
 		    }
-		    wp_send_json_success( ['message'=> __('Login | Register Settings updated', 'essential-addons-for-elementor-lite')]);
+		    wp_send_json_success( ['message'=> __('Login | Register Settings updated', 'px-elements')]);
         }
 
 
@@ -304,12 +304,12 @@ trait Admin
                 'later' => array(
                     'link' => 'https://wpdeveloper.net/review-essential-addons-elementor',
                     'target' => '_blank',
-                    'label' => __('Ok, you deserve it!', 'essential-addons-for-elementor-lite'),
+                    'label' => __('Ok, you deserve it!', 'px-elements'),
                     'icon_class' => 'dashicons dashicons-external',
                 ),
                 'allready' => array(
                     'link' => $url,
-                    'label' => __('I already did', 'essential-addons-for-elementor-lite'),
+                    'label' => __('I already did', 'px-elements'),
                     'icon_class' => 'dashicons dashicons-smiley',
                     'data_args' => [
                         'dismiss' => true,
@@ -317,7 +317,7 @@ trait Admin
                 ),
                 'maybe_later' => array(
                     'link' => $url,
-                    'label' => __('Maybe Later', 'essential-addons-for-elementor-lite'),
+                    'label' => __('Maybe Later', 'px-elements'),
                     'icon_class' => 'dashicons dashicons-calendar-alt',
                     'data_args' => [
                         'later' => true,
@@ -325,12 +325,12 @@ trait Admin
                 ),
                 'support' => array(
                     'link' => 'https://wpdeveloper.net/support',
-                    'label' => __('I need help', 'essential-addons-for-elementor-lite'),
+                    'label' => __('I need help', 'px-elements'),
                     'icon_class' => 'dashicons dashicons-sos',
                 ),
                 'never_show_again' => array(
                     'link' => $url,
-                    'label' => __('Never show again', 'essential-addons-for-elementor-lite'),
+                    'label' => __('Never show again', 'px-elements'),
                     'icon_class' => 'dashicons dashicons-dismiss',
                     'data_args' => [
                         'dismiss' => true,
@@ -342,7 +342,7 @@ trait Admin
         /**
          * This is review message and thumbnail.
          */
-        $notice->message('review', '<p>' . __('We hope you\'re enjoying Essential Addons for Elementor! Could you please do us a BIG favor and give it a 5-star rating on WordPress to help us spread the word and boost our motivation?', 'essential-addons-for-elementor-lite') . '</p>');
+        $notice->message('review', '<p>' . __('We hope you\'re enjoying Essential Addons for Elementor! Could you please do us a BIG favor and give it a 5-star rating on WordPress to help us spread the word and boost our motivation?', 'px-elements') . '</p>');
         $notice->thumbnail('review', plugins_url('assets/admin/images/icon-ea-logo.svg', EAEL_PLUGIN_BASENAME));
         /**
          * This is upsale notice settings
@@ -350,13 +350,13 @@ trait Admin
          * Message message for showing.
          */
         // $notice->classes('upsale', 'notice is-dismissible ');
-        // $notice->message('upsale', '<p>' . __('5,000+ People using <a href="https://betterdocs.co/wordpress-plugin" target="_blank">BetterDocs</a> to create better Documentation & Knowledge Base!', 'essential-addons-for-elementor-lite') . '</p>');
+        // $notice->message('upsale', '<p>' . __('5,000+ People using <a href="https://betterdocs.co/wordpress-plugin" target="_blank">BetterDocs</a> to create better Documentation & Knowledge Base!', 'px-elements') . '</p>');
         // $notice->thumbnail('upsale', plugins_url('assets/admin/images/icon-documentation.svg', EAEL_PLUGIN_BASENAME));
 
         // Update Notice For PRO Version
         if ($this->pro_enabled && \version_compare(EAEL_PRO_PLUGIN_VERSION, '4.0.0', '<')) {
             $notice->classes('update', 'notice is-dismissible ');
-            $notice->message('update', '<p>' . __('You are using an incompatible version of Essential Addons PRO. Please update to v4.0.0+. If you do not see automatic update, <a href="https://essential-addons.com/elementor/docs/manually-update-essential-addons-pro/" target="_blank">Follow manual update guide.</a>', 'essential-addons-for-elementor-lite') . '</p>');
+            $notice->message('update', '<p>' . __('You are using an incompatible version of Essential Addons PRO. Please update to v4.0.0+. If you do not see automatic update, <a href="https://essential-addons.com/elementor/docs/manually-update-essential-addons-pro/" target="_blank">Follow manual update guide.</a>', 'px-elements') . '</p>');
             $notice->thumbnail('update', plugins_url('assets/admin/images/icon-ea-logo.svg', EAEL_PLUGIN_BASENAME));
         }
 
@@ -364,7 +364,7 @@ trait Admin
         //     'slug' => 'betterdocs',
         //     'page_slug' => 'betterdocs-setup',
         //     'file' => 'betterdocs.php',
-        //     'btn_text' => __('Install Free', 'essential-addons-for-elementor-lite'),
+        //     'btn_text' => __('Install Free', 'px-elements'),
         //     'condition' => [
         //         'by' => 'class',
         //         'class' => 'BetterDocs',

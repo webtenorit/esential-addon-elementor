@@ -46,7 +46,7 @@ class Woo_Checkout extends Widget_Base {
 	}
 
 	public function get_title() {
-		return esc_html__( 'Woo Checkout', 'essential-addons-for-elementor-lite' );
+		return esc_html__( 'Woo Checkout', 'px-elements' );
 	}
 
 	public function get_icon() {
@@ -80,7 +80,7 @@ class Woo_Checkout extends Widget_Base {
 		    $this->start_controls_section(
 			    'eael_global_warning',
 			    [
-				    'label' => __('Warning!', 'essential-addons-for-elementor-lite'),
+				    'label' => __('Warning!', 'px-elements'),
 			    ]
 		    );
 
@@ -89,7 +89,7 @@ class Woo_Checkout extends Widget_Base {
 			    [
 				    'type'            => Controls_Manager::RAW_HTML,
 				    'raw'             => __('<strong>WooCommerce</strong> is not installed/activated on your site. Please install and activate <a href="plugin-install.php?s=woocommerce&tab=search&type=term" target="_blank">WooCommerce</a> first.',
-					    'essential-addons-for-elementor-lite'),
+					    'px-elements'),
 				    'content_classes' => 'eael-warning',
 			    ]
 		    );
@@ -105,18 +105,18 @@ class Woo_Checkout extends Widget_Base {
 		$this->start_controls_section(
 			'ea_section_woo_checkout_general_settings',
 			[
-				'label' => esc_html__( 'General Settings', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'General Settings', 'px-elements' ),
 			]
 		);
 		$this->add_control(
 			'ea_woo_checkout_layout',
 			[
-				'label' => esc_html__( 'Layout', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Layout', 'px-elements' ),
 				'type' => Controls_Manager::SELECT,
 				'default' => 'default',
 				'label_block' => false,
 				'options' => apply_filters('eael/woo-checkout/layout', [
-					'default' => esc_html__( 'Default', 'essential-addons-for-elementor-lite' ),
+					'default' => esc_html__( 'Default', 'px-elements' ),
 				]),
 			]
 		);
@@ -125,7 +125,7 @@ class Woo_Checkout extends Widget_Base {
 			$this->add_control(
 				'eael_woo_checkout_pro_enable_warning',
 				[
-					'label' => esc_html__('Only Available in Pro Version!', 'essential-addons-for-elementor-lite'),
+					'label' => esc_html__('Only Available in Pro Version!', 'px-elements'),
 					'type' => Controls_Manager::HEADING,
 					'condition' => [
 						'ea_woo_checkout_layout' => ['multi-steps', 'split'],
@@ -144,7 +144,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->start_controls_section(
 			'ea_section_woo_checkout_order_review_settings',
 			[
-				'label' => esc_html__( 'Order Details', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Order Details', 'px-elements' ),
 			]
 		);
 
@@ -152,7 +152,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_table_header_text',
 			[
-				'label' => esc_html__( 'Change Labels', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Change Labels', 'px-elements' ),
 				'type' => Controls_Manager::SWITCHER,
 				'return_value' => 'yes',
 				'default' => 'yes',
@@ -161,9 +161,9 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_table_product_text',
 			[
-				'label' => __( 'Product Text', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Product Text', 'px-elements' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'Product', 'essential-addons-for-elementor-lite' ),
+				'default' => __( 'Product', 'px-elements' ),
 				'condition' => [
 					'ea_woo_checkout_table_header_text' => 'yes',
 				],
@@ -172,9 +172,9 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_table_quantity_text',
 			[
-				'label' => __( 'Quantity Text', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Quantity Text', 'px-elements' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'Quantity', 'essential-addons-for-elementor-lite' ),
+				'default' => __( 'Quantity', 'px-elements' ),
 				'condition' => [
 					'ea_woo_checkout_table_header_text' => 'yes',
 				],
@@ -183,9 +183,9 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_table_price_text',
 			[
-				'label' => __( 'Price Text', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Price Text', 'px-elements' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'Price', 'essential-addons-for-elementor-lite' ),
+				'default' => __( 'Price', 'px-elements' ),
 				'condition' => [
 					'ea_woo_checkout_table_header_text' => 'yes',
 				],
@@ -196,7 +196,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_shop_link',
 			[
-				'label' => esc_html__( 'Shop Link', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Shop Link', 'px-elements' ),
 				'type' => Controls_Manager::SWITCHER,
 				'return_value' => 'yes',
 				'default' => 'yes',
@@ -205,9 +205,9 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_shop_link_text',
 			[
-				'label' => __( 'Link Text', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Link Text', 'px-elements' ),
 				'type' => Controls_Manager::TEXT,
-				'default' => __( 'Continue Shopping', 'essential-addons-for-elementor-lite' ),
+				'default' => __( 'Continue Shopping', 'px-elements' ),
 				'condition' => [
 					'ea_woo_checkout_shop_link' => 'yes',
 				],
@@ -224,7 +224,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->start_controls_section(
 			'ea_section_woo_checkout_settings',
 			[
-				'label' => esc_html__( 'Coupon', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Coupon', 'px-elements' ),
 			]
 		);
 		$this->add_control(
@@ -248,7 +248,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->start_controls_section(
 			'ea_section_woo_login_settings',
 			[
-				'label' => esc_html__( 'Login', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Login', 'px-elements' ),
 			]
 		);
 		$this->add_control(
@@ -286,7 +286,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->start_controls_section(
 			'ea_section_woo_checkout_section_title',
 			[
-				'label' => esc_html__( 'Section Title', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Section Title', 'px-elements' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -300,7 +300,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_section_title_color',
 			[
-				'label' => esc_html__( 'Color', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#404040',
 				'selectors' => [
@@ -311,7 +311,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_responsive_control(
 			'ea_woo_checkout_section_bottom_gap',
 			[
-				'label' => esc_html__( 'Bottom Gap', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Bottom Gap', 'px-elements' ),
 				'type' => Controls_Manager::SLIDER,
 				'range' => [
 					'px' => [
@@ -338,14 +338,14 @@ class Woo_Checkout extends Widget_Base {
 		$this->start_controls_section(
 			'ea_section_woo_checkout_order_review_style',
 			[
-				'label' => esc_html__( 'Order Details', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Order Details', 'px-elements' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
 		$this->add_control(
 			'ea_woo_checkout_order_review_bg_color',
 			[
-				'label' => esc_html__( 'Background Color', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Background Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#443e6d',
 				'selectors' => [
@@ -356,7 +356,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_responsive_control(
 			'ea_woo_checkout_order_review_padding',
 			[
-				'label' => esc_html__( 'Padding', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Padding', 'px-elements' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'default' => [
 					'top' => '20',
@@ -375,7 +375,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_responsive_control(
 			'ea_woo_checkout_order_review_border_radius',
 			[
-				'label' => esc_html__( 'Border Radius', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Border Radius', 'px-elements' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'default' => [
 					'top' => '5',
@@ -394,7 +394,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_order_review_head',
 			[
-				'label' => __( 'Table Head', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Table Head', 'px-elements' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
                 'condition' => [
@@ -415,7 +415,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_order_review_header_color',
 			[
-				'label' => esc_html__( 'Header Color', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Header Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#ffffff',
 				'selectors' => [
@@ -429,7 +429,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_responsive_control(
 			'ea_woo_checkout_order_review_header_top_spacing',
 			[
-				'label' => __( 'Top Spacing', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Top Spacing', 'px-elements' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 12,
@@ -449,7 +449,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_order_review_body',
 			[
-				'label' => __( 'Table Body', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Table Body', 'px-elements' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -457,7 +457,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_order_review_row_bg_color',
 			[
-				'label' => esc_html__( 'Background Color', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Background Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#ffffff',
 				'selectors' => [
@@ -471,7 +471,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_order_review_row_color',
 			[
-				'label' => esc_html__( 'Color', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#404040',
 				'selectors' => [
@@ -485,7 +485,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_order_review_row_color_pro',
 			[
-				'label' => esc_html__( 'Color', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#ffffff',
 				'selectors' => [
@@ -499,7 +499,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_order_review_row_border_color_pro',
 			[
-				'label' => esc_html__( 'Border Color', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Border Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#ab93f5',
 				'selectors' => [
@@ -520,7 +520,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_responsive_control(
 			'ea_woo_checkout_order_review_row_border_radius',
 			[
-				'label' => esc_html__( 'Border Radius', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Border Radius', 'px-elements' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'default' => [
 					'top' => '5',
@@ -542,7 +542,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_responsive_control(
 			'ea_woo_checkout_order_review_row_gap',
 			[
-				'label' => __( 'Row Gap', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Row Gap', 'px-elements' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 10,
@@ -563,7 +563,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_order_review_footer',
 			[
-				'label' => __( 'Table Footer', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Table Footer', 'px-elements' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -578,7 +578,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_order_review_footer_bg_color',
 			[
-				'label' => esc_html__( 'Background Color', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Background Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#ffffff',
 				'selectors' => [
@@ -592,7 +592,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_order_review_footer_color',
 			[
-				'label' => esc_html__( 'Color', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#404040',
 				'selectors' => [
@@ -606,7 +606,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_order_review_footer_color_pro',
 			[
-				'label' => esc_html__( 'Color', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#ffffff',
 				'selectors' => [
@@ -624,12 +624,12 @@ class Woo_Checkout extends Widget_Base {
 	            ],
             ]);
 
-		$this->start_controls_tab( 'ea_woo_checkout_order_review_footer_link_color_tab_normal', [ 'label' => esc_html__( 'Normal', 'essential-addons-for-elementor-lite' ) ] );
+		$this->start_controls_tab( 'ea_woo_checkout_order_review_footer_link_color_tab_normal', [ 'label' => esc_html__( 'Normal', 'px-elements' ) ] );
 
 		$this->add_control(
 			'ea_woo_checkout_order_review_footer_link_color',
 			[
-				'label' => esc_html__( 'Link Color', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Link Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#443e6d',
 				'selectors' => [
@@ -640,12 +640,12 @@ class Woo_Checkout extends Widget_Base {
 
 		$this->end_controls_tab();
 
-		$this->start_controls_tab( 'ea_woo_checkout_order_review_footer_link_color_tab_hover', [ 'label' => esc_html__( 'Hover', 'essential-addons-for-elementor-lite' ) ] );
+		$this->start_controls_tab( 'ea_woo_checkout_order_review_footer_link_color_tab_hover', [ 'label' => esc_html__( 'Hover', 'px-elements' ) ] );
 
 		$this->add_control(
 			'ea_woo_checkout_order_review_footer_link_color_hover',
 			[
-				'label' => esc_html__( 'Link Color', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Link Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#ffffff',
 				'selectors' => [
@@ -667,12 +667,12 @@ class Woo_Checkout extends Widget_Base {
 			]);
 
 		$this->start_controls_tab( 'ea_woo_checkout_order_review_footer_link_color_tab_normal_pro', [ 'label' =>
-            esc_html__( 'Normal', 'essential-addons-for-elementor-lite' ) ] );
+            esc_html__( 'Normal', 'px-elements' ) ] );
 
 		$this->add_control(
 			'ea_woo_checkout_order_review_footer_link_color_pro',
 			[
-				'label' => esc_html__( 'Link Color', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Link Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#f1ecff',
 				'selectors' => [
@@ -684,12 +684,12 @@ class Woo_Checkout extends Widget_Base {
 		$this->end_controls_tab();
 
 		$this->start_controls_tab( 'ea_woo_checkout_order_review_footer_link_color_tab_hover_pro', [ 'label' =>
-            esc_html__( 'Hover', 'essential-addons-for-elementor-lite' ) ] );
+            esc_html__( 'Hover', 'px-elements' ) ] );
 
 		$this->add_control(
 			'ea_woo_checkout_order_review_footer_link_color_hover_pro',
 			[
-				'label' => esc_html__( 'Link Color', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Link Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#ffffff',
 				'selectors' => [
@@ -705,7 +705,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_order_review_footer_border_color',
 			[
-				'label' => esc_html__( 'Border Color', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Border Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#404040',
 				'selectors' => [
@@ -716,7 +716,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_responsive_control(
 			'ea_woo_checkout_order_review_footer_border_radius',
 			[
-				'label' => esc_html__( 'Border Radius', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Border Radius', 'px-elements' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'default' => [
 					'top' => '5',
@@ -738,7 +738,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_responsive_control(
 			'ea_woo_checkout_order_review_footer_top_spacing',
 			[
-				'label' => __( 'Top Spacing', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Top Spacing', 'px-elements' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 10,
@@ -758,7 +758,7 @@ class Woo_Checkout extends Widget_Base {
         $this->add_control(
             'ea_woo_checkout_order_review_total',
             [
-                'label' => __( 'Total', 'essential-addons-for-elementor-lite' ),
+                'label' => __( 'Total', 'px-elements' ),
                 'type' => Controls_Manager::HEADING,
                 'separator' => 'before',
                 'condition' => [
@@ -779,7 +779,7 @@ class Woo_Checkout extends Widget_Base {
         $this->add_control(
             'ea_woo_checkout_order_review_total_color',
             [
-                'label' => esc_html__( 'Color', 'essential-addons-for-elementor-lite' ),
+                'label' => esc_html__( 'Color', 'px-elements' ),
                 'type' => Controls_Manager::COLOR,
                 'default' => '#ffffff',
                 'selectors' => [
@@ -794,7 +794,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_order_review_shop_link',
 			[
-				'label' => __( 'Shop Link', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Shop Link', 'px-elements' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 				'condition' => [
@@ -810,12 +810,12 @@ class Woo_Checkout extends Widget_Base {
 
 		]);
 
-		$this->start_controls_tab( 'ea_woo_checkout_shop_link_color_tab_normal', [ 'label' => esc_html__( 'Normal', 'essential-addons-for-elementor-lite' ) ] );
+		$this->start_controls_tab( 'ea_woo_checkout_shop_link_color_tab_normal', [ 'label' => esc_html__( 'Normal', 'px-elements' ) ] );
 
 		$this->add_control(
 			'ea_woo_checkout_shop_link_color',
 			[
-				'label' => esc_html__( 'Color', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#ffffff',
 				'selectors' => [
@@ -826,12 +826,12 @@ class Woo_Checkout extends Widget_Base {
 
 		$this->end_controls_tab();
 
-		$this->start_controls_tab( 'eea_woo_checkout_shop_link_color_tab_hover', [ 'label' => esc_html__( 'Hover', 'essential-addons-for-elementor-lite' ) ] );
+		$this->start_controls_tab( 'eea_woo_checkout_shop_link_color_tab_hover', [ 'label' => esc_html__( 'Hover', 'px-elements' ) ] );
 
 		$this->add_control(
 			'ea_woo_checkout_shop_link_color_hover',
 			[
-				'label' => esc_html__( 'Color', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#7866ff',
 				'selectors' => [
@@ -847,7 +847,7 @@ class Woo_Checkout extends Widget_Base {
         $this->add_responsive_control(
             'ea_woo_checkout_shop_link_top_spacing',
             [
-                'label' => __( 'Top Spacing', 'essential-addons-for-elementor-lite' ),
+                'label' => __( 'Top Spacing', 'px-elements' ),
                 'type' => Controls_Manager::SLIDER,
                 'default' => [
                     'size' => 30,
@@ -877,7 +877,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->start_controls_section(
 			'ea_section_woo_checkout_login_style',
 			[
-				'label' => esc_html__( 'Login', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Login', 'px-elements' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -899,7 +899,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_login_color',
 			[
-				'label' => esc_html__( 'Color', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#404040',
 				'selectors' => [
@@ -910,7 +910,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_login_icon_color',
 			[
-				'label' => __( 'Icon Color', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Icon Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#404040',
 				'selectors' => [
@@ -922,7 +922,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_login_links_color',
 			[
-				'label' => __( 'Links Color', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Links Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#7866ff',
 				'selectors' => [
@@ -933,7 +933,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_login_links_color_hover',
 			[
-				'label' => __( 'Links Hover Color', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Links Hover Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#7866ff',
 				'selectors' => [
@@ -944,7 +944,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_responsive_control(
 			'ea_woo_checkout_login_padding',
 			[
-				'label' => esc_html__( 'Padding', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Padding', 'px-elements' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'default' => [
 					'top' => '20',
@@ -964,7 +964,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_responsive_control(
 			'ea_woo_checkout_login_border_radius',
 			[
-				'label' => esc_html__( 'Border Radius', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Border Radius', 'px-elements' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'default' => [
 					'top' => '5',
@@ -983,7 +983,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_login_form_label',
 			[
-				'label' => __( 'Form Label', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Form Label', 'px-elements' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -998,7 +998,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_login_form_label_color',
 			[
-				'label' => esc_html__( 'Color', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#404040',
 				'selectors' => [
@@ -1011,7 +1011,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_login_btn',
 			[
-				'label' => __( 'Button', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Button', 'px-elements' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -1020,7 +1020,7 @@ class Woo_Checkout extends Widget_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'ea_woo_checkout_login_btn_typo',
-				'label' => __( 'Typography', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Typography', 'px-elements' ),
 				'selector' => '{{WRAPPER}} .ea-woo-checkout .woocommerce .woo-checkout-login .button',
 			]
 		);
@@ -1029,14 +1029,14 @@ class Woo_Checkout extends Widget_Base {
 		$this->start_controls_tab(
 			'ea_woo_checkout_login_btn_tab_normal',
 			[
-				'label' => __( 'Normal', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Normal', 'px-elements' ),
 			]
 		);
 
 		$this->add_control(
 			'ea_woo_checkout_login_btn_bg_color',
 			[
-				'label' => __( 'Background Color', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Background Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#7866ff',
 				'selectors' => [
@@ -1048,7 +1048,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_login_btn_color',
 			[
-				'label' => __( 'Color', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#ffffff',
 				'selectors' => [
@@ -1069,14 +1069,14 @@ class Woo_Checkout extends Widget_Base {
 		$this->start_controls_tab(
 			'ea_woo_checkout_login_btn_tab_hover',
 			[
-				'label' => __( 'Hover', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Hover', 'px-elements' ),
 			]
 		);
 
 		$this->add_control(
 			'ea_woo_checkout_login_btn_bg_color_hover',
 			[
-				'label' => __( 'Background Color', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Background Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#7866ff',
 				'selectors' => [
@@ -1088,7 +1088,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_login_btn_color_hover',
 			[
-				'label' => __( 'Color', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#ffffff',
 				'selectors' => [
@@ -1100,7 +1100,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_login_btn_border_color_hover',
 			[
-				'label' => __( 'Border Color', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Border Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .ea-woo-checkout .woocommerce .woo-checkout-login .button:hover' => 'border-color: {{VALUE}};',
@@ -1117,7 +1117,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_login_btn_border_radius',
 			[
-				'label' => __( 'Border Radius', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Border Radius', 'px-elements' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'default' => [
@@ -1137,7 +1137,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_responsive_control(
 			'ea_woo_checkout_login_btn_padding',
 			[
-				'label' => __( 'Padding', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Padding', 'px-elements' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
@@ -1163,7 +1163,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->start_controls_section(
 			'ea_section_woo_checkout_coupon_style',
 			[
-				'label' => esc_html__( 'Coupon', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Coupon', 'px-elements' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -1185,7 +1185,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_coupon_color',
 			[
-				'label' => esc_html__( 'Color', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#404040',
 				'selectors' => [
@@ -1196,7 +1196,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_coupon_icon_color',
 			[
-				'label' => __( 'Icon Color', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Icon Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#404040',
 				'selectors' => [
@@ -1208,7 +1208,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_coupon_links_color',
 			[
-				'label' => __( 'Links Color', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Links Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#7866ff',
 				'selectors' => [
@@ -1219,7 +1219,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_coupon_links_color_hover',
 			[
-				'label' => __( 'Links Hover Color', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Links Hover Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#7866ff',
 				'selectors' => [
@@ -1231,7 +1231,7 @@ class Woo_Checkout extends Widget_Base {
 			Group_Control_Border::get_type(),
 			[
 				'name' => 'ea_woo_checkout_coupon_border',
-				'label' => __( 'Border', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Border', 'px-elements' ),
 				'placeholder' => '1px',
 				'default' => '1px',
 				'selector' => '{{WRAPPER}} .ea-woo-checkout .woo-checkout-coupon',
@@ -1240,7 +1240,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_responsive_control(
 			'ea_woo_checkout_coupon_border_radius',
 			[
-				'label' => esc_html__( 'Border Radius', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Border Radius', 'px-elements' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'default' => [
 					'top' => '5',
@@ -1267,7 +1267,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_responsive_control(
 			'ea_woo_checkout_coupon_padding',
 			[
-				'label' => esc_html__( 'Padding', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Padding', 'px-elements' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'default' => [
 					'top' => '20',
@@ -1288,7 +1288,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_coupon_form',
 			[
-				'label' => __( 'Form', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Form', 'px-elements' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -1296,7 +1296,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_coupon_form_border_color',
 			[
-				'label' => __( 'Border Color', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Border Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#404040',
 				'selectors' => [
@@ -1309,7 +1309,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_coupon_btn',
 			[
-				'label' => __( 'Button', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Button', 'px-elements' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -1318,7 +1318,7 @@ class Woo_Checkout extends Widget_Base {
 			Group_Control_Typography::get_type(),
 			[
 				'name' => 'ea_woo_checkout_coupon_btn_typo',
-				'label' => __( 'Typography', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Typography', 'px-elements' ),
 				'selector' => '{{WRAPPER}} .ea-woo-checkout .woocommerce .woo-checkout-coupon .button',
 			]
 		);
@@ -1327,14 +1327,14 @@ class Woo_Checkout extends Widget_Base {
 		$this->start_controls_tab(
 			'ea_woo_checkout_coupon_btn_tab_normal',
 			[
-				'label' => __( 'Normal', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Normal', 'px-elements' ),
 			]
 		);
 
 		$this->add_control(
 			'ea_woo_checkout_coupon_btn_bg_color',
 			[
-				'label' => __( 'Background Color', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Background Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#7866ff',
 				'selectors' => [
@@ -1346,7 +1346,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_coupon_btn_color',
 			[
-				'label' => __( 'Color', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#ffffff',
 				'selectors' => [
@@ -1367,14 +1367,14 @@ class Woo_Checkout extends Widget_Base {
 		$this->start_controls_tab(
 			'ea_woo_checkout_coupon_btn_tab_hover',
 			[
-				'label' => __( 'Hover', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Hover', 'px-elements' ),
 			]
 		);
 
 		$this->add_control(
 			'ea_woo_checkout_coupon_btn_bg_color_hover',
 			[
-				'label' => __( 'Background Color', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Background Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#7866ff',
 				'selectors' => [
@@ -1386,7 +1386,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_coupon_btn_color_hover',
 			[
-				'label' => __( 'Color', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#ffffff',
 				'selectors' => [
@@ -1398,7 +1398,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_coupon_btn_border_color_hover',
 			[
-				'label' => __( 'Border Color', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Border Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} .ea-woo-checkout .woocommerce .woo-checkout-coupon .button:hover' => 'border-color: {{VALUE}};',
@@ -1415,7 +1415,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_coupon_btn_border_radius',
 			[
-				'label' => __( 'Border Radius', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Border Radius', 'px-elements' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'default' => [
@@ -1435,7 +1435,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_responsive_control(
 			'ea_woo_checkout_coupon_btn_padding',
 			[
-				'label' => __( 'Padding', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Padding', 'px-elements' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', 'em', '%' ],
 				'selectors' => [
@@ -1462,7 +1462,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->start_controls_section(
 			'ea_section_woo_checkout_notices_style',
 			[
-				'label' => esc_html__( 'Notices', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Notices', 'px-elements' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
@@ -1477,7 +1477,7 @@ class Woo_Checkout extends Widget_Base {
 			Group_Control_Border::get_type(),
 			[
 				'name' => 'ea_woo_checkout_notices_border',
-				'label' => __( 'Border', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Border', 'px-elements' ),
 				'placeholder' => '1px',
 				'default' => '1px',
 				'selector' => '{{WRAPPER}} .ea-woo-checkout .woocommerce-error',
@@ -1488,12 +1488,12 @@ class Woo_Checkout extends Widget_Base {
 
 		$this->start_controls_tab( 'ea_woo_checkout_notices_style_tab_info', [
 			'label' => esc_html__( 'Info',
-				'essential-addons-for-elementor-lite' )
+				'px-elements' )
 		] );
 		$this->add_control(
 			'ea_woo_checkout_notices_info_bg_color',
 			[
-				'label' => esc_html__( 'Background', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Background', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#d1ecf1',
 				'selectors' => [
@@ -1504,7 +1504,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_notices_info_color',
 			[
-				'label' => esc_html__( 'Color', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#0c5460',
 				'selectors' => [
@@ -1515,7 +1515,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_notices_info_border_color',
 			[
-				'label' => esc_html__( 'Border Color', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Border Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#0c5460',
 				'selectors' => [
@@ -1531,13 +1531,13 @@ class Woo_Checkout extends Widget_Base {
 
 		$this->start_controls_tab( 'ea_woo_checkout_notices_style_tab_error', [
 			'label' => esc_html__( 'Error',
-				'essential-addons-for-elementor-lite' )
+				'px-elements' )
 		] );
 
 		$this->add_control(
 			'ea_woo_checkout_notices_error_bg_color',
 			[
-				'label' => esc_html__( 'Background', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Background', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#FFF3F5',
 				'selectors' => [
@@ -1548,7 +1548,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_notices_error_color',
 			[
-				'label' => esc_html__( 'Color', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#FF7E93',
 				'selectors' => [
@@ -1559,7 +1559,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_notices_error_border_color',
 			[
-				'label' => esc_html__( 'Border Color', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Border Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#FF7E93',
 				'selectors' => [
@@ -1575,13 +1575,13 @@ class Woo_Checkout extends Widget_Base {
 
 		$this->start_controls_tab( 'ea_woo_checkout_notices_style_tab_message', [
 			'label' => esc_html__( 'Message',
-				'essential-addons-for-elementor-lite' )
+				'px-elements' )
 		] );
 
 		$this->add_control(
 			'ea_woo_checkout_notices_message_bg_color',
 			[
-				'label' => esc_html__( 'Background', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Background', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#d4edda',
 				'selectors' => [
@@ -1592,7 +1592,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_notices_message_color',
 			[
-				'label' => esc_html__( 'Color', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#155724',
 				'selectors' => [
@@ -1603,7 +1603,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_notices_message_border_color',
 			[
-				'label' => esc_html__( 'Border Color', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Border Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#155724',
 				'selectors' => [
@@ -1623,7 +1623,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_responsive_control(
 			'ea_woo_checkout_notices_border_radius',
 			[
-				'label' => esc_html__( 'Border Radius', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Border Radius', 'px-elements' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'default' => [
 					'top' => '5',
@@ -1650,7 +1650,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_responsive_control(
 			'ea_woo_checkout_notices_padding',
 			[
-				'label' => esc_html__( 'Padding', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Padding', 'px-elements' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'default' => [
 					'top' => '20',
@@ -1677,14 +1677,14 @@ class Woo_Checkout extends Widget_Base {
 		$this->start_controls_section(
 			'ea_section_woo_checkout_customer_details',
 			[
-				'label' => esc_html__( 'Customer Details', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Customer Details', 'px-elements' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
 		$this->add_control(
 			'ea_woo_checkout_customer_details_label',
 			[
-				'label' => __( 'Label', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Label', 'px-elements' ),
 				'type' => Controls_Manager::HEADING,
 			]
 		);
@@ -1698,7 +1698,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_customer_details_label_color',
 			[
-				'label' => esc_html__( 'Color', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#443e6d',
 				'selectors' => [
@@ -1709,7 +1709,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_responsive_control(
 			'ea_woo_checkout_customer_details_label_spacing',
 			[
-				'label' => esc_html__( 'Spacing', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Spacing', 'px-elements' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'default' => [
 					'top' => '0',
@@ -1729,7 +1729,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_customer_details_field_required',
 			[
-				'label' => __( 'Required (*)', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Required (*)', 'px-elements' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -1737,7 +1737,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_customer_details_required_color',
 			[
-				'label' => esc_html__( 'Color', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#ff0000',
 				'selectors' => [
@@ -1749,7 +1749,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_customer_details_fields',
 			[
-				'label' => __( 'Fields', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Fields', 'px-elements' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -1757,7 +1757,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_responsive_control(
 			'inputs_height',
 			[
-				'label' => __( 'Input Height', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Input Height', 'px-elements' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 50,
@@ -1777,7 +1777,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_customer_details_field_color',
 			[
-				'label' => esc_html__( 'Color', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#443e6d',
 				'selectors' => [
@@ -1787,12 +1787,12 @@ class Woo_Checkout extends Widget_Base {
 		);
 		$this->start_controls_tabs( 'ea_woo_checkout_customer_details_field_tabs' );
 
-		$this->start_controls_tab( 'ea_woo_checkout_customer_details_field_tab_normal', [ 'label' => esc_html__( 'Normal', 'essential-addons-for-elementor-lite' ) ] );
+		$this->start_controls_tab( 'ea_woo_checkout_customer_details_field_tab_normal', [ 'label' => esc_html__( 'Normal', 'px-elements' ) ] );
 
 		$this->add_control(
 			'ea_woo_checkout_customer_details_field_border_color',
 			[
-				'label' => esc_html__( 'Border Color', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Border Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#cccccc',
 				'selectors' => [
@@ -1803,12 +1803,12 @@ class Woo_Checkout extends Widget_Base {
 
 		$this->end_controls_tab();
 
-		$this->start_controls_tab( 'ea_woo_checkout_customer_details_field_tab_normal_hover', [ 'label' => esc_html__( 'Hover', 'essential-addons-for-elementor-lite' ) ] );
+		$this->start_controls_tab( 'ea_woo_checkout_customer_details_field_tab_normal_hover', [ 'label' => esc_html__( 'Hover', 'px-elements' ) ] );
 
 		$this->add_control(
 			'ea_woo_checkout_customer_details_field_border_color_hover',
 			[
-				'label' => esc_html__( 'Border Color', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Border Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#7866ff',
 				'selectors' => [
@@ -1825,7 +1825,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_responsive_control(
 			'ea_woo_checkout_customer_details_field_border_radius',
 			[
-				'label' => esc_html__( 'Border Radius', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Border Radius', 'px-elements' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'default' => [
 					'top' => '5',
@@ -1844,7 +1844,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_responsive_control(
 			'ea_woo_checkout_customer_details_field_spacing',
 			[
-				'label' => __( 'Bottom Spacing (PX)', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Bottom Spacing (PX)', 'px-elements' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 5,
@@ -1871,14 +1871,14 @@ class Woo_Checkout extends Widget_Base {
 		$this->start_controls_section(
 			'ea_section_woo_checkout_payment_style',
 			[
-				'label' => esc_html__( 'Payment', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Payment', 'px-elements' ),
 				'tab' => Controls_Manager::TAB_STYLE,
 			]
 		);
 		$this->add_control(
 			'ea_woo_checkout_payment_bg_color',
 			[
-				'label' => esc_html__( 'Background Color', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Background Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#443e6d',
 				'selectors' => [
@@ -1889,7 +1889,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_payment_title_color',
 			[
-				'label' => esc_html__( 'Title Color', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Title Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#ffffff',
 				'selectors' => [
@@ -1900,7 +1900,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_responsive_control(
 			'ea_woo_checkout_payment_padding',
 			[
-				'label' => esc_html__( 'Padding', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Padding', 'px-elements' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'default' => [
 					'top' => '20',
@@ -1919,7 +1919,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_responsive_control(
 			'ea_woo_checkout_payment_border_radius',
 			[
-				'label' => esc_html__( 'Border Radius', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Border Radius', 'px-elements' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'default' => [
 					'top' => '5',
@@ -1940,7 +1940,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_payment_label',
 			[
-				'label' => __( 'Label', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Label', 'px-elements' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -1957,14 +1957,14 @@ class Woo_Checkout extends Widget_Base {
 		$this->start_controls_tab(
 			'ea_woo_checkout_payment_label_tab_normal',
 			[
-				'label' => __( 'Normal', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Normal', 'px-elements' ),
 			]
 		);
 
 		$this->add_control(
 			'ea_woo_checkout_payment_label_color',
 			[
-				'label' => __( 'Color', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#b8b6ca',
 				'selectors' => [
@@ -1978,14 +1978,14 @@ class Woo_Checkout extends Widget_Base {
 		$this->start_controls_tab(
 			'ea_woo_checkout_payment_label_tab_hover',
 			[
-				'label' => __( 'Selected', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Selected', 'px-elements' ),
 			]
 		);
 
 		$this->add_control(
 			'ea_woo_checkout_payment_label_color_select',
 			[
-				'label' => __( 'Color', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#ffffff',
 				'selectors' => [
@@ -2000,7 +2000,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_payment_info',
 			[
-				'label' => __( 'Methods Info', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Methods Info', 'px-elements' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -2008,7 +2008,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_payment_methods_bg_color',
 			[
-				'label' => esc_html__( 'Background Color', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Background Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#2d284b',
 				'selectors' => [
@@ -2020,7 +2020,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_payment_methods_color',
 			[
-				'label' => esc_html__( 'Color', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#ffffff',
 				'selectors' => [
@@ -2033,7 +2033,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_privacy_policy',
 			[
-				'label' => __( 'Privacy Policy', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Privacy Policy', 'px-elements' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 			]
@@ -2041,7 +2041,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_privacy_policy_color',
 			[
-				'label' => esc_html__( 'Color', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#b8b6ca',
 				'selectors' => [
@@ -2059,7 +2059,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_privacy_policy_link_color',
 			[
-				'label' => esc_html__( 'Link Color', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Link Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#ffffff',
 				'selectors' => [
@@ -2070,7 +2070,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_privacy_border_color',
 			[
-				'label' => esc_html__( 'Border Color', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Border Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#b8b6ca',
 				'selectors' => [
@@ -2082,7 +2082,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_payment_btn',
 			[
-				'label' => __( 'Button', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Button', 'px-elements' ),
 				'type' => Controls_Manager::HEADING,
 				'separator' => 'before',
 				'condition' => [
@@ -2111,14 +2111,14 @@ class Woo_Checkout extends Widget_Base {
 		$this->start_controls_tab(
 			'ea_woo_checkout_payment_btn_tab_normal',
 			[
-				'label' => __( 'Normal', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Normal', 'px-elements' ),
 			]
 		);
 
 		$this->add_control(
 			'ea_woo_checkout_payment_btn_bg_color',
 			[
-				'label' => __( 'Background Color', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Background Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#7866ff',
 				'selectors' => [
@@ -2130,7 +2130,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_payment_btn_color',
 			[
-				'label' => __( 'Color', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#ffffff',
 				'selectors' => [
@@ -2151,14 +2151,14 @@ class Woo_Checkout extends Widget_Base {
 		$this->start_controls_tab(
 			'ea_woo_checkout_payment_btn_tab_hover',
 			[
-				'label' => __( 'Hover', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Hover', 'px-elements' ),
 			]
 		);
 
 		$this->add_control(
 			'ea_woo_checkout_payment_btn_bg_color_hover',
 			[
-				'label' => __( 'Background Color', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Background Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#7866ff',
 				'selectors' => [
@@ -2170,7 +2170,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_payment_btn_color_hover',
 			[
-				'label' => __( 'Color', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'default' => '#ffffff',
 				'selectors' => [
@@ -2182,7 +2182,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_payment_btn_border_color_hover',
 			[
-				'label' => __( 'Border Color', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Border Color', 'px-elements' ),
 				'type' => Controls_Manager::COLOR,
 				'selectors' => [
 					'{{WRAPPER}} #place_order:hover' => 'border-color: {{VALUE}};',
@@ -2199,7 +2199,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_control(
 			'ea_woo_checkout_payment_btn_border_radius',
 			[
-				'label' => __( 'Border Radius', 'essential-addons-for-elementor-lite' ),
+				'label' => __( 'Border Radius', 'px-elements' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'size_units' => [ 'px', '%' ],
 				'default' => [
@@ -2231,7 +2231,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_responsive_control(
 			'ea_woo_checkout_payment_btn_padding',
 			[
-				'label' => esc_html__( 'Padding', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Padding', 'px-elements' ),
 				'type' => Controls_Manager::DIMENSIONS,
 				'default' => [
 					'top' => '15',
@@ -2253,7 +2253,7 @@ class Woo_Checkout extends Widget_Base {
 		$this->add_responsive_control(
 			'ea_woo_checkout_payment_btn_top_spacing',
 			[
-				'label' => esc_html__( 'Top Spacing', 'essential-addons-for-elementor-lite' ),
+				'label' => esc_html__( 'Top Spacing', 'px-elements' ),
 				'type' => Controls_Manager::SLIDER,
 				'default' => [
 					'size' => 20,
