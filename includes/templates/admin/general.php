@@ -1,8 +1,7 @@
-<div id="general" class="eael-settings-tab active">
+<!--<div id="general" class="eael-settings-tab active">
     <div class="row eael-admin-general-wrapper">
         <div class="eael-admin-general-inner">
             <div class="eael-admin-block-wrapper">
-                    dfsdfdsf
                     <?php
                         do_action('add_admin_license_markup');
 
@@ -12,7 +11,7 @@
                         <a href="https://essential-addons.com/elementor/" target="_blank">
                             <img class="eael-preview-img" src="<?php echo EAEL_PLUGIN_URL . 'assets/admin/images/eael-featured.png'; ?>" alt="essential-addons-for-elementor-featured">
                         </a>
-                    </div><!--preview image end-->
+                    </div><!--preview image end--
                     <?php endif; ?>
 
                     <div class="eael-admin-block eael-admin-block-docs">
@@ -79,7 +78,7 @@
                             do_action('eael_additional_support_links');
                         endif;
                     ?>
-            </div><!--admin block-wrapper end-->
+            </div><!--admin block-wrapper end--
         </div>
         <div class="eael-admin-sidebar">
             <div class="eael-sidebar-block">
@@ -96,6 +95,7 @@
                     ?>
                 </div>
             </div>
-        </div><!--admin sidebar end-->
-    </div><!--Row end-->
+        </div>admin sidebar end--
+    </div><!--Row end
 </div>
+-->

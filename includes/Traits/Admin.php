@@ -27,16 +27,16 @@ trait Admin
             '58.6'
         );
         $plugins = \get_option('active_plugins');
-        if (!in_array('templately/templately.php', $plugins)) {
-            add_submenu_page(
+        // if (!in_array('templately/templately.php', $plugins)) {
+            /*add_submenu_page(
                 'eael-settings',
                 __('Templates Cloud', 'essential-addons-for-elementor-lite'),
                 __('Templates Cloud', 'essential-addons-for-elementor-lite'),
                 'manage_options',
                 'template-cloud',
                 [$this, 'templately_page']
-            );
-        }
+            ); */
+        // }
     }
     /**
      * Template Page Outputs
@@ -199,21 +199,21 @@ trait Admin
 				</div>
 			  	<div class="eael-settings-tabs">
 			    	<ul class="eael-tabs">
-				      	<li><a href="#general" class="active"><img src="<?php echo EAEL_PLUGIN_URL . '/assets/admin/images/icon-general.svg'; ?>" alt="essential-addons-general-settings"><span><?php echo __('General', 'essential-addons-for-elementor-lite'); ?></span></a></li>
+				      	<!-- <li><a href="#general" class="active"><img src="<?php echo EAEL_PLUGIN_URL . '/assets/admin/images/icon-general.svg'; ?>" alt="essential-addons-general-settings"><span><?php echo __('General', 'essential-addons-for-elementor-lite'); ?></span></a></li> -->
 				      	<li><a href="#elements"><img src="<?php echo EAEL_PLUGIN_URL . '/assets/admin/images/icon-elements.svg'; ?>" alt="essential-addons-elements"><span><?php echo __('Elements', 'essential-addons-for-elementor-lite'); ?></span></a></li>
                         <li><a href="#extensions"><img src="<?php echo EAEL_PLUGIN_URL . '/assets/admin/images/icon-extensions.svg'; ?>" alt="essential-addons-extensions"><span><?php echo __('Extensions', 'essential-addons-for-elementor-lite'); ?></span></a></li>
                         <li><a href="#tools"><img src="<?php echo EAEL_PLUGIN_URL . '/assets/admin/images/icon-tools.svg'; ?>" alt="essential-addons-tools"><span><?php echo __('Tools', 'essential-addons-for-elementor-lite'); ?></span></a></li>
-                        <?php if (!$this->pro_enabled) {?>
+                        <?php /* if (!$this->pro_enabled) {?>
                             <li><a href="#go-pro"><img src="<?php echo EAEL_PLUGIN_URL . '/assets/admin/images/icon-upgrade.svg'; ?>" alt="essential-addons-go-pro"><span><?php echo __('Go Premium', 'essential-addons-for-elementor-lite'); ?></span></a></li>
-                        <?php }?>
+                        <?php } */ ?>
                     </ul>
                     <?php
-include_once EAEL_PLUGIN_PATH . DIRECTORY_SEPARATOR . 'includes/templates/admin/general.php';
+// include_once EAEL_PLUGIN_PATH . DIRECTORY_SEPARATOR . 'includes/templates/admin/general.php';
         include_once EAEL_PLUGIN_PATH . DIRECTORY_SEPARATOR . 'includes/templates/admin/elements.php';
         include_once EAEL_PLUGIN_PATH . DIRECTORY_SEPARATOR . 'includes/templates/admin/extensions.php';
         include_once EAEL_PLUGIN_PATH . DIRECTORY_SEPARATOR . 'includes/templates/admin/tools.php';
         if (!$this->pro_enabled) {
-            include_once EAEL_PLUGIN_PATH . DIRECTORY_SEPARATOR . 'includes/templates/admin/go-pro.php';
+            // include_once EAEL_PLUGIN_PATH . DIRECTORY_SEPARATOR . 'includes/templates/admin/go-pro.php';
         }
         ?>
                 </div>

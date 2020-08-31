@@ -507,7 +507,7 @@ $elements = [
 $elements = apply_filters( 'add_eael_elementor_addons', $elements );
 
 ?>
-<div id="elements" class="eael-settings-tab eael-elements-list">
+<div id="elements" class="eael-settings-tab eael-elements-list active">
     <div class="row">
         <div class="col-full">
             <div class="elements-global-control-wrap">
