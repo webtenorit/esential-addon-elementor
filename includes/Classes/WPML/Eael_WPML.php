@@ -91,23 +91,6 @@ trait Eael_WPML {
             ],
         ];
 
-        $widgets['eael-fancy-text'] = [
-            'conditions' => ['widgetType' => 'eael-fancy-text'],
-            'integration-class' => '\Essential_Addons_Elementor\Classes\WPML\Widgets\Fancy_Text',
-            'fields' => [
-                [
-                    'field'       => 'eael_fancy_text_prefix',
-                    'type'        => __('Fancy Text: Prefix Text', 'essential-addons-for-elementor-lite'),
-                    'editor_type' => 'LINE',
-                ],
-                [
-                    'field'       => 'eael_fancy_text_suffix',
-                    'type'        => __('Fancy Text: Suffix Text', 'essential-addons-for-elementor-lite'),
-                    'editor_type' => 'LINE',
-                ]
-            ],
-        ];
-
         // $widgets['eael-filterable-gallery'] = [
         //     'conditions' => ['widgetType' => 'eael-filterable-gallery'],
         //     'fields' => [
@@ -437,38 +420,6 @@ trait Eael_WPML {
                     'field'       => 'ea_adv_data_table_search_placeholder',
                     'type'        => __('Adv Data Table: Search Placeholder', 'essential-addons-for-elementor-lite'),
                     'editor_type' => 'LINE'
-                ]
-            ],
-        ];
-
-        $widgets['eael-formstack'] = [
-            'conditions' => ['widgetType' => 'eael-formstack'],
-            'fields' => [
-                [
-                    'field'       => 'eael_formstack_form_title_custom',
-                    'type'        => __('Formstack: Custom Title', 'essential-addons-for-elementor-lite'),
-                    'editor_type' => 'LINE'
-                ],
-                [
-                    'field'       => 'eael_formstack_form_description_custom',
-                    'type'        => __('Formstack: Custom Description', 'essential-addons-for-elementor-lite'),
-                    'editor_type' => 'VISUAL'
-                ]
-            ],
-        ];
-
-        $widgets['eael-fluentform'] = [
-            'conditions' => ['widgetType' => 'eael-fluentform'],
-            'fields' => [
-                [
-                    'field'       => 'form_title_custom',
-                    'type'        => __('Fluent Form: Title', 'essential-addons-for-elementor-lite'),
-                    'editor_type' => 'LINE'
-                ],
-                [
-                    'field'       => 'form_description_custom',
-                    'type'        => __('Fluent Form: Description', 'essential-addons-for-elementor-lite'),
-                    'editor_type' => 'VISUAL'
                 ]
             ],
         ];

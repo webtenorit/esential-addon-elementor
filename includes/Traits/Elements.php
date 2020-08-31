@@ -138,12 +138,6 @@ trait Elements
                 'categories' => '["essential-addons-elementor"]',
             ],
             [
-                'name' => 'eael-flip-carousel',
-                'title' => __('Flip Carousel', 'essential-addons-for-elementor-lite'),
-                'icon' => 'eaicon-flip-carousel',
-                'categories' => '["essential-addons-elementor"]',
-            ],
-            [
                 'name' => 'eael-google-map',
                 'title' => __('Google Map', 'essential-addons-for-elementor-lite'),
                 'icon' => 'eaicon-advanced-google-maps',

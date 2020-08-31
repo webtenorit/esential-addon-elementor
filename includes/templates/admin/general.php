@@ -2,7 +2,7 @@
     <div class="row eael-admin-general-wrapper">
         <div class="eael-admin-general-inner">
             <div class="eael-admin-block-wrapper">
-                    <?php
+                    <?php /*
                         do_action('add_admin_license_markup');
 
                         if( !defined('EAEL_PRO_PLUGIN_BASENAME') ) :

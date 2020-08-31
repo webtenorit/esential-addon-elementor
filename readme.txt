@@ -47,7 +47,7 @@ We have designed 39 of the most useful widgets to enhance your Elementor Page Bu
 
 1. [Post Grid](https://essential-addons.com/elementor/post-grid/) - Showcase your blog posts in 4 unique styles 
 2. [Post Timeline](https://essential-addons.com/elementor/post-timeline/) - Create stunning timeline for your Posts, Pages or any Custom Post. 
-3. [Fancy Text](https://essential-addons.com/elementor/fancy-text/ ) - Design your page using animated text with 8 eye-catching effects
+3. 
 4. [Creative Buttons](https://essential-addons.com/elementor/creative-buttons/) - Quickly add modern buttons with hover effect in your post or page
 5. [Countdown](https://essential-addons.com/elementor/countdown/ ) - Include a countdown time to boost your click-through rates
 6. [Team Members](https://essential-addons.com/elementor/team-members/) - Feature your team members with few clicks
@@ -74,7 +74,7 @@ We have designed 39 of the most useful widgets to enhance your Elementor Page Bu
 27. [Advanced Accordion](https://essential-addons.com/elementor/advanced-accordion/) - Add beautiful accordions in your pages, posts, and anywhere. Supports nested accordions.
 28. [Progress Bar](https://essential-addons.com/elementor/progress-bar/) - Display progress bars with 4+ different styles
 29. [Feature List](https://essential-addons.com/elementor/feature-list/) - Display feature lists with custom icons and styles
-30. [Fluent Form](https://essential-addons.com/elementor/fluentform/) - Design your Fluent Form container, fields and anything you want
+30. 
 31. [Facebook Feed](https://essential-addons.com/elementor/facebook-feed/) - Display Facebook post feed from your page
 32. [Sticky Video](https://essential-addons.com/elementor/sticky-video/) - Create cool video from YouTube, Vimeo or self-hosted that will be sticky on scroll while playing.
 33. [BetterDocs Category Grid](https://essential-addons.com/elementor/betterdocs-category-grid/) - Cretae custom Knowledge Base layout with BetterDocs Category List.
@@ -82,7 +82,7 @@ We have designed 39 of the most useful widgets to enhance your Elementor Page Bu
 35. [BetterDocs Search Form](https://essential-addons.com/elementor/betterdocs-search-form/) - Place and design a cool live search box for BetterDocs Documentation
 36. [Advanced Data Table](https://essential-addons.com/elementor/advanced-data-table) - Create flexible table within Elementor with best possible free addon
 37. [Event Calendar](https://essential-addons.com/elementor/event-calendar) - Create your own customized Event page by custom events, Google Calendar events and many more third party plugin integrations. 
-38. [Formstack](https://essential-addons.com/elementor/formstack/) - Design your Formstack forms within Elementor. 
+38. 
 39. [Woo Checkout](https://essential-addons.com/elementor/woo-checkout/) - Create your own WooCommerce Checkout page and customize and design everything. 
 40. [Typeform](https://essential-addons.com/elementor/typeform/) - Embed and Design your Typeform forms within Elementor. 
 
@@ -97,8 +97,8 @@ We have designed 39 of the most useful widgets to enhance your Elementor Page Bu
 6. [Instagram Gallery & Feed](https://essential-addons.com/elementor/instagram-feed/) - Display your Instagram presence to leverage social proof
 7. [Advanced Google Map](https://essential-addons.com/elementor/advanced-google-map/) - Create powerful map with Polylines, Polygons, Overlay, Panorama and with Routes. Unlimited map themes.
 8. [Static Product](https://essential-addons.com/elementor/static-product/) - Present your static product just the way you want
-9. [Flip Carousel](https://essential-addons.com/elementor/flip-carousel/) - Feature your content using uniques carousel style
-10. [Interactive Cards](https://essential-addons.com/elementor/interactive-cards/) - Create fascinating visual effect for your content that support images, text or videos.
+9.
+10.
 11. [Content Timeline](https://essential-addons.com/elementor/content-timeline/) - Create memory lane with your content with cool scrolling animation
 12. [Data Table](https://essential-addons.com/elementor/table/) - Deliver your informations using advanced and attractive data table
 13. [Twitter Feed Carousel](https://essential-addons.com/elementor/twitter-feed/) - Exhibit the twitter feed in interactive styles 

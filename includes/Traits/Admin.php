@@ -18,8 +18,8 @@ trait Admin
     public function admin_menu()
     {
         add_menu_page(
-            __('Essential Addons', 'essential-addons-for-elementor-lite'),
-            __('Essential Addons', 'essential-addons-for-elementor-lite'),
+            __('Pixerex Elements', 'px-elements'),
+            __('Pixerex Elements', 'px-elements'),
             'manage_options',
             'eael-settings',
             [$this, 'eael_admin_settings_page'],
@@ -264,9 +264,6 @@ trait Admin
 
         // Saving Mailchimp Api Key
         update_option('eael_save_mailchimp_api', @$settings['mailchimp-api']);
-
-        // Saving TYpeForm token
-        update_option('eael_save_typeform_personal_token', @$settings['typeform-personal-token']);
 
         // Saving Duplicator Settings
         update_option('eael_save_post_duplicator_post_type', @$settings['post-duplicator-post-type']);

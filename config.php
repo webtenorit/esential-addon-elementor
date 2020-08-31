@@ -70,35 +70,6 @@ $config = [
                 ],
             ],
         ],
-        'fancy-text' => [
-            'class' => '\Essential_Addons_Elementor\Elements\Fancy_Text',
-            'dependency' => [
-                'css' => [
-                    [
-                        'file' => EAEL_PLUGIN_PATH . 'assets/front-end/css/view/fancy-text.min.css',
-                        'type' => 'self',
-                        'context' => 'view',
-                    ],
-                ],
-                'js' => [
-                    [
-                        'file' => EAEL_PLUGIN_PATH . 'assets/front-end/js/lib-view/morphext/morphext.min.js',
-                        'type' => 'lib',
-                        'context' => 'view',
-                    ],
-                    [
-                        'file' => EAEL_PLUGIN_PATH . 'assets/front-end/js/lib-view/typed/typed.min.js',
-                        'type' => 'lib',
-                        'context' => 'view',
-                    ],
-                    [
-                        'file' => EAEL_PLUGIN_PATH . 'assets/front-end/js/view/fancy-text.min.js',
-                        'type' => 'self',
-                        'context' => 'view',
-                    ],
-                ],
-            ],
-        ],
         'creative-btn' => [
             'class' => '\Essential_Addons_Elementor\Elements\Creative_Button',
             'dependency' => [
@@ -259,40 +230,6 @@ $config = [
                     ],
                     [
                         'file' => EAEL_PLUGIN_PATH . 'assets/front-end/js/view/twitter-feed.min.js',
-                        'type' => 'self',
-                        'context' => 'view',
-                    ],
-                ],
-            ],
-        ],
-        'facebook-feed' => [
-            'class' => '\Essential_Addons_Elementor\Elements\Facebook_Feed',
-            'dependency' => [
-                'css' => [
-                    [
-                        'file' => EAEL_PLUGIN_PATH . 'assets/front-end/css/view/load-more.min.css',
-                        'type' => 'self',
-                        'context' => 'view',
-                    ],
-                    [
-                        'file' => EAEL_PLUGIN_PATH . 'assets/front-end/css/view/facebook-feed.min.css',
-                        'type' => 'self',
-                        'context' => 'view',
-                    ],
-                ],
-                'js' => [
-                    [
-                        'file' => EAEL_PLUGIN_PATH . 'assets/front-end/js/lib-view/imagesloaded/imagesloaded.pkgd.min.js',
-                        'type' => 'lib',
-                        'context' => 'view',
-                    ],
-                    [
-                        'file' => EAEL_PLUGIN_PATH . 'assets/front-end/js/lib-view/isotope/isotope.pkgd.min.js',
-                        'type' => 'lib',
-                        'context' => 'view',
-                    ],
-                    [
-                        'file' => EAEL_PLUGIN_PATH . 'assets/front-end/js/view/facebook-feed.min.js',
                         'type' => 'self',
                         'context' => 'view',
                     ],
@@ -581,18 +518,6 @@ $config = [
                 ],
             ],
         ],
-        'formstack' => [
-            'class' => '\Essential_Addons_Elementor\Elements\Formstack',
-            'dependency' => [
-                'css' => [
-                    [
-                        'file' => EAEL_PLUGIN_PATH . 'assets/front-end/css/view/formstack.min.css',
-                        'type' => 'self',
-                        'context' => 'view',
-                    ],
-                ],
-            ],
-        ],
         'gravity-form' => [
             'class' => '\Essential_Addons_Elementor\Elements\GravityForms',
             'dependency' => [
@@ -623,42 +548,6 @@ $config = [
                 'css' => [
                     [
                         'file' => EAEL_PLUGIN_PATH . 'assets/front-end/css/view/wpforms.min.css',
-                        'type' => 'self',
-                        'context' => 'view',
-                    ],
-                ],
-            ],
-        ],
-        'fluentform' => [
-            'class' => '\Essential_Addons_Elementor\Elements\FluentForm',
-            'dependency' => [
-                'css' => [
-                    [
-                        'file' => EAEL_PLUGIN_PATH . 'assets/front-end/css/view/fluentform.min.css',
-                        'type' => 'self',
-                        'context' => 'view',
-                    ],
-                ],
-            ],
-        ],
-        'typeform' => [
-            'class' => '\Essential_Addons_Elementor\Elements\TypeForm',
-            'dependency' => [
-                'css' => [
-                    [
-                        'file' => EAEL_PLUGIN_PATH . 'assets/front-end/css/view/typeform.min.css',
-                        'type' => 'self',
-                        'context' => 'view',
-                    ],
-                ],
-                'js' => [
-                    [
-                        'file' => EAEL_PLUGIN_PATH . 'assets/front-end/js/lib-view/embed/embed.min.js',
-                        'type' => 'lib',
-                        'context' => 'view',
-                    ],
-                    [
-                        'file' => EAEL_PLUGIN_PATH . 'assets/front-end/js/view/typeform.min.js',
                         'type' => 'self',
                         'context' => 'view',
                     ],

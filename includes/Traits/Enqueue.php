@@ -28,24 +28,7 @@ trait Enqueue
         if (in_array('caldera-form', $widgets) && class_exists('Caldera_Forms')) {
             add_filter('caldera_forms_force_enqueue_styles_early', '__return_true');
         }
-
-        // Compatibility: Fluent forms
-        if (in_array('fluentform', $widgets) && defined('FLUENTFORM')) {
-            wp_register_style(
-                'fluent-form-styles',
-                WP_PLUGIN_URL . '/fluentform/public/css/fluent-forms-public.css',
-                false,
-                FLUENTFORM_VERSION
-            );
-
-            wp_register_style(
-                'fluentform-public-default',
-                WP_PLUGIN_URL . '/fluentform/public/css/fluentform-public-default.css',
-                false,
-                FLUENTFORM_VERSION
-            );
-        }
-
+        
         // Compatibility: Ninja forms
         if (in_array('ninja-form', $widgets) && class_exists('\Ninja_Forms') && class_exists('\NF_Display_Render')) {
             add_action('elementor/preview/enqueue_styles', function () {

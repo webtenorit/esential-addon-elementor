@@ -107,15 +107,6 @@
 .eaicon-event-calendar:before {
 	content: "\e91a";
 }
-.eaicon-facebook-feed-carousel:before {
-	content: "\e91b";
-}
-.eaicon-facebook-feed:before {
-	content: "\e91c";
-}
-.eaicon-fancy-text:before {
-	content: "\e91d";
-}
 .eaicon-feature-list:before {
 	content: "\e91e";
 }
@@ -124,18 +115,6 @@
 }
 .eaicon-flip-box:before {
 	content: "\e920";
-}
-.eaicon-flip-carousel:before {
-	content: "\e921";
-}
-.eaicon-fluent-forms:before {
-	content: "\e922";
-}
-.eaicon-formstack:before {
-	content: "\e923";
-}
-.eaicon-gravity-form:before {
-	content: "\e924";
 }
 .eaicon-image-accrodion:before {
 	content: "\e925";
@@ -265,7 +244,4 @@
 }
 .eaicon-woo-checkout:before {
 	content: "\e94f";
-}
-.eaicon-typeform:before {
-	content: "\e950";
 }
