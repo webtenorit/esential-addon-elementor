@@ -884,6 +884,9 @@ button.eael-btn.eael-global-control-disable:hover {
     width: 16px;
     fill: #3a3c40;
 }
+.eael-element-info-link{
+    display:none !important;
+}
 .eael-element-info-link span.dashicons {
     font-size: 15px;
     margin-top: 6px;

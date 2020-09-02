@@ -148,23 +148,10 @@ $elements = [
                 'doc_link' => 'https://essential-addons.com/elementor/docs/advanced-data-table/',
             ],
             [
-                'key'   => 'content-ticker',
-                'title' => __( 'Content Ticker', 'pixerex-elements'),
-                'demo_link' => 'https://essential-addons.com/elementor/content-ticker/',
-                'doc_link' => 'https://essential-addons.com/elementor/docs/content-ticker/',
-            ],
-            [
                 'key'   => 'adv-google-map',
                 'title' => __( 'Advanced Google Map', 'pixerex-elements'),
                 'demo_link' => 'https://essential-addons.com/elementor/advanced-google-map/',
                 'doc_link' => 'https://essential-addons.com/elementor/docs/advanced-google-map/',
-                'is_pro' => true
-            ],
-            [
-                'key'    => 'post-block',
-                'title'  => __( 'Post Block', 'pixerex-elements'),
-                'demo_link' => 'https://essential-addons.com/elementor/post-block/',
-                'doc_link' => 'https://essential-addons.com/elementor/docs/post-block/',
                 'is_pro' => true
             ],
             [
@@ -246,13 +233,6 @@ $elements = [
                 'is_pro' => true
             ],
             [
-                'key'    => 'protected-content',
-                'title'  => __( 'Protected Content', 'pixerex-elements'),
-                'demo_link' => 'https://essential-addons.com/elementor/protected-content/',
-                'doc_link' => 'https://essential-addons.com/elementor/docs/ea-protected-content/',
-                'is_pro' => true
-            ],
-            [
                 'key'    => 'img-comparison',
                 'title'  => __( 'Image Comparison', 'pixerex-elements'),
                 'demo_link' => 'https://essential-addons.com/elementor/image-comparison/',
@@ -278,13 +258,6 @@ $elements = [
                 'title'  => __( 'Image Hotspots', 'pixerex-elements'),
                 'demo_link' => 'https://essential-addons.com/elementor/image-hotspots/',
                 'doc_link' => 'https://essential-addons.com/elementor/docs/image-hotspots/',
-                'is_pro' => true
-            ],
-            [
-                'key'    => 'divider',
-                'title'  => __( 'Divider', 'pixerex-elements'),
-                'demo_link' => 'https://essential-addons.com/elementor/divider/',
-                'doc_link' => 'https://essential-addons.com/elementor/docs/divider/',
                 'is_pro' => true
             ],
             [

@@ -352,25 +352,6 @@ $config = [
                 ],
             ],
         ],
-        'content-ticker' => [
-            'class' => '\Essential_Addons_Elementor\Elements\Content_Ticker',
-            'dependency' => [
-                'css' => [
-                    [
-                        'file' => EAEL_PLUGIN_PATH . 'assets/front-end/css/view/content-ticker.min.css',
-                        'type' => 'self',
-                        'context' => 'view',
-                    ],
-                ],
-                'js' => [
-                    [
-                        'file' => EAEL_PLUGIN_PATH . 'assets/front-end/js/view/content-ticker.min.js',
-                        'type' => 'self',
-                        'context' => 'view',
-                    ],
-                ],
-            ],
-        ],
         'tooltip' => [
             'class' => '\Essential_Addons_Elementor\Elements\Tooltip',
             'dependency' => [

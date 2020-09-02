@@ -68,7 +68,7 @@ We have designed 39 of the most useful widgets to enhance your Elementor Page Bu
 21. [Data Table](https://essential-addons.com/elementor/table/) - Insert visually attractive data table anywhere you want
 22. [Filterable Gallery](https://essential-addons.com/elementor/filterable-gallery/) - Easily display custom content in any pages
 23. [Image Accordion](https://essential-addons.com/elementor/image-accordion/) - Highlight your images with amazing hover effects
-24. [Content Ticker](https://essential-addons.com/elementor/content-ticker/) - Use slider and ticker effect and more on dynamic & custom content
+24. 
 25. [Tooltip](https://essential-addons.com/elementor/tooltip/) - Set tooltip for Icon, Image, Text or shortcodes
 26. [Advanced Tabs](https://essential-addons.com/elementor/advanced-tabs/) - Include tab to put information in different styles. Supports nested tabs.
 27. [Advanced Accordion](https://essential-addons.com/elementor/advanced-accordion/) - Add beautiful accordions in your pages, posts, and anywhere. Supports nested accordions.
@@ -89,7 +89,7 @@ We have designed 39 of the most useful widgets to enhance your Elementor Page Bu
 
 ### More elements (29+) on [Premium Version](https://wpdeveloper.net/in/upgrade-essential-addons-elementor)
 
-1. [Post Block (Flex)](https://essential-addons.com/elementor/post-block/) - Display your blog posts with variety of styles with the power of modern CSS Flexbox
+1. 
 2. [Lightbox & Modal](https://essential-addons.com/elementor/lightbox-modal/) - Create Modal Popup which opens after certain actions.
 3. [Testimonial Slider](https://essential-addons.com/elementor/testimonial-slider/) - Highlight how you customers love your business with sliders
 4. [Image Comparison](https://essential-addons.com/elementor/image-comparison/) - Let your viewers compare between two images 
@@ -114,7 +114,7 @@ We have designed 39 of the most useful widgets to enhance your Elementor Page Bu
 23. [Team Member Carousel](https://essential-addons.com/elementor/team-member-carousel/) - Display your team members in carousel
 24. [Post Carousel](https://essential-addons.com/elementor/post-carousel/) - Even you can create carousel from your posts
 25. [Logo Carousel](https://essential-addons.com/elementor/logo-carousel/) - Highlight brands/product logos in carousel
-26. [Protected Content](https://essential-addons.com/elementor/protected-content/) - Lock your content with password and allow only selected people to see it
+26. 
 27. [Offcanvas Content](https://essential-addons.com/elementor/offcanvas-content/) - Display content in off canvas and show them with button/element click
 28. [Advanced Menu](https://essential-addons.com/elementor/advanced-menu/) - Use advanced navigation menu anywhere. Choose design from different skins and customize.
 29. [Image Scroller](https://essential-addons.com/elementor/image-scroller/) - Show your panoramic or long height images within image scroller widget.

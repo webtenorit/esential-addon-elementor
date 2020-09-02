@@ -58,7 +58,7 @@ trait Elements
             }
 
             if ($this->pro_enabled && \version_compare(EAEL_PRO_PLUGIN_VERSION, '3.3.0', '<')) {
-                if (in_array($active_element, ['content-timeline', 'dynamic-filter-gallery', 'post-block', 'post-carousel', 'post-list'])) {
+                if (in_array($active_element, ['content-timeline', 'dynamic-filter-gallery', 'post-carousel', 'post-list'])) {
                     continue;
                 }
             }
@@ -216,12 +216,6 @@ trait Elements
                 'categories' => '["essential-addons-elementor"]',
             ],
             [
-                'name' => 'eael-post-block',
-                'title' => __('Post Block', 'pixerex-elements'),
-                'icon' => 'eaicon-post-block',
-                'categories' => '["essential-addons-elementor"]',
-            ],
-            [
                 'name' => 'eael-post-carousel',
                 'title' => __('Post Carousel', 'pixerex-elements'),
                 'icon' => 'eaicon-post-carousel',
@@ -237,12 +231,6 @@ trait Elements
                 'name' => 'eael-price-menu',
                 'title' => __('Price Menu', 'pixerex-elements'),
                 'icon' => 'eaicon-price-menu',
-                'categories' => '["essential-addons-elementor"]',
-            ],
-            [
-                'name' => 'eael-protected-content',
-                'title' => __('Protected Content', 'pixerex-elements'),
-                'icon' => 'eaicon-protected-content',
                 'categories' => '["essential-addons-elementor"]',
             ],
             [

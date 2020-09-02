@@ -46,17 +46,7 @@ trait Helper
         $post_types['by_id'] = __('Manual Selection', 'pixerex-elements');
         $taxonomies = get_taxonomies([], 'objects');
 
-        if ('eael-content-ticker' === $this->get_name()) {
-            $this->start_controls_section(
-                'eael_section_content_ticker_filters',
-                [
-                    'label' => __('Dynamic Content Settings', 'pixerex-elements'),
-                    'condition' => [
-                        'eael_ticker_type' => 'dynamic',
-                    ],
-                ]
-            );
-        } else if ('eael-content-timeline' === $this->get_name()) {
+        if ('eael-content-timeline' === $this->get_name()) {
             $this->start_controls_section(
                 'eael_section_timeline__filters',
                 [
@@ -411,21 +401,6 @@ trait Helper
 
         }
 
-        if ('eael-post-block' === $this->get_name()) {
-            $this->add_control(
-                'grid_style',
-                [
-                    'label' => esc_html__('Post Block Style Preset', 'pixerex-elements'),
-                    'type' => Controls_Manager::SELECT,
-                    'default' => 'post-block-style-default',
-                    'options' => [
-                        'post-block-style-default' => esc_html__('Default', 'pixerex-elements'),
-                        'post-block-style-overlay' => esc_html__('Overlay', 'pixerex-elements'),
-                    ],
-                ]
-            );
-        }
-
         if ('eael-post-carousel' !== $this->get_name()) {
 
             /**
@@ -749,7 +724,6 @@ trait Helper
 
         if (
             'eael-post-grid' === $this->get_name()
-            || 'eael-post-block' === $this->get_name()
             || 'eael-post-carousel' === $this->get_name()
         ) {
             $this->add_control(
@@ -831,7 +805,7 @@ trait Helper
 
         }
 
-        if ('eael-post-grid' === $this->get_name() || 'eael-post-block' === $this->get_name() || 'eael-post-carousel' === $this->get_name()) {
+        if ('eael-post-grid' === $this->get_name() || 'eael-post-carousel' === $this->get_name()) {
 
             $this->add_control(
                 'eael_show_meta',
@@ -990,7 +964,6 @@ trait Helper
     {
         if (
             'eael-post-grid' === $this->get_name()
-            || 'eael-post-block' === $this->get_name()
             || 'eael-post-carousel' === $this->get_name()
             || 'eael-post-list' === $this->get_name()
             || 'eael-post-timeline' === $this->get_name()

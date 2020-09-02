@@ -68,9 +68,7 @@
 .eaicon-contact-form-7:before {
 	content: "\e90d";
 }
-.eaicon-content-ticker:before {
-	content: "\e90e";
-}
+
 .eaicon-content-timeline:before {
 	content: "\e90f";
 }
@@ -170,9 +168,6 @@
 .eaicon-particle-effects:before {
 	content: "\e936";
 }
-.eaicon-post-block:before {
-	content: "\e937";
-}
 .eaicon-post-carousel:before {
 	content: "\e938";
 }
@@ -193,9 +188,6 @@
 }
 .eaicon-progress-bar:before {
 	content: "\e93e";
-}
-.eaicon-protected-content:before {
-	content: "\e93f";
 }
 .eaicon-reading-progress-bar:before {
 	content: "\e940";
