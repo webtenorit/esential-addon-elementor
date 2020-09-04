@@ -26,13 +26,6 @@ $extensions = [
                 'is_pro' => true
             ],
             [
-                'key'    => 'eael-content-protection',
-                'title'  => __( 'Content Protection', 'pixerex-elements'),
-                'demo_link' => 'https://essential-addons.com/elementor/content-protection/',
-                'doc_link' => 'https://essential-addons.com/elementor/docs/ea-content-protection/',
-                'is_pro' => true
-            ],
-            [
                 'key'    => 'eael-reading-progress',
                 'title'  => __( 'Reading Progress Bar', 'pixerex-elements'),
                 'demo_link' => 'https://essential-addons.com/elementor/reading-progress/',

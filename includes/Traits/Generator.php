@@ -137,10 +137,7 @@ trait Generator
                 if (isset($element['settings']['eael_tooltip_section_enable']) && $element['settings']['eael_tooltip_section_enable'] == 'yes') {
                     $collections[] = 'eael-eael-tooltip-section';
                 }
-                if (isset($element['settings']['eael_ext_content_protection']) && $element['settings']['eael_ext_content_protection'] == 'yes') {
-                    $collections[] = 'eael-eael-content-protection';
-                }
-
+                
                 if ($element['widgetType'] === 'global') {
                     $document = Plugin::$instance->documents->get($element['templateID']);
                     $collections = array_merge($collections, $this->collect_recursive_elements($document->get_elements_data()));
