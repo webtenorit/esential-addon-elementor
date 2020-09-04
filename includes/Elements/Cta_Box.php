@@ -30,7 +30,7 @@ class Cta_Box extends Widget_Base
 
     public function get_icon()
     {
-        return 'eaicon-call-to-action';
+        // return 'eaicon-call-to-action';
     }
 
     public function get_categories()

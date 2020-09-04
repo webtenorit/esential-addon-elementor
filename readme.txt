@@ -62,7 +62,7 @@ We have designed 39 of the most useful widgets to enhance your Elementor Page Bu
 15. [Info Box](https://essential-addons.com/elementor/info-box/) - Design beautiful info box from predefined styles
 16. [Flip Box](https://essential-addons.com/elementor/flip-box/) - Use animated Flip Boxes to highlight any content inside your page in a great way
 17. [Dual Color Headline](https://essential-addons.com/elementor/dual-color-headline/) - Emphasize on a single word in a sentence by highlighting it with a different color
-18. [Call to Action](https://essential-addons.com/elementor/call-to-action/) - Design call-to-action buttons before a blink
+18.
 19. [Pricing Table](https://essential-addons.com/elementor/pricing-table/) - Create Pricing Tables within minutes that converts
 20. [Twitter Feed](https://essential-addons.com/elementor/twitter-feed/) - Showcase your latest tweets to your visitor
 21. [Data Table](https://essential-addons.com/elementor/table/) - Insert visually attractive data table anywhere you want

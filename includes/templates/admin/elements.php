@@ -273,12 +273,6 @@ $elements = [
         'title' => __( 'Marketing Elements', 'pixerex-elements'),
         'elements'  => [
             [
-                'key'   => 'call-to-action',
-                'title' => __( 'Call To Action', 'pixerex-elements'),
-                'demo_link' => 'https://essential-addons.com/elementor/call-to-action/',
-                'doc_link' => 'https://essential-addons.com/elementor/docs/call-to-action/',
-            ],
-            [
                 'key'   => 'price-table',
                 'title' => __( 'Pricing Table', 'pixerex-elements'),
                 'demo_link' => 'https://essential-addons.com/elementor/pricing-table/',

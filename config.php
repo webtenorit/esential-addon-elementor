@@ -154,18 +154,6 @@ $config = [
                 ],
             ],
         ],
-        'call-to-action' => [
-            'class' => '\Essential_Addons_Elementor\Elements\Cta_Box',
-            'dependency' => [
-                'css' => [
-                    [
-                        'file' => EAEL_PLUGIN_PATH . 'assets/front-end/css/view/call-to-action.min.css',
-                        'type' => 'self',
-                        'context' => 'view',
-                    ],
-                ],
-            ],
-        ],
         'dual-header' => [
             'class' => '\Essential_Addons_Elementor\Elements\Dual_Color_Header',
             'dependency' => [
