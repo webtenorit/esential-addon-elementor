@@ -81,7 +81,7 @@ We have designed 39 of the most useful widgets to enhance your Elementor Page Bu
 34. [BetterDocs Category Box](https://essential-addons.com/elementor/betterdocs-category-box/) - Cretae custom box-style Knowledge Base layout with BetterDocs Category List.
 35. [BetterDocs Search Form](https://essential-addons.com/elementor/betterdocs-search-form/) - Place and design a cool live search box for BetterDocs Documentation
 36. [Advanced Data Table](https://essential-addons.com/elementor/advanced-data-table) - Create flexible table within Elementor with best possible free addon
-37. [Event Calendar](https://essential-addons.com/elementor/event-calendar) - Create your own customized Event page by custom events, Google Calendar events and many more third party plugin integrations. 
+37. 
 38. 
 39. [Woo Checkout](https://essential-addons.com/elementor/woo-checkout/) - Create your own WooCommerce Checkout page and customize and design everything. 
 40. [Typeform](https://essential-addons.com/elementor/typeform/) - Embed and Design your Typeform forms within Elementor. 
