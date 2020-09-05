@@ -120,7 +120,7 @@ We have designed 39 of the most useful widgets to enhance your Elementor Page Bu
 29. [Image Scroller](https://essential-addons.com/elementor/image-scroller/) - Show your panoramic or long height images within image scroller widget.
 
 
-Extensions (Free): 
+Extensions (Free):  
 
 1. [Reading Progress Bar](https://essential-addons.com/elementor/reading-progress/) - Add a reading progress bar to your page/post to indicate the current reading position.
 2. [Page/Post Duplicator](https://essential-addons.com/elementor/post-duplicator/) - Duplicate any page or post in a single click.
