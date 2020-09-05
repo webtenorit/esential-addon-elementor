@@ -372,7 +372,6 @@ Your existing elements/content will work with premium version. So you won't lose
 - Few minor bugfix and improvements
 
 = 3.8.2 - 01/03/2020 =
-- Added: [The Events Calendar](https://wordpress.org/plugins/the-events-calendar/) integration with [EA Event Calendar](https://essential-addons.com/elementor/event-calendar) element
 - Fixed : Post Grid warning
 - Fixed : Mailchimp button issue
 - Few minor bugfix and improvements

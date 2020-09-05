@@ -69,14 +69,12 @@ $elements = [
                 'title'  => __( 'Offcanvas', 'pixerex-elements'),
                 'demo_link' => 'https://essential-addons.com/elementor/offcanvas-content/',
                 'doc_link' => 'https://essential-addons.com/elementor/docs/essential-addons-elementor-offcanvas/',
-                'is_pro' => true
             ],
             [
                 'key'    => 'advanced-menu',
                 'title'  => __( 'Advanced Menu', 'pixerex-elements'),
                 'demo_link' => 'https://essential-addons.com/elementor/advanced-menu/',
                 'doc_link' => 'https://essential-addons.com/elementor/docs/ea-advanced-menu/',
-                'is_pro' => true
             ],
             [
                 'key'    => 'toggle',
@@ -152,14 +150,12 @@ $elements = [
                 'title' => __( 'Advanced Google Map', 'pixerex-elements'),
                 'demo_link' => 'https://essential-addons.com/elementor/advanced-google-map/',
                 'doc_link' => 'https://essential-addons.com/elementor/docs/advanced-google-map/',
-                'is_pro' => true
             ],
             [
                 'key'    => 'post-carousel',
                 'title'  => __( 'Post Carousel', 'pixerex-elements'),
                 'demo_link' => 'https://essential-addons.com/elementor/post-carousel/',
                 'doc_link' => 'https://essential-addons.com/elementor/docs/post-carousel/',
-                'is_pro' => true
             ],
             [
                 'key'    => 'post-list',
@@ -223,7 +219,6 @@ $elements = [
                 'title'  => __( 'Counter', 'pixerex-elements'),
                 'demo_link' => 'https://essential-addons.com/elementor/counter/',
                 'doc_link' => 'https://essential-addons.com/elementor/docs/counter/',
-                'is_pro' => true
             ],
             [
                 'key'    => 'lightbox',
@@ -237,7 +232,6 @@ $elements = [
                 'title'  => __( 'Image Comparison', 'pixerex-elements'),
                 'demo_link' => 'https://essential-addons.com/elementor/image-comparison/',
                 'doc_link' => 'https://essential-addons.com/elementor/docs/image-comparison/',
-                'is_pro' => true
             ],
             [
                 'key'    => 'logo-carousel',
@@ -283,7 +277,6 @@ $elements = [
                 'title'  => __( 'Price menu', 'pixerex-elements'),
                 'demo_link' => 'https://essential-addons.com/elementor/price-menu/',
                 'doc_link' => 'https://essential-addons.com/elementor/docs/price-menu/',
-                'is_pro' => true
             ]
         ]
     ],
@@ -362,7 +355,6 @@ $elements = [
                 'title'  => __( 'Instagram Feed', 'pixerex-elements'),
                 'demo_link' => 'https://essential-addons.com/elementor/instagram-feed/',
                 'doc_link' => 'https://essential-addons.com/elementor/docs/instagram-feed/',
-                'is_pro' => true
             ],
         ]
     ],
