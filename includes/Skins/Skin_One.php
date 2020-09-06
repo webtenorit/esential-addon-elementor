@@ -1,6 +1,6 @@
 <?php
 
-namespace Essential_Addons_Elementor\Pro\Skins;
+namespace Essential_Addons_Elementor\Skins;
 
 if (!defined('ABSPATH')) {
     exit;

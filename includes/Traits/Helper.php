@@ -1960,6 +1960,27 @@ trait Helper
 
         return $pages;
     }
+    
+    /**
+     * Get all registered menus.
+     *
+     * @return array of menus.
+     */
+    public function eael_get_menus()
+    {
+        $menus = wp_get_nav_menus();
+        $options = [];
+
+        if (empty($menus)) {
+            return $options;
+        }
+
+        foreach ($menus as $menu) {
+            $options[$menu->term_id] = $menu->name;
+        }
+
+        return $options;
+    }
 
     /**
      * This function is responsible for get the post data.
