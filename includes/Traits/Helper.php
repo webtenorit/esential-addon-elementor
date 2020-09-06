@@ -35,6 +35,42 @@ trait Helper
 
         return [];
     }
+    
+    // Get all WordPress registered widgets
+    public function get_registered_sidebars()
+    {
+        global $wp_registered_sidebars;
+        $options = [];
+
+        if (!$wp_registered_sidebars) {
+            $options[''] = __('No sidebars were found', 'essential-addons-elementor');
+        } else {
+            $options['---'] = __('Choose Sidebar', 'essential-addons-elementor');
+
+            foreach ($wp_registered_sidebars as $sidebar_id => $sidebar) {
+                $options[$sidebar_id] = $sidebar['name'];
+            }
+        }
+        return $options;
+    }
+    
+    public function get_page_template_options($type = '')
+    {
+
+        $page_templates = $this->eael_get_page_templates($type);
+
+        $options[-1] = __('Select', 'essential-addons-elementor');
+
+        if (count($page_templates)) {
+            foreach ($page_templates as $id => $name) {
+                $options[$id] = $name;
+            }
+        } else {
+            $options['no_template'] = __('No saved templates found!', 'essential-addons-elementor');
+        }
+
+        return $options;
+    }
 
     /**
      * Query Controls
