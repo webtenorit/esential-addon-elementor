@@ -144,7 +144,43 @@ trait Core
      */
     public function set_default_values()
     {
-        $defaults = array_fill_keys(array_keys(array_merge($GLOBALS['eael_config']['elements'], $GLOBALS['eael_config']['extensions'])), 1);
+        $defaults = array_fill_keys([
+            'img-comparison',
+            'instagram-gallery',
+            'interactive-promo',
+            'lightbox',
+            'post-block',
+            'testimonial-slider',
+            'static-product',
+            'adv-google-map',
+            'flip-carousel',
+            'interactive-cards',
+            'content-timeline',
+            'twitter-feed-carousel',
+            'dynamic-filter-gallery',
+            'post-list',
+            'toggle',
+            'mailchimp',
+            'divider',
+            'price-menu',
+            'image-hotspots',
+            'one-page-navigation',
+            'counter',
+            'post-carousel',
+            'team-member-carousel',
+            'logo-carousel',
+            'protected-content',
+            'offcanvas',
+            'advanced-menu',
+            'image-scroller',
+            'learn-dash-elements',
+            'woo-collections',
+            'dismissible-section',
+            'section-parallax',
+            'section-particles',
+            'eael-tooltip-section',
+        ], 1);
+
         $values = get_option('eael_save_settings');
 
         return update_option('eael_save_settings', wp_parse_args($values, $defaults));
