@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) exit; // If this file is called directly, abort.
 class Lightbox extends Widget_Base {
 
 	use \Essential_Addons_Elementor\Traits\Helper;
-	use \Essential_Addons_Elementor\\Traits\Helper;
+	use \Essential_Addons_Elementor\Traits\Helper;
 	
 	public function get_name() {
 		return 'eael-lightbox';

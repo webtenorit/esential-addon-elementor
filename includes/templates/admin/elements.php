@@ -106,12 +106,6 @@ $elements = [
                 'demo_link' => 'https://essential-addons.com/elementor/sticky-video/',
                 'doc_link' => 'https://essential-addons.com/elementor/docs/sticky-video/',
             ],
-            [
-                'key'   => 'event-calendar',
-                'title' => __( 'Event Calendar', 'essential-addons-elementor' ),
-                'demo_link' => 'https://essential-addons.com/elementor/event-calendar/',
-                'doc_link' => 'https://essential-addons.com/elementor/docs/event-calendar/',
-            ],
         ]
     ],
     'dynamic-content-elements'  => [
@@ -225,22 +219,10 @@ $elements = [
                 'doc_link' => 'https://essential-addons.com/elementor/docs/image-comparison/',
             ],
             [
-                'key'    => 'logo-carousel',
-                'title'  => __( 'Logo Carousel', 'pixerex-elements'),
-                'demo_link' => 'https://essential-addons.com/elementor/logo-carousel/',
-                'doc_link' => 'https://essential-addons.com/elementor/docs/logo-carousel/',
-            ],
-            [
                 'key'    => 'one-page-navigation',
                 'title'  => __( 'One Page Navigation', 'pixerex-elements'),
                 'demo_link' => 'https://essential-addons.com/elementor/one-page-nav/',
                 'doc_link' => 'https://essential-addons.com/elementor/docs/one-page-navigation/',
-            ],
-            [
-                'key'    => 'image-hotspots',
-                'title'  => __( 'Image Hotspots', 'pixerex-elements'),
-                'demo_link' => 'https://essential-addons.com/elementor/image-hotspots/',
-                'doc_link' => 'https://essential-addons.com/elementor/docs/image-hotspots/',
             ],
             [
                 'key'    => 'image-scroller',

@@ -294,75 +294,6 @@ $config = [
                 ],
             ],
         ],
-        'event-calendar' => [
-            'class' => '\Essential_Addons_Elementor\Elements\Event_Calendar',
-            'dependency' => [
-                'css' => [
-                    [
-                        'file' => EAEL_PLUGIN_PATH . 'assets/front-end/css/lib-view/full-calendar/calendar-main.min.css',
-                        'type' => 'lib',
-                        'context' => 'view',
-                    ],
-                    [
-                        'file' => EAEL_PLUGIN_PATH . 'assets/front-end/css/lib-view/full-calendar/daygrid.min.css',
-                        'type' => 'lib',
-                        'context' => 'view',
-                    ],
-                    [
-                        'file' => EAEL_PLUGIN_PATH . 'assets/front-end/css/lib-view/full-calendar/timegrid.min.css',
-                        'type' => 'lib',
-                        'context' => 'view',
-                    ],
-                    [
-                        'file' => EAEL_PLUGIN_PATH . 'assets/front-end/css/lib-view/full-calendar/listgrid.min.css',
-                        'type' => 'lib',
-                        'context' => 'view',
-                    ],
-                    [
-                        'file' => EAEL_PLUGIN_PATH . 'assets/front-end/css/view/event-calendar.min.css',
-                        'type' => 'self',
-                        'context' => 'view',
-                    ],
-                ],
-                'js' => [
-                    [
-                        'file' => EAEL_PLUGIN_PATH . 'assets/front-end/js/lib-view/full-calendar/locales-all.min.js',
-                        'type' => 'lib',
-                        'context' => 'view',
-                    ],
-                    [
-                        'file' => EAEL_PLUGIN_PATH . 'assets/front-end/js/lib-view/moment/moment.min.js',
-                        'type' => 'lib',
-                        'context' => 'view',
-                    ],
-                    [
-                        'file' => EAEL_PLUGIN_PATH . 'assets/front-end/js/lib-view/full-calendar/calendar-main.min.js',
-                        'type' => 'lib',
-                        'context' => 'view',
-                    ],
-                    [
-                        'file' => EAEL_PLUGIN_PATH . 'assets/front-end/js/lib-view/full-calendar/daygrid.min.js',
-                        'type' => 'lib',
-                        'context' => 'view',
-                    ],
-                    [
-                        'file' => EAEL_PLUGIN_PATH . 'assets/front-end/js/lib-view/full-calendar/timegrid.min.js',
-                        'type' => 'lib',
-                        'context' => 'view',
-                    ],
-                    [
-                        'file' => EAEL_PLUGIN_PATH . 'assets/front-end/js/lib-view/full-calendar/listgrid.min.js',
-                        'type' => 'lib',
-                        'context' => 'view',
-                    ],
-                    [
-                        'file' => EAEL_PLUGIN_PATH . 'assets/front-end/js/view/event-calendar.min.js',
-                        'type' => 'self',
-                        'context' => 'view',
-                    ],
-                ],
-            ],
-        ],
         'interactive-promo'      => [
             'class'      => '\Essential_Addons_Elementor\Elements\Interactive_Promo',
             'dependency' => [
@@ -403,25 +334,6 @@ $config = [
                     ],
                     [
                         'file'    => EAEL_PLUGIN_PATH . 'assets/front-end/js/view/lightbox.min.js',
-                        'type'    => 'self',
-                        'context' => 'view',
-                    ],
-                ],
-            ],
-        ],
-        'logo-carousel'          => [
-            'class'      => '\Essential_Addons_Elementor\Elements\Logo_Carousel',
-            'dependency' => [
-                'css' => [
-                    [
-                        'file'    => EAEL_PLUGIN_PATH . 'assets/front-end/css/view/logo-carousel.min.css',
-                        'type'    => 'self',
-                        'context' => 'view',
-                    ],
-                ],
-                'js'  => [
-                    [
-                        'file'    => EAEL_PLUGIN_PATH . 'assets/front-end/js/view/logo-carousel.min.js',
                         'type'    => 'self',
                         'context' => 'view',
                     ],
@@ -494,30 +406,6 @@ $config = [
                 'js'  => [
                     [
                         'file'    => EAEL_PLUGIN_PATH . 'assets/front-end/js/view/image-scroller.min.js',
-                        'type'    => 'self',
-                        'context' => 'view',
-                    ],
-                ],
-            ],
-        ],
-        'image-hotspots'         => [
-            'class'      => '\Essential_Addons_Elementor\Elements\Image_Hot_Spots',
-            'dependency' => [
-                'css' => [
-                    [
-                        'file'    => EAEL_PLUGIN_PATH . 'assets/front-end/css/view/image-hotspots.min.css',
-                        'type'    => 'self',
-                        'context' => 'view',
-                    ],
-                ],
-                'js'  => [
-                    [
-                        'file'    => EAEL_PLUGIN_PATH . 'assets/front-end/js/lib-view/tipso/tipso.min.js',
-                        'type'    => 'lib',
-                        'context' => 'view',
-                    ],
-                    [
-                        'file'    => EAEL_PLUGIN_PATH . 'assets/front-end/js/view/image-hotspots.min.js',
                         'type'    => 'self',
                         'context' => 'view',
                     ],
@@ -1040,14 +928,6 @@ $config = [
                         'context' => 'view',
                     ],
                 ],
-            ],
-        ],
-        'embedpress' => [
-            'class' => '\Essential_Addons_Elementor\Elements\EmbedPress',
-            'condition' => [
-                'class_exists',
-                '\EmbedPress\Elementor\Embedpress_Elementor_Integration',
-                true,
             ],
         ],
         'woo-checkout' => [

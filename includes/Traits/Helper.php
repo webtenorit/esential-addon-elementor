@@ -220,6 +220,35 @@ trait Helper
 
         $this->end_controls_section();
     }
+    
+    // Get Mailchimp list
+    public function eael_mailchimp_lists()
+    {
+        $lists = [];
+        $api_key = get_option('eael_save_mailchimp_api');
+
+        $response = wp_remote_get('https://' . substr($api_key,
+            strpos($api_key, '-') + 1) . '.api.mailchimp.com/3.0/lists/?fields=lists.id,lists.name&count=1000', [
+            'headers' => [
+                'Content-Type' => 'application/json',
+                'Authorization' => 'Basic ' . base64_encode('user:' . $api_key),
+            ],
+        ]);
+
+        if (!is_wp_error($response)) {
+            $response = json_decode(wp_remote_retrieve_body($response));
+
+            if (!empty($response) && !empty($response->lists)) {
+                $lists = ['' => 'Select One'];
+
+                for ($i = 0; $i < count($response->lists); $i++) {
+                    $lists[$response->lists[$i]->id] = $response->lists[$i]->name;
+                }
+            }
+        }
+
+        return $lists;
+    }
 
     /**
      * Query Controls
@@ -1387,6 +1416,155 @@ trait Helper
         );
 
         $this->end_controls_section();
+    }
+    
+    
+    protected function post_list_layout_controls()
+    {
+
+        $this->start_controls_section(
+            'eael_section_post_list_layout',
+            [
+                'label' => __('Layout Settings', 'essential-addons-elementor'),
+            ]
+        );
+
+        if ($this->get_name() === 'eael-post-list') {
+
+            $this->add_control(
+                'eael_post_list_layout_type',
+                [
+                    'label' => __('Layout Type', 'essential-addons-elementor'),
+                    'type' => Controls_Manager::SELECT,
+                    'options' => [
+                        'default' => __('Default', 'essential-addons-elementor'),
+                        'advanced' => __('Advance', 'essential-addons-elementor'),
+                    ],
+                    'default' => 'default',
+                ]
+            );
+
+            $this->add_control(
+                'eael_enable_ajax_post_search',
+                [
+                    'label' => __('Enable Ajax Post Search', 'essential-addons-elementor'),
+                    'type' => Controls_Manager::SWITCHER,
+                    'default' => 'false',
+                    'label_on' => __('Yes', 'essential-addons-elementor'),
+                    'label_off' => __('No', 'essential-addons-elementor'),
+                    'return_value' => 'yes',
+                    'condition' => [
+                        'post_type!' => 'by_id',
+                        'eael_post_list_layout_type' => 'advanced',
+                    ],
+                ]
+            );
+        }
+
+        $this->add_control(
+            'eael_post_list_topbar',
+            [
+                'label' => __('Show Top Bar', 'essential-addons-elementor'),
+                'type' => Controls_Manager::SWITCHER,
+                'default' => 'yes',
+                'label_on' => __('Yes', 'essential-addons-elementor'),
+                'label_off' => __('No', 'essential-addons-elementor'),
+                'return_value' => 'yes',
+            ]
+        );
+        $this->add_control(
+            'eael_post_list_topbar_title',
+            [
+                'label' => esc_html__('Title Text', 'essential-addons-elementor'),
+                'type' => Controls_Manager::TEXT,
+                'label_block' => false,
+                'default' => esc_html__('Recent Posts', 'essential-addons-elementor'),
+                'condition' => [
+                    'eael_post_list_topbar' => 'yes',
+                ],
+            ]
+        );
+        $this->add_control(
+            'eael_post_list_topbar_term_all_text',
+            [
+                'label' => esc_html__('Change All Text', 'essential-addons-elementor'),
+                'type' => Controls_Manager::TEXT,
+                'label_block' => false,
+                'default' => esc_html__('All', 'essential-addons-elementor'),
+                'condition' => [
+                    'eael_post_list_topbar' => 'yes',
+                ],
+            ]
+        );
+        $this->add_control(
+            'eael_post_list_terms',
+            [
+                'label' => __('Show Category Filter', 'essential-addons-elementor'),
+                'type' => Controls_Manager::SWITCHER,
+                'default' => 'yes',
+                'label_on' => __('Yes', 'essential-addons-elementor'),
+                'label_off' => __('No', 'essential-addons-elementor'),
+                'return_value' => 'yes',
+                'condition' => [
+                    'eael_post_list_topbar' => 'yes',
+                ],
+            ]
+        );
+        $this->add_control(
+            'eael_post_list_pagination',
+            [
+                'label' => __('Show Navigation', 'essential-addons-elementor'),
+                'type' => Controls_Manager::SWITCHER,
+                'default' => 'yes',
+                'label_on' => __('Yes', 'essential-addons-elementor'),
+                'label_off' => __('No', 'essential-addons-elementor'),
+                'return_value' => 'yes',
+            ]
+        );
+        $this->add_control(
+            'eael_post_list_pagination_prev_icon_new',
+            [
+                'label' => esc_html__('Prev Post Icon', 'essential-addons-elementor'),
+                'type' => Controls_Manager::ICONS,
+                'fa4compatibility' => 'eael_adv_accordion_icon',
+                'default' => [
+                    'value' => 'fas fa-angle-left',
+                    'library' => 'fa-solid',
+                ],
+                'condition' => [
+                    'eael_post_list_pagination' => 'yes',
+                ],
+            ]
+        );
+        $this->add_control(
+            'eael_post_list_pagination_next_icon_new',
+            [
+                'label' => esc_html__('Next Post Icon', 'essential-addons-elementor'),
+                'type' => Controls_Manager::ICONS,
+                'fa4compatibility' => 'eael_adv_accordion_icon',
+                'default' => [
+                    'value' => 'fas fa-angle-right',
+                    'library' => 'fa-solid',
+                ],
+                'condition' => [
+                    'eael_post_list_pagination' => 'yes',
+                ],
+            ]
+        );
+        $this->add_control(
+            'eael_post_list_featured_area',
+            [
+                'label' => __('Show Featured Post', 'essential-addons-elementor'),
+                'type' => Controls_Manager::SWITCHER,
+                'default' => 'yes',
+                'label_on' => __('Yes', 'essential-addons-elementor'),
+                'label_off' => __('No', 'essential-addons-elementor'),
+                'return_value' => 'yes',
+            ]
+        );
+
+        $this->end_controls_section();
+
     }
 
     public function fix_old_query($settings)

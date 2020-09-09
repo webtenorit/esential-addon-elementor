@@ -81,19 +81,19 @@
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "./src/js/view/image-hotspots.js");
+/******/ 	return __webpack_require__(__webpack_require__.s = "./src/js/view/dynamic-filter-gallery.js");
 /******/ })
 /************************************************************************/
 /******/ ({
 
-/***/ "./src/js/view/image-hotspots.js":
-/*!***************************************!*\
-  !*** ./src/js/view/image-hotspots.js ***!
-  \***************************************/
+/***/ "./src/js/view/dynamic-filter-gallery.js":
+/*!***********************************************!*\
+  !*** ./src/js/view/dynamic-filter-gallery.js ***!
+  \***********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-eval("var ImageHotspotHandler = function ImageHotspotHandler($scope, $) {\n  $(\".eael-hot-spot-tooptip\").each(function () {\n    var $position_local = $(this).data(\"tooltip-position-local\"),\n        $position_global = $(this).data(\"tooltip-position-global\"),\n        $width = $(this).data(\"tooltip-width\"),\n        $size = $(this).data(\"tooltip-size\"),\n        $animation_in = $(this).data(\"tooltip-animation-in\"),\n        $animation_out = $(this).data(\"tooltip-animation-out\"),\n        $background = $(this).data(\"tooltip-background\"),\n        $text_color = $(this).data(\"tooltip-text-color\"),\n        $arrow = $(this).data(\"eael-tooltip-arrow\") === \"yes\" ? true : false,\n        $position = $position_local;\n\n    if (typeof $position_local === \"undefined\" || $position_local === \"global\") {\n      $position = $position_global;\n    }\n\n    if (typeof $animation_out === \"undefined\" || !$animation_out) {\n      $animation_out = $animation_in;\n    }\n\n    $(this).tipso({\n      speed: 200,\n      delay: 200,\n      width: $width,\n      background: $background,\n      color: $text_color,\n      size: $size,\n      position: $position,\n      animationIn: $animation_in,\n      animationOut: $animation_out,\n      showArrow: $arrow\n    });\n  });\n  $(\".eael-hot-spot-wrap\").on(\"click\", function (e) {\n    e.preventDefault();\n    $link = $(this).data(\"link\");\n    $link_target = $(this).data(\"link-target\");\n\n    if (typeof $link != 'undefined' && $link != '#') {\n      if ($link_target == \"_blank\") {\n        window.open($link);\n      } else {\n        window.location.href = $link;\n      }\n    }\n  });\n};\n\njQuery(window).on(\"elementor/frontend/init\", function () {\n  elementorFrontend.hooks.addAction(\"frontend/element_ready/eael-image-hotspots.default\", ImageHotspotHandler);\n});\n\n//# sourceURL=webpack:///./src/js/view/image-hotspots.js?");
+eval("var DynamicFilterableGallery = function DynamicFilterableGallery($scope, $) {\n  var $gallery = $('.eael-filter-gallery-container', $scope),\n      $settings = $gallery.data('settings'),\n      $layout_mode = $settings.layout_mode == 'masonry' ? 'masonry' : 'fitRows';\n  var $isotope_gallery = $gallery.isotope({\n    itemSelector: '.dynamic-gallery-item',\n    layoutMode: $layout_mode,\n    percentPosition: true,\n    stagger: 30,\n    transitionDuration: $settings.duration + 'ms'\n  });\n  $isotope_gallery.imagesLoaded().progress(function () {\n    $isotope_gallery.isotope(\"layout\");\n  });\n  $scope.on('click', '.control', function (e) {\n    e.preventDefault();\n    var filterValue = $(this).data('filter');\n    $(this).siblings().removeClass('active');\n    $(this).addClass('active');\n    $isotope_gallery.isotope({\n      filter: filterValue\n    });\n  });\n};\n\njQuery(window).on(\"elementor/frontend/init\", function () {\n  elementorFrontend.hooks.addAction(\"frontend/element_ready/eael-dynamic-filterable-gallery.default\", DynamicFilterableGallery);\n});\n\n//# sourceURL=webpack:///./src/js/view/dynamic-filter-gallery.js?");
 
 /***/ })
 

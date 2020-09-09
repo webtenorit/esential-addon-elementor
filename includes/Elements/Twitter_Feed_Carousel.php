@@ -1,5 +1,5 @@
 <?php
-namespace Essential_Addons_Elementor\Pro\Elements;
+namespace Essential_Addons_Elementor\Elements;
 
 use \Elementor\Controls_Manager;
 use \Elementor\Group_Control_Border;
