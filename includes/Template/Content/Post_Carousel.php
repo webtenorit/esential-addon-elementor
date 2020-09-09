@@ -1,6 +1,6 @@
 <?php
 
-namespace Essential_Addons_Elementor\Pro\Template\Content;
+namespace Essential_Addons_Elementor\Template\Content;
 
 if ( !defined( 'ABSPATH' ) ) {
     exit;

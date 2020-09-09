@@ -9,21 +9,18 @@ $extensions = [
                 'title'  => __( 'Parallax', 'pixerex-elements'),
                 'demo_link' => 'https://essential-addons.com/elementor/parallax-scrolling/',
                 'doc_link' => 'https://essential-addons.com/elementor/docs/ea-parallax/',
-                'is_pro' => true
             ],
             [
                 'key'    => 'section-particles',
                 'title'  => __( 'Particles', 'pixerex-elements'),
                 'demo_link' => 'https://essential-addons.com/elementor/particle-effect/',
                 'doc_link' => 'https://essential-addons.com/elementor/docs/particles/',
-                'is_pro' => true
             ],
             [
                 'key'    => 'eael-tooltip-section',
                 'title'  => __( 'Advanced Tooltip', 'pixerex-elements'),
                 'demo_link' => 'https://essential-addons.com/elementor/advanced-tooltip/',
                 'doc_link' => 'https://essential-addons.com/elementor/docs/ea-advanced-tooltip/',
-                'is_pro' => true
             ],
             [
                 'key'    => 'eael-reading-progress',

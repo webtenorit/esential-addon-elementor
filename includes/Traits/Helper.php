@@ -1970,7 +1970,7 @@ trait Helper
     {
         $menus = wp_get_nav_menus();
         $options = [];
-
+        
         if (empty($menus)) {
             return $options;
         }

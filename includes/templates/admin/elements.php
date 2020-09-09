@@ -81,28 +81,24 @@ $elements = [
                 'title'  => __( 'Toggle', 'pixerex-elements'),
                 'demo_link' => 'https://essential-addons.com/elementor/content-toggle/',
                 'doc_link' => 'https://essential-addons.com/elementor/docs/content-toggle/',
-                'is_pro' => true
             ],
             [
                 'key'    => 'testimonial-slider',
                 'title'  => __( 'Testimonial Slider', 'pixerex-elements'),
                 'demo_link' => 'https://essential-addons.com/elementor/testimonial-slider/',
                 'doc_link' => 'https://essential-addons.com/elementor/docs/testimonial-slider/',
-                'is_pro' => true
             ],
             [
                 'key'    => 'static-product',
                 'title'  => __( 'Static Product', 'pixerex-elements'),
                 'demo_link' => 'https://essential-addons.com/elementor/static-product/',
                 'doc_link' => 'https://essential-addons.com/elementor/docs/static-product/',
-                'is_pro' => true
             ],
             [
                 'key'    => 'team-member-carousel',
                 'title'  => __( 'Team Member Carousel', 'pixerex-elements'),
                 'demo_link' => 'https://essential-addons.com/elementor/team-member-carousel/',
                 'doc_link' => 'https://essential-addons.com/elementor/docs/team-member-carousel/',
-                'is_pro' => true
             ],
             [
                 'key'   => 'sticky-video',
@@ -162,21 +158,18 @@ $elements = [
                 'title'  => __( 'Smart Post List', 'pixerex-elements'),
                 'demo_link' => 'https://essential-addons.com/elementor/post-list/',
                 'doc_link' => 'https://essential-addons.com/elementor/docs/smart-post-list/',
-                'is_pro' => true
             ],
             [
                 'key'    => 'content-timeline',
                 'title'  => __( 'Content Timeline', 'pixerex-elements'),
                 'demo_link' => 'https://essential-addons.com/elementor/content-timeline/',
                 'doc_link' => 'https://essential-addons.com/elementor/docs/content-timeline/',
-                'is_pro' => true
             ],
             [
                 'key'    => 'dynamic-filter-gallery',
                 'title'  => __( 'Dynamic Gallery', 'pixerex-elements'),
                 'demo_link' => 'https://essential-addons.com/elementor/filterable-gallery/',
                 'doc_link' => 'https://essential-addons.com/elementor/docs/dynamic-filterable-gallery/',
-                'is_pro' => true
             ]
         ]
     ],
@@ -212,7 +205,6 @@ $elements = [
                 'title'  => __( 'Interactive Promo', 'pixerex-elements'),
                 'demo_link' => 'https://essential-addons.com/elementor/interactive-promo/',
                 'doc_link' => 'https://essential-addons.com/elementor/docs/interactive-promo/',
-                'is_pro' => true
             ],
             [
                 'key'    => 'counter',
@@ -225,7 +217,6 @@ $elements = [
                 'title'  => __( 'Lightbox & Modal', 'pixerex-elements'),
                 'demo_link' => 'https://essential-addons.com/elementor/lightbox-modal/',
                 'doc_link' => 'https://essential-addons.com/elementor/docs/lightbox-modal/',
-                'is_pro' => true
             ],
             [
                 'key'    => 'img-comparison',
@@ -238,28 +229,24 @@ $elements = [
                 'title'  => __( 'Logo Carousel', 'pixerex-elements'),
                 'demo_link' => 'https://essential-addons.com/elementor/logo-carousel/',
                 'doc_link' => 'https://essential-addons.com/elementor/docs/logo-carousel/',
-                'is_pro' => true
             ],
             [
                 'key'    => 'one-page-navigation',
                 'title'  => __( 'One Page Navigation', 'pixerex-elements'),
                 'demo_link' => 'https://essential-addons.com/elementor/one-page-nav/',
                 'doc_link' => 'https://essential-addons.com/elementor/docs/one-page-navigation/',
-                'is_pro' => true
             ],
             [
                 'key'    => 'image-hotspots',
                 'title'  => __( 'Image Hotspots', 'pixerex-elements'),
                 'demo_link' => 'https://essential-addons.com/elementor/image-hotspots/',
                 'doc_link' => 'https://essential-addons.com/elementor/docs/image-hotspots/',
-                'is_pro' => true
             ],
             [
                 'key'    => 'image-scroller',
                 'title'  => __( 'Image Scroller', 'pixerex-elements'),
                 'demo_link' => 'https://essential-addons.com/elementor/image-scroller/',
                 'doc_link' => 'https://essential-addons.com/elementor/docs/ea-image-scroller/',
-                'is_pro' => true
             ]
         ]
     ],
@@ -324,7 +311,6 @@ $elements = [
                 'title'  => __( 'Mailchimp', 'pixerex-elements'),
                 'demo_link' => 'https://essential-addons.com/elementor/mailchimp/',
                 'doc_link' => 'https://essential-addons.com/elementor/docs/mailchimp/',
-                'is_pro' => true
             ],
 	        [
 		        'key'   => 'login-register',
@@ -348,7 +334,6 @@ $elements = [
                 'title'  => __( 'Twitter Feed Carousel', 'pixerex-elements'),
                 'demo_link' => 'https://essential-addons.com/elementor/twitter-feed/',
                 'doc_link' => 'https://essential-addons.com/elementor/docs/twitter-feed-carousel/',
-                'is_pro' => true
             ],
             [
                 'key'    => 'instagram-gallery',
@@ -372,7 +357,6 @@ $elements = [
                 'title'  => __( 'Woo Product Collections', 'pixerex-elements'),
                 'demo_link' => 'https://essential-addons.com/elementor/woocommerce-product-collections/',
                 'doc_link' => 'https://essential-addons.com/elementor/docs/ea-woo-product-collections/',
-                'is_pro' => true
             ],
             [
                 'key'   => 'woo-checkout',
