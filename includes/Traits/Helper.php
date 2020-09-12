@@ -36,6 +36,55 @@ trait Helper
         return [];
     }
     
+    /**
+     * Get all product tags
+     *
+     * @return array
+     */
+    public function eael_get_woo_product_tags()
+    {
+        if (!apply_filters('eael/active_plugins', 'woocommerce/woocommerce.php')) {
+            return [];
+        }
+
+        $options = [];
+        $tags = get_terms('product_tag', array('hide_empty' => true));
+
+        foreach ($tags as $tag) {
+            $options[$tag->term_id] = $tag->name;
+        }
+
+        return $options;
+    }
+    
+      /**
+     * Get all product attributes
+     *
+     * @return array
+     */
+    public function eael_get_woo_product_atts()
+    {
+
+        if (!apply_filters('eael/active_plugins', 'woocommerce/woocommerce.php')) {
+            return [];
+        }
+
+        $options = [];
+        $taxonomies = wc_get_attribute_taxonomies();
+
+        foreach ($taxonomies as $tax) {
+            $terms = get_terms('pa_' . $tax->attribute_name);
+
+            if (!empty($terms)) {
+                foreach ($terms as $term) {
+                    $options[$term->term_id] = $tax->attribute_label . ': ' . $term->name;
+                }
+            }
+        }
+
+        return $options;
+    }
+    
     // Get all WordPress registered widgets
     public function get_registered_sidebars()
     {
